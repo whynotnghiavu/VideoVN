@@ -5,8 +5,26 @@
       "path": "."
     },
     {
+      "name": "contents",
       "path": "contents"
+    },
+    {
+      "name": "documents",
+      "path": "contents/documents"
+    },
+    {
+      "name": "backup",
+      "path": "contents/code/backup"
+    },
+    {
+      "name": "code",
+      "path": "contents/code"
     }
   ],
-  "settings": {}
+  "settings": {
+    "todo-tree.general.tags": ["NOTE"],
+    "todo-tree.highlights.customHighlight": {
+      "NOTE": {}
+    }
+  }
 }
