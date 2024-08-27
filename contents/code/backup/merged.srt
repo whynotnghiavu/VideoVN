@@ -1,980 +1,4299 @@
 @@@
 1
-00:00:00,480 --> 00:00:14,830
-‫Hello and welcome. ‫Thank you very much us for enrolling in this course. ‫I hope you will benefit from this course very much, and I am very excited about our journey forward, ‫journey forward.
+00:00:00,590 --> 00:00:02,430
+Hi and welcome to the course.
 
 2
-00:00:15,900 --> 00:00:37,110
-‫So I have devoted this course in several section. ‫The first section we will contain this introduction video only in the second section we will discuss ‫over some basic things like that, proper positioning, how that task typing AAPS, how group practice ‫more effectively.
+00:00:02,450 --> 00:00:08,230
+My name's Ian stables author of more than 50 books on Amazon Kindle.
 
 3
-00:00:37,500 --> 00:00:51,420
-‫And at the third section, will you and who are practicing? ‫We will start griping by their test typing method. ‫First we learned their task typing of all the letters from it to J.
+00:00:08,540 --> 00:00:16,190
+If you learn and practice everything in this course you will be able to complete any typing task in
 
 4
-00:00:51,900 --> 00:01:03,570
-‫Then we will go further to the numerical gives special characters and the number pad. ‫We will follow more liberal methods of practicing to get the most out of discourse.
+00:00:16,190 --> 00:00:17,720
+far less time.
 
 5
-00:01:04,960 --> 00:01:22,920
-‫The final section is about the shortcut. ‫Yes, we will learn a word, some super useful shortcut keys that ox almost every hired. ‫These keyboard shortcuts will help us to boost our productivity by saving their time we do in the mouse ‫and the keyboard.
-
-
-@@@
-1
-00:00:00,450 --> 00:00:21,560
-‫Let's discuss the method of piping. ‫There are two methods of piping. ‫The first one is fast typing. ‫Who is? ‫We are going to learn in discourse in this method on Berson can type without looking at the keyboard ‫or without even thinking about the positions of the keys.
-
-2
-00:00:22,690 --> 00:00:33,670
-‫The second method is hand and big typing. ‫If you don't know pass typing, then you may be following this method. ‫I used to do that a few years back.
-
-3
-00:00:34,600 --> 00:00:48,370
-‫Most of the people usually use two fingers to type in this method there. ‫So it also called the cool finger method. ‫You will need to look at the keyboard whose has the location of the key.
-
-4
-00:00:48,880 --> 00:01:06,370
-‫Then you need to proceed first hand, then base anyway. ‫In this hard and fixed method, your speed will be a maximum of 30 hours per minute. ‫Of course, it will have some exceptions.
-
-5
-00:01:07,180 --> 00:01:28,930
-‫Some may be able to type faster than that, but it is rare. ‫However, in dust typing you can get a speed up. ‫Up to 100 endures by minute. ‫So if you type tidiest per minute, then a 300 or email will take you 10 minutes to write.
+00:00:17,810 --> 00:00:21,980
+It will be a skill that you will have for life.
 
 6
-00:01:30,130 --> 00:01:43,450
-‫But if you can type guys as fast, that means at 60 hours per minute, which is pretty easy to achieve ‫in does typing, then you can write the email in five minutes.
+00:00:21,980 --> 00:00:24,550
+This will be good for you in your job.
 
 7
-00:01:44,500 --> 00:02:13,380
-‫There's a lot of money saved if you write a lot of emails. ‫But other than the fact that it increases the speed of typing, I think the most important aspect is ‫that you would not need to think about the case high typing so you can dynamically put your tarps down ‫as they come to you, just like you do when you write by hand.
+00:00:25,550 --> 00:00:28,780
+Most jobs and companies these days use computers.
 
 8
-00:02:13,860 --> 00:02:26,970
-‫It will definitely help you to think effectively because of the lives distraction. ‫If you are a blogger or a programmer, it can be a great skill to increase your productivity and efficiency.
-
-
-@@@
-1
-00:00:00,940 --> 00:00:15,290
-‫Attorney, they're stepping through muscle memory. ‫It develops through repetition. ‫When you do the same model task again and again, it gets to blend into your memory.
-
-2
-00:00:16,150 --> 00:00:29,150
-‫That muscle memory is long gone. ‫So if you can develop muscle memory, you're not going to forget it anytime soon. ‫But at first, it would not be easy to get muscle memory.
-
-3
-00:00:29,600 --> 00:00:42,620
-‫It will be challenging. ‫Mark, eventually with depredations, you will be able to perform that test with little or no conscious ‫effort. ‫It will happen spontaneously.
-
-4
-00:00:43,340 --> 00:01:01,620
-‫You don't have to give attention to that task at that time. ‫Take bicycle riding as an example. ‫Riding a bicycle walks through the muscle memory. ‫It takes some time and practice to learn to ride the bicycle for the first time.
-
-5
-00:01:02,490 --> 00:01:15,190
-‫But also, you have learned it. ‫You are not going to forget it. ‫I had learned to ride a bicycle when I was seven. ‫After a few years, my bicycle goddamnedest.
-
-6
-00:01:15,780 --> 00:01:29,700
-‫So I didn't have ride a bicycle for five to six years later that year. ‫I went on a bicycle ride with my friends. ‫At first it felt a little weird and I was uncomfortable.
-
-7
-00:01:30,700 --> 00:01:42,950
-‫Mark, we did a few minutes. ‫I could just write perfectly. ‫And as I have already said, learning does, typing and riding the bicycle is almost the same.
-
-8
-00:01:43,850 --> 00:01:56,810
-‫They both are the same. ‫A through muscle memory. ‫It is some effort and practice to learn it. ‫But when you develop days skill, you can use it your whole life.
+00:00:28,790 --> 00:00:34,230
+And if you can do your typing in less time that's gonna be more productive for you.
 
 9
-00:01:57,730 --> 00:02:10,800
-‫And while practicing, eventually, it will get easier to do till it gets completely effortless. ‫So the entire census of this course will depend on your practicing.
+00:00:34,240 --> 00:00:40,910
+Also if you're a student naturally there's a lot of written work for students so that will speed up
 
 10
-00:02:11,470 --> 00:02:27,380
-‫If you don't practice enough, no matter how hard they try, it will not. ‫So my request will be back this everyday. ‫Give some time to develop this skill, and within a few days, it will be easy.
-
-
-@@@
-1
-00:00:00,330 --> 00:00:16,140
-‫We need to fix her posture before we start learning. ‫That's typing. ‫Otherwise, it only easy to get the most out copy from our practicing. ‫And also, you may suffer from back pain and wrist pain.
-
-2
-00:00:17,530 --> 00:00:32,020
-‫Although some of us used to sit like this and like this guy also. ‫Honestly, I do this sometimes. ‫There are so many rules and regulations about how to sit on the chair properly.
-
-3
-00:00:32,590 --> 00:00:47,710
-‫But we are not going to follow all of this because we don't need to do that. ‫However, there are some essential rules that we will follow because if we don't, that will affect ‫our learning process.
-
-4
-00:00:48,650 --> 00:01:01,880
-‫So let's talk about some of those rules. ‫We need to follow while practicing their typing, this is the ideal position for setting that angle ‫between your back and your leg.
-
-5
-00:01:01,910 --> 00:01:30,660
-‫Should be around 100 degrees. ‫Although you can win back a little like this guy, but not like this guy here. ‫They're top of their skin and your eye should be on the same horizontal plane, your eyes should be ‫able to view their skin comfortably without having to a jet plane or turn your neck or your eyes.
-
-6
-00:01:31,830 --> 00:01:45,730
-‫The most important part is the position of the hand while sitting the height of the desk should be slightly ‫lower than the hand level. ‫Your palm of the hand should not touch anything.
-
-7
-00:01:47,270 --> 00:01:59,360
-‫It should be hanging on the air like the first picture, he raised taxes their desk. ‫It wouldn't be comfortable to pass type. ‫So this is it for this later.
-
-
-@@@
-1
-00:00:00,780 --> 00:00:17,220
-‫If he was her son online, you will get multiple calls, both online and offline group practice that's ‫typing, all of them has some advantages and disadvantages over others in this lecture.
-
-2
-00:00:17,370 --> 00:00:40,660
-‫We are going to use a tool named Kipton. ‫They deal with I double P and then. ‫So this is the tool. ‫And you can download it or you can practice online for discourse.
-
-3
-00:00:40,960 --> 00:00:54,140
-‫I am going to download it here. ‫You can find this hot-air passion. ‫It is available for Windows, Linux or Mac. ‫So click here, download now for free.
-
-4
-00:00:54,740 --> 00:01:09,170
-‫The first one is for Windows. ‫Second one is also following those, but it is portable Caledonius for Mac OS and Forten is for Windows ‫and the last one is for Linux.
-
-5
-00:01:10,850 --> 00:01:26,580
-‫So you can download it travelling to your device you are using. ‫I'm on a nice machine, so I'm going to use the windows. ‫So let's click it here. ‫You can also download the portable on if you like.
-
-6
-00:01:27,200 --> 00:01:45,290
-‫So it downloads automatically and here we need to install it now. ‫No SoBe minute by clicking it paran the langurs will be English. ‫Ah, if you want to learn German you can also click that part.
-
-7
-00:01:45,590 --> 00:02:05,560
-‫In this course we are going to learn English typing. ‫So let's click. ‫OK ‫then click. ‫They said the agreement. ‫I'm going to take this because I own this desktop icon and in St..
-
-8
-00:02:11,480 --> 00:02:22,320
-‫So this is the day stop and that app that is created here is just click it and open it. ‫So this is where you come, this plan if you don't want to see it.
-
-9
-00:02:22,580 --> 00:02:34,010
-‫You can just click this. ‫So in that way, you will not ever see this again. ‫And head this is showing the home games. ‫And here some games seem to follow.
-
-10
-00:02:34,280 --> 00:02:48,220
-‫So I'm going to adjust to Landstar app and head. ‫It is. ‫You can also maximizers and in the next day. ‫We are going to learn what the settings of this app.
-
-
-@@@
-1
-00:00:00,270 --> 00:00:13,120
-‫Now, let's talk about the settings and user interface of this app named Deep Tim. ‫So at the left side, there are some lessors is less on Gardane, some characters.
-
-2
-00:00:13,420 --> 00:00:27,470
-‫And we are going to learn these characters in that particular Lissa's. ‫So let's go to the first lesson, which is the home key lessons. ‫Just click the start training button and the right bottom corner.
-
-3
-00:00:29,210 --> 00:00:42,170
-‫And here is this. ‫We need to press the Espers bar to start the typing, and in here there is a demarcation line between ‫the keyboard quizzes dividing the keyboard into two 1/2.
-
-4
-00:00:42,580 --> 00:00:57,880
-‫The lid part of this line will be tied by left hand, and the right part of this line will be typed ‫by right hand. ‫And as you can see here, this is D and F and also anti gay.
-
-5
-00:00:58,320 --> 00:01:11,840
-‫And this typing has a color about them. ‫So this at the home, kiss your little finger up your left hand should be able to a then 13 finger will ‫be able.
-
-6
-00:01:11,990 --> 00:01:23,690
-‫Is middle finger will be. ‫It will be. ‫And index finger will be able if same applied to take a L and the semicolon in this of the right hand ‫will be on the G.
-
-7
-00:01:23,720 --> 00:01:35,720
-‫The next turn will be on K then in and in say Ricola here. ‫Both Tom will be able. ‫This was back at the bottom that is showing some instruction ratios take home rule position.
-
-8
-00:01:36,290 --> 00:01:51,500
-‫That means you need to position the hands properly. ‫Then if I praise the spacebar by the time. ‫Now Haridas and at the top, the characters we are going to type is showing and the respective character ‫is being highlighted on the keyboard.
-
-9
-00:01:51,650 --> 00:02:03,580
-‫Now it is it has a background color now and at the instruction bar it is showing his finger to use. ‫So it is nurturing left little finger so that it will be tight.
-
-10
-00:02:03,680 --> 00:02:20,130
-‫My left little finger. ‫Then the next turn. ‫Next drawn and also space take in like that. ‫And if you do any mistake in this typing process, you do not get forward until when we pressed the ‫right key.
+00:00:40,910 --> 00:00:42,150
+that for you.
 
 11
-00:02:20,150 --> 00:02:32,370
-‫It will hold. ‫Now only because the right key. ‫It will go for. ‫You can also posit are when they're typewriting will be finished. ‫It will say adolescence.
+00:00:42,260 --> 00:00:49,940
+If you're an author as I am and write books yourself you will be able to find that your complete your
 
 12
-00:02:33,300 --> 00:02:41,520
-‫And if you're on to a zit, listeners are. ‫It will as to be sheer. ‫And then if you're on the set, the reserves are not. ‫So if you want to say click.
+00:00:49,940 --> 00:00:55,800
+books in far less time by learning to type.
 
 13
-00:02:41,520 --> 00:02:50,550
-‫Yes. ‫Otherwise, no, no. ‫At the right sage, you can select the duration of the list. ‫I'll see you on practice so you can either select their time limit.
+00:00:55,820 --> 00:00:59,040
+So what do most people do when they type.
 
 14
-00:02:50,610 --> 00:03:01,530
-‫The minimum time limit will be two minutes and you can also say that character limit. ‫So when the character limits will be X's, this on the lesson will be finished.
+00:00:59,060 --> 00:01:01,350
+Most people just use two fingers.
 
 15
-00:03:02,160 --> 00:03:18,860
-‫Also, it has a minimum limit up to her neck. ‫Characters. ‫And at the right more time, it considered their response to typing ITRs. ‫We had seen that when we make a mistake, it holds until we type that Korecki.
+00:01:01,400 --> 00:01:07,550
+Well I say most people lots of people probably aren't my actually most people but you know how does
 
 16
-00:03:19,400 --> 00:03:31,250
-‫But if you take this one correction with backspace, then it will not hold. ‫You need to press makerspace part on them close to the taste. ‫And garroted hard for the beginners.
+00:01:07,550 --> 00:01:11,210
+that compare with touch typing and why should you learn touch typing.
 
 17
-00:03:31,320 --> 00:03:42,670
-‫You to not have selected this because it will make this process harder. ‫You can also select Darlie will signal. ‫And if you made any typing either it will make us sound in there.
+00:01:11,210 --> 00:01:15,860
+Well think about it when you use two fingers that's two fingers when you touch typing eight fingers
 
 18
-00:03:42,680 --> 00:03:56,910
-‫I say there is some eston options. ‫So now we have seen that keyboard was showing itself. ‫So if you just take this, you do not show it anymore. ‫So for beginners, I think it will be better to show the keyboard.
+00:01:16,190 --> 00:01:21,530
+plus when you touch when you're using two fingers quite likely you're looking on the keyboard trying
 
 19
-00:03:57,020 --> 00:04:12,360
-‫And this Clarkie will highlight the respective backgrounds in the two parts. ‫The second often is for home rule. ‫I have seen that the homework is has a line of color iwobi and that fourth option is for left and right.
+00:01:21,530 --> 00:01:23,130
+to find where all the keys are.
 
 20
-00:04:12,380 --> 00:04:25,280
-‫Separation line and perhaps in the instruction at the bottom. ‫So if you just take this, my instruction will not show it anymore. ‫So writing this header is a bar for a beginner.
+00:01:23,300 --> 00:01:28,330
+And that's not only distracting for you from your work that's going to take a lot longer than it is.
 
 21
-00:04:26,180 --> 00:04:36,060
-‫When you are going to be disbarred or get used to the keyboard or bass typing, you can take this all ‫in here. ‫There is this file and general settings.
+00:01:28,460 --> 00:01:34,130
+If you can look up at the screen and look where it is you want and you need to look at and you just
 
 22
-00:04:36,200 --> 00:04:45,790
-‫You can change the font color and the background. ‫And the second option is cool. ‫You can see your Riza's here, so I haven't done any practice dissociate.
+00:01:34,130 --> 00:01:37,120
+type away using your eight fingers on the keyboard.
 
 23
-00:04:46,070 --> 00:04:58,490
-‫So if you do, you can see defined lessons and their time need action, time, duration characters. ‫And Edo's who is fingers has the most of the euro's rate and character per minute.
+00:01:39,310 --> 00:01:48,840
+So how is this course going to teach you touch typing Well it's actually an optimized way of learning.
 
 24
-00:04:59,390 --> 00:05:09,650
-‫You can also see the progress of lessons as a graph in here. ‫You can also see whose characters made most mistake or errors and what is the frequency.
+00:01:49,010 --> 00:01:53,770
+This is essentially based on the latest research on skill learning.
 
 25
-00:05:09,830 --> 00:05:20,710
-‫And these fingers make the most of the mistakes. ‫We also have a comparison table here in this settings. ‫You can see your progress over times. ‫So this is it for this lecture.
+00:01:53,900 --> 00:01:56,770
+And so this course is based on that.
 
+26
+00:01:57,220 --> 00:02:00,060
+And it's essentially easy to follow steps.
+
+27
+00:02:00,130 --> 00:02:09,680
+All you've got to do is learn and apply and practice so let's have a look at how the Course is structured
+
+28
+00:02:09,740 --> 00:02:14,490
+and how you're going to progress through and what you're going to learn as well.
+
+29
+00:02:14,510 --> 00:02:21,230
+So firstly you know we're going to just look at the keyboard you know where the keys are and then we're
+
+30
+00:02:21,230 --> 00:02:24,620
+going to go onto the most important keys.
+
+31
+00:02:24,620 --> 00:02:31,310
+These are called the home keys and also I'm going to show you how to always make sure your hands are
+
+32
+00:02:31,370 --> 00:02:32,430
+on those keys.
+
+33
+00:02:32,600 --> 00:02:38,630
+And without that's without looking at the keyboard too You better do it without looking down.
+
+34
+00:02:38,630 --> 00:02:45,820
+And then we'll also talk about which fingers are used for what keys on the keyboard.
+
+35
+00:02:45,820 --> 00:02:49,500
+Let me be looking at how you need to practice.
+
+36
+00:02:49,500 --> 00:02:57,020
+So remember this is based on not to Mies way of practicing your skill learning is based on research
+
+37
+00:02:57,030 --> 00:02:58,210
+so it works.
+
+38
+00:02:58,210 --> 00:03:01,120
+And I've tested it myself and it really does work.
+
+39
+00:03:01,130 --> 00:03:07,640
+So I've created this course on typing based on that same principle so I'll be showing you what you need
+
+40
+00:03:07,640 --> 00:03:14,120
+to do so that you can practice and get the fastest results with accuracy.
+
+41
+00:03:14,120 --> 00:03:16,780
+So essentially how long you need to practice for.
+
+42
+00:03:17,030 --> 00:03:19,200
+I'll be showing you the accelerator tip.
+
+43
+00:03:19,220 --> 00:03:25,250
+I call it an accelerated chip because it really does accelerate your practice just by doing this simple
+
+44
+00:03:25,250 --> 00:03:26,180
+thing.
+
+45
+00:03:26,180 --> 00:03:26,900
+It really does.
+
+46
+00:03:26,900 --> 00:03:30,030
+I'll be talking to you about that as well.
+
+47
+00:03:30,190 --> 00:03:32,800
+Then you need to know how to practice.
+
+48
+00:03:32,840 --> 00:03:35,970
+So that should be giving you drills to practice on.
+
+49
+00:03:36,080 --> 00:03:43,420
+But first you need to understand what you should do to practice properly with that set.
+
+50
+00:03:43,420 --> 00:03:50,030
+Then once you understand those things then we'll be moving on to the actual practice sessions.
+
+51
+00:03:50,080 --> 00:03:52,650
+So we start with the most important keys.
+
+52
+00:03:52,660 --> 00:04:01,180
+The home keys and in here you'll find and talk about each pair of keys at a time and quickly demonstrate
+
+53
+00:04:01,510 --> 00:04:05,030
+where you would need to put those and then how you would practice.
+
+54
+00:04:05,350 --> 00:04:13,180
+And after the home keys we move on to the other keys as well so you know the top row the bottom row
+
+55
+00:04:13,390 --> 00:04:13,990
+as well.
+
+56
+00:04:13,990 --> 00:04:20,260
+After that the end of these sections as well I'll be giving you downloadable practice sheets so you'll
+
+57
+00:04:20,260 --> 00:04:27,130
+find at the end of the each of these sections there will be a short video and then how to get those
+
+58
+00:04:27,130 --> 00:04:33,490
+practice sheets to practice with after you've got the letters practice because that's what we're doing
+
+59
+00:04:33,490 --> 00:04:33,640
+here.
+
+60
+00:04:33,640 --> 00:04:36,310
+Letters then we'll be learning the numbers.
+
+61
+00:04:36,310 --> 00:04:42,750
+So of course naturally most typing tasks you won't be doing a lot of numbers and thus doing data entry.
+
+62
+00:04:43,550 --> 00:04:46,730
+However you know there will be times when you need to type numbers.
+
+63
+00:04:46,760 --> 00:04:51,980
+So again you can do that without looking down at the keyboard every time you're going to save a lot
+
+64
+00:04:51,980 --> 00:04:52,690
+of time.
+
+65
+00:04:52,700 --> 00:05:00,990
+So we talk you know giving you again drills to learn all the numbers on the top row on your keyboard.
+
+66
+00:05:01,190 --> 00:05:06,510
+And again as a practice sheet at the end of that section so you can practice that as well.
+
+67
+00:05:07,330 --> 00:05:07,640
+OK.
+
+68
+00:05:07,640 --> 00:05:16,490
+After the numbers were we talking about three important keys and how to practice those.
+
+69
+00:05:16,530 --> 00:05:20,230
+So essentially there's gonna be capital letters.
+
+70
+00:05:20,230 --> 00:05:26,550
+OK that's one of the keys that you'll be learning in this part and I'll be showing you the really easy
+
+71
+00:05:26,550 --> 00:05:34,200
+way to learn and prepare to practice typing capital letters without again looking at your keyboard because
+
+72
+00:05:34,200 --> 00:05:41,070
+that's what all was what touch typing is about when we've done all of that on your practice and learn
+
+73
+00:05:41,070 --> 00:05:42,750
+all the keys and you can do everything.
+
+74
+00:05:42,870 --> 00:05:47,760
+By this time you will be at its height all the keys and numbers will note looking at your keyboard and
+
+75
+00:05:47,760 --> 00:05:52,950
+then we'll be talking about how you go on to improve your speed.
+
+76
+00:05:52,950 --> 00:05:55,260
+So that's essentially what it is.
+
+77
+00:05:55,290 --> 00:05:59,240
+So you don't get into the course and learn and follow the drills.
+
+78
+00:05:59,250 --> 00:06:05,160
+Remember you must practice there's no point in just watching the course and then expecting results.
+
+79
+00:06:05,230 --> 00:06:10,860
+You know it's a skill it's like driving a car at no point learning how to drive a car you need to actually
+
+80
+00:06:10,860 --> 00:06:15,410
+get in the car and it's the same with typing it's like everything else and the more you do it the better
+
+81
+00:06:16,280 --> 00:06:19,260
+you will be and the faster you will be OK.
+
+82
+00:06:19,260 --> 00:06:23,850
+No I really do my age limit i want to make sure that you really do learn this skill so if there's any
+
+83
+00:06:23,850 --> 00:06:29,580
+questions or anything you're struggling a little bit with or anything like that on the dashboard you'll
+
+84
+00:06:29,580 --> 00:06:36,000
+notice here there's a Q and A section just click on that and you can add a question here and know what
+
+85
+00:06:36,000 --> 00:06:37,270
+it is I will respond.
+
+86
+00:06:37,400 --> 00:06:43,510
+I may not be straight away and some on my computer at the time but as soon as I check my questions of
+
+87
+00:06:43,530 --> 00:06:49,320
+I see that you put a question in there I will respond as quick as I possibly can.
+
+88
+00:06:49,330 --> 00:06:54,930
+Now what I'd like to add here as well hopefully I've done this I spent lots of time on this course making
+
+89
+00:06:54,930 --> 00:06:59,880
+sure that it is designed to give you the best results possible.
+
+90
+00:06:59,880 --> 00:07:05,850
+If however there's something that you think could be improved or you'd like something added to the course
+
+91
+00:07:05,850 --> 00:07:12,390
+something extra you know please let me know about it by popping a question here in the Q and A section
+
+92
+00:07:12,390 --> 00:07:18,450
+in the course and I'll get back to you if you like the course as well you know be lovely if you leave
+
+93
+00:07:18,450 --> 00:07:24,600
+a review doesn't need to be you know a lot of words just a few words will do and just let everybody
+
+94
+00:07:24,600 --> 00:07:30,810
+else know that you've also enjoyed the course now it's up to you when if and when you do that review
+
+95
+00:07:31,100 --> 00:07:35,850
+I probably suggest though you wait until you get to the end of the course before you leave your review
+
+96
+00:07:36,000 --> 00:07:39,520
+because then you will know you know you would have seen the whole course.
+
+97
+00:07:40,130 --> 00:07:43,860
+OK so with that let's get on with the first lecture.
 
 @@@
 1
-00:00:02,950 --> 00:00:21,610
-‫In this letter, I have got some important points that you need to remember while practicing. ‫So the first step is. ‫Always place your fingers in the home position and after placing a key of another rule or defined position.
+00:00:01,480 --> 00:00:09,370
+This is a standard keyboard that you're likely to find on most computers and laptops.
 
 2
-00:00:21,700 --> 00:00:35,290
-‫Make sure that your fingers return back to the home position. ‫It is very important, especially when you are just starting out. ‫It will be very difficult to do that, but you have to do that anyway.
+00:00:09,370 --> 00:00:15,370
+It's known as the quality keyboard because of the arrangement of the keys.
 
 3
-00:00:36,450 --> 00:00:52,390
-‫You need to unlearn everything you have been doing. ‫I was typing before, the second point is ever heard. ‫Looking at the keyboard. ‫At first, you will have the desire to look at the keyboard while pressing a key, but don't do that.
+00:00:15,370 --> 00:00:24,230
+So if you look on the top left keys here letter keys you'll see it spells quality q w e r t y.
 
 4
-00:00:52,630 --> 00:01:07,470
-‫Don't look at the keyboard, gives the position of the key. ‫Then proceed to appear strong. ‫Then do that again until you called the right key. ‫Keeping their fingers in home position will help you to do that.
+00:00:24,280 --> 00:00:30,220
+Now you might say well why didn't they design a keyboard worse and you know it goes in like a b c d
 
 5
-00:01:08,440 --> 00:01:28,220
-‫That if and Zaky has a slight impression on it, you can feel it by touching both both your index finger ‫on those keys. ‫It will help you to keep your fingers in Homero position and most importantly, ignore their desire ‫to look down at the keyboard.
+00:00:30,220 --> 00:00:33,490
+e f g and so on through the alphabet.
 
 6
-00:01:28,790 --> 00:01:45,440
-‫Always look at the monitor. ‫The heartburn is Gabe importance on accuracy rather than is paid while you are just starting out. ‫Gone crash to die faster, it will happen automatically.
+00:00:33,490 --> 00:00:37,810
+Well originally when keyboards were first designed.
 
 7
-00:01:46,480 --> 00:02:04,110
-‫Just try to do it slowly and keep your ears in a minimum with times you can in case they speed up your ‫typing. ‫And even if you are in a hurry and you haven't learned typing properly yet.
+00:00:38,650 --> 00:00:48,130
+If the person was able to type too fast the keys used to get jammed because in the old style typewriters
 
 8
-00:02:04,990 --> 00:02:17,400
-‫On. ‫We've heard back to the way you used to type. ‫Take your time and do it by duct taping. ‫Otherwise, it will affect your muscle memory and we don't want that to happen.
+00:00:48,490 --> 00:00:55,150
+you had the keys where they would all go into the center that used metal arms would go up with each
 
 9
-00:02:20,260 --> 00:02:34,330
-‫Almost try to remain relaxed while practicing. ‫Keep your shoulder and hand muscles relaxed. ‫Try to practice at the appropriate time. ‫You can practice after just waking up at the time.
+00:00:55,150 --> 00:01:03,070
+letter on and off some most to type too quick those letters would become jammed so they decided to change
 
 10
-00:02:34,540 --> 00:02:51,760
-‫The brain will be relaxed. ‫Keep your practice sessions chart and take pick between your practice sessions. ‫If you follow these rules, I think it will be benefited Pyramus and within a week you will be able ‫to type without looking at the keyboard.
-
-
-@@@
-1
-00:00:00,480 --> 00:00:12,780
-‫Hello and welcome to this complete new lecture. ‫And from this later, we are going to start our practicing process in this lecture. ‫We are going to go about our home kiss.
-
-2
-00:00:13,380 --> 00:00:30,610
-‫There are eight home guests total for live 10. ‫It will be A is D and F, and for the right hand, it will be G, K, L and the semicolon. ‫So your left little finger will be on the letter A..
-
-3
-00:00:30,820 --> 00:00:47,980
-‫The ring finger will be on. ‫Is the middle finger will be on. ‫B an index finger will be on. ‫If this if he has a slight impatient on that. ‫And according to this you can position your fingers perfectly on the home key.
-
-4
-00:00:49,340 --> 00:01:11,000
-‫And because of the right side of this keyboard. ‫That Takeyh has a slight impression on it. ‫So you can put your index finger up your right hand on the day and the next finger collectively on gay ‫IL and the semicolon, your bull, Tom, will be on the Espers bar.
-
-5
-00:01:11,510 --> 00:01:32,470
-‫Now, as we have already learned about the homegirls, let's go to the practicing. ‫So this is our Teplin app. ‫I am going to open that. ‫Lance stepped in and now we are going to finish this lesson on so let's select the listen on, then ‫click the start training.
-
-6
-00:01:33,920 --> 00:01:48,510
-‫And this is it. ‫So at first you need to put your hand in the home position. ‫Let's do that and then press the experts. ‫But you don't need to move any of your fingers because this is the home case.
-
-7
-00:01:48,590 --> 00:02:06,230
-‫So you just need to press the respective case without moving your fingers. ‫And this lesson is very important because if you don't know the home case properly, then it will be ‫very difficult for you to practice either case.
-
-8
-00:02:07,250 --> 00:02:26,220
-‫So let's say I started practicing. ‫As you can see here, you can see their respective highlighted case. ‫And it took place. ‫And if you make any laws like that, you do not move forward.
-
-9
-00:02:26,290 --> 00:02:42,150
-‫So in the top is the right key. ‫Then move on to the next. ‫Like, when you have finished practicing medicine, it will automatically exists and you can see there ‫is ours in here.
-
-10
-00:02:43,730 --> 00:03:00,350
-‫Mark, I'm not going to complete all the lessons if I do that, it will be very lonely. ‫So when you are just starting. ‫I prefer to keep this time limit to five minutes or you can also keep that character limit yourself ‫five Nick and others.
+00:01:03,070 --> 00:01:06,230
+the keyboard to what we see today.
 
 11
-00:03:00,380 --> 00:03:17,930
-‫Keep in mind that you need to focus on that accuracy. ‫So don't make Koumas Edo's at first. ‫It will be slightly slow. ‫You need to remember wisky are on his fingers, but it will be okay over times.
+00:01:06,310 --> 00:01:15,430
+The Corti keyboard so that that stopped people being able to type too fast and therefore not jamming
 
 12
-00:03:19,270 --> 00:03:39,940
-‫When you finish on lesson, there would been take sign in this arrow here. ‫So if you practiced five times a day, five days. ‫So you need to practice at least five times, either using five minutes or 500 characters to move on ‫to the next lecture when you will be enough confident about this home Rose.
+00:01:15,430 --> 00:01:21,710
+the keys on the typewriter but we're now stuck with this form of keyboard.
 
 13
-00:03:40,090 --> 00:03:49,050
-‫Then you can move on to the next letter. ‫But before that. ‫Keep practicing. ‫So best of luck, guys. ‫Keep practicing. ‫And see you in the next lecture.
+00:01:21,730 --> 00:01:27,220
+There are other keyboards out there but this is the normal keyboard arrangement that you're gonna have
 
+14
+00:01:27,220 --> 00:01:31,280
+for the letters and you can still type very very very fast on it.
+
+15
+00:01:31,540 --> 00:01:39,370
+OK so the keys on here the ones that you're gonna be typing the most are essentially going to be these
+
+16
+00:01:39,760 --> 00:01:42,390
+so you can see all of the letters here.
+
+17
+00:01:42,400 --> 00:01:48,460
+You're gonna be typing along with a code on here you're going to be typing using these keys here across
+
+18
+00:01:48,460 --> 00:01:53,300
+the bottom of course also the shift keys.
+
+19
+00:01:53,300 --> 00:01:58,190
+No you don't already know the shift key is the one where you press hope to hold it down.
+
+20
+00:01:58,380 --> 00:02:02,140
+And then if you type a letter it makes it a capital letter.
+
+21
+00:02:02,540 --> 00:02:06,750
+And if you're trying to get a call on say here is the same you call on call on.
+
+22
+00:02:07,310 --> 00:02:10,180
+If you just type it it will give you a call semicolon.
+
+23
+00:02:10,500 --> 00:02:16,920
+If you want to call on which is above this one you hold the Shift key down first and then press it and
+
+24
+00:02:16,920 --> 00:02:23,310
+it will give you the code long to normally find that when those keys you'll find different things above
+
+25
+00:02:23,310 --> 00:02:30,030
+and below the keys to get the one above you would hold down the shift key first and get up on the course
+
+26
+00:02:30,030 --> 00:02:32,890
+the enter key here or the return key.
+
+27
+00:02:33,000 --> 00:02:39,990
+And so what you refer to it only that one is what gives you a new line so if you try typing and you
+
+28
+00:02:39,990 --> 00:02:45,540
+finish a paragraph and you want to come down you'd press to enter key and that would then give you a
+
+29
+00:02:45,540 --> 00:02:49,260
+new line depending on your line spacing on your computer.
+
+30
+00:02:49,260 --> 00:02:54,150
+Normally if it's one single line spacing you press the Enter key twice.
+
+31
+00:02:54,240 --> 00:02:59,980
+So that would put a space between the next paragraph on the previous one.
+
+32
+00:03:00,540 --> 00:03:06,330
+So those are the main keys that we're going to focus on in this course because let's face it unless
+
+33
+00:03:06,360 --> 00:03:12,300
+you're doing data entry lots of figures and numbers and numbers are not going to be used as frequently
+
+34
+00:03:12,300 --> 00:03:13,800
+as what the letters are.
+
+35
+00:03:13,800 --> 00:03:16,150
+So that's what we're mean you're going to focus on here.
+
+36
+00:03:16,190 --> 00:03:19,060
+Now if you'll notice all the numbers are across the top.
+
+37
+00:03:19,560 --> 00:03:22,740
+And you know so that's where you'll find your numbers.
+
+38
+00:03:22,740 --> 00:03:29,820
+Now some key keyboards like this one and also like mine on my laptop will have a key part over here
+
+39
+00:03:29,820 --> 00:03:31,700
+on the right hand side.
+
+40
+00:03:31,800 --> 00:03:36,690
+So if you are doing something where are you required to type blocks and dots and numbers in or like
+
+41
+00:03:36,690 --> 00:03:43,140
+data entry or something like that then it's probably suggested that you would use the key part instead
+
+42
+00:03:43,140 --> 00:03:49,710
+of this because the if you practice and learn how to use the keyboard you can type the numbers a lot
+
+43
+00:03:49,710 --> 00:03:54,150
+quicker than what you were trying to use your these keys at the top.
+
+44
+00:03:54,630 --> 00:04:00,450
+However in normal typing you will be called upon to do where you will put the use the numbers where
+
+45
+00:04:00,540 --> 00:04:05,660
+for example you would type a date or a year or something like that then you'll be using the numbers.
+
+46
+00:04:05,730 --> 00:04:10,980
+Now I'm not going to focus on those too much at the beginning I'm just going to get you proficient at
+
+47
+00:04:10,980 --> 00:04:17,370
+using all of these keys here and read the numbers you can get those later on and when you do need a
+
+48
+00:04:17,370 --> 00:04:20,650
+number which will be far and few between.
+
+49
+00:04:20,680 --> 00:04:25,390
+At first you may well have to keep looking down at your keyboard to find those keys.
+
+50
+00:04:25,500 --> 00:04:30,850
+But on this course we're going to focus on just using these keys and getting you proficient so that
+
+51
+00:04:30,900 --> 00:04:34,340
+you're able to type them without looking at a keyboard.
+
+52
+00:04:34,350 --> 00:04:39,470
+And later on you'll be at to even without thinking you'll see a word and just type it think a bit the
+
+53
+00:04:39,470 --> 00:04:46,200
+more the more you practice than the easier it's gonna become and the less thinking you'll need to do
+
+54
+00:04:46,290 --> 00:04:47,460
+when you're actually typing.
+
+55
+00:04:47,460 --> 00:04:54,270
+So it's like when you learn to drive first you'll be thinking of is a manual control car with gears
+
+56
+00:04:55,200 --> 00:05:00,030
+then you're probably at first when you start to drive you'll be looking at you know where the gears
+
+57
+00:05:00,030 --> 00:05:05,880
+are which borders the clutches or the brake is an accelerator and so on.
+
+58
+00:05:06,480 --> 00:05:11,460
+And it's only then after practice when you keep doing it over and over again you'll be able to eventually
+
+59
+00:05:12,210 --> 00:05:17,190
+be able to drive your car without even thinking about where it appears horror who you thought you'd
+
+60
+00:05:17,220 --> 00:05:19,600
+be changing gears without even thinking about it.
+
+61
+00:05:20,090 --> 00:05:21,860
+And it's the same with typing.
+
+62
+00:05:22,050 --> 00:05:27,390
+The more that you do it more practice that you get you'll find that you'll be able to eventually just
+
+63
+00:05:27,390 --> 00:05:30,660
+type words without thinking about where the keys are.
+
+64
+00:05:30,660 --> 00:05:32,130
+So with that let's move on.
 
 @@@
 1
-00:00:00,180 --> 00:00:14,240
-‫Hello, guys. ‫Welcome. ‫So how old are. ‫Practicing of the home kids? ‫Honestly, I have tried ons using 200 characters. ‫And this is that is art. ‫I've got 43 points.
+00:00:01,260 --> 00:00:08,400
+Now I'm going to teach you something and this is very valuable and it's very important as well.
 
 2
-00:00:15,430 --> 00:00:31,630
-‫They split us 200 builds character per minute, and there was five typing errors so that it'll take ‫us two percent. ‫I'm sure that many of you have got more points and less heroes by practicing.
+00:00:08,710 --> 00:00:12,020
+So on the key board there are these eight keys.
 
 3
-00:00:31,890 --> 00:00:50,970
-‫So please put your points in their discussion section below the letter so you can compare each other ‫and it will be real fun. ‫So let's move on to the next two characters who each R, E and all their Skellig this and click start ‫training.
+00:00:12,040 --> 00:00:15,600
+These keys are known as the home keys.
 
 4
-00:00:52,930 --> 00:01:11,110
-‫This is it, the E and or key are the envelope rule of the home case in we to use your left middle finger ‫to press E and writing finger to place or the other fingers will remain on the home positions.
+00:00:15,620 --> 00:00:21,340
+The reason for that is because that is the position that day four fingers on your left hand on your
 
 5
-00:01:11,470 --> 00:01:27,130
-‫Just extend the right ring finger to reach or. ‫And extend your left middle finger to this e the other kids who remain in the same position, do not ‫move them.
+00:00:21,340 --> 00:00:24,140
+right hand should always start from.
 
 6
-00:01:29,480 --> 00:01:42,170
-‫And in case up deep down is listen will contain everything of the previous lessons, so it will be great ‫because in that way you can revise your previous lessons.
+00:00:24,340 --> 00:00:29,980
+Because then from that position it means you will then know where all of the other keys are from that
 
 7
-00:01:42,320 --> 00:01:54,830
-‫And the more you go to the bottom of this practice list, the more you will get used to that task typing. ‫So let's practice and practice as a minimum of five times.
-
-
-@@@
-1
-00:00:00,960 --> 00:00:19,140
-‫Hello and welcome. ‫So how was your practice in the previous lesson? ‫I applied to it to our new characters. ‫And this is my result. ‫I scored 17 points at typing speed out on written down character by minute with two typing errors.
-
-2
-00:00:20,880 --> 00:00:35,590
-‫Don't forget to put your points in the discussion section so you can compare with each other. ‫Now, let's move on to the next lesson. ‫And in this lesson, we are going to cover the and I.
-
-3
-00:00:38,580 --> 00:00:56,040
-‫So this is the hard lesson. ‫Let's start their training. ‫And this is it. ‫So in case up D, you need to extend your index finger up your left hand in a slightly angled direction.
-
-4
-00:00:56,700 --> 00:01:11,160
-‫It is not just Apple the F key. ‫So you need to just push a little bit too tightly. ‫And in case of pie, you need to use your right middle finger. ‫So it is just type of dough.
-
-5
-00:01:11,440 --> 00:01:31,750
-‫Okay, so it will be easy. ‫So while practicing, you can pronounce that character loud. ‫If you can are otherwise you can pronounce it silently, then press the key.
-
-
-@@@
-1
-00:00:01,050 --> 00:00:27,450
-‫Hello, guys, welcome to this new letter. ‫So how is your practice going so far? ‫I hope you all are doing great. ‫So in this lecture, we are going to go over to new leaders who are in and are so let's to start their ‫training that both leaders in an hour will be typed using the index finger of our both hand.
-
-2
-00:00:28,440 --> 00:00:42,630
-‫So it gives up. ‫We are going to use the index finger of left hand and it gives up in we are going to use the index finger ‫of our right hand. ‫So this is the composition of the index finger of the left hand.
-
-3
-00:00:42,840 --> 00:00:56,550
-‫And it will be extend to the top like this. ‫And that is the. ‫And it gives up. ‫In this is the composition of the index finger of the right hand. ‫And it will be came down.
-
-4
-00:00:56,700 --> 00:01:11,610
-‫And is the end. ‫So let's get started. ‫This is the spacebar to start. ‫Now we can stretch our typing for. ‫We are going to extend our index finger at the top.
-
-5
-00:01:11,790 --> 00:01:22,380
-‫Then press that. ‫Then it will be the normal home key position. ‫Then that in in goes up and take your index finger slightly below. ‫And it will lose the aim.
-
-6
-00:01:22,530 --> 00:01:43,640
-‫And press it then. ‫Is this again home position. ‫And then again in. ‫By using the index finger of your right hand. ‫So let's practice for either 500 characters are four or five minutes for more than five times before ‫moving on to the next lecture.
-
-
-@@@
-1
-00:00:00,990 --> 00:00:16,860
-‫Hello and welcome to this newsletter. ‫And in this lecture, we are going to go over to defend letters who serve A's and see. ‫So this is our fit lessons and this is tied to Jay.
-
-2
-00:00:18,030 --> 00:00:30,320
-‫In case of is, we are going to use the index finger of our right hand. ‫It is going to be pretty easy because the ace key is located on the home rule.
-
-3
-00:00:31,890 --> 00:00:48,990
-‫So we just need to push down the index finger to the left and it will be the ace key. ‫And in case of the sea, it is going to be very difficult because we are going to use the middle finger ‫of the left hand for that.
-
-4
-00:00:50,010 --> 00:01:02,310
-‫And C is located just below there D. ‫So you need to push down your middle finger of your left hand a slide bit. ‫And it will be C. ‫So let's get it started.
-
-5
-00:01:02,640 --> 00:01:17,880
-‫This is Despres were. ‫And here are. ‫So from the home position of the middle finger of the left hand. ‫Let's get a little bit below. ‫And here's the C 10.
-
-6
-00:01:18,140 --> 00:01:32,340
-‫In case of Ace. ‫Take your index finger of the right hand to the left side. ‫And it is the ace. ‫Then I will be just like previous. ‫And again, see Ace.
-
-7
-00:01:32,580 --> 00:01:52,960
-‫And I. ‫So this is it for the lecture and practice at least five times before you move on to the next character's. ‫And don't forget to share your points in the decision section below.
-
-
-@@@
-1
-00:00:02,450 --> 00:00:18,290
-‫Hello and welcome. ‫And in this lecture, we are going to learn some new things like capitalization. ‫Until this later, we only have typed in two small caps, letters, Mark, from this letter.
-
-2
-00:00:18,350 --> 00:00:32,500
-‫We are going to type put a small case and uppercase letters. ‫So this is terror training. ‫And in case of capitalization, we are going to use the shift.
-
-3
-00:00:34,270 --> 00:01:04,650
-‫So when we are going to type any data by using Type 10, we are going to press the right chip by the ‫pinky finger of the right hand. ‫And when we are going to type any letters by using right hand, then we are going to base the live shaped ‫by the pinky finger of left hand.
-
-4
-00:01:05,610 --> 00:01:19,940
-‫So it will be a vice versa. ‫This is the first word to start. ‫And. ‫We are going to hope the tea by our right hand. ‫So we are going to press the left.
-
-5
-00:01:20,110 --> 00:01:36,340
-‫Shaped by the left little finger. ‫At first, less because the shaped by left little finger than peasants. ‫And in case of if we are going to use the index finger of the left hand.
-
-6
-00:01:37,330 --> 00:01:57,430
-‫So we need to appease the right Chimpsky by their right pinky finger. ‫Just because the right shift first then says that if by using your left index, then in case, okay, ‫it will be left pinky finger and like that.
-
-7
-00:02:00,700 --> 00:02:15,490
-‫So is the shape first by the opposite hand. ‫Then there is the key. ‫It will be confusing at first. ‫And you really feel uncomfortable with it, but it will get used to the times.
+00:00:29,980 --> 00:00:32,610
+position but they're actually looking.
 
 8
-00:02:15,580 --> 00:02:29,260
-‫And this is actually a big point in your typing lessons because it is going to be pretty difficult to ‫type in uppercase and piercing the ship. ‫At first you will get confused.
+00:00:32,770 --> 00:00:39,450
+So on the left it's a SDF and on the right it's J K L and semicolon.
 
 9
-00:02:29,290 --> 00:02:44,260
-‫Who is shape to press? ‫So practice more than 10 times in this lecture until you get comfortable with the shape. ‫Tender kiss. ‫Don't move on to the next lecture.
+00:00:39,490 --> 00:00:42,740
+And of course you can get the colon on that as well.
 
 10
-00:02:45,770 --> 00:03:00,790
-‫Now the residual with stuff in their nest. ‫So be careful over that. ‫Finish this later completely. ‫Practice an hour to get comfortable with the capitalization process, then move on to the next lecture.
-
-
-@@@
-1
-00:00:00,780 --> 00:00:12,570
-‫Hello, guys, welcome to this new letter. ‫So how does it go with the capitalization process? ‫I think it is pretty difficult, but try to get it done.
-
-2
-00:00:14,670 --> 00:00:26,770
-‫And please don't follow this letter until you have enough comfortable with the capitalization. ‫Otherwise, it won't be easy to continue their next paychecks.
-
-3
-00:00:28,200 --> 00:00:54,290
-‫So in this letter, we have been took over w both capital and Lorqess and full stop and comma. ‫So let's start the training. ‫But the full list and the Omar will be praised by right hand because of karma.
-
-4
-00:00:54,340 --> 00:01:08,050
-‫It will be the middle finger of the right hand. ‫And in case of Philistine, we deal with the ring finger up your right hand. ‫And both us hesitate. ‫Just the rule below to the home rule.
-
-5
-00:01:08,290 --> 00:01:27,620
-‫So let's start by pressing spacebar. ‫And Haria at first is the right chip key then is DeBlois by your left hand. ‫Then be a little. ‫And now the comma hot there.
-
-6
-00:01:27,980 --> 00:01:40,130
-‫Just use your middle finger of the right hand. ‫Just put it down a little bit and you will get the comma and press it. ‫Then again, Espers Bar and other Ratz.
-
-7
-00:01:40,600 --> 00:01:56,980
-‫Then the fullest up comes further. ‫You need to use the ring finger upper right hand. ‫Also move your thinking air-to-air littered with relo. ‫And this is the fullest up like that.
-
-8
-00:01:57,970 --> 00:02:13,680
-‫So practice work five to 10 times to get comfortable with the capitalization process more. ‫And also with the fullest hope and the karma. ‫So we'll see you in the next lecture.
-
-
-@@@
-1
-00:00:02,070 --> 00:00:14,400
-‫Hello and welcome, everyone, to this new letter. ‫And in this lecture, we are going to learn their test typing of three characters who is A, C, B, ‫and you?
-
-2
-00:00:15,540 --> 00:00:31,410
-‫Although, as you can see here, there are in two separate lessons. ‫But we are going to do it in a lecture anyway because we need to go fast. ‫If we are to learn that as typing within a week.
-
-3
-00:00:32,640 --> 00:00:48,750
-‫So let's first get started with Daddy and I'm going to start the lessons. ‫By clicking start training. ‫And here we're actually in custody. ‫It is pretty easy.
-
-4
-00:00:49,670 --> 00:01:04,910
-‫We are going to use the index finger, upper left hand to preserve the downhome position of the index ‫finger of the left hand is F and the G is situated just at the right side.
-
-5
-00:01:05,900 --> 00:01:20,310
-‫So you need to just. ‫Here in this finger to the right a little bit. ‫And the next key you found is that he. ‫So it is going to be pretty easy for me.
-
-6
-00:01:21,210 --> 00:01:59,190
-‫So let's get started. ‫So this is the. ‫You need to just move on your index finger. ‫Right. ‫A little bit. ‫And you got to t like that. ‫So you need to act is this particular lessons at least five times to move on to the next lesson, which ‫is B and you.
-
-7
-00:02:00,460 --> 00:02:13,060
-‫But I'm going to exit this this unsane area. ‫And I'm going to start the training of the lessons line, which is the. ‫And, you know, their system, their training.
-
-8
-00:02:14,320 --> 00:02:31,850
-‫And Haria. ‫And in this lessons, it will be B and you, both of the characters will be tied by index finger of ‫our both hands. ‫That B will be typed by the index finger of the left hand.
-
-9
-00:02:31,970 --> 00:02:46,210
-‫And it will be typed by the index finger of the right hand. ‫You can type you pretty easily because it is inserted just about Turkey of G, which is the home key ‫of index finger up the right hand.
-
-10
-00:02:47,210 --> 00:03:07,700
-‫But it gives a B it will be pretty difficult since it has a distance from the home killed in this finger ‫of the left hand, which is if so, you need to move your index finger up the left hand a little bit, ‫then to the right and it will get the B and it gives up you.
+00:00:42,940 --> 00:00:47,440
+So I'm not going to show you how you can find those keys without looking because it's quite important
 
 11
-00:03:08,350 --> 00:03:21,440
-‫It is just too easy. ‫Move your index finger of the right hand to the just directly upper Barton of the Jaqui or honkey and ‫it will get you. ‫So let's practice.
+00:00:47,470 --> 00:00:52,840
+because when you're actually typing you don't want to keep looking too so that you can put your your
 
 12
-00:03:23,860 --> 00:03:42,590
-‫Fact is, at least five times before moving to the mess later. ‫And I hope you already have get used to it, this capitalization process. ‫If you don't, then you need to go back to that capitalization lecture and practice, then again and ‫again until you get familiar with it.
+00:00:52,840 --> 00:00:54,970
+fingers back in that position again.
 
 13
-00:03:44,110 --> 00:03:55,960
-‫But I'm sure most of you are trying to parse the shift key with only on hand. ‫And every time my gonna do that, I always put the ship with the opposite key.
+00:00:55,000 --> 00:00:56,890
+So it is a really easy way of doing it.
 
+14
+00:00:57,730 --> 00:01:01,920
+So there's these two keys here the F and the J.
+
+15
+00:01:02,270 --> 00:01:11,080
+Your essentially on your left hand index finger goes on the F and your right hand index finger goes
+
+16
+00:01:11,080 --> 00:01:13,410
+on the J.
+
+17
+00:01:13,740 --> 00:01:18,920
+So how to find that without even looking is on each of these keys.
+
+18
+00:01:18,930 --> 00:01:24,630
+There is a little protrusion little lump that you'll feel when you touch these keys so what you do what
+
+19
+00:01:24,630 --> 00:01:25,420
+you want.
+
+20
+00:01:25,420 --> 00:01:31,860
+What I want you to do now is get your left index finger and put it on the FCC and then your right index
+
+21
+00:01:31,860 --> 00:01:36,800
+finger place that on the J key and I want you to feel that lump on the key.
+
+22
+00:01:36,990 --> 00:01:38,100
+OK.
+
+23
+00:01:38,250 --> 00:01:47,820
+No do that now know when your key your fingers are correctly positioned on those two keys.
+
+24
+00:01:48,040 --> 00:01:55,330
+Your other three fingers will be there incorrectly positioned above the other home keys.
+
+25
+00:01:55,480 --> 00:02:01,610
+So with your left index finger on the F you'll notice that your big finger will be on the D.
+
+26
+00:02:01,630 --> 00:02:09,790
+Your ring finger on the s and your a little finger will be on the a similarly with the right hand your
+
+27
+00:02:09,790 --> 00:02:12,190
+index finger will be on the J.
+
+28
+00:02:12,850 --> 00:02:18,070
+Your long finger Longest Finger bill on the K during finger on the L on your little finger of course
+
+29
+00:02:18,130 --> 00:02:22,290
+on where there's a semicolon and of course the call on there as well.
+
+30
+00:02:22,330 --> 00:02:24,730
+Don't worry about that just yet.
+
+31
+00:02:24,730 --> 00:02:28,240
+So this essentially is the home case.
+
+32
+00:02:28,480 --> 00:02:35,290
+So you need to always have your fingers in these on these keys when you are typing course yes you need
+
+33
+00:02:35,290 --> 00:02:40,270
+to move your fingers to reach other keys but they will always return back to these keys when you've
+
+34
+00:02:40,270 --> 00:02:46,120
+typed the letter that you wish to type and you're going to learn these in in a very easy way.
+
+35
+00:02:46,230 --> 00:02:51,370
+And following the practice exercises that I'm going to give you shortly.
+
+36
+00:02:51,370 --> 00:02:53,050
+So that's the first lesson.
+
+37
+00:02:53,170 --> 00:02:54,670
+Knowing where your home keys.
+
+38
+00:02:54,790 --> 00:02:59,240
+So what I want you to do is just do a little bit of practice getting used to finding those.
+
+39
+00:02:59,260 --> 00:03:02,060
+So at first you might need to look at your keyboard.
+
+40
+00:03:02,740 --> 00:03:09,010
+But I want to what I want you to try and do is look away from your keyboard and try to find those keys
+
+41
+00:03:09,520 --> 00:03:15,880
+without looking at your keyboard so just look away from your keyboard look up and then put your hands
+
+42
+00:03:16,270 --> 00:03:23,020
+on the keys until you find those two little lumps with your left and your right index fingers.
+
+43
+00:03:23,050 --> 00:03:28,330
+That way you know know when you found that that your index finger is correct the above the F and your
+
+44
+00:03:28,330 --> 00:03:29,830
+right above the J.
+
+45
+00:03:29,830 --> 00:03:37,060
+And your other three fingers will fall nice and neatly above the other keys know when you have those
+
+46
+00:03:37,060 --> 00:03:43,030
+four fingers you may also notice that both of your thumbs for naturally over this key here at the bottom
+
+47
+00:03:43,420 --> 00:03:49,870
+which is called the spacebar the spacebar is what you use if you don't already know to create a space
+
+48
+00:03:49,860 --> 00:03:52,400
+or between words and sentences.
+
+49
+00:03:52,800 --> 00:03:53,950
+And so on.
+
+50
+00:03:53,950 --> 00:03:55,500
+So that's very important.
+
+51
+00:03:55,500 --> 00:04:01,840
+So as you can see from this position you can type those four home keys and put spaces in between what
+
+52
+00:04:01,840 --> 00:04:07,630
+you type and from there all the other keys you'll be able to find them without looking.
 
 @@@
 1
-00:00:01,620 --> 00:00:12,280
-‫Hello and welcome to this new letter. ‫And in this letter, we are going to learn that Tarsa typing of. ‫Two new characters. ‫Who is there? ‫I am, I am.
+00:00:00,940 --> 00:00:06,030
+So now you've got used to where your fingers go on the home keys.
 
 2
-00:00:13,210 --> 00:00:31,480
-‫So let's start their journey. ‫Both Dilators I and M are tied by the index finger up your right hand. ‫The home position of your index finger of the right hand is.
+00:00:06,030 --> 00:00:09,020
+I'm not going to get you to practice anything yet.
 
 3
-00:00:33,040 --> 00:00:49,680
-‫And he nodded, copious eye. ‫You need to go up and then slightly to the left. ‫And you release the key eye. ‫And in Gaza, aim, it is just below the key of day.
+00:00:09,070 --> 00:00:16,080
+I'm just going to show you how your fingers in which fingers move around the keys on your keyboard.
 
 4
-00:00:50,760 --> 00:01:05,170
-‫So it will be pretty easy to type in. ‫Just you need to shrink your writing this finger a little bit and it will get Delattre of him. ‫But in Gaza by you will need to extend your in this finger to the left.
+00:00:16,840 --> 00:00:19,810
+So let's start with our left hand.
 
 5
-00:01:05,410 --> 00:01:22,000
-‫So let's get started with practice and press the space bar. ‫Now here we are. ‫Now we need to pierce the eye. ‫Let's extend your index finger to the elbow and slightly to the left.
+00:00:19,840 --> 00:00:29,080
+Small finger which is on the a key so that finger is responsible for the ay of course because it's covering
 
 6
-00:01:22,240 --> 00:01:53,030
-‫And this is the eye. ‫And in case of him, just push down your index finger of your right hand to slightly below. ‫And this is the M and hollers. ‫Keep in mind that other fingers should not leave their home key while typing any other key from other ‫law or different positions.
+00:00:29,080 --> 00:00:30,420
+that key is a home key.
 
 7
-00:01:53,660 --> 00:02:19,670
-‫So let's practice. ‫And always remember that you need to practice enough to get familiar with eight sessions until you move ‫to the next session. ‫And if you have already completed all this lessons before it, then I think you are getting pretty comfortable ‫in that stepping process.
+00:00:30,610 --> 00:00:37,920
+From there it can move downwards below to get the Z on above to get the cue.
 
 8
-00:02:19,700 --> 00:02:30,710
-‫And from now, you can move forward very fast because you already know how those typing works. ‫And you already have any idea where most of the keys are.
-
-
-@@@
-1
-00:00:02,070 --> 00:00:30,640
-‫Hello and welcome to this new lecture. ‫And in this lecture, we are going to cover the leader of the. ‫And the. ‫So they started their training. ‫In gives of V., we are going to use the index finger of our left hand so that these inserted just below ‫that composition of the index finger of knave can.
-
-2
-00:00:32,110 --> 00:00:48,820
-‫So I need to just move in this finger a little bit down and we get the literal. ‫He. ‫And in Gaza, we. ‫We are going to use the little finger or the pinky finger up our right hand.
-
-3
-00:00:49,360 --> 00:01:02,380
-‫So it is the top of the home, key of right pinky finger, which is the semicolon. ‫So we need to move up our right pinky finger. ‫Then we can get the lateral.
-
-4
-00:01:03,550 --> 00:01:18,420
-‫So let's get it started with their training. ‫Now, here is the V for that, we need to push down our left index finger a little bit and we get the ‫letter of he had is the letter P.
-
-5
-00:01:19,000 --> 00:01:33,160
-‫And in this case, we're going to move up R, right. ‫Been giving a little break and we get the little P. ‫Might we also need to pierce the shaved by the left pinky finger like that.
-
-
-@@@
-1
-00:00:00,870 --> 00:00:16,180
-‫Hello and welcome. ‫And in this that we're going to learn that best typing of. ‫It's an interpretive sign or the. ‫Backslash site. ‫So let's get started.
-
-2
-00:00:19,190 --> 00:00:33,750
-‫In gives up X, we are going to use our ring finger of the left hand. ‫And at first, it will feel pretty weird to use because of the angle, but you'll get used to it.
-
-3
-00:00:35,460 --> 00:00:53,820
-‫So the ACIS inserted just below that is key. ‫Loses their home position of your left ring finger. ‫But it is at the slightly right side. ‫So you need to move down your left ring finger with an angle to their right.
-
-4
-00:00:54,720 --> 00:01:10,840
-‫And it gives up the interpretive sign. ‫We are going to use the pinky finger of our right hand. ‫And it is going to be pretty easy because we can move our wreckage and finger in this direction.
-
-5
-00:01:10,890 --> 00:01:22,040
-‫Hazily. ‫So it is just below the composition of right pinky finger, which is the semicolon. ‫Just move down here. ‫Right. ‫Pinky finger a little bit.
-
-6
-00:01:22,130 --> 00:01:38,700
-‫And you the question mark. ‫Are they interpretive sign? ‫So this is the Espers bar and get it started with their training. ‫And here is the interactive map to use the Internet if we need to parse that shape.
-
-7
-00:01:38,840 --> 00:01:52,970
-‫And in this case, as we are going to use the right hand group, is the interrogative mark or coarsen ‫Mark. ‫So we need to parse the live cheap key by the pinky finger up or left hand.
-
-8
-00:01:53,150 --> 00:02:05,930
-‫Then there's the interpretive sign by your right pinky finger. ‫And if we is that interpretive sign without placing the sheet, you do not be the interpretive sign.
+00:00:37,990 --> 00:00:42,430
+Also if you're typing a number that would be number one.
 
 9
-00:02:06,020 --> 00:02:19,940
-‫It will be just the backslash. ‫Hollers, Keep in mind that YouTube is the shaped to make an interactive sign. ‫And if you are going to use the backslash, you don't need to pass a sign.
+00:00:42,450 --> 00:00:49,900
+Now I'll be showing the numbers as well because when you do the numbers later on you know this shows
 
 10
-00:02:20,440 --> 00:02:37,160
-‫So keep practicing. ‫And be careful every day is because it is going to be pretty difficult for fast, pure practices, then ‫it will be OK. ‫So keep practicing until you get familiar with the aches and integrative sign.
-
-
-@@@
-1
-00:00:00,780 --> 00:00:12,060
-‫Hello and welcome to this new league term. ‫And in this lecture, we are going to cover four kids who he said take opening and closing back at our ‫first Birkitt.
-
-2
-00:00:12,520 --> 00:00:31,520
-‫Then the hyphen or downgrade score. ‫So let's get it started and start our training. ‫And here we are. ‫So in order troupers, that's it. ‫We need to use that pinky finger upper left hand.
-
-3
-00:00:32,230 --> 00:00:45,410
-‫We need to push down a little bit. ‫And we are going to get the Jackie. ‫And it'll be really comfortable because with this new trashing the joint, then we will get the check ‫from the air.
-
-4
-00:00:46,540 --> 00:00:59,320
-‫And it gives up the brackets for the opening bracket. ‫We are going to use the middle finger of our right hand and close up the closing bracket. ‫We are going to use the ring finger, upper right hand.
-
-5
-00:01:00,560 --> 00:01:17,090
-‫And in gives of the hype and we are going to use the pinky finger off my right hand. ‫So let's get started. ‫And now had the jet comes in our trip, is that in the capital we're going to use our right hand?
-
-6
-00:01:18,060 --> 00:01:34,020
-‫Because the shape of the right side. ‫Then we are going to use the pinky finger up our left hand. ‫Is that it? ‫Like that? ‫And now had the opening back, it comes in order to do that.
-
-7
-00:01:34,080 --> 00:01:47,940
-‫We are going to use the right middle finger. ‫Mark Cooper is the bracket and not mine. ‫We need to pierce the shaped by the opposite hand was in this case is the left hand.
-
-8
-00:01:48,510 --> 00:02:03,600
-‫So we are going to press the left chimpsky my left pinky finger, then. ‫Questioner Right. ‫Middle finger who plays the opening bracket. ‫And now that we are going to be back at the normal and had the closing bracket comes.
-
-9
-00:02:04,050 --> 00:02:21,570
-‫So we are going to use the right chain finger. ‫But going forward to press the chip, keep the left pinky finger. ‫Otherwise it would be a zero. ‫So I think this is the only listens higher.
-
-10
-00:02:21,710 --> 00:02:37,980
-‫We're going to practice for case and it is going to be a little bit more. ‫So practice enough. ‫Go get comfortable with this case because the brackets are going to be difficult because they're inserted ‫two rows.
+00:00:49,900 --> 00:00:53,250
+you which finger goes to the number.
 
 11
-00:02:38,220 --> 00:02:53,610
-‫I hope the home key. ‫So we need to extend your fingers a little bit and it will be angled for the will to do that. ‫And also in case of the high. ‫So keep practicing until you get used to this.
-
-
-@@@
-1
-00:00:00,670 --> 00:00:12,340
-‫Hello and welcome. ‫And as we have already completed their task taping of all the letters from a to date. ‫Now it's time for us to move on to the new Medicares.
-
-2
-00:00:12,520 --> 00:00:25,900
-‫Are the kids from on two? ‫Nine and zero. ‫So we are going to practice this case now. ‫Actually, it is going to be pretty easy because we have already learned.
-
-3
-00:00:25,930 --> 00:00:42,760
-‫And if I were passed typing. ‫So let's start from the left. ‫First, there is the on our desk Clemson Mark. ‫We have already practiced. ‫That is Clemson sign by piercing shaped and then the exclamation sign.
-
-4
-00:00:43,630 --> 00:00:55,510
-‫So you are already familiar with this? ‫We are going to use the left pinky finger to press the on then in gives up too. ‫We are going to use the left ring finger.
-
-5
-00:00:56,980 --> 00:01:10,210
-‫Forty eight will be left middle finger and the left index finger will cover five and four. ‫So this is it for the left hand. ‫And for the right hand.
-
-6
-00:01:11,790 --> 00:01:27,760
-‫The six and seven key will be placed by this finger at the right hand. ‫Then eight will be pressed by the middle finger of right hand. ‫And we have already packed is the opening and closing bracket of first bracket four nine.
-
-7
-00:01:27,820 --> 00:01:39,980
-‫We are going to use the right ring finger. ‫And for Gedo, it will be right pinky finger. ‫So let's get it started with the practice. ‫And this is our deep ten.
-
-8
-00:01:40,860 --> 00:01:54,570
-‫And here is the numerics, the lesson number 16. ‫We are going to skip this special characters on because the special characters, too, will call fireboat, ‫the special characters on Antle.
-
-9
-00:01:55,050 --> 00:02:09,870
-‫That means all of their special characters. ‫So let's start their training where the numerics. ‫And here we're so placing your hand in the home position, then there's the Espers Berquist.
-
-10
-00:02:10,960 --> 00:02:23,440
-‫All the letters will be the same man. ‫This packed sessions contains some of the new Medek that we need to place. ‫So now we are going to press on by the left pinky finger.
-
-11
-00:02:23,800 --> 00:02:35,470
-‫Then the comma, it did be make the normal, then the six. ‫And we are going to use their left index finger. ‫Then zero will be the right ring finger. ‫And again, nine.
+00:00:53,350 --> 00:01:01,330
+But of course what we're going to do in this course is get used to typing the letters rather than the
 
 12
-00:02:36,890 --> 00:02:51,690
-‫He did repairs pay, right, middle finger. ‫So I think you have already got it. ‫If you cannot remember who is finger to Hudes, you can always sit there in a station and below.
+00:01:01,330 --> 00:01:03,450
+numbers for an hour later on.
 
+13
+00:01:03,520 --> 00:01:08,610
+You can probably practice the numbers yourself when you're more proficient with the letters.
+
+14
+00:01:08,680 --> 00:01:10,090
+So that's the left key.
+
+15
+00:01:10,090 --> 00:01:16,450
+Now if we move to our left ring finger these are the keys that would be responsible for.
+
+16
+00:01:16,450 --> 00:01:23,020
+So it's resting above the s on the home keys that will then go downwards to get the x above to get the
+
+17
+00:01:23,020 --> 00:01:23,540
+W..
+
+18
+00:01:23,540 --> 00:01:31,240
+And you know if when it's a number that would be number two then a long long finger of our left hand
+
+19
+00:01:32,630 --> 00:01:38,230
+or the forefinger is the D which is resting above that on the hunger and then it can go down to get
+
+20
+00:01:38,230 --> 00:01:40,140
+the C above to get the e..
+
+21
+00:01:41,290 --> 00:01:42,750
+And of course the three if you wish.
+
+22
+00:01:42,770 --> 00:01:48,160
+I'm going to continue mentioning the numbers you can see that for yourself from now on just the letters.
+
+23
+00:01:48,160 --> 00:01:49,980
+So the next one is our middle finger.
+
+24
+00:01:49,980 --> 00:01:53,640
+Now this one's got more kids to be responsible for.
+
+25
+00:01:53,710 --> 00:01:58,450
+This has got actually six letter keys not counting the numbers.
+
+26
+00:01:58,600 --> 00:02:06,430
+So the R left index finger will be resting on the home keys and will be above the F so the f is straight
+
+27
+00:02:06,430 --> 00:02:11,500
+away you can press that it's already resting on it but for now if it moves it down you can get the V
+
+28
+00:02:11,590 --> 00:02:21,220
+or above and get the R and also it can move to the right to get the letter G and diagonally to the right
+
+29
+00:02:21,460 --> 00:02:25,640
+above to get the T and diagonally below to get the B.
+
+30
+00:02:25,660 --> 00:02:32,890
+There's a reason why it's responsible for more letters because the right hand finger would have to stretch
+
+31
+00:02:32,890 --> 00:02:41,470
+too far to get the T G and B it's more natural for the f k your index finger to reach these letters.
+
+32
+00:02:41,470 --> 00:02:47,880
+Now we move to the right hand so again starting with our right our small finger on our right hand.
+
+33
+00:02:48,190 --> 00:02:50,530
+So that's resting on the home keys that's above.
+
+34
+00:02:50,790 --> 00:02:56,260
+If you press that down it will give you the colon on key or if you hold the shift key down we'll give
+
+35
+00:02:56,260 --> 00:03:00,640
+you the colon and then of course we move our little finger down.
+
+36
+00:03:00,640 --> 00:03:04,330
+That will give us the forward slash or if you want in the question.
+
+37
+00:03:04,330 --> 00:03:05,170
+Question mark.
+
+38
+00:03:05,190 --> 00:03:14,320
+David hold the shift key down the left hand and then press that key to get a question mark and then
+
+39
+00:03:15,070 --> 00:03:22,140
+above we move our little finger above to get the letter P. And then of course moving into our ring finger
+
+40
+00:03:22,140 --> 00:03:27,030
+of her right hand that's resting comfortably above the L on the home keys.
+
+41
+00:03:27,030 --> 00:03:29,400
+So just press down to get the L..
+
+42
+00:03:29,580 --> 00:03:32,770
+If you move it down you can get the comma.
+
+43
+00:03:32,800 --> 00:03:37,550
+No you know there's a greater symbol which can get more pressing shift but that's probably less commonly
+
+44
+00:03:37,580 --> 00:03:41,010
+used more likely to be pressing a comma.
+
+45
+00:03:41,070 --> 00:03:50,110
+So you just move your ring finger down to get the comma move ring finger above to get the oh landmark
+
+46
+00:03:50,160 --> 00:03:52,410
+big finger of our right hand.
+
+47
+00:03:52,410 --> 00:03:56,910
+So again that one's as you can see above the letter K. and we would.
+
+48
+00:03:57,240 --> 00:04:00,040
+Sorry I beg your pardon mummy talked about the F sorry.
+
+49
+00:04:00,120 --> 00:04:00,660
+Beg your pardon.
+
+50
+00:04:00,660 --> 00:04:05,730
+When you move the ring finger of your right hand down below the L you're getting a full stop.
+
+51
+00:04:05,730 --> 00:04:06,920
+Sorry I beg your pardon.
+
+52
+00:04:07,020 --> 00:04:08,410
+Not the comma as I said.
+
+53
+00:04:08,520 --> 00:04:10,490
+So that would be the full stop.
+
+54
+00:04:10,680 --> 00:04:15,120
+So the big finger of our right hand is above the K when we move that down.
+
+55
+00:04:15,250 --> 00:04:23,710
+We get the comma and then if we move our big finger up ports above the K we get the eye.
+
+56
+00:04:23,730 --> 00:04:28,020
+So those are letters that that finger is responsible for.
+
+57
+00:04:28,530 --> 00:04:31,430
+And then finally our index finger her right hand.
+
+58
+00:04:31,440 --> 00:04:38,640
+So like the left hand index finger it's also responsible for six letter keys not counting the numbers.
+
+59
+00:04:38,850 --> 00:04:41,460
+So it's resting above the J So you press that down.
+
+60
+00:04:41,490 --> 00:04:42,780
+We get the J.
+
+61
+00:04:42,780 --> 00:04:47,700
+If you move it up below the J we get an m move above the J.
+
+62
+00:04:47,700 --> 00:04:49,030
+We get you.
+
+63
+00:04:49,300 --> 00:04:51,600
+And as you can see we move our index finger.
+
+64
+00:04:51,690 --> 00:04:54,510
+One key to the left to give us an H.
+
+65
+00:04:54,800 --> 00:05:01,940
+And if you move it diagonally down to the left we get the N and diagonally to the left above.
+
+66
+00:05:02,010 --> 00:05:03,920
+We get the Y.
+
+67
+00:05:04,140 --> 00:05:09,390
+So it's pretty obvious when you're seeing on the screen like this but when we come when you're not looking
+
+68
+00:05:09,390 --> 00:05:13,880
+at the keyboard as you're able to see on the screen now you're off to do this from memory.
+
+69
+00:05:13,920 --> 00:05:20,130
+But please don't worry you'll easily be able to do this if you follow my instructions in this course
+
+70
+00:05:20,430 --> 00:05:22,470
+and go through the practice exercises.
 
 @@@
 1
-00:00:00,240 --> 00:00:14,490
-‫Hello and welcome to this new lecture. ‫And in this letter, we are going to talk about the numpad or no back. ‫So let's first talk about the home position in case of this number back in here.
+00:00:01,070 --> 00:00:08,630
+So before we actually start practicing typing learning to type those you need to understand a few things.
 
 2
-00:00:14,610 --> 00:00:30,270
-‫This middle row, which is four, five and six, is the home position. ‫So you're in this finger of the right hand. ‫We be on for. ‫Then the middle finger of the right hand will be on fire.
+00:00:08,630 --> 00:00:13,450
+So how to make the fastest progress note is the wrong way.
 
 3
-00:00:31,290 --> 00:00:51,380
-‫And the ring finger will be on six. ‫Now your time will be on the zero. ‫And the pinky finger will be on this in Turkey. ‫Luck is in that vertical line, except zero will be pressed by the index finger.
+00:00:13,610 --> 00:00:16,880
+And there is a right way by following the methods in this.
 
 4
-00:00:52,480 --> 00:01:14,860
-‫And all this key in this lane, except the detail will be pressed by the right middle finger. ‫And these straw will be pressed by right ring finger. ‫And in case of the pinky finger, the minus plus and the inter will be pressed by pinky finger.
+00:00:16,880 --> 00:00:24,530
+This is based on lots and lots of research conducted to show the best ways of acquiring a new skill
 
 5
-00:01:15,340 --> 00:01:30,250
-‫So let's get started with their training. ‫There are actually two lessons. ‫This one's 19 and 20. ‫How about that number back? ‫But we are going to do the second one because it will cover time.
+00:00:24,680 --> 00:00:26,060
+like typing.
 
 6
-00:01:30,320 --> 00:01:44,660
-‫I'm back on lessons also. ‫So let's start there. ‫Training. ‫And Haria. ‫So as Dana Station, it is saying, could take home proposition. ‫I have already done that.
+00:00:26,060 --> 00:00:32,420
+So we'll be showing you what keys to practice what keys to practice and a time on the keyboard.
 
 7
-00:01:44,750 --> 00:01:57,400
-‫Now Lesperance does this bar. ‫And here you go. ‫Hesperus on my right index finger. ‫Then three, who should be the right ring finger? ‫Then the backslash.
+00:00:32,420 --> 00:00:38,790
+We'll also be showing you how long to practice or the optimum time to practice typing.
 
 8
-00:01:57,830 --> 00:02:11,830
-‫Who is still with them? ‫Right. ‫Middle finger. ‫So it is pretty easy because all lackies are in the same law. ‫Along with the finger. ‫So we need to just move up and down.
+00:00:38,870 --> 00:00:44,400
+And also I'll be showing you what speed to type as well when you practice.
 
 9
-00:02:12,370 --> 00:02:31,570
-‫We don't need to go to the right or left or anything that I think it is not important to you to land ‫their past typing or very fast typing on this number pad unless you are so little or no like calculation ‫or data entry.
+00:00:44,600 --> 00:00:46,940
+And I'll be showing you what I've named.
 
 10
-00:02:31,920 --> 00:02:44,740
-‫But if you are a programmer or article writer or a content creator, then you are going to use the numeric ‫case on the letters. ‫So if you're invested, then try to practice it.
+00:00:47,180 --> 00:00:50,510
+The accelerator is quite a good technique.
 
 11
-00:02:44,920 --> 00:03:02,440
-‫Otherwise, it is not so much important for you. ‫So keep practicing. ‫And from the next lecture. ‫We are going to talk about some use full keyboard shortcut, which will help you to boost your productivity ‫and help you to type faster.
-
-
-@@@
-1
-00:00:01,770 --> 00:00:16,350
-‫Hello and welcome to this new lecture. ‫And in this lecture, we are going to learn about some Schuckert case. ‫Who is we can use to Arquit or are. ‫So I have to open my Microsoft.
-
-2
-00:00:17,900 --> 00:00:35,150
-‫And that is in history here. ‫It is an English story about a man and his son. ‫It is just a demo paragraph. ‫So we are used to the Arrow Becker space and Delate case working with a single character at a time mark.
-
-3
-00:00:35,240 --> 00:00:51,140
-‫However, we can add the control key to have them effect into arts or paragraph at the same time. ‫So listen, I work some shortcuts. ‫Suppose the car, sir, is in here just up to the DRDO of asking.
-
-4
-00:00:51,710 --> 00:01:04,330
-‫So we own this car, sir. ‫At the beginning of the previous. ‫Ah, we can do that by clicking on that position by the mouse. ‫But we can do that also shortcut.
-
-5
-00:01:04,790 --> 00:01:23,570
-‫So the shortcut key is control and live cattle. ‫So if I press control and left at all, it will take us to the beginning of the art of asking. ‫Now if I again do that, it would move that our sir to the beginning of the previous hour.
-
-6
-00:01:23,930 --> 00:01:37,600
-‫If we aren't to move the cursor to the beginning of the next start, we need to build the control and ‫drive cattle. ‫So let's do that. ‫And Harry, I suppose I own the car, sir.
-
-7
-00:01:37,940 --> 00:01:56,810
-‫Just at the beginning of the may start. ‫He his. ‫I'm going to press control and right. ‫Arrow and Haria. ‫So by this we can move our car, sir, to the beginning of a new arc which is either the next turn of ‫the previous on no less than a new shortcut.
-
-8
-00:01:57,530 --> 00:02:10,830
-‫It is about bulleting the previous art of the next drop. ‫Suppose we are in this game to be deleted. ‫We can do that by pressing control and back Espers.
-
-9
-00:02:11,000 --> 00:02:24,230
-‫So by pressing control and backspace, it really lit the previous art like that. ‫And if I want to delay the next start, this is the game we need to press control and delay it.
-
-10
-00:02:25,140 --> 00:02:41,380
-‫And now the word has been deleted. ‫Suppose we own the car, sir. ‫Too bad the beginning of all this. ‫Taste this at the beginning of this fast lane. ‫We can do that by pressing control and pedal now.
-
-11
-00:02:41,570 --> 00:02:54,850
-‫Hey it. ‫Now if we own the car, sir. ‫Gooby at the end of all this taste. ‫We can do that by pressing control and down arrow there. ‫See. ‫And here it is.
+00:00:50,510 --> 00:00:58,310
+Quite a simple thing to do but it really does improve your progress a lot so how do we actually practice.
 
 12
-00:02:55,560 --> 00:03:06,540
-‫And ink is if you are a Mac user. ‫You can use the option key instead of the control key. ‫They will are just like the same. ‫See you in the next lecture.
+00:00:58,310 --> 00:01:04,370
+Well the usual way that lots of people will do it if they teach themselves that type is they will get
 
+13
+00:01:05,360 --> 00:01:11,870
+some text and they will try to practice the text and then first a bit of the keys and eventually learn
+
+14
+00:01:11,870 --> 00:01:13,420
+to do it without looking at the keys.
+
+15
+00:01:13,430 --> 00:01:14,300
+And you can do that.
+
+16
+00:01:14,360 --> 00:01:20,620
+And that's the way that I did it right at the start until I discovered a better way to practice.
+
+17
+00:01:20,690 --> 00:01:22,940
+So the better way to practice is this.
+
+18
+00:01:22,940 --> 00:01:27,010
+Don't try to practice lots of different keys all at the same time.
+
+19
+00:01:27,170 --> 00:01:33,860
+We're just going to be focusing on the two keys at a time not hours and hours and hours just doing the
+
+20
+00:01:33,860 --> 00:01:38,730
+same two keys over and over again until you get the two keys and then move on to the next one.
+
+21
+00:01:39,140 --> 00:01:46,360
+But no two keys at a time but each combination you'll be just practicing for two sec.
+
+22
+00:01:46,530 --> 00:01:53,720
+So I should say two seconds 30 seconds sessions for each two keys and then you move on to another two
+
+23
+00:01:53,720 --> 00:01:55,270
+keys for 30 seconds.
+
+24
+00:01:55,340 --> 00:01:59,960
+Another two keys with 30 seconds and so on and then you go back to the first two keys.
+
+25
+00:02:00,050 --> 00:02:04,270
+Practice those again for 30 seconds and continue on through like that.
+
+26
+00:02:04,340 --> 00:02:07,590
+So what this actually does is it means that you don't get bored.
+
+27
+00:02:07,670 --> 00:02:11,900
+Some more likely to do it again the next day and the next day after that.
+
+28
+00:02:12,800 --> 00:02:18,340
+But also by doing it for 30 seconds for two keys and a note it's two keys for 30 seconds so on get you
+
+29
+00:02:18,340 --> 00:02:24,230
+used to using not more than one key because eventually you're not just going to be typing to keep two
+
+30
+00:02:24,230 --> 00:02:29,510
+letter key two letter words you're going to be typing longer words and long text.
+
+31
+00:02:29,960 --> 00:02:36,230
+So by doing it 30 seconds for two keys at a time will give you enough practice to learn where those
+
+32
+00:02:36,230 --> 00:02:42,830
+keys are and also to get faster at typing those two keys in combination but also when you come to type
+
+33
+00:02:43,100 --> 00:02:49,910
+words and longer text you will find that you'll be a lot faster by first just starting out by practicing
+
+34
+00:02:50,150 --> 00:02:52,740
+two keys at a time.
+
+35
+00:02:53,390 --> 00:02:58,450
+Essentially I recommend that you practice each day between for 20 to 30 minutes.
+
+36
+00:02:58,460 --> 00:03:05,150
+I don't suggest that you sit at your computer typing for an hour or two three or four hours a day because
+
+37
+00:03:05,150 --> 00:03:11,180
+you might be forgiven for thinking that you know if I practice four hours a day instead of 30 minutes
+
+38
+00:03:11,180 --> 00:03:12,980
+I'm going to make faster progress.
+
+39
+00:03:12,980 --> 00:03:19,640
+Well arguably you might but it's actually you make progress has been proven that you make fastest progress
+
+40
+00:03:19,640 --> 00:03:25,550
+not by the amount of time that you spend practicing each day but it's actually the frequency of her
+
+41
+00:03:25,550 --> 00:03:26,020
+practice.
+
+42
+00:03:26,030 --> 00:03:30,210
+So it's daily practice that is the key.
+
+43
+00:03:30,210 --> 00:03:37,380
+So practice every single day for one to two sessions for about 20 to 30 minutes at a time.
+
+44
+00:03:37,550 --> 00:03:46,490
+And that will give you the best best results what does it also tell you to do here is start slowly because
+
+45
+00:03:46,490 --> 00:03:52,370
+what you don't want to be doing is if you're practicing typing and you keep messing up and typing the
+
+46
+00:03:52,370 --> 00:03:56,760
+wrong keys over and over again eventually it's gonna be a habit and it's gonna be a habit heartless
+
+47
+00:03:56,780 --> 00:03:58,100
+hard to break.
+
+48
+00:03:58,100 --> 00:04:03,840
+So it's important that you start slowly even painfully slowly if you wish were.
+
+49
+00:04:04,310 --> 00:04:11,360
+However slowly it takes you whatever it is make sure that you get hit each key right the first time
+
+50
+00:04:11,690 --> 00:04:17,580
+every time you do it and then you can gradually increase your speed.
+
+51
+00:04:17,690 --> 00:04:23,270
+So that's why I suggest you do when you're doing your 30 second practices start really slowly at first
+
+52
+00:04:23,690 --> 00:04:27,800
+rate especially at the start when you're getting to learn where the keys are and finding them on the
+
+53
+00:04:27,800 --> 00:04:29,320
+keyboard without looking.
+
+54
+00:04:29,320 --> 00:04:33,740
+You need to start really slowly get it right and then increase your speed.
+
+55
+00:04:33,740 --> 00:04:39,710
+Now when you increase your speed if you start noticing and making mistakes then it's just a kind of
+
+56
+00:04:39,710 --> 00:04:43,430
+scrunched slightly slowing his speed down again.
+
+57
+00:04:43,720 --> 00:04:45,090
+And getting it right.
+
+58
+00:04:45,140 --> 00:04:52,390
+And then once again try to increase your speed just slowly increase your speed and keep your accuracy.
+
+59
+00:04:52,400 --> 00:04:57,120
+That is key to learning to type following this method.
+
+60
+00:04:57,140 --> 00:04:59,380
+Now here is what I call the accelerator.
+
+61
+00:04:59,380 --> 00:05:05,030
+Now it's a really simple thing but it actually does give really really good results.
+
+62
+00:05:05,030 --> 00:05:09,490
+Essentially this practice before you go to bed.
+
+63
+00:05:09,680 --> 00:05:11,390
+So why is that important.
+
+64
+00:05:11,390 --> 00:05:17,690
+Well I actually found out this technique as somebody who was learning an instrument a keyboard most
+
+65
+00:05:17,690 --> 00:05:25,910
+trying to practice certain you know put a piece of music on the keyboard and his progress was you know
+
+66
+00:05:25,910 --> 00:05:30,040
+like most people quite slow and sometimes painful.
+
+67
+00:05:30,320 --> 00:05:35,020
+And what he found was is that when you practice before you go to bed.
+
+68
+00:05:35,150 --> 00:05:37,450
+Course after you're practicing you sleep.
+
+69
+00:05:37,520 --> 00:05:42,660
+And that's when your mind recharges itself for the next day.
+
+70
+00:05:42,860 --> 00:05:51,110
+And it's been found improved that you actually make faster progress if you do it before you go to sleep.
+
+71
+00:05:51,190 --> 00:05:55,630
+I'm somewhat going to give you all the science behind it but just let me tell you that it does work.
+
+72
+00:05:55,640 --> 00:06:02,510
+The first person who was practicing the keyboard he found that when you practice a piece of night nice
+
+73
+00:06:02,510 --> 00:06:06,350
+and slowly being accurate making sure he did it right.
+
+74
+00:06:06,350 --> 00:06:07,630
+Not mistakes.
+
+75
+00:06:07,700 --> 00:06:14,900
+He noticed that the next day when he woke up when you practice again his ability improved dramatically.
+
+76
+00:06:14,900 --> 00:06:18,680
+A lot different than what he did when he was practicing through the day.
+
+77
+00:06:18,680 --> 00:06:24,350
+So I would strongly suggest that if you're going to practice Do your practice if he can try to fit it
+
+78
+00:06:24,350 --> 00:06:30,110
+in for 20 to 30 minutes before you go to bed at night you'll find that you're going to make a lot faster
+
+79
+00:06:30,110 --> 00:06:30,830
+progress.
+
+80
+00:06:31,730 --> 00:06:38,150
+So next it's time to actually start practicing and learning to type.
 
 @@@
 1
-00:00:00,870 --> 00:00:14,200
-‫Hello and welcome. ‫And in this lecture, we are going to talk about some shark. ‫Who is. ‫We can use to select different text. ‫So let's get this started and head is out.
+00:00:01,010 --> 00:00:07,790
+Now it's time to do the practice sessions to learn to type to touch type.
 
 2
-00:00:14,250 --> 00:00:34,710
-‫Pack it up. ‫Suppose the car, sir, in here stopped at the art of Young and we own to select a character. ‫My character SuBo too young to select the last character who says, gee, we can do that by pressing ‫shape and lift arrow like that.
+00:00:07,790 --> 00:00:15,350
+So first of all go through each video and then at the end of each video practice the key combination
 
 3
-00:00:34,920 --> 00:00:47,760
-‫Now disease is selected. ‫If we on to select like father like in then you then or we can just again is the left Taraki and it ‫will get selected like that.
+00:00:15,710 --> 00:00:20,090
+that I show you and move on to the next video and practice that.
 
 4
-00:00:50,040 --> 00:01:00,630
-‫And suppose we own that next character or the character on the right side of the car, sir, to be selected. ‫We can do that by pissing shift and the right arrow.
+00:00:20,270 --> 00:00:23,610
+So first of all we're going to be working on the middle Keys.
 
 5
-00:01:00,850 --> 00:01:14,100
-‫This is the right arrow and Chave to select the aim. ‫Then it will selected the A in and so on. ‫So we have used the shortcut to select the character.
+00:00:23,640 --> 00:00:27,710
+That's the home keys including the G and H.
 
 6
-00:01:15,030 --> 00:01:29,110
-‫Now let's see. ‫Left some lines in order to select a line. ‫We can parse the shift and the up arrow to select the line like that. ‫So it will select a single line.
+00:00:27,710 --> 00:00:31,330
+And that will be you getting used to those keys.
 
 7
-00:01:29,490 --> 00:01:41,130
-‫Just start just as starting from the cursor through the exact same position of the upper line. ‫And in case of the blue line, we are going to use the shift.
+00:00:31,520 --> 00:00:37,930
+And then what I want you to do is to continue practicing those keys until you get proficient at it.
 
 8
-00:01:41,400 --> 00:02:00,320
-‫And down at Oki's. ‫And it will select the sentence from this ramp to this graduation like that. ‫Now, if we want to select the paragraphs, we are going to use the shaped control and up at all.
+00:00:37,950 --> 00:00:43,160
+Now once you watch the videos and gone through each combination by watching the videos.
 
 9
-00:02:00,730 --> 00:02:15,980
-‫It will select all the text after the title. ‫Then it also goes down. ‫If we use control shift and down arrow. ‫So it slips all look dazed from the car, sir.
+00:00:43,310 --> 00:00:50,150
+Then you just simply continue your practice by following the practice sheets which I'll give you a pair
 
 10
-00:02:16,470 --> 00:02:29,720
-‫I put the finishing of the text. ‫Now, if we want to say like that dazed from this car, sir, through the beginning of the line, we ‫can do that. ‫We need troopers shift and home to select that days.
+00:00:50,240 --> 00:00:54,870
+to download those after we finished the section on the middle Keys.
 
 11
-00:02:29,870 --> 00:02:43,730
-‫We do in the car, sir. ‫And the beginning of the timeline. ‫And if we want to select all the text we do in the car, sir. ‫And the ending of the Green Line, we need to replace shift an end like that.
+00:00:54,980 --> 00:01:01,970
+From then on we'll do the same thing with the top Keys first the left hand then the right hand.
 
 12
-00:02:44,720 --> 00:02:55,860
-‫And if we want to select all the text, we need to press the control. ‫And I hope we already know that because it is pretty common shortcut. ‫So see you in the next lecture.
+00:01:01,970 --> 00:01:06,490
+So again I'll be a video on each one of those key combinations.
 
+13
+00:01:06,490 --> 00:01:09,600
+And at the end practice sheets for you to get used to those.
+
+14
+00:01:09,950 --> 00:01:17,270
+And then of course finally we'll do the left and right hand keys for the bottom row of keys.
+
+15
+00:01:17,420 --> 00:01:19,870
+So that's how we're going to follow this here.
+
+16
+00:01:19,880 --> 00:01:27,050
+So essentially what I want you to do is get proficient at the middle Keys first by practicing those
+
+17
+00:01:27,050 --> 00:01:33,920
+women you're OK and familiar with where to put your fingers typing those keys during the practice drills
+
+18
+00:01:33,950 --> 00:01:40,070
+the exercises then you'll be able to move on to the next section of practice which is getting used to
+
+19
+00:01:40,070 --> 00:01:47,360
+the top keys get proficient at those keys on both hands and when you're proficient at those you then
+
+20
+00:01:47,720 --> 00:01:53,230
+finally be able to move and getting the bottom keys to get those right.
+
+21
+00:01:53,270 --> 00:01:57,760
+Once you've done that you will then be ready to move on to the next step.
 
 @@@
 1
-00:00:02,160 --> 00:00:14,340
-‫Hello and welcome. ‫And in this letter, we are going to talk about some shockers. ‫Who is we can use in editing? ‫I think many of you already know some of the shortcuts.
+00:00:00,900 --> 00:00:05,300
+So here is the first two keys you're going to practice for 30 seconds.
 
 2
-00:00:14,820 --> 00:00:28,460
-‫But let's get into that again. ‫In order to copy art or any taste, we need to press control. ‫See? ‫Suppose we own this young art could be copied. ‫We just need to pierce congruency.
+00:00:05,670 --> 00:00:13,170
+So simply the a and the s so back and forth without spaces just a essay essay as a.
 
 3
-00:00:29,400 --> 00:00:44,430
-‫And if we don't grow past it, it will be controlled. ‫And if we undercut any taste, we need to press control X and you can again bested by Congruently to ‫undo an action.
+00:00:13,440 --> 00:00:19,320
+So if you're up when your keys are on the home keys you find that your little finger will be over the
 
 4
-00:00:45,490 --> 00:01:01,550
-‫The shortcut keys control ended. ‫Suppose I have delivered this. ‫Now we need to undo the effect. ‫How do we control that? ‫Like that. ‫And if you want to read to that effect, it will be control.
+00:00:19,320 --> 00:00:23,870
+ay on your left ring finger will be over the s.
 
 5
-00:01:01,640 --> 00:01:13,280
-‫And I now suppose we own this entire sentence to be bold. ‫Have selected that to make a sentence ball. ‫We need to select that. ‫And the short shortcut, case control.
+00:00:23,970 --> 00:00:27,360
+So simply you'll be just getting used to used to these two keys.
 
 6
-00:01:13,310 --> 00:01:25,440
-‫And we now it is ball topples. ‫We own this next lane to be Italy. ‫So I have selected that line and the shortcut for that is control. ‫And I now italic.
+00:00:27,360 --> 00:00:32,560
+So remember start slowly just getting used to not looking at the keyboard.
 
 7
-00:01:26,040 --> 00:01:38,420
-‫We can also make a line underlined by pressing on cruel. ‫And, you know, the line is underlined. ‫You can also find any taste by using control if. ‫And find the text.
+00:00:32,610 --> 00:00:35,070
+Just press the A and the.
 
 8
-00:01:39,540 --> 00:01:54,510
-‫Let's see those hand. ‫And here it is. ‫So this a double shot glass? ‫I think it will help you out because if you don't need to click the mouse or move your hand from your ‫keyboard to the mouse, it will save a lot of time and your energy.
+00:00:35,100 --> 00:00:40,160
+Slowly I can forth back and forth back and forth getting used to the.
 
+9
+00:00:40,320 --> 00:00:42,380
+They are without looking at the keys.
+
+10
+00:00:42,540 --> 00:00:47,490
+So just simply look the screen if you like freeze the video where you're looking out for 30 seconds
+
+11
+00:00:47,850 --> 00:00:54,750
+and type those two and then once you've done the 30 seconds we'll be ready to move onto the next two
+
+12
+00:00:54,750 --> 00:00:55,380
+letters.
+
+@@@
+1
+00:00:01,400 --> 00:00:09,450
+Now here here's the next two keys so you'll be using the typing the a deed back and forth again remember.
+
+2
+00:00:09,610 --> 00:00:14,550
+Start slowly and then gradually build at speed as time goes on.
+
+3
+00:00:14,560 --> 00:00:19,310
+Just doing this for 30 seconds each time you do these two letters.
+
+4
+00:00:19,390 --> 00:00:25,660
+So as you haven't guessed it already if your fingers are correctly over the comb keys you were using
+
+5
+00:00:25,660 --> 00:00:32,230
+your little finger and your big finger to type these keys a little finger of course over the a big finger
+
+6
+00:00:32,260 --> 00:00:33,070
+over the D.
+
+7
+00:00:33,250 --> 00:00:39,570
+So just do that for 30 seconds and then move on to the next video for the next two letters.
+
+@@@
+1
+00:00:01,120 --> 00:00:08,570
+Now for our next two letters the aye and the F so the little finger of a left hand of the aye and R
+
+2
+00:00:08,570 --> 00:00:16,400
+index finger left hand is over the F so we'll be practising those two keys for thirty seconds when you've
+
+3
+00:00:16,400 --> 00:00:17,010
+done not.
+
+4
+00:00:17,030 --> 00:00:20,930
+Then it's time to move on to the next two letters.
+
+@@@
+1
+00:00:00,990 --> 00:00:08,300
+The next two letters to come practice in combination are the A and G.
+
+2
+00:00:08,350 --> 00:00:13,650
+So the small finger as you know know is over the a because you've been doing that a few times and the
+
+3
+00:00:13,650 --> 00:00:20,590
+G is by moving your index finger from off the FCC over to the G.
+
+4
+00:00:20,820 --> 00:00:22,900
+Well I suggest you probably try and do if you can't.
+
+5
+00:00:23,190 --> 00:00:29,520
+When you press the G move your finger quickly back to the F and as you press the A no no.
+
+6
+00:00:29,520 --> 00:00:29,760
+Okay.
+
+7
+00:00:29,760 --> 00:00:37,890
+You're used to moving your finger off from the F over to get the G properties up for 30 seconds and
+
+8
+00:00:37,890 --> 00:00:40,680
+then go on to the next to let a combination.
+
+@@@
+1
+00:00:00,990 --> 00:00:04,560
+No we're doing the S and D in combination.
+
+2
+00:00:04,560 --> 00:00:09,660
+So practiced this for 30 seconds going backwards and forwards.
+
+3
+00:00:10,020 --> 00:00:14,940
+So just sd sd sd like not so just remind you if you're not already.
+
+4
+00:00:14,970 --> 00:00:22,530
+You should already know no as the S's over your left ring finger and you use the big finger of your
+
+5
+00:00:22,530 --> 00:00:29,040
+left hand to press the day when you've done that then we'll move on to the next two letters.
+
+@@@
+1
+00:00:02,300 --> 00:00:08,690
+The next is s and f practice these two letters in combination.
+
+2
+00:00:08,700 --> 00:00:10,080
+One after the other.
+
+3
+00:00:10,080 --> 00:00:17,080
+So again the S is on your left ring finger the F on your left index finger.
+
+4
+00:00:17,280 --> 00:00:19,340
+So practice those for 30 seconds.
+
+@@@
+1
+00:00:00,590 --> 00:00:04,390
+Now for our next two letter combination to practice together.
+
+2
+00:00:04,400 --> 00:00:06,330
+So this is S and G.
+
+3
+00:00:06,470 --> 00:00:12,620
+So the S You don't need to be to keep telling you after a while I'm sure you'll know which ones which
+
+4
+00:00:12,620 --> 00:00:13,820
+fingers are for what keys.
+
+5
+00:00:13,820 --> 00:00:16,640
+But it's the s under the left index.
+
+6
+00:00:17,030 --> 00:00:23,120
+So I left ring finger and your left index finger moves from the F to the G.
+
+@@@
+1
+00:00:00,630 --> 00:00:09,270
+The next two let a combination to practice for 30 seconds is D and F the D course is under your pig
+
+2
+00:00:09,270 --> 00:00:14,460
+finger on your left hand and the F as you know on your left index finger.
+
+3
+00:00:14,460 --> 00:00:18,540
+So practice that for 30 seconds and then move on to the next two letters.
+
+@@@
+1
+00:00:00,900 --> 00:00:09,790
+Now we're going to practice d d and g keys so the left the big finger press the D and then use your
+
+2
+00:00:10,150 --> 00:00:14,120
+index finger to move from the F to the G.
+
+3
+00:00:14,150 --> 00:00:21,280
+And like we did with the A earlier try for calm after pressing the G to quickly move your index finger
+
+4
+00:00:21,280 --> 00:00:28,330
+back to the F as you press the D key and that will give you practice moving your finger from the F to
+
+5
+00:00:28,330 --> 00:00:30,270
+get over to that G letter.
+
+@@@
+1
+00:00:01,260 --> 00:00:06,650
+And know the final two letters we're practicing with our left hand F and G.
+
+2
+00:00:06,660 --> 00:00:12,450
+So this is just using our index finger to get us used to going from the F to G a bit more practice on
+
+3
+00:00:12,450 --> 00:00:12,960
+that.
+
+4
+00:00:13,020 --> 00:00:18,270
+So f and g for 30 seconds and then boom move on to the next part.
+
+@@@
+1
+00:00:01,430 --> 00:00:03,210
+Here's the next two keys.
+
+2
+00:00:03,210 --> 00:00:05,830
+No gonna work on our right hand.
+
+3
+00:00:06,110 --> 00:00:14,060
+So our little fingers over the coal on our ring finger on our right hand is over the L so we're just
+
+4
+00:00:14,060 --> 00:00:20,230
+gonna practice these two keys like we did before for 30 seconds and then we'll move on to the next two
+
+5
+00:00:20,240 --> 00:00:21,010
+keys.
+
+@@@
+1
+00:00:01,090 --> 00:00:08,080
+Here's our next two keys so the little finger over the cool on again this time our big right finger
+
+2
+00:00:08,500 --> 00:00:13,870
+over the K so we're gonna practice those two packing for a full 30 seconds.
+
+@@@
+1
+00:00:01,160 --> 00:00:03,450
+Never practicing the cool on an.
+
+2
+00:00:03,470 --> 00:00:10,260
+So the small finger is our colon and our index finger on our right hand on the J.
+
+3
+00:00:10,280 --> 00:00:13,820
+So practice those two keys in accommodation for 30 seconds.
+
+@@@
+1
+00:00:01,250 --> 00:00:04,670
+No practicing the coin key again with our little finger.
+
+2
+00:00:04,670 --> 00:00:14,720
+With the H and b you do that by moving our right index finger to the left to hit the HK so practice
+
+3
+00:00:14,730 --> 00:00:17,740
+those two keys back and forth for 30 seconds.
+
+@@@
+1
+00:00:00,430 --> 00:00:08,430
+Now we're going to practice these two keys together the L and the K so the L is r right in the right
+
+2
+00:00:08,430 --> 00:00:12,980
+key finger under K of course is our long finger on the right hand.
+
+3
+00:00:13,050 --> 00:00:17,280
+So practice these two for 30 seconds and move on to the next to.
+
+@@@
+1
+00:00:00,820 --> 00:00:10,290
+No we're going to practice the L and J together so again the L is with our right hand ring finger on
+
+2
+00:00:10,460 --> 00:00:13,050
+the Jays our right hand index finger.
+
+3
+00:00:13,220 --> 00:00:16,160
+So we're just gonna practice those two together for 30 seconds.
+
+@@@
+1
+00:00:00,730 --> 00:00:05,240
+Now we're going to practice the L and J and L and H together.
+
+2
+00:00:05,240 --> 00:00:06,280
+Beg your pardon.
+
+3
+00:00:06,320 --> 00:00:12,570
+So again the L is our right hand ring finger and never going to practice moving getting the J.
+
+4
+00:00:12,620 --> 00:00:14,620
+Sorry the H will get it right in a minute.
+
+5
+00:00:15,080 --> 00:00:18,470
+So we move our index finger from the J.
+
+6
+00:00:18,500 --> 00:00:20,780
+The left to press the H.
+
+7
+00:00:20,930 --> 00:00:21,960
+So we're just gonna practice.
+
+8
+00:00:21,980 --> 00:00:24,860
+No the L and H for 30 seconds.
+
+@@@
+1
+00:00:00,840 --> 00:00:03,910
+No it's time to practice K and J.
+
+2
+00:00:04,050 --> 00:00:08,790
+So that's our big finger and our index finger of our right hand.
+
+3
+00:00:08,820 --> 00:00:12,510
+So practice those two keys for 30 seconds.
+
+@@@
+1
+00:00:00,920 --> 00:00:08,060
+Now we're gonna practice the K and H together so again the K with our big finger of long finger of our
+
+2
+00:00:08,060 --> 00:00:15,710
+right hand and will move our index finger to the left from the J where it rests to get the HK so practice
+
+3
+00:00:15,710 --> 00:00:17,510
+not for thirty seconds.
+
+@@@
+1
+00:00:00,630 --> 00:00:08,390
+And the last combination for the middle row of keys was our right hand again using our index finger
+
+2
+00:00:08,400 --> 00:00:11,990
+we're going to practice the J and the K back and forth.
+
+3
+00:00:12,000 --> 00:00:13,580
+So it's the J.
+
+4
+00:00:13,680 --> 00:00:18,890
+Pressing down and moving our index finger to the left to press the H.
+
+5
+00:00:18,880 --> 00:00:21,690
+I'm gonna do that back and forth for 30 seconds.
+
+@@@
+1
+00:00:01,230 --> 00:00:06,330
+So now it's time to continue your practice for your home case.
+
+2
+00:00:06,330 --> 00:00:14,610
+So with the short lectures I've shown you the position of each key in which fingers to use for each
+
+3
+00:00:14,610 --> 00:00:16,420
+one of course.
+
+4
+00:00:16,500 --> 00:00:23,310
+So now you need to get your practice sheets so that you can continue practicing those in your 20 to
+
+5
+00:00:23,310 --> 00:00:24,380
+30 minutes a day.
+
+6
+00:00:24,380 --> 00:00:28,950
+Remember 30 seconds per each combination.
+
+7
+00:00:28,990 --> 00:00:36,840
+No in the next lecture after this one finishes you will be shown a screen like this one here and on
+
+8
+00:00:36,840 --> 00:00:41,990
+it you will see this little blue link that is below my computer.
+
+9
+00:00:42,270 --> 00:00:48,960
+If you click on that that will then load a box where you can then download this to your computer and
+
+10
+00:00:48,960 --> 00:00:53,160
+then loaded up and then have it on the screen or print it out.
+
+11
+00:00:53,160 --> 00:00:55,560
+Better still if you want it next to your computer.
+
+12
+00:00:55,560 --> 00:00:56,340
+Or you could have it.
+
+13
+00:00:56,760 --> 00:01:03,030
+So you can have that screen on say one side of your computer screen and your word processor on the other
+
+14
+00:01:03,030 --> 00:01:09,350
+side so you can actually practice typing in their when you get your practice sheets.
+
+15
+00:01:09,350 --> 00:01:14,310
+You will see the left hand keys that we've gone through the whole case.
+
+16
+00:01:14,340 --> 00:01:17,650
+On the other hand then of course the right key.
+
+17
+00:01:17,660 --> 00:01:17,990
+Right.
+
+18
+00:01:17,990 --> 00:01:21,520
+Fingers know the right keys for your right hand as well.
+
+19
+00:01:21,560 --> 00:01:29,530
+Now beneath that you will see further practice where you're practicing the home keys with both hands.
+
+20
+00:01:29,540 --> 00:01:35,630
+No I didn't need to create lectures to demonstrate how to press those keys using both hands.
+
+21
+00:01:35,630 --> 00:01:41,900
+Because we've of course already gone through the positions of these keys on your keyboard as we've gone
+
+22
+00:01:41,900 --> 00:01:44,110
+through left and right hands and the lectures.
+
+23
+00:01:44,120 --> 00:01:50,000
+So what I suggest you do is practice the left hand and the right hand combinations and then do both
+
+24
+00:01:50,000 --> 00:01:57,530
+hand combinations as well and just go round the brain keep doing that and to competent enough with those
+
+25
+00:01:57,530 --> 00:02:03,420
+keys so you can do all the exercises without looking down at your keyboard when you're competent enough
+
+26
+00:02:03,420 --> 00:02:09,350
+for that then so continue to practice of course your typing because the more you practice the better
+
+27
+00:02:09,350 --> 00:02:16,100
+you get but then you will be able to as long as you're competent enough then it's time to move on to
+
+28
+00:02:16,100 --> 00:02:23,660
+the next sessions which is looking and learning the top row on your keyboard.
+
+@@@
+1
+00:00:00,780 --> 00:00:07,710
+So in this section you're going to learn the top row of letters and I'm going to be showing you in the
+
+2
+00:00:07,710 --> 00:00:09,680
+following lectures one at a time.
+
+3
+00:00:09,810 --> 00:00:16,290
+Which finger you would use to press each of these keys and then you will be able to practice those.
+
+4
+00:00:16,410 --> 00:00:22,260
+I'm going to practice them in combination with the keys that you've already learned which is of course
+
+5
+00:00:22,260 --> 00:00:24,930
+the letters on the middle row.
+
+6
+00:00:25,050 --> 00:00:31,100
+So each letter you're going to practice in combination with the letters on the middle row one at a time
+
+7
+00:00:31,470 --> 00:00:38,670
+and that will give you the benefit of that is that you'll be then used to getting the top key and getting
+
+8
+00:00:38,670 --> 00:00:43,100
+it from after pressing whatever key it is you press on the middle.
+
+9
+00:00:43,110 --> 00:00:48,000
+And of course by doing that they're not only able to improve your speed later on when you come to actually
+
+10
+00:00:48,000 --> 00:00:56,520
+type text but also it will help you learn that key very very well so that you'll get to the point where
+
+11
+00:00:56,520 --> 00:01:00,630
+you're confident that you don't need to look at the keyboard.
+
+12
+00:01:00,630 --> 00:01:06,440
+So at the end of this section you actually have the opportunity of downloading a practice sheet where
+
+13
+00:01:06,450 --> 00:01:10,800
+it will give you each key combination to practice which you'll practice.
+
+14
+00:01:10,800 --> 00:01:13,860
+Each combination for 30 seconds each.
+
+15
+00:01:13,860 --> 00:01:16,740
+So with that let's get on to learning the first key.
+
+@@@
+1
+00:00:01,340 --> 00:00:06,320
+So no for our first key in the top row of letters.
+
+2
+00:00:06,430 --> 00:00:07,910
+So we're going to practice first.
+
+3
+00:00:08,010 --> 00:00:14,570
+The Q So you already know where your keys are now on their home keys.
+
+4
+00:00:14,570 --> 00:00:17,650
+You know the keys on the middle row so don't need to teach.
+
+5
+00:00:17,650 --> 00:00:22,430
+It was again because you've hopefully being practiced and knows now can do those without looking at
+
+6
+00:00:22,430 --> 00:00:23,030
+the keyboard.
+
+7
+00:00:23,750 --> 00:00:25,540
+So first is that Q.
+
+8
+00:00:25,550 --> 00:00:33,650
+So essentially we're gonna do a Q in combination so the finger that you used to press the Q is the same
+
+9
+00:00:33,650 --> 00:00:35,440
+key you press the a with.
+
+10
+00:00:35,510 --> 00:00:38,540
+So that's a small finger on your left hand.
+
+11
+00:00:38,690 --> 00:00:47,060
+So simply first to 30 seconds of a Q and then when you've done that 30 seconds of S Q 30 seconds of
+
+12
+00:00:47,060 --> 00:00:49,600
+Dean Q f ing Q Jay.
+
+13
+00:00:49,610 --> 00:00:57,050
+Q and continue across the board like that so that when you've done all those fingers that you've been
+
+14
+00:00:57,050 --> 00:01:04,340
+practicing on the middle row and you do them in combination back and forth with the Q 30 seconds each.
+
+15
+00:01:04,370 --> 00:01:11,810
+No there's the practice sheet after these lectures which will give you something that you can use to
+
+16
+00:01:11,810 --> 00:01:15,290
+practice with which will give you these combinations to practice.
+
+@@@
+1
+00:00:01,320 --> 00:00:07,800
+Now for our next letter on the top row which is the W and again we're going to practice back and forth
+
+2
+00:00:08,250 --> 00:00:14,850
+in two letter combinations with the keys on the middle row to get used to the W and pressing them also
+
+3
+00:00:14,850 --> 00:00:21,600
+in combination with all the keys that you've learned in practice so far so the W is pressed with the
+
+4
+00:00:21,600 --> 00:00:24,210
+same finger that you press the s with.
+
+5
+00:00:24,570 --> 00:00:27,720
+So that's your left hand ring finger.
+
+6
+00:00:27,720 --> 00:00:31,870
+So that's the finger that you use to press the W.
+
+7
+00:00:32,100 --> 00:00:40,650
+So again you'll be practicing each of these letters with the W for 30 seconds each across the middle
+
+8
+00:00:40,650 --> 00:00:41,840
+row of keys.
+
+9
+00:00:41,970 --> 00:00:48,630
+And like I said in The Last Lecture at the end of this section for the top row you will find your practice
+
+10
+00:00:48,630 --> 00:00:54,630
+sheets which you can print off if you like or just have them on your computer screen next to a word
+
+11
+00:00:54,630 --> 00:00:57,560
+processor where you can practice these keys.
+
+12
+00:00:57,570 --> 00:00:59,190
+So that's the W.K..
+
+@@@
+1
+00:00:00,870 --> 00:00:07,860
+The next key to practice is the E and the E is pressed with the same key that you press the D with.
+
+2
+00:00:07,860 --> 00:00:11,350
+So that's your longest finger on your left hand.
+
+3
+00:00:11,370 --> 00:00:14,370
+So once again you practice for 30 seconds each.
+
+4
+00:00:14,370 --> 00:00:22,030
+The e with a one with one of the letters on the middle row for 30 seconds of each letter so the E for
+
+5
+00:00:22,080 --> 00:00:25,830
+instance for instance EAA for thirty seconds.
+
+6
+00:00:25,860 --> 00:00:27,660
+Yes and so on and so on.
+
+7
+00:00:27,750 --> 00:00:28,740
+So that's the E.
+
+@@@
+1
+00:00:00,360 --> 00:00:08,310
+No for the letter R and R is you press not using the same finger that you press to F so that's the index
+
+2
+00:00:08,310 --> 00:00:09,770
+finger of your left hand.
+
+3
+00:00:09,810 --> 00:00:12,270
+So once again 30 seconds each.
+
+4
+00:00:12,270 --> 00:00:18,270
+You're gonna practice the R in combination back and forth with each of the letters across the middle
+
+5
+00:00:19,460 --> 00:00:25,310
+and that all of these practice sessions will be in your practice sheet at the end of the section as
+
+6
+00:00:25,310 --> 00:00:25,550
+well.
+
+@@@
+1
+00:00:00,690 --> 00:00:01,040
+No.
+
+2
+00:00:01,040 --> 00:00:09,330
+For the letter t the letter T is pressed using the same finger that you press the f key with.
+
+3
+00:00:09,360 --> 00:00:15,630
+So again your index finger is used so you use the indexing finger for the R but we also use it for the
+
+4
+00:00:15,630 --> 00:00:17,250
+T as well.
+
+5
+00:00:17,250 --> 00:00:19,370
+So 30 seconds each.
+
+6
+00:00:19,560 --> 00:00:28,170
+So t with these t with f g h j and so on right across the board 30 seconds each and once again these
+
+7
+00:00:28,170 --> 00:00:30,540
+are all in your practice sheet at the end of this section.
+
+@@@
+1
+00:00:01,140 --> 00:00:05,390
+No still with the top Keys we're going to work from the right hand side.
+
+2
+00:00:05,850 --> 00:00:11,500
+So I could have start from the left I suppose but just seemed logical to start from the right.
+
+3
+00:00:11,520 --> 00:00:18,930
+So the letter P so the finger that you used to pass the P is the same finger you reduce to get the semicolon
+
+4
+00:00:19,350 --> 00:00:21,600
+which is your right hand small finger.
+
+5
+00:00:21,840 --> 00:00:26,040
+So that's the key that's the finger that you used to press the letter P.
+
+6
+00:00:26,370 --> 00:00:34,090
+So once again you re practicing each key in turn across the bottom one at a time for 30 seconds each.
+
+7
+00:00:34,230 --> 00:00:40,540
+So P L K P J for 30 seconds P and H with 30 seconds and so on.
+
+8
+00:00:40,620 --> 00:00:42,810
+That's the letter piece of practice that one.
+
+@@@
+1
+00:00:00,990 --> 00:00:02,440
+No for the next letter.
+
+2
+00:00:02,670 --> 00:00:04,140
+That's the O.
+
+3
+00:00:04,230 --> 00:00:06,650
+And as you may have already now getting the idea.
+
+4
+00:00:06,660 --> 00:00:12,830
+The finger that you used to press the o is the same key that you pressed the l.
+
+5
+00:00:13,350 --> 00:00:16,440
+So that is your right hand ring finger.
+
+6
+00:00:16,620 --> 00:00:21,030
+So once again you just simply go through 30 seconds each.
+
+7
+00:00:21,060 --> 00:00:26,010
+OJ OJ OJ so on for 30 seconds the same with O H G.
+
+8
+00:00:26,250 --> 00:00:28,430
+And so on all the way across.
+
+9
+00:00:28,530 --> 00:00:34,380
+And like I said earlier this these exercises will all be in your practice sheets at the end of this
+
+10
+00:00:34,380 --> 00:00:34,920
+section.
+
+@@@
+1
+00:00:00,710 --> 00:00:02,180
+No for the letter I.
+
+2
+00:00:02,180 --> 00:00:08,670
+The letter I as you may have guessed is pressed with the same key you press the letter key key.
+
+3
+00:00:08,870 --> 00:00:13,830
+The letter K so that is your long finger on your right hand.
+
+4
+00:00:13,850 --> 00:00:17,830
+So once again thirty seconds each along with each key in the middle.
+
+5
+00:00:18,010 --> 00:00:22,600
+Press the wrong key there so it's simply across the keyboard.
+
+6
+00:00:22,610 --> 00:00:26,420
+Like so I along with all of those keys.
+
+@@@
+1
+00:00:00,600 --> 00:00:03,430
+Now we're going to practice and learn the latter.
+
+2
+00:00:03,430 --> 00:00:08,760
+You saw the letter you express with the same finger that you pressed the letter J.
+
+3
+00:00:08,790 --> 00:00:10,020
+So that is your as you.
+
+4
+00:00:10,020 --> 00:00:13,990
+Or it may have guessed your index finger of your right hand.
+
+5
+00:00:14,010 --> 00:00:19,710
+So once again you're going through each of the letters one at a time for thirty seconds each in combination
+
+6
+00:00:20,010 --> 00:00:21,240
+with the letter you.
+
+@@@
+1
+00:00:00,530 --> 00:00:08,860
+I know for the last letter in the top row so it's the letter Y you press the letter y with the same
+
+2
+00:00:08,860 --> 00:00:11,910
+finger that you press the letter J with.
+
+3
+00:00:12,070 --> 00:00:14,770
+So that is your index finger of your right hand.
+
+4
+00:00:14,770 --> 00:00:22,390
+So once again you practice the 30 seconds come in combination with each of these letters on the middle
+
+5
+00:00:22,390 --> 00:00:28,210
+row one at a time which will of course also these will appear in your practice sheets.
+
+@@@
+1
+00:00:00,740 --> 00:00:07,730
+So you have now learned all the top keys or the keys in the top row or the letter keys that is in the
+
+2
+00:00:07,730 --> 00:00:08,810
+top row.
+
+3
+00:00:08,900 --> 00:00:12,470
+You've learned those and practiced them each 30 seconds each.
+
+4
+00:00:12,470 --> 00:00:15,510
+Now I want you to continue practicing those.
+
+5
+00:00:15,860 --> 00:00:23,030
+Just keep keep practicing over and over until you're able to type all the keys without looking down
+
+6
+00:00:23,030 --> 00:00:24,350
+at your keyboard.
+
+7
+00:00:24,380 --> 00:00:25,510
+So to help you do that.
+
+8
+00:00:25,550 --> 00:00:28,000
+I've included a practice sheet.
+
+9
+00:00:28,190 --> 00:00:33,980
+You can download to your computer so you can either print it off and then have it next to your computer
+
+10
+00:00:34,820 --> 00:00:38,270
+or if you wish you can have it on your computer and have it.
+
+11
+00:00:38,270 --> 00:00:44,060
+So it's next to your word processor and then you can type and practice it that way.
+
+12
+00:00:44,060 --> 00:00:47,540
+So you get your practice sheet by clicking on this link here.
+
+13
+00:00:47,540 --> 00:00:49,650
+So this is the next lecture.
+
+14
+00:00:49,670 --> 00:00:55,520
+So just after this lecture finishes the next lecture it will be this screen click on this link here
+
+15
+00:00:55,550 --> 00:01:03,100
+which says top keys practice top PDA F and that will then allow you to download it to your computer.
+
+16
+00:01:03,100 --> 00:01:06,800
+Now on the practice sheets you'll notice there's three sections.
+
+17
+00:01:06,800 --> 00:01:13,300
+The first section is the top left keys and then the second section is the top right keys.
+
+18
+00:01:13,460 --> 00:01:19,280
+But below that then there is a section for all the top keys so that's essentially where you're practicing
+
+19
+00:01:19,280 --> 00:01:21,610
+a combination of all the top keys.
+
+20
+00:01:21,680 --> 00:01:28,640
+One other time to remember each client key combination 30 seconds each and continue practicing over
+
+21
+00:01:28,640 --> 00:01:35,780
+and over when you are then competent so that you can type all the keys without looking at your keyboard
+
+22
+00:01:36,110 --> 00:01:40,310
+then it's time to move on to the next section which is the bottom keys.
+
+@@@
+1
+00:00:00,910 --> 00:00:09,300
+So in this section we're going to learn and practice the keys on the bottom row.
+
+2
+00:00:09,400 --> 00:00:14,020
+So I'm going to be showing you one at a time which finger you would use to press each of these keys
+
+3
+00:00:14,650 --> 00:00:18,840
+and of course to really learn them and get the benefit of it.
+
+4
+00:00:18,850 --> 00:00:23,380
+You're gonna be practice some in combination with the keys that you've already learned on the middle
+
+5
+00:00:23,380 --> 00:00:31,030
+row which include your home keys benefit that is so not only will you be faster when you come to do
+
+6
+00:00:31,030 --> 00:00:38,020
+actual typing of text but also you're going to really learn these keys so well that you won't need to
+
+7
+00:00:38,020 --> 00:00:44,020
+look at the keyboard which is the whole point of touch typing which makes you faster at the end of this
+
+8
+00:00:44,020 --> 00:00:49,930
+section of course like the last section you will then have the opportunity of downloading a practice
+
+9
+00:00:49,930 --> 00:00:56,290
+sheet giving you each of these letter combinations to practice so you'll be practicing each letter combination
+
+10
+00:00:56,500 --> 00:01:00,000
+like before for 30 seconds each.
+
+11
+00:01:00,010 --> 00:01:04,390
+So with that let's get going get on and learn the first letter.
+
+@@@
+1
+00:00:00,990 --> 00:00:05,890
+So the first letter that we're going to learn and practice is the letter Z.
+
+2
+00:00:05,970 --> 00:00:12,570
+So the letter Z you press that key with the same finger that you pressed the letter A with on the left
+
+3
+00:00:12,570 --> 00:00:19,440
+hand that is your small fingers or the small fingers used for the A as well as the Q and the Z.
+
+4
+00:00:19,440 --> 00:00:23,250
+So never going to practice and learn the Z key.
+
+5
+00:00:23,250 --> 00:00:30,300
+So do this for 30 seconds and you're going to do it for 30 seconds as well in combination one at a time
+
+6
+00:00:30,660 --> 00:00:33,930
+with all of the letters across the middle row.
+
+@@@
+1
+00:00:00,660 --> 00:00:08,240
+No we're going to learn the X unpacked just not the X is pressed using the key the finger that you used
+
+2
+00:00:08,240 --> 00:00:12,950
+to press the letter S which is the same one you used to press the letter W.
+
+3
+00:00:12,950 --> 00:00:15,710
+So that is the ring finger of your left hand.
+
+4
+00:00:15,710 --> 00:00:24,320
+So once again we're going to practice that for 30 seconds with each key across the middle row just like
+
+5
+00:00:24,320 --> 00:00:25,730
+we did with the Z.
+
+@@@
+1
+00:00:00,850 --> 00:00:02,310
+No for their next letter.
+
+2
+00:00:02,310 --> 00:00:04,390
+That's the letter see.
+
+3
+00:00:04,630 --> 00:00:11,620
+They see you press that key using your longest finger of your left hand which is the same letter finger
+
+4
+00:00:11,620 --> 00:00:13,950
+that you used to press the letter D.
+
+5
+00:00:14,170 --> 00:00:20,350
+So let's use the big finger is used for the d the E above in the seat but now we're gonna practice the
+
+6
+00:00:20,350 --> 00:00:26,680
+C once again for thirty seconds each one at a time with each of these letters across the Middle.
+
+@@@
+1
+00:00:00,630 --> 00:00:04,400
+Next we're going to practice the letter V and the V.
+
+2
+00:00:04,470 --> 00:00:07,350
+You press not using your index finger of your left hand.
+
+3
+00:00:07,380 --> 00:00:13,660
+So that's the finger that you used to press the f the f k and also of course the archy.
+
+4
+00:00:13,680 --> 00:00:17,240
+So once again 30 seconds each letter combination.
+
+5
+00:00:17,340 --> 00:00:20,880
+So the V one at a time with each of these letters across the Middle.
+
+@@@
+1
+00:00:00,590 --> 00:00:08,510
+Next is the letter B and the finger that you use to press that it would be is the same finger that you
+
+2
+00:00:08,510 --> 00:00:14,470
+used to press the f on the middle row which is your index finger of your left hand.
+
+3
+00:00:14,480 --> 00:00:21,860
+So once again we're gonna practice 30 seconds of time with each letter across the middle row so 30 seconds
+
+4
+00:00:22,520 --> 00:00:23,450
+with each letter.
+
+@@@
+1
+00:00:01,030 --> 00:00:03,650
+No we're going to move over to the right.
+
+2
+00:00:03,690 --> 00:00:11,340
+The bottom key is the forward slash key of C C is a question mark there as well which you can get by
+
+3
+00:00:11,340 --> 00:00:17,510
+pressing shift for and holding shift and in doing so you're just going to refer to that as a slash K
+
+4
+00:00:17,520 --> 00:00:18,920
+to make it easier and simpler.
+
+5
+00:00:19,380 --> 00:00:26,250
+So we're gonna start by practicing now 30 seconds with one other key in the middle row one at a time
+
+6
+00:00:26,260 --> 00:00:33,500
+so we're going to go from right all the way over to left this time because it's for the right hand.
+
+7
+00:00:33,600 --> 00:00:40,590
+So practice that key for 30 seconds and the finger that you used to place on that key you may have already
+
+8
+00:00:40,590 --> 00:00:46,950
+guessed is your small finger on your right hand who's the same key you used to press the semicolon key.
+
+@@@
+1
+00:00:00,990 --> 00:00:05,850
+So the next key we're going to practice and learn is the full stop key.
+
+2
+00:00:06,270 --> 00:00:12,270
+So the finger that you used to press the full stop key is the same finger that you used to press the
+
+3
+00:00:12,360 --> 00:00:15,620
+L which is your ring finger of your right hand.
+
+4
+00:00:15,630 --> 00:00:22,530
+So once again we're going to 30 seconds at a time with each of these keys across the middle row.
+
+@@@
+1
+00:00:01,000 --> 00:00:06,470
+The next key we're going to practice and learn is the common key the finger that used to press the common
+
+2
+00:00:06,470 --> 00:00:11,680
+key is the same one that you used to press the K on the middle row which is your longest finger of your
+
+3
+00:00:12,010 --> 00:00:13,620
+right on your right hand.
+
+4
+00:00:13,630 --> 00:00:20,290
+So once again we're going to practice for 30 seconds a time in combination with these keys across the
+
+5
+00:00:20,290 --> 00:00:20,560
+Middle.
+
+@@@
+1
+00:00:00,740 --> 00:00:06,470
+The next key that we're going to practice is the letter M and the finger that you would use to press
+
+2
+00:00:06,470 --> 00:00:11,570
+the M is the finger that you used to press the J on the middle road and also the U above on the top
+
+3
+00:00:11,570 --> 00:00:12,050
+row.
+
+4
+00:00:12,140 --> 00:00:14,980
+Not sure index finger of your right hand.
+
+5
+00:00:14,990 --> 00:00:21,440
+So once again for 30 seconds a time when a practice in combination with each key on the middle row one
+
+6
+00:00:21,440 --> 00:00:22,010
+at a time.
+
+@@@
+1
+00:00:00,380 --> 00:00:07,590
+On the next key on the bottom row is the N so we use our index finger of our right hand to press the
+
+2
+00:00:07,590 --> 00:00:07,990
+ends.
+
+3
+00:00:07,990 --> 00:00:14,760
+It's the same finger that used to press the J on the home key so we're gonna practice that key with
+
+4
+00:00:14,910 --> 00:00:19,770
+one of each of the keys across the middle one at a time for 30 seconds each.
+
+@@@
+1
+00:00:01,350 --> 00:00:08,790
+So we have now gone through all the bottom row or the keys on the bottom of the letters and learn which
+
+2
+00:00:09,060 --> 00:00:13,800
+fingers to use to press each one in practice each one for 30 seconds.
+
+3
+00:00:13,800 --> 00:00:18,250
+So you need to continue practicing that over and over again.
+
+4
+00:00:18,330 --> 00:00:26,880
+30 seconds for each double key combination until you're able to type each combination without looking
+
+5
+00:00:26,880 --> 00:00:30,640
+down at your keyboard and off.
+
+6
+00:00:30,750 --> 00:00:36,450
+No I've given you a practice sheet of course that you can use this to continue practicing so you can
+
+7
+00:00:36,450 --> 00:00:42,420
+either print it out or if you wish you can have it on your computer so have it so that you can see it
+
+8
+00:00:42,840 --> 00:00:44,360
+next to your word processor.
+
+9
+00:00:44,370 --> 00:00:45,990
+So have the practice sheet on the left.
+
+10
+00:00:46,250 --> 00:00:52,230
+You were a process on the right or whichever way you want it and then continue just practicing the combinations
+
+11
+00:00:52,230 --> 00:00:55,640
+by looking at the practice sheet without looking at your keyboard.
+
+12
+00:00:55,680 --> 00:01:00,680
+Keep doing that until you're eventually able to do it without looking at your keyboard at all.
+
+13
+00:01:00,700 --> 00:01:04,440
+Now like the previous practice sheets there's three sections.
+
+14
+00:01:04,440 --> 00:01:12,570
+So the first one is or the bottom keys on the left hand side so the one you use your left hand to type
+
+15
+00:01:13,050 --> 00:01:15,000
+and then the next section is the key.
+
+16
+00:01:15,000 --> 00:01:20,460
+Bottom keys on the right hand side which is what you used to type with your right hand and then the
+
+17
+00:01:20,460 --> 00:01:27,540
+final section is where it's all the bottom keys in combination of two letters at a time.
+
+18
+00:01:27,540 --> 00:01:31,680
+So like I said practice each combination for 30 seconds each.
+
+19
+00:01:31,680 --> 00:01:39,390
+Just keep going over and over and over that until you're confident enough to practice all the key combinations
+
+20
+00:01:39,390 --> 00:01:41,760
+without looking down at your keyboard.
+
+@@@
+1
+00:00:02,130 --> 00:00:09,000
+So on the next section I'm going to be teaching you the numbers in the very top row of your keyboard
+
+2
+00:00:09,720 --> 00:00:11,300
+like we did with the letters.
+
+3
+00:00:11,310 --> 00:00:16,760
+We're going to practice some with two numbers at a time.
+
+4
+00:00:16,770 --> 00:00:20,720
+So 30 seconds each combination pair of numbers.
+
+5
+00:00:20,850 --> 00:00:26,600
+That way it would become automatic for you and your bed to type the numbers a lot quicker.
+
+6
+00:00:26,640 --> 00:00:35,130
+Using this practice method without looking at your keys at the end of the section on no practice then
+
+7
+00:00:35,130 --> 00:00:41,740
+I will be giving you the opportunity to download a practice sheet so that you can continue practicing
+
+8
+00:00:41,740 --> 00:00:47,160
+in the pairs of numbers until you are proficient enough to do this type any number without looking at
+
+9
+00:00:47,160 --> 00:00:48,120
+the keyboard.
+
+10
+00:00:48,120 --> 00:00:52,170
+So with that let's go on to the number practice.
+
+@@@
+1
+00:00:00,860 --> 00:00:09,620
+So far our first pair number one and two together as you practice for 30 seconds back and forth like
+
+2
+00:00:09,620 --> 00:00:12,940
+we did when we did the letters on the keyboard.
+
+3
+00:00:13,550 --> 00:00:20,570
+So of course if you haven't already guessed it the one you use the small finger of your left hand.
+
+4
+00:00:21,280 --> 00:00:26,090
+And for the two you use your ring finger of your left hand.
+
+5
+00:00:26,090 --> 00:00:30,260
+So essentially using those fingers you pressed the one on the two.
+
+6
+00:00:30,400 --> 00:00:32,710
+So you do it for 30 seconds back and forth.
+
+7
+00:00:32,720 --> 00:00:36,520
+So you go one two one 2 and so on.
+
+8
+00:00:36,620 --> 00:00:39,560
+Start slowly and so make sure keep it short.
+
+9
+00:00:39,560 --> 00:00:41,540
+Make sure you keep accuracy.
+
+10
+00:00:41,540 --> 00:00:44,510
+And then slowly build up your speed.
+
+11
+00:00:44,720 --> 00:00:50,690
+If you start then getting the wrong keys just slow slightly reduce your speed again until you can get
+
+12
+00:00:50,690 --> 00:00:54,590
+back to accuracy and let your speed slowly build up from there.
+
+13
+00:00:54,610 --> 00:01:01,130
+Let's continue practicing just 30 seconds for this pair and then you would move on to the next pair
+
+14
+00:01:01,130 --> 00:01:06,740
+of letters on the next pair next parents so on and so on and then eventually you go back to the first
+
+15
+00:01:06,740 --> 00:01:09,280
+pair wanted to again start all over again.
+
+16
+00:01:09,350 --> 00:01:11,090
+Continue practicing that way.
+
+@@@
+1
+00:00:01,000 --> 00:00:06,490
+The next number is three which will practice with one you already know which finger to use on one.
+
+2
+00:00:06,500 --> 00:00:08,510
+That's the small finger of your left hand.
+
+3
+00:00:08,830 --> 00:00:14,190
+The three you use the longest finger of your left hand to press that.
+
+4
+00:00:14,380 --> 00:00:21,310
+So essentially the one is pressed with the finger you used to press a Q in Z the same finger the finger
+
+5
+00:00:21,310 --> 00:00:27,430
+that used to press decency use that to press three to once again back and forth starting slowly and
+
+6
+00:00:27,460 --> 00:00:36,530
+gradually building up speed to keep accuracy 1 3 1 3 and so on so do that next for 30 seconds and then
+
+7
+00:00:36,930 --> 00:00:39,150
+will do 30 seconds for the next pair of letters.
+
+@@@
+1
+00:00:00,940 --> 00:00:03,570
+The next pair of letters is 1 in 4.
+
+2
+00:00:03,610 --> 00:00:05,180
+We're learning the new latch.
+
+3
+00:00:05,390 --> 00:00:05,980
+No.
+
+4
+00:00:06,050 --> 00:00:08,680
+It was a nice pair of numbers 1 and 4.
+
+5
+00:00:08,710 --> 00:00:11,790
+So we're learning of course a new number which is 4.
+
+6
+00:00:12,160 --> 00:00:16,590
+So 1 you know which finger to use to press one small finger of your left arm.
+
+7
+00:00:16,740 --> 00:00:22,120
+The for you will you will you will use your index finger of your left hand to press that one so the
+
+8
+00:00:22,120 --> 00:00:25,570
+same thing you used to press the F and R and the.
+
+9
+00:00:25,900 --> 00:00:33,220
+So once again back and forth starting slowly gradually building at the speed for 30 seconds 1 and 4.
+
+@@@
+1
+00:00:00,910 --> 00:00:02,130
+The next number is five.
+
+2
+00:00:02,130 --> 00:00:04,330
+We'll practice that still with one.
+
+3
+00:00:05,110 --> 00:00:06,480
+So one in five.
+
+4
+00:00:06,670 --> 00:00:12,950
+The five you will use again your index finger of your left hand to press the five.
+
+5
+00:00:13,050 --> 00:00:16,420
+So it's used for the same number.
+
+6
+00:00:16,420 --> 00:00:21,570
+So you your index finger like you use it for F and G on the middle row.
+
+7
+00:00:21,700 --> 00:00:23,710
+You will see the same three numbers above.
+
+8
+00:00:23,710 --> 00:00:25,760
+Use it for the four under five.
+
+9
+00:00:25,840 --> 00:00:28,890
+So no for the five practice one and five.
+
+10
+00:00:28,890 --> 00:00:36,850
+Back and forth starting slowly and do that practice for thirty seconds and then do the next pair of
+
+11
+00:00:36,850 --> 00:00:37,330
+numbers.
+
+@@@
+1
+00:00:01,510 --> 00:00:05,680
+The next number to learn and practice is number six.
+
+2
+00:00:05,690 --> 00:00:07,980
+Note the number six is you.
+
+3
+00:00:08,020 --> 00:00:12,680
+You press that with the index finger of your right hand.
+
+4
+00:00:12,930 --> 00:00:16,120
+So never starting to use numbers with our right hand.
+
+5
+00:00:16,510 --> 00:00:21,880
+But the this I'm going to keep the pair of numbers all with the one so far.
+
+6
+00:00:21,880 --> 00:00:26,290
+Don't worry you'll also practice in combination.
+
+7
+00:00:26,410 --> 00:00:34,480
+The other letters other numbers together as pairs as well but that will be in the practice sheets but
+
+8
+00:00:34,690 --> 00:00:42,950
+for the purposes here is learning which finger to use to press each number in these videos.
+
+9
+00:00:43,240 --> 00:00:44,520
+So one in six.
+
+10
+00:00:44,530 --> 00:00:47,020
+So the one is with a small thing of the left hand.
+
+11
+00:00:47,020 --> 00:00:51,370
+Of course you know the six with the index finger of your right hand.
+
+12
+00:00:51,370 --> 00:00:53,710
+So practice for thirty seconds.
+
+13
+00:00:54,070 --> 00:00:55,720
+That pair of numbers.
+
+@@@
+1
+00:00:00,980 --> 00:00:03,000
+And the next number is number seven.
+
+2
+00:00:03,000 --> 00:00:07,380
+Continuing to practice along with the number one as a pair.
+
+3
+00:00:07,440 --> 00:00:09,180
+At the moment.
+
+4
+00:00:09,180 --> 00:00:13,710
+So the seven again is your index finger of your right hand.
+
+5
+00:00:13,720 --> 00:00:21,840
+So the index finger of your right hand essentially is used for the number six and then number seven.
+
+6
+00:00:21,840 --> 00:00:27,840
+So we're going to practice no slowly at first and building a speed up to keep accuracy the one under
+
+7
+00:00:27,840 --> 00:00:28,800
+seven.
+
+8
+00:00:28,830 --> 00:00:34,890
+Do that for 30 seconds and then we'll move on to the next pair of numbers.
+
+@@@
+1
+00:00:01,080 --> 00:00:04,550
+The next number is the number eight.
+
+2
+00:00:04,590 --> 00:00:10,470
+So the eight you use your longest finger of your right hand.
+
+3
+00:00:10,470 --> 00:00:14,110
+So again practicing with number one at the moment.
+
+4
+00:00:14,110 --> 00:00:20,190
+That pair who do other pairs later on when you get your practice sheets so you get to practice all the
+
+5
+00:00:20,190 --> 00:00:24,060
+numbers in in a in combination.
+
+6
+00:00:24,060 --> 00:00:27,890
+So for now we're going to just practice one and the number eight.
+
+7
+00:00:27,900 --> 00:00:37,410
+So start slowly and build up your speed keeping accuracy so 1 8 1 8 on a game remember it's the longest
+
+8
+00:00:37,410 --> 00:00:40,770
+finger on your right hand foot the number eight.
+
+@@@
+1
+00:00:00,830 --> 00:00:03,210
+The next number is the number nine.
+
+2
+00:00:03,650 --> 00:00:09,620
+And you may have already guessed that Bain finger that you used to press the number nine is the ring
+
+3
+00:00:09,620 --> 00:00:16,850
+finger of your right hand the same one you used to press the letter L and of course the oh and the full
+
+4
+00:00:16,850 --> 00:00:18,650
+stop below.
+
+5
+00:00:18,650 --> 00:00:27,710
+So perhaps again 1 and 9 together as to number combination practice starting slowly.
+
+6
+00:00:27,710 --> 00:00:33,380
+These two numbers for 30 seconds and then we'll move on to the last number.
+
+@@@
+1
+00:00:00,660 --> 00:00:03,150
+No for the zero.
+
+2
+00:00:03,720 --> 00:00:07,460
+You will press that using your smallest finger on your right hand.
+
+3
+00:00:07,470 --> 00:00:15,690
+The one that you used to press the semicolon and also the letter P and of course below the slash or
+
+4
+00:00:15,690 --> 00:00:18,970
+the question mark if you hold down the shift key first.
+
+5
+00:00:19,170 --> 00:00:25,580
+So 1 and 0 so the small fingers on both hands this time so it's the smallest finger on your left hand
+
+6
+00:00:25,590 --> 00:00:32,640
+for the one on the smallest finger in your right hand for the 0 1 to gain 30 seconds starting slowly
+
+7
+00:00:32,940 --> 00:00:38,490
+and as you continue practice keeping accuracy your build up your speed as you to become faster.
+
+@@@
+1
+00:00:00,780 --> 00:00:05,400
+No that I've shown you which fingers to use for each of the numbers across the top.
+
+2
+00:00:05,460 --> 00:00:11,790
+You continue your practice of using the practice sheets that you'll be able to download in the next
+
+3
+00:00:11,790 --> 00:00:13,460
+lecture.
+
+4
+00:00:13,470 --> 00:00:17,670
+Those practice sheets then will get you to practice in combination.
+
+5
+00:00:17,730 --> 00:00:19,340
+All the numbers in pairs.
+
+6
+00:00:19,530 --> 00:00:28,560
+So the next one after the the 1 and 2 1 and 3 1 and 4 and so up to 0 you'll be 2 in 3 4 5 6 7 8 2 and
+
+7
+00:00:28,570 --> 00:00:30,080
+9 2 0.
+
+8
+00:00:30,090 --> 00:00:36,450
+Moving on then to 3 and 4 reason we don't go 3 and 1 is because we've already done one in 3.
+
+9
+00:00:36,600 --> 00:00:40,240
+We don't do 2 and 3 again because we've already done 2 and 3.
+
+10
+00:00:40,350 --> 00:00:45,180
+So we just start from the 3 up to the not impaired and go 4 and 5.
+
+11
+00:00:45,210 --> 00:00:47,340
+Because you've already done the 3 and 4 right.
+
+12
+00:00:47,850 --> 00:00:49,890
+So back and forth 4 and 5 and so on.
+
+13
+00:00:49,890 --> 00:00:56,190
+Going through right up to get to the 9 under 0 right at the end.
+
+14
+00:00:56,190 --> 00:00:58,390
+So that's the practice sheets though.
+
+15
+00:00:58,470 --> 00:01:02,580
+So in the next lecture you'll be able to download the practice sheets.
+
+16
+00:01:04,220 --> 00:01:11,720
+So like in the previous sections in the next lecture you see the screen which will give you the link
+
+17
+00:01:12,140 --> 00:01:14,570
+to download the practice sheet.
+
+18
+00:01:14,600 --> 00:01:20,530
+So just simply click on that and download and then you can use it on your computer screen side by side
+
+19
+00:01:20,540 --> 00:01:24,170
+be a word processor or if you prefer you can printed out.
+
+@@@
+1
+00:00:00,930 --> 00:00:07,750
+Going to show you the easiest way now to practice doing capital letters.
+
+2
+00:00:07,860 --> 00:00:10,890
+You do that by pressing the shift key on your keyboard.
+
+3
+00:00:10,920 --> 00:00:17,790
+Now also the shift key will be what you would use to access the characters which appear above another
+
+4
+00:00:17,790 --> 00:00:24,930
+character on your keyboard so if you look on the bottom right you'll see the slash key and there is
+
+5
+00:00:24,930 --> 00:00:29,940
+a question mark above it you get the question mark by holding down the shift key and then pressing that
+
+6
+00:00:29,940 --> 00:00:31,920
+key and it'll give you the question mark.
+
+7
+00:00:31,920 --> 00:00:35,370
+So we look along with a keyboard like above the numbers.
+
+8
+00:00:35,370 --> 00:00:40,440
+Quite a few keys have another option above them and you get that by holding and pressing down the shift
+
+9
+00:00:40,440 --> 00:00:40,640
+key.
+
+10
+00:00:40,640 --> 00:00:43,050
+Now you may already know that note.
+
+11
+00:00:43,230 --> 00:00:46,680
+Again we want to be learning how to press the shift key without actually having to look down at the
+
+12
+00:00:46,680 --> 00:00:49,380
+keyboard because otherwise it's going to slow us down.
+
+13
+00:00:49,410 --> 00:00:51,390
+So there is a really easy way of doing that.
+
+14
+00:00:51,390 --> 00:00:59,090
+So first we're going to get used to which fingers you press used to press the shift key so on in on
+
+15
+00:00:59,100 --> 00:01:00,820
+your left hand your small key.
+
+16
+00:01:00,840 --> 00:01:04,290
+That's the one you use to press the A on the home keys.
+
+17
+00:01:04,630 --> 00:01:16,080
+You slide that down to the left OK diagonally down to the left and press are onto the shift key.
+
+18
+00:01:16,080 --> 00:01:23,790
+Similarly on the right hand side you'll produce your small finger used to press the semicolon key and
+
+19
+00:01:23,790 --> 00:01:28,770
+slide that down diagonally over to the right to press the shift key.
+
+20
+00:01:29,080 --> 00:01:29,990
+OK.
+
+21
+00:01:30,360 --> 00:01:34,400
+So that's the fingers that you would use.
+
+22
+00:01:34,400 --> 00:01:38,220
+But when you're not looking at the keyboard you know sliding of cost making sure you know you're actually
+
+23
+00:01:38,220 --> 00:01:39,570
+hitting not key.
+
+24
+00:01:39,570 --> 00:01:41,400
+That's where we need to practice.
+
+25
+00:01:41,400 --> 00:01:46,360
+So this is what you would do to practice what I recommend in it's this.
+
+26
+00:01:46,560 --> 00:01:54,540
+So as you remember in the earlier lesson we talked about how to find the home keys and that is by having
+
+27
+00:01:54,540 --> 00:02:00,420
+your little fingers on the F of a left hand and the play the index finger of your left hand on the FCC
+
+28
+00:02:00,780 --> 00:02:07,110
+your right index finger on the Jaqui and remember there was a little pump on that key so we could find
+
+29
+00:02:07,110 --> 00:02:07,710
+it.
+
+30
+00:02:07,710 --> 00:02:11,040
+So keeping an eye so essentially keep your.
+
+31
+00:02:11,100 --> 00:02:15,370
+So for the if you want to copy the letter on the left using your left hand.
+
+32
+00:02:16,530 --> 00:02:22,680
+So for instance if you're using your right hand to press the letter you want to be a capital you would
+
+33
+00:02:22,680 --> 00:02:29,280
+then use the left hand left hand to press to shift key and then your right hand to press the key.
+
+34
+00:02:29,280 --> 00:02:31,870
+You want to be a couple of letter and vice versa.
+
+35
+00:02:31,920 --> 00:02:35,780
+So on the left hand you're pressing the letter to be a capital you use your right hand.
+
+36
+00:02:35,820 --> 00:02:37,410
+So the way I recommend that you do it.
+
+37
+00:02:37,410 --> 00:02:45,510
+So if there's your left hand is to keep your index finger on top of that f key one you can feel that
+
+38
+00:02:45,510 --> 00:02:50,430
+little bump on it and then slide keeping your index finger on that key.
+
+39
+00:02:50,430 --> 00:02:57,310
+Slide your left finger diagonally down to the left and then hold that shift key walls.
+
+40
+00:02:57,560 --> 00:03:04,290
+So essentially your index finger or your left hand will still be touching the FCC while your little
+
+41
+00:03:04,290 --> 00:03:10,570
+finger slides across down slightly to press and hold down the shift key and then your right hand to
+
+42
+00:03:10,570 --> 00:03:13,190
+use to press the cover letter.
+
+43
+00:03:13,230 --> 00:03:14,070
+That's what I recommend.
+
+44
+00:03:14,070 --> 00:03:21,840
+That way you're not going to move in your whole hand down onto the bottom keys because then you it's
+
+45
+00:03:21,840 --> 00:03:28,110
+going to slow you down going back moving your hand back up to find the home keys again and find the
+
+46
+00:03:28,110 --> 00:03:28,940
+FCC.
+
+47
+00:03:29,040 --> 00:03:34,230
+So keep your index finger on the f key the whole time as you press that shift key.
+
+48
+00:03:34,680 --> 00:03:40,530
+Similarly with the right hand the same thing keep your index finger your right times on the J.
+
+49
+00:03:40,530 --> 00:03:44,510
+The whole time so your little fingers over the semicolon.
+
+50
+00:03:44,640 --> 00:03:50,700
+So keeping your index finger on the J slide it down diagonally to the right and that will give you the
+
+51
+00:03:50,760 --> 00:03:57,270
+shift key so that then you can hold that down and press the letter with your left hand to get the capital
+
+52
+00:03:57,270 --> 00:03:58,480
+letter there.
+
+53
+00:03:58,920 --> 00:04:01,080
+So how to practice it.
+
+54
+00:04:01,080 --> 00:04:03,190
+So here's the way it's really very simple.
+
+55
+00:04:03,270 --> 00:04:06,480
+So could you say all right practice lots of text with capital letters at the start.
+
+56
+00:04:07,470 --> 00:04:10,290
+Yeah you can learn it that way.
+
+57
+00:04:10,290 --> 00:04:16,550
+I mean obviously you will be doing that as well but as you progressed however to practice learning the
+
+58
+00:04:16,630 --> 00:04:20,060
+shift key it's a really simple two step method.
+
+59
+00:04:20,060 --> 00:04:20,370
+All right.
+
+60
+00:04:20,970 --> 00:04:27,750
+So again remembering to keep your index fingers on the F and the J key with your left.
+
+61
+00:04:28,230 --> 00:04:34,310
+And of course one on your right hand you then practice using your little finger moving across whilst
+
+62
+00:04:34,320 --> 00:04:39,210
+keeping your index fingers on those keys as you get the shift key.
+
+63
+00:04:39,210 --> 00:04:40,590
+You're going to do that back and forth.
+
+64
+00:04:40,920 --> 00:04:47,370
+So essentially you would just simply slide your left finger first diagonally down and present hold the
+
+65
+00:04:47,370 --> 00:04:56,700
+shift key and then slide it back up to the A again and then do the same with the right hand slide that
+
+66
+00:04:56,700 --> 00:05:01,390
+finger there whilst keeping your index finger on the Jaqui on the shift key.
+
+67
+00:05:01,410 --> 00:05:02,300
+Hold that.
+
+68
+00:05:02,410 --> 00:05:03,960
+And then back up again.
+
+69
+00:05:03,960 --> 00:05:08,740
+And it's simply a case of just doing that over and over again.
+
+70
+00:05:08,850 --> 00:05:12,120
+And then you will learn the shift key.
+
+@@@
+1
+00:00:00,860 --> 00:00:06,300
+You may have noticed that so far I've not mentioned a particular key on the keyboard.
+
+2
+00:00:06,590 --> 00:00:11,190
+The big long one at the bottom of the keyboard the spacebar.
+
+3
+00:00:11,240 --> 00:00:17,540
+There is a reason for that because you don't really need to practice that one to be able to press the
+
+4
+00:00:17,600 --> 00:00:25,550
+spacebar without looking at the keyboard because you know you will have your thumbs on top of that key
+
+5
+00:00:25,940 --> 00:00:28,290
+the whole time that you're actually typing.
+
+6
+00:00:28,430 --> 00:00:33,950
+So it'd just be a case of pressing your thumb down whether she left or your right thumb OK depend on
+
+7
+00:00:33,950 --> 00:00:35,640
+what letter that you press.
+
+8
+00:00:36,590 --> 00:00:41,090
+So it doesn't really require me to give you some drills trying to practice that but you know when you
+
+9
+00:00:41,090 --> 00:00:47,420
+come to practice actual text typing text you an elbow and there's a space between a word at the end
+
+10
+00:00:47,420 --> 00:00:55,580
+of a sentence or whatever it is you simply press the spacebar down also to give you a new paragraph
+
+11
+00:00:56,150 --> 00:01:01,490
+the key on the right there the enter key dependent where it is on your keyboard usually on the right
+
+12
+00:01:02,480 --> 00:01:08,180
+to get a new paragraph or a new line should I say on the word processor.
+
+13
+00:01:08,720 --> 00:01:13,400
+I mean you may have to maybe look at a keyboard the first few times but you know that it's over to the
+
+14
+00:01:13,400 --> 00:01:15,980
+right from your small little finger.
+
+15
+00:01:15,980 --> 00:01:23,050
+So again when you start practicing tax actual text and moving down to paragraphs typing paragraphs moving
+
+16
+00:01:23,050 --> 00:01:28,080
+to new lines you after awhile get used to that as well pressing the enter key.
+
+17
+00:01:28,220 --> 00:01:33,650
+So I didn't really think it was a requirement to give you actually practice drills to learn those because
+
+18
+00:01:33,650 --> 00:01:39,230
+when you come to type in text they refer to easy So remember you know when you put your fingers on those
+
+19
+00:01:39,500 --> 00:01:46,910
+on the home keys or the SDF or the left hand the J K L and the same school on fair right on your two
+
+20
+00:01:46,910 --> 00:01:50,780
+thumbs will naturally rest on top of the spacebar.
+
+21
+00:01:50,840 --> 00:01:55,440
+So that's really all I need to tell you about the spacebar.
+
+22
+00:01:55,730 --> 00:01:57,770
+And of course I did mention the enter key as well.
+
+@@@
+1
+00:00:00,980 --> 00:00:09,710
+I'm going to show you a very simple method, and it's what I use to massively increase my typing speed.
+
+2
+00:00:10,170 --> 00:00:17,780
+And in fact, when I started to record my speeds, I was recording speeds of around 180 words and sometimes
+
+3
+00:00:17,780 --> 00:00:20,090
+more than 200 words a minute.
+
+4
+00:00:21,880 --> 00:00:28,480
+So when I first started typing, learning to type, I didn't use any typing manuals, you know, any
+
+5
+00:00:28,480 --> 00:00:34,120
+of those typing tutor things used to get news like spiral bound books, you know, the sort where they
+
+6
+00:00:34,120 --> 00:00:35,170
+give you exercises.
+
+7
+00:00:35,170 --> 00:00:37,600
+And I did it so you could say this or the hard way.
+
+8
+00:00:37,960 --> 00:00:41,470
+And I was actually doing a course on computers, you know, basic computing.
+
+9
+00:00:41,470 --> 00:00:45,590
+So they were showing you about spreadsheets, word processors, database and so on.
+
+10
+00:00:46,030 --> 00:00:48,760
+So when I was doing the purpose, of course, it involved typing.
+
+11
+00:00:49,000 --> 00:00:53,680
+And so I thought, oh, you know, I'm going to increase my typing speed and I'll learn to touch type
+
+12
+00:00:53,950 --> 00:00:56,460
+so I can type without looking at my fingers.
+
+13
+00:00:56,890 --> 00:01:02,230
+So at the center, they had one of these they're called copy holders.
+
+14
+00:01:02,770 --> 00:01:09,730
+And I used that to put a book or some text on my eye, then would look at the text and attempt to type
+
+15
+00:01:09,730 --> 00:01:11,290
+it on the computer screen.
+
+16
+00:01:13,250 --> 00:01:19,370
+You know, the copy holder was not exactly this one, like this one here on Amazon, but it was something
+
+17
+00:01:19,370 --> 00:01:22,700
+like, you know, you could stand it next to your computer and put the text on.
+
+18
+00:01:22,850 --> 00:01:25,370
+And I just used to have that next to me.
+
+19
+00:01:25,610 --> 00:01:28,280
+And I just get different passages of text.
+
+20
+00:01:28,490 --> 00:01:34,010
+And although slowly at first, you know, learning where the keys were on the keyboard so I could find
+
+21
+00:01:34,010 --> 00:01:39,440
+them with my fingers without looking at the keyboard, which I did a lot at the start.
+
+22
+00:01:39,440 --> 00:01:42,320
+But eventually I was able to type all the keys.
+
+23
+00:01:42,590 --> 00:01:48,440
+And so I just kept getting new passages of text and going through it and through it and through and,
+
+24
+00:01:48,950 --> 00:01:55,280
+you know, slowly but surely I did actually start to increase my speech, in fact.
+
+25
+00:01:56,610 --> 00:02:02,670
+But, you know, after a while I thought, you know, I want to increase my speed more.
+
+26
+00:02:02,690 --> 00:02:04,490
+So I thought, oh, I know what I'll do.
+
+27
+00:02:05,240 --> 00:02:13,880
+And so what I did is I decided to copy the same piece of text over and over and over again.
+
+28
+00:02:15,350 --> 00:02:19,880
+And I found that each time through that I kept typing through the text.
+
+29
+00:02:20,270 --> 00:02:21,950
+I got faster and faster.
+
+30
+00:02:22,190 --> 00:02:26,300
+So essentially, you know, I just thought, I want to keep typing this text until I can type it as
+
+31
+00:02:26,300 --> 00:02:27,110
+fast as possible.
+
+32
+00:02:27,110 --> 00:02:33,200
+And so fast I got now, I didn't actually have a way of recording my typing speed, but I know I was
+
+33
+00:02:33,200 --> 00:02:38,780
+very quick at doing it and then I would just get another passage of text and then do the same thing
+
+34
+00:02:38,780 --> 00:02:43,130
+with that, keep repeating it and repeating it until I got fairly quick at typing that.
+
+35
+00:02:43,790 --> 00:02:49,910
+No, later on I decided to do this at home as well when I got my own computer because I didn't actually
+
+36
+00:02:49,910 --> 00:02:51,740
+have a computer at the time and I took this course.
+
+37
+00:02:51,740 --> 00:02:53,720
+It's more for me to help me get a job.
+
+38
+00:02:54,470 --> 00:02:58,880
+But later on I got a computer at home and I didn't get a computer like this.
+
+39
+00:02:59,090 --> 00:03:04,850
+Instead, what I did was get some text on my screen and my word processor on the screen at the same
+
+40
+00:03:04,850 --> 00:03:08,800
+time and then start typing that way.
+
+41
+00:03:09,620 --> 00:03:11,810
+So, you know, it looked a little bit like this.
+
+42
+00:03:11,810 --> 00:03:15,020
+You know, I have to resize the word processor like I've got here on the right.
+
+43
+00:03:15,380 --> 00:03:18,410
+And then I'd have, as in this case, my Kindle.
+
+44
+00:03:18,650 --> 00:03:23,570
+I've got a Kindle book open with some text there so I could just simply go here and start typing the
+
+45
+00:03:23,570 --> 00:03:26,360
+text that appeared over here on the left.
+
+46
+00:03:27,260 --> 00:03:30,050
+So I would do that later on.
+
+47
+00:03:31,340 --> 00:03:35,840
+I thought, you know, I want to find out how fast I want to be able to measure my typing speed.
+
+48
+00:03:35,840 --> 00:03:40,850
+So searched on the Internet for typing tutor software, that sort of thing.
+
+49
+00:03:41,090 --> 00:03:42,740
+And I could look around.
+
+50
+00:03:42,740 --> 00:03:46,220
+I can't remember what it was called and I haven't got any more, but found one.
+
+51
+00:03:46,220 --> 00:03:52,940
+And I downloaded to my computer and this thing was, you know, had loaded with different words, typing
+
+52
+00:03:52,940 --> 00:03:54,160
+exercises and things like that.
+
+53
+00:03:54,710 --> 00:03:58,580
+But one of the things I liked about it is that you could copy and paste text into it.
+
+54
+00:03:59,210 --> 00:04:04,130
+Everything you thought was what didn't allow me to copy the length of text that I was practicing over
+
+55
+00:04:04,130 --> 00:04:06,960
+and over again before it.
+
+56
+00:04:07,010 --> 00:04:09,770
+Just let us copy a small amount of text in a time.
+
+57
+00:04:10,250 --> 00:04:13,470
+But the beauty of it is I could type the text and then the software.
+
+58
+00:04:13,470 --> 00:04:16,880
+It actually would tell me what my words per minute typing speed was.
+
+59
+00:04:17,480 --> 00:04:24,230
+And I actually learned something from this because I just decided to copy a paragraph in at a time and
+
+60
+00:04:24,230 --> 00:04:26,450
+just practiced a paragraph over and over again.
+
+61
+00:04:26,480 --> 00:04:30,710
+What I noticed then my speed increased even more.
+
+62
+00:04:30,980 --> 00:04:37,790
+It really did a lot more than what it did whilst I was typing longer section passages of text.
+
+63
+00:04:38,150 --> 00:04:41,630
+So typing the paragraph over and over again, a shorter piece of text.
+
+64
+00:04:42,230 --> 00:04:44,140
+My speed improved even more.
+
+65
+00:04:44,360 --> 00:04:49,580
+And this is where I discovered that my typing speeds were quite often around 180 words a minute.
+
+66
+00:04:49,580 --> 00:04:53,470
+And sometimes I surprised myself in the fact that it went even over 200 words a minute.
+
+67
+00:04:53,630 --> 00:04:56,290
+In fact, it was quite good seeing the progress.
+
+68
+00:04:56,300 --> 00:04:58,400
+So the this is the method.
+
+69
+00:04:58,400 --> 00:05:04,670
+You know, the way to increase your typing speed is to type passages of text, ideally short passages,
+
+70
+00:05:04,670 --> 00:05:06,230
+paragraphs or something like that.
+
+71
+00:05:06,500 --> 00:05:07,640
+Over and over again.
+
+72
+00:05:07,640 --> 00:05:13,430
+You will notice that your typing speed will increase if you continue to do this.
+
+@@@
+1
+00:00:01,080 --> 00:00:06,750
+Well, I'm not going to share something with you which will allow you to get faster, but without making
+
+2
+00:00:06,750 --> 00:00:07,620
+lots of mistakes.
+
+3
+00:00:07,950 --> 00:00:14,730
+So when I was typing, I had this idea that to get faster, you just got to simply try to type faster.
+
+4
+00:00:15,030 --> 00:00:15,960
+So that's what I did.
+
+5
+00:00:16,240 --> 00:00:23,190
+I was typing my texts and as I was telling you in the last video, and I thought, well, I'm going
+
+6
+00:00:23,190 --> 00:00:25,710
+to just push myself to go faster and faster and faster.
+
+7
+00:00:26,100 --> 00:00:32,520
+And even though it seemed that my typing speed not, I was kept tripping myself up making mistakes.
+
+8
+00:00:33,180 --> 00:00:39,480
+But I, I just thought and said, well, OK, I just keep trying to write faster and eventually those
+
+9
+00:00:39,480 --> 00:00:40,440
+mistakes will go.
+
+10
+00:00:41,080 --> 00:00:46,980
+In actual fact, quite the opposite, because when you practice making a mistake, you just get better
+
+11
+00:00:46,980 --> 00:00:49,700
+at making mistakes and that's not really what you want.
+
+12
+00:00:50,430 --> 00:00:56,490
+So the better way to do it is what I tried next was instead of trying to just type faster, just keep
+
+13
+00:00:56,490 --> 00:01:04,860
+it accurate, don't try too slowly, but just type a fast enough speed where you're not making mistakes
+
+14
+00:01:04,860 --> 00:01:06,480
+and just keep doing that.
+
+15
+00:01:06,930 --> 00:01:08,940
+And it's like riding a bike.
+
+16
+00:01:08,940 --> 00:01:12,000
+You know, when you first jump on a bike, you don't try to go as fast as you can.
+
+17
+00:01:12,270 --> 00:01:17,790
+You first get used to keeping the bike upright, keeping on the bike, and then slowly, as your confidence
+
+18
+00:01:17,790 --> 00:01:25,160
+increases, turning the pedals, you then become more confident and your speed naturally increases.
+
+19
+00:01:25,470 --> 00:01:28,680
+And so that's what I found when I did that with my typing.
+
+20
+00:01:28,960 --> 00:01:35,280
+So what I did was I typed the text I was doing copy it, called me my text as I was doing there, and
+
+21
+00:01:35,280 --> 00:01:42,570
+I just did it at a speed where I was not making mistakes or shall we say as little as a few mistakes
+
+22
+00:01:42,570 --> 00:01:43,200
+as possible.
+
+23
+00:01:44,020 --> 00:01:50,970
+So lesson I want you to take from this is focus on the accuracy more than the speed.
+
+24
+00:01:51,840 --> 00:01:59,190
+Try to make sure that you're accurately typing words, keep your typing free of mistakes, and then
+
+25
+00:01:59,190 --> 00:02:05,670
+the speed you will find will come naturally as you get more confident your typing ability.
+
+@@@
+1
+00:00:01,470 --> 00:00:08,130
+So you have no learned all the keys and hope for you been practicing all the keys so that you're able
+
+2
+00:00:08,130 --> 00:00:11,310
+to learn how to type.
+
+3
+00:00:11,310 --> 00:00:12,380
+No you better type.
+
+4
+00:00:12,480 --> 00:00:20,590
+Every single key on your keyboard without actually having to look down at it.
+
+5
+00:00:20,610 --> 00:00:28,180
+OK so just keep up the practice remember the drills 30 seconds each pair using your practice sheet.
+
+6
+00:00:28,180 --> 00:00:31,410
+Keep doing that daily until you're proficient.
+
+7
+00:00:31,410 --> 00:00:32,340
+Keep slowly.
+
+8
+00:00:32,340 --> 00:00:36,290
+Don't make mistakes only increase your speed gradually.
+
+9
+00:00:36,420 --> 00:00:42,310
+So eventually you will the more you do it the easier it will get and the faster you will get as well.
+
+10
+00:00:42,330 --> 00:00:44,180
+So do do all the pairs.
+
+11
+00:00:44,190 --> 00:00:52,850
+Believe me this is the way the fastest way to learn how to touch type and be faster on the keyboard.
+
+12
+00:00:52,870 --> 00:00:55,620
+Now with that continued practice.
+
+13
+00:00:55,740 --> 00:01:03,050
+So what I would suggest that you do as well as this now is to practice actually typing real text.
+
+14
+00:01:03,060 --> 00:01:10,650
+So simply just get you know passages of text or whatever item next to your computer or on your computer.
+
+15
+00:01:10,650 --> 00:01:14,400
+Next here you have the text on one side and your post word process on the next.
+
+16
+00:01:14,400 --> 00:01:17,670
+Just practice typing texts again.
+
+17
+00:01:17,680 --> 00:01:25,130
+You know my advice is slowly at first types slowly make sure its accuracy keep accuracy.
+
+18
+00:01:25,290 --> 00:01:27,140
+And then slowly build the speed up.
+
+19
+00:01:27,150 --> 00:01:31,640
+Otherwise you try to go too quickly first and you're making mistakes.
+
+20
+00:01:31,670 --> 00:01:37,380
+We are eventually going to be practicing mistakes and you'll just be harder than to learn to get rid
+
+21
+00:01:37,380 --> 00:01:38,330
+of your mistakes.
+
+22
+00:01:38,460 --> 00:01:39,330
+So keep slowly.
+
+23
+00:01:39,330 --> 00:01:47,310
+Just continue practicing text passages of text as often as you possibly can and you will find your speed
+
+24
+00:01:47,340 --> 00:01:50,190
+will get faster and faster and faster.
+
+25
+00:01:50,310 --> 00:01:55,100
+And that's what I did to learn typing myself.
+
+26
+00:01:55,150 --> 00:02:03,310
+Now I sincerely hope that you have enjoyed this course but more than not that you will be a much faster
+
+27
+00:02:03,340 --> 00:02:06,630
+typist to be more productive as a result.
+
+28
+00:02:07,750 --> 00:02:12,550
+However you know if there's any feedback about the course if there's anything that you would like to
+
+29
+00:02:12,550 --> 00:02:19,770
+be included that I've not included then you know do let me know so I can make improvements.
+
+30
+00:02:19,980 --> 00:02:23,110
+Now if you want to ask me any questions whatsoever.
+
+31
+00:02:23,110 --> 00:02:24,790
+And here is a Q and A section.
+
+32
+00:02:24,790 --> 00:02:26,920
+You just simply click on Q and A.
+
+33
+00:02:26,950 --> 00:02:30,580
+Well that's what it looks like at the moment unless you to me have now changed it.
+
+34
+00:02:31,060 --> 00:02:33,880
+But here's a Q and A and just simply out and you.
+
+35
+00:02:33,880 --> 00:02:37,360
+QUESTION No I will get back to you.
+
+36
+00:02:37,360 --> 00:02:41,830
+It may not be straight away or maybe sometimes not the same day because sometimes there's other things
+
+37
+00:02:41,850 --> 00:02:47,980
+I do but you know I I will definitely come back to you if you leave a question there.
+
+38
+00:02:48,130 --> 00:02:54,610
+I'll get back to you as soon as I possibly can because I really want you to help out sorry.
+
+39
+00:02:54,680 --> 00:02:56,990
+And again I truly want to help you.
+
+40
+00:02:57,530 --> 00:02:59,240
+OK so that's great.
+
+41
+00:02:59,240 --> 00:03:01,180
+I also really appreciate it as well.
+
+42
+00:03:01,180 --> 00:03:07,840
+If you've enjoyed the course you know be lovely if you could just leave a few words in any review so
+
+43
+00:03:07,870 --> 00:03:10,540
+thank you very much for taking this course.
 

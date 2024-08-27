@@ -1,3623 +1,4977 @@
 ﻿1
-00:00:00,480 --> 00:00:14,830
-Xin chào và chào mừng. Cảm ơn chúng tôi rất nhiều vì đã đăng ký khóa học này. Tôi hy vọng bạn sẽ được hưởng lợi rất nhiều từ khóa học này và tôi rất vui mừng về hành trình phía trước của chúng ta, hành trình phía trước.
+00:00:00,590 --> 00:00:02,430
+Xin chào và chào mừng đến với khóa học.
 
 2
-00:00:15,900 --> 00:00:37,110
-Vì vậy tôi đã dành khóa học này trong một số phần. Phần đầu tiên chúng ta sẽ chỉ có video giới thiệu này. Phần thứ hai chúng ta sẽ thảo luận về một số điều cơ bản như thế, vị trí thích hợp, cách gõ AAPS, cách luyện tập nhóm hiệu quả hơn.
+00:00:02,450 --> 00:00:08,230
+Tên tôi là Ian ổn định là tác giả của hơn 50 cuốn sách trên Amazon Kindle.
 
 3
-00:00:37,500 --> 00:00:51,420
-Và đến phần thứ ba, bạn và ai đang luyện tập sẽ tham gia? Chúng ta sẽ bắt đầu nắm bắt bằng cách gõ thử của họ. Đầu tiên chúng tôi học nhiệm vụ đánh máy tất cả các chữ cái từ nó đến J.
+00:00:08,540 --> 00:00:16,190
+Nếu bạn học và thực hành mọi thứ
+trong khóa học này, bạn sẽ có thể
 
 4
-00:00:51,900 --> 00:01:03,570
-Sau đó chúng ta sẽ đi xa hơn đến phần số cung cấp các ký tự đặc biệt và bàn phím số. Chúng ta sẽ áp dụng những phương pháp thực hành tự do hơn để tận dụng tối đa khả năng diễn thuyết.
+00:00:16,190 --> 00:00:17,720
+hoàn thành bất kỳ tác vụ đánh máy
+nào trong thời gian ngắn hơn nhiều.
 
 5
-00:01:04,960 --> 00:01:22,920
-Phần cuối cùng là về phím tắt. Vâng, chúng ta sẽ học một từ, một số phím tắt siêu hữu ích mà hầu hết mọi người đều sử dụng.
-Những phím tắt này sẽ giúp chúng ta tăng năng suất bằng cách tiết kiệm thời gian chúng ta thực hiện trên chuột và bàn phím. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:00:17,810 --> 00:00:21,980
+Đó sẽ là một kỹ năng mà bạn sẽ có suốt đời.
 
 6
-00:00:00,450 --> 00:00:21,560
-Hãy thảo luận về phương pháp đường ống. Có hai phương pháp nối ống. Đầu tiên là gõ nhanh. Ai là ai? Chúng ta sẽ học về diễn ngôn theo phương pháp này trên Berson có thể gõ mà không cần nhìn vào bàn phím hoặc thậm chí không cần nghĩ đến vị trí của các phím.
+00:00:21,980 --> 00:00:24,550
+Điều này sẽ tốt cho bạn trong công việc.
 
 7
-00:00:22,690 --> 00:00:33,670
-Phương pháp thứ hai là gõ tay và gõ lớn. Nếu bạn không biết gõ pass thì có thể bạn đang làm theo phương pháp này. Tôi đã từng làm điều đó vài năm trước.
+00:00:25,550 --> 00:00:28,780
+Hầu hết các công việc và công ty ngày nay đều sử dụng máy tính.
 
 8
-00:00:34,600 --> 00:00:48,370
-Hầu hết mọi người thường sử dụng hai ngón tay để gõ bằng phương pháp này. Vì vậy nó còn được gọi là phương pháp mát ngón tay. Bạn sẽ cần nhìn vào bàn phím có vị trí của phím.
+00:00:28,790 --> 00:00:34,230
+Và nếu bạn có thể gõ phím trong thời gian ngắn hơn thì điều đó sẽ mang lại hiệu quả cao hơn cho bạn.
 
 9
-00:00:48,880 --> 00:01:06,370
-Sau đó, bạn cần phải tiến hành trước, sau đó căn cứ. Với phương pháp cứng và cố định này, tốc độ của bạn sẽ tối đa là 30 giờ mỗi phút. Tất nhiên, nó sẽ có một số ngoại lệ.
+00:00:34,240 --> 00:00:40,910
+Ngoài ra, nếu bạn là sinh viên
+thì đương nhiên sẽ có rất nhiều bài
 
 10
-00:01:07,180 --> 00:01:28,930
-Một số có thể gõ nhanh hơn thế, nhưng điều đó rất hiếm. Tuy nhiên, khi gõ bụi, bạn có thể tăng tốc độ. Lên đến 100 lần chịu đựng theo phút. Vì vậy, nếu bạn gõ gọn gàng nhất mỗi phút, thì 300 hoặc email sẽ khiến bạn mất 10 phút để viết.
+00:00:40,910 --> 00:00:42,150
+viết dành cho sinh viên nên điều
+đó sẽ đẩy nhanh tốc độ cho bạn.
 
 11
-00:01:30,130 --> 00:01:43,450
-Nhưng nếu bạn có thể gõ phím nhanh như vậy, điều đó có nghĩa là 60 giờ mỗi phút, khá dễ đạt được khi đánh máy, thì bạn có thể viết email trong 5 phút.
+00:00:42,260 --> 00:00:49,940
+Nếu bạn là một tác giả như tôi và tự viết
+sách, bạn sẽ có thể thấy rằng mình hoàn
 
 12
-00:01:44,500 --> 00:02:13,380
-Sẽ tiết kiệm được rất nhiều tiền nếu bạn viết nhiều email. Nhưng ngoài việc nó làm tăng tốc độ gõ, tôi nghĩ khía cạnh quan trọng nhất là bạn sẽ không cần phải nghĩ đến trường hợp gõ cao để có thể tự động đặt tấm bạt xuống khi chúng đến với bạn, chỉ cần giống như bạn làm khi bạn viết bằng tay.
+00:00:49,940 --> 00:00:55,800
+thành cuốn sách của mình trong thời gian
+ngắn hơn nhiều bằng cách học cách đánh máy.
 
 13
-00:02:13,860 --> 00:02:26,970
-Nó chắc chắn sẽ giúp bạn suy nghĩ hiệu quả vì cuộc sống bị phân tâm. Nếu bạn là một blogger hoặc
-một lập trình viên, đây có thể là một kỹ năng tuyệt vời để tăng năng suất và hiệu quả của bạn. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:00:55,820 --> 00:00:59,040
+Vậy hầu hết mọi người làm gì khi gõ phím.
 
 14
-00:00:00,940 --> 00:00:15,290
-Luật sư, họ đang bước qua trí nhớ cơ bắp. Nó phát triển thông qua sự lặp lại. Khi bạn thực hiện đi thực hiện lại cùng một nhiệm vụ mô hình, nó sẽ hòa vào trí nhớ của bạn.
+00:00:59,060 --> 00:01:01,350
+Hầu hết mọi người chỉ sử dụng hai ngón tay.
 
 15
-00:00:16,150 --> 00:00:29,150
-Ký ức cơ bắp đó đã không còn nữa. Vì vậy, nếu bạn có thể phát triển trí nhớ cơ bắp, bạn sẽ không sớm quên nó. Nhưng lúc đầu, việc có được trí nhớ cơ bắp sẽ không dễ dàng.
+00:01:01,400 --> 00:01:07,550
+Chà, tôi nói rằng hầu hết mọi người, rất nhiều người
+có lẽ không phải là hầu hết mọi người thực sự của
 
 16
-00:00:29,600 --> 00:00:42,620
-Nó sẽ là một thử thách. Mark, cuối cùng với sự phá hủy, bạn sẽ có thể thực hiện bài kiểm tra đó mà không cần hoặc có rất ít nỗ lực có ý thức. Nó sẽ xảy ra một cách tự phát.
+00:01:07,550 --> 00:01:11,210
+tôi nhưng bạn biết điều đó so sánh với gõ phím cảm ứng
+như thế nào và tại sao bạn nên học gõ phím cảm ứng.
 
 17
-00:00:43,340 --> 00:01:01,620
-Bạn không cần phải chú ý đến nhiệm vụ đó vào thời điểm đó. Lấy việc đi xe đạp làm ví dụ. Đi xe đạp đi qua trí nhớ cơ bắp. Phải mất một thời gian và luyện tập để học cách đi xe đạp lần đầu tiên.
+00:01:11,210 --> 00:01:15,860
+Hãy thử nghĩ xem khi bạn dùng hai ngón tay tức là hai ngón tay khi chạm vào gõ tám ngón tay
 
 18
-00:01:02,490 --> 00:01:15,190
-Nhưng ngoài ra, bạn đã học được nó. Bạn sẽ không quên nó. Tôi đã học đi xe đạp khi tôi lên bảy. Sau vài năm, chiếc xe đạp của tôi thật tuyệt vời.
+00:01:16,190 --> 00:01:21,530
+cộng với khi bạn chạm khi bạn
+đang sử dụng hai ngón tay, rất có thể
 
 19
-00:01:15,780 --> 00:01:29,700
-Vì vậy, tôi đã không đi xe đạp trong 5 đến 6 năm sau đó vào năm đó. Tôi đã đi xe đạp với bạn bè của tôi. Lúc đầu, tôi cảm thấy hơi kỳ lạ và không thoải mái.
+00:01:21,530 --> 00:01:23,130
+bạn đang nhìn trên bàn phím để cố
+gắng tìm xem tất cả các phím ở đâu.
 
 20
-00:01:30,700 --> 00:01:42,950
-Mark, chúng ta đã nói chuyện được vài phút. Tôi chỉ có thể viết một cách hoàn hảo. Và như tôi đã nói, việc học, đánh máy và đi xe đạp gần như giống nhau.
+00:01:23,300 --> 00:01:28,330
+Và điều đó không chỉ khiến bạn mất tập trung vào công việc sẽ mất nhiều thời gian hơn bình thường.
 
 21
-00:01:43,850 --> 00:01:56,810
-Cả hai đều giống nhau. A thông qua trí nhớ cơ bắp. Đó là một số nỗ lực và thực hành để tìm hiểu nó. Nhưng khi bạn phát triển kỹ năng hàng ngày, bạn có thể sử dụng nó cả đời.
+00:01:28,460 --> 00:01:34,130
+Nếu bạn có thể nhìn lên màn
+hình và tìm nơi bạn muốn và bạn cần
 
 22
-00:01:57,730 --> 00:02:10,800
-Và trong khi luyện tập, cuối cùng, nó sẽ trở nên dễ thực hiện hơn cho đến khi hoàn toàn không cần nỗ lực. Vì vậy, toàn bộ cuộc điều tra dân số của khóa học này sẽ phụ thuộc vào việc thực hành của bạn.
+00:01:34,130 --> 00:01:37,120
+nhìn vào đó và bạn chỉ cần gõ
+bằng tám ngón tay trên bàn phím.
 
 23
-00:02:11,470 --> 00:02:27,380
-Nếu bạn không luyện tập đủ thì dù họ có cố gắng đến mấy cũng không thành công. Vì vậy, yêu cầu của tôi sẽ trở lại
-hàng ngày. Hãy dành chút thời gian để phát triển kỹ năng này và trong vòng vài ngày, việc này sẽ trở nên dễ dàng. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:01:39,310 --> 00:01:48,840
+Vậy khóa học này sẽ dạy bạn gõ phím bằng cách chạm như thế nào? Đây thực sự là một cách học được tối ưu hóa.
 
 24
-00:00:00,330 --> 00:00:16,140
-Chúng ta cần sửa lại tư thế của cô ấy trước khi bắt đầu học. Đó là gõ phím. Nếu không, thật dễ dàng để có được bản sao tốt nhất từ ​​quá trình thực hành của chúng tôi. Ngoài ra, bạn có thể bị đau lưng và đau cổ tay.
+00:01:49,010 --> 00:01:53,770
+Điều này về cơ bản dựa trên nghiên cứu mới nhất về học tập kỹ năng.
 
 25
-00:00:17,530 --> 00:00:32,020
-Mặc dù một số người trong chúng ta đã từng ngồi như thế này và cũng thích anh chàng này. Thành thật mà nói, đôi khi tôi làm điều này. Có rất nhiều quy tắc và quy định về cách ngồi trên ghế đúng cách.
+00:01:53,900 --> 00:01:56,770
+Và khóa học này dựa trên điều đó.
 
 26
-00:00:32,590 --> 00:00:47,710
-Nhưng chúng tôi sẽ không làm theo tất cả những điều này bởi vì chúng tôi không cần phải làm điều đó. Tuy nhiên, có một số quy tắc thiết yếu mà chúng ta sẽ tuân theo vì nếu không, điều đó sẽ ảnh hưởng đến quá trình học tập của chúng ta.
+00:01:57,220 --> 00:02:00,060
+Và về cơ bản là dễ dàng thực hiện theo các bước.
 
 27
-00:00:48,650 --> 00:01:01,880
-Vì vậy, hãy nói về một số quy tắc đó. Chúng ta cần theo dõi trong khi luyện tập gõ phím, đây chính là tư thế lý tưởng để đặt góc giữa lưng và chân.
+00:02:00,130 --> 00:02:09,680
+Tất cả những gì bạn phải làm là học, áp
+dụng và thực hành, vì vậy hãy xem Khóa học
 
 28
-00:01:01,910 --> 00:01:30,660
-Nên ở khoảng 100 độ. Tuy có thể thắng lại giống anh chàng này một chút, nhưng không giống anh chàng này đây. Chúng nằm trên da của chúng và mắt của bạn phải nằm trên cùng một mặt phẳng nằm ngang, mắt bạn có thể nhìn thấy làn da của chúng một cách thoải mái mà không cần phải ngồi máy bay phản lực hay quay cổ hay quay mắt.
+00:02:09,740 --> 00:02:14,490
+được cấu trúc như thế nào và bạn sẽ tiến bộ
+như thế nào cũng như những gì bạn sẽ học.
 
 29
-00:01:31,830 --> 00:01:45,730
-Phần quan trọng nhất là vị trí của bàn tay khi ngồi, chiều cao của bàn phải thấp hơn tầm tay một chút. Lòng bàn tay của bạn không được chạm vào bất cứ thứ gì.
+00:02:14,510 --> 00:02:21,230
+Vì vậy, trước tiên bạn biết rằng chúng
+ta sẽ chỉ nhìn vào bàn phím, bạn biết
 
 30
-00:01:47,270 --> 00:01:59,360
-Đáng lẽ nó phải treo trên không như bức hình đầu tiên, anh ta tăng thuế lên bàn làm việc của
-mình. Sẽ không thoải mái khi vượt qua loại. Vì vậy, đây là nó cho việc này sau này. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:02:21,230 --> 00:02:24,620
+các phím ở đâu và sau đó chúng ta sẽ
+chuyển sang các phím quan trọng nhất.
 
 31
-00:00:00,780 --> 00:00:17,220
-Nếu anh ấy là con trai của cô ấy trực tuyến, bạn sẽ nhận được nhiều cuộc gọi, cả nhóm trực tuyến và ngoại tuyến đó là đánh máy, tất cả chúng đều có một số ưu điểm và nhược điểm so với những cuộc gọi khác trong bài giảng này.
+00:02:24,620 --> 00:02:31,310
+Đây được gọi là phím home
+và tôi cũng sẽ chỉ cho bạn
 
 32
-00:00:17,370 --> 00:00:40,660
-Chúng tôi sẽ sử dụng một công cụ có tên Kipton. Họ giải quyết với tôi gấp đôi P và sau đó. Vì vậy, đây là công cụ. Và bạn có thể tải nó xuống hoặc bạn có thể thực hành bài giảng trực tuyến.
+00:02:31,370 --> 00:02:32,430
+cách luôn đảm bảo rằng tay
+bạn luôn ở trên các phím đó.
 
 33
-00:00:40,960 --> 00:00:54,140
-Tôi đang định tải nó xuống đây. Bạn có thể tìm thấy niềm đam mê không khí nóng bỏng này. Nó có sẵn cho Windows, Linux hoặc Mac. Vì vậy hãy nhấp vào đây, tải xuống miễn phí ngay bây giờ.
+00:02:32,600 --> 00:02:38,630
+Và không có điều đó cũng có nghĩa là không nhìn vào bàn phím. Tốt hơn hết bạn nên làm điều đó mà không cần nhìn xuống.
 
 34
-00:00:54,740 --> 00:01:09,170
-Cái đầu tiên là dành cho Windows. Cái thứ hai cũng làm theo những cái đó, nhưng nó là Caledonius di động dành cho Mac OS và Forten dành cho Windows và cái cuối cùng là dành cho Linux.
+00:02:38,630 --> 00:02:45,820
+Và sau đó chúng ta cũng sẽ nói về ngón tay nào được sử dụng cho phím nào trên bàn phím.
 
 35
-00:01:10,850 --> 00:01:26,580
-Vì vậy, bạn có thể tải nó xuống thiết bị bạn đang sử dụng. Tôi đang sử dụng một chiếc máy đẹp nên tôi sẽ sử dụng windows. Vì vậy, hãy nhấp vào nó ở đây. Bạn cũng có thể tải xuống bản di động nếu muốn.
+00:02:45,820 --> 00:02:49,500
+Hãy để tôi xem bạn cần luyện tập như thế nào.
 
 36
-00:01:27,200 --> 00:01:45,290
-Vì vậy, nó sẽ tự động tải xuống và ở đây chúng ta cần cài đặt nó ngay bây giờ. Không SoBe phút nào bằng cách nhấp vào nó và voọc sẽ là tiếng Anh. À, nếu bạn muốn học tiếng Đức bạn cũng có thể bấm vào phần đó.
+00:02:49,500 --> 00:02:57,020
+Vì vậy, hãy nhớ rằng điều này
+không dựa trên Mies. Cách thực hành
 
 37
-00:01:45,590 --> 00:02:05,560
-Trong khóa học này chúng ta sẽ học đánh máy tiếng Anh. Vì vậy hãy nhấp vào. Được rồi bấm vào. Họ nói thỏa thuận. Tôi sẽ lấy cái này vì tôi sở hữu biểu tượng trên màn hình này và ở St..
+00:02:57,030 --> 00:02:58,210
+việc học kỹ năng của bạn dựa
+trên nghiên cứu nên nó có hiệu quả.
 
 38
-00:02:11,480 --> 00:02:22,320
-Vì vậy, đây là điểm dừng trong ngày và ứng dụng được tạo ở đây chỉ cần nhấp vào và mở nó. Vì vậy, đây là nơi bạn đến, kế hoạch này nếu bạn không muốn nhìn thấy nó.
+00:02:58,210 --> 00:03:01,120
+Và tôi đã tự mình thử nghiệm nó và nó thực sự hoạt động.
 
 39
-00:02:22,580 --> 00:02:34,010
-Bạn chỉ có thể nhấp vào đây. Vì vậy, theo cách đó, bạn sẽ không bao giờ nhìn thấy điều này nữa. Và đầu này đang hiển thị các trận đấu trên sân nhà. Và ở đây một số trò chơi dường như tiếp theo.
+00:03:01,130 --> 00:03:07,640
+Vì vậy, tôi đã tạo khóa học đánh máy này dựa
+trên nguyên tắc tương tự nên tôi sẽ chỉ cho bạn
 
 40
-00:02:34,280 --> 00:02:48,220
-Vì vậy, tôi sẽ điều chỉnh để sử dụng ứng dụng Landstar và đầu. Đúng vậy. Bạn cũng có thể
-tối đa hóa và trong ngày hôm sau. Chúng ta sẽ tìm hiểu cài đặt của ứng dụng này là gì. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:03:07,640 --> 00:03:14,120
+những gì bạn cần làm để có thể luyện tập và
+đạt được kết quả nhanh nhất với độ chính xác.
 
 41
-00:00:00,270 --> 00:00:13,120
-Bây giờ, hãy nói về cài đặt và giao diện người dùng của ứng dụng có tên Deep Tim này. Vì vậy, ở phía bên trái, có một số người cho thuê ít hơn về Gardane, một số nhân vật.
+00:03:14,120 --> 00:03:16,780
+Vì vậy, về cơ bản bạn cần luyện tập trong bao lâu.
 
 42
-00:00:13,420 --> 00:00:27,470
-Và chúng ta sẽ tìm hiểu những nhân vật này trong Lissa cụ thể đó. Vậy chúng ta hãy cùng vào bài học đầu tiên, đó là bài học chủ chốt. Chỉ cần nhấp vào nút bắt đầu đào tạo và góc dưới bên phải.
+00:03:17,030 --> 00:03:19,200
+Tôi sẽ chỉ cho bạn mẹo tăng tốc.
 
 43
-00:00:29,210 --> 00:00:42,170
-Và đây là cái này. Chúng ta cần nhấn thanh Espers để bắt đầu gõ, và ở đây có một đường phân cách giữa các câu đố trên bàn phím chia bàn phím thành hai 1/2.
+00:03:19,220 --> 00:03:25,250
+Tôi gọi nó là con chip tăng tốc
+vì nó thực sự giúp bạn tăng tốc
 
 44
-00:00:42,580 --> 00:00:57,880
-Phần nắp của dòng này sẽ được gõ bằng tay trái, phần bên phải của dòng này sẽ được gõ bằng tay phải. Và như bạn có thể thấy ở đây, đây là D và F và cũng là anti gay.
+00:03:25,250 --> 00:03:26,180
+quá trình luyện tập chỉ bằng
+cách thực hiện điều đơn giản này.
 
 45
-00:00:58,320 --> 00:01:11,840
-Và cách gõ này có một màu sắc về chúng. Vì vậy, ở nhà, hãy hôn ngón út của bạn lên bàn tay trái của bạn nếu có thể thì 13 ngón tay sẽ có thể.
+00:03:26,180 --> 00:03:26,900
+Nó thực sự có.
 
 46
-00:01:11,990 --> 00:01:23,690
-Là ngón giữa sẽ được. Nó sẽ như vậy. Và ngón trỏ sẽ có thể áp dụng tương tự để lấy chữ L và dấu chấm phẩy ở tay phải này sẽ nằm trên chữ G.
+00:03:26,900 --> 00:03:30,030
+Tôi cũng sẽ nói chuyện với bạn về điều đó.
 
 47
-00:01:23,720 --> 00:01:35,720
-Lượt tiếp theo sẽ vào K rồi vào và nói Ricola vào đây. Cả Tom đều có thể. Phần này ở phía dưới hiển thị một số tỷ lệ hướng dẫn đảm nhận vị trí quy tắc gốc.
+00:03:30,190 --> 00:03:32,800
+Sau đó, bạn cần phải biết cách thực hành.
 
 48
-00:01:36,290 --> 00:01:51,500
-Điều đó có nghĩa là bạn cần đặt tay đúng vị trí. Vậy thì nếu tôi khen ngợi phím cách vào lúc đó. Bây giờ Haridas và ở trên cùng, các ký tự chúng ta sắp nhập đang hiển thị và ký tự tương ứng đang được đánh dấu trên bàn phím.
+00:03:32,840 --> 00:03:35,970
+Vì vậy, điều đó sẽ cung cấp cho bạn các bài tập để thực hành.
 
 49
-00:01:51,650 --> 00:02:03,580
-Bây giờ nó đã có màu nền và trên thanh hướng dẫn nó đang hiển thị ngón tay của anh ấy để sử dụng. Vì vậy, nó đang nuôi dưỡng ngón tay út bên trái để nó được chặt chẽ.
+00:03:36,080 --> 00:03:43,420
+Nhưng trước tiên bạn cần hiểu rõ mình nên làm gì để tập đúng với bộ đó.
 
 50
-00:02:03,680 --> 00:02:20,130
-Ngón tay út bên trái của tôi. Sau đó là lượt tiếp theo. Tiếp theo rút ra và cũng có không gian lấy vào như thế. Và nếu bạn mắc bất kỳ lỗi nào trong quá trình gõ này, bạn sẽ không được chuyển tiếp cho đến khi chúng tôi nhấn đúng phím.
+00:03:43,420 --> 00:03:50,030
+Sau khi bạn đã hiểu những điều đó thì chúng ta sẽ chuyển sang các buổi thực hành thực tế.
 
 51
-00:02:20,150 --> 00:02:32,370
-Nó sẽ giữ. Bây giờ chỉ vì đúng phím. Nó sẽ đi cho. Bạn cũng có thể khẳng định là khi nào họ đang đánh máy xong. Nó sẽ nói tuổi thanh xuân.
+00:03:50,080 --> 00:03:52,650
+Vì vậy, chúng tôi bắt đầu với các phím quan trọng nhất.
 
 52
-00:02:33,300 --> 00:02:41,520
-Và nếu bạn đang nổi mụn thì người nghe cũng vậy. Nó sẽ như là tuyệt đối. Và sau đó nếu bạn đang ở trường quay thì không có dự trữ. Vì vậy, nếu bạn muốn nói bấm vào.
+00:03:52,660 --> 00:04:01,180
+Các phím home và ở đây bạn sẽ tìm và nói về từng cặp phím cùng một lúc và minh họa nhanh chóng
 
 53
-00:02:41,520 --> 00:02:50,550
-Đúng. Nếu không thì không, không. Ở bên phải hiền nhân, bạn có thể chọn thời lượng của danh sách. Tôi sẽ gặp bạn trong buổi thực hành để bạn có thể chọn giới hạn thời gian của mình.
+00:04:01,510 --> 00:04:05,030
+nơi bạn sẽ cần đặt những thứ đó và sau đó bạn sẽ thực hành như thế nào.
 
 54
-00:02:50,610 --> 00:03:01,530
-Giới hạn thời gian tối thiểu sẽ là hai phút và bạn cũng có thể nói giới hạn ký tự đó. Vậy là khi giới hạn ký tự là X thì bài học này sẽ kết thúc.
+00:04:05,350 --> 00:04:13,180
+Và sau phím home chúng ta chuyển sang các phím còn lại để các bạn biết hàng trên hàng dưới
 
 55
-00:03:02,160 --> 00:03:18,860
-Ngoài ra, nó có giới hạn tối thiểu lên đến cổ của cô ấy. Nhân vật. Và vào đúng thời điểm hơn, nó xem xét phản ứng của họ đối với việc nhập ITR. Chúng tôi đã thấy rằng khi chúng tôi mắc lỗi, nó vẫn giữ nguyên cho đến khi chúng tôi gõ chữ Korecki đó.
+00:04:13,390 --> 00:04:13,990
+cũng vậy.
 
 56
-00:03:19,400 --> 00:03:31,250
-Nhưng nếu bạn thực hiện chỉnh sửa này bằng phím lùi, thì nó sẽ không giữ được. Bạn cần nhấn phần không gian sản xuất vào chúng để gần với hương vị. Và được trang bị kỹ lưỡng cho người mới bắt đầu.
+00:04:13,990 --> 00:04:20,260
+Sau đó, khi kết thúc các phần này, tôi sẽ cung
+cấp cho bạn các bài thực hành có thể tải xuống để
 
 57
-00:03:31,320 --> 00:03:42,670
-Bạn không nên chọn mục này vì nó sẽ khiến quá trình này khó khăn hơn. Bạn cũng có thể chọn Darlie sẽ ra hiệu. Và nếu bạn thực hiện bất kỳ thao tác gõ nào, nó sẽ khiến chúng tôi phát ra âm thanh ở đó.
+00:04:20,260 --> 00:04:27,130
+bạn sẽ thấy ở cuối mỗi phần này sẽ có một đoạn
+video ngắn và sau đó là cách lấy những tài liệu đó.
 
 58
-00:03:42,680 --> 00:03:56,910
-Tôi nói có một số lựa chọn eston. Vì vậy, bây giờ chúng ta đã thấy bàn phím đó đang hiển thị chính nó. Vì vậy, nếu bạn chỉ lấy cái này, bạn sẽ không hiển thị nó nữa. Vì vậy, đối với người mới bắt đầu, tôi nghĩ sẽ tốt hơn nếu hiển thị bàn phím.
+00:04:27,130 --> 00:04:33,490
+các tờ bài tập để thực hành
+sau khi bạn đã luyện tập
 
 59
-00:03:57,020 --> 00:04:12,360
-Và Clarkie này sẽ làm nổi bật bối cảnh tương ứng trong hai phần. Thứ hai thường là quy tắc gia đình. Tôi thấy bài tập về nhà có dòng màu iwobi và tùy chọn thứ tư dành cho trái và phải.
+00:04:33,490 --> 00:04:33,640
+chữ cái vì đó là những gì
+chúng ta đang làm ở đây.
 
 60
-00:04:12,380 --> 00:04:25,280
-Dòng phân cách và có lẽ trong hướng dẫn ở phía dưới. Vì vậy nếu bạn chỉ lấy cái này thì hướng dẫn của tôi sẽ không hiển thị nữa. Vì vậy, viết tiêu đề này là một bước khó khăn cho người mới bắt đầu.
+00:04:33,640 --> 00:04:36,310
+Các chữ cái sau đó chúng ta sẽ học các con số.
 
 61
-00:04:26,180 --> 00:04:36,060
-Khi bạn sắp bị tước quyền sở hữu hoặc đã quen với việc gõ bàn phím hoặc âm trầm, bạn có thể thực hiện tất cả những điều này ở đây. Có tập tin này và cài đặt chung.
+00:04:36,310 --> 00:04:42,750
+Vì vậy, tất nhiên hầu hết các tác vụ đánh máy bạn sẽ không phải thực hiện nhiều con số và do đó phải nhập dữ liệu.
 
 62
-00:04:36,200 --> 00:04:45,790
-Bạn có thể thay đổi màu phông chữ và nền. Và lựa chọn thứ hai là tuyệt vời. Bạn có thể thấy Riza của bạn ở đây, vì vậy tôi chưa thực hiện bất kỳ thao tác phân tách nào.
+00:04:43,550 --> 00:04:46,730
+Tuy nhiên bạn biết sẽ có lúc bạn cần gõ số.
 
 63
-00:04:46,070 --> 00:04:58,490
-Vì vậy, nếu bạn làm như vậy, bạn có thể thấy các bài học được xác định và thời gian của chúng cần hành động, thời gian, thời lượng. Và ngón tay của Edo có tỷ giá và tính chất mỗi phút cao nhất của đồng euro.
+00:04:46,760 --> 00:04:51,980
+Vì vậy, một lần nữa bạn có thể
+làm điều đó mà không cần nhìn
 
 64
-00:04:59,390 --> 00:05:09,650
-Bạn cũng có thể xem tiến độ của các bài học dưới dạng biểu đồ tại đây. Bạn cũng có thể xem nhân vật của ai mắc nhiều lỗi hoặc sai sót nhất và tần suất là bao nhiêu.
+00:04:51,980 --> 00:04:52,690
+xuống bàn phím mỗi lần, bạn sẽ
+tiết kiệm được rất nhiều thời gian.
 
 65
-00:05:09,830 --> 00:05:20,710
-Và những ngón tay này mắc lỗi nhiều nhất. Chúng tôi cũng có một bảng so sánh ở đây trong cài đặt này.
-Bạn có thể thấy sự tiến bộ của mình theo thời gian. Vì vậy, đây chính là nội dung của bài giảng này. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:04:52,700 --> 00:05:00,990
+Vì vậy, chúng tôi nói rằng bạn biết sẽ cung cấp cho bạn các bài tập một lần nữa để học tất cả các số ở hàng trên cùng trên bàn phím của bạn.
 
 66
-00:00:02,950 --> 00:00:21,610
-Trong thư này, tôi có một số điểm quan trọng mà bạn cần nhớ khi thực hành. Vì vậy, bước đầu tiên là. Luôn đặt ngón tay của bạn ở vị trí ban đầu và sau khi đặt phím của quy tắc khác hoặc vị trí xác định.
+00:05:01,190 --> 00:05:06,510
+Và một lần nữa dưới dạng phiếu thực hành ở cuối phần đó để bạn cũng có thể thực hành phần đó.
 
 67
-00:00:21,700 --> 00:00:35,290
-Hãy chắc chắn rằng ngón tay của bạn trở lại vị trí ban đầu. Điều này rất quan trọng, đặc biệt là khi bạn mới bắt đầu. Sẽ rất khó để làm điều đó, nhưng dù sao bạn cũng phải làm điều đó.
+00:05:07,330 --> 00:05:07,640
+ĐƯỢC RỒI.
 
 68
-00:00:36,450 --> 00:00:52,390
-Bạn cần phải học lại mọi thứ bạn đang làm. Tôi đã gõ trước đây, điểm thứ hai đã từng được nghe. Nhìn vào bàn phím. Lúc đầu, bạn sẽ muốn nhìn vào bàn phím khi nhấn phím, nhưng đừng làm vậy.
+00:05:07,640 --> 00:05:16,490
+Sau những con số, chúng tôi nói về ba chìa khóa quan trọng và cách thực hành những chìa khóa đó.
 
 69
-00:00:52,630 --> 00:01:07,470
-Đừng nhìn vào bàn phím, hãy đưa ra vị trí của phím. Sau đó tiếp tục tỏ ra mạnh mẽ. Sau đó làm lại điều đó cho đến khi bạn gọi đúng phím. Giữ ngón tay của họ ở vị trí chủ đạo sẽ giúp bạn làm được điều đó.
+00:05:16,530 --> 00:05:20,230
+Vì vậy về cơ bản sẽ có chữ in hoa.
 
 70
-00:01:08,440 --> 00:01:28,220
-Rằng nếu và Zaky có ấn tượng nhẹ về nó, bạn có thể cảm nhận được điều đó bằng cách chạm cả hai ngón trỏ vào các phím đó. Nó sẽ giúp bạn giữ ngón tay ở vị trí Homero và quan trọng nhất là bỏ qua mong muốn nhìn xuống bàn phím của họ.
+00:05:20,230 --> 00:05:26,550
+Được rồi, đó là một trong những phím mà bạn sẽ
+học trong phần này và tôi sẽ chỉ cho bạn cách
 
 71
-00:01:28,790 --> 00:01:45,440
-Luôn nhìn vào màn hình. Chứng ợ chua là Gabe quan trọng về độ chính xác hơn là được trả tiền khi bạn mới bắt đầu. Đi rồi chết nhanh hơn, nó sẽ tự động xảy ra.
+00:05:26,550 --> 00:05:34,200
+thực sự dễ dàng để học và chuẩn bị thực hành
+gõ chữ in hoa mà không cần nhìn lại bàn phím vì
 
 72
-00:01:46,480 --> 00:02:04,110
-Chỉ cần cố gắng thực hiện từ từ và giữ cho đôi tai của bạn ở mức tối thiểu trong thời gian có thể phòng trường hợp chúng tăng tốc độ gõ của bạn. Và ngay cả khi bạn đang vội và chưa học gõ phím đúng cách.
+00:05:34,200 --> 00:05:41,070
+đó chính là nội dung của việc gõ phím khi
+chúng tôi đã thực hiện tất cả những điều đó
 
 73
-00:02:04,990 --> 00:02:17,400
-TRÊN. Chúng tôi đã nghe lại cách bạn thường gõ. Hãy dành thời gian của bạn và làm điều đó bằng cách dán ống dẫn. Nếu không, nó sẽ ảnh hưởng đến trí nhớ cơ bắp của bạn và chúng ta không muốn điều đó xảy ra.
+00:05:41,070 --> 00:05:42,750
+trong quá trình thực hành của bạn và tìm hiểu
+tất cả các phím và bạn có thể làm mọi thứ.
 
 74
-00:02:20,260 --> 00:02:34,330
-Hầu như cố gắng giữ tinh thần thoải mái trong khi luyện tập. Giữ cơ vai và cơ tay được thư giãn. Hãy cố gắng tập luyện vào thời điểm thích hợp. Bạn có thể tập luyện sau khi vừa thức dậy vào thời điểm đó.
+00:05:42,870 --> 00:05:47,760
+Vào thời điểm này, bạn sẽ đạt đến đỉnh cao,
+tất cả các phím và số sẽ được ghi chú khi nhìn
 
 75
-00:02:34,540 --> 00:02:51,760
-Đầu óc sẽ được thư giãn. Giữ biểu đồ các buổi thực hành của bạn và lựa chọn giữa các buổi thực hành của bạn. Nếu bạn tuân
-theo những quy tắc này, tôi nghĩ Pyramus sẽ có lợi và trong vòng một tuần bạn sẽ có thể gõ mà không cần nhìn vào bàn phím. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:05:47,760 --> 00:05:52,950
+vào bàn phím của bạn và sau đó chúng ta sẽ nói
+về cách bạn tiếp tục cải thiện tốc độ của mình.
 
 76
-00:00:00,480 --> 00:00:12,780
-Xin chào và chào mừng đến với bài giảng mới hoàn chỉnh này. Và từ đây, chúng ta sẽ bắt đầu quá trình thực hành của mình trong bài giảng này. Chúng ta sẽ bắt đầu nụ hôn tại nhà của mình.
+00:05:52,950 --> 00:05:55,260
+Vì vậy, đó thực chất là những gì nó được.
 
 77
-00:00:13,380 --> 00:00:30,610
-Tổng cộng có tám khách tại nhà cho buổi trực tiếp 10. Nó sẽ là A là D và F, và đối với bên tay phải, nó sẽ là G, K, L và dấu chấm phẩy. Vậy ngón út tay trái của bạn sẽ nằm trên chữ A..
+00:05:55,290 --> 00:05:59,240
+Vì vậy, bạn không tham gia khóa học để học và làm theo các bài tập.
 
 78
-00:00:30,820 --> 00:00:47,980
-Ngón đeo nhẫn sẽ bật. Là ngón giữa sẽ được trên. B ngón trỏ sẽ bật. Nếu điều này xảy ra thì anh ấy có chút thiếu kiên nhẫn về điều đó. Và theo đó, bạn có thể đặt ngón tay của mình một cách hoàn hảo trên phím home.
+00:05:59,250 --> 00:06:05,160
+Hãy nhớ rằng bạn phải thực hành, không có ích gì khi chỉ xem khóa học và mong đợi kết quả.
 
 79
-00:00:49,340 --> 00:01:11,000
-Và vì phía bên phải của bàn phím này. Takeyh đó có ấn tượng nhẹ về nó. Vì vậy, bạn có thể đặt ngón trỏ lên bàn tay phải của mình vào ngày đó và ngón tiếp theo tập hợp vào IL đồng tính và dấu chấm phẩy, con bò đực của bạn, Tom, sẽ ở trên thanh Espers.
+00:06:05,230 --> 00:06:10,860
+Bạn biết đấy, đó là một kỹ năng, nó giống như việc lái
+một chiếc ô tô mà không cần phải học cách lái ô tô,
 
 80
-00:01:11,510 --> 00:01:32,470
-Bây giờ, như chúng ta đã tìm hiểu về các cô gái nội trợ, chúng ta hãy bắt đầu luyện tập. Đây là ứng dụng Teplin của chúng tôi. Tôi đang định mở cái đó. Lance bước vào và bây giờ chúng ta sẽ kết thúc bài học này, vì vậy hãy chọn bài nghe và nhấp vào bắt đầu luyện tập.
+00:06:10,860 --> 00:06:15,410
+bạn cần phải thực sự lên xe và việc gõ phím cũng giống
+như mọi thứ khác và bạn càng làm nhiều thì càng tốt
 
 81
-00:01:33,920 --> 00:01:48,510
-Và đây chính là nó. Vì vậy lúc đầu bạn cần đặt tay ở vị trí chủ đạo. Hãy làm điều đó và sau đó nhấn mạnh vào các chuyên gia. Nhưng bạn không cần phải di chuyển bất kỳ ngón tay nào vì đây là trường hợp ở nhà.
+00:06:16,280 --> 00:06:19,260
+bạn sẽ như vậy và bạn sẽ ổn nhanh hơn.
 
 82
-00:01:48,590 --> 00:02:06,230
-Vì vậy bạn chỉ cần nhấn vào trường hợp tương ứng mà không cần di chuyển ngón tay. Và bài học này rất quan trọng vì nếu bạn không nắm rõ các trường hợp ở nhà thì bạn sẽ rất khó thực hành được cả hai trường hợp.
+00:06:19,260 --> 00:06:23,850
+Không, tôi thực sự giới hạn độ tuổi của mình. Tôi muốn đảm
+bảo rằng bạn thực sự học được kỹ năng này nên nếu có bất kỳ
 
 83
-00:02:07,250 --> 00:02:26,220
-Vì vậy, giả sử tôi đã bắt đầu luyện tập. Như bạn có thể thấy ở đây, bạn có thể thấy trường hợp được đánh dấu tương ứng của chúng. Và nó đã diễn ra. Và nếu bạn đưa ra bất kỳ luật nào như vậy, bạn sẽ không tiến lên được.
+00:06:23,850 --> 00:06:29,580
+câu hỏi hoặc bất kỳ điều gì mà bạn đang gặp khó khăn một chút
+hoặc bất cứ điều gì tương tự trên bảng điều khiển, bạn sẽ
 
 84
-00:02:26,290 --> 00:02:42,150
-Vậy ở trên cùng là phím bên phải. Sau đó chuyển sang phần tiếp theo. Giống như khi bạn hành nghề y xong, nó sẽ tự động tồn tại và bạn có thể thấy có của chúng tôi ở đây.
+00:06:29,580 --> 00:06:36,000
+để ý ở đây có phần hỏi đáp
+bạn chỉ cần click vào đó và bạn
 
 85
-00:02:43,730 --> 00:03:00,350
-Mark, em sẽ không học hết bài nếu làm như vậy, sẽ rất cô đơn. Vì vậy, khi bạn mới bắt đầu. Tôi muốn giữ giới hạn thời gian này là năm phút hoặc bạn cũng có thể giữ nhân vật đó giới hạn cho mình năm Nick và những người khác.
+00:06:36,000 --> 00:06:37,270
+có thể thêm câu hỏi vào đây
+và biết đó là gì tôi sẽ trả lời.
 
 86
-00:03:00,380 --> 00:03:17,930
-Hãy nhớ rằng bạn cần tập trung vào độ chính xác đó. Vì vậy, đừng làm món Koumas Edo lúc đầu. Nó sẽ hơi chậm. Bạn cần nhớ rằng Wisky đang ở trên ngón tay của anh ấy, nhưng theo thời gian sẽ ổn thôi.
+00:06:37,400 --> 00:06:43,510
+Tôi có thể không ở ngay lập tức và một số máy tính của tôi vào thời điểm đó nhưng ngay khi tôi kiểm tra các câu hỏi của mình về
 
 87
-00:03:19,270 --> 00:03:39,940
-Khi học xong sẽ có ký hiệu ở mũi tên này ở đây. Vì vậy, nếu bạn thực hành năm lần một ngày, năm ngày. Vì vậy, bạn cần phải luyện tập ít nhất năm lần, sử dụng năm phút hoặc 500 ký tự để chuyển sang bài giảng tiếp theo khi bạn đủ tự tin về ngôi nhà Rose này.
+00:06:43,530 --> 00:06:49,320
+Tôi thấy bạn đặt câu hỏi trong đó, tôi sẽ trả lời nhanh nhất có thể.
 
 88
-00:03:40,090 --> 00:03:49,050
-Sau đó, bạn có thể chuyển sang chữ cái tiếp theo. Nhưng trước đó. Hãy tiếp tục luyện tập. Vì vậy,
-chúc may mắn, các bạn. Hãy tiếp tục luyện tập. Và hẹn gặp lại các bạn trong bài giảng tiếp theo. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:06:49,330 --> 00:06:54,930
+Bây giờ điều tôi muốn bổ sung ở đây cũng như hy
+vọng tôi đã làm được điều này. Tôi đã dành rất nhiều
 
 89
-00:00:00,180 --> 00:00:14,240
-Xin chào các bạn. Chào mừng. Vậy bao nhiêu tuổi. Bài tập của trẻ ở nhà? Thành thật mà nói, tôi đã thử sử dụng 200 ký tự. Và đây chính là nghệ thuật. Tôi đã có 43 điểm.
+00:06:54,930 --> 00:06:59,880
+thời gian cho khóa học này để đảm bảo rằng nó được
+thiết kế để mang lại cho bạn kết quả tốt nhất có thể.
 
 90
-00:00:15,430 --> 00:00:31,630
-Họ chia cho chúng tôi 200 ký tự xây dựng mỗi phút và có năm lỗi đánh máy nên chúng tôi sẽ mất 2%. Tôi chắc chắn rằng nhiều bạn đã nhận được nhiều điểm hơn và ít anh hùng hơn khi luyện tập.
+00:06:59,880 --> 00:07:05,850
+Tuy nhiên, nếu có điều gì đó mà bạn nghĩ có thể được
+cải thiện hoặc bạn muốn thêm điều gì đó vào khóa học thì
 
 91
-00:00:31,890 --> 00:00:50,970
-Vì vậy các bạn hãy ghi quan điểm của mình vào phần thảo luận bên dưới bức thư để các bạn có thể so sánh với nhau và sẽ rất vui. Vì vậy, hãy chuyển sang hai nhân vật tiếp theo, mỗi nhân vật R, E và tất cả Skellig của họ và nhấp vào bắt đầu huấn luyện.
+00:07:05,850 --> 00:07:12,390
+điều gì đó bổ sung mà bạn biết, vui lòng cho tôi biết về
+điều đó bằng cách đặt câu hỏi ở đây trong phần Hỏi và Đáp
 
 92
-00:00:52,930 --> 00:01:11,110
-Vậy là xong, phím E và phím or là quy tắc phong bì của trường hợp chính ở chỗ chúng ta sử dụng ngón giữa bên trái của bạn để nhấn E và ngón tay viết để đặt nếu không các ngón khác sẽ vẫn ở vị trí chính.
+00:07:12,390 --> 00:07:18,450
+trong khóa học và tôi sẽ liên lạc lại với bạn nếu bạn
+cũng thích khóa học, bạn biết đấy, thật đáng yêu nếu bạn
 
 93
-00:01:11,470 --> 00:01:27,130
-Chỉ cần mở rộng ngón đeo nhẫn bên phải để tiếp cận hoặc. Và đưa ngón giữa trái của bạn về phía này và những đứa trẻ khác vẫn giữ nguyên tư thế, đừng di chuyển chúng.
+00:07:18,450 --> 00:07:24,600
+để lại đánh giá, không cần phải như vậy, bạn biết rất
+nhiều từ, chỉ một vài từ là đủ và chỉ cần để mọi người
 
 94
-00:01:29,480 --> 00:01:42,170
-Và trong trường hợp ở sâu bên dưới, phần nghe sẽ chứa đựng tất cả những gì của bài học trước đó, nên sẽ rất tuyệt vì bằng cách đó bạn có thể ôn lại những bài học trước đó của mình.
+00:07:24,600 --> 00:07:30,810
+người khác biết rằng bạn cũng thích khóa học, bây giờ việc đánh giá đó là tùy thuộc vào bạn khi nào và khi nào bạn thực hiện đánh giá đó
 
 95
-00:01:42,320 --> 00:01:54,830
-Và càng đi đến cuối danh sách luyện tập này, bạn sẽ càng quen với việc
-gõ phím đó. Vì thế hãy luyện tập và luyện tập tối thiểu năm lần. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:07:31,100 --> 00:07:35,850
+Tôi có thể khuyên bạn nên đợi cho
+đến khi kết thúc khóa học trước khi để lại
 
 96
-00:00:00,960 --> 00:00:19,140
-Xin chào và chào mừng. Vậy việc luyện tập ở bài học trước của bạn như thế nào? Tôi đã áp dụng nó cho các nhân vật mới của chúng tôi. Và đây là kết quả của tôi. Tôi ghi được 17 điểm ở tốc độ gõ ký tự được viết ra từng phút với hai lỗi đánh máy.
+00:07:36,000 --> 00:07:39,520
+bài đánh giá của mình vì khi đó bạn sẽ
+biết rằng mình đã xem toàn bộ khóa học.
 
 97
-00:00:20,880 --> 00:00:35,590
-Đừng quên ghi quan điểm của mình vào phần thảo luận để có thể so sánh với nhau. Bây giờ chúng ta cùng chuyển sang bài học tiếp theo. Và trong bài học này, chúng ta sẽ đề cập đến và tôi.
+00:07:40,130 --> 00:07:43,860
+Được rồi, vậy hãy bắt đầu
+với bài giảng đầu tiên. 
+
+@@@
+
+
 
 98
-00:00:38,580 --> 00:00:56,040
-Vì vậy đây là bài học khó. Hãy bắt đầu đào tạo của họ. Và đây chính là nó. Vì vậy, trong trường hợp lên D, bạn cần duỗi ngón trỏ lên bàn tay trái theo hướng hơi góc cạnh.
+00:00:01,480 --> 00:00:09,370
+Đây là bàn phím tiêu chuẩn mà bạn có thể tìm thấy trên hầu hết các máy tính và máy tính xách tay.
 
 99
-00:00:56,700 --> 00:01:11,160
-Nó không chỉ là phím F của Apple. Vì vậy bạn chỉ cần ấn chặt một chút là được. Và trong trường hợp làm bánh, bạn cần sử dụng ngón giữa bên phải. Vì vậy, nó chỉ là một loại bột.
+00:00:09,370 --> 00:00:15,370
+Nó được mệnh danh là bàn phím chất lượng vì sự sắp xếp các phím.
 
 100
-00:01:11,440 --> 00:01:31,750
-Được rồi, nó sẽ dễ dàng thôi. Vì vậy, trong khi luyện tập, bạn có thể phát âm to ký
-tự đó. Nếu có thể, bạn có thể phát âm nó một cách im lặng, sau đó nhấn phím. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:00:15,370 --> 00:00:24,230
+Vì vậy, nếu bạn nhìn vào các phím trên cùng bên trái ở đây, các phím chữ cái bạn sẽ thấy nó đánh vần là chất lượng q w e r ty y.
 
 101
-00:00:01,050 --> 00:00:27,450
-Xin chào các bạn, chào mừng bạn đến với bức thư mới này. Vậy quá trình luyện tập của bạn đến nay như thế nào? Tôi hy vọng tất cả các bạn đang làm tốt. Vì vậy, trong bài giảng này, chúng ta sẽ tìm hiểu về những nhà lãnh đạo mới đã và đang tham gia. Vì vậy, hãy bắt đầu đào tạo họ rằng trong một giờ nữa, cả hai nhà lãnh đạo sẽ được đánh máy bằng ngón trỏ của cả hai tay chúng ta.
+00:00:24,280 --> 00:00:30,220
+Bây giờ bạn có thể nói rõ tại sao họ
+không thiết kế một bàn phím tệ hơn
 
 102
-00:00:28,440 --> 00:00:42,630
-Thế là nó bỏ cuộc. Chúng ta sẽ sử dụng ngón trỏ của bàn tay trái và nó sẽ từ bỏ, chúng ta sẽ sử dụng ngón trỏ của bàn tay phải. Vậy đây là cấu tạo của ngón trỏ của bàn tay trái.
+00:00:30,220 --> 00:00:33,490
+và bạn biết nó diễn ra như a b c d
+e f g, v.v. thông qua bảng chữ cái.
 
 103
-00:00:42,840 --> 00:00:56,550
-Và nó sẽ được mở rộng đến đỉnh như thế này. Và đó là. Và nó bỏ cuộc. Trong đây là cấu tạo của ngón trỏ của bàn tay phải. Và nó sẽ được đưa xuống.
+00:00:33,490 --> 00:00:37,810
+Vâng, ban đầu khi bàn phím được thiết kế lần đầu tiên.
 
 104
-00:00:56,700 --> 00:01:11,610
-Và là sự kết thúc. Vì vậy, hãy bắt đầu. Đây là phím cách để bắt đầu. Bây giờ chúng ta có thể kéo dài cách gõ của mình cho. Chúng ta sẽ duỗi ngón trỏ ở trên cùng.
+00:00:38,650 --> 00:00:48,130
+Nếu một người có thể gõ quá nhanh, các phím thường bị kẹt vì máy đánh chữ kiểu cũ
 
 105
-00:01:11,790 --> 00:01:22,380
-Sau đó nhấn vào đó. Khi đó sẽ là vị trí phím home bình thường. Sau đó, nó đi lên và đưa ngón trỏ của bạn xuống dưới một chút. Và nó sẽ mất mục tiêu.
+00:00:48,490 --> 00:00:55,150
+bạn có những chiếc chìa khóa để tất cả họ có thể đi
+vào trung tâm mà các cánh tay kim loại đã sử dụng
 
 106
-00:01:22,530 --> 00:01:43,640
-Và nhấn nó sau đó. Đây có phải là vị trí nhà một lần nữa. Và sau đó lại vào. Bằng cách sử dụng ngón trỏ của bàn tay phải.
-Vì vậy, hãy luyện tập cho 500 ký tự trong bốn hoặc năm phút trong hơn năm lần trước khi chuyển sang bài giảng tiếp theo. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:00:55,150 --> 00:01:03,070
+sẽ bật và tắt từng chữ cái một số để gõ quá nhanh
+những chữ cái đó sẽ bị kẹt nên họ quyết định thay đổi
 
 107
-00:00:00,990 --> 00:00:16,860
-Xin chào và chào mừng đến với bản tin này. Và trong bài giảng này, chúng ta sẽ đi qua phần bảo vệ những lá thư phục vụ cho người A và hãy xem. Vì vậy, đây là bài học phù hợp của chúng tôi và điều này gắn liền với Jay.
+00:01:03,070 --> 00:01:06,230
+bàn phím theo những gì chúng ta thấy ngày nay.
 
 108
-00:00:18,030 --> 00:00:30,320
-Trong trường hợp này, chúng ta sẽ sử dụng ngón trỏ của bàn tay phải. Nó sẽ khá dễ dàng vì phím át nằm trên quy tắc nhà.
+00:01:06,310 --> 00:01:15,430
+Bàn phím Corti để ngăn chặn việc mọi người
+có thể gõ quá nhanh và do đó không bị kẹt
 
 109
-00:00:31,890 --> 00:00:48,990
-Như vậy chúng ta chỉ cần đẩy ngón trỏ xuống bên trái sẽ là phím át. Và trong trường hợp biển, sẽ rất khó khăn vì chúng ta sẽ sử dụng ngón giữa của bàn tay trái cho việc đó.
+00:01:15,430 --> 00:01:21,710
+phím trên máy đánh chữ nhưng hiện tại chúng
+ta đang mắc kẹt với dạng bàn phím này.
 
 110
-00:00:50,010 --> 00:01:02,310
-Và C nằm ngay dưới đó D. Vì vậy bạn cần đẩy ngón giữa của bàn tay trái xuống một chút. Và nó sẽ là C. Vậy hãy bắt đầu nhé.
+00:01:21,730 --> 00:01:27,220
+Có những bàn phím khác nhưng đây
+là cách sắp xếp bàn phím thông thường
 
 111
-00:01:02,640 --> 00:01:17,880
-Đây là Despres. Và đây là. Vì vậy, từ vị trí chủ đạo của ngón giữa của bàn tay trái. Chúng ta hãy tìm hiểu một chút bên dưới. Và đây là C10.
+00:01:27,220 --> 00:01:31,280
+mà bạn sẽ có cho các chữ cái và
+bạn vẫn có thể gõ rất rất nhanh trên đó.
 
 112
-00:01:18,140 --> 00:01:32,340
-Trong trường hợp của Ách. Đưa ngón trỏ của bàn tay phải sang bên trái. Và đó là con át chủ bài. Sau đó tôi sẽ giống như trước đây. Và một lần nữa, hãy gặp lại Ace.
+00:01:31,540 --> 00:01:39,370
+Được rồi, các phím ở đây mà bạn sẽ gõ nhiều nhất về cơ bản sẽ là những phím này
 
 113
-00:01:32,580 --> 00:01:52,960
-Và tôi. Vì vậy, đây là bài giảng và thực hành ít nhất năm lần trước khi bạn chuyển sang nhân
-vật tiếp theo. Và đừng quên chia sẻ quan điểm của mình ở phần quyết định bên dưới nhé. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:01:39,760 --> 00:01:42,390
+vì vậy bạn có thể thấy tất cả các chữ cái ở đây.
 
 114
-00:00:02,450 --> 00:00:18,290
-Xin chào và chào mừng. Và trong bài giảng này, chúng ta sẽ học một số điều mới như viết hoa. Cho đến sau này, chúng ta mới chỉ gõ được hai chữ in hoa nhỏ, chữ cái Mark, từ chữ cái này.
+00:01:42,400 --> 00:01:48,460
+Bạn sẽ gõ cùng với một mã
+ở đây, bạn sẽ gõ bằng các
 
 115
-00:00:18,350 --> 00:00:32,500
-Chúng ta sẽ gõ chữ nhỏ và chữ in hoa. Vậy đây là huấn luyện khủng bố. Và trong trường hợp viết hoa, chúng ta sẽ sử dụng ca.
+00:01:48,460 --> 00:01:53,300
+phím này ở phía dưới, tất
+nhiên cũng có cả phím shift.
 
 116
-00:00:34,270 --> 00:01:04,650
-Vì vậy, khi chúng ta gõ bất kỳ dữ liệu nào bằng cách sử dụng Loại 10, chúng ta sẽ nhấn con chip bên phải bằng ngón út của bàn tay phải. Và khi chúng ta định gõ bất kỳ chữ cái nào bằng tay phải, thì chúng ta sẽ căn cứ vào hình dáng sống động bằng ngón út của bàn tay trái.
+00:01:53,300 --> 00:01:58,190
+Không, bạn chưa biết phím shift chính là phím mà bạn nhấn hy vọng giữ nó.
 
 117
-00:01:05,610 --> 00:01:19,940
-Vì thế nó sẽ ngược lại. Đây là từ đầu tiên để bắt đầu. Và. Chúng tôi sẽ hy vọng trà bằng tay phải của chúng tôi. Vì vậy chúng ta sẽ nhấn vào bên trái.
+00:01:58,380 --> 00:02:02,140
+Và sau đó nếu bạn gõ một chữ cái, nó sẽ trở thành chữ in hoa.
 
 118
-00:01:20,110 --> 00:01:36,340
-Được tạo hình bằng ngón tay út bên trái. Lúc đầu, do hình dáng bằng ngón út tay trái ít hơn so với nông dân. Và trong trường hợp chúng ta định sử dụng ngón trỏ của bàn tay trái.
+00:02:02,540 --> 00:02:06,750
+Và nếu bạn đang cố gắng nhận một cuộc gọi, hãy nói ở đây cũng giống như bạn gọi khi gọi.
 
 119
-00:01:37,330 --> 00:01:57,430
-Vì vậy, chúng ta cần xoa dịu Chimpsky bên phải bằng ngón út bên phải của chúng. Chỉ vì dịch chuyển bên phải trước rồi nói rằng nếu bạn sử dụng ngón trỏ bên trái của bạn thì trong trường hợp, được thôi, đó sẽ là ngón út bên trái và tương tự như vậy.
+00:02:07,310 --> 00:02:10,180
+Nếu bạn chỉ gõ nó, nó sẽ cung cấp cho bạn một dấu chấm phẩy cuộc gọi.
 
 120
-00:02:00,700 --> 00:02:15,490
-Vì vậy, hình dạng đầu tiên bằng tay đối diện. Sau đó, có chìa khóa. Nó sẽ gây nhầm lẫn lúc đầu. Và bạn thực sự cảm thấy không thoải mái với nó, nhưng dần dần sẽ quen.
+00:02:10,500 --> 00:02:16,920
+Nếu bạn muốn gọi cái nào ở trên cái này, bạn
+giữ phím Shift trước rồi nhấn nó và nó sẽ cung
 
 121
-00:02:15,580 --> 00:02:29,260
-Và đây thực sự là một điểm quan trọng trong các bài học đánh máy của bạn vì sẽ khá khó để gõ chữ hoa và xuyên tàu. Lúc đầu bạn sẽ bối rối.
+00:02:16,920 --> 00:02:23,310
+cấp cho bạn mã dài để thường thấy rằng khi các
+phím đó bạn sẽ tìm thấy những thứ khác ở trên
 
 122
-00:02:29,290 --> 00:02:44,260
-Ai là hình để nhấn? Vì vậy, hãy luyện tập hơn 10 lần trong bài giảng này cho đến khi bạn cảm thấy thoải mái với hình dạng đó. Nụ hôn dịu dàng. Đừng chuyển sang bài giảng tiếp theo.
+00:02:23,310 --> 00:02:30,030
+và bên dưới các phím để lấy
+phím ở trên, trước tiên bạn phải giữ
 
 123
-00:02:45,770 --> 00:03:00,790
-Bây giờ những thứ còn sót lại trong tổ của chúng. Vì vậy hãy cẩn thận về điều đó. Hãy hoàn thành việc này sau một
-cách hoàn toàn. Luyện tập một giờ để làm quen với quy trình viết hoa, sau đó chuyển sang bài giảng tiếp theo. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:02:30,030 --> 00:02:32,890
+phím shift và tiếp tục bằng phím
+enter ở đây hoặc phím quay lại.
 
 124
-00:00:00,780 --> 00:00:12,570
-Xin chào các bạn, chào mừng bạn đến với bức thư mới này. Vậy nó diễn ra như thế nào với quá trình viết hoa? Mình nghĩ việc này khá khó khăn nhưng hãy cố gắng thực hiện nhé.
+00:02:33,000 --> 00:02:39,990
+Và vì vậy, những gì bạn đề cập đến chỉ là một dòng
+cung cấp cho bạn một dòng mới vì vậy nếu bạn thử gõ
 
 125
-00:00:14,670 --> 00:00:26,770
-Và vui lòng không làm theo bức thư này cho đến khi bạn cảm thấy đủ thoải mái với cách viết hoa. Nếu không, họ sẽ không dễ dàng tiếp tục nhận được khoản lương tiếp theo.
+00:02:39,990 --> 00:02:45,540
+và hoàn thành một đoạn văn và muốn đi xuống, bạn hãy
+nhấn phím enter và sau đó sẽ cung cấp cho bạn một
 
 126
-00:00:28,200 --> 00:00:54,290
-Vì vậy, trong bức thư này, chúng tôi đã sử dụng cả chữ hoa và chữ Lorqess cũng như dấu chấm và dấu phẩy. Vì vậy, hãy bắt đầu đào tạo. Nhưng danh sách đầy đủ và Omar sẽ được khen ngợi bằng tay phải vì nghiệp chướng.
+00:02:45,540 --> 00:02:49,260
+dòng mới tùy thuộc vào khoảng cách dòng trên máy tính của bạn.
 
 127
-00:00:54,340 --> 00:01:08,050
-Nó sẽ là ngón giữa của bàn tay phải. Và trong trường hợp của Philistine, chúng tôi xử lý ngón đeo nhẫn ở bàn tay phải của bạn. Và cả hai chúng tôi đều ngần ngại. Chỉ cần quy tắc dưới đây để quy tắc nhà.
+00:02:49,260 --> 00:02:54,150
+Thông thường nếu đó là khoảng cách một dòng, bạn nhấn phím Enter hai lần.
 
 128
-00:01:08,290 --> 00:01:27,620
-Vì vậy, hãy bắt đầu bằng cách nhấn phím cách. Và Haria lúc đầu là phím chip bên phải sau đó là DeBlois bên tay trái của bạn. Vậy thì hãy nhẹ một chút. Và bây giờ dấu phẩy nóng ở đó.
+00:02:54,240 --> 00:02:59,980
+Vì vậy, điều đó sẽ đặt một khoảng trắng giữa đoạn tiếp theo với đoạn trước.
 
 129
-00:01:27,980 --> 00:01:40,130
-Chỉ cần sử dụng ngón giữa của bàn tay phải. Chỉ cần đặt nó xuống một chút và bạn sẽ nhận được dấu phẩy và nhấn nó. Sau đó, một lần nữa, Espers Bar và Ratz khác.
+00:03:00,540 --> 00:03:06,330
+Vì vậy, đó là những điểm chính mà chúng ta sẽ
+tập trung vào trong khóa học này vì hãy đối mặt
 
 130
-00:01:40,600 --> 00:01:56,980
-Sau đó, mức tăng đầy đủ nhất sẽ đi xa hơn. Bạn cần sử dụng ngón đeo nhẫn phía trên bàn tay phải. Đồng thời di chuyển suy nghĩ của bạn lên không trung với relo. Và đây là cái đầy đủ nhất như thế.
+00:03:06,360 --> 00:03:12,300
+với nó trừ khi bạn đang nhập dữ liệu, nhiều số
+liệu và số sẽ không được sử dụng thường xuyên
 
 131
-00:01:57,970 --> 00:02:13,680
-Vì vậy, hãy thực hành công việc từ 5 đến 10 lần để cảm thấy thoải mái hơn với quá trình viết hoa. Và
-cũng với niềm hy vọng trọn vẹn và nghiệp báo. Vậy chúng ta sẽ gặp lại bạn trong bài giảng tiếp theo. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:03:12,300 --> 00:03:13,800
+các chữ cái đó như thế nào.
 
 132
-00:00:02,070 --> 00:00:14,400
-Xin chào và chào mừng mọi người đến với bức thư mới này. Và trong bài giảng này chúng ta sẽ học thử cách gõ của 3 ký tự là A, C, B và bạn?
+00:03:13,800 --> 00:03:16,150
+Vì vậy, đó chính là điều chúng tôi muốn nói đến mà bạn sẽ tập trung vào ở đây.
 
 133
-00:00:15,540 --> 00:00:31,410
-Mặc dù, như bạn có thể thấy ở đây, có hai bài học riêng biệt. Nhưng dù sao thì chúng ta cũng sẽ làm điều đó trong một bài giảng vì chúng ta cần phải đi nhanh. Nếu chúng ta học cách đánh máy thì trong vòng một tuần.
+00:03:16,190 --> 00:03:19,060
+Bây giờ nếu bạn để ý thì tất cả các con số đều ở trên cùng.
 
 134
-00:00:32,640 --> 00:00:48,750
-Vì vậy, trước tiên chúng ta hãy bắt đầu với Bố và tôi sẽ bắt đầu các bài học. Bằng cách nhấp vào bắt đầu đào tạo. Và ở đây chúng tôi thực sự đang bị giam giữ. Nó khá dễ dàng.
+00:03:19,560 --> 00:03:22,740
+Và bạn biết đó là nơi bạn sẽ tìm thấy những con số của mình.
 
 135
-00:00:49,670 --> 00:01:04,910
-Chúng ta sẽ sử dụng ngón trỏ, phía trên bên trái để giữ nguyên vị trí xuống của ngón trỏ bàn tay trái là F và chữ G nằm ngay phía bên phải.
+00:03:22,740 --> 00:03:29,820
+Bây giờ một số bàn phím chính
+như bàn phím này và cả bàn phím của
 
 136
-00:01:05,900 --> 00:01:20,310
-Vì vậy, bạn cần phải chỉ. Ở đây ngón tay này sang phải một chút. Và chiếc chìa khóa tiếp theo bạn tìm thấy chính là anh ấy. Vì vậy, nó sẽ khá dễ dàng đối với tôi.
+00:03:29,820 --> 00:03:31,700
+tôi trên máy tính xách tay sẽ có
+một phần phím ở phía bên phải.
 
 137
-00:01:21,210 --> 00:01:59,190
-Vì vậy, hãy bắt đầu. Vì vậy, đây là. Bạn chỉ cần di chuyển bằng ngón trỏ. Phải. Một chút. Và bạn phải làm như thế. Vì vậy, bạn cần phải thực hiện bài học cụ thể này ít nhất năm lần để chuyển sang bài học tiếp theo, đó là B và bạn.
+00:03:31,800 --> 00:03:36,690
+Vì vậy, nếu bạn đang làm điều gì đó mà bạn bắt
+buộc phải nhập các khối, dấu chấm và số vào
 
 138
-00:02:00,460 --> 00:02:13,060
-Nhưng tôi sẽ rời khỏi khu vực không lành mạnh này. Và tôi sẽ bắt đầu đào tạo dòng bài học, đó là. Và, bạn biết đấy, hệ thống của họ, quá trình đào tạo của họ.
+00:03:36,690 --> 00:03:43,140
+hoặc thích nhập dữ liệu hoặc những thứ tương tự
+thì có thể bạn nên sử dụng phần khóa thay thế.
 
 139
-00:02:14,320 --> 00:02:31,850
-Và Hari. Và trong bài học này sẽ là B và bạn, cả hai nhân vật sẽ bị trói bằng ngón trỏ của cả hai tay chúng ta. Chữ B đó sẽ được gõ bằng ngón trỏ của bàn tay trái.
+00:03:43,140 --> 00:03:49,710
+Điều này là do nếu bạn thực hành và học
+cách sử dụng bàn phím, bạn có thể gõ các số
 
 140
-00:02:31,970 --> 00:02:46,210
-Và nó sẽ được gõ bằng ngón trỏ của bàn tay phải. Bạn có thể gõ bạn khá dễ dàng vì nó được chèn gần như Thổ Nhĩ Kỳ của G, là phím home của ngón trỏ lên trên bàn tay phải.
+00:03:49,710 --> 00:03:54,150
+nhanh hơn rất nhiều so với những gì bạn đang
+cố gắng sử dụng các phím này ở trên cùng.
 
 141
-00:02:47,210 --> 00:03:07,700
-Nhưng nó cho điểm B thì sẽ khá khó khăn vì nó có khoảng cách từ nhà bị giết ở ngón tay này của bàn tay trái, nếu vậy thì bạn cần di chuyển ngón trỏ lên trên bàn tay trái một chút, rồi sang phải nó sẽ lấy chữ B và nó bỏ bạn.
+00:03:54,630 --> 00:04:00,450
+Tuy nhiên, khi gõ thông thường, bạn sẽ được yêu
+cầu thực hiện việc sử dụng các con số, chẳng
 
 142
-00:03:08,350 --> 00:03:21,440
-Nó quá dễ dàng. Di chuyển ngón trỏ của bàn tay phải đến Barton ngay phía trên của Jaqui hoặc honkey và nó sẽ giúp bạn. Vì vậy, hãy thực hành.
+00:04:00,540 --> 00:04:05,660
+hạn như bạn sẽ nhập ngày hoặc năm hoặc thứ
+gì đó tương tự thì bạn sẽ sử dụng các con số.
 
 143
-00:03:23,860 --> 00:03:42,590
-Thực tế là, ít nhất là năm lần trước khi chuyển sang tình trạng lộn xộn sau này. Và tôi hy vọng bạn đã quen với quá trình viết hoa này. Nếu không, bạn cần phải quay lại bài giảng viết hoa đó và thực hành, sau đó lặp đi lặp lại cho đến khi bạn quen với nó.
+00:04:05,730 --> 00:04:10,980
+Bây giờ, tôi sẽ không tập trung quá nhiều vào những
+thứ đó ngay từ đầu. Tôi chỉ giúp bạn sử dụng thành
 
 144
-00:03:44,110 --> 00:03:55,960
-Nhưng tôi chắc chắn rằng hầu hết các bạn đang cố gắng phân tích cú pháp phím shift chỉ bằng cách
-có sẵn. Và mỗi lần tôi làm điều đó, tôi luôn đặt con tàu bằng chiếc chìa khóa đối diện. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:04:10,980 --> 00:04:17,370
+thạo tất cả các phím này ở đây và đọc những con số
+bạn có thể lấy chúng sau này và khi bạn thực sự cần.
 
 145
-00:00:01,620 --> 00:00:12,280
-Xin chào và chào mừng đến với bức thư mới này. Và trong bức thư này, chúng ta sẽ học cách gõ chữ của Tarsa. Hai nhân vật mới. Ai ở đó? Tôi đây, tôi đây.
+00:04:17,370 --> 00:04:20,650
+số đó sẽ rất xa và ít ở giữa.
 
 146
-00:00:13,210 --> 00:00:31,480
-Vậy hãy bắt đầu cuộc hành trình của họ. Cả hai Dụng cụ nong I và M đều được buộc bằng ngón trỏ lên bàn tay phải của bạn. Vị trí ban đầu của ngón trỏ của bàn tay phải là.
+00:04:20,680 --> 00:04:25,390
+Lúc đầu, bạn có thể phải tiếp tục nhìn xuống bàn phím để tìm các phím đó.
 
 147
-00:00:33,040 --> 00:00:49,680
-Và anh ấy gật đầu, ánh mắt phong phú. Bạn cần phải đi lên và sau đó hơi sang trái. Và bạn thả con mắt chính ra. Và ở Gaza, mục tiêu, nó ở ngay dưới thời điểm quan trọng trong ngày.
+00:04:25,500 --> 00:04:30,850
+Nhưng trong khóa học này, chúng tôi sẽ
+chỉ tập trung vào việc sử dụng các phím
 
 148
-00:00:50,760 --> 00:01:05,170
-Vì vậy, việc gõ vào sẽ khá dễ dàng. Chỉ cần bạn thu nhỏ ngón tay viết này lại một chút là sẽ có được Delattre của anh ấy. Nhưng ở Gaza, bạn sẽ cần phải duỗi ngón tay này sang bên trái.
+00:04:30,900 --> 00:04:34,340
+này và giúp bạn thành thạo để có thể gõ
+chúng mà không cần nhìn vào bàn phím.
 
 149
-00:01:05,410 --> 00:01:22,000
-Vì vậy, hãy bắt đầu thực hành và nhấn phím cách. Bây giờ chúng ta ở đây. Bây giờ chúng ta cần đục lỗ vào mắt. Hãy mở rộng ngón trỏ của bạn đến khuỷu tay và hơi sang trái.
+00:04:34,350 --> 00:04:39,470
+Và sau này, bạn sẽ truy cập mà không cần suy nghĩ,
+bạn sẽ nhìn thấy một từ và chỉ cần gõ nó, suy nghĩ
 
 150
-00:01:22,240 --> 00:01:53,030
-Và đây là con mắt. Và trong trường hợp của anh ấy, bạn chỉ cần đẩy ngón trỏ của bàn tay phải xuống phía dưới một chút. Và đây là chữ M và tiếng hét. Hãy nhớ rằng các ngón tay khác không được rời khỏi phím home trong khi gõ bất kỳ phím nào khác từ luật khác hoặc vị trí khác.
+00:04:39,470 --> 00:04:46,200
+một chút. Bạn càng luyện tập nhiều thì nó sẽ càng trở
+nên dễ dàng hơn và bạn sẽ càng ít phải suy nghĩ hơn
 
 151
-00:01:53,660 --> 00:02:19,670
-Vì vậy, hãy thực hành. Và hãy luôn nhớ rằng bạn cần luyện tập đủ để làm quen với tám buổi cho đến khi chuyển sang buổi tiếp theo. Và nếu bạn đã hoàn thành tất cả các bài học này trước đó thì tôi nghĩ bạn đang khá thoải mái trong quá trình từng bước đó.
+00:04:46,290 --> 00:04:47,460
+khi bạn thực sự đang gõ.
 
 152
-00:02:19,700 --> 00:02:30,710
-Và từ bây giờ, bạn có thể tiến về phía trước rất nhanh vì bạn đã biết cách gõ
-đó hoạt động như thế nào. Và bạn đã biết hầu hết các chìa khóa đều ở đâu. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:04:47,460 --> 00:04:54,270
+Vì thế cũng giống như khi bạn học lái xe lần đầu tiên bạn sẽ nghĩ đến một chiếc ô tô điều khiển bằng tay có hộp số.
 
 153
-00:00:02,070 --> 00:00:30,640
-Xin chào và chào mừng đến với bài giảng mới này. Và trong bài giảng này, chúng ta sẽ đề cập đến người lãnh đạo của. Và. Vì vậy, họ bắt đầu đào tạo của họ. Trong hình của V., chúng ta sẽ sử dụng ngón trỏ của bàn tay trái sao cho những ngón này được chèn ngay bên dưới thành phần của ngón trỏ của người có thể.
+00:04:55,200 --> 00:05:00,030
+thì chắc hẳn ban đầu khi bắt đầu
+lái xe bạn sẽ nhìn vào để biết vị trí
 
 154
-00:00:32,110 --> 00:00:48,820
-Vì vậy, tôi chỉ cần di chuyển ngón tay này xuống một chút và chúng ta sẽ có được nghĩa đen. Anh ta. Và ở Gaza, chúng tôi. Chúng ta sẽ sử dụng ngón út hoặc ngón út ở bàn tay phải.
+00:05:00,030 --> 00:05:05,880
+của các bánh răng tiếp giáp với
+bộ ly hợp hay phanh là chân ga, v.v.
 
 155
-00:00:49,360 --> 00:01:02,380
-Vậy nó là đỉnh của ngôi nhà, phím của ngón út tay phải, chính là dấu chấm phẩy. Vì vậy chúng ta cần di chuyển ngón út bên phải lên. Sau đó chúng ta có thể có được bên.
+00:05:06,480 --> 00:05:11,460
+Và chỉ sau khi luyện tập, bạn tiếp tục làm đi làm lại thì cuối cùng bạn mới có thể thành công.
 
 156
-00:01:03,550 --> 00:01:18,420
-Vì vậy, hãy bắt đầu với việc đào tạo của họ. Bây giờ, đây là chữ V, chúng ta cần ấn ngón trỏ trái xuống một chút và chúng ta sẽ có được chữ cái mà anh ấy có là chữ P.
+00:05:12,210 --> 00:05:17,190
+có thể lái chiếc xe của bạn mà
+không hề nghĩ đến việc nó xuất hiện ở
 
 157
-00:01:19,000 --> 00:01:33,160
-Và trong trường hợp này, chúng ta sẽ di chuyển lên R, phải không. Nghỉ ngơi một chút và
-chúng ta có được chữ P nhỏ. Có lẽ chúng ta cũng cần xỏ ngón út bên trái bị cạo như thế. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:05:17,220 --> 00:05:19,600
+đâu thật kinh dị, bạn nghĩ bạn sẽ
+sang số mà không hề nghĩ đến điều đó.
 
 158
-00:00:00,870 --> 00:00:16,180
-Xin chào và chào mừng. Và trong phần này chúng ta sẽ học cách gõ tốt nhất. Đó là một dấu hiệu diễn giải hoặc. Trang web dấu gạch chéo ngược. Vì vậy, hãy bắt đầu.
+00:05:20,090 --> 00:05:21,860
+Và việc gõ phím cũng vậy.
 
 159
-00:00:19,190 --> 00:00:33,750
-Khi bỏ X, chúng ta sẽ sử dụng ngón đeo nhẫn của bàn tay trái. Và lúc đầu sử dụng sẽ có cảm giác khá lạ vì góc chụp, nhưng dần dần sẽ quen.
+00:05:22,050 --> 00:05:27,390
+Bạn càng thực hành nhiều, bạn
+sẽ thấy rằng cuối cùng bạn sẽ
 
 160
-00:00:35,460 --> 00:00:53,820
-Vì vậy, ACIS được chèn ngay bên dưới đó là chìa khóa. Mất vị trí ban đầu của ngón đeo nhẫn bên trái của bạn. Nhưng nó ở phía bên phải một chút. Vì vậy, bạn cần di chuyển ngón đeo nhẫn bên trái xuống một góc sang bên phải.
+00:05:27,390 --> 00:05:30,660
+có thể gõ các từ mà không
+cần suy nghĩ về các phím ở đâu.
 
 161
-00:00:54,720 --> 00:01:10,840
-Và nó từ bỏ dấu hiệu diễn giải. Chúng ta sẽ sử dụng ngón út của bàn tay phải. Và nó sẽ khá dễ dàng vì chúng ta có thể di chuyển mảnh vỡ và ngón tay của mình theo hướng này.
+00:05:30,660 --> 00:05:32,130
+Vì vậy, hãy tiếp tục. 
+
+@@@
+
+
 
 162
-00:01:10,890 --> 00:01:22,040
-Thật mơ hồ. Vì vậy, nó nằm ngay dưới thành phần của ngón út bên phải, đó là dấu chấm phẩy. Chỉ cần di chuyển xuống đây. Phải. Ngón tay hồng hào một chút.
+00:00:01,260 --> 00:00:08,400
+Bây giờ tôi sẽ dạy cho bạn một điều gì đó và điều này rất có giá trị và nó cũng rất quan trọng.
 
 163
-00:01:22,130 --> 00:01:38,700
-Và bạn là dấu chấm hỏi. Họ có phải là dấu hiệu diễn giải? Đây là thanh Espers và hãy bắt đầu quá trình đào tạo của họ. Và đây là bản đồ tương tác để sử dụng Internet nếu chúng ta cần phân tích hình dạng đó.
+00:00:08,710 --> 00:00:12,020
+Như vậy trên bàn phím có tám phím này.
 
 164
-00:01:38,840 --> 00:01:52,970
-Và trong trường hợp này, vì chúng ta sẽ sử dụng nhóm tay phải, là dấu thẩm vấn hoặc dấu thô tục. Vì vậy chúng ta cần phân tích phím sống giá rẻ bằng ngón út hướng lên hoặc tay trái.
+00:00:12,040 --> 00:00:15,600
+Các phím này được gọi là phím home.
 
 165
-00:01:53,150 --> 00:02:05,930
-Sau đó là dấu hiệu diễn giải ở ngón út bên phải của bạn. Và nếu chúng ta là dấu hiệu diễn giải đó mà không đặt tờ giấy thì bạn không phải là dấu hiệu diễn giải.
+00:00:15,620 --> 00:00:21,340
+Lý do là vì đó là vị trí mà
+ngày bốn ngón tay trên bàn
 
 166
-00:02:06,020 --> 00:02:19,940
-Nó sẽ chỉ là dấu gạch chéo ngược. Xin chào, Hãy nhớ rằng YouTube được định hình để tạo ra một dấu hiệu tương tác. Và nếu bạn định sử dụng dấu gạch chéo ngược, bạn không cần phải chuyển dấu.
+00:00:21,340 --> 00:00:24,140
+tay trái của bạn phải luôn
+bắt đầu từ bàn tay phải.
 
 167
-00:02:20,440 --> 00:02:37,160
-Vì vậy hãy tiếp tục luyện tập. Và hãy cẩn thận mỗi ngày vì sẽ khá khó để thực hành thuần túy nhanh chóng,
-sau đó sẽ ổn thôi. Vì vậy, hãy tiếp tục luyện tập cho đến khi bạn quen với cơn đau và dấu hiệu tích hợp. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:00:24,340 --> 00:00:29,980
+Bởi vì từ vị trí đó có nghĩa
+là bạn sẽ biết tất cả các
 
 168
-00:00:00,780 --> 00:00:12,060
-Xin chào và chào mừng đến với nhiệm kỳ giải đấu mới này. Và trong bài giảng này, chúng ta sẽ đề cập đến bốn đứa trẻ mà anh ấy nói sẽ mở và đóng cửa chiếc Birkitt đầu tiên của chúng tôi.
+00:00:29,980 --> 00:00:32,610
+phím khác ở vị trí đó nhưng
+thực tế chúng đang nhìn.
 
 169
-00:00:12,520 --> 00:00:31,520
-Sau đó là dấu gạch nối hoặc điểm hạ cấp. Vì vậy, hãy bắt đầu và bắt đầu quá trình đào tạo của chúng ta. Và chúng tôi ở đây. Vì vậy, theo thứ tự đoàn, thế là xong. Chúng ta cần sử dụng ngón út phía trên bàn tay trái.
+00:00:32,770 --> 00:00:39,450
+Vì vậy, bên trái là SDF và bên phải là J K L và dấu chấm phẩy.
 
 170
-00:00:32,230 --> 00:00:45,410
-Chúng ta cần phải đẩy xuống một chút. Và chúng ta sẽ có được Jackie. Và sẽ thực sự thoải mái vì với việc xử lý mối nối mới này, chúng ta sẽ nhận được séc từ trên không.
+00:00:39,490 --> 00:00:42,740
+Và tất nhiên bạn cũng có thể lấy dấu hai chấm ở đó.
 
 171
-00:00:46,540 --> 00:00:59,320
-Và nó từ bỏ các dấu ngoặc cho dấu ngoặc mở. Chúng ta sẽ sử dụng ngón giữa của bàn tay phải và đóng dấu ngoặc đóng lại. Chúng ta sẽ sử dụng ngón đeo nhẫn, phía trên bên phải.
+00:00:42,940 --> 00:00:47,440
+Vì vậy, tôi sẽ không chỉ cho bạn cách bạn có thể tìm
+thấy những phím đó mà không cần nhìn bởi vì nó khá quan
 
 172
-00:01:00,560 --> 00:01:17,090
-Và để tăng cường sự cường điệu, chúng tôi sẽ sử dụng ngón út trên bàn tay phải của tôi. Vì vậy, hãy bắt đầu. Và bây giờ nếu máy bay phản lực xuất hiện trong chuyến đi của chúng tôi, đó có phải là ở thủ đô chúng tôi sẽ sử dụng tay phải của mình không?
+00:00:47,470 --> 00:00:52,840
+trọng bởi vì khi bạn thực sự đang gõ, bạn không muốn
+tiếp tục tìm kiếm nên bạn có thể đặt phím của mình vào.
 
 173
-00:01:18,060 --> 00:01:34,020
-Bởi vì hình dạng của phía bên phải. Sau đó chúng ta sẽ sử dụng ngón út của bàn tay trái. Có phải vậy không? Như thế à? Và bây giờ đã có sự mở cửa trở lại, nó đến để làm điều đó.
+00:00:52,840 --> 00:00:54,970
+ngón tay trở lại vị trí đó một lần nữa.
 
 174
-00:01:34,080 --> 00:01:47,940
-Chúng ta sẽ sử dụng ngón giữa bên phải. Mark Cooper là người đứng đằng sau chứ không phải của tôi. Chúng ta cần xỏ lỗ theo hình bằng tay đối diện, trong trường hợp này là tay trái.
+00:00:55,000 --> 00:00:56,890
+Vì vậy, đó là một cách thực sự dễ dàng để làm điều đó.
 
 175
-00:01:48,510 --> 00:02:03,600
-Vì vậy, chúng ta sẽ nhấn vào ngón tay út trái của chimpsky bên trái. Người hỏi Đúng. Ngón giữa là người chơi dấu ngoặc mở đầu. Và bây giờ chúng ta sẽ trở lại trạng thái bình thường và có dấu ngoặc đóng.
+00:00:57,730 --> 00:01:01,920
+Vậy có hai phím này ở đây là F và J.
 
 176
-00:02:04,050 --> 00:02:21,570
-Vì vậy, chúng ta sẽ sử dụng ngón tay chuỗi bên phải. Nhưng tiến tới bấm chip thì giữ ngón út bên trái. Nếu không nó sẽ là số không. Vì vậy tôi nghĩ đây là lần nghe duy nhất cao hơn.
+00:01:02,270 --> 00:01:11,080
+Về cơ bản, ngón trỏ của
+bàn tay trái của bạn thuộc nốt
 
 177
-00:02:21,710 --> 00:02:37,980
-Chúng ta sẽ thực hành cho từng trường hợp và sẽ nhiều hơn một chút. Vì vậy hãy tập luyện đủ. Hãy cảm thấy thoải mái với trường hợp này vì dấu ngoặc sẽ khó khăn vì chúng được chèn vào hai hàng.
+00:01:11,080 --> 00:01:13,410
+F và ngón trỏ của bàn tay
+phải của bạn thuộc nốt J.
 
 178
-00:02:38,220 --> 00:02:53,610
-Tôi hy vọng chìa khóa nhà. Vì vậy chúng ta cần duỗi ngón tay ra một chút và nó sẽ có góc cạnh để bạn có ý chí thực
-hiện điều đó. Và cũng trong trường hợp cao. Vì vậy, hãy tiếp tục luyện tập cho đến khi bạn quen với việc này. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:01:13,740 --> 00:01:18,920
+Vậy làm thế nào để tìm thấy thứ đó mà không cần nhìn đều có trên mỗi phím này.
 
 179
-00:00:00,670 --> 00:00:12,340
-Xin chào và chào mừng. Và như chúng ta đã hoàn thành nhiệm vụ ghi âm tất cả các chữ cái từ đầu đến cuối. Bây giờ là lúc chúng ta chuyển sang Medicare mới.
+00:01:18,930 --> 00:01:24,630
+Có một cục nhỏ nhô ra mà
+bạn sẽ cảm nhận được khi
 
 180
-00:00:12,520 --> 00:00:25,900
-Có phải bọn trẻ ở ngày hai không? Chín và không. Vì vậy bây giờ chúng ta sẽ thực hành trường hợp này. Trên thực tế, nó sẽ khá dễ dàng vì chúng ta đã học rồi.
+00:01:24,630 --> 00:01:25,420
+chạm vào các phím này
+nên bạn muốn làm gì thì làm.
 
 181
-00:00:25,930 --> 00:00:42,760
-Và nếu tôi được thông qua việc gõ. Vì vậy hãy bắt đầu từ bên trái. Đầu tiên, có Clemson Mark trên bàn của chúng tôi. Chúng tôi đã thực hành rồi. Đó là dấu hiệu Clemson có hình xỏ lỗ và sau đó là dấu chấm than.
+00:01:25,420 --> 00:01:31,860
+Điều tôi muốn bạn làm bây giờ là lấy ngón trỏ
+trái của bạn đặt nó lên FCC và sau đó ngón
 
 182
-00:00:43,630 --> 00:00:55,510
-Vậy bạn đã quen với điều này chưa? Chúng ta sẽ sử dụng ngón út bên trái để nhấn vào rồi bỏ cuộc. Chúng ta sẽ sử dụng ngón đeo nhẫn bên trái.
+00:01:31,860 --> 00:01:36,800
+trỏ phải của bạn đặt ngón trỏ đó lên phím J
+và tôi muốn bạn cảm nhận khối u đó trên phím.
 
 183
-00:00:56,980 --> 00:01:10,210
-Bốn mươi tám sẽ là ngón giữa trái và ngón trỏ trái sẽ bao gồm năm và bốn. Vì vậy, đây là nó cho tay trái. Và cho tay phải.
+00:01:36,990 --> 00:01:38,100
+ĐƯỢC RỒI.
 
 184
-00:01:11,790 --> 00:01:27,760
-Phím sáu và bảy sẽ được đặt bằng ngón tay này ở bàn tay phải. Sau đó, tám sẽ được ấn bằng ngón giữa của bàn tay phải. Và chúng tôi đã đóng gói sẵn dấu ngoặc mở và đóng của khung đầu tiên bốn chín.
+00:01:38,250 --> 00:01:47,820
+Không cần phải biết khi nào phím của bạn thì ngón tay của bạn được đặt đúng vị trí trên hai phím đó.
 
 185
-00:01:27,820 --> 00:01:39,980
-Chúng ta sẽ sử dụng ngón đeo nhẫn bên phải. Và đối với Gedo, đó sẽ là ngón út bên phải. Vì vậy, hãy bắt đầu với việc thực hành. Và đây là mười sâu của chúng tôi.
+00:01:48,040 --> 00:01:55,330
+Ba ngón tay còn lại của bạn sẽ ở vị trí không chính xác phía trên các phím home khác.
 
 186
-00:01:40,860 --> 00:01:54,570
-Và đây là phần số, bài số 16. Chúng ta sẽ bỏ qua các ký tự đặc biệt này vì các ký tự đặc biệt cũng sẽ gọi là fireboat, các ký tự đặc biệt trên Antle.
+00:01:55,480 --> 00:02:01,610
+Vì vậy, khi ngón trỏ trái của bạn ở phím F, bạn sẽ nhận thấy rằng ngón trỏ của bạn sẽ ở phím D.
 
 187
-00:01:55,050 --> 00:02:09,870
-Điều đó có nghĩa là tất cả các ký tự đặc biệt của họ. Vì vậy, hãy bắt đầu đào tạo của họ về các con số. Và ở đây chúng tôi đang đặt bàn tay của bạn ở vị trí chính, sau đó là Espers Berquist.
+00:02:01,630 --> 00:02:09,790
+Ngón đeo nhẫn của bạn ở số
+s và ngón út của bạn sẽ ở số a,
 
 188
-00:02:10,960 --> 00:02:23,440
-Tất cả các bức thư sẽ là cùng một người đàn ông. Phiên đóng gói này chứa một số Medek mới mà chúng ta cần đặt. Vì vậy, bây giờ chúng ta sẽ nhấn vào ngón út bên trái.
+00:02:09,790 --> 00:02:12,190
+tương tự như vậy với bàn tay
+phải, ngón trỏ của bạn sẽ ở số J.
 
 189
-00:02:23,800 --> 00:02:35,470
-Sau đó là dấu phẩy, nó được làm thành bình thường, rồi đến sáu. Và chúng ta sẽ sử dụng ngón trỏ trái của họ. Khi đó số 0 sẽ là ngón đeo nhẫn bên phải. Và một lần nữa, chín.
+00:02:12,850 --> 00:02:18,070
+Ngón tay dài nhất của bạn Hóa đơn ngón tay
+dài nhất ở chữ K trong ngón tay ở chữ L trên
 
 190
-00:02:36,890 --> 00:02:51,690
-Anh ấy đã sửa chữa trả tiền, phải, ngón giữa. Vì vậy, tôi nghĩ bạn đã có nó. Nếu bạn
-không thể nhớ ai là người chỉ cho Hudes, bạn luôn có thể ngồi đó ở ga và bên dưới. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:02:18,130 --> 00:02:22,290
+ngón út của bạn, tất nhiên là ở nơi có dấu
+chấm phẩy và tất nhiên cả cách gọi ở đó.
 
 191
-00:00:00,240 --> 00:00:14,490
-Xin chào và chào mừng đến với bài giảng mới này. Và trong bức thư này, chúng ta sẽ nói về bàn phím số hoặc không có phím back. Vì vậy, trước tiên chúng ta hãy nói về vị trí nhà trong trường hợp con số này quay lại đây.
+00:02:22,330 --> 00:02:24,730
+Đừng lo lắng về điều đó nữa.
 
 192
-00:00:14,610 --> 00:00:30,270
-Hàng giữa này gồm bốn, năm và sáu, là vị trí chủ nhà. Vì vậy, bạn đang ở trong ngón tay này của bàn tay phải. Chúng tôi sẵn sàng. Khi đó ngón giữa của bàn tay phải sẽ bốc cháy.
+00:02:24,730 --> 00:02:28,240
+Vì vậy, đây thực chất là trường hợp gia đình.
 
 193
-00:00:31,290 --> 00:00:51,380
-Và ngón đeo nhẫn sẽ ở số sáu. Bây giờ thời gian của bạn sẽ về số không. Và ngón út sẽ có mặt ở đây ở Thổ Nhĩ Kỳ. May mắn nằm ở đường thẳng đứng đó, ngoại trừ số 0 sẽ bị ngón trỏ ấn vào.
+00:02:28,480 --> 00:02:35,290
+Vì vậy, bạn cần phải luôn đặt ngón tay của mình vào những
+phím này khi gõ phím, tất nhiên là bạn cần di chuyển
 
 194
-00:00:52,480 --> 00:01:14,860
-Và tất cả phím này ở làn này, ngoại trừ chi tiết sẽ được nhấn bằng ngón giữa bên phải. Và những ống hút này sẽ được ép bằng ngón đeo nhẫn bên phải. Còn trường hợp ngón út thì dấu trừ cộng và liên sẽ được ngón út ấn vào.
+00:02:35,290 --> 00:02:40,270
+ngón tay của mình để đến các phím khác nhưng chúng sẽ
+luôn quay trở lại các phím này khi bạn gõ phím này.
 
 195
-00:01:15,340 --> 00:01:30,250
-Vì vậy, hãy bắt đầu với việc đào tạo của họ. Thực tế có hai bài học. Số này là 19 và 20. Còn số đó thì sao? Nhưng chúng ta sẽ làm điều thứ hai vì nó sẽ tốn thời gian.
+00:02:40,270 --> 00:02:46,120
+đã gõ chữ cái bạn muốn gõ và bạn sẽ học những chữ cái này một cách rất dễ dàng.
 
 196
-00:01:30,320 --> 00:01:44,660
-Tôi cũng quay trở lại với bài học. Hãy bắt đầu từ đó. đào tạo. Và Hari. Vì vậy, như Dana Station đang nói, có thể đưa ra lời đề nghị. Tôi đã làm điều đó rồi.
+00:02:46,230 --> 00:02:51,370
+Và làm theo các bài tập thực hành mà tôi sắp cung cấp cho bạn ngay sau đây.
 
 197
-00:01:44,750 --> 00:01:57,400
-Bây giờ Lesperance thực hiện thanh này. Và bạn đi đây. Hesperus trên ngón trỏ tay phải của tôi. Vậy thì ba, ai sẽ là ngón đeo nhẫn bên phải? Sau đó là dấu gạch chéo ngược.
+00:02:51,370 --> 00:02:53,050
+Vì vậy, đó là bài học đầu tiên.
 
 198
-00:01:57,830 --> 00:02:11,830
-Ai vẫn ở bên họ? Phải. Ngón giữa. Vì vậy, nó khá dễ dàng vì tất cả những kẻ thiếu sót đều theo cùng một luật. Cùng với ngón tay. Vì thế chúng ta chỉ cần di chuyển lên xuống.
+00:02:53,170 --> 00:02:54,670
+Biết chìa khóa nhà của bạn ở đâu
 
 199
-00:02:12,370 --> 00:02:31,570
-Chúng ta không cần phải sang phải hay sang trái hay bất cứ điều gì mà tôi nghĩ việc bạn gõ phím quá khứ hoặc gõ rất nhanh trên bàn phím số này không quan trọng với bạn trừ khi bạn quá ít hoặc không thích tính toán hay nhập liệu .
+00:02:54,790 --> 00:02:59,240
+Vì vậy, điều tôi muốn bạn làm chỉ là luyện tập một chút để làm quen với việc tìm ra những thứ đó.
 
 200
-00:02:31,920 --> 00:02:44,740
-Nhưng nếu bạn là một lập trình viên, người viết bài hoặc người sáng tạo nội dung thì bạn sẽ sử dụng kiểu chữ số trên các chữ cái. Vì vậy nếu bạn đã đầu tư thì hãy cố gắng thực hành nó.
+00:02:59,260 --> 00:03:02,060
+Vì vậy, lúc đầu bạn có thể cần phải nhìn vào bàn phím của mình.
 
 201
-00:02:44,920 --> 00:03:02,440
-Nếu không, nó không quá quan trọng đối với bạn. Vì vậy hãy tiếp tục luyện tập. Và từ bài giảng tiếp theo. Chúng
-ta sẽ nói về một số cách sử dụng phím tắt đầy đủ, điều này sẽ giúp bạn tăng năng suất và giúp bạn gõ nhanh hơn. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:03:02,740 --> 00:03:09,010
+Nhưng tôi muốn điều tôi muốn bạn thử làm là rời mắt khỏi bàn phím và cố gắng tìm những phím đó
 
 202
-00:00:01,770 --> 00:00:16,350
-Xin chào và chào mừng đến với bài giảng mới này. Và trong bài giảng này, chúng ta sẽ tìm hiểu về một số trường hợp Schuckert. Chúng ta có thể sử dụng ai để Arquit hoặc là ai. Vì vậy, tôi phải mở Microsoft.
+00:03:09,520 --> 00:03:15,880
+không cần nhìn vào bàn phím nên chỉ cần rời mắt khỏi bàn phím, nhìn lên và đặt tay lên
 
 203
-00:00:17,900 --> 00:00:35,150
-Và đó là trong lịch sử ở đây. Đó là một câu chuyện tiếng Anh về một người đàn ông và con trai ông ta. Nó chỉ là một đoạn demo. Vì vậy, chúng ta đã quen với không gian Arrow Becker và trường hợp Delate làm việc với một ký tự tại một dấu thời gian.
+00:03:16,270 --> 00:03:23,020
+trên các phím cho đến khi bạn tìm thấy hai cục nhỏ đó bằng ngón trỏ trái và phải.
 
 204
-00:00:35,240 --> 00:00:51,140
-Tuy nhiên, chúng ta có thể thêm phím điều khiển để chúng có tác dụng vào nghệ thuật hoặc đoạn văn cùng một lúc. Vì vậy, nghe này, tôi làm một số phím tắt. Giả sử chiếc xe ở đây, thưa ông, chỉ cần DRDO yêu cầu.
+00:03:23,050 --> 00:03:28,330
+Bằng cách đó, bạn sẽ biết khi
+nào bạn thấy rằng ngón trỏ của
 
 205
-00:00:51,710 --> 00:01:04,330
-Vậy là chúng tôi sở hữu chiếc xe này, thưa ngài. Vào đầu của trước đó. À, chúng ta có thể làm điều đó bằng cách click chuột vào vị trí đó. Nhưng chúng ta cũng có thể làm điều đó bằng đường tắt.
+00:03:28,330 --> 00:03:29,830
+bạn đúng phía trên chữ F và
+bên phải của bạn phía trên chữ J.
 
 206
-00:01:04,790 --> 00:01:23,570
-Vì vậy phím tắt là kiểm soát và chăn nuôi gia súc. Vì vậy, nếu tôi nhấn nút điều khiển và rời đi, chúng ta sẽ bắt đầu nghệ thuật hỏi. Bây giờ nếu tôi làm lại điều đó, nó sẽ chuyển ngài của chúng ta về đầu giờ trước.
+00:03:29,830 --> 00:03:37,060
+Và ba ngón tay còn lại của bạn sẽ rơi đẹp và gọn
+gàng phía trên các phím khác. Khi bạn có bốn ngón tay
 
 207
-00:01:23,930 --> 00:01:37,600
-Nếu chúng ta không di chuyển con trỏ đến đầu lần bắt đầu tiếp theo, chúng ta cần xây dựng bộ điều khiển và lùa gia súc. Vì vậy, hãy làm điều đó. Và Harry, tôi cho rằng tôi sở hữu chiếc xe này, thưa ngài.
+00:03:37,060 --> 00:03:43,030
+đó, bạn cũng có thể nhận thấy rằng cả hai ngón cái
+của bạn đều tự nhiên đặt trên phím này ở phía dưới
 
 208
-00:01:37,940 --> 00:01:56,810
-Chỉ cần bắt đầu có thể bắt đầu. Anh ấy của anh ấy. Tôi sẽ nhấn nút điều khiển và sang phải. Mũi tên và Haria. Vì vậy, bằng cách này, thưa ông, chúng ta có thể di chuyển ô tô của mình đến điểm bắt đầu của một cung mới, hoặc là ngã rẽ tiếp theo của cung trước đó trên không ít hơn một lối tắt mới.
+00:03:43,420 --> 00:03:49,870
+được gọi là phím cách, phím
+cách là thứ bạn sử dụng nếu bạn
 
 209
-00:01:57,530 --> 00:02:10,830
-Đó là về việc đánh dấu nghệ thuật trước đó cho lần thả tiếp theo. Giả sử chúng ta đang ở trong trò chơi này sẽ bị xóa. Chúng ta có thể làm điều đó bằng cách nhấn nút điều khiển và quay lại các Esper.
+00:03:49,860 --> 00:03:52,400
+chưa biết cách tạo khoảng
+trắng hoặc giữa các từ và câu.
 
 210
-00:02:11,000 --> 00:02:24,230
-Vì vậy, bằng cách nhấn control và backspace, nó thực sự đã thắp sáng bức tranh trước đó như thế. Và nếu tôi muốn trì hoãn lần bắt đầu tiếp theo, đây là trò chơi chúng ta cần nhấn nút điều khiển và trì hoãn nó.
+00:03:52,800 --> 00:03:53,950
+Và vân vân.
 
 211
-00:02:25,140 --> 00:02:41,380
-Và bây giờ từ đó đã bị xóa. Giả sử chúng ta sở hữu chiếc xe, thưa ông. Thật tệ khi bắt đầu tất cả những điều này. Hãy nếm thử món này ở đầu làn đường nhanh này. Chúng ta có thể làm điều đó bằng cách nhấn nút điều khiển và đạp ngay bây giờ.
+00:03:53,950 --> 00:03:55,500
+Vì vậy điều đó rất quan trọng.
 
 212
-00:02:41,570 --> 00:02:54,850
-Này nó. Bây giờ nếu chúng ta sở hữu chiếc xe, thưa ngài. Gooby ở cuối tất cả hương vị này. Chúng ta có thể làm điều đó bằng cách nhấn control và mũi tên xuống ở đó. nhìn thấy. Và nó đây.
+00:03:55,500 --> 00:04:01,840
+Vì vậy, như bạn có thể thấy từ vị trí này, bạn có
+thể nhập bốn phím home đó và đặt dấu cách ở giữa
 
 213
-00:02:55,560 --> 00:03:06,540
-Và mực là nếu bạn là người dùng Mac. Bạn có thể sử dụng phím tùy chọn thay vì phím
-điều khiển. Họ sẽ giống nhau. Hẹn gặp lại bạn trong bài giảng tiếp theo. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+00:04:01,840 --> 00:04:07,630
+những gì bạn nhập và từ đó tất cả các phím khác bạn
+sẽ có thể tìm thấy chúng mà không cần nhìn. 
 
 @@@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 214
-00:00:00,870 --> 00:00:14,200
-Xin chào và chào mừng. Và trong bài giảng này, chúng ta sẽ nói về một số loài cá mập. Ai là ai? Chúng ta có thể sử dụng để chọn văn bản khác nhau. Vì vậy, hãy bắt đầu việc này và đi ra ngoài.
+00:00:00,940 --> 00:00:06,030
+Vậy là bây giờ bạn đã quen với vị trí ngón tay của mình đặt trên phím home.
 
 215
-00:00:14,250 --> 00:00:34,710
-Đóng gói nó lại. Giả sử chiếc xe ở đây dừng lại ở nghệ thuật của Young và chúng ta tự chọn một nhân vật. Nhân vật SuBo của tôi còn quá nhỏ để chọn nhân vật cuối cùng nói, trời ơi, chúng ta có thể làm điều đó bằng cách nhấn vào hình và nhấc mũi tên lên như thế.
+00:00:06,030 --> 00:00:09,020
+Tôi sẽ không bắt bạn phải thực hành bất cứ điều gì.
 
 216
-00:00:34,920 --> 00:00:47,760
-Bây giờ bệnh đã được chọn. Nếu chúng ta tiếp tục chọn giống cha như trong thì bạn hoặc chúng ta có thể chỉ cần chọn lại Taraki bên trái và nó sẽ được chọn như thế.
+00:00:09,070 --> 00:00:16,080
+Tôi sẽ chỉ cho bạn cách các ngón tay của bạn di chuyển quanh các phím trên bàn phím như thế nào.
 
 217
-00:00:50,040 --> 00:01:00,630
-Và giả sử chúng ta sở hữu nhân vật tiếp theo đó hoặc nhân vật bên phải xe, thưa ngài, sẽ được chọn. Chúng ta có thể làm điều đó bằng cách nhấn shift và mũi tên phải.
+00:00:16,840 --> 00:00:19,810
+Vì vậy, hãy bắt đầu với bàn tay trái của chúng ta.
 
 218
-00:01:00,850 --> 00:01:14,100
-Đây là mũi tên bên phải và Chave để chọn mục tiêu. Sau đó nó sẽ chọn A và cứ tiếp tục như vậy. Như vậy chúng ta đã sử dụng phím tắt để chọn nhân vật.
+00:00:19,840 --> 00:00:29,080
+Ngón tay nhỏ đặt trên phím
+nên ngón tay đó chịu trách
 
 219
-00:01:15,030 --> 00:01:29,110
-Bây giờ chúng ta hãy xem. Để lại một số dòng để chọn một dòng. Chúng ta có thể phân tích cú pháp dịch chuyển và mũi tên lên để chọn dòng như thế. Vì vậy, nó sẽ chọn một dòng duy nhất.
+00:00:29,080 --> 00:00:30,420
+nhiệm về ay tất nhiên vì nó
+che phím đó là phím home.
 
 220
-00:01:29,490 --> 00:01:41,130
-Chỉ cần bắt đầu giống như bắt đầu từ con trỏ qua cùng một vị trí của dòng trên. Và trong trường hợp đường màu xanh lam, chúng ta sẽ sử dụng phím shift.
+00:00:30,610 --> 00:00:37,920
+Từ đó nó có thể di chuyển xuống phía dưới để lấy chữ Z ở trên để lấy tín hiệu.
 
 221
-00:01:41,400 --> 00:02:00,320
-Và xuống chỗ Oki's. Và nó sẽ chọn câu từ đoạn đường nối này đến đoạn tốt nghiệp này như thế. Bây giờ, nếu chúng ta muốn chọn các đoạn văn, chúng ta sẽ sử dụng điều khiển có hình dạng trở lên.
+00:00:37,990 --> 00:00:42,430
+Ngoài ra nếu bạn đang gõ một số sẽ là số một.
 
 222
-00:02:00,730 --> 00:02:15,980
-Nó sẽ chọn tất cả văn bản sau tiêu đề. Sau đó nó cũng đi xuống. Nếu chúng ta sử dụng phím shift điều khiển và mũi tên xuống. Thế là nó trượt hết nhìn choáng váng ra khỏi xe rồi thưa ông.
+00:00:42,450 --> 00:00:49,900
+Bây giờ tôi cũng sẽ hiển thị các con
+số vì sau này khi bạn thực hiện các
 
 223
-00:02:16,470 --> 00:02:29,720
-Tôi đặt phần hoàn thiện của văn bản. Bây giờ nếu chúng ta muốn nói như thế choáng váng từ chiếc xe này thưa ông, qua đầu dòng, chúng ta có thể làm được điều đó. Chúng ta cần ca lính và nhà để chọn ngày đó.
+00:00:49,900 --> 00:00:53,250
+con số, bạn sẽ biết điều này sẽ cho
+bạn thấy ngón tay nào đi đến số đó.
 
 224
-00:02:29,870 --> 00:02:43,730
-Chúng tôi làm trong xe, thưa ngài. Và sự khởi đầu của dòng thời gian. Và nếu chúng ta muốn chọn toàn bộ văn bản chúng ta làm trên ô tô thưa ông. Và đoạn cuối của Green Line, chúng ta cần thay thế một đoạn cuối như thế.
+00:00:53,350 --> 00:01:01,330
+Nhưng tất nhiên những gì chúng
+ta sẽ làm trong khóa học này là làm
 
 225
-00:02:44,720 --> 00:02:55,860
-Và nếu muốn chọn toàn bộ văn bản thì chúng ta cần nhấn nút điều khiển. Và tôi hy vọng chúng ta đã
-biết điều đó vì đây là lối tắt khá phổ biến. Vậy hẹn gặp lại các bạn trong bài giảng tiếp theo. 
+00:01:01,330 --> 00:01:03,450
+quen với việc gõ các chữ cái thay
+vì các con số trong một giờ sau đó.
 
+226
+00:01:03,520 --> 00:01:08,610
+Bạn có thể tự mình thực hành các con số khi bạn thành thạo hơn với các chữ cái.
 
+227
+00:01:08,680 --> 00:01:10,090
+Vậy đó là phím bên trái.
 
+228
+00:01:10,090 --> 00:01:16,450
+Bây giờ nếu chúng ta di chuyển sang ngón đeo nhẫn bên trái thì đây là những phím sẽ chịu trách nhiệm.
 
+229
+00:01:16,450 --> 00:01:23,020
+Vì vậy nó nằm phía trên chữ s trên phím home sau đó sẽ đi xuống dưới để lấy dấu x ở trên để lấy
 
+230
+00:01:23,020 --> 00:01:23,540
+W..
 
+231
+00:01:23,540 --> 00:01:31,240
+Và bạn biết nếu khi đó là một con số sẽ là số hai thì ngón tay dài dài của bàn tay trái của chúng ta
 
+232
+00:01:32,630 --> 00:01:38,230
+hoặc ngón trỏ là chữ
+D nằm ở trên đó khi đói
 
+233
+00:01:38,230 --> 00:01:40,140
+rồi có thể đi xuống lấy
+chữ C ở trên để lấy e..
 
+234
+00:01:41,290 --> 00:01:42,750
+Và tất nhiên là cả ba nếu bạn muốn.
 
+235
+00:01:42,770 --> 00:01:48,160
+Tôi sẽ tiếp tục đề cập đến những con số mà từ giờ trở đi bạn có thể tự mình nhìn thấy chỉ bằng các chữ cái.
 
+236
+00:01:48,160 --> 00:01:49,980
+Vậy ngón tiếp theo là ngón giữa của chúng ta.
 
+237
+00:01:49,980 --> 00:01:53,640
+Bây giờ người này có nhiều đứa trẻ hơn để chịu trách nhiệm.
 
+238
+00:01:53,710 --> 00:01:58,450
+Thực ra cái này có sáu phím chữ cái không tính các con số.
 
+239
+00:01:58,600 --> 00:02:06,430
+Vì vậy, ngón trỏ trái R sẽ nằm trên phím home và
+sẽ ở phía trên chữ F nên f nằm ngay lập tức, bạn có
 
+240
+00:02:06,430 --> 00:02:11,500
+thể nhấn rằng nó đã nằm trên đó nhưng hiện tại nếu
+nó di chuyển xuống thì bạn có thể nhận được chữ V
 
+241
+00:02:11,590 --> 00:02:21,220
+hoặc cao hơn và lấy chữ R và cũng có thể di chuyển sang phải để lấy chữ G và chéo sang phải
 
+242
+00:02:21,460 --> 00:02:25,640
+ở trên để lấy chữ T và theo đường chéo bên dưới để lấy B.
 
+243
+00:02:25,660 --> 00:02:32,890
+Có lý do tại sao nó chịu trách nhiệm cho nhiều
+chữ cái hơn vì ngón tay phải sẽ phải duỗi quá
 
+244
+00:02:32,890 --> 00:02:41,470
+xa để có được T G và B, ngón trỏ của bạn sẽ
+chạm tới các chữ cái này một cách tự nhiên hơn.
 
+245
+00:02:41,470 --> 00:02:47,880
+Bây giờ chúng ta chuyển sang tay phải nên lại bắt đầu bằng ngón tay út bên phải của chúng ta.
 
+246
+00:02:48,190 --> 00:02:50,530
+Vì vậy, đó là phần còn lại của các phím home ở trên.
 
+247
+00:02:50,790 --> 00:02:56,260
+Nếu bạn nhấn phím đó xuống, nó sẽ cung cấp cho bạn dấu
+hai chấm trên phím hoặc nếu bạn giữ phím shift, chúng
 
+248
+00:02:56,260 --> 00:03:00,640
+tôi sẽ cung cấp cho bạn dấu hai chấm và sau đó tất
+nhiên chúng tôi sẽ di chuyển ngón tay út của mình xuống.
 
+249
+00:03:00,640 --> 00:03:04,330
+Điều đó sẽ cung cấp cho chúng tôi dấu gạch chéo về phía trước hoặc nếu bạn muốn trong câu hỏi.
 
+250
+00:03:04,330 --> 00:03:05,170
+Dấu hỏi.
 
+251
+00:03:05,190 --> 00:03:14,320
+David giữ phím shift bên tay trái rồi nhấn phím đó để có dấu chấm hỏi rồi
 
+252
+00:03:15,070 --> 00:03:22,140
+ở trên, chúng ta di chuyển ngón út lên trên để
+lấy chữ P. Và sau đó tất nhiên là di chuyển sang
 
+253
+00:03:22,140 --> 00:03:27,030
+ngón đeo nhẫn của bàn tay phải của cô ấy đang
+nằm thoải mái phía trên chữ L trên phím home.
 
+254
+00:03:27,030 --> 00:03:29,400
+Vì vậy, chỉ cần nhấn xuống để lấy L..
 
+255
+00:03:29,580 --> 00:03:32,770
+Nếu bạn di chuyển nó xuống bạn có thể nhận được dấu phẩy.
 
+256
+00:03:32,800 --> 00:03:37,550
+Không, bạn biết đấy, có một biểu tượng
+lớn hơn có thể nhấn phím shift nhiều hơn
 
+257
+00:03:37,580 --> 00:03:41,010
+nhưng có lẽ biểu tượng đó ít được sử dụng
+hơn, có nhiều khả năng nhấn dấu phẩy hơn.
 
+258
+00:03:41,070 --> 00:03:50,110
+Vậy là các bạn chỉ cần di chuyển ngón
+đeo nhẫn xuống dưới để lấy dấu phẩy di
 
+259
+00:03:50,160 --> 00:03:52,410
+chuyển ngón đeo nhẫn ở trên để lấy ngón
+tay to mốc của bàn tay phải của chúng ta.
 
+260
+00:03:52,410 --> 00:03:56,910
+Vì vậy, một lần nữa đó là cái mà bạn có thể thấy phía trên chữ K. và chúng tôi sẽ làm như vậy.
 
+261
+00:03:57,240 --> 00:04:00,040
+Xin lỗi, tôi xin lỗi, mẹ đã nói về chữ F, xin lỗi.
 
+262
+00:04:00,120 --> 00:04:00,660
+Xin lỗi nhé.
 
+263
+00:04:00,660 --> 00:04:05,730
+Khi bạn di chuyển ngón đeo nhẫn của bàn tay phải xuống dưới chữ L, bạn sẽ dừng hẳn.
 
+264
+00:04:05,730 --> 00:04:06,920
+Xin lỗi tôi xin lỗi.
 
+265
+00:04:07,020 --> 00:04:08,410
+Không phải dấu phẩy như tôi đã nói.
 
+266
+00:04:08,520 --> 00:04:10,490
+Vì vậy, đó sẽ là điểm dừng hoàn toàn.
 
+267
+00:04:10,680 --> 00:04:15,120
+Vì vậy, ngón cái của bàn tay phải của chúng ta ở phía trên chữ K khi chúng ta di chuyển nó xuống.
 
+268
+00:04:15,250 --> 00:04:23,710
+Chúng ta nhận được dấu phẩy và sau đó nếu chúng ta di chuyển ngón tay cái lên các cổng phía trên chữ K, chúng ta sẽ có được con mắt.
 
+269
+00:04:23,730 --> 00:04:28,020
+Vậy đó là những chữ cái mà ngón tay đó chịu trách nhiệm.
 
+270
+00:04:28,530 --> 00:04:31,430
+Và cuối cùng là ngón trỏ của chúng tôi trên bàn tay phải của cô ấy.
 
+271
+00:04:31,440 --> 00:04:38,640
+Vì vậy, giống như ngón trỏ của bàn tay trái, nó cũng chịu trách nhiệm về sáu phím chữ cái không tính các số.
 
+272
+00:04:38,850 --> 00:04:41,460
+Vì vậy, nó nằm phía trên chữ J Vì vậy bạn nhấn nó xuống.
 
+273
+00:04:41,490 --> 00:04:42,780
+Chúng tôi nhận được J.
 
+274
+00:04:42,780 --> 00:04:47,700
+Nếu bạn di chuyển nó lên dưới chữ J, chúng ta sẽ có một m di chuyển lên trên chữ J.
 
+275
+00:04:47,700 --> 00:04:49,030
+Chúng tôi hiểu bạn.
 
+276
+00:04:49,300 --> 00:04:51,600
+Và như bạn có thể thấy, chúng tôi di chuyển ngón trỏ.
 
+277
+00:04:51,690 --> 00:04:54,510
+Một phím ở bên trái để cung cấp cho chúng tôi H.
 
+278
+00:04:54,800 --> 00:05:01,940
+Và nếu bạn di chuyển nó theo đường chéo xuống bên trái, chúng ta sẽ có chữ N và theo đường chéo ở bên trái phía trên.
 
+279
+00:05:02,010 --> 00:05:03,920
+Chúng tôi nhận được Y.
 
+280
+00:05:04,140 --> 00:05:09,390
+Vì vậy, điều khá rõ ràng là khi bạn nhìn thấy trên màn
+hình như thế này nhưng khi chúng tôi đến khi bạn không
 
+281
+00:05:09,390 --> 00:05:13,880
+nhìn vào bàn phím vì bạn có thể nhìn thấy trên màn hình
+thì bây giờ bạn sẽ tắt để thực hiện việc này từ bộ nhớ.
+
+282
+00:05:13,920 --> 00:05:20,130
+Nhưng xin đừng lo lắng, bạn sẽ dễ dàng làm được điều này nếu bạn làm theo hướng dẫn của tôi trong khóa học này
+
+283
+00:05:20,430 --> 00:05:22,470
+và làm các bài tập
+thực hành. 
 
 @@@
 
 
 
+284
+00:00:01,070 --> 00:00:08,630
+Vì vậy, trước khi chúng ta thực sự bắt đầu luyện tập đánh máy, học cách gõ những từ đó bạn cần hiểu một số điều.
+
+285
+00:00:08,630 --> 00:00:13,450
+Vậy cách làm ghi chú tiến độ nhanh nhất là sai lầm.
+
+286
+00:00:13,610 --> 00:00:16,880
+Và có một cách đúng đắn bằng cách làm theo các phương pháp trong này.
+
+287
+00:00:16,880 --> 00:00:24,530
+Điều này dựa trên rất nhiều
+nghiên cứu được thực hiện để chỉ
+
+288
+00:00:24,680 --> 00:00:26,060
+ra những cách tốt nhất để có được
+một kỹ năng mới như đánh máy.
+
+289
+00:00:26,060 --> 00:00:32,420
+Vì vậy, chúng tôi sẽ chỉ cho bạn những phím nào để luyện tập những phím nào cần luyện tập và thời gian trên bàn phím.
+
+290
+00:00:32,420 --> 00:00:38,790
+Chúng tôi cũng sẽ cho bạn biết thời gian luyện tập hoặc thời gian tối ưu để luyện tập đánh máy.
+
+291
+00:00:38,870 --> 00:00:44,400
+Và tôi cũng sẽ chỉ cho bạn tốc độ gõ khi bạn luyện tập.
+
+292
+00:00:44,600 --> 00:00:46,940
+Và tôi sẽ cho bạn thấy những gì tôi đã đặt tên.
+
+293
+00:00:47,180 --> 00:00:50,510
+Máy gia tốc là một kỹ thuật khá tốt.
+
+294
+00:00:50,510 --> 00:00:58,310
+Một điều khá đơn giản để làm nhưng nó thực sự cải thiện sự tiến bộ của bạn rất nhiều vậy chúng ta thực sự luyện tập như thế nào.
+
+295
+00:00:58,310 --> 00:01:04,370
+Chà, cách thông thường mà nhiều người sẽ làm nếu họ tự dạy mình kiểu đó là họ sẽ nhận được
+
+296
+00:01:05,360 --> 00:01:11,870
+một số văn bản và các em sẽ cố gắng
+thực hành văn bản, sau đó đầu tiên là một
+
+297
+00:01:11,870 --> 00:01:13,420
+chút về các phím và cuối cùng học cách
+thực hiện mà không cần nhìn vào các phím.
+
+298
+00:01:13,430 --> 00:01:14,300
+Và bạn có thể làm điều đó.
+
+299
+00:01:14,360 --> 00:01:20,620
+Và đó là cách tôi đã làm ngay từ đầu cho đến khi tôi tìm ra cách luyện tập tốt hơn.
+
+300
+00:01:20,690 --> 00:01:22,940
+Vì vậy, cách tốt hơn để thực hành là thế này.
+
+301
+00:01:22,940 --> 00:01:27,010
+Đừng cố gắng luyện tập nhiều phím khác nhau cùng một lúc.
+
+302
+00:01:27,170 --> 00:01:33,860
+Chúng ta sẽ chỉ tập trung vào hai phím cùng một
+lúc chứ không phải hàng giờ và hàng giờ chỉ làm đi
+
+303
+00:01:33,860 --> 00:01:38,730
+làm lại hai phím giống nhau cho đến khi bạn nhận
+được hai phím và sau đó chuyển sang phím tiếp theo.
+
+304
+00:01:39,140 --> 00:01:46,360
+Nhưng không có hai phím cùng một lúc mà mỗi tổ hợp bạn sẽ chỉ luyện tập trong hai giây.
+
+305
+00:01:46,530 --> 00:01:53,720
+Vì vậy, tôi nên nói phiên
+hai giây 30 giây cho mỗi hai
+
+306
+00:01:53,720 --> 00:01:55,270
+phím và sau đó bạn chuyển
+sang hai phím khác trong 30 giây.
+
+307
+00:01:55,340 --> 00:01:59,960
+Hai phím khác có thời lượng 30 giây, v.v. sau đó bạn quay lại hai phím đầu tiên.
+
+308
+00:02:00,050 --> 00:02:04,270
+Thực hành lại những điều đó trong 30 giây và tiếp tục như vậy.
+
+309
+00:02:04,340 --> 00:02:07,590
+Vì vậy, điều này thực sự có nghĩa là bạn không cảm thấy buồn chán.
+
+310
+00:02:07,670 --> 00:02:11,900
+Một số có nhiều khả năng làm lại điều đó vào ngày hôm sau và ngày hôm sau nữa.
+
+311
+00:02:12,800 --> 00:02:18,340
+Nhưng cũng bằng cách thực hiện trong 30 giây cho hai
+phím và một ghi chú, đó là hai phím trong 30 giây, do
+
+312
+00:02:18,340 --> 00:02:24,230
+đó, bạn sẽ quen với việc không sử dụng nhiều hơn một
+phím vì cuối cùng bạn sẽ không chỉ gõ để giữ hai phím.
+
+313
+00:02:24,230 --> 00:02:29,510
+phím chữ cái có hai từ bạn sẽ gõ những từ dài hơn và văn bản dài hơn.
+
+314
+00:02:29,960 --> 00:02:36,230
+Vì vậy, bằng cách thực hiện 30 giây cho hai phím
+cùng một lúc sẽ giúp bạn thực hành đủ để tìm hiểu
+
+315
+00:02:36,230 --> 00:02:42,830
+vị trí của các phím đó và cũng để nhanh hơn khi
+gõ hai phím đó kết hợp cũng như khi bạn gõ phím.
+
+316
+00:02:43,100 --> 00:02:49,910
+từ và văn bản dài hơn, bạn sẽ thấy rằng mình sẽ nhanh hơn rất nhiều khi bắt đầu thực hành ngay từ đầu
+
+317
+00:02:50,150 --> 00:02:52,740
+hai phím cùng một lúc.
+
+318
+00:02:53,390 --> 00:02:58,450
+Về cơ bản, tôi khuyên bạn nên luyện tập mỗi ngày từ 20 đến 30 phút.
+
+319
+00:02:58,460 --> 00:03:05,150
+Tôi không khuyên bạn nên ngồi trước máy tính gõ
+một hoặc hai giờ ba hoặc bốn giờ một ngày vì bạn
+
+320
+00:03:05,150 --> 00:03:11,180
+có thể được tha thứ khi nghĩ rằng bạn biết nếu
+tôi luyện tập bốn giờ một ngày thay vì 30 phút
+
+321
+00:03:11,180 --> 00:03:12,980
+Tôi sẽ tiến bộ nhanh hơn.
+
+322
+00:03:12,980 --> 00:03:19,640
+Có thể nói là bạn có thể nhưng thực tế là bạn tiến
+bộ. Người ta đã chứng minh rằng bạn tiến bộ nhanh
+
+323
+00:03:19,640 --> 00:03:25,550
+nhất không phải bằng lượng thời gian bạn dành để
+luyện tập mỗi ngày mà đó thực sự là tần suất của cô ấy
+
+324
+00:03:25,550 --> 00:03:26,020
+luyện tập.
+
+325
+00:03:26,030 --> 00:03:30,210
+Vì vậy, chính sự thực hành hàng ngày mới là chìa khóa.
+
+326
+00:03:30,210 --> 00:03:37,380
+Vì vậy, hãy luyện tập mỗi ngày trong một đến hai buổi, mỗi lần khoảng 20 đến 30 phút.
+
+327
+00:03:37,550 --> 00:03:46,490
+Và điều đó sẽ mang lại cho bạn kết quả tốt nhất,
+điều mà nó cũng khuyên bạn nên làm ở đây là bắt
+
+328
+00:03:46,490 --> 00:03:52,370
+đầu từ từ vì điều bạn không muốn làm là nếu bạn
+đang tập đánh máy và bạn cứ làm sai và gõ nhầm chữ.
+
+329
+00:03:52,370 --> 00:03:56,760
+Phím sai nhiều lần
+rồi cuối cùng sẽ thành
+
+330
+00:03:56,780 --> 00:03:58,100
+thói quen và sẽ là thói
+quen nhẫn tâm khó bỏ.
+
+331
+00:03:58,100 --> 00:04:03,840
+Vì vậy, điều quan trọng là bạn phải bắt đầu từ từ, thậm chí chậm một cách đau đớn nếu bạn muốn.
+
+332
+00:04:04,310 --> 00:04:11,360
+Tuy nhiên, từ từ bạn sẽ phải làm bất cứ điều gì để đảm bảo rằng bạn nhấn đúng từng phím ngay lần đầu tiên
+
+333
+00:04:11,690 --> 00:04:17,580
+mỗi khi bạn làm điều đó và sau đó bạn có thể tăng dần tốc độ của mình.
+
+334
+00:04:17,690 --> 00:04:23,270
+Vì vậy, đó là lý do tại sao tôi khuyên bạn nên làm như vậy khi bạn đang thực hành 30 giây lúc đầu, hãy bắt đầu thật chậm rãi.
+
+335
+00:04:23,690 --> 00:04:27,800
+đánh giá cao, đặc biệt là khi
+bắt đầu khi bạn bắt đầu tìm hiểu
+
+336
+00:04:27,800 --> 00:04:29,320
+vị trí của các phím và tìm chúng
+trên bàn phím mà không cần nhìn.
+
+337
+00:04:29,320 --> 00:04:33,740
+Bạn cần phải bắt đầu thật chậm rãi và sau đó tăng tốc độ lên.
+
+338
+00:04:33,740 --> 00:04:39,710
+Bây giờ khi bạn tăng tốc độ của mình
+nếu bạn bắt đầu nhận thấy và mắc lỗi
+
+339
+00:04:39,710 --> 00:04:43,430
+thì đó chỉ là một kiểu cố gắng làm
+chậm tốc độ của anh ấy lại một chút.
+
+340
+00:04:43,720 --> 00:04:45,090
+Và làm cho nó đúng.
+
+341
+00:04:45,140 --> 00:04:52,390
+Và sau đó một lần nữa cố gắng tăng tốc độ của bạn chỉ cần tăng tốc độ từ từ và giữ độ chính xác.
+
+342
+00:04:52,400 --> 00:04:57,120
+Đó là chìa khóa để học cách gõ theo phương pháp này.
+
+343
+00:04:57,140 --> 00:04:59,380
+Bây giờ đây là cái mà tôi gọi là máy gia tốc.
+
+344
+00:04:59,380 --> 00:05:05,030
+Bây giờ nó là một điều thực sự đơn giản nhưng nó thực sự mang lại kết quả thực sự tốt.
+
+345
+00:05:05,030 --> 00:05:09,490
+Về cơ bản, hãy thực hành điều này trước khi đi ngủ.
+
+346
+00:05:09,680 --> 00:05:11,390
+Vậy tại sao điều đó lại quan trọng.
+
+347
+00:05:11,390 --> 00:05:17,690
+Chà, tôi thực sự đã phát hiện ra kỹ thuật này khi
+một người đang học một nhạc cụ trên bàn phím cố gắng
+
+348
+00:05:17,690 --> 00:05:25,910
+luyện tập nhất định mà bạn biết, đặt một đoạn nhạc
+lên bàn phím và bạn biết đấy, sự tiến bộ của anh ấy là
+
+349
+00:05:25,910 --> 00:05:30,040
+giống như hầu hết mọi người khá chậm và đôi khi đau đớn.
+
+350
+00:05:30,320 --> 00:05:35,020
+Và điều anh ấy nhận thấy là khi bạn luyện tập trước khi đi ngủ.
+
+351
+00:05:35,150 --> 00:05:37,450
+Tất nhiên sau khi bạn đang thực hành bạn ngủ.
+
+352
+00:05:37,520 --> 00:05:42,660
+Và đó là lúc tâm trí bạn tự nạp lại năng lượng cho ngày hôm sau.
+
+353
+00:05:42,860 --> 00:05:51,110
+Và người ta thấy rằng bạn thực sự tiến bộ nhanh hơn nếu bạn làm điều đó trước khi đi ngủ.
+
+354
+00:05:51,190 --> 00:05:55,630
+Tôi sẽ cung cấp cho bạn tất cả kiến ​​thức khoa học đằng sau nó nhưng hãy để tôi nói với bạn rằng nó có tác dụng.
+
+355
+00:05:55,640 --> 00:06:02,510
+Người đầu tiên luyện tập bàn phím anh
+ấy nhận thấy rằng khi bạn luyện tập một
+
+356
+00:06:02,510 --> 00:06:06,350
+đoạn đêm rất hay và từ từ chính xác
+thì chắc chắn rằng anh ấy đã làm đúng.
+
+357
+00:06:06,350 --> 00:06:07,630
+Không phải sai lầm.
+
+358
+00:06:07,700 --> 00:06:14,900
+Anh ấy nhận thấy rằng ngày hôm sau khi thức dậy và tập luyện lại, khả năng của anh ấy đã được cải thiện đáng kể.
+
+359
+00:06:14,900 --> 00:06:18,680
+Khác rất nhiều so với những gì anh ấy làm khi luyện tập suốt cả ngày.
+
+360
+00:06:18,680 --> 00:06:24,350
+Vì vậy, tôi thực sự khuyên bạn rằng nếu bạn định tập
+luyện, hãy tập luyện nếu anh ấy có thể cố gắng tập luyện
+
+361
+00:06:24,350 --> 00:06:30,110
+trong vòng 20 đến 30 phút trước khi bạn đi ngủ vào buổi
+tối, bạn sẽ thấy rằng mình sẽ tiến bộ nhanh hơn rất nhiều.
+
+362
+00:06:30,110 --> 00:06:30,830
+tiến triển.
+
+363
+00:06:31,730 --> 00:06:38,150
+Vì vậy, tiếp theo là lúc bạn thực sự bắt
+đầu luyện tập và học cách đánh máy. 
+
+@@@
 
 
 
+364
+00:00:01,010 --> 00:00:07,790
+Bây giờ là lúc thực hiện các buổi thực hành để học cách gõ bằng cách chạm.
+
+365
+00:00:07,790 --> 00:00:15,350
+Vì vậy trước hết hãy xem qua từng video và cuối mỗi video hãy luyện tập tổ hợp phím
+
+366
+00:00:15,710 --> 00:00:20,090
+mà tôi cho bạn xem và chuyển sang video tiếp theo và thực hành điều đó.
+
+367
+00:00:20,270 --> 00:00:23,610
+Vì vậy, trước hết chúng ta sẽ làm việc với các Phím ở giữa.
+
+368
+00:00:23,640 --> 00:00:27,710
+Đó chính là phím home gồm phím G và H.
+
+369
+00:00:27,710 --> 00:00:31,330
+Và đó sẽ là lúc bạn làm quen với những phím đó.
+
+370
+00:00:31,520 --> 00:00:37,930
+Và điều tôi muốn bạn làm là tiếp tục luyện tập những phím đó cho đến khi thành thạo.
+
+371
+00:00:37,950 --> 00:00:43,160
+Bây giờ khi bạn xem video và xem từng cách kết hợp bằng cách xem video.
+
+372
+00:00:43,310 --> 00:00:50,150
+Sau đó, bạn chỉ cần tiếp tục luyện tập
+bằng cách làm theo các tờ thực hành mà tôi
+
+373
+00:00:50,240 --> 00:00:54,870
+sẽ đưa cho bạn một cặp để tải xuống sau
+khi chúng ta hoàn thành phần Phím ở giữa.
+
+374
+00:00:54,980 --> 00:01:01,970
+Từ đó trở đi chúng ta sẽ làm điều tương tự với các Phím trên cùng trước tiên là tay trái sau đó là tay phải.
+
+375
+00:01:01,970 --> 00:01:06,490
+Vì vậy, một lần nữa tôi sẽ làm video về từng tổ hợp phím đó.
+
+376
+00:01:06,490 --> 00:01:09,600
+Và cuối cùng là phiếu bài tập để các bạn làm quen.
+
+377
+00:01:09,950 --> 00:01:17,270
+Và tất nhiên cuối cùng chúng ta sẽ thực hiện các phím bên trái và bên phải cho hàng phím dưới cùng.
+
+378
+00:01:17,420 --> 00:01:19,870
+Vì vậy, đó là cách chúng ta sẽ làm theo điều này ở đây.
+
+379
+00:01:19,880 --> 00:01:27,050
+Vì vậy, về cơ bản điều tôi muốn bạn làm là trước tiên
+hãy thành thạo các Phím giữa bằng cách luyện tập cho
+
+380
+00:01:27,050 --> 00:01:33,920
+những phụ nữ mà bạn thấy ổn và quen thuộc với vị trí
+đặt ngón tay gõ các phím đó trong quá trình luyện tập
+
+381
+00:01:33,950 --> 00:01:40,070
+Sau các bài tập này, bạn sẽ có thể chuyển sang
+phần thực hành tiếp theo là làm quen với các phím
+
+382
+00:01:40,070 --> 00:01:47,360
+trên cùng, thành thạo các phím đó trên cả hai tay
+và khi bạn đã thành thạo những phím đó thì bạn sẽ
+
+383
+00:01:47,720 --> 00:01:53,230
+cuối cùng cũng có thể di chuyển và lấy được các phím phía dưới để làm đúng.
+
+384
+00:01:53,270 --> 00:01:57,760
+Khi bạn đã hoàn thành việc đó, bạn sẽ
+sẵn sàng chuyển sang bước tiếp theo. 
+
+@@@
 
 
 
+385
+00:00:00,900 --> 00:00:05,300
+Đây là hai phím đầu tiên bạn sẽ luyện tập trong 30 giây.
+
+386
+00:00:05,670 --> 00:00:13,170
+Vì vậy chỉ đơn giản là a và s cứ thế qua lại không có dấu cách chỉ là một bài luận như a.
+
+387
+00:00:13,440 --> 00:00:19,320
+Vì vậy, nếu bạn thức dậy khi phím của
+bạn ở trên phím home, bạn sẽ thấy rằng ngón
+
+388
+00:00:19,320 --> 00:00:23,870
+út của bạn sẽ ở trên chữ ay trên ngón
+đeo nhẫn bên trái của bạn sẽ ở trên chữ s.
+
+389
+00:00:23,970 --> 00:00:27,360
+Như vậy đơn giản là bạn sẽ làm quen dần với 2 phím này.
+
+390
+00:00:27,360 --> 00:00:32,560
+Vì vậy, hãy nhớ bắt đầu từ từ để làm quen với việc không nhìn vào bàn phím.
+
+391
+00:00:32,610 --> 00:00:35,070
+Chỉ cần nhấn nút A và.
+
+392
+00:00:35,100 --> 00:00:40,160
+Dần dần tôi có thể tới lui tới lui làm quen.
+
+393
+00:00:40,320 --> 00:00:42,380
+Họ không nhìn vào chìa khóa.
+
+394
+00:00:42,540 --> 00:00:47,490
+Vì vậy, chỉ cần nhìn vào màn hình nếu bạn muốn dừng video ở nơi bạn đang nhìn trong 30 giây
+
+395
+00:00:47,850 --> 00:00:54,750
+và nhập hai chữ cái đó và sau
+khi bạn thực hiện xong 30 giây,
+
+396
+00:00:54,750 --> 00:00:55,380
+chúng ta sẽ sẵn sàng chuyển
+sang hai chữ cái tiếp theo. 
+
+@@@
 
 
 
+397
+00:00:01,400 --> 00:00:09,450
+Bây giờ đây là hai phím tiếp theo nên bạn sẽ sử dụng cách gõ lại chứng thư đó để ghi nhớ.
+
+398
+00:00:09,610 --> 00:00:14,550
+Bắt đầu từ từ và sau đó tăng dần với tốc độ theo thời gian.
+
+399
+00:00:14,560 --> 00:00:19,310
+Chỉ cần làm điều này trong 30 giây mỗi lần bạn làm hai chữ cái này.
+
+400
+00:00:19,390 --> 00:00:25,660
+Vì vậy, như bạn vẫn chưa đoán được liệu ngón tay
+của bạn có đặt chính xác trên các phím lược hay
+
+401
+00:00:25,660 --> 00:00:32,230
+không, bạn đang sử dụng ngón út và ngón trỏ để gõ
+các phím này, tất nhiên là ngón út trên ngón tay cái
+
+402
+00:00:32,260 --> 00:00:33,070
+trên D.
+
+403
+00:00:33,250 --> 00:00:39,570
+Vì vậy, chỉ cần làm điều đó trong 30 giây rồi chuyển
+sang video tiếp theo cho hai chữ cái tiếp theo. 
+
+@@@
 
 
 
+404
+00:00:01,120 --> 00:00:08,570
+Bây giờ, đối với hai chữ cái tiếp theo của chúng ta là
+chữ aye và chữ F, vì vậy ngón út của bàn tay trái của chữ
+
+405
+00:00:08,570 --> 00:00:16,400
+aye và ngón trỏ R của bàn tay trái nằm trên chữ F vì vậy
+chúng ta sẽ thực hành hai phím đó trong 30 giây khi bạn đã
+
+406
+00:00:16,400 --> 00:00:17,010
+xong chưa.
+
+407
+00:00:17,030 --> 00:00:20,930
+Sau đó là lúc chuyển sang
+hai chữ cái tiếp theo. 
+
+@@@
 
 
 
+408
+00:00:00,990 --> 00:00:08,300
+Hai chữ cái tiếp theo được thực hành kết hợp là A và G.
+
+409
+00:00:08,350 --> 00:00:13,650
+Vì vậy, ngón tay út như bạn biết là nằm trên chữ a vì bạn đã làm điều đó một vài lần và
+
+410
+00:00:13,650 --> 00:00:20,590
+G bằng cách di chuyển ngón trỏ của bạn từ FCC sang G.
+
+411
+00:00:20,820 --> 00:00:22,900
+Vâng, tôi khuyên bạn nên thử và làm nếu bạn không thể.
+
+412
+00:00:23,190 --> 00:00:29,520
+Khi bạn nhấn phím G, hãy di chuyển ngón tay của bạn nhanh chóng trở lại phím F và khi bạn nhấn phím A, không.
+
+413
+00:00:29,520 --> 00:00:29,760
+Được rồi.
+
+414
+00:00:29,760 --> 00:00:37,890
+Bạn đã quen với việc di chuyển ngón
+tay của mình từ phím F sang để tăng thuộc
+
+415
+00:00:37,890 --> 00:00:40,680
+tính G trong 30 giây rồi chuyển sang
+phím tiếp theo để thực hiện kết hợp. 
+
+@@@
 
 
 
+416
+00:00:00,990 --> 00:00:04,560
+Không, chúng tôi đang thực hiện kết hợp S và D.
+
+417
+00:00:04,560 --> 00:00:09,660
+Vì vậy, hãy thực hành động tác này trong 30 giây tới lui.
+
+418
+00:00:10,020 --> 00:00:14,940
+Vì vậy chỉ cần sd sd sd thích không nên chỉ nhắc bạn nếu chưa có.
+
+419
+00:00:14,970 --> 00:00:22,530
+Bạn hẳn đã biết chữ No vì chữ S ở trên ngón đeo nhẫn
+bên trái của bạn và bạn dùng ngón trỏ của bàn tay
+
+420
+00:00:22,530 --> 00:00:29,040
+trái để nhấn vào ngày mà bạn đã làm điều đó, sau đó
+chúng ta sẽ chuyển sang hai chữ cái tiếp theo. 
+
+@@@
 
 
 
+421
+00:00:02,300 --> 00:00:08,690
+Tiếp theo là s và f luyện tập kết hợp hai chữ cái này.
+
+422
+00:00:08,700 --> 00:00:10,080
+Cái này nối tiếp cái kia.
+
+423
+00:00:10,080 --> 00:00:17,080
+Vì vậy, một lần nữa chữ S ở ngón đeo nhẫn bên trái và chữ F ở ngón trỏ trái của bạn.
+
+424
+00:00:17,280 --> 00:00:19,340
+Vì vậy, hãy thực hành những
+điều đó trong 30 giây. 
+
+@@@
 
 
 
+425
+00:00:00,590 --> 00:00:04,390
+Bây giờ là sự kết hợp hai chữ cái tiếp theo của chúng ta để cùng luyện tập.
+
+426
+00:00:04,400 --> 00:00:06,330
+Vậy đây là S và G.
+
+427
+00:00:06,470 --> 00:00:12,620
+Vì vậy, chữ S Bạn không cần phải
+nói mãi với bạn sau một thời gian
+
+428
+00:00:12,620 --> 00:00:13,820
+tôi chắc chắn rằng bạn sẽ biết
+ngón tay nào dùng cho phím nào.
+
+429
+00:00:13,820 --> 00:00:16,640
+Nhưng đó là chữ s ở dưới chỉ mục bên trái.
+
+430
+00:00:17,030 --> 00:00:23,120
+Vậy là tôi ngón đeo nhẫn trái và ngón trỏ
+trái của bạn di chuyển từ F sang G. 
+
+@@@
 
 
 
+431
+00:00:00,630 --> 00:00:09,270
+Hai bài tiếp theo hãy kết hợp để
+luyện tập trong 30 giây là D và F, khóa D
+
+432
+00:00:09,270 --> 00:00:14,460
+nằm dưới ngón lợn của bàn tay trái
+và chữ F như bạn biết ở ngón trỏ trái.
+
+433
+00:00:14,460 --> 00:00:18,540
+Vì vậy, hãy thực hành điều đó trong 30 giây và
+sau đó chuyển sang hai chữ cái tiếp theo. 
+
+@@@
 
 
 
+434
+00:00:00,900 --> 00:00:09,790
+Bây giờ chúng ta sẽ luyện tập phím d d và g sao cho ngón trỏ bên trái nhấn phím D rồi sử dụng
+
+435
+00:00:10,150 --> 00:00:14,120
+ngón trỏ để di chuyển từ F đến G.
+
+436
+00:00:14,150 --> 00:00:21,280
+Và giống như chúng ta đã làm với phím A trước đó, hãy cố gắng
+bình tĩnh sau khi nhấn phím G để nhanh chóng di chuyển ngón trỏ
+
+437
+00:00:21,280 --> 00:00:28,330
+của bạn trở lại phím F khi bạn nhấn phím D và điều đó sẽ giúp
+bạn thực hành di chuyển ngón tay của mình từ phím F sang phím F.
+
+438
+00:00:28,330 --> 00:00:30,270
+vượt qua chữ G đó. 
+
+@@@
 
 
 
+439
+00:00:01,260 --> 00:00:06,650
+Và biết hai chữ cái cuối cùng chúng ta đang luyện tập bằng tay trái F và G.
+
+440
+00:00:06,660 --> 00:00:12,450
+Vì vậy, đây chỉ là cách sử
+dụng ngón trỏ để chúng ta quen
+
+441
+00:00:12,450 --> 00:00:12,960
+với việc đi từ F đến G, luyện
+tập thêm một chút về điều đó.
+
+442
+00:00:13,020 --> 00:00:18,270
+Vậy f và g trong 30 giây rồi
+chuyển sang phần tiếp theo. 
+
+@@@
 
 
 
+443
+00:00:01,430 --> 00:00:03,210
+Đây là hai chìa khóa tiếp theo.
+
+444
+00:00:03,210 --> 00:00:05,830
+Sẽ không có tác dụng với tay phải của chúng ta.
+
+445
+00:00:06,110 --> 00:00:14,060
+Vì vậy, ngón út của chúng ta đặt trên than trên ngón đeo
+nhẫn của bàn tay phải nằm trên chữ L nên chúng ta sẽ luyện
+
+446
+00:00:14,060 --> 00:00:20,230
+tập hai phím này như chúng ta đã làm trước đó trong 30
+giây và sau đó chúng ta sẽ chuyển sang hai phím tiếp theo
+
+447
+00:00:20,240 --> 00:00:21,010
+phím. 
+
+@@@
 
 
 
+448
+00:00:01,090 --> 00:00:08,080
+Đây là hai phím tiếp theo của chúng ta nên lần này ngón tay phải của chúng ta sẽ tiếp tục hoạt động.
+
+449
+00:00:08,500 --> 00:00:13,870
+qua chữ K nên chúng ta sẽ luyện tập
+hai cách đóng gói đó trong 30 giây. 
+
+@@@
 
 
 
+450
+00:00:01,160 --> 00:00:03,450
+Không bao giờ thực hành mát mẻ trên một.
+
+451
+00:00:03,470 --> 00:00:10,260
+Vì vậy, ngón tay út là dấu hai chấm của chúng ta và ngón trỏ ở bàn tay phải của chúng ta trên chữ J.
+
+452
+00:00:10,280 --> 00:00:13,820
+Vì vậy hãy luyện tập hai phím đó
+một cách đồng bộ trong 30 giây. 
+
+@@@
 
 
 
+453
+00:00:01,250 --> 00:00:04,670
+Không thực hành lại phím đồng xu bằng ngón tay út của chúng ta.
+
+454
+00:00:04,670 --> 00:00:14,720
+Với H và b bạn thực hiện điều đó bằng
+cách di chuyển ngón trỏ tay phải sang
+
+455
+00:00:14,730 --> 00:00:17,740
+trái để đánh HK nên hãy luyện tập
+qua lại hai phím đó trong 30 giây. 
+
+@@@
 
 
 
+456
+00:00:00,430 --> 00:00:08,430
+Bây giờ chúng ta sẽ luyện tập hai phím
+này cùng nhau là L và K nên chữ L ở ngay
+
+457
+00:00:08,430 --> 00:00:12,980
+ngón phím bên phải dưới K tất nhiên là
+ngón tay dài của chúng ta ở bàn tay phải.
+
+458
+00:00:13,050 --> 00:00:17,280
+Vì vậy, hãy thực hành cả hai điều này trong
+30 giây và chuyển sang bước tiếp theo. 
+
+@@@
 
 
 
+459
+00:00:00,820 --> 00:00:10,290
+Không, chúng ta sẽ luyện tập chữ
+L và chữ J cùng nhau nên chữ L lại
+
+460
+00:00:10,460 --> 00:00:13,050
+nằm ở ngón đeo nhẫn của tay
+phải trên ngón trỏ tay phải của Jays.
+
+461
+00:00:13,220 --> 00:00:16,160
+Vì vậy, chúng ta sẽ tập luyện cả hai
+điều đó cùng nhau trong 30 giây. 
+
+@@@
 
 
 
+462
+00:00:00,730 --> 00:00:05,240
+Bây giờ chúng ta sẽ cùng nhau luyện tập chữ L và J, L và H.
+
+463
+00:00:05,240 --> 00:00:06,280
+Xin lỗi nhé.
+
+464
+00:00:06,320 --> 00:00:12,570
+Vì vậy, một lần nữa, L là ngón đeo nhẫn ở bàn tay phải của chúng ta và sẽ không bao giờ thực hành di chuyển để có được chữ J.
+
+465
+00:00:12,620 --> 00:00:14,620
+Rất tiếc, H sẽ xử lý ngay sau một phút.
+
+466
+00:00:15,080 --> 00:00:18,470
+Vì vậy chúng ta di chuyển ngón trỏ từ chữ J.
+
+467
+00:00:18,500 --> 00:00:20,780
+Bên trái để nhấn H.
+
+468
+00:00:20,930 --> 00:00:21,960
+Vậy chúng ta sẽ tập luyện thôi.
+
+469
+00:00:21,980 --> 00:00:24,860
+Không có L và H
+trong 30 giây. 
+
+@@@
 
 
-226
-00:00:02,160 --> 00:00:14,340
-Xin chào và chào mừng. Và trong bức thư này, chúng ta sẽ nói về một số điều gây sốc. Chúng ta có thể sử dụng ai trong việc chỉnh sửa? Tôi nghĩ nhiều bạn đã biết một số phím tắt.
 
-227
-00:00:14,820 --> 00:00:28,460
-Nhưng chúng ta hãy đi vào vấn đề đó một lần nữa. Để sao chép nghệ thuật hoặc bất kỳ sở thích nào, chúng ta cần nhấn nút điều khiển. nhìn thấy? Giả sử chúng ta sở hữu tác phẩm nghệ thuật trẻ này có thể bị sao chép. Chúng ta chỉ cần xuyên qua sự đồng dư.
+470
+00:00:00,840 --> 00:00:03,910
+Không, đã đến lúc luyện tập K và J.
 
-228
-00:00:29,400 --> 00:00:44,430
-Và nếu chúng ta không vượt qua nó, nó sẽ bị kiểm soát. Và nếu chúng tôi cắt giảm bất kỳ sở thích nào, chúng tôi cần nhấn điều khiển X và bạn có thể lại tốt nhất bằng Conruently để hoàn tác một hành động.
+471
+00:00:04,050 --> 00:00:08,790
+Vậy đó là ngón tay cái và ngón trỏ của bàn tay phải.
 
-229
-00:00:45,490 --> 00:01:01,550
-Việc điều khiển phím tắt đã kết thúc. Giả sử tôi đã giao cái này. Bây giờ chúng ta cần hoàn tác hiệu ứng. Làm thế nào để chúng ta kiểm soát điều đó? Như thế. Và nếu bạn muốn đọc theo hiệu ứng đó thì đó sẽ là sự kiểm soát.
+472
+00:00:08,820 --> 00:00:12,510
+Vì vậy hãy luyện tập hai
+phím đó trong 30 giây. 
 
-230
-00:01:01,640 --> 00:01:13,280
-Và bây giờ tôi cho rằng chúng ta sở hữu toàn bộ câu này để được in đậm. Đã chọn đó để làm một câu bóng. Chúng ta cần chọn điều đó. Và phím tắt ngắn, kiểm soát trường hợp.
+@@@
 
-231
-00:01:13,310 --> 00:01:25,440
-Và bây giờ nó là quả bóng bị lật đổ. Chúng tôi sở hữu làn đường tiếp theo này là Ý. Vì vậy, tôi đã chọn dòng đó và phím tắt cho dòng đó là điều khiển. Và bây giờ tôi in nghiêng.
 
-232
-00:01:26,040 --> 00:01:38,420
-Chúng ta cũng có thể tạo một dòng gạch chân bằng cách nhấn vào nút tàn nhẫn. Và, bạn biết đấy, dòng này được gạch chân. Bạn cũng có thể tìm thấy bất kỳ hương vị nào bằng cách sử dụng điều khiển if. Và tìm thấy văn bản
 
-233
-00:01:39,540 --> 00:01:54,510
-Hãy cùng xem bàn tay đó nhé. Và nó đây. Vậy đây là kính hai lớp à? Tôi nghĩ nó sẽ giúp ích cho bạn vì nếu bạn không cần phải click chuột hay di chuyển tay từ bàn phím sang chuột thì sẽ tiết kiệm được rất nhiều thời gian và sức lực của bạn.
+473
+00:00:00,920 --> 00:00:08,060
+Bây giờ chúng ta sẽ luyện tập K và H cùng nhau
+nên một lần nữa là K bằng ngón trỏ dài của bàn
+
+474
+00:00:08,060 --> 00:00:15,710
+tay phải và sẽ di chuyển ngón trỏ sang trái từ
+chữ J nơi nó nằm để lấy HK vì vậy hãy luyện tập
+
+475
+00:00:15,710 --> 00:00:17,510
+không được trong
+ba mươi giây. 
+
+@@@
+
+
+
+476
+00:00:00,630 --> 00:00:08,390
+Và sự kết hợp cuối cùng cho hàng
+phím giữa là tay phải của chúng
+
+477
+00:00:08,400 --> 00:00:11,990
+ta, sử dụng ngón trỏ, chúng ta
+sẽ luyện tập qua lại âm J và K.
+
+478
+00:00:12,000 --> 00:00:13,580
+Vì vậy, đó là J.
+
+479
+00:00:13,680 --> 00:00:18,890
+Nhấn xuống và di chuyển ngón trỏ sang trái để nhấn phím H.
+
+480
+00:00:18,880 --> 00:00:21,690
+Tôi sẽ làm đi làm lại điều
+đó trong 30 giây. 
+
+@@@
+
+
+
+481
+00:00:01,230 --> 00:00:06,330
+Vì vậy, bây giờ là lúc bạn tiếp tục thực hành cho trường hợp tại nhà của mình.
+
+482
+00:00:06,330 --> 00:00:14,610
+Vì vậy, với những bài giảng
+ngắn, tôi đã chỉ cho bạn vị trí của
+
+483
+00:00:14,610 --> 00:00:16,420
+từng phím và tất nhiên các ngón
+tay sẽ sử dụng cho từng phím.
+
+484
+00:00:16,500 --> 00:00:23,310
+Vì vậy bây giờ bạn cần lấy phiếu bài tập để có thể tiếp tục luyện tập những bài đó ở độ tuổi 20 đến
+
+485
+00:00:23,310 --> 00:00:24,380
+30 phút mỗi ngày.
+
+486
+00:00:24,380 --> 00:00:28,950
+Hãy nhớ 30 giây cho mỗi lần kết hợp.
+
+487
+00:00:28,990 --> 00:00:36,840
+Không, trong bài giảng tiếp theo sau khi bài giảng
+này kết thúc, bạn sẽ thấy một màn hình giống như
+
+488
+00:00:36,840 --> 00:00:41,990
+màn hình này ở đây và trên đó bạn sẽ thấy liên kết
+nhỏ màu xanh lam nằm bên dưới máy tính của tôi.
+
+489
+00:00:42,270 --> 00:00:48,960
+Nếu bạn nhấp vào đó thì sẽ tải một
+hộp nơi bạn có thể tải cái này xuống
+
+490
+00:00:48,960 --> 00:00:53,160
+máy tính của mình rồi tải lên rồi
+hiển thị trên màn hình hoặc in ra.
+
+491
+00:00:53,160 --> 00:00:55,560
+Vẫn tốt hơn nếu bạn muốn nó bên cạnh máy tính của bạn.
+
+492
+00:00:55,560 --> 00:00:56,340
+Hoặc bạn có thể có nó.
+
+493
+00:00:56,760 --> 00:01:03,030
+Vì vậy, bạn có thể đặt màn hình đó ở một bên của
+màn hình máy tính và bộ xử lý văn bản của bạn
+
+494
+00:01:03,030 --> 00:01:09,350
+ở phía bên kia để bạn có thể thực sự thực hành
+gõ chúng khi bạn nhận được tờ bài tập của mình.
+
+495
+00:01:09,350 --> 00:01:14,310
+Bạn sẽ thấy các phím bên trái mà chúng ta đã xem xét toàn bộ vụ án.
+
+496
+00:01:14,340 --> 00:01:17,650
+Mặt khác thì tất nhiên là đúng phím.
+
+497
+00:01:17,660 --> 00:01:17,990
+Phải.
+
+498
+00:01:17,990 --> 00:01:21,520
+Ngón tay cũng biết các phím phù hợp cho bàn tay phải của bạn.
+
+499
+00:01:21,560 --> 00:01:29,530
+Bây giờ, bên dưới, bạn sẽ thấy phần thực hành sâu hơn khi bạn thực hành bấm phím chủ bằng cả hai tay.
+
+500
+00:01:29,540 --> 00:01:35,630
+Không, tôi không cần phải soạn bài giảng để trình bày cách nhấn các phím đó bằng cả hai tay.
+
+501
+00:01:35,630 --> 00:01:41,900
+Bởi vì tất nhiên chúng ta đã tìm hiểu
+vị trí của các phím này trên bàn phím
+
+502
+00:01:41,900 --> 00:01:44,110
+của bạn cũng như chúng ta đã tìm hiểu
+về tay trái, tay phải và các bài giảng.
+
+503
+00:01:44,120 --> 00:01:50,000
+Vì vậy, những gì tôi khuyên bạn nên làm là luyện tập
+sự kết hợp giữa tay trái và tay phải, sau đó thực hiện
+
+504
+00:01:50,000 --> 00:01:57,530
+cả sự kết hợp của cả hai tay và chỉ cần xoay não, tiếp
+tục làm điều đó và đủ thành thạo với những điều đó.
+
+505
+00:01:57,530 --> 00:02:03,420
+các phím để bạn có thể thực hiện tất cả các bài tập
+mà không cần nhìn xuống bàn phím khi bạn đủ thành
+
+506
+00:02:03,420 --> 00:02:09,350
+thạo việc đó, vì vậy, tất nhiên, hãy tiếp tục luyện
+tập đánh máy vì bạn càng luyện tập nhiều thì càng tốt
+
+507
+00:02:09,350 --> 00:02:16,100
+bạn nhận được nhưng sau đó bạn sẽ có thể làm
+được miễn là bạn đủ năng lực thì đã đến lúc
+
+508
+00:02:16,100 --> 00:02:23,660
+chuyển sang các phần tiếp theo là tìm và học
+hàng trên cùng trên bàn phím của bạn. 
+
+@@@
+
+
+
+509
+00:00:00,780 --> 00:00:07,710
+Vì vậy, trong phần này bạn sẽ học
+hàng trên cùng của các chữ cái và
+
+510
+00:00:07,710 --> 00:00:09,680
+tôi sẽ hướng dẫn bạn từng chữ
+cái một trong các bài giảng tiếp theo.
+
+511
+00:00:09,810 --> 00:00:16,290
+Bạn sẽ sử dụng ngón tay nào để nhấn từng phím này và sau đó bạn sẽ có thể thực hành các phím đó.
+
+512
+00:00:16,410 --> 00:00:22,260
+Tôi sẽ thực hành chúng
+kết hợp với các phím mà
+
+513
+00:00:22,260 --> 00:00:24,930
+bạn đã học, tất nhiên là
+các chữ cái ở hàng giữa.
+
+514
+00:00:25,050 --> 00:00:31,100
+Vì vậy, mỗi chữ cái bạn sẽ luyện tập kết hợp với các chữ cái ở hàng giữa lần lượt
+
+515
+00:00:31,470 --> 00:00:38,670
+và điều đó sẽ mang lại cho bạn lợi ích
+của việc đó là sau đó bạn sẽ quen với việc
+
+516
+00:00:38,670 --> 00:00:43,100
+lấy phím trên cùng và lấy nó sau khi
+nhấn bất kỳ phím nào mà bạn nhấn ở giữa.
+
+517
+00:00:43,110 --> 00:00:48,000
+Và tất nhiên, bằng cách đó, họ không chỉ có thể
+cải thiện tốc độ của bạn sau này khi bạn thực
+
+518
+00:00:48,000 --> 00:00:56,520
+sự gõ văn bản mà còn giúp bạn học phím đó rất
+tốt để bạn có thể đạt được điểm mà bạn cần.
+
+519
+00:00:56,520 --> 00:01:00,630
+bạn tự tin rằng bạn không cần phải nhìn vào bàn phím.
+
+520
+00:01:00,630 --> 00:01:06,440
+Vì vậy, ở cuối phần này, bạn thực sự có
+cơ hội tải xuống một bảng thực hành trong
+
+521
+00:01:06,450 --> 00:01:10,800
+đó nó sẽ cung cấp cho bạn từng tổ hợp
+phím để thực hành mà bạn sẽ thực hành.
+
+522
+00:01:10,800 --> 00:01:13,860
+Mỗi sự kết hợp trong 30 giây mỗi lần.
+
+523
+00:01:13,860 --> 00:01:16,740
+Vì vậy, hãy bắt đầu học
+chìa khóa đầu tiên. 
+
+@@@
+
+
+
+524
+00:00:01,340 --> 00:00:06,320
+Vì vậy, không có khóa đầu tiên của chúng ta ở hàng chữ cái trên cùng.
+
+525
+00:00:06,430 --> 00:00:07,910
+Vì thế chúng ta sẽ tập luyện trước.
+
+526
+00:00:08,010 --> 00:00:14,570
+Q Vậy là bạn đã biết chìa khóa của mình hiện đang ở đâu trên chìa khóa nhà của họ.
+
+527
+00:00:14,570 --> 00:00:17,650
+Bạn biết các phím ở hàng giữa nên không cần dạy.
+
+528
+00:00:17,650 --> 00:00:22,430
+Đó là một lần nữa bởi vì bạn đã
+hy vọng được luyện tập và biết bây
+
+529
+00:00:22,430 --> 00:00:23,030
+giờ có thể làm được những điều
+đó mà không cần nhìn vào bàn phím.
+
+530
+00:00:23,750 --> 00:00:25,540
+Vì vậy, đầu tiên là Q.
+
+531
+00:00:25,550 --> 00:00:33,650
+Vì vậy, về cơ bản chúng ta
+sẽ kết hợp phím Q để ngón tay
+
+532
+00:00:33,650 --> 00:00:35,440
+bạn dùng để nhấn phím Q
+giống với phím bạn nhấn phím a.
+
+533
+00:00:35,510 --> 00:00:38,540
+Vậy đó là ngón út trên bàn tay trái của bạn.
+
+534
+00:00:38,690 --> 00:00:47,060
+Vì vậy, trước tiên chỉ cần 30 giây của câu hỏi Q và sau đó khi bạn thực hiện xong 30 giây câu hỏi đó thì 30 giây của câu hỏi sẽ
+
+535
+00:00:47,060 --> 00:00:49,600
+Dean Q fing Q Jay.
+
+536
+00:00:49,610 --> 00:00:57,050
+Q và tiếp tục di chuyển qua bảng như vậy
+sao cho khi bạn đã thực hiện xong tất cả các
+
+537
+00:00:57,050 --> 00:01:04,340
+ngón tay đã tập ở hàng giữa và bạn thực hiện
+chúng kết hợp qua lại với Q mỗi ngón 30 giây.
+
+538
+00:01:04,370 --> 00:01:11,810
+Không, có phiếu thực hành sau những bài giảng
+này sẽ cung cấp cho bạn những thông tin mà
+
+539
+00:01:11,810 --> 00:01:15,290
+bạn có thể sử dụng để thực hành và sẽ cung cấp
+cho bạn những kết hợp này để thực hành. 
+
+@@@
+
+
+
+540
+00:00:01,320 --> 00:00:07,800
+Bây giờ với chữ cái tiếp theo ở hàng trên cùng là chữ W và chúng ta sẽ thực hành qua lại một lần nữa
+
+541
+00:00:08,250 --> 00:00:14,850
+trong hai tổ hợp chữ cái với các phím ở hàng
+giữa để làm quen với chữ W và cũng nhấn chúng kết
+
+542
+00:00:14,850 --> 00:00:21,600
+hợp với tất cả các phím mà bạn đã học trong thực
+tế từ trước đến nay để nhấn chữ W bằng phím W.
+
+543
+00:00:21,600 --> 00:00:24,210
+cùng ngón tay mà bạn nhấn phím s.
+
+544
+00:00:24,570 --> 00:00:27,720
+Vậy đó là ngón đeo nhẫn ở tay trái của bạn.
+
+545
+00:00:27,720 --> 00:00:31,870
+Vậy đó chính là ngón tay bạn dùng để nhấn phím W.
+
+546
+00:00:32,100 --> 00:00:40,650
+Vì vậy, một lần nữa, bạn
+sẽ thực hành từng chữ cái
+
+547
+00:00:40,650 --> 00:00:41,840
+này với chữ W trong 30
+giây trên hàng phím giữa.
+
+548
+00:00:41,970 --> 00:00:48,630
+Và như tôi đã nói trong Bài giảng cuối cùng ở cuối
+phần này, ở hàng trên cùng, bạn sẽ tìm thấy các bài
+
+549
+00:00:48,630 --> 00:00:54,630
+thực hành mà bạn có thể in ra nếu muốn hoặc chỉ cần
+đặt chúng trên màn hình máy tính bên cạnh một từ
+
+550
+00:00:54,630 --> 00:00:57,560
+bộ xử lý nơi bạn có thể thực hành các phím này.
+
+551
+00:00:57,570 --> 00:00:59,190
+Vậy đó là W.K.. 
+
+@@@
+
+
+
+552
+00:00:00,870 --> 00:00:07,860
+Phím tiếp theo để luyện tập là phím E và phím E được nhấn bằng chính phím mà bạn nhấn phím D.
+
+553
+00:00:07,860 --> 00:00:11,350
+Vậy đó là ngón tay dài nhất của bạn trên bàn tay trái.
+
+554
+00:00:11,370 --> 00:00:14,370
+Vì vậy, một lần nữa bạn luyện tập trong 30 giây mỗi lần.
+
+555
+00:00:14,370 --> 00:00:22,030
+Chữ e với một chữ cái có một
+trong các chữ cái ở hàng giữa trong
+
+556
+00:00:22,080 --> 00:00:25,830
+30 giây cho mỗi chữ cái, ví dụ
+như chữ E EAA trong 30 giây.
+
+557
+00:00:25,860 --> 00:00:27,660
+Vâng và vân vân và vân vân.
+
+558
+00:00:27,750 --> 00:00:28,740
+Vậy ra đó là chữ E. 
+
+@@@
+
+
+
+559
+00:00:00,360 --> 00:00:08,310
+Không đối với chữ R và R là
+bạn nhấn không sử dụng cùng một
+
+560
+00:00:08,310 --> 00:00:09,770
+ngón tay mà bạn nhấn vào F
+nên đó là ngón trỏ của bàn tay trái.
+
+561
+00:00:09,810 --> 00:00:12,270
+Vì vậy, một lần nữa 30 giây mỗi lần.
+
+562
+00:00:12,270 --> 00:00:18,270
+Bạn sẽ thực hành kết hợp chữ R qua lại với từng chữ cái ở giữa
+
+563
+00:00:19,460 --> 00:00:25,310
+và tất cả các buổi thực
+hành này cũng sẽ có trong
+
+564
+00:00:25,310 --> 00:00:25,550
+phiếu thực hành của bạn
+ở cuối phần này. 
+
+@@@
+
+
+
+565
+00:00:00,690 --> 00:00:01,040
+KHÔNG.
+
+566
+00:00:01,040 --> 00:00:09,330
+Đối với chữ t, chữ T được nhấn bằng chính ngón tay mà bạn nhấn phím f.
+
+567
+00:00:09,360 --> 00:00:15,630
+Vì vậy, một lần nữa ngón trỏ của bạn được sử dụng nên bạn sử dụng ngón trỏ cho R nhưng chúng tôi cũng sử dụng nó cho
+
+568
+00:00:15,630 --> 00:00:17,250
+T cũng vậy.
+
+569
+00:00:17,250 --> 00:00:19,370
+Vì vậy, mỗi lần 30 giây.
+
+570
+00:00:19,560 --> 00:00:28,170
+Vậy t với t với f g h j v.v. cứ thế trên
+bảng, mỗi cái 30 giây và một lần nữa,
+
+571
+00:00:28,170 --> 00:00:30,540
+tất cả những điều này đều có trong phiếu
+thực hành của bạn ở cuối phần này. 
+
+@@@
+
+
+
+572
+00:00:01,140 --> 00:00:05,390
+Không, vẫn còn với các Phím trên cùng, chúng tôi sẽ làm việc từ phía bên tay phải.
+
+573
+00:00:05,850 --> 00:00:11,500
+Vì vậy, tôi cho rằng tôi có thể bắt đầu từ bên trái nhưng có vẻ hợp lý khi bắt đầu từ bên phải.
+
+574
+00:00:11,520 --> 00:00:18,930
+Vậy chữ P nên ngón tay mà bạn dùng để truyền chữ P cũng chính là ngón tay bạn rút gọn để được dấu chấm phẩy
+
+575
+00:00:19,350 --> 00:00:21,600
+đó là ngón tay nhỏ của bàn tay phải của bạn.
+
+576
+00:00:21,840 --> 00:00:26,040
+Vậy đó chính là phím mà ngón tay bạn dùng để nhấn chữ P.
+
+577
+00:00:26,370 --> 00:00:34,090
+Vì vậy, một lần nữa bạn lại luyện tập lần lượt từng phím trên phím dưới cùng trong 30 giây mỗi phím.
+
+578
+00:00:34,230 --> 00:00:40,540
+Vậy P L K P J trong 30 giây P và H với 30 giây, v.v.
+
+579
+00:00:40,620 --> 00:00:42,810
+Đó chính là đoạn thư
+thực hành đó. 
+
+@@@
+
+
+
+580
+00:00:00,990 --> 00:00:02,440
+Không cho lá thư tiếp theo.
+
+581
+00:00:02,670 --> 00:00:04,140
+Đó là chữ O
+
+582
+00:00:04,230 --> 00:00:06,650
+Và có thể bây giờ bạn đã hiểu được ý tưởng này.
+
+583
+00:00:06,660 --> 00:00:12,830
+Ngón tay bạn dùng để nhấn phím o cũng giống như ngón tay bạn đã nhấn phím l.
+
+584
+00:00:13,350 --> 00:00:16,440
+Vậy đó là ngón đeo nhẫn ở tay phải của bạn.
+
+585
+00:00:16,620 --> 00:00:21,030
+Vì vậy, một lần nữa bạn chỉ cần trải qua 30 giây mỗi lần.
+
+586
+00:00:21,060 --> 00:00:26,010
+OJ OJ OJ cứ như vậy trong 30 giây tương tự với O H G.
+
+587
+00:00:26,250 --> 00:00:28,430
+Và cứ thế cho đến hết chặng đường.
+
+588
+00:00:28,530 --> 00:00:34,380
+Và như tôi đã nói trước
+đó, tất cả các bài tập này sẽ
+
+589
+00:00:34,380 --> 00:00:34,920
+có trong phiếu thực hành của
+bạn ở cuối phần này. 
+
+@@@
+
+
+
+590
+00:00:00,710 --> 00:00:02,180
+Không cho chữ I.
+
+591
+00:00:02,180 --> 00:00:08,670
+Chữ cái tôi như bạn có thể đoán được được nhấn bằng cùng một phím mà bạn nhấn phím chữ cái.
+
+592
+00:00:08,870 --> 00:00:13,830
+Chữ K là ngón tay dài của bàn tay phải.
+
+593
+00:00:13,850 --> 00:00:17,830
+Vì vậy, một lần nữa, mỗi lần ba mươi giây với mỗi phím ở giữa.
+
+594
+00:00:18,010 --> 00:00:22,600
+Bấm nhầm phím ở đó nên nó chỉ nằm ngang bàn phím.
+
+595
+00:00:22,610 --> 00:00:26,420
+Như vậy tôi cùng với tất cả
+những chiếc chìa khóa đó. 
+
+@@@
+
+
+
+596
+00:00:00,600 --> 00:00:03,430
+Bây giờ chúng ta sẽ thực hành và học phần sau.
+
+597
+00:00:03,430 --> 00:00:08,760
+Bạn đã nhìn thấy chữ cái bạn thể hiện bằng chính ngón tay mà bạn đã nhấn chữ J.
+
+598
+00:00:08,790 --> 00:00:10,020
+Vì vậy, đó là con người của bạn.
+
+599
+00:00:10,020 --> 00:00:13,990
+Hoặc nó có thể đã đoán được ngón trỏ của bàn tay phải của bạn.
+
+600
+00:00:14,010 --> 00:00:19,710
+Vì vậy, một lần nữa bạn sẽ lướt qua từng chữ cái một trong ba mươi giây kết hợp với nhau
+
+601
+00:00:20,010 --> 00:00:21,240
+với lá thư bạn. 
+
+@@@
+
+
+
+602
+00:00:00,530 --> 00:00:08,860
+Tôi biết chữ cái cuối cùng ở
+hàng trên cùng nên chính chữ
+
+603
+00:00:08,860 --> 00:00:11,910
+Y bạn nhấn chữ y bằng chính
+ngón tay mà bạn nhấn chữ J.
+
+604
+00:00:12,070 --> 00:00:14,770
+Vậy đó là ngón trỏ của bàn tay phải của bạn.
+
+605
+00:00:14,770 --> 00:00:22,390
+Vì vậy, một lần nữa, bạn thực hành lần lượt
+30 giây kết hợp với từng chữ cái ở hàng
+
+606
+00:00:22,390 --> 00:00:28,210
+giữa và tất nhiên những chữ cái này cũng sẽ
+xuất hiện trong tờ thực hành của bạn. 
+
+@@@
+
+
+
+607
+00:00:00,740 --> 00:00:07,730
+Như vậy là bây giờ bạn đã học
+được tất cả các phím trên cùng hoặc
+
+608
+00:00:07,730 --> 00:00:08,810
+các phím ở hàng trên cùng hoặc
+các phím chữ cái ở hàng trên cùng.
+
+609
+00:00:08,900 --> 00:00:12,470
+Bạn đã học những điều đó và thực hành chúng mỗi lần 30 giây.
+
+610
+00:00:12,470 --> 00:00:15,510
+Bây giờ tôi muốn bạn tiếp tục thực hành những điều đó.
+
+611
+00:00:15,860 --> 00:00:23,030
+Chỉ cần tiếp tục luyện tập
+nhiều lần cho đến khi bạn có
+
+612
+00:00:23,030 --> 00:00:24,350
+thể gõ tất cả các phím mà
+không cần nhìn xuống bàn phím.
+
+613
+00:00:24,380 --> 00:00:25,510
+Vì vậy để giúp bạn làm được điều đó.
+
+614
+00:00:25,550 --> 00:00:28,000
+Tôi đã bao gồm một tờ thực hành.
+
+615
+00:00:28,190 --> 00:00:33,980
+Bạn có thể tải về máy tính để in ra rồi để bên cạnh máy tính
+
+616
+00:00:34,820 --> 00:00:38,270
+hoặc nếu bạn muốn, bạn có thể có nó trên máy tính của mình và có nó.
+
+617
+00:00:38,270 --> 00:00:44,060
+Vì vậy, nó nằm cạnh bộ xử lý văn bản của bạn và sau đó bạn có thể gõ và thực hành theo cách đó.
+
+618
+00:00:44,060 --> 00:00:47,540
+Vì vậy, bạn sẽ nhận được phiếu thực hành của mình bằng cách nhấp vào liên kết này tại đây.
+
+619
+00:00:47,540 --> 00:00:49,650
+Vì vậy đây là bài giảng tiếp theo.
+
+620
+00:00:49,670 --> 00:00:55,520
+Vì vậy, ngay sau khi bài giảng này kết thúc bài giảng
+tiếp theo, màn hình sẽ nhấp vào liên kết này ở đây với
+
+621
+00:00:55,550 --> 00:01:03,100
+nội dung là các phím trên cùng thực hành PDA F hàng đầu
+và sau đó sẽ cho phép bạn tải xuống máy tính của mình.
+
+622
+00:01:03,100 --> 00:01:06,800
+Bây giờ trên tờ bài tập bạn sẽ thấy có ba phần.
+
+623
+00:01:06,800 --> 00:01:13,300
+Phần đầu tiên là các phím trên cùng bên trái và phần thứ hai là các phím trên cùng bên phải.
+
+624
+00:01:13,460 --> 00:01:19,280
+Nhưng bên dưới đó có một phần dành
+cho tất cả các phím trên cùng nên về
+
+625
+00:01:19,280 --> 00:01:21,610
+cơ bản đó là nơi bạn đang thực
+hành kết hợp tất cả các phím trên cùng.
+
+626
+00:01:21,680 --> 00:01:28,640
+Một lần khác, hãy nhớ mỗi tổ hợp phím của khách
+hàng 30 giây mỗi tổ hợp và tiếp tục luyện tập
+
+627
+00:01:28,640 --> 00:01:35,780
+nhiều lần khi bạn đã thành thạo để có thể gõ
+tất cả các phím mà không cần nhìn vào bàn phím.
+
+628
+00:01:36,110 --> 00:01:40,310
+thì đã đến lúc chuyển sang phần
+tiếp theo là các phím phía dưới. 
+
+@@@
+
+
+
+629
+00:00:00,910 --> 00:00:09,300
+Vì vậy trong phần này chúng ta sẽ học và thực hành các phím ở hàng dưới cùng.
+
+630
+00:00:09,400 --> 00:00:14,020
+Vì vậy, tôi sẽ chỉ cho bạn từng ngón tay bạn sẽ sử dụng để nhấn từng phím này
+
+631
+00:00:14,650 --> 00:00:18,840
+và tất nhiên là phải thực sự tìm hiểu chúng và thu được lợi ích từ nó.
+
+632
+00:00:18,850 --> 00:00:23,380
+Bạn sẽ thực hành một số kết hợp với các
+phím mà bạn đã học ở hàng giữa, bao gồm
+
+633
+00:00:23,380 --> 00:00:31,030
+cả lợi ích của phím home, điều đó không
+chỉ khiến bạn nhanh hơn khi đến làm việc
+
+634
+00:00:31,030 --> 00:00:38,020
+gõ văn bản thực sự nhưng bạn cũng sẽ thực sự học
+tốt các phím này đến mức bạn sẽ không cần phải nhìn
+
+635
+00:00:38,020 --> 00:00:44,020
+vào bàn phím, đó là toàn bộ mục đích của việc gõ
+bằng cảm ứng giúp bạn nhanh hơn khi kết thúc việc này
+
+636
+00:00:44,020 --> 00:00:49,930
+Tất nhiên, giống như phần trước, bạn sẽ có
+cơ hội tải xuống một tờ thực hành cung cấp
+
+637
+00:00:49,930 --> 00:00:56,290
+cho bạn từng tổ hợp chữ cái này để thực hành,
+do đó bạn sẽ thực hành từng tổ hợp chữ cái
+
+638
+00:00:56,500 --> 00:01:00,000
+như trước, mỗi lần 30 giây.
+
+639
+00:01:00,010 --> 00:01:04,390
+Vì vậy, chúng ta hãy bắt đầu
+và học chữ cái đầu tiên. 
+
+@@@
+
+
+
+640
+00:00:00,990 --> 00:00:05,890
+Vậy chữ cái đầu tiên chúng ta sắp học và luyện tập là chữ Z.
+
+641
+00:00:05,970 --> 00:00:12,570
+Vậy chữ Z bạn nhấn phím đó bằng chính
+ngón tay mà bạn đã nhấn chữ A ở bàn tay
+
+642
+00:00:12,570 --> 00:00:19,440
+trái đó là ngón út của bạn hoặc ngón út
+dùng cho chữ A cũng như chữ Q và chữ Z.
+
+643
+00:00:19,440 --> 00:00:23,250
+Thế là không bao giờ đi tập và học phím Z.
+
+644
+00:00:23,250 --> 00:00:30,300
+Vì vậy, hãy làm điều này trong 30 giây và bạn cũng sẽ làm điều đó trong 30 giây kết hợp từng cái một
+
+645
+00:00:30,660 --> 00:00:33,930
+với tất cả các chữ cái
+ở hàng giữa. 
+
+@@@
+
+
+
+646
+00:00:00,660 --> 00:00:08,240
+Không, chúng ta sẽ học chữ X được giải nén
+chứ không phải chữ X được nhấn bằng phím
+
+647
+00:00:08,240 --> 00:00:12,950
+mà ngón tay bạn đã dùng để nhấn chữ S,
+chính là phím bạn đã dùng để nhấn chữ W.
+
+648
+00:00:12,950 --> 00:00:15,710
+Vậy đó là ngón đeo nhẫn của bàn tay trái của bạn.
+
+649
+00:00:15,710 --> 00:00:24,320
+Vì vậy, một lần nữa chúng ta sẽ
+thực hành điều đó trong 30 giây với
+
+650
+00:00:24,320 --> 00:00:25,730
+mỗi phím dọc hàng giữa giống như
+chúng ta đã làm với phím Z. 
+
+@@@
+
+
+
+651
+00:00:00,850 --> 00:00:02,310
+Không cho lá thư tiếp theo của họ.
+
+652
+00:00:02,310 --> 00:00:04,390
+Đó là lá thư xem.
+
+653
+00:00:04,630 --> 00:00:11,620
+Họ thấy bạn nhấn phím đó bằng
+ngón tay dài nhất của bàn tay
+
+654
+00:00:11,620 --> 00:00:13,950
+trái, cũng chính là ngón tay
+mà bạn đã dùng để nhấn chữ D.
+
+655
+00:00:14,170 --> 00:00:20,350
+Vì vậy, chúng ta hãy sử dụng ngón tay cái được sử dụng cho âm d chữ E ở trên ghế nhưng bây giờ chúng ta sẽ thực hành
+
+656
+00:00:20,350 --> 00:00:26,680
+C một lần nữa trong 30 giây, mỗi
+chữ cái một lần lượt ở giữa. 
+
+@@@
+
+
+
+657
+00:00:00,630 --> 00:00:04,400
+Tiếp theo chúng ta sẽ luyện tập chữ V và chữ V.
+
+658
+00:00:04,470 --> 00:00:07,350
+Bạn nhấn không sử dụng ngón trỏ của bàn tay trái.
+
+659
+00:00:07,380 --> 00:00:13,660
+Vì vậy, đó là ngón tay mà bạn đã sử dụng để nhấn f the f k và tất nhiên cũng là ngón tay vòm.
+
+660
+00:00:13,680 --> 00:00:17,240
+Vì vậy, một lần nữa 30 giây cho mỗi sự kết hợp chữ cái.
+
+661
+00:00:17,340 --> 00:00:20,880
+Vì vậy, chữ V lần lượt với
+mỗi chữ cái này ở giữa. 
+
+@@@
+
+
+
+662
+00:00:00,590 --> 00:00:08,510
+Tiếp theo là chữ B và ngón tay bạn
+dùng để nhấn nó cũng chính là ngón
+
+663
+00:00:08,510 --> 00:00:14,470
+tay bạn dùng để nhấn chữ f ở hàng
+giữa, tức là ngón trỏ của bàn tay trái.
+
+664
+00:00:14,480 --> 00:00:21,860
+Vì vậy, một lần nữa chúng ta sẽ luyện tập thời gian 30 giây với mỗi chữ cái ở hàng giữa, như vậy là 30 giây
+
+665
+00:00:22,520 --> 00:00:23,450
+với mỗi chữ cái. 
+
+@@@
+
+
+
+666
+00:00:01,030 --> 00:00:03,650
+Không, chúng ta sẽ chuyển sang bên phải.
+
+667
+00:00:03,690 --> 00:00:11,340
+Phím dưới cùng là phím gạch chéo về phía trước
+của C C cũng là một dấu chấm hỏi mà bạn có thể
+
+668
+00:00:11,340 --> 00:00:17,510
+nhận được bằng cách nhấn shift và giữ shift và
+khi làm như vậy bạn sẽ gọi đó là dấu gạch chéo K
+
+669
+00:00:17,520 --> 00:00:18,920
+để làm cho nó dễ dàng và đơn giản hơn.
+
+670
+00:00:19,380 --> 00:00:26,250
+Vì vậy, chúng ta sẽ bắt đầu bằng cách luyện
+tập lần lượt 30 giây với một phím khác ở
+
+671
+00:00:26,260 --> 00:00:33,500
+hàng giữa, vì vậy lần này chúng ta sẽ đi
+từ phải sang trái vì nó dành cho tay phải.
+
+672
+00:00:33,600 --> 00:00:40,590
+Vì vậy, hãy luyện tập phím đó trong 30 giây và ngón tay
+mà bạn dùng để đặt trên phím đó mà bạn có thể đã đoán
+
+673
+00:00:40,590 --> 00:00:46,950
+ra chính là ngón tay út của bạn trên bàn tay phải, chính
+là phím bạn đã dùng để nhấn phím dấu chấm phẩy. 
+
+@@@
+
+
+
+674
+00:00:00,990 --> 00:00:05,850
+Vậy phím tiếp theo chúng ta sẽ luyện tập và học là phím dừng hoàn toàn.
+
+675
+00:00:06,270 --> 00:00:12,270
+Vậy ngón tay bạn dùng để nhấn phím dừng hoàn toàn chính là ngón tay bạn dùng để nhấn phím
+
+676
+00:00:12,360 --> 00:00:15,620
+L là ngón đeo nhẫn của bàn tay phải của bạn.
+
+677
+00:00:15,630 --> 00:00:22,530
+Vì vậy, một lần nữa chúng ta sẽ tiến tới 30
+giây mỗi lần với mỗi phím này ở hàng giữa. 
+
+@@@
+
+
+
+678
+00:00:01,000 --> 00:00:06,470
+Phím tiếp theo chúng ta sẽ luyện tập và học là
+phím chung. Ngón tay dùng để nhấn phím chung
+
+679
+00:00:06,470 --> 00:00:11,680
+cũng chính là ngón tay bạn dùng để nhấn phím
+K ở hàng giữa, ngón tay dài nhất của bạn.
+
+680
+00:00:12,010 --> 00:00:13,620
+ngay trên tay phải của bạn.
+
+681
+00:00:13,630 --> 00:00:20,290
+Vì vậy, một lần nữa chúng ta sẽ luyện tập 30 giây một lần kết hợp với các phím này trên toàn bộ bàn phím.
+
+682
+00:00:20,290 --> 00:00:20,560
+Ở giữa. 
+
+@@@
+
+
+
+683
+00:00:00,740 --> 00:00:06,470
+Phím tiếp theo chúng ta sẽ luyện tập là
+chữ M và ngón tay các bạn dùng để nhấn chữ
+
+684
+00:00:06,470 --> 00:00:11,570
+M chính là ngón tay các bạn đã từng nhấn
+chữ J ở đường giữa và cả chữ U ở trên cùng
+
+685
+00:00:11,570 --> 00:00:12,050
+hàng ngang.
+
+686
+00:00:12,140 --> 00:00:14,980
+Không chắc ngón trỏ của bàn tay phải của bạn.
+
+687
+00:00:14,990 --> 00:00:21,440
+Vì vậy, một lần nữa trong
+30 giây mỗi lần thực hành
+
+688
+00:00:21,440 --> 00:00:22,010
+kết hợp với từng phím ở
+hàng giữa một lần. 
+
+@@@
+
+
+
+689
+00:00:00,380 --> 00:00:07,590
+Ở phím tiếp theo hàng dưới
+cùng là phím N nên chúng
+
+690
+00:00:07,590 --> 00:00:07,990
+ta dùng ngón trỏ của bàn
+tay phải để nhấn vào các đầu.
+
+691
+00:00:07,990 --> 00:00:14,760
+Đó chính là ngón tay được sử dụng để nhấn
+phím J trên phím home, vì vậy chúng ta sẽ thực
+
+692
+00:00:14,910 --> 00:00:19,770
+hành phím đó bằng một trong các phím ngang
+qua phím giữa, mỗi lần trong 30 giây. 
+
+@@@
+
+
+
+693
+00:00:01,350 --> 00:00:08,790
+Vì vậy, bây giờ chúng ta đã xem qua tất cả các hàng dưới cùng hoặc các phím ở cuối các chữ cái và tìm hiểu xem
+
+694
+00:00:09,060 --> 00:00:13,800
+các ngón tay dùng để ấn từng ngón trong thực tế mỗi ngón trong 30 giây.
+
+695
+00:00:13,800 --> 00:00:18,250
+Vì thế bạn cần phải tiếp tục luyện tập điều đó nhiều lần.
+
+696
+00:00:18,330 --> 00:00:26,880
+30 giây cho mỗi tổ hợp phím
+kép cho đến khi bạn có thể gõ
+
+697
+00:00:26,880 --> 00:00:30,640
+từng tổ hợp phím mà không
+cần nhìn xuống bàn phím và tắt đi.
+
+698
+00:00:30,750 --> 00:00:36,450
+Không, tất nhiên tôi đã đưa cho bạn một tờ bài
+tập để bạn có thể sử dụng nó để tiếp tục luyện tập
+
+699
+00:00:36,450 --> 00:00:42,420
+và bạn có thể in nó ra hoặc nếu bạn muốn, bạn có
+thể có nó trên máy tính của mình để có thể xem nó
+
+700
+00:00:42,840 --> 00:00:44,360
+bên cạnh trình xử lý văn bản của bạn.
+
+701
+00:00:44,370 --> 00:00:45,990
+Vì vậy, hãy có tờ bài tập ở bên trái.
+
+702
+00:00:46,250 --> 00:00:52,230
+Bạn thực hiện đúng quy trình hoặc theo
+bất kỳ cách nào bạn muốn và sau đó tiếp tục
+
+703
+00:00:52,230 --> 00:00:55,640
+thực hành các kết hợp bằng cách nhìn vào bảng
+thực hành mà không cần nhìn vào bàn phím.
+
+704
+00:00:55,680 --> 00:01:00,680
+Tiếp tục làm như vậy cho đến khi bạn có thể làm được mà không cần nhìn vào bàn phím.
+
+705
+00:01:00,700 --> 00:01:04,440
+Bây giờ giống như các bài thực hành trước, có ba phần.
+
+706
+00:01:04,440 --> 00:01:12,570
+Vậy phím đầu tiên hoặc là phím dưới cùng bên tay trái nên bạn dùng tay trái để gõ
+
+707
+00:01:13,050 --> 00:01:15,000
+và phần tiếp theo chính là chìa khóa.
+
+708
+00:01:15,000 --> 00:01:20,460
+Các phím dưới cùng ở phía bên phải là phím
+bạn thường gõ bằng tay phải và phần cuối
+
+709
+00:01:20,460 --> 00:01:27,540
+cùng là nơi chứa tất cả các phím dưới
+cùng kết hợp của hai chữ cái cùng một lúc.
+
+710
+00:01:27,540 --> 00:01:31,680
+Vì vậy, như tôi đã nói, hãy thực hành mỗi sự kết hợp trong 30 giây mỗi lần.
+
+711
+00:01:31,680 --> 00:01:39,390
+Chỉ cần tiếp tục lặp đi lặp lại
+điều đó cho đến khi bạn đủ tự tin để
+
+712
+00:01:39,390 --> 00:01:41,760
+luyện tập tất cả các tổ hợp phím mà
+không cần nhìn xuống bàn phím. 
+
+@@@
+
+
+
+713
+00:00:02,130 --> 00:00:09,000
+Vì vậy, trong phần tiếp theo tôi sẽ dạy bạn những con số ở hàng trên cùng của bàn phím
+
+714
+00:00:09,720 --> 00:00:11,300
+giống như chúng tôi đã làm với các chữ cái.
+
+715
+00:00:11,310 --> 00:00:16,760
+Chúng ta sẽ thực hành một số với hai con số cùng một lúc.
+
+716
+00:00:16,770 --> 00:00:20,720
+Vì vậy, 30 giây cho mỗi cặp số kết hợp.
+
+717
+00:00:20,850 --> 00:00:26,600
+Bằng cách đó, bạn và giường của bạn sẽ tự động gõ số nhanh hơn rất nhiều.
+
+718
+00:00:26,640 --> 00:00:35,130
+Dùng phương pháp luyện tập này mà không cần nhìn vào phím đàn ở cuối phần không luyện tập nhé
+
+719
+00:00:35,130 --> 00:00:41,740
+Tôi sẽ cho bạn cơ hội tải xuống một tờ
+bài tập để bạn có thể tiếp tục luyện tập
+
+720
+00:00:41,740 --> 00:00:47,160
+các cặp số cho đến khi đủ thành thạo để
+làm loại số bất kỳ mà không cần nhìn vào
+
+721
+00:00:47,160 --> 00:00:48,120
+bàn phím.
+
+722
+00:00:48,120 --> 00:00:52,170
+Vì vậy, hãy tiếp tục
+thực hành về số. 
+
+@@@
+
+
+
+723
+00:00:00,860 --> 00:00:09,620
+Cho đến nay, cặp số một và số hai đầu
+tiên của chúng ta sẽ cùng nhau thực hành
+
+724
+00:00:09,620 --> 00:00:12,940
+qua lại trong 30 giây giống như chúng ta
+đã làm khi gõ các chữ cái trên bàn phím.
+
+725
+00:00:13,550 --> 00:00:20,570
+Vì vậy, tất nhiên nếu bạn chưa đoán ra thì bạn hãy sử dụng ngón út của bàn tay trái.
+
+726
+00:00:21,280 --> 00:00:26,090
+Và đối với cả hai bạn sử dụng ngón đeo nhẫn của bàn tay trái.
+
+727
+00:00:26,090 --> 00:00:30,260
+Vì vậy, về cơ bản, bằng cách sử dụng những ngón tay đó, bạn đã ấn một ngón tay vào hai ngón tay đó.
+
+728
+00:00:30,400 --> 00:00:32,710
+Vì vậy, bạn làm điều đó trong 30 giây qua lại.
+
+729
+00:00:32,720 --> 00:00:36,520
+Vì vậy, bạn đi một hai một 2 và cứ thế.
+
+730
+00:00:36,620 --> 00:00:39,560
+Bắt đầu từ từ và đảm bảo giữ nó ngắn gọn.
+
+731
+00:00:39,560 --> 00:00:41,540
+Hãy chắc chắn rằng bạn giữ độ chính xác.
+
+732
+00:00:41,540 --> 00:00:44,510
+Và sau đó từ từ tăng tốc độ của bạn.
+
+733
+00:00:44,720 --> 00:00:50,690
+Nếu bạn bắt đầu và nhập sai phím,
+bạn chỉ cần giảm tốc độ lại một chút cho
+
+734
+00:00:50,690 --> 00:00:54,590
+đến khi bạn có thể lấy lại độ chính
+xác và để tốc độ của mình tăng dần từ đó.
+
+735
+00:00:54,610 --> 00:01:01,130
+Chúng ta hãy tiếp tục luyện tập chỉ 30 giây cho cặp
+chữ này và sau đó bạn sẽ chuyển sang cặp chữ cái
+
+736
+00:01:01,130 --> 00:01:06,740
+tiếp theo ở cặp tiếp theo là cha mẹ tiếp theo, v.v.
+và sau đó cuối cùng bạn quay lại chữ cái đầu tiên
+
+737
+00:01:06,740 --> 00:01:09,280
+cặp đôi muốn bắt đầu lại từ đầu.
+
+738
+00:01:09,350 --> 00:01:11,090
+Hãy tiếp tục thực hành
+theo cách đó. 
+
+@@@
+
+
+
+739
+00:00:01,000 --> 00:00:06,490
+Số tiếp theo là số ba, bạn sẽ thực hành với số một mà bạn đã biết nên sử dụng ngón tay nào trên một số.
+
+740
+00:00:06,500 --> 00:00:08,510
+Đó là ngón út của bàn tay trái của bạn.
+
+741
+00:00:08,830 --> 00:00:14,190
+Ba bạn dùng ngón tay dài nhất của bàn tay trái để ấn vào đó.
+
+742
+00:00:14,380 --> 00:00:21,310
+Vì vậy, về cơ bản, ngón tay được nhấn bằng ngón
+tay bạn đã sử dụng để nhấn chữ Q trong Z giống như
+
+743
+00:00:21,310 --> 00:00:27,430
+ngón tay đã sử dụng để nhấn lịch sự sử dụng ngón
+tay đó để nhấn ba lần nữa qua lại bắt đầu từ từ và
+
+744
+00:00:27,460 --> 00:00:36,530
+tăng dần tốc độ để giữ độ chính xác 1 3 1 3, v.v. cứ tiếp tục như vậy trong 30 giây và sau đó
+
+745
+00:00:36,930 --> 00:00:39,150
+sẽ làm 30 giây cho cặp
+chữ cái tiếp theo. 
+
+@@@
+
+
+
+746
+00:00:00,940 --> 00:00:03,570
+Cặp chữ cái tiếp theo là 1 trên 4.
+
+747
+00:00:03,610 --> 00:00:05,180
+Chúng tôi đang học cách chốt mới.
+
+748
+00:00:05,390 --> 00:00:05,980
+KHÔNG.
+
+749
+00:00:06,050 --> 00:00:08,680
+Đó là một cặp số 1 và 4 rất đẹp.
+
+750
+00:00:08,710 --> 00:00:11,790
+Vì vậy tất nhiên chúng ta đang học một số mới là 4.
+
+751
+00:00:12,160 --> 00:00:16,590
+Vậy là 1 bạn đã biết dùng ngón tay nào để ấn 1 ngón út của cánh tay trái.
+
+752
+00:00:16,740 --> 00:00:22,120
+Đối với bạn, bạn sẽ sử dụng
+ngón trỏ của bàn tay trái để nhấn
+
+753
+00:00:22,120 --> 00:00:25,570
+ngón đó sao cho giống như cách
+bạn đã sử dụng để nhấn F và R và.
+
+754
+00:00:25,900 --> 00:00:33,220
+Vì vậy, một lần nữa qua lại bắt đầu từ từ
+tăng dần với tốc độ trong 30 giây 1 và 4. 
+
+@@@
+
+
+
+755
+00:00:00,910 --> 00:00:02,130
+Số tiếp theo là năm.
+
+756
+00:00:02,130 --> 00:00:04,330
+Chúng ta sẽ thực hành điều đó với một cái.
+
+757
+00:00:05,110 --> 00:00:06,480
+Vậy một phần năm.
+
+758
+00:00:06,670 --> 00:00:12,950
+Số năm bạn sẽ lại sử dụng ngón trỏ của bàn tay trái để nhấn số năm.
+
+759
+00:00:13,050 --> 00:00:16,420
+Vì vậy, nó được sử dụng cho cùng một số.
+
+760
+00:00:16,420 --> 00:00:21,570
+Vì vậy, bạn dùng ngón trỏ giống như bạn sử dụng nó cho F và G ở hàng giữa.
+
+761
+00:00:21,700 --> 00:00:23,710
+Bạn sẽ thấy ba số tương tự ở trên.
+
+762
+00:00:23,710 --> 00:00:25,760
+Sử dụng nó cho bốn dưới năm.
+
+763
+00:00:25,840 --> 00:00:28,890
+Vì vậy, không cho năm thực hành một và năm.
+
+764
+00:00:28,890 --> 00:00:36,850
+Quay đi quay lại bắt đầu
+từ từ và thực hành động tác
+
+765
+00:00:36,850 --> 00:00:37,330
+đó trong 30 giây rồi thực
+hiện cặp số tiếp theo. 
+
+@@@
+
+
+
+766
+00:00:01,510 --> 00:00:05,680
+Số tiếp theo để học và thực hành là số sáu.
+
+767
+00:00:05,690 --> 00:00:07,980
+Lưu ý số sáu là bạn.
+
+768
+00:00:08,020 --> 00:00:12,680
+Bạn nhấn nó bằng ngón trỏ của bàn tay phải.
+
+769
+00:00:12,930 --> 00:00:16,120
+Vì vậy, đừng bao giờ bắt đầu sử dụng số bằng tay phải.
+
+770
+00:00:16,510 --> 00:00:21,880
+Nhưng cái này tôi sẽ giữ nguyên cặp số với số một cho đến nay.
+
+771
+00:00:21,880 --> 00:00:26,290
+Đừng lo lắng bạn cũng sẽ luyện tập kết hợp.
+
+772
+00:00:26,410 --> 00:00:34,480
+Các chữ cái khác, các số khác cũng đi theo cặp nhưng sẽ có trong bài tập nhưng
+
+773
+00:00:34,690 --> 00:00:42,950
+vì mục đích ở đây là học cách sử dụng ngón tay nào để nhấn từng số trong những video này.
+
+774
+00:00:43,240 --> 00:00:44,520
+Vì vậy, một trong sáu.
+
+775
+00:00:44,530 --> 00:00:47,020
+Vì vậy, một là với một điều nhỏ của bàn tay trái.
+
+776
+00:00:47,020 --> 00:00:51,370
+Tất nhiên bạn biết số sáu bằng ngón trỏ của bàn tay phải.
+
+777
+00:00:51,370 --> 00:00:53,710
+Vì vậy hãy luyện tập trong ba mươi giây.
+
+778
+00:00:54,070 --> 00:00:55,720
+Cặp số đó 
+
+@@@
+
+
+
+779
+00:00:00,980 --> 00:00:03,000
+Và số tiếp theo là số bảy.
+
+780
+00:00:03,000 --> 00:00:07,380
+Tiếp tục luyện tập cùng với số một theo cặp.
+
+781
+00:00:07,440 --> 00:00:09,180
+Ngay bây giờ.
+
+782
+00:00:09,180 --> 00:00:13,710
+Vậy số bảy lại là ngón trỏ của bàn tay phải.
+
+783
+00:00:13,720 --> 00:00:21,840
+Vì vậy, ngón trỏ của bàn tay phải về cơ bản được sử dụng cho số sáu và sau đó là số bảy.
+
+784
+00:00:21,840 --> 00:00:27,840
+Vì vậy, ban đầu chúng ta
+sẽ luyện tập không chậm
+
+785
+00:00:27,840 --> 00:00:28,800
+và tăng tốc độ để giữ độ
+chính xác ở mức dưới bảy.
+
+786
+00:00:28,830 --> 00:00:34,890
+Làm điều đó trong 30 giây và sau đó chúng
+ta sẽ chuyển sang cặp số tiếp theo. 
+
+@@@
+
+
+
+787
+00:00:01,080 --> 00:00:04,550
+Số tiếp theo là số tám.
+
+788
+00:00:04,590 --> 00:00:10,470
+Vì vậy, tám bạn sử dụng ngón tay dài nhất của bàn tay phải.
+
+789
+00:00:10,470 --> 00:00:14,110
+Vì vậy, một lần nữa thực hành với số một vào lúc này.
+
+790
+00:00:14,110 --> 00:00:20,190
+Cặp đó sẽ thực hiện các cặp khác
+sau này khi bạn nhận được phiếu
+
+791
+00:00:20,190 --> 00:00:24,060
+thực hành để bạn có thể thực
+hành tất cả các số trong một tổ hợp.
+
+792
+00:00:24,060 --> 00:00:27,890
+Vì vậy, bây giờ chúng ta sẽ chỉ thực hành một và số tám.
+
+793
+00:00:27,900 --> 00:00:37,410
+Vì vậy, hãy bắt đầu từ từ và tăng cường độ chính
+xác trong việc duy trì tốc độ của bạn để 1 8
+
+794
+00:00:37,410 --> 00:00:40,770
+1 8 trong trò chơi hãy nhớ rằng ngón tay dài
+nhất trên bàn chân phải của bạn là số tám. 
+
+@@@
+
+
+
+795
+00:00:00,830 --> 00:00:03,210
+Số tiếp theo là số chín.
+
+796
+00:00:03,650 --> 00:00:09,620
+Và có thể bạn cũng đã đoán được ngón tay Bain
+mà bạn dùng để bấm số chín chính là ngón áp út
+
+797
+00:00:09,620 --> 00:00:16,850
+của bàn tay phải, chính là ngón tay bạn dùng để
+bấm chữ L và tất nhiên là cả chữ ồ và đầy đủ.
+
+798
+00:00:16,850 --> 00:00:18,650
+dừng lại bên dưới.
+
+799
+00:00:18,650 --> 00:00:27,710
+Vì vậy, có lẽ lại 1 và 9 cùng nhau để thực hành kết hợp số bắt đầu từ từ.
+
+800
+00:00:27,710 --> 00:00:33,380
+Hai số này trong 30 giây rồi chúng ta
+sẽ chuyển sang số cuối cùng. 
+
+@@@
+
+
+
+801
+00:00:00,660 --> 00:00:03,150
+Không cho số không.
+
+802
+00:00:03,720 --> 00:00:07,460
+Bạn sẽ nhấn nút đó bằng ngón tay nhỏ nhất của bàn tay phải.
+
+803
+00:00:07,470 --> 00:00:15,690
+Cái mà bạn đã sử dụng để nhấn dấu
+chấm phẩy và cả chữ P và tất nhiên là
+
+804
+00:00:15,690 --> 00:00:18,970
+bên dưới dấu gạch chéo hoặc dấu
+chấm hỏi nếu bạn giữ phím shift trước.
+
+805
+00:00:19,170 --> 00:00:25,580
+Vậy 1 và 0 vậy ngón út ở cả hai tay lần này
+là ngón nhỏ nhất trên bàn tay trái của bạn
+
+806
+00:00:25,590 --> 00:00:32,640
+đối với ngón ở ngón út nhỏ nhất ở bàn tay
+phải để 0 1 bắt đầu chậm rãi trong 30 giây
+
+807
+00:00:32,940 --> 00:00:38,490
+và khi bạn tiếp tục luyện tập giữ độ chính xác, tốc
+độ của bạn sẽ tăng lên khi bạn trở nên nhanh hơn. 
+
+@@@
+
+
+
+808
+00:00:00,780 --> 00:00:05,400
+Không, tôi đã chỉ cho bạn ngón tay nào để sử dụng cho từng số ở trên cùng.
+
+809
+00:00:05,460 --> 00:00:11,790
+Bạn tiếp tục thực hành sử
+dụng các phiếu thực hành
+
+810
+00:00:11,790 --> 00:00:13,460
+mà bạn có thể tải xuống
+trong bài giảng tiếp theo.
+
+811
+00:00:13,470 --> 00:00:17,670
+Những tờ bài tập đó sẽ giúp bạn luyện tập kết hợp.
+
+812
+00:00:17,730 --> 00:00:19,340
+Tất cả các số theo cặp.
+
+813
+00:00:19,530 --> 00:00:28,560
+Vậy số tiếp theo sau 1 và 2 1 và 3 1 và 4 và cho đến 0 bạn sẽ là 2 trong 3 4 5 6 7 8 2 và
+
+814
+00:00:28,570 --> 00:00:30,080
+9 2 0.
+
+815
+00:00:30,090 --> 00:00:36,450
+Sau đó chuyển sang bước 3 và 4 lý do chúng ta không làm bước 3 và 1 là vì chúng ta đã làm xong một trong 3 rồi.
+
+816
+00:00:36,600 --> 00:00:40,240
+Chúng ta không làm lại điều 2 và 3 vì chúng ta đã làm điều 2 và 3 rồi.
+
+817
+00:00:40,350 --> 00:00:45,180
+Vì vậy chúng ta chỉ bắt đầu từ phần 3 cho đến phần không bị suy yếu và đi tiếp từ phần 4 đến phần 5.
+
+818
+00:00:45,210 --> 00:00:47,340
+Vì bạn đã làm đúng điều 3 và 4 rồi.
+
+819
+00:00:47,850 --> 00:00:49,890
+Cứ thế qua lại 4 và 5, v.v.
+
+820
+00:00:49,890 --> 00:00:56,190
+Đi thẳng lên trên để đến số 9 dưới 0 ngay cuối.
+
+821
+00:00:56,190 --> 00:00:58,390
+Vì vậy, đó là tờ thực hành mặc dù.
+
+822
+00:00:58,470 --> 00:01:02,580
+Vì vậy trong bài giảng tiếp theo bạn sẽ có thể tải về các bài thực hành.
+
+823
+00:01:04,220 --> 00:01:11,720
+Vì vậy, giống như các phần trước của bài giảng tiếp theo, bạn sẽ thấy màn hình cung cấp cho bạn liên kết
+
+824
+00:01:12,140 --> 00:01:14,570
+để tải tài liệu thực hành.
+
+825
+00:01:14,600 --> 00:01:20,530
+Vì vậy, chỉ cần nhấp vào đó và tải xuống,
+sau đó bạn có thể sử dụng nó trên màn hình
+
+826
+00:01:20,540 --> 00:01:24,170
+máy tính cạnh nhau như một trình xử lý văn
+bản hoặc nếu muốn, bạn có thể in ra. 
+
+@@@
+
+
+
+827
+00:00:00,930 --> 00:00:07,750
+Mình xin hướng dẫn các bạn cách tập viết hoa dễ dàng nhất hiện nay.
+
+828
+00:00:07,860 --> 00:00:10,890
+Bạn làm điều đó bằng cách nhấn phím shift trên bàn phím.
+
+829
+00:00:10,920 --> 00:00:17,790
+Bây giờ, phím shift cũng sẽ là phím bạn sẽ sử dụng
+để truy cập các ký tự xuất hiện phía trên một ký tự
+
+830
+00:00:17,790 --> 00:00:24,930
+khác trên bàn phím của bạn, vì vậy nếu nhìn vào
+phía dưới bên phải, bạn sẽ thấy phím gạch chéo và có
+
+831
+00:00:24,930 --> 00:00:29,940
+dấu chấm hỏi phía trên nó bạn
+sẽ có dấu chấm hỏi bằng cách
+
+832
+00:00:29,940 --> 00:00:31,920
+giữ phím shift rồi nhấn phím đó
+và nó sẽ cho bạn dấu chấm hỏi.
+
+833
+00:00:31,920 --> 00:00:35,370
+Vì vậy, chúng tôi nhìn cùng với một bàn phím như trên các con số.
+
+834
+00:00:35,370 --> 00:00:40,440
+Khá nhiều phím có tùy
+chọn khác phía trên và bạn có
+
+835
+00:00:40,440 --> 00:00:40,640
+được tùy chọn đó bằng
+cách giữ và nhấn phím shift.
+
+836
+00:00:40,640 --> 00:00:43,050
+Bây giờ có thể bạn đã biết ghi chú đó.
+
+837
+00:00:43,230 --> 00:00:46,680
+Một lần nữa, chúng ta muốn học
+cách nhấn phím shift mà không cần
+
+838
+00:00:46,680 --> 00:00:49,380
+phải nhìn xuống bàn phím vì nếu
+không nó sẽ làm chúng ta chậm lại.
+
+839
+00:00:49,410 --> 00:00:51,390
+Vì vậy, có một cách thực sự dễ dàng để làm điều đó.
+
+840
+00:00:51,390 --> 00:00:59,090
+Vì vậy, trước tiên chúng ta sẽ làm
+quen với việc bạn nhấn ngón tay nào
+
+841
+00:00:59,100 --> 00:01:00,820
+để nhấn phím shift, v.v., trên bàn
+tay trái của bạn, phím nhỏ của bạn.
+
+842
+00:01:00,840 --> 00:01:04,290
+Đó là cái bạn sử dụng để nhấn phím A trên phím home.
+
+843
+00:01:04,630 --> 00:01:16,080
+Bạn trượt cái đó xuống bên trái OK theo đường chéo xuống bên trái và nhấn vào phím shift.
+
+844
+00:01:16,080 --> 00:01:23,790
+Tương tự ở phía bên phải, bạn sẽ đưa
+ngón tay út dùng để nhấn phím dấu chấm phẩy
+
+845
+00:01:23,790 --> 00:01:28,770
+và trượt ngón tay đó xuống theo đường
+chéo sang bên phải để nhấn phím shift.
+
+846
+00:01:29,080 --> 00:01:29,990
+ĐƯỢC RỒI.
+
+847
+00:01:30,360 --> 00:01:34,400
+Vì vậy, đó là những ngón tay mà bạn sẽ sử dụng.
+
+848
+00:01:34,400 --> 00:01:38,220
+Nhưng khi bạn không nhìn vào
+bàn phím, bạn sẽ biết cách trượt chi
+
+849
+00:01:38,220 --> 00:01:39,570
+phí, đảm bảo rằng bạn biết mình
+thực sự đang nhấn không phải phím.
+
+850
+00:01:39,570 --> 00:01:41,400
+Đó là nơi chúng ta cần phải thực hành.
+
+851
+00:01:41,400 --> 00:01:46,360
+Vì vậy, đây là những gì bạn sẽ làm để thực hành những gì tôi khuyên bạn nên làm trong đó.
+
+852
+00:01:46,560 --> 00:01:54,540
+Vì vậy, như bạn còn nhớ trong bài học trước chúng
+ta đã nói về cách tìm phím home và đó là bằng
+
+853
+00:01:54,540 --> 00:02:00,420
+cách đặt ngón tay út của bạn trên chữ F của bàn
+tay trái và chơi ngón trỏ của bàn tay trái trên FCC
+
+854
+00:02:00,780 --> 00:02:07,110
+ngón trỏ phải của bạn trên cây
+đàn Jaqui và hãy nhớ rằng có
+
+855
+00:02:07,110 --> 00:02:07,710
+một cái bơm nhỏ trên phím đó
+để chúng ta có thể tìm thấy nó.
+
+856
+00:02:07,710 --> 00:02:11,040
+Vì vậy, hãy để mắt tới điều đó, về cơ bản hãy giữ cho bạn.
+
+857
+00:02:11,100 --> 00:02:15,370
+Vì vậy, nếu bạn muốn sao chép chữ cái bên trái bằng tay trái.
+
+858
+00:02:16,530 --> 00:02:22,680
+Vì vậy, ví dụ: nếu bạn đang sử dụng tay phải
+để nhấn chữ cái bạn muốn viết hoa thì bạn
+
+859
+00:02:22,680 --> 00:02:29,280
+sẽ sử dụng tay trái, tay trái để nhấn phím
+shift và sau đó dùng tay phải để nhấn phím.
+
+860
+00:02:29,280 --> 00:02:31,870
+Bạn muốn có một vài chữ cái và ngược lại.
+
+861
+00:02:31,920 --> 00:02:35,780
+Như vậy bên tay trái bạn nhấn chữ để viết hoa bạn dùng tay phải.
+
+862
+00:02:35,820 --> 00:02:37,410
+Vì vậy, cách tôi khuyên bạn nên làm điều đó.
+
+863
+00:02:37,410 --> 00:02:45,510
+Vì vậy, nếu tay trái của bạn đặt ngón trỏ
+lên trên phím f đó, bạn có thể cảm nhận
+
+864
+00:02:45,510 --> 00:02:50,430
+được vết sưng nhỏ trên đó và sau đó
+trượt để giữ ngón trỏ của bạn trên phím đó.
+
+865
+00:02:50,430 --> 00:02:57,310
+Trượt ngón tay trái của bạn theo đường chéo xuống bên trái và sau đó giữ bức tường phím shift đó.
+
+866
+00:02:57,560 --> 00:03:04,290
+Vì vậy, về cơ bản ngón trỏ hoặc tay trái của
+bạn vẫn sẽ chạm vào FCC trong khi ngón út
+
+867
+00:03:04,290 --> 00:03:10,570
+của bạn trượt nhẹ xuống để nhấn và giữ phím
+shift, sau đó tay phải của bạn sẽ trượt xuống.
+
+868
+00:03:10,570 --> 00:03:13,190
+dùng để nhấn bìa thư.
+
+869
+00:03:13,230 --> 00:03:14,070
+Đó là những gì tôi khuyên bạn nên.
+
+870
+00:03:14,070 --> 00:03:21,840
+Bằng cách đó, bạn sẽ không di chuyển toàn bộ
+bàn tay của mình xuống các phím phía dưới bởi vì
+
+871
+00:03:21,840 --> 00:03:28,110
+khi đó bạn sẽ chậm lại khi di chuyển tay trở
+lại để tìm lại phím home và tìm lại phím home.
+
+872
+00:03:28,110 --> 00:03:28,940
+FCC.
+
+873
+00:03:29,040 --> 00:03:34,230
+Vì vậy, hãy giữ ngón trỏ của bạn trên phím f trong suốt thời gian bạn nhấn phím shift đó.
+
+874
+00:03:34,680 --> 00:03:40,530
+Tương tự với tay phải, hãy giữ ngón trỏ đúng thời điểm trên chữ J.
+
+875
+00:03:40,530 --> 00:03:44,510
+Toàn bộ thời gian để ngón tay út của bạn trên dấu chấm phẩy.
+
+876
+00:03:44,640 --> 00:03:50,700
+Vì vậy, giữ ngón trỏ của bạn trên chữ J và trượt nó
+xuống theo đường chéo sang phải và điều đó sẽ cung
+
+877
+00:03:50,760 --> 00:03:57,270
+cấp cho bạn phím shift để sau đó bạn có thể giữ
+phím đó và nhấn chữ cái bằng tay trái để lấy chữ hoa
+
+878
+00:03:57,270 --> 00:03:58,480
+thư ở đó.
+
+879
+00:03:58,920 --> 00:04:01,080
+Vậy làm thế nào để thực hành nó.
+
+880
+00:04:01,080 --> 00:04:03,190
+Vì vậy, đây là cách nó thực sự rất đơn giản.
+
+881
+00:04:03,270 --> 00:04:06,480
+Vậy bạn có thể nói được không, hãy luyện tập thật nhiều văn bản có chữ in hoa ở đầu.
+
+882
+00:04:07,470 --> 00:04:10,290
+Vâng, bạn có thể học theo cách đó.
+
+883
+00:04:10,290 --> 00:04:16,550
+Ý tôi là rõ ràng là bạn cũng sẽ làm
+điều đó nhưng khi bạn tiến bộ hơn thì việc
+
+884
+00:04:16,630 --> 00:04:20,060
+thực hành học phím shift thực sự là
+một phương pháp gồm hai bước đơn giản.
+
+885
+00:04:20,060 --> 00:04:20,370
+Được rồi.
+
+886
+00:04:20,970 --> 00:04:27,750
+Vì vậy, một lần nữa hãy nhớ giữ ngón trỏ ở phím F và phím J ở bên trái.
+
+887
+00:04:28,230 --> 00:04:34,310
+Và tất nhiên, với bàn tay phải, bạn sẽ
+thực hành sử dụng ngón út di chuyển
+
+888
+00:04:34,320 --> 00:04:39,210
+ngang trong khi giữ ngón trỏ trên các
+phím đó khi bạn nhận được phím shift.
+
+889
+00:04:39,210 --> 00:04:40,590
+Bạn sẽ làm điều đó qua lại.
+
+890
+00:04:40,920 --> 00:04:47,370
+Vì vậy, về cơ bản, bạn chỉ cần trượt ngón tay trái
+của mình theo đường chéo xuống và giữ phím shift
+
+891
+00:04:47,370 --> 00:04:56,700
+rồi trượt ngược lên chữ A một lần nữa rồi thực
+hiện tương tự với thao tác trượt bằng tay phải.
+
+892
+00:04:56,700 --> 00:05:01,390
+ngón tay ở đó trong khi giữ ngón trỏ của bạn trên Jaqui trên phím shift.
+
+893
+00:05:01,410 --> 00:05:02,300
+Giữ cái đó.
+
+894
+00:05:02,410 --> 00:05:03,960
+Và sau đó sao lưu lại.
+
+895
+00:05:03,960 --> 00:05:08,740
+Và nó chỉ đơn giản là một trường hợp làm đi làm lại điều đó.
+
+896
+00:05:08,850 --> 00:05:12,120
+Và sau đó bạn sẽ
+học phím shift. 
+
+@@@
+
+
+
+897
+00:00:00,860 --> 00:00:06,300
+Bạn có thể nhận thấy rằng cho đến nay tôi chưa đề cập đến một phím cụ thể nào trên bàn phím.
+
+898
+00:00:06,590 --> 00:00:11,190
+Cái lớn dài ở dưới cùng của bàn phím là phím cách.
+
+899
+00:00:11,240 --> 00:00:17,540
+Có lý do cho điều đó vì bạn không thực sự cần
+phải luyện tập phím cách đó để có thể nhấn phím
+
+900
+00:00:17,600 --> 00:00:25,550
+cách mà không cần nhìn vào bàn phím vì bạn
+biết mình sẽ đặt ngón tay cái lên trên phím đó
+
+901
+00:00:25,940 --> 00:00:28,290
+toàn bộ thời gian bạn thực sự đang gõ.
+
+902
+00:00:28,430 --> 00:00:33,950
+Vì vậy, đó chỉ là trường hợp nhấn
+ngón tay cái của bạn xuống cho dù cô ấy
+
+903
+00:00:33,950 --> 00:00:35,640
+bên trái hay ngón cái bên phải của
+bạn OK, tùy thuộc vào chữ cái bạn nhấn.
+
+904
+00:00:36,590 --> 00:00:41,090
+Vì vậy, tôi không thực sự yêu cầu tôi phải cung cấp cho
+bạn một số bài tập để cố gắng thực hành điều đó nhưng
+
+905
+00:00:41,090 --> 00:00:47,420
+bạn biết đấy, khi bạn thực hành gõ văn bản thực tế, bạn
+sẽ dùng khuỷu tay và có khoảng cách giữa một từ ở cuối
+
+906
+00:00:47,420 --> 00:00:55,580
+của một câu hoặc bất cứ điều gì bạn chỉ cần nhấn phím cách xuống để cung cấp cho bạn một đoạn văn mới
+
+907
+00:00:56,150 --> 00:01:01,490
+phím ở bên phải, phím enter phụ thuộc vào vị trí của nó trên bàn phím của bạn thường ở bên phải
+
+908
+00:01:02,480 --> 00:01:08,180
+để có được một đoạn văn mới hoặc một dòng mới, tôi nên nói trên trình xử lý văn bản.
+
+909
+00:01:08,720 --> 00:01:13,400
+Ý tôi là bạn có thể phải nhìn vào
+bàn phím vài lần đầu tiên nhưng
+
+910
+00:01:13,400 --> 00:01:15,980
+bạn biết rằng nó nằm ở bên phải
+tính từ ngón tay út nhỏ bé của bạn.
+
+911
+00:01:15,980 --> 00:01:23,050
+Vì vậy, một lần nữa khi bạn bắt đầu thực hành
+đánh thuế văn bản thực tế và chuyển xuống các đoạn
+
+912
+00:01:23,050 --> 00:01:28,080
+văn, gõ các đoạn chuyển sang dòng mới, sau một thời
+gian, bạn cũng sẽ quen với việc nhấn phím enter.
+
+913
+00:01:28,220 --> 00:01:33,650
+Vì vậy, tôi thực sự không nghĩ rằng cần phải cung cấp
+cho bạn các bài tập thực hành để học những điều đó bởi vì
+
+914
+00:01:33,650 --> 00:01:39,230
+khi bạn gõ văn bản, chúng sẽ trở nên dễ dàng. Vì vậy, hãy
+nhớ rằng bạn biết khi bạn đặt ngón tay vào những điều đó.
+
+915
+00:01:39,500 --> 00:01:46,910
+trên phím home hoặc SDF hoặc
+bên tay trái, J K L và cùng trường ở bên
+
+916
+00:01:46,910 --> 00:01:50,780
+phải trên hai ngón tay cái của
+bạn sẽ tự nhiên nằm trên phím cách.
+
+917
+00:01:50,840 --> 00:01:55,440
+Đó thực sự là tất cả những gì tôi cần nói với bạn về phím cách.
+
+918
+00:01:55,730 --> 00:01:57,770
+Và tất nhiên tôi cũng đã đề
+cập đến phím enter. 
+
+@@@
+
+
+
+919
+00:00:00,980 --> 00:00:09,710
+Tôi sẽ chỉ cho bạn một phương pháp rất đơn giản và đó là phương pháp tôi sử dụng để tăng tốc độ đánh máy của mình một cách đáng kể.
+
+920
+00:00:10,170 --> 00:00:17,780
+Và trên thực tế, khi tôi bắt
+đầu ghi tốc độ của mình, tôi
+
+921
+00:00:17,780 --> 00:00:20,090
+đã ghi tốc độ khoảng 180 từ
+và đôi khi hơn 200 từ một phút.
+
+922
+00:00:21,880 --> 00:00:28,480
+Vì vậy, khi tôi mới bắt đầu đánh máy, học cách đánh máy, tôi
+đã không sử dụng bất kỳ sách hướng dẫn đánh máy nào, bạn biết
+
+923
+00:00:28,480 --> 00:00:34,120
+đấy, bất kỳ gia sư đánh máy nào dùng để nhận tin tức như
+những cuốn sách đóng bìa xoắn ốc, bạn biết đấy, loại mà chúng
+
+924
+00:00:34,120 --> 00:00:35,170
+cho bạn bài tập.
+
+925
+00:00:35,170 --> 00:00:37,600
+Và tôi đã làm điều đó để bạn có thể nói điều này hoặc cách khó khăn.
+
+926
+00:00:37,960 --> 00:00:41,470
+Và tôi thực sự đang tham gia một khóa học về máy tính, bạn biết đấy, máy tính cơ bản.
+
+927
+00:00:41,470 --> 00:00:45,590
+Vậy là họ đã giới thiệu cho bạn về bảng tính, trình xử lý văn bản, cơ sở dữ liệu, v.v.
+
+928
+00:00:46,030 --> 00:00:48,760
+Vì vậy, khi tôi thực hiện mục đích đó, tất nhiên, nó liên quan đến việc đánh máy.
+
+929
+00:00:49,000 --> 00:00:53,680
+Và vì vậy tôi nghĩ, ồ, bạn biết đấy, tôi sẽ tăng tốc độ đánh máy và tôi sẽ học cách chạm vào chữ
+
+930
+00:00:53,950 --> 00:00:56,460
+để tôi có thể gõ mà không cần nhìn vào ngón tay.
+
+931
+00:00:56,890 --> 00:01:02,230
+Vì vậy, ở trung tâm, họ có một trong những thứ này được gọi là người giữ bản sao.
+
+932
+00:01:02,770 --> 00:01:09,730
+Và tôi đã sử dụng nó để đặt một
+cuốn sách hoặc một số văn bản lên mắt
+
+933
+00:01:09,730 --> 00:01:11,290
+mình, sau đó nhìn vào văn bản đó và
+cố gắng gõ nó trên màn hình máy tính.
+
+934
+00:01:13,250 --> 00:01:19,370
+Bạn biết đấy, giá đỡ bản sao không hẳn là
+cái này, giống như cái này trên Amazon, nhưng
+
+935
+00:01:19,370 --> 00:01:22,700
+nó giống như, bạn biết đấy, bạn có thể đặt
+nó cạnh máy tính của mình và đặt văn bản vào.
+
+936
+00:01:22,850 --> 00:01:25,370
+Và tôi đã từng có nó bên cạnh mình.
+
+937
+00:01:25,610 --> 00:01:28,280
+Và tôi chỉ nhận được những đoạn văn bản khác nhau.
+
+938
+00:01:28,490 --> 00:01:34,010
+Và mặc dù lúc đầu khá chậm, bạn biết đấy, việc tìm
+hiểu vị trí của các phím trên bàn phím để tôi có thể
+
+939
+00:01:34,010 --> 00:01:39,440
+tìm thấy chúng bằng ngón tay mà không cần nhìn vào
+bàn phím, điều mà tôi đã làm rất nhiều khi bắt đầu.
+
+940
+00:01:39,440 --> 00:01:42,320
+Nhưng cuối cùng tôi đã có thể gõ được tất cả các phím.
+
+941
+00:01:42,590 --> 00:01:48,440
+Và thế là tôi cứ tiếp tục lấy những đoạn văn bản mới và xem qua nó, xuyên qua nó, xuyên suốt và,
+
+942
+00:01:48,950 --> 00:01:55,280
+bạn biết đấy, trên thực tế, từ từ nhưng chắc chắn tôi đã thực sự bắt đầu tăng cường khả năng nói của mình.
+
+943
+00:01:56,610 --> 00:02:02,670
+Nhưng bạn biết đấy, sau một thời gian tôi nghĩ, bạn biết đấy, tôi muốn tăng tốc độ của mình hơn nữa.
+
+944
+00:02:02,690 --> 00:02:04,490
+Vì thế tôi nghĩ, ồ, tôi biết mình sẽ làm gì.
+
+945
+00:02:05,240 --> 00:02:13,880
+Và điều tôi đã làm là tôi quyết định sao chép đi sao chép cùng một đoạn văn bản.
+
+946
+00:02:15,350 --> 00:02:19,880
+Và tôi thấy rằng mỗi lần như vậy tôi đều gõ văn bản.
+
+947
+00:02:20,270 --> 00:02:21,950
+Tôi ngày càng nhanh hơn.
+
+948
+00:02:22,190 --> 00:02:26,300
+Về cơ bản, bạn biết đấy, tôi
+chỉ nghĩ, tôi muốn tiếp tục gõ
+
+949
+00:02:26,300 --> 00:02:27,110
+văn bản này cho đến khi tôi
+có thể gõ nó nhanh nhất có thể.
+
+950
+00:02:27,110 --> 00:02:33,200
+Và bây giờ tôi đã gõ nhanh đến mức tôi thực sự không
+có cách nào để ghi lại tốc độ đánh máy của mình,
+
+951
+00:02:33,200 --> 00:02:38,780
+nhưng tôi biết mình đã làm rất nhanh và sau đó tôi
+sẽ lấy một đoạn văn bản khác rồi làm điều tương tự
+
+952
+00:02:38,780 --> 00:02:43,130
+cùng với đó, hãy tiếp tục lặp lại nó và lặp lại nó cho đến khi tôi gõ nó khá nhanh.
+
+953
+00:02:43,790 --> 00:02:49,910
+Không, sau này tôi quyết định làm
+điều này ở nhà khi tôi có máy tính riêng
+
+954
+00:02:49,910 --> 00:02:51,740
+vì lúc đó tôi thực sự không có máy
+tính và tôi đã tham gia khóa học này.
+
+955
+00:02:51,740 --> 00:02:53,720
+Điều quan trọng hơn là giúp tôi có được một công việc.
+
+956
+00:02:54,470 --> 00:02:58,880
+Nhưng sau này ở nhà tôi có một chiếc máy tính nhưng tôi lại không có một chiếc máy tính như thế này.
+
+957
+00:02:59,090 --> 00:03:04,850
+Thay vào đó, những gì tôi đã làm là
+đưa một số văn bản trên màn hình và trình
+
+958
+00:03:04,850 --> 00:03:08,800
+xử lý văn bản của tôi lên màn hình
+cùng lúc rồi bắt đầu nhập theo cách đó.
+
+959
+00:03:09,620 --> 00:03:11,810
+Vì vậy, bạn biết đấy, nó trông hơi giống thế này.
+
+960
+00:03:11,810 --> 00:03:15,020
+Bạn biết đấy, tôi phải thay đổi kích thước của trình xử lý văn bản như tôi đã thấy ở đây bên phải.
+
+961
+00:03:15,380 --> 00:03:18,410
+Và sau đó tôi sẽ có, như trong trường hợp này, chiếc Kindle của tôi.
+
+962
+00:03:18,650 --> 00:03:23,570
+Tôi có một cuốn sách Kindle đang
+mở với một số văn bản ở đó nên
+
+963
+00:03:23,570 --> 00:03:26,360
+tôi chỉ cần vào đây và bắt đầu
+nhập văn bản xuất hiện ở bên trái.
+
+964
+00:03:27,260 --> 00:03:30,050
+Vì vậy, tôi sẽ làm điều đó sau này.
+
+965
+00:03:31,340 --> 00:03:35,840
+Tôi nghĩ, bạn biết đấy, tôi muốn tìm hiểu xem tôi muốn đo tốc độ đánh máy của mình nhanh đến mức nào.
+
+966
+00:03:35,840 --> 00:03:40,850
+Vì vậy, tôi đã tìm kiếm trên Internet phần mềm dạy đánh máy, đại loại như vậy.
+
+967
+00:03:41,090 --> 00:03:42,740
+Và tôi có thể nhìn xung quanh.
+
+968
+00:03:42,740 --> 00:03:46,220
+Tôi không thể nhớ nó được gọi là gì và tôi cũng không còn cái nào nữa, nhưng đã tìm thấy một cái.
+
+969
+00:03:46,220 --> 00:03:52,940
+Và tôi đã tải xuống máy tính
+của mình và thứ này, bạn biết đấy,
+
+970
+00:03:52,940 --> 00:03:54,160
+đã tải nhiều từ khác nhau, bài tập
+đánh máy và những thứ tương tự.
+
+971
+00:03:54,710 --> 00:03:58,580
+Nhưng một trong những điều tôi thích ở nó là bạn có thể sao chép và dán văn bản vào đó.
+
+972
+00:03:59,210 --> 00:04:04,130
+Tất cả những gì bạn nghĩ đều
+không cho phép tôi sao chép
+
+973
+00:04:04,130 --> 00:04:06,960
+độ dài của văn bản mà tôi
+đã luyện đi luyện lại trước đó.
+
+974
+00:04:07,010 --> 00:04:09,770
+Chỉ cần cho phép chúng tôi sao chép một lượng nhỏ văn bản trong một thời gian.
+
+975
+00:04:10,250 --> 00:04:13,470
+Nhưng cái hay của nó là tôi có thể gõ văn bản và sau đó là phần mềm.
+
+976
+00:04:13,470 --> 00:04:16,880
+Nó thực sự sẽ cho tôi biết tốc độ gõ từ mỗi phút của tôi là bao nhiêu.
+
+977
+00:04:17,480 --> 00:04:24,230
+Và tôi thực sự đã học được điều
+gì đó từ điều này bởi vì tôi quyết
+
+978
+00:04:24,230 --> 00:04:26,450
+định sao chép từng đoạn một và
+thực hành đi thực hành lại một đoạn văn.
+
+979
+00:04:26,480 --> 00:04:30,710
+Điều tôi nhận thấy sau đó tốc độ của tôi thậm chí còn tăng lên nhiều hơn.
+
+980
+00:04:30,980 --> 00:04:37,790
+Nó thực sự làm được nhiều hơn những gì nó đã làm khi tôi gõ những đoạn văn bản dài hơn.
+
+981
+00:04:38,150 --> 00:04:41,630
+Thế là gõ đi gõ lại đoạn văn đó một đoạn văn ngắn hơn.
+
+982
+00:04:42,230 --> 00:04:44,140
+Tốc độ của tôi thậm chí còn được cải thiện hơn nữa.
+
+983
+00:04:44,360 --> 00:04:49,580
+Và đây là lúc tôi phát hiện ra rằng tốc độ đánh máy của tôi thường vào khoảng 180 từ một phút.
+
+984
+00:04:49,580 --> 00:04:53,470
+Và đôi khi tôi ngạc nhiên vì nó thậm chí có thể đạt hơn 200 từ một phút.
+
+985
+00:04:53,630 --> 00:04:56,290
+Trên thực tế, thật tốt khi nhìn thấy sự tiến bộ.
+
+986
+00:04:56,300 --> 00:04:58,400
+Vì vậy, đây là phương pháp.
+
+987
+00:04:58,400 --> 00:05:04,670
+Bạn biết đấy, cách để tăng tốc độ
+đánh máy của bạn là gõ các đoạn văn
+
+988
+00:05:04,670 --> 00:05:06,230
+bản, lý tưởng nhất là các đoạn văn
+ngắn, đoạn văn hoặc những thứ tương tự.
+
+989
+00:05:06,500 --> 00:05:07,640
+Hết lần này đến lần khác.
+
+990
+00:05:07,640 --> 00:05:13,430
+Bạn sẽ nhận thấy rằng tốc độ gõ của bạn sẽ
+tăng lên nếu bạn tiếp tục làm điều này. 
+
+@@@
+
+
+
+991
+00:00:01,080 --> 00:00:06,750
+Chà, tôi sẽ không chia sẻ
+với bạn điều gì đó sẽ giúp
+
+992
+00:00:06,750 --> 00:00:07,620
+bạn tiến bộ nhanh hơn mà
+không mắc nhiều sai lầm.
+
+993
+00:00:07,950 --> 00:00:14,730
+Vì vậy, khi tôi đang gõ, tôi đã có ý tưởng rằng để gõ nhanh hơn, bạn chỉ cần cố gắng gõ nhanh hơn.
+
+994
+00:00:15,030 --> 00:00:15,960
+Vì vậy đó là những gì tôi đã làm.
+
+995
+00:00:16,240 --> 00:00:23,190
+Tôi đang gõ văn bản của mình và như
+tôi đã nói với bạn trong video trước, và
+
+996
+00:00:23,190 --> 00:00:25,710
+tôi nghĩ, à, tôi sẽ thúc đẩy bản thân đi
+nhanh hơn, nhanh hơn và nhanh hơn nữa.
+
+997
+00:00:26,100 --> 00:00:32,520
+Và mặc dù có vẻ như tốc độ đánh máy của tôi không cao nhưng tôi vẫn liên tục mắc lỗi.
+
+998
+00:00:33,180 --> 00:00:39,480
+Nhưng tôi, tôi chỉ nghĩ và
+nói, được rồi, tôi cứ cố gắng
+
+999
+00:00:39,480 --> 00:00:40,440
+viết nhanh hơn và cuối
+cùng những lỗi đó sẽ biến mất.
+
+1000
+00:00:41,080 --> 00:00:46,980
+Trên thực tế thì hoàn toàn ngược
+lại, bởi vì khi bạn tập mắc lỗi,
+
+1001
+00:00:46,980 --> 00:00:49,700
+bạn sẽ mắc lỗi tốt hơn và đó không
+thực sự là điều bạn mong muốn.
+
+1002
+00:00:50,430 --> 00:00:56,490
+Vì vậy, cách tốt hơn để làm điều đó là điều tôi
+đã thử tiếp theo là thay vì cố gắng gõ nhanh hơn,
+
+1003
+00:00:56,490 --> 00:01:04,860
+hãy giữ nó chính xác, đừng thử quá chậm mà chỉ
+cần gõ ở tốc độ đủ nhanh để bạn không mắc lỗi.
+
+1004
+00:01:04,860 --> 00:01:06,480
+và cứ tiếp tục làm điều đó.
+
+1005
+00:01:06,930 --> 00:01:08,940
+Và nó giống như đi xe đạp.
+
+1006
+00:01:08,940 --> 00:01:12,000
+Bạn biết đấy, khi lần đầu tiên bạn nhảy lên một chiếc xe đạp, bạn không cố gắng đi nhanh nhất có thể.
+
+1007
+00:01:12,270 --> 00:01:17,790
+Trước tiên, bạn làm quen với việc giữ xe thẳng đứng,
+giữ yên xe, sau đó dần dần, khi sự tự tin của bạn
+
+1008
+00:01:17,790 --> 00:01:25,160
+tăng lên, hãy xoay bàn đạp, bạn sẽ trở nên tự tin
+hơn và tốc độ của bạn sẽ tăng lên một cách tự nhiên.
+
+1009
+00:01:25,470 --> 00:01:28,680
+Và đó là những gì tôi tìm thấy khi làm điều đó với việc đánh máy của mình.
+
+1010
+00:01:28,960 --> 00:01:35,280
+Vì vậy, những gì tôi đã làm là tôi gõ văn bản tôi đang sao chép nó, gọi cho tôi văn bản của tôi như tôi đang làm ở đó và
+
+1011
+00:01:35,280 --> 00:01:42,570
+Tôi chỉ làm điều đó với
+tốc độ mà tôi không mắc
+
+1012
+00:01:42,570 --> 00:01:43,200
+lỗi hoặc chúng ta sẽ
+nói càng ít lỗi càng tốt.
+
+1013
+00:01:44,020 --> 00:01:50,970
+Vì vậy, bài học tôi muốn bạn rút ra từ điều này là tập trung vào độ chính xác hơn là tốc độ.
+
+1014
+00:01:51,840 --> 00:01:59,190
+Hãy cố gắng đảm bảo rằng bạn đang gõ chính xác các
+từ, giữ cho việc gõ của bạn không mắc lỗi và khi đó
+
+1015
+00:01:59,190 --> 00:02:05,670
+tốc độ bạn đạt được sẽ đến một cách tự nhiên khi
+bạn tự tin hơn vào khả năng đánh máy của mình. 
+
+@@@
+
+
+
+1016
+00:00:01,470 --> 00:00:08,130
+Vì vậy, bạn chưa học được
+tất cả các phím và hy vọng
+
+1017
+00:00:08,130 --> 00:00:11,310
+bạn đã luyện tập tất cả các
+phím để có thể học cách gõ.
+
+1018
+00:00:11,310 --> 00:00:12,380
+Không, tốt hơn bạn nên gõ.
+
+1019
+00:00:12,480 --> 00:00:20,590
+Mỗi phím trên bàn phím của bạn mà không cần phải nhìn xuống nó.
+
+1020
+00:00:20,610 --> 00:00:28,180
+Được rồi, hãy tiếp tục luyện tập, ghi nhớ các bài tập 30 giây mỗi cặp bằng phiếu thực hành của bạn.
+
+1021
+00:00:28,180 --> 00:00:31,410
+Kiên trì thực hiện hàng ngày cho đến khi thành thạo.
+
+1022
+00:00:31,410 --> 00:00:32,340
+Giữ từ từ.
+
+1023
+00:00:32,340 --> 00:00:36,290
+Đừng phạm sai lầm chỉ tăng tốc độ của bạn dần dần.
+
+1024
+00:00:36,420 --> 00:00:42,310
+Vì vậy, cuối cùng, bạn càng làm nhiều thì mọi việc sẽ càng dễ dàng hơn và bạn cũng sẽ tiến bộ nhanh hơn.
+
+1025
+00:00:42,330 --> 00:00:44,180
+Vì vậy, hãy làm tất cả các cặp.
+
+1026
+00:00:44,190 --> 00:00:52,850
+Hãy tin tôi rằng đây là cách nhanh nhất để học cách gõ và gõ bàn phím nhanh hơn.
+
+1027
+00:00:52,870 --> 00:00:55,620
+Bây giờ với điều đó tiếp tục thực hành.
+
+1028
+00:00:55,740 --> 00:01:03,050
+Vì vậy, điều tôi khuyên bạn nên làm tốt như thế này bây giờ là thực hành gõ văn bản thực sự.
+
+1029
+00:01:03,060 --> 00:01:10,650
+Vì vậy, chỉ cần giúp bạn biết các đoạn văn bản hoặc bất kỳ mục nào bên cạnh máy tính hoặc trên máy tính của bạn.
+
+1030
+00:01:10,650 --> 00:01:14,400
+Tiếp theo ở đây bạn có văn bản ở một bên và quy trình đăng bài của bạn ở bên tiếp theo.
+
+1031
+00:01:14,400 --> 00:01:17,670
+Chỉ cần thực hành gõ văn bản một lần nữa.
+
+1032
+00:01:17,680 --> 00:01:25,130
+Bạn biết đấy lời khuyên của tôi là hãy từ từ ở những loại đầu tiên, hãy từ từ đảm bảo độ chính xác của nó luôn chính xác.
+
+1033
+00:01:25,290 --> 00:01:27,140
+Và sau đó từ từ tăng tốc độ lên.
+
+1034
+00:01:27,150 --> 00:01:31,640
+Nếu không, bạn cố gắng đi quá nhanh trước và bạn đang mắc sai lầm.
+
+1035
+00:01:31,670 --> 00:01:37,380
+Cuối cùng, chúng ta sẽ thực
+hành những sai lầm và bạn sẽ chỉ
+
+1036
+00:01:37,380 --> 00:01:38,330
+khó học cách thoát khỏi những
+sai lầm của mình hơn mà thôi.
+
+1037
+00:01:38,460 --> 00:01:39,330
+Vì thế hãy cứ từ từ.
+
+1038
+00:01:39,330 --> 00:01:47,310
+Chỉ cần tiếp tục thực hành các
+đoạn văn bản thường xuyên nhất
+
+1039
+00:01:47,340 --> 00:01:50,190
+có thể và bạn sẽ thấy tốc độ
+của mình sẽ ngày càng nhanh hơn.
+
+1040
+00:01:50,310 --> 00:01:55,100
+Và đó là những gì tôi đã làm để tự học đánh máy.
+
+1041
+00:01:55,150 --> 00:02:03,310
+Bây giờ tôi chân thành hy vọng
+rằng bạn thích khóa học này nhưng
+
+1042
+00:02:03,340 --> 00:02:06,630
+hơn hết là bạn sẽ đánh máy nhanh
+hơn nhiều để làm việc hiệu quả hơn.
+
+1043
+00:02:07,750 --> 00:02:12,550
+Tuy nhiên, bạn biết nếu có bất kỳ phản hồi nào
+về khóa học, nếu có bất kỳ điều gì bạn muốn
+
+1044
+00:02:12,550 --> 00:02:19,770
+đưa vào mà tôi chưa đưa vào thì bạn biết đấy,
+hãy cho tôi biết để tôi có thể cải thiện.
+
+1045
+00:02:19,980 --> 00:02:23,110
+Bây giờ nếu bạn muốn hỏi tôi bất kỳ câu hỏi nào.
+
+1046
+00:02:23,110 --> 00:02:24,790
+Và đây là phần hỏi đáp.
+
+1047
+00:02:24,790 --> 00:02:26,920
+Bạn chỉ cần nhấp vào Q và A.
+
+1048
+00:02:26,950 --> 00:02:30,580
+Chà, hiện tại nó trông như vậy trừ khi đối với tôi bây giờ bạn đã thay đổi nó.
+
+1049
+00:02:31,060 --> 00:02:33,880
+Nhưng đây là phần hỏi đáp và chỉ đơn giản là ra ngoài và bạn.
+
+1050
+00:02:33,880 --> 00:02:37,360
+CÂU HỎI Không, tôi sẽ liên lạc lại với bạn.
+
+1051
+00:02:37,360 --> 00:02:41,830
+Có thể không ngay lập tức hoặc có thể không cùng ngày vì đôi khi có những việc khác
+
+1052
+00:02:41,850 --> 00:02:47,980
+Tôi có nhưng bạn biết đấy, tôi chắc chắn sẽ quay lại với bạn nếu bạn để lại câu hỏi ở đó.
+
+1053
+00:02:48,130 --> 00:02:54,610
+Tôi sẽ liên hệ lại với bạn ngay khi có thể vì tôi thực sự muốn bạn giúp đỡ. Xin lỗi.
+
+1054
+00:02:54,680 --> 00:02:56,990
+Và một lần nữa tôi thực sự muốn giúp bạn.
+
+1055
+00:02:57,530 --> 00:02:59,240
+Được vậy thì tuyệt vời.
+
+1056
+00:02:59,240 --> 00:03:01,180
+Tôi cũng thực sự đánh giá cao nó.
+
+1057
+00:03:01,180 --> 00:03:07,840
+Nếu bạn yêu thích khóa học thì bạn biết đấy,
+thật tuyệt vời nếu bạn có thể để lại vài
+
+1058
+00:03:07,870 --> 00:03:10,540
+lời trong bất kỳ bài đánh giá nào. Cảm ơn
+bạn rất nhiều vì đã tham gia khóa học này.
 

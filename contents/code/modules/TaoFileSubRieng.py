@@ -21,6 +21,8 @@ def TaoFileSubRieng(root_dir):
 
         if os.path.exists(new_file):
             os.remove(new_file)
+        # # NOTE: Nếu không đổi
+        # os.rename(sub_file,new_file)
 
         new_sub = FormatFileSub(sub_file)
         new_sub.save(new_file, encoding='utf-8')

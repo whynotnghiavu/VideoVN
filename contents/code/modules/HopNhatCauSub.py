@@ -18,6 +18,8 @@ def HopNhatCauSub(root_dir):
 
         if os.path.exists(new_file):
             os.remove(new_file)
+        # # NOTE: Nếu không đổi
+        # os.rename(sub_file,new_file)
 
         subs_old = pysrt.open(sub_file, encoding='utf-8')
         subs_new = pysrt.SubRipFile()
