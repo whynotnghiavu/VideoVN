@@ -19,8 +19,8 @@ def DoiTenFolderCon(root_dir):
                         MyLog.info(f"DoiTenFolderCon: subfolder_path={subfolder_path}")
                         MyLog.info(f"DoiTenFolderCon: new_name={new_name}")
 
-                        if os.path.exists(new_name):
-                            os.remove(new_name)
+                        # if os.path.exists(new_name):
+                        #     os.remove(new_name)
 
                         os.rename(subfolder_path, new_name)
                 except Exception as e:

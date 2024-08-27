@@ -67,7 +67,23 @@ Những phím tắt này sẽ giúp chúng ta tăng năng suất bằng cách ti
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -200,7 +216,23 @@ một lập trình viên, đây có thể là một kỹ năng tuyệt vời đ�
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -341,7 +373,23 @@ hàng ngày. Hãy dành chút thời gian để phát triển kỹ năng này v�
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -470,7 +518,23 @@ mình. Sẽ không thoải mái khi vượt qua loại. Vì vậy, đây là nó
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -611,7 +675,23 @@ tối đa hóa và trong ngày hôm sau. Chúng ta sẽ tìm hiểu cài đặt 
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -812,7 +892,23 @@ Bạn có thể thấy sự tiến bộ của mình theo thời gian. Vì vậy,
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -953,7 +1049,23 @@ theo những quy tắc này, tôi nghĩ Pyramus sẽ có lợi và trong vòng m
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -1106,7 +1218,23 @@ chúc may mắn, các bạn. Hãy tiếp tục luyện tập. Và hẹn gặp l�
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -1235,7 +1363,23 @@ gõ phím đó. Vì thế hãy luyện tập và luyện tập tối thiểu nă
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -1356,7 +1500,23 @@ tự đó. Nếu có thể, bạn có thể phát âm nó một cách im lặng,
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -1481,7 +1641,23 @@ Vì vậy, hãy luyện tập cho 500 ký tự trong bốn hoặc năm phút tro
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -1610,7 +1786,23 @@ vật tiếp theo. Và đừng quên chia sẻ quan điểm của mình ở ph�
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -1751,7 +1943,23 @@ cách hoàn toàn. Luyện tập một giờ để làm quen với quy trình vi
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -1884,7 +2092,23 @@ cũng với niềm hy vọng trọn vẹn và nghiệp báo. Vậy chúng ta s�
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -2037,7 +2261,23 @@ có sẵn. Và mỗi lần tôi làm điều đó, tôi luôn đặt con tàu b�
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -2170,7 +2410,23 @@ Và từ bây giờ, bạn có thể tiến về phía trước rất nhanh vì 
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -2291,7 +2547,23 @@ chúng ta có được chữ P nhỏ. Có lẽ chúng ta cũng cần xỏ ngón 
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -2432,7 +2704,23 @@ sau đó sẽ ổn thôi. Vì vậy, hãy tiếp tục luyện tập cho đến 
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -2577,7 +2865,23 @@ hiện điều đó. Và cũng trong trường hợp cao. Vì vậy, hãy tiếp
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -2726,7 +3030,23 @@ không thể nhớ ai là người chỉ cho Hudes, bạn luôn có thể ngồi
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -2871,7 +3191,23 @@ ta sẽ nói về một số cách sử dụng phím tắt đầy đủ, điều
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -3020,7 +3356,23 @@ Và mực là nếu bạn là người dùng Mac. Bạn có thể sử dụng ph
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 
@@ -3169,7 +3521,23 @@ biết điều đó vì đây là lối tắt khá phổ biến. Vậy hẹn g�
 
 
 
+
+
+
+
+
+
+
+
 @@@
+
+
+
+
+
+
+
+
 
 
 

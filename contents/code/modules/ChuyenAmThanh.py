@@ -16,7 +16,7 @@ def ChuyenAmThanh(root_dir):
     for sub_file in sub_files:
         MyLog.info(f"ChuyenAmThanh: sub_file={sub_file}")
         audio_folder = MyNewPath(sub_file, CONST.VN2_VVN_NGHIA, "")
-        MyLog.info(f"ChuyenAmThanh: audio_file={audio_file}")
+        MyLog.info(f"ChuyenAmThanh: audio_folder={audio_folder}")
 
         if os.path.exists(audio_folder):
             shutil.rmtree(audio_folder)

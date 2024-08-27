@@ -11,6 +11,7 @@ from modules.FormatFileSub import FormatFileSub
 def TachFileSub(root_dir):
     infor_file = open(CONST.INFOR_FILE, "r", encoding="utf-8")
     sub_files = infor_file.readlines()
+    sub_files = [i.strip() for i in sub_files]
 
     merged_file = open(CONST.MERGED_VIETNAM_FILE, "r", encoding="utf-8")
     contents = merged_file.read()

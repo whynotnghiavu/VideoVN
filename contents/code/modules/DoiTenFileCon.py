@@ -23,8 +23,8 @@ def DoiTenFileCon(root_dir):
                 MyLog.info(f"DoiTenFileCon: file={file}")
                 MyLog.info(f"DoiTenFileCon: new_name={new_name}")
 
-                if os.path.exists(new_name):
-                    os.remove(new_name)
+                # if os.path.exists(new_name):
+                #     os.remove(new_name)
 
                 os.rename(file, new_name)
             except Exception as e:
