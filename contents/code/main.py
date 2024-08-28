@@ -8,7 +8,6 @@ if __name__ == "__main__":
 # NOTE: Ghi chú bên dưới thay cho README.md
 
 
-#! 0375942842
 
 # ! Vẫn cần đưa về 1 folder để tạo sub nhanh
 # như nestjs...
