@@ -1,15 +1,20 @@
 import logging
+from datetime import datetime
 from colorama import init, Fore, Style
 
 # Khởi tạo colorama
 init(autoreset=True)
+
+
+now = datetime.now()
+now = now.strftime("%Y%m%d%H%M%S%f")
 
 # Cấu hình logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("history/output.log", encoding="utf-8"),
+        logging.FileHandler(f"history/output{now}.log", encoding="utf-8"),
         # logging.StreamHandler()
     ]
 )
