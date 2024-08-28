@@ -9,7 +9,10 @@ def ThongTinFile(root_dir, extensions):
     for i in extensions:
         type += f" {i} "
         count += MyFile.SoLuong(root_dir, f"{i}")
-    print(f'[{type} = {count}]', end=" ")
+    if count:
+        print(f'\033[32m[{type} = {count}]\033[39m', end=" ")
+    else:
+        print(f'[{type} = {count}]', end=" ")
 
 
 def GhiThongTin(root_dir):
