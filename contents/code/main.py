@@ -11,6 +11,7 @@ if __name__ == "__main__":
 #! 0375942842
 
 # ! Vẫn cần đưa về 1 folder để tạo sub nhanh
+# như nestjs...
 
 # !
 #! Bug: Đường dẫn đặc biệt khi dùng các hàm ban đầu
