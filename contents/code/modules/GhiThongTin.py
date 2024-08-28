@@ -3,6 +3,28 @@ from modules.CONST import CONST
 from modules.MyFile import MyFile
 
 
+
+
+
+
+
+
+
+def SoCauDich():
+    with open(CONST.MERGED_FILE, "r", encoding="utf-8") as merged_file:
+        contents = merged_file.read()
+    count = (contents.count("-->"))
+    if count:
+        print(f'\033[32m[Số câu cần dịch: {count}]\033[39m', end=" ")
+    else:
+        print(f'[Số câu cần dịch: {count}]', end=" ")
+
+
+
+
+
+
+
 def ThongTinFile(root_dir, extensions):
     type = ""
     count = 0
@@ -13,6 +35,12 @@ def ThongTinFile(root_dir, extensions):
         print(f'\033[32m[{type} = {count}]\033[39m', end=" ")
     else:
         print(f'[{type} = {count}]', end=" ")
+
+
+
+
+
+
 
 
 def GhiThongTin(root_dir):
@@ -36,6 +64,14 @@ def GhiThongTin(root_dir):
     ThongTinFile(root_dir, [CONST.ENGLISH_VVN_NGHIA])
     ThongTinFile(root_dir, [CONST.MERGE_VVN_NGHIA])
     print()
+
+
+
+
+    SoCauDich()
+
+
+
 
     ThongTinFile(root_dir, [CONST.VN1_VVN_NGHIA])
     ThongTinFile(root_dir, [CONST.VN2_VVN_NGHIA])
