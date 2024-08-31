@@ -1,0 +1,27 @@
+2024-08-29 18:46:32,823 - WARNING - Bắt đầu chương trình
+2024-08-29 18:46:32,881 - WARNING - Bắt đầu chức năng: Chọn thư mục
+2024-08-29 18:46:37,354 - INFO - Đã chọn: C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File
+2024-08-29 18:46:37,354 - WARNING - Kết thúc chức năng: Chọn thư mục
+2024-08-29 18:46:37,354 - WARNING - C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File
+2024-08-29 18:46:42,703 - WARNING - Bắt đầu chức năng: Đổi tên folder con
+2024-08-29 18:46:42,704 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\1 - Introduction
+2024-08-29 18:46:42,705 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000001
+2024-08-29 18:46:42,706 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\2 - Ergonomics for Success
+2024-08-29 18:46:42,706 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000002
+2024-08-29 18:46:42,707 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\3 - Different Typing Methods 10x Your Typing Speed
+2024-08-29 18:46:42,707 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000003
+2024-08-29 18:46:42,708 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\4 - How To Touch Type
+2024-08-29 18:46:42,709 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000004
+2024-08-29 18:46:42,710 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\5 - How To Unconventionally Type
+2024-08-29 18:46:42,710 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000005
+2024-08-29 18:46:42,712 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\6 - Industry Secrets of Typing Faster
+2024-08-29 18:46:42,713 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000006
+2024-08-29 18:46:42,714 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\7 - Industry Secrets of Practicing Better
+2024-08-29 18:46:42,714 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000007
+2024-08-29 18:46:42,716 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\8 - Mastering Shortcuts
+2024-08-29 18:46:42,716 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000008
+2024-08-29 18:46:42,718 - INFO - DoiTenFolderCon: subfolder_path=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\9 - Conclusion
+2024-08-29 18:46:42,719 - INFO - DoiTenFolderCon: new_name=C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File\000000009
+2024-08-29 18:46:42,721 - WARNING - Kết thúc chức năng: Đổi tên folder con
+2024-08-29 18:46:42,722 - WARNING - C:/Users/vvn20206205/Downloads/Nghia/Git/whynotnghiavu/nghia-extensions-delete-empty-folder/contents/input-nghia-extensions-delete-empty-folder/2Tay/File
+2024-08-29 18:46:50,137 - WARNING - Bắt đầu chức năng: Thoát chương trình

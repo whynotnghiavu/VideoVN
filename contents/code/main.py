@@ -7,11 +7,12 @@ if __name__ == "__main__":
     app()
 # NOTE: Ghi chú bên dưới thay cho README.md
 
-
+# C:\Users\vvn20206205\Downloads\video\DoThiJava
 
 # ! Vẫn cần đưa về 1 folder để tạo sub nhanh
 # như nestjs...
-
-# !
+ 
 #! Bug: Đường dẫn đặc biệt khi dùng các hàm ban đầu
-#  file sub có lỗi es???????? (Là lỗi gì????)
+# FileNotFoundError: [WinError 3] The system cannot find the path specified:
+
+#!  file sub có lỗi es???????? (Là lỗi gì????)
