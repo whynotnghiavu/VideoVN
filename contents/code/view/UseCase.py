@@ -25,6 +25,14 @@ class UseCase():
     XuLyFileKetQuaDich = "Xử lý file kết quả dịch"
 
     TachFileSub = "Tách file sub"
+
+
+
+
+    TatCa3 = "Tất cả 3"
+
+
+
     ChuyenAmThanh = "Chuyển âm thanh"
     ThemAmThanh = "Thêm âm thanh"
     HopAmThanh = "Hợp âm thanh"

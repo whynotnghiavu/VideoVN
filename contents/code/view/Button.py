@@ -25,6 +25,7 @@ class Button():
         UseCase.TatCa2: THEMES.TAT_CA,
         UseCase.XuLyFileKetQuaDich: THEMES.DOC_LAP,
         UseCase.TachFileSub: THEMES.BINH_THUONG,
+        UseCase.TatCa3: THEMES.TAT_CA,
         UseCase.ChuyenAmThanh: THEMES.BINH_THUONG,
         UseCase.ThemAmThanh: THEMES.BINH_THUONG,
         UseCase.HopAmThanh: THEMES.BINH_THUONG,

@@ -167,6 +167,7 @@ def Router(chuc_nang):
         XuLyFileKetQuaDich()
         TachFileSub(root_dir)
 
+    elif chuc_nang == UseCase.TatCa3:
         ChuyenAmThanh(root_dir)
         ThemAmThanh(root_dir)
         HopAmThanh(root_dir)
