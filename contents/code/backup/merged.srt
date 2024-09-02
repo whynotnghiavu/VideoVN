@@ -1,254 +1,2378 @@
 @@@
 1
-00:00:00,005 --> 00:00:10,005
-- [Scott] Data drives our world, and SQL is the language we often use to work with that data. Querying databases with SQL gives us the ability to explore, analyze, and most importantly, use all kinds of data.
+00:00:01,000 --> 00:00:11,010
+- [Dan] Hi and welcome, I'm Dan Lachance. Over the years, I've done IT work in the form of programming, network administration, teaching classes, and security auditing.
 
 2
-00:00:10,005 --> 00:00:21,008
-In this code challenge course, you can test your knowledge of intermediate-level queries in SQL to build your confidence working with the various data analysis and reporting tools that many SQL-compatible relational database management systems provide.
+00:00:11,010 --> 00:00:26,050
+And all too often, I've seen security holes that are easily mitigated. This course not only exposes you to PKI, SSL, and TLS, but it will also define how, and why specific configurations should and should not be used.
 
 3
-00:00:21,008 --> 00:00:31,007
-I'm Scott Simpson, Senior Staff Instructor at LinkedIn Learning, and I've put together five code challenges that cover a variety of intermediate level SQL concepts that allow us to use and transform data.
+00:00:26,050 --> 00:00:35,030
+So what will be covered in this course? We'll start by talking about Public Key Infrastructure and it's relationship to encryption, hashing, and digital signatures.
 
 4
-00:00:31,007 --> 00:00:42,006
-Build and test your solutions to these challenges in the built-in interactive coding environment. No special software required. And when you finish your solution to each challenge, take a look at my solution videos to see how I solve them.
+00:00:35,030 --> 00:00:52,000
+We'll also demonstrate how to install and configure PKI solutions on the Windows and Linux platforms. We'll talk about Secure Sockets Layer, or SSL, as well as Transport Layer Security, or TLS, which are used to secure network communications.
 
 
 @@@
 1
-00:00:00,005 --> 00:00:09,006
-- [Tutor] In this Code Challenge Course, I expect you to be familiar with writing queries in SQL. We'll spend time grouping and filtering data, joining tables, and transforming values.
+00:00:01,000 --> 00:00:16,080
+- [Instructor] Before we jump into the meat related to PKI, SSL and TLS, there are a few things that you need to know beforehand. The first, in terms of prerequisite knowledge, is having some kind of experience with the TCP/IP network protocol suite.
 
 2
-00:00:09,006 --> 00:00:22,004
-These challenges each combine a couple of intermediate difficulty concepts, that are often used in data reporting and data preparation. If you need to refresh your SQL knowledge, take a look at these courses in the LinkedIn Learning Library.
+00:00:16,080 --> 00:00:27,040
+You should have a basic knowledge of Microsoft Windows Server operating systems, as well as having a general knowledge of the Linux operating system environment.
 
 3
-00:00:22,004 --> 00:00:31,001
-In the challenges, we provide a database that describes a small neighborhood restaurant. We'll see tables like employees, reservations, orders, dishes, and so on.
+00:00:27,040 --> 00:00:46,020
+You should have a general sense of how you might go about configuring a web browser on a client device, and also a general sense of how to go about configuring a web server, whether it's Microsoft's Internet Information Services or the Apache 2 web server running on the Linux platform.
 
 4
-00:00:31,001 --> 00:00:39,006
-Each challenge will give you an entity relationship diagram to describe the table or tables being used. And feel free to SELECT * on the tables to look at the actual data.
+00:00:46,020 --> 00:00:58,040
+In our lab environment, we have a Microsoft Windows Server 2016 machine. This is an Active Directory domain controller for a domain called fakedomain1.local.
 
 5
-00:00:39,006 --> 00:00:48,005
-If you do, the interface will show that output is a wrong answer. But don't worry, there's no points or time, or anything like that, that you'll lose or risk having taken away.
+00:00:58,040 --> 00:01:12,080
+Also, we have the IIS web server role installed, so the machine is also a web server. During the course, we'll be installing the certification authority role to support a public key infrastructure, or a PKI.
 
 6
-00:00:48,005 --> 00:00:55,000
-To work on these challenges, you don't need to install any separate software. The Coding Challenge environment is part of the LinkedIn Learning COurse Page.
-
-
-@@@
-1
-00:00:00,005 --> 00:00:12,000
-- [Instructor] This course consists of automated code challenges that appear when you click on the challenge links in the course's table of contents. Each challenge includes instructions and a code editor you can use to create and test your own solution to the challenge.
-
-2
-00:00:12,000 --> 00:00:24,008
-These challenges are hosted by CoderPad, and they appear in the same area of the course page where you watch the course's videos. We recommend using a desktop browser for the best experience with code challenges, but you can use the LinkedIn Learning mobile app if you prefer.
-
-3
-00:00:24,008 --> 00:00:33,005
-The code challenge has three areas, instructions in the top left, a console for output in the bottom left and a code editor for your answer on the right.
-
-4
-00:00:33,005 --> 00:00:43,006
-You can use these drag handles to allocate space as you like. To get even more horizontal space for the code editor, you can collapse the course's table of contents on the left.
-
-5
-00:00:43,006 --> 00:00:52,000
-Each challenge has instructions that include a description of the challenge and the challenge's desired result. Create your answer in the code editor.
-
-6
-00:00:52,000 --> 00:01:08,008
-(keyboard clicks) When you click Test my code, you'll see a message indicating whether your code returned a correct result and a text-based version of the returned data.
+00:01:12,080 --> 00:01:23,000
+We'll also be using the Internet Explorer web browser to test connectivity to things such as a secured web server, but really any web browser could be used.
 
 7
-00:01:08,008 --> 00:01:20,001
-If your answer doesn't create a correct result, you'll see a message telling you the code is incorrect and showing the data that was returned. If any of the messages are too long to fit in the console, you can scroll sideways to see all of the text.
-
-
-@@@
-1
-00:00:00,005 --> 00:00:09,007
-- [Instructor] Here is how I solved this challenge. I start out returning the customer ID, their first and last name, and the sum of the dishes that the customer has ordered.
-
-2
-00:00:09,007 --> 00:00:19,009
-That's made possible by joining the orders table, which I'm calling O in the CTE notation, with orders dishes, which I'm naming OD. And I'm matching up the order ID on each table.
-
-3
-00:00:19,009 --> 00:00:28,009
-This lets me get each item that was part of each order. The orders dishes table stores dish IDs, and to get a dishes price, we need to join the dishes table, which I'm calling D.
-
-4
-00:00:28,009 --> 00:00:40,006
-Based on matching the dish ID on orders dishes and dishes, that completes the set of things we need to get prices of dishes and orders. We also need to join the customer's table because we want to know the names of the customers.
-
-5
-00:00:40,006 --> 00:00:52,009
-The orders table contains a customer ID, and so does the customer's table, so we match those up to give us access to the customer's name fields. We group these results by customer ID since we're adding up the total price of items spent by each customer.
-
-6
-00:00:52,009 --> 00:01:02,002
-So we need to have just one row per customer. Without a condition, this would represent all our customers, but the challenge asked for only those customers who spent more than $450.
-
-7
-00:01:02,002 --> 00:01:14,000
-So we need to evaluate each customer's total spend. Total spend is an aggregate value based on more than one row's values, not a single row value. So we need to use HAVING to check its value instead of where.
+00:01:23,000 --> 00:01:42,070
+We'll also be using Kali Linux. It could be any distribution of Linux, there's not a specific reason why Kali Linux was chosen. However, what's important in the Linux environment is that we need to make sure that we either have installed the OpenSSL certificate authority or, if it's not there, make sure you do install it.
 
 8
-00:01:14,000 --> 00:01:23,001
-We could still have a where clause in here to check some other individual row value, like the customer's home state or something like that, but we don't need a where for this particular solution.
+00:01:42,070 --> 00:01:54,020
+And the way that we do that will vary between one Linux distribution and another. Also, we want to make sure that the Apache web server component is installed on Linux.
 
 9
-00:01:23,001 --> 00:01:36,000
-Finally, I order the table by total spend descending to put our top spender at the top of the list. I'll run this and see if it works. It does. Here's a list of our top spenders of all time.
+00:01:54,020 --> 00:02:05,000
+Just like we'll be using the certification authority in Windows, we'll be using OpenSSL in Linux to establish a certificate authority and then issuing a few certificates.
 
 
 @@@
 1
-00:00:00,005 --> 00:00:14,005
-- [Instructor] To solve this challenge, I used GROUP_CONCAT, a function in MySQL and similar DBMSs that concatenates items based on their grouping. Microsoft SQL has a similar function called STRING_AGG, short for string aggregation, that works in the same way.
+00:00:01,000 --> 00:00:12,090
+- [Instructor] SSL and TLS are security protocols that are used to secure network communications where TLS supersedes the older and deprecated SSL, but we'll talk about those details later.
 
 2
-00:00:14,005 --> 00:00:22,005
-If you use that, you'll need to have provided a separator, which to make the output match with the challenge request, should be a comma with no space following it.
+00:00:12,090 --> 00:00:26,080
+First, let's start talking about cryptography. Cryptography can be defined as a method of securing data such that it's trusted and that it's viewable only by authorized parties.
 
 3
-00:00:22,005 --> 00:00:33,009
-This function works together with a grouping term, which in this case is GROUP BY OrderID. Here we can see the different versions of MySQL and MS SQL syntax that have the same result that we're looking for.
+00:00:26,080 --> 00:00:36,080
+Crypto has been around for a long time in one form or another even in more recent history, such as during World War Two. Pictured here we see a German Enigma machine.
 
 4
-00:00:33,009 --> 00:00:43,001
-The challenge also asked for the list of items to be sorted alphabetically, and here with this MySQL syntax, I'm doing that with the ORDER BY D.Name in the GROUP BY function.
+00:00:36,080 --> 00:00:53,000
+This was used to encrypt messages sent throughout the German military until the Allies were able to crack this system. Cryptographic keys need to be stored somewhere in order to partake in securing things like network communications or data at rest.
 
 5
-00:00:43,001 --> 00:00:55,001
-Ascending is the default order here, so I can leave that off. But if I wanted to be explicit, I could add ASC as well. With MS SQL, that would be a bit different, including A within GROUP clause where the order by D.Name would be.
+00:00:53,000 --> 00:01:12,030
+One way to secure cryptographic keys is within a public key infrastructure, or PKI, certificate. Keys can also be stored on a smart card. Smart carts would be used, for instance, to authenticate to a VPN or perhaps to authenticate to a secured or restricted system in the office.
 
 6
-00:00:55,001 --> 00:01:05,002
-Back here in my solution, we can see that I've joined the three provided tables, Dishes, OrdersDishes, and Orders, so that I can resolve an order ID to the names of the dishes included in it.
+00:01:12,030 --> 00:01:31,080
+Common access cards, or CACs, can do the same thing except they can do more. And so that card that we use to authenticate to restricted computer systems or the VPN might also be the same card we use to gain access to a building or to a floor in the building or to unlock floors on that floor in the building.
 
 7
-00:01:05,002 --> 00:01:22,001
-And as the challenge asked for, I'm only interested in the orders from May 1st, 2022, or 2022-05-01 and later. Then, when these names are returned, they're listed altogether, in alphabetical order, separated by commas, by each order ID.
-
-
-@@@
-1
-00:00:00,005 --> 00:00:13,000
-- [Instructor] To solve this challenge, I'm using the Orders, OrdersDishes, and Dishes tables to find all the orders that include the dish called "Handcrafted Pizza." The challenge asked for the quantity of pizzas sold and the date, let's start out with the date.
-
-2
-00:00:13,000 --> 00:00:27,000
-Each order in our database has a Datetime value associated with it, but we only want the date portion of that, the year, month, and day. Having this date value will allow us to group the count of our pizza orders by day, but right now those values still have a time value attached.
-
-3
-00:00:27,000 --> 00:00:45,006
-So if we tried to group by the current value, we'd only really ever have one pizza ordered at a specific time on a specific day. So, we'll use the CAST keyword and tell the database to reinterpret the OrderDate value as a date type that gets us only the date portion without the time portion, and we'll call that Day.
-
-4
-00:00:45,006 --> 00:00:56,004
-We'll group our results by Day and order them by Day as well. And we'll use the COUNT aggregate function to tell us how many pizzas were sold by day, and we'll call that NumSold.
-
-5
-00:00:56,004 --> 00:01:06,000
-I'll run this to see if it works. And there we go, for each day there was one or more pizza ordered, we have that date and the count of pizzas just like the challenge asked.
-
-
-@@@
-1
-00:00:00,005 --> 00:00:12,001
-- To solve this challenge, we need to use some logic that handles different situations, or cases. We'll start out with some pretty straightforward things, like the name of the dish as dish name, and the price as original price.
-
-2
-00:00:12,001 --> 00:00:22,005
-These fields come from dishes and we'll order our results by dish name. What the challenge asks for though is two more columns; the discount percent and the discounted price.
-
-3
-00:00:22,005 --> 00:00:34,004
-To get the discount percent, which has three conditions to match, I use a case statement and provide those three conditions. When the price of a dish is less than seven the statement returns the text string 5%.
-
-4
-00:00:34,004 --> 00:00:46,002
-When the price is between seven and 10 the statement returns the string 10%. And in any other case, which for us here means any price larger than exactly 10, the statement returns the string 15%.
-
-5
-00:00:46,002 --> 00:01:00,007
-That gets us our discount percent values. So next we need to actually calculate the prices for our items with those discount amounts applied. Here I'll use another case statement with the same conditions, but this time I'll return numbers instead of strings.
-
-6
-00:01:00,007 --> 00:01:21,003
-0.05, 0.1, and 0.15, to represent 5%, 10%, and 15%. That number will be subtracted from one, giving us the portion of the remaining price to charge. So that would be 0.95% or 95%, 0.9 or 90%, and 0.85 or 85%.
-
-7
-00:01:21,003 --> 00:01:35,001
-Then we multiply that value by the price of an item and round it so we don't get long decimal values that we won't be able to make change for. We're rounding this value to two decimal places as the challenge requested, and we'll call this value discounted price.
-
-
-@@@
-1
-00:00:00,005 --> 00:00:07,006
-- [Instructor] To solve this challenge, we'll focus on string manipulation. My solution returns some values from the employee's table, ordered by name.
-
-2
-00:00:07,006 --> 00:00:19,001
-Without a where condition we'll get all the records and that's what we want. The first item in the challenge asked for a strictly five digit employee ID, with leading zeros to fill empty spaces at the beginning of the string.
-
-3
-00:00:19,001 --> 00:00:30,008
-To create this, I used the LPAD or left pad function, which takes three arguments, the field to include, the number of digits to pad to, and the digit or character to use for that padding.
-
-4
-00:00:30,008 --> 00:00:49,006
-I'll call this ID. The next item in the challenge is to provide the employee names in the format last comma first with a space in the middle. So I use the concat or concatenation function to return one string made out of the last name value, a string value comma space, and the first name value, and I'll call this name.
-
-5
-00:00:49,006 --> 00:00:59,005
-Third, I need to generate usernames that are no longer than eight characters, and which include the employee's first initial and whatever part of their last name fits in the remaining seven characters.
-
-6
-00:00:59,005 --> 00:01:10,000
-That all needs to be lowercase. So I start out using substring to slice a specific piece of the string's first name and last name. For first name, I start at character one and return one character.
-
-7
-00:01:10,000 --> 00:01:19,008
-That's the first character in the string. For last name, I start at character one again and I return seven characters from that point. If a string is longer than seven characters, I just get the first seven characters.
+00:01:31,080 --> 00:01:45,050
+Cryptographic keys can also be stored in files. Depending on the type of key you're storing, such as a private key, which we'll define later, you want to make sure that that is in a password-protected file, because it's private to the entity to which it was issued.
 
 8
-00:01:19,008 --> 00:01:28,002
-And if it's shorter than seven characters, I'll get the full string. Then I use the concat function to stick these two strings together with the first initial first.
+00:01:45,050 --> 00:01:56,010
+It's not designed to be shared with others. And so not only should that file containing a private key be password protected, but it should also be stored in a secured location.
 
 9
-00:01:28,002 --> 00:01:38,004
-And then I use the lower function to convert that all to lowercase, and we'll call that value login. And finally, we'll generate email addresses at which our employees can be reached.
+00:01:56,010 --> 00:02:14,000
+Trusted platform module, or TPM, is firmware and that firmware can store cryptographic keys that are used to encrypt and decrypt entire disc volumes. TPM can also store information about the startup sequence on a machine, and if it's been tampered with, TPM can detect it.
 
 10
-00:01:38,004 --> 00:01:45,003
-Our employees have a username in our system, but unfortunately that's different than the logins that we needed to generate for them on this other system.
+00:02:14,000 --> 00:02:25,080
+Cryptographic keys can also be stored on token devices, which can be a physical token, such as a key fob device that's used to gain access to a restricted environment or system or building.
 
 11
-00:01:45,003 --> 00:02:00,009
-For example, our founder and head chef have their first name as a username in our system, instead of a regular username like the other employees. So we'll use concat again to stick each user's real username to this string here that represents our email domain, and we'll call that value email.
+00:02:25,080 --> 00:02:39,070
+Also, token devices these days can be virtual, they can be smartphone apps. But either way, these token devices can store PKI certificate information, including keys, in order to enable security.
 
 12
-00:02:00,009 --> 00:02:11,000
-I'll run this and let's see what we get. Great, this passes the challenge. We'll often need to transform data from our databases in some way instead of just returning it verbatim.
+00:02:39,070 --> 00:02:52,000
+The general encryption process starts with plaintext. Plaintext is origin data before it's been encrypted or scrambled. And so that plaintext gets fed into an encryption algorithm along with the key.
+
+13
+00:02:52,000 --> 00:03:06,030
+The result of which is encrypted data, otherwise called cyphertext. So once data is encrypted, such as sending data over the network, this would happen before it's sent out over the wire or wirelessly.
+
+14
+00:03:06,030 --> 00:03:19,050
+So while it's traversing the network, if the data is encrypted, anyone that can see that network traffic, anyone that captures that network traffic, would normally be able to see the addressing information in that transmission.
+
+15
+00:03:19,050 --> 00:03:28,070
+Because normally, encryption over the network would encrypt only the payload or the data of the packet. You can encrypt more than that, but that is the norm.
+
+16
+00:03:28,070 --> 00:03:39,050
+Finally, only those parties that have the appropriate decryption key would be able to decrypt the ciphertext back into its origin plaintext. So where would cryptography be used?
+
+17
+00:03:39,050 --> 00:03:51,070
+Well, we've defined a few simple examples, but also on a mobile device. We might encrypt all of the contents of the mobile device itself, including any removable media like micro SD cards.
+
+18
+00:03:51,070 --> 00:04:04,090
+We can use crypto to encrypt the file system for protection of data at rest. We can also use it to encrypt network traffic, such as to an https-secured website.
+
+19
+00:04:04,090 --> 00:04:17,060
+We can use cryptography for file hashing, where we can generate a unique file hash or value and then compare that in the future when we take the hash again to the original hash to see if a change has been made.
+
+20
+00:04:17,060 --> 00:04:28,000
+We can also use cryptography with cryptocurrency blockchain transactions. You've probably heard a lot about blockchain in relation to bitcoin digital currency.
+
+21
+00:04:28,000 --> 00:04:41,020
+With blockchain, we really have a central ledger or list of transactions, where each new transaction or block uses the previous block, cryptographic information.
 
 
 @@@
 1
-00:00:00,005 --> 00:00:09,004
-- [Scott] If you we're able to solve these challenges, congratulations, and if not, take some time to refresh your knowledge of intermediate level SQL queries and come back and try again.
+00:00:01,010 --> 00:00:13,010
+- [Male] Having a solid understanding of SSL and TLS stems from understanding symmetric and asymmetric encryption. So let's talk about both of these, starting with symmetric encryption.
 
 2
-00:00:09,004 --> 00:00:18,000
-If you're ready to move on and solve more challenges, take a look at our other interactive SQL code challenge courses here on LinkedIn Learning. See you next time.
+00:00:13,010 --> 00:00:26,060
+Symmetric encryption uses a single "secret" key, and that secret key is used to both encrypt and decrypt. And so all parties then need access to that key to partake in this encryption and decryption.
+
+3
+00:00:26,060 --> 00:00:39,070
+At the same time the key needs to be kept secure, because one of the issues with symmetric encryption is that if that key gets compromised, all of the data that was encrypted with that key is also compromised.
+
+4
+00:00:39,070 --> 00:00:52,070
+Another problem is, how can we safely distribute that single key, on a large scale? There's no easy way to do that, unto itself. However, we can use other technologies like asymmetric encryption, to do this.
+
+5
+00:00:52,070 --> 00:01:03,010
+And we'll talk about asymmetric encryption in just a few minutes. First, let's chat about symmetric encryption algorithms. There are plenty of them out there, we'll just state a couple of the common ones.
+
+6
+00:01:03,010 --> 00:01:15,060
+Starting with AES. AES is the advanced encryption standard. It's essentially the gold standard for the U. S. government that's approved for protecting sensitive information.
+
+7
+00:01:15,060 --> 00:01:27,090
+So the AES algorithm is commonly used and has a maximum key size of 256 bits. Now we don't want to get caught up thinking that the larger the key size, it always means that the data is more secure.
+
+8
+00:01:27,090 --> 00:01:42,050
+Because that's not necessarily the case. It really depends depends on the implementation of that specific encryption algorithm. RC4 is another common encryption algorithm that has a maximum key size of 2,048 bits.
+
+9
+00:01:42,050 --> 00:01:54,090
+Triple DES or 3DES maxes out at 168 bits. This used to be the U. S. government's standard, stemming all the way back to the 1970s. But AES supersedes it.
+
+10
+00:01:54,090 --> 00:02:12,000
+Blowfish is yet another symmetric encryption algorithm that has a maximum key size of 448 bits. There are many other types of encryption algorithms and depending on the tool that you are configuring, will determine whether you get to select the algorithm of your choosing.
+
+11
+00:02:12,000 --> 00:02:27,050
+Asymmetric encryption uses two mathematically related keys. Remember symmetric cryptography uses only one key. Now we have a public and a private key with asymmetric encryption that are mathematically related.
+
+12
+00:02:27,050 --> 00:02:46,090
+And this gets used by PKI, public key infrastructure. Which is often simply called public key cryptography, although a private key is also involved. Common asymmetric encryption algorithm include RSA, now the maximum key size in bits for that is 4,096.
+
+13
+00:02:46,090 --> 00:02:59,050
+Diffie-Hellman is really more of a key exchange mechanism, and so the maximum key size does not apply to it. ElGamal is another algorithm with a maximum key length of 2,048 bits.
+
+14
+00:02:59,050 --> 00:03:16,000
+And ECC with a maximum key size of 256 bits. Again, depending on what you're configuring to secure, data at rest, or network communications, will determine if you get to select one of these asymmetric encryption algorithms.
+
+15
+00:03:16,000 --> 00:03:28,030
+So let's visualize this, imagine that we've got a sender that needs to send a secured email message to a recipient. So here in our diagram, the sender's on the left, the recipient's on the right.
+
+16
+00:03:28,030 --> 00:03:39,000
+So in this case, we're talking about asymmetric email encryption. So two keys are involved, public and private. So we start with plain text in the email message on the left.
+
+17
+00:03:39,000 --> 00:03:53,030
+Once that gets encrypted, it gets encrypted with the public key of the recipient. So the sender somehow needs access to the recipient's public key. Whether the recipient emailed it to them, which is totally fine and safe, it's a public key.
+
+18
+00:03:53,030 --> 00:04:05,070
+Or whether the public keys are published in a central repository, like Microsoft Active Directory, or an email systems address book. One way or another, the public key encrypts the message.
+
+19
+00:04:05,070 --> 00:04:18,080
+Then it can safely be transmitted over a network. Because if anyone were to capture that traffic they would see that communication is occurring, but they wouldn't be able to read the contents of the transmission or the pay load.
+
+20
+00:04:18,080 --> 00:04:28,070
+Now on the recipient's end they would use their mathematically related private key, to decrypt that message. Which results in the original plain text.
+
+21
+00:04:28,070 --> 00:04:40,030
+Now all of this happens very quickly, and it might even be automated, where users don't even have to specify that they want encryption or decrypt. It depends on the mail program their using, and how it's configured.
+
+22
+00:04:40,030 --> 00:04:56,050
+SSL and TLS network security is commonly used to secure a specific application, like an HTTP web server. So in this diagram, we've got a website user on the left, that want's to make a connection to a secured web server listed here on the right.
+
+23
+00:04:56,050 --> 00:05:09,040
+So what happens first is the client device, or the web browser on the client device, will send a list of supported ciphers. What does it support, for securing this connection over the network?
+
+24
+00:05:09,040 --> 00:05:20,010
+The server will then send back the strongest cipher, that will be used along with it's PKI certificate, which includes the server's public key and the server's host name.
+
+25
+00:05:20,010 --> 00:05:33,080
+Now this is where some common attacks have take place in the past. Where we can try to fool a server into downgrading to a much lower level of security in terms of the supported cipher.
+
+26
+00:05:33,080 --> 00:05:48,040
+But we'll talk about that a little bit later when we focus on SSL and TLS. So at this point the server has a PKI certificate that was issued to it, and the server's public key is in it, which gets sent to the website user's web browser.
+
+27
+00:05:48,040 --> 00:06:00,030
+Then the client web browser will generate and send a unique session key, this is a symmetric key. Now to secure that symmetric key, it is encrypted with the web server's public key.
+
+28
+00:06:00,030 --> 00:06:13,000
+The web server then decrypts it with that private key. So now we have both sides of the connection, that have a unique session key, a symmetric key, that's used to further secure that communication.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:16,040
+- [Narrator] Securing network communications with SSL and TLS begins with the public key infrastructure hierarchy. PKI, or public key infrastructure, is a collection, or hierarchy, of digital security certificates.
+
+2
+00:00:16,040 --> 00:00:31,090
+And these certificates, among other data that we will define later, contain public keys. Also, certificates might also contain mathematically related private keys, and we'll discuss the function of those keys in a bit more depth, later on.
+
+3
+00:00:31,090 --> 00:00:42,030
+Private keys, if they're not stored in the certificate can also be stored in a separate file. PKI components include the certificate authority, or the CA.
+
+4
+00:00:42,030 --> 00:01:01,060
+This component is used to issue new certificates, to users or devices, or applications. It can also renew certificates before they expire. It can also revoke certificates, perhaps due to a compromised smart phone that might have had a secured certificate installed on it.
+
+5
+00:01:01,060 --> 00:01:20,040
+The CA also maintains the certificate revocation list, the CRL, which is essentially a list of serial numbers for revoked certificates. And also the certificate authority can be taken off line for security purposes when its not needed to perform these tasks.
+
+6
+00:01:20,040 --> 00:01:39,030
+A registration authority, or RA, is sometimes also called a subordinate CA in the hierarchy it exists underneath the certificate authority. And it can be used to manage certificates the same way the CA can, to issue certificates, to renew them, to revoke certificates, and so on.
+
+7
+00:01:39,030 --> 00:02:08,060
+The certificate revocation lists, or CRL, or the use of the online certificate status protocol, OSCP, is used to verify that a certificate is valid, and that's because we are checking these lists, or issuing a query, in the case of OCSP, to see if the serial number for a given certificate is valid and to make sure it has not been revoked, because revoked certificates can not partake in secured communications.
+
+8
+00:02:08,060 --> 00:02:24,020
+A certificate template is a PKI component and as the name implies, its a blueprint that can be used when issuing certificates, and this can be customized, depending on your needs and how the resulted issued PKI certificates are to be used.
+
+9
+00:02:24,020 --> 00:02:42,030
+Finally, we've got the certificate itself. The certificate contains a lot of data, including the subject name to which it was issued, which could be in various forms, such as a DNS name for a website, or a users email address if its been issued to a user.
+
+10
+00:02:42,030 --> 00:02:51,000
+There's also the signature, the digital signature of the certificate authority, or the registration authority, is also included within the certificate.
+
+11
+00:02:51,000 --> 00:03:00,030
+And that's used to establish trust, which we'll talk about a little bit later. The certificate also has a limited lifetime, so its got expiring information.
+
+12
+00:03:00,030 --> 00:03:14,000
+And of course the certificate will have a public key and perhaps a private key as well, and those two keys are mathematically related. You can set up PKI within an organization in a single tier hierarchy.
+
+13
+00:03:14,000 --> 00:03:25,090
+That means that at the top of the hierarchy you would configure a certificate authority, a CA. And directly from it, you would issue certificates for users, devices, or applications.
+
+14
+00:03:25,090 --> 00:03:42,050
+And remember those certificates, each result in a public key and also a private key, that may or may not be stored in the certificate. The public and private key pairs for each certificate is unique, so you don't get the same public key for all issued certificates or anything like that.
+
+15
+00:03:42,050 --> 00:03:58,020
+Now you might also elect to work with a multi tier PKI hierarchy, where at the top you've got the certificate authority, under which we have registration authorities, or remember, those are sometimes called subordinate certificate authorities.
+
+16
+00:03:58,020 --> 00:04:20,040
+Those registration authorities then would issue certificates for users, devices, and applications. Now in this particular case, since we've got subordinate or registration authorities that can issue certificates and work with them that way, we don't really need the certificate authority online often unless we need to create a new registration authority.
+
+17
+00:04:20,040 --> 00:04:37,080
+And so, from a security perspective it makes sense to keep the certificate authority at the top of the hierarchy offline until its needed, because if the certificate authority happens to be compromised, everything under it in the hierarchy is also compromised, all certificates everywhere.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:17,090
+- Certificate Authorities are a crucial part of the PKI hierarchy. Certificate or Registration Authorities, depending on where they exist in the hierarchy, have a longer validity period than a standard-issued certificate, let's say for a user or a smartphone.
+
+2
+00:00:17,090 --> 00:00:28,060
+For example, a Certificate Authority might be valid for 10 years where a certificate issued to a user for the purposes of e-mail encryption might only be valid for two years.
+
+3
+00:00:28,060 --> 00:00:44,000
+It's kind of like having a driver's license or a passport that expires over time for security reasons. Now, this is determined when you configure your environment where certificates are issued if you are setting up a PKI.
+
+4
+00:00:44,000 --> 00:00:57,050
+The Certificate or Registration Authority then can issue new certificates, can renew certificates before they expire, and can also revoke certificates due to things like security compromise.
+
+5
+00:00:57,050 --> 00:01:22,060
+The authorities can also publish a certificate revocation list, or a CRL, over a variety of protocols, including things like http, and this certificate revocation list can then be retrieved by clients before they partake in communication that would use PKI certificates because if there are revoked certificates, they don't want to communicate with anything related to that for security purposes.
+
+6
+00:01:22,060 --> 00:01:51,010
+Now, CAs, or Certificate Authorities, at the very top of the hierarchy, the Root CA as it's called, can issue certificates to subordinate Registration Authorities, or RAs, and then in turn, the RAs can issue entity certificates to users, devices, and software, so a compromised top-level CA, or, as we're calling it, the Root CA, means that all subordinate certificates would be compromised.
+
+7
+00:01:51,010 --> 00:02:13,050
+In a Single-Tier PKI Hierarchy, we know that we've got the CA, or the Certificate Authority, at the top, and it can issue certificates, but what we have here is a chain of trust, and what that means is that the digital signature of the Certificate Authority will exist in all of the certificates that it issues, and that's called chain of trust.
+
+8
+00:02:13,050 --> 00:02:33,080
+In other words, if we trust the Certificate Authority, we trust all of the certificates that it has issued. The same concept also works well with the Multi-Tier PKI Hierarchy, where you've got a Certificate Authority at the top, the Root CA, and then subordinate Registration Authorities that issue certificates.
+
+9
+00:02:33,080 --> 00:02:42,050
+Now, in this case, we know that the Root CA should be kept offline for security purposes because if it's compromised, everything in the hierarchy's compromised.
+
+10
+00:02:42,050 --> 00:03:10,070
+Now, when will we work with Registration Authorities, or, as they call them, subordinate Certificate Authorities? You might have RAs for different departments within the organization, or for different projects, for child companies, or even for different geographic regions, so this way you would make sure that the appropriate administrative team, IT admin team, has the appropriate Registration Authority, and they can issue their own certificates.
+
+11
+00:03:10,070 --> 00:03:23,060
+Now, these certificates, as we know, can be issued to users, devices, or applications, and, again, here we have a chain of trust, except on multiple levels compared to our previous discussion a moment ago.
+
+12
+00:03:23,060 --> 00:03:39,070
+What this means, then, is that if we trust the Certificate Authority at the top, the Root CA, then by extension, we will trust Registration Authorities under it and all of the certificates that those Registration Authorities issue.
+
+13
+00:03:39,070 --> 00:04:01,070
+This chain of trust is important because software will check this. For example, your web browser has a list of trusted certificates that it uses to determine whether you're connected to a site that is trusted or not, and most web browsers will tell you, you've probably seen this, that it might not be able to verify the identity of the site or the site is not to be trusted.
+
+14
+00:04:01,070 --> 00:04:26,060
+As an example, take a look at this sample web page. We have a message that says our connection is not private, and, up in the address bar, https is crossed out because it's not a secured or safe connection, and if I click up here, this is the Google Chrome browser, by the way, if I click where it says not secure, I can also click on the certificate, which it's saying is invalid, it says the certificate is expired.
+
+15
+00:04:26,060 --> 00:04:39,030
+Well, indeed, I can see that the validity date here is back in 2015, so certainly, yes, the certificate has expired, and that's why my web browser is resulting in these messages.
+
+16
+00:04:39,030 --> 00:04:55,080
+The chain of trust, then, is very important in a Public Key Infrastructure Hierarchy, so that CAs need to be trusted, otherwise PKI is meaningless. Certificates, as we know, contain the digital signature of the issuing Certificate Authority.
+
+17
+00:04:55,080 --> 00:05:10,050
+The thing about this is that digital signatures are created with that entity's private key, so the private key of the Certificate Authority, so that key is kept private and secured and is not easily spoofed, and that's why we can trust that digital signature.
+
+18
+00:05:10,050 --> 00:05:26,030
+Digital signatures get verified, by the way, using the related public key, so if the Certificate Authority digitally signs a certificate with its private key, we can verify that signature with the authority's public key.
+
+19
+00:05:26,030 --> 00:05:39,070
+The chain of trust issue is shown here within a web browser, specifically Internet Explorer, where we can view certificates, and specifically here I'm looking at the Trusted Root Certification Authorities Tab.
+
+20
+00:05:39,070 --> 00:06:06,060
+You can also, though, use self-signed CAs within your organization. This means, then, that you are creating your own Public Key Infrastructure. You're creating your own hierarchy instead of going out to some other organization that is trusted globally to issue certificates, and as a result, your self-signed Certificate Authority, by default, will not be in this Trusted Root Certification Authority list.
+
+21
+00:06:06,060 --> 00:06:19,070
+Therefore, nothing will trust a self-signed CA by default. Therefore, CA certificates can be added to a device, to the trusted certificate store that we're looking at here, to suppress warning messages.
+
+
+@@@
+1
+00:00:01,020 --> 00:00:17,020
+- [Instructor] SSL and TLS are directly related to PKI certificates. In other words, you can't have SSL or TLS without PKI. However, we wanta be careful not to call certificates SSL certificates or TLS certificates because, technically, this is a misnomer.
+
+2
+00:00:17,020 --> 00:00:41,050
+It's a PKI certificate that can be used for either SSL or TLS securing of network communications. So the PKI certificate, then, has many names. It could be a PKI certificate, it could be called digital certificate, a security certificate, and also it might be called a x.509 certificate because it adheres to the x.509 standard, which is what this is all about.
+
+3
+00:00:41,050 --> 00:00:59,060
+Certificates are issued to users. They could be issued to devices like a smartphone, or they can be issued to software applications. And so certificates have a designated, specific use such as being used for encrypting files or for securing network traffic using TLS.
+
+4
+00:00:59,060 --> 00:01:09,090
+Developers might get a code-signing PKI certificate to digitally sign their software, including scripts that they might create like PowerShell scripts or Linux bashell scripts.
+
+5
+00:01:09,090 --> 00:01:23,090
+And so the use of the certificate then is defined in the certificate template. Kind of of like the name implies, the certificate template really serves as a blueprint that's used by the Certification Authority to issue certificates.
+
+6
+00:01:23,090 --> 00:01:31,030
+Certificates also have to be stored somewhere if they're going to be used, and there are many places that they could be stored, and many ways they can be accessed.
+
+7
+00:01:31,030 --> 00:01:42,010
+A PKI certificate could be stored in a file, on a device. It could be stored on a smart card that might be used to authenticate to a restricted computer system in the office.
+
+8
+00:01:42,010 --> 00:01:55,040
+Certificate information could be stored in firmware, TPM, the Trusted Platform Module that might be used so that we can encrypt an entire disk farm on a machine running Windows using the Windows BitLocker feature.
+
+9
+00:01:55,040 --> 00:02:10,030
+So what kind of items exist within a PKI certificate? There are a number of them, including the version number. This defines the x.509 or PKI version number of the certificate along with the unique serial number.
+
+10
+00:02:10,030 --> 00:02:25,020
+The serial number is used to track the certificates such as through Certificate Revocation Lists or CRLs, sometimes also called curls. Also in a certificate, you will always have the digital signature of the Certificate Authority that issued the certificate.
+
+11
+00:02:25,020 --> 00:02:39,040
+And this is used to establish a chain of trust, because if you trust that Certificate Authority, then you trust this certificate. Certificates have a lifetime; they've got an expiry so they're only valid for a certain period of time.
+
+12
+00:02:39,040 --> 00:02:56,060
+Certificate usage details such as for file encryption are also stored within the certificate along with the subject to which it was issued such as a URL for a website that's going to be secured with HTTPS or the email address of a user that the certificate was issued to.
+
+13
+00:02:56,060 --> 00:03:09,080
+And, of course, the certificate will always contain a public key, which is unique, and also a mathematically-related private key. In some cases the certificate might not have both the public and private key, but it can.
+
+14
+00:03:09,080 --> 00:03:22,080
+There's also this notion of wild-card PKI certificates. Pictured in the screenshot, we can see a specific certificate's details, and I've selected the Subject Alternative Name field.
+
+15
+00:03:22,080 --> 00:03:39,000
+When we're down below, we can see we have multiple names in that field. What is this used for? We can use wild-card certificates for multiple DNS second-level domain names via the Subject Alternative Name or SAN field as we see here.
+
+16
+00:03:39,000 --> 00:03:59,080
+So what happens is the certificate is issued to the top-level domain. In this example that top-level domain is called digicert.com. So anything under that like www, or admin, or digicert, or content, or log in; all of those can be used with the single PKI certificate.
+
+17
+00:03:59,080 --> 00:04:18,060
+So as another example, we could have a certificate, a wild-card certificate, issued to fakecorp.com and then we could use it with a website, for example, with a DNS name of canada.fakecorp.com and that same certificate can also be used for europe.fakecorp.com.
+
+18
+00:04:18,060 --> 00:04:34,050
+So, really, it eases the administrative burden as it relates to PKI and certificates. The Certificate Revocation List or the CRL, the curl is published by the Certificate Authority, and it's a list of revoked certificate serial numbers.
+
+19
+00:04:34,050 --> 00:04:44,040
+Now a certificate might be revoked due to a lost or compromised device, or when an employee leaves the company, their user certificate might be revoked.
+
+20
+00:04:44,040 --> 00:04:57,060
+So apps that use certificates for security should retrieve the curl before using those certificates so they know that the certificate that they're going to be communicating with or through is actually valid.
+
+21
+00:04:57,060 --> 00:05:07,060
+There's another way that we can check the validity of certificates by querying a software component and that's called the Online Certificate Status Protocol, otherwise simply called OCSP.
+
+22
+00:05:07,060 --> 00:05:31,030
+So this consists of a client component that does the querying and a server-side responder component that responds to those queries. So it allows for the querying of the status of a specific certificate, and unlike the Certificate Revocation List or the curl, the entire list does not have to be downloaded to the client in order to determine if the certificate is valid or not.
+
+23
+00:05:31,030 --> 00:05:47,090
+Now another related option to OCSP or the Online Certificate Status Protocol is something called OCSP stapling. What this means is that the certificate owner checks the Certificate Authority for its own status periodically.
+
+24
+00:05:47,090 --> 00:06:09,020
+Am I a valid certificate or am I not? Now this might be a web server that's using a certificate for SSL or TLS purposes. What happens then is clients that connect to, in our example, the secured website, would receive the OCSP status for that website's certificate when they initially connect to that site.
+
+25
+00:06:09,020 --> 00:06:26,080
+And what happens then or what doesn't happen is that the client does not have to query the OCSP responder directly for the status of that certificate because the web server, in this example, has been doing it for us, and we just get that information conveniently as a client when we connect to that secured site.
+
+26
+00:06:26,080 --> 00:06:44,070
+Another important aspect of PKI certificates is Public Key Pinning, otherwise called PKP. This is information that is sent between the client web browser and the web server so that trusting devices can download a trusted copy of a server's certificate, which includes the public key.
+
+27
+00:06:44,070 --> 00:07:07,020
+Now it's called pinning because we store a copy of that server's certificate public key locally on the client device. And straight from the internet, from the RFC that defines how Public Key Pinning should use, that's RFC 7469; it literally states: Key pinning is a trust-on-first-use mechanism.
+
+28
+00:07:07,020 --> 00:07:17,060
+What this means is that first time the client makes a connection to a secured site, that's when the server certificate public key is pinned or cached on that device.
+
+29
+00:07:17,060 --> 00:07:31,070
+Now what does this mean? Why would we do this? Well, this means, that in the future, when the client wants to connect to that same secured server, the client would require that the server provide a fingerprint that has been previously pinned, does a comparison.
+
+30
+00:07:31,070 --> 00:07:43,060
+And so what this means is that we are mitigating certificate problems where we might have certificates issued to a known host, so it's got the same name, but from an unauthorized Certificate Authority.
+
+31
+00:07:43,060 --> 00:08:06,010
+So imagine that we've got a certificate issued for the mail.google.com website that's issued from an attacker's self-signed Certificate Authority. So that means, then, that it's going to have a different public key in the certificate from mail.google.com than what we might've seen the first time we connected to it before it was compromised.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:10,050
+- [Instructor] Unfortunately, PKI certificates do not last forever. They have a specified lifetime. In this section, we're going to talk about the certificate lifecycle.
+
+2
+00:00:10,050 --> 00:00:23,020
+But first, we have to come up with a way to manage certificates during that lifecycle. And this is definitely something that's very crucial for larger enterprises, where we might have thousands of certificates that are issued.
+
+3
+00:00:23,020 --> 00:00:46,060
+We also have to consider compliance with laws or regulations. For example, we might have to store private keys in a password protected file. So, if we have a centralized management strategy, we would have a central tool that, for example, mobile devices periodically report to to receive instructions about PKI certificate issuance and so on.
+
+4
+00:00:46,060 --> 00:01:00,040
+Or we might go with a decentralized strategy, where we manually deal with certificate issuance and revocation one-by-one, on an as-needed basis. Either way, we need a plan B when there are security breaches.
+
+5
+00:01:00,040 --> 00:01:17,080
+We should plan for rapid certificate replacement. You might remember, back in 2014 or so, hearing about the Heartbleed bug. Now, this was a problem because it exploited a vulnerability in the openness of cell software suite, which was widely used over the internet at the time.
+
+6
+00:01:17,080 --> 00:01:29,060
+So we need to have a plan B in place that we can bring into motion as needed. The certificate lifecycle starts with the certificate request. Now this can be manual or it can be automated.
+
+7
+00:01:29,060 --> 00:01:41,050
+What we're doing is requesting your certificate for a user, for a device, for a piece of software, and what we're doing is asking your certificate authority to digitally sign it for trust purposes.
+
+8
+00:01:41,050 --> 00:01:58,090
+Next, the certificate will be issued if everything seems legitimate. Now, there might be a human intervention step here where your organizational security policies might require employees to visit the IT department with photo ID before a user PKI certificate gets issued.
+
+9
+00:01:58,090 --> 00:02:14,010
+So that will vary from one organization to the next. But after the certificate is issued, it can then be used for its intended purposes, like file encryption or connecting to secured websites or authenticating to a protected network.
+
+10
+00:02:14,010 --> 00:02:23,040
+Potentially, the certificate could be revoked, such as if a user's smart phone is stolen and it had a PKI certificate on it that was used to authenticate to a VPN.
+
+11
+00:02:23,040 --> 00:02:36,050
+We want to revoke the certificate so it is no longer valid and cannot be used. Certificates can also be renewed before they expire, but if you don't renew a certificate before its expiry date, it's no longer usable.
+
+12
+00:02:36,050 --> 00:02:49,040
+You'd have to issue a new certificate instead. A certificate signing request is just a manual way, essentially, to generate key pairs and ask a certificate authority to digitally sign a certificate.
+
+13
+00:02:49,040 --> 00:02:58,020
+So what happens first is a public and a private key pair are generated. Now how does that happen, you might say. Well, it depends on the software you're using to do this.
+
+14
+00:02:58,020 --> 00:03:11,060
+So this could be automated, but right now we're talking about manual certificate signing requests. So when you use your software to generate the public and private key pair, that could be the result of clicking a button or typing in a little command and pressing enter at the command line.
+
+15
+00:03:11,060 --> 00:03:21,010
+Private keys could, and then really should, be copied to a safe location. And in some cases, private keys might also be made available to a trusted third party.
+
+16
+00:03:21,010 --> 00:03:31,050
+When you do that, that's called key escrow. The certificate signing request is called a CSR and it gets generated next and it includes the public key.
+
+17
+00:03:31,050 --> 00:03:46,050
+The CSR is normally in what's called PKCS #10 file format. And PKCS just stands for public key cryptography standards. After that, the CSR needs to be sent to a certificate authority for digital signing.
+
+18
+00:03:46,050 --> 00:03:59,080
+Whether that means pasting the CSR into a form field for a public CA or saving it in the file and attaching the file to an email and sending that to an IT person that controls certificate issuance.
+
+19
+00:03:59,080 --> 00:04:11,010
+That type of thing. Pictured on the screen, we see an example of a certificate signing request, but besides that there's usually additional information that's need, such as locale information.
+
+20
+00:04:11,010 --> 00:04:26,020
+That would include things like country, state or province, city. Also, the subject name. So for example, if we are generating a certificate here for a secured website, we have to include the subject fully qualified domain name.
+
+21
+00:04:26,020 --> 00:04:37,020
+In other words, the DNS name of the website, such as www.fakesite.com. Now that has to match what people will enter into the URL line of their web browser when connecting.
+
+22
+00:04:37,020 --> 00:04:54,090
+Otherwise, they're going to get a message that says they shouldn't trust the site. The same goes for email addresses. If you happen to be generating a certificate for a user, for email usage, perhaps encryption and digital signing, make sure that the email address, in the certificate signing request, matches the user's real email address.
+
+23
+00:04:54,090 --> 00:05:05,000
+Otherwise, it won't work correctly. Another way to acquire PKI certificates is through these simple certificate enrollment protocols, SCEP. This is often used for automation.
+
+24
+00:05:05,000 --> 00:05:19,050
+Whether we want to provide certificates for network equipment, like switches and routers that support it, or perhaps to smart phones. Basically what this means is that those devices are enrolled and contacted centralized management solution.
+
+25
+00:05:19,050 --> 00:05:30,040
+This screenshot happens to come from Microsoft Intune, which is considered a mobile device management, or MDM solution, where we can specify things like the type of certificate that's being issued.
+
+26
+00:05:30,040 --> 00:05:49,050
+Here it's a user certificate. We can determine the key size and at the bottom, the root certificate that will digitally sign it. So certificate issuance, then, is a process that can be manual, as we saw with the certificate signing request, and it can also even require manual administrator approval before the certificate is issued.
+
+27
+00:05:49,050 --> 00:06:06,090
+Of course, we know that the process could also be automated for, maybe even, new devices that we might purchase, like smart phones. And that might apply to computers joining a Microsoft Active Directory Domain or smart phones connecting to a central mobile device management, or MDM system.
+
+28
+00:06:06,090 --> 00:06:26,010
+So the certificate, then, would be stored in the device-trusted certificate store or some other media, such as a smart card. Now, when the certificate is used, it's used in accordance with the certificate details, such as email encryption and signing or file system encryption or developers might use it to digitally sign their code.
+
+29
+00:06:26,010 --> 00:06:37,000
+Apps, then, should verify that the certificate is valid before using it. And that can happen through the certificate revocation list, the CRL, or through the OCSP query and protocol.
+
+30
+00:06:37,000 --> 00:06:46,070
+So we know that certificates might be revoked. Usually that's due to certificate compromise, such as an employee leaving the organization or some other reason.
+
+31
+00:06:46,070 --> 00:07:00,040
+Now the certificate's serial number, for the revoked certificate, can be acquired via the CRL or through the OCSP query and protocol. We also mentioned that certificates can be renewed before the certificate expiry.
+
+32
+00:07:00,040 --> 00:07:09,000
+And so the time frame for the certificate, how long is it valid for? That will vary, depending on the certificate issuer. The norm is about two years.
+
+33
+00:07:09,000 --> 00:07:24,030
+So we know that renewal could be manual or automated, just like the initial acquisition of the certificate. Often public certificate authorities will notify subscribers with an email message to let them know that their certificate will expire soon and that they should renew it.
+
+34
+00:07:24,030 --> 00:07:39,010
+Certificate expiry, as we see here, tells us the lifetime of when that certificate is valid. After which the certificate is no longer usable. So normally, there's a 90 day notification for the owner of the certificate, prior to it expiring.
+
+35
+00:07:39,010 --> 00:07:50,030
+The issue is, websites for example, that have expired PKI certificates, are especially problematic because it means that user web browsers will no longer trust the site.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:14,030
+- [Instructor] In this demonstration, I'll install a PKI certificate authority on the Microsoft Windows Server 2016 platform. The first thing I'll do here on the server is check whether or not this component is already installed.
+
+2
+00:00:14,030 --> 00:00:26,080
+I can do that in a number of ways. I can go to my start menu and I can start up Windows PowerShell and within PowerShell, I can issue the get dash Windows feature commandlet and I can tell it what I want to look for.
+
+3
+00:00:26,080 --> 00:00:37,070
+In this case asterisk certificate asterisk and after a moment we can see that the Active Directory Certificate Services role is not installed because there's not an X in the box.
+
+4
+00:00:37,070 --> 00:00:53,050
+Although we could use the install dash Windows feature commandlet to install it given that we see the name here. However, I'm going to go to my start menu because an alternative way of installing the certificate services component is to go to the server manager GUI.
+
+5
+00:00:53,050 --> 00:01:10,000
+It doesn't matter which way you do it. It ends up being the same. However here in server manager, I'm going to click add roles and features. Now on the first screen for role based or feature installation, I will leave that single server installation option enabled and I'll click next.
+
+6
+00:01:10,000 --> 00:01:22,070
+I'm installing it on this same server here from which I am running this tool so I'll click next and then I'm going to choose the Active Directory certificate services option on the roles screen so I'm going to put the check mark there.
+
+7
+00:01:22,070 --> 00:01:31,080
+And then it pops up and asks if I want to add server administration features related to this role and I do so I'll click add features then I'll click next.
+
+8
+00:01:31,080 --> 00:01:43,050
+There are no additional features I want installed on the features screen so I'll just go ahead and click next on that. Then I get a little message describing what Active Directory Certificate Services does so I'll click next on that screen.
+
+9
+00:01:43,050 --> 00:01:55,060
+Then I get to choose the specific role services related to Active Directory Certificate Services. We definitely need the certification authority so we can set up our PKI CA, our certificate authority.
+
+10
+00:01:55,060 --> 00:02:10,040
+I've also got components like the certificate enrollment policy web service and the certificate enrollment web service which are both used for machines not joined to an Active Directory name although my server is actually an Active Directory domain controller.
+
+11
+00:02:10,040 --> 00:02:27,000
+I've also got the certification authority web enrollment website that I can choose to install. Now this gives a little web interface that lets people request certificates by pasting in certificate signing requests and so on so if I need that component, I can install it.
+
+12
+00:02:27,000 --> 00:02:45,090
+I've also got the network device enrollment service for our network devices that can acquire PKI certificates but I'm not going to turn that on. I got the online responder server side component that is used to respond to OCSP client queries for certificate validity but I don't need that so I'm not going to install that.
+
+13
+00:02:45,090 --> 00:02:57,090
+Okay, so now that I've made my choice or choices, I'm going to click next and then I'll click install to get this going and before too long, it's completed the installation.
+
+14
+00:02:57,090 --> 00:03:12,040
+It does say that configuration is required. Okay, that's fine, close. Because if I were attempt here in server manager to go directly to the tools menu and run the certification authority tool, it would result in this error message.
+
+15
+00:03:12,040 --> 00:03:33,000
+It says cannot manage Active Directory Certificate Services. Well that's because nothing's been configured so that's fine, I'll click okay, I'll close down the tool and in the notification area here in the upper right, I see that I've got an option to configure Active Directory Certificate Services on the destination server, this server, so I'll click on that.
+
+16
+00:03:33,000 --> 00:03:42,050
+That starts a new wizard, excellent. I'm going to use my current logon credentials here for a domain admin account that it already came up with and I'll click next.
+
+17
+00:03:42,050 --> 00:03:51,070
+Then I'm going to choose to configure the certification authority as well as the certification authority web enrollment. Okay, so then I'll click next.
+
+18
+00:03:51,070 --> 00:04:09,020
+I need to install an enterprise CA here, well I don't need to, but I'm going to because this is an Active Directory domain controller. The standalone CA option is for servers that are not apart of an Active Directory domain so I'm going to leave it on enterprise CA and I'll click next.
+
+19
+00:04:09,020 --> 00:04:37,080
+Now I do need to specify root CA here because I don't already have a root CA. This is the top of the PKI hierarchy that we are defining. Now otherwise for other servers after we get this one running, we can configure them as subordinate CAs, otherwise called registration authorities, RAs, so that we might have subordinate CAs for different regions, different departments, different child companies and so on but here we're going to stick with root CA, next.
+
+20
+00:04:37,080 --> 00:04:52,020
+I'm going to create a new private key. I'm not going to use an existing private key. You would only use that option if perhaps a server failed that was hosting a CA previously, you have the back up of the private key of it and now you want to reinstall the server to host it again.
+
+21
+00:04:52,020 --> 00:05:01,000
+That doesn't apply so create a new private key it is. Then I get to choose the cryptographic provider from the drop down list. I'm going to stick with all the defaults here.
+
+22
+00:05:01,000 --> 00:05:19,020
+Should work just fine. So RSA as the cryptographic provider with the key length of 2,048 bits and for the digital signing algorithm for digitally signing certificates, I'll leave it on SHA256, the secure hashing algorithm and then I'll click next.
+
+23
+00:05:19,020 --> 00:05:33,010
+I have to come up with a common name for this certificate authority so I'm just going to called it fake domain one and down below it's come up with the distinguish name and the suffix for that, so I'm okay with that so I'm going to go ahead and click next.
+
+24
+00:05:33,010 --> 00:05:49,090
+Now bear in mind that PKI certificates have an expiration date. They're only valid for a certain period of time and that includes certificate authorities so here it's set five years as the validity period by default for this certificate authority, not for certificates it will issue.
+
+25
+00:05:49,090 --> 00:05:59,030
+Let's say here I'm going to change that to 10 years in accordance with our organizational security policies so having done that, I'll go ahead and click next.
+
+26
+00:05:59,030 --> 00:06:15,070
+I will accept the default database locations for the certificate database and the certificate database log and then I'll click next. Okay, looks good so I'm going to go ahead and click configure on the summary screen and now it's just a matter of waiting.
+
+27
+00:06:15,070 --> 00:06:26,030
+So I can now see that the configuration has succeeded for both components, the certification authority and the certification authority web enrollment so I'm going to go ahead and click close.
+
+28
+00:06:26,030 --> 00:06:38,010
+Now here in the server manager if I go to the tools menu to start the certification authority tool which you could also start from the start menu, this time it will not give us an error because we've configured a CA.
+
+29
+00:06:38,010 --> 00:07:02,000
+We can actually see it over here on the left, fake domain one. If I expand that, notice underneath it I have folders for revoked certificates, issued certificates, pending requests that might require administrator approval, failed requests, even certificate templates or blueprints that are used to issue PKI certificates and we'll be working with this in other demonstrations.
+
+30
+00:07:02,000 --> 00:07:15,010
+Also if I were to go let's say into my start menu on this server and run cert MGR, the certificate manager MMC console, it gives me the option then to manage computer certificates.
+
+31
+00:07:15,010 --> 00:07:33,040
+If I look into that, just maximize that screen, under personal if I look under certificates I can see I've got a CA certificate for fake domain one and I can see the expiration date which is 10 years from today based on my configuration.
+
+32
+00:07:33,040 --> 00:07:50,050
+Now at the same time if I also go into my trusted root certification authorities part of my certificate store and click on certificates, here's the other certificate authorities that are trusted on this machine and we also have our entry for fake domain one.
+
+33
+00:07:50,050 --> 00:08:00,000
+It's okay if you see what appears to be duplicate CA certificates and that's because the certificates are stored physically in a couple of different places here in the certificate store.
+
+34
+00:08:00,000 --> 00:08:16,080
+While this exists on our server where we configured it, it's going to be important to consider the fact that our client devices that need to trust certificates issued by this CA will also need this installed in their certificate store but that's something that we'll deal with a little bit later.
+
+35
+00:08:16,080 --> 00:08:32,090
+The other thing we're going to take a look at here is the certificate enrollment website which we elected to install. For that, I'm going to fire up a web browser directly on this server although it certainly doesn't have to be and we're going to connect to this specific host.
+
+36
+00:08:32,090 --> 00:08:59,060
+I'll put in HTTP colon slash slash and then the URL and then we're going to connect to the slash cert serve, C-E-R-T-S-R-V suffix on our website which prompts us to log in so I'll put in let's say my domain administrator credentials for Active Directory and after a moment that opens up the Active Directory Certificate Services web enrollment page where notice we can request a PKI certificate.
+
+37
+00:08:59,060 --> 00:09:12,000
+We can view the status of a pending request or even download the CA certificate to establish trust. At this point, we have successfully installed a certificate authority.
+
+
+@@@
+1
+00:00:01,010 --> 00:00:10,090
+- [Narrator] PKR certificates are issued from templates that contain specific settings for that certificate. We're going to take a look at how to customize certificate templates.
+
+2
+00:00:10,090 --> 00:00:22,080
+Here on my window server, I'm going to go in the start menu to start the appropriate tool. That means I'm going to go down under window's administrative tools, and the tool we're looking for here is the certification authority.
+
+3
+00:00:22,080 --> 00:00:37,090
+So I'll run that tool. When it pops up, we can see in the left hand navigator the name of our certificate authority. It's called Fake Domain 1. And if I expand that to show me the items on the left, one of the things I will see is certificate templates.
+
+4
+00:00:37,090 --> 00:00:51,090
+If I highlight that, I can see issued certificate templates that can be used to create certificates listed over on the right. For example, we've got a web server certificate here for server authentication, for secured websites.
+
+5
+00:00:51,090 --> 00:01:01,030
+We've got a computer certificate template for client and server authentication. A user template for encrypting file system, and secure email, and so on.
+
+6
+00:01:01,030 --> 00:01:17,020
+But we can customize these templates. So I'm going to right-click on certificate templates on the left and I'm going to choose manage. Now what I want to do, is in the new window that opens up, notice that we've got a number of alphabetically listed templates.
+
+7
+00:01:17,020 --> 00:01:26,090
+And if I were to double-click on one, such as the web server template, notice everything's grayed out. I can't make a change. So what I want to do is customize a web server template.
+
+8
+00:01:26,090 --> 00:01:37,010
+The way that that happens is by creating a duplicate of it and modifying the duplicate. So I'm going to right click on web server, and choose duplicate template.
+
+9
+00:01:37,010 --> 00:01:45,050
+There are a number of things I can specify here, such as the certification authority version, in this case, I'm going to set that to windows server 2016.
+
+10
+00:01:45,050 --> 00:01:54,070
+And essentially, it's telling me that there are a few little options that are new with that version. I'm just going to click okay. Same thing for the certificate recipient.
+
+11
+00:01:54,070 --> 00:02:05,020
+In this case, it's going to be Windows 10 or windows server 2016, and it gives me a list of some of the features that are specific to that version that will be available.
+
+12
+00:02:05,020 --> 00:02:16,090
+That's fine, I'll click okay. Under general, I can determine that name of this, I'm going to call this Custom Web Server, that's the name of this template.
+
+13
+00:02:16,090 --> 00:02:38,020
+And notice that the certificate validity period is set by default to two years, which is pretty much the norm. I also could chose, in this case, to publish the certificate in active directory, so that we have a central repository of certificates and public keys that might be used by other software, for example, email systems that need public keys to encrypt for the recipient.
+
+14
+00:02:38,020 --> 00:02:47,070
+We've also go a number of other items that we can specify in here such as the subject name. The subject name is related to the entity to which the certificate is issued.
+
+15
+00:02:47,070 --> 00:02:57,010
+So in this case, for a web server, we can either supply the name of the web server, the full name, or we can build that from components in active directory.
+
+16
+00:02:57,010 --> 00:03:11,010
+I'm going to leave it on supply in the request, we'll just click okay. And also here, if I were to click on server, we've got other options, such as choosing to not store certificates in the CA database.
+
+17
+00:03:11,010 --> 00:03:21,030
+Also what I may want to do is go under security to determine who is allowed to enroll or even auto enroll, if we've configured that, for certificates.
+
+18
+00:03:21,030 --> 00:03:35,020
+So here, authenticated users is selected, and all they have the ability to do is read templates. Maybe for authenticated users, I also want them to be able to enroll, in other words, to acquire a certificate from this template.
+
+19
+00:03:35,020 --> 00:03:45,090
+Now you could add and remove specific active directory users, and groups, and so on. But I'll set authenticated users here to enroll permissions under the allow column.
+
+20
+00:03:45,090 --> 00:04:05,070
+So assuming I'm happy with that template, I would click okay. And we can see in the list down below, custom web server. However, let's close this tool and back here in the certification authority tool, if I look at the certificate templates, even if I refresh, I don't see on the right, our custom web server template.
+
+21
+00:04:05,070 --> 00:04:18,060
+In other words, it can't be used yet to issue certificates. That's because what I've not yet done is right clicked on certificate templates, over on the left, and chosen new certificate template to issue.
+
+22
+00:04:18,060 --> 00:04:32,000
+Once you create a custom template, you then need to issue it, so it can actually be used to make PKI certificates. When I chose that option, I then have the option of selecting our custom web server template, and I'll click okay.
+
+23
+00:04:32,000 --> 00:04:42,050
+And after I've done that, you'll notice that it shows up in the list. Now you may have to click the refresh button if it doesn't show up right away, but either way, it will show up here.
+
+24
+00:04:42,050 --> 00:04:53,000
+So the custom web server template is now available for use. And we'll see how to actually use this to acquire a PKI certificate in a different demonstration.
+
+
+@@@
+1
+00:00:01,010 --> 00:00:22,010
+- [Instructor] OpenSSL is a free tool that allows us to create and manage certificates in a public key infrastructure hierarchy. The first thing you need to do is to make sure that you've got OpenSSL installed, and I'm doing it here in Linux, so depending on your distribution of Linux will determine the exact command you'll issue to check that it exists.
+
+2
+00:00:22,010 --> 00:00:36,020
+Here I'm going to run apt, install, OpenSSL, and here I can see that it tells me OpenSSl is already installed, so that's good. Now I can start working with the command.
+
+3
+00:00:36,020 --> 00:01:02,070
+So here I'm using Kali Linux, but depending on your distribution, you might do this in a different manner. Now the first order of business when you want to create your own private root certificate authority, your own root CA is to first generate a private key for it, and I'm going to do that by typing openssl genrsa, generate an rsa key, and I'm going to tell it I want to use aes256 as an algorithm.
+
+4
+00:01:02,070 --> 00:01:16,000
+That's the type of key, and then -out. I'm going to call it CAprivate.key. The file name is really up to you. And then I'm going to tell it I want the key length to be 2,048 bits.
+
+5
+00:01:16,000 --> 00:01:43,010
+So it asks me to enter a pass phrase because, as we know, the private key needs to be protected. We don't want anyone to be able to use it, so I'm going to go ahead and put in a password, and then I'm going to verify that same password to protect my private key file, and if I clear the screen and do an ls, indeed there's our CAprivate.key, and if I were to use the cat command to display the contents of the file, we can see it looks like a bunch of gobbledygook.
+
+6
+00:01:43,010 --> 00:02:16,080
+Well, that is our RSA private key that we're going to use for the creation of our CA. So I'll clear the screen with the clear command. The next order of business is to actually start working with the private key file to create our CA certificate, so what I'm going to do then to actually generate the CA certificate is run openssl req for request, -new, we want a new certificate, - X 509 is the standard for this type of certificate, -key.
+
+7
+00:02:16,080 --> 00:02:32,090
+Now I have to tell it where the private key is. We already generated that in a separate command, and it's called CAprivate.key. That's our private key file, and I have to specify the signing algorithm, and I'm going to specify sha256 here.
+
+8
+00:02:32,090 --> 00:02:46,040
+Remember that certificate authorities digitally sign the certificates that they issue, and that's to establish a chain of trust. I'm going to set the validity period here, let's say only to one year, so -days, 365.
+
+9
+00:02:46,040 --> 00:02:56,070
+Normally CA's exist for five, 10, 20 years, but in this case, I'll just put in one year. And finally, I've got to give it an output file name, so -out.
+
+10
+00:02:56,070 --> 00:03:14,040
+I'm going to call this FakeDomain2CA.pem. That's the file extension I'm going to use. And I'm going to press enter. Now because we're referencing our CA private key, before we can use that, it says, well, wait a second, what is the password for that?
+
+11
+00:03:14,040 --> 00:03:24,050
+That's a good thing. We always want to make sure private keys are secured in this way. Then I have to enter in some details like the country name, two code, so CA for Canada.
+
+12
+00:03:24,050 --> 00:03:42,040
+Let's see, I'll put in Nova Scotia for the province. I'll specify Halifax as the city. The organization name is let's say FakeCo for Fake Company. I don't have an organizational unit, let's say, so I'm going to leave that empty, and for the common name, I'm going to call this FakeCoCA.
+
+13
+00:03:42,040 --> 00:03:56,030
+Email address, how about user@fakeco.com. Okay, so at this point, if we clear the screen and do an ls, we now see we've got our FakeDomain2CA.pem file.
+
+14
+00:03:56,030 --> 00:04:17,000
+Now what we can do is in install that FakeDomain2 certificate authority as a trusted root on devices that need to trust certificates that it issues. Now that's something that we'll do in another demo when we actually acquire a PKI certificate for a web server from this CA.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:19,070
+- [Voiceover] In this demonstration, I'll be configuring an Amazon Web Services, or AWS, subordinate CA. So what's going to happen here is I'm going to use my on-premises certificate authority and configure Amazon Web Services with a subordinate certificate authority.
+
+2
+00:00:19,070 --> 00:00:39,090
+So to get started here, I've already created an Amazon Web Services account, and I've signed into the AWS Management Console. So what I want to do here from the Management Console is scroll down, and under the security section, I'm interested in the AWS certificate manager, so I'll go ahead and click on that.
+
+3
+00:00:39,090 --> 00:01:00,090
+Down below, I'm going to go down under private certificate authority, and I'm going to click "get started". Now, the only option I have here is "Subordinate CA" because I need to already have a CA, a root CA, that I've configured, and I've already got that done through Windows, through the certification authority component on premises.
+
+4
+00:01:00,090 --> 00:01:14,040
+The purpose here is by making a subordinate CA in the cloud, we'll have a way into the cloud to issue certificates, for example, for secure websites that we might run in this cloud-hosted platform.
+
+5
+00:01:14,040 --> 00:01:34,060
+So I'm going to go head and click "next" and I've got to fill in some details for the organization name, for example. "FakeCo" for "Fake Company" and maybe for the organizational unit here, I'll put in "HQ" for "headquarters" and then for the country, in this case, I'll specify Canada.
+
+6
+00:01:34,060 --> 00:01:54,030
+I'll specify the province information, so we've got to fill out all of this locale information in order to register this subordinate CA. Now, I'm going to call it the FakeCoSubCA, and then I'll go ahead and click "next".
+
+7
+00:01:54,030 --> 00:02:33,020
+The default algorithm is RSA at 2,048 bits, so that's okay. I'm going to go ahead and click "next". I'm not going to configure the certificate revocation list setting, or CRL setting, so I'll just go ahead and click "next" yet again, and then on the review screen, we can see the name of our subordinate CA, along with the locale information and the key algorithm and key length, and down at the bottom, I'm going to click to confirm about monthly fee charges, and then I'll click "confirm and create", and after a second, it says our CA was created successfully.
+
+8
+00:02:33,020 --> 00:02:45,050
+So I'm going to go ahead and click "get started". Now, what I see here is, I've got a certificate signing request, or a CSR, for this subordinate CA. What does this mean?
+
+9
+00:02:45,050 --> 00:03:05,090
+What we need to do is submit a request to our root certificate authority so that it can digitally sign and approve this subordinate CA certificate. So what I'm going to do is copy this certificate request onto my Windows clipboard.
+
+10
+00:03:05,090 --> 00:03:26,090
+Now in my web browser, I've navigated to my on-premises server. In the URL, I've specified the DNS name of it, slash, certserv, so that I can work with certificates using this web browser interface, and so what I want to do here is request a certificate, and I'm going to choose "advanced certificate request".
+
+11
+00:03:26,090 --> 00:03:40,060
+I'm going to choose "submit a certificate request", and from here, I'm going to paste in my certificate request that was generated by Amazon Web Services for my subordinate CA.
+
+12
+00:03:40,060 --> 00:03:58,020
+So I can see here that I've pasted in with my "begin certificate request" all the way down through and including "end certificate request". So the certificate template I want to use here is going to be for a subordinate certification authority, and I'll click "submit".
+
+13
+00:03:58,020 --> 00:04:08,010
+Now my browser's going to tell me that the website's trying to do digital certificate stuff. I'm going to choose "yes" for "OK", and at this point, I want to download the certificate.
+
+14
+00:04:08,010 --> 00:04:27,030
+I'm going to do it in Base 64 encoded format. So I'll click "download certificate", and then I will save it so that it's available. I'll be saving this into a folder, and I'll be calling it "FakeCO_SubCA" for "subordinate CA", and then I'll just go ahead and click "save".
+
+15
+00:04:27,030 --> 00:04:56,090
+Notice I can also download the certificate chain, which includes the hierarchy, such as the root CA that was used to issue this certificate. Back here in Amazon Web Services, where I copied that certificate signing request, I'm going to click "next" because what I want to do now is import the certificate body for the CA certificate, which is what we're creating, that was digitally signed by our CA.
+
+16
+00:04:56,090 --> 00:05:11,030
+So to do that, I'll click "file" to import the file that we just saved a moment ago, and we can see we've now got our digitally signed certificate for the CA that we are creating, the subordinate CA.
+
+17
+00:05:11,030 --> 00:05:22,080
+So down in the bottom right, I'm going to ahead and click "next". So we can see now, we've got our certificate body listed here. I'm going to click "confirm and import".
+
+18
+00:05:22,080 --> 00:05:38,010
+Now up at the top, if we haven't included the certificate chain, then we will get an error message. So this is easily fixed by clicking the "edit" button, and we can then put in our certificate chain that we saw we can download from an earlier step.
+
+19
+00:05:38,010 --> 00:06:04,060
+So back here, where we downloaded the certificate, we can download the certificate chain file, so that's what I'm going to make available for this step, and then once we've done that, then we can go ahead and click "next", And after we confirm it, after a moment, we are now placed at our private CA screen where we can see our FakeCoSubCA, which is a subordinate CA, which currently has a status of active.
+
+20
+00:06:04,060 --> 00:06:17,030
+Any other entries here would've been other private CAs that might've been created and/or deleted in the past. Now let's just flip back and take a look at our Windows certificate authority for a second.
+
+21
+00:06:17,030 --> 00:06:39,030
+In the Windows Certification Authority tool, down under our root CA, which is on premises, FakeDomain1, I go down under "issued certificates". We're going to see that indeed, we've got a certificate that has been issued as a subordinate certificate authority or for our sub CA.
+
+22
+00:06:39,030 --> 00:06:50,060
+Now remember, just because you're hosting cloud services that might need PKI certificates, you don't have to do this. You can completely manage and issue certificates from an on-premises installation.
+
+23
+00:06:50,060 --> 00:07:01,000
+This is kind of a hybrid solution to make that happen where we've got a component on premises, the root CA, and another component, the subordinate CA, in the cloud.
+
+
+@@@
+1
+00:00:01,002 --> 00:00:12,009
+- [Instructor] SSL and TLS are protocols that are used to secure network communications. Let's talk about both SSL and TLS in terms of how they're similar and also how they're different.
+
+2
+00:00:12,009 --> 00:00:31,004
+SSL and TLS both use PKI certificates. PPI certificates are also called x dot 509 certificates, they're used for security, they contain keys. And this is used to secure network communications either using the SSL or the TLS protocols.
+
+3
+00:00:31,004 --> 00:00:43,003
+So SSL and TLS then in conjunction with PKI certificates allow for encryption or data confidentiality. It also allows for digital signatures and hashing.
+
+4
+00:00:43,003 --> 00:00:56,002
+Now we can use things like digital signatures to determine whether or not a message is authentic and it came from who it says it came from. Also integrity of files through file hashing for example.
+
+5
+00:00:56,002 --> 00:01:12,007
+And non-repudiation also relates to things like digital signatures which are created with a private key. And so the creator of that digital signature cannot refute that they sent the message because they had to possess the private key to create the digital signature.
+
+6
+00:01:12,007 --> 00:01:29,003
+Also, both SSL and TLS are application specific. What does this mean? It means that they need to be configured for the specific application. So let's say we've got an HTTP website and we want to allow HTTPS secured access to it.
+
+7
+00:01:29,003 --> 00:01:38,006
+Well, that means we need a PKI certificate, and we can configure SSL or TLS. Now we don't want to use SSL because it's deprecated and there are known vulnerabilities.
+
+8
+00:01:38,006 --> 00:01:51,009
+So really should be TLS. But if we had that configuration for our web server that's one configuration. If we decide also that we want to secure communication between SMTP servers, well, that's another configuration.
+
+9
+00:01:51,009 --> 00:02:04,003
+Secure Sockets Layer or SSL was developed by Netscape in the early 90s. And it's got three versions, version one through to three, where versions two and three are what we really had availability of back in the day.
+
+10
+00:02:04,003 --> 00:02:23,000
+And none of them should be used not even version three unless you absolutely need to use SSL for backwards compatibility. So SSL then is superseded by TLS, the Transport Layer Security standard due to the problems, the security weaknesses with all SSL versions.
+
+11
+00:02:23,000 --> 00:02:32,008
+So SSL then should be disabled on servers and client web browsers and other applications that use it due to the problem with its security vulnerabilities.
+
+12
+00:02:32,008 --> 00:02:45,003
+Security protocol downgrade attacks are common. And there are problems with these related to SSL, for example, PKI certificates, remember, are not specific to SSL or TLS.
+
+13
+00:02:45,003 --> 00:03:06,002
+But we specify whether we're using SSL or TLS on the server side configuration of a server and in the client configuration, such as in a web browser. So during the initial handshake when a client tries to connect, let's say to a web server, the client in the server will agree on which specific SSL or TLS version to use.
+
+14
+00:03:06,002 --> 00:03:22,009
+Now the problem with downgrade attacks is that a lot of the man-in-the-middle or MITM attacks try to downgrade the security negotiation, and this is handled well with TLS using the TLS fallback SCSV standard.
+
+15
+00:03:22,009 --> 00:03:45,006
+So in other words, disable SSL and use TLS version 1.1 or better. I say this because there are some security vulnerabilities related to TLS 1.0. The Poodle Attack, otherwise called the Padding Oracle On Downgraded Legacy Encryption is one of these types of downgrade attacks, and then affects SSL version three.
+
+16
+00:03:45,006 --> 00:04:09,004
+SSL version three might be the latest version of SSL but it was released way back in 1996, so it's no wonder that it's deprecated. What happens with the Poodle Attack is that, malicious JavaScript gets injected into a victim's web browser, and also what happens is it tricks it into using SSL version three instead of TLS, and there are a lot of vulnerabilities with SSL version three.
+
+17
+00:04:09,004 --> 00:04:22,004
+So therefore secure HTTP session cookies on that victim browser, where they might already be authenticated to secured sites could then be compromised and controlled by the attacker.
+
+18
+00:04:22,004 --> 00:04:39,005
+Then we've got the Heartbleed Bug, this was back around 2013 2014. Now this exploits a vulnerability in the open SSL software suite. So here we see on the left, we've got the website user and we've got the web server on the right that they're going to connect to.
+
+19
+00:04:39,005 --> 00:04:49,000
+So what happens is that the client would send the length of a transmission let's say as 60 characters, but would only send let's say three, such as the word dog.
+
+20
+00:04:49,000 --> 00:04:59,004
+Now that's called a heartbeat message. So what happens with the open SSL vulnerability at the time is that the server did not check the length of the submitted data.
+
+21
+00:04:59,004 --> 00:05:16,006
+It would simply say, oh, 60 characters, okay, and it would respond with 60 characters back. So in this case it would include the original three that were actually sent by the client, and then whatever else was in memory after that, and that's how it could actually reveal sensitive information.
+
+22
+00:05:16,006 --> 00:05:28,007
+Transport Layer Security or TLS was introduced in 1999, and it was created in order to replace the SSL suite of protocols for securing communications.
+
+23
+00:05:28,007 --> 00:06:07,004
+And so there are TLS version 1.0 through to 1.3, where version 1.3 is as of August 2018. Now we should be disabling TLS version 1.0 on this, we absolutely need to use it because it would be required to comply with some standards such as PCI DSS which deals with merchants that work with cardholder data for transactions, but also we should disable TLS version 1.0 not only to be compliant with these types of things but also to mitigate against threats that are known to take advantage of problems with TLS version 1.0 such as the Beast Attack.
+
+24
+00:06:07,004 --> 00:06:33,004
+Also, we have TLS VPNs. Now you'll hear a lot of people call them SSL VPN. But we know that SSL is really deprecated and should not be used. And so what happens with a TLS VPN is that we've got a remote computer as picture here on the left that will establish an encrypted connection over the internet using a VPN at an endpoint on a private network somewhere which would allow access to applications on that private network.
+
+25
+00:06:33,004 --> 00:06:54,001
+Now TLS VPNs are different than your standard LTTP VPN or IPsec VPNs and so on, because they are considered firewall friendly. They use TCP port 443 normally whereas other VPN solutions will use a different set of ports for communication.
+
+26
+00:06:54,001 --> 00:07:11,007
+And as a result, the SSL VPN can be run even using a web browser on the client machine, so you don't necessarily need any special software. And also, administrators can control access to specific applications after successful authentication to the VPN.
+
+27
+00:07:11,007 --> 00:07:26,006
+Now on the client side, we can configure security protocols. What's a security protocols? What we're talking about SSL, TLS. So here we've got a screenshot of internet settings where we can elect to disable certain security protocols.
+
+28
+00:07:26,006 --> 00:07:35,004
+Notice here that SSL version three is unchecked. Technically in a perfect world where we don't need to use it, we should also uncheck TLS version 1.0.
+
+29
+00:07:35,004 --> 00:07:46,000
+Now this is on the client side. So client support in web browsers for TLS varies, but basically if you're using an up to date hatched browser you should be good.
+
+30
+00:07:46,000 --> 00:07:59,001
+Now if you're still using an old browser like Microsoft Internet Explorer 10, notice that it only supports TLS version 1.0, and we know we shouldn't be using that because there are some vulnerabilities.
+
+31
+00:07:59,001 --> 00:08:14,004
+But if we look at the other browsers listed here, Microsoft Edge, Firefox 27, Google Chrome 38 and so on, they support TLS version 1.2. Now, because TLS version 1.3 is still very new, we'll see more support as time goes on.
+
+32
+00:08:14,004 --> 00:08:24,005
+On the web server side, again, we should be using a server operating system hosting a website that is not an old version of the OS, and that's patched.
+
+33
+00:08:24,005 --> 00:08:43,003
+So if we're using even server 2008, Service Pack two with all updates applied then TLS version 1.2 is supported. And the same would be true with most variations of Linux distributions, but it really depends on the version of the open SSL package, basically, keep things up to date.
+
+34
+00:08:43,003 --> 00:09:01,009
+on the server side, we can also determine whether TLS is enabled or SSL is enabled. Here in Linux we can issue the open SSL ciphers dash V command. And down below we can see for example that not only SSL but also TLS is enabled, so it is supported.
+
+35
+00:09:01,009 --> 00:09:11,008
+In a perfect world, we should also disable SSL on the server side. Depending on the type of server you're talking about disabling SSL might be done in different ways.
+
+36
+00:09:11,008 --> 00:09:28,002
+So for example, here in server 2016, down on the registry in reg edit, I can go under HKEY local machine system, current control, set control. And if we drill even further down, we can get down to security providers as channel protocols.
+
+37
+00:09:28,002 --> 00:09:44,005
+And I've added this section here, SSL space 3.0, then I've added the server key, and I added to D word values, one is called disabled by default, this is for SSL three, and I've set that to a value of one and it's not enabled, the enabled item is set to zero.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:12,020
+- [Instructor] In this demonstration, I'll be acquiring a PKI certificate that's going to be used to secure a web server, and I'll be acquiring that certificate from a Microsoft Active Directory Certification Authority.
+
+2
+00:00:12,020 --> 00:00:20,080
+So on the server hosting that certification authority, I'm already looking at templates available to issue certificates, one of which is called Custom Web Server.
+
+3
+00:00:20,080 --> 00:00:35,090
+However, if I double-click on it, I don't really see much information about that specific template. However, if I right-click on Certificate Templates in the left and choose Manage, then I'll see all of the templates that are available, and there's the Custom Web Server.
+
+4
+00:00:35,090 --> 00:00:47,030
+From here, if I double-click, I can see the details. So the certificate will have a validity period of two years. The subject name will have to be supplied in the request.
+
+5
+00:00:47,030 --> 00:00:59,030
+So I'm going to go ahead and cancel that. And on this machine, I'm going to start up the certmgr Microsoft Management Console. Now, I don't have to do it on this server.
+
+6
+00:00:59,030 --> 00:01:11,020
+Any machine, in this case, joined to the Active Directory domain could easily go through and acquire a PKI certificate. And of course, there are certainly ways that machines not joined to the domain can do that also.
+
+7
+00:01:11,020 --> 00:01:25,040
+So I'm going to choose Manage computer certificates. Down here over on the left, I'm going to expand Personal, and then I'll click Certificates. Now, we can see that FakeDomain1 has already issued a server certificate to this server's DNS name.
+
+8
+00:01:25,040 --> 00:01:39,040
+However, we're going to step through the steps as if we wanted to acquire that from scratch on a different host that didn't already have it. So therefore, what I could do is right-click on Certificates on the left, choose All Tasks and Request New Certificate.
+
+9
+00:01:39,040 --> 00:01:49,010
+Then when I click Next twice, I can see all of the certificate templates that are available that we looked at previously, one of which is our Custom Web Server template.
+
+10
+00:01:49,010 --> 00:01:58,080
+And notice it says more information is required to enroll for this certificate because we require the subject name to be supplied in the request if you recall.
+
+11
+00:01:58,080 --> 00:02:11,080
+So I'm going to click on that. And so maybe at the top here, I'm going to set the common name of the server for which the certificate is being issued to be its name, server or srv2016-1, I'll add that.
+
+12
+00:02:11,080 --> 00:02:25,020
+And then maybe the alternative name will be the full DNS name. So I have to make sure that this matches what the server is actually going to use, because otherwise the certificate will report that there's a mismatch, and it won't be trusted.
+
+13
+00:02:25,020 --> 00:02:35,050
+So I'm going to fill in the appropriate DNS name and add that here as an alternative name, and then I'll click OK. So we've now supplied the appropriate information for that specific template.
+
+14
+00:02:35,050 --> 00:02:45,030
+So I'm going to turn on the check mark to select it, and I'm going to click Enroll. And before you know it, we have a status of Succeeded. So I'm going to go ahead and finish that.
+
+15
+00:02:45,030 --> 00:02:59,020
+And so what we've got done here then is we've got FakeDomain that has issued, FakeDomain1 that has issued a server certificate, a web server certificate to our host srv2016-1.
+
+16
+00:02:59,020 --> 00:03:11,000
+We can also see the expiration date. If I double-click to open that up, we've got an expiration date that is two years from now, which, as we saw, was defined within the certificate template.
+
+17
+00:03:11,000 --> 00:03:25,070
+Now, bear in mind, there are many other ways to acquire certificates that could've been automated if Group Policy were configured to do that. Also, if I were to go into my web browser, I've installed the component that will allow me to request certificates from a website.
+
+18
+00:03:25,070 --> 00:03:40,030
+So if I go to the certification authority server name /certsrv, I can then log in using Active Directory credentials. And when I do that, I could also have requested a certificate from here.
+
+19
+00:03:40,030 --> 00:03:53,000
+However, despite the fact that we've got many ways that this can be done, the key is that once we've got a certificate, at least in the Windows platform, it is stored here in the certificate store, in this case, for the computer.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:13,020
+- [Instructor] Certificates can be issued to users, to devices or computers, as well as to software. Our focus here is going to be issuing a PKI certificate for a Windows 10 client computer.
+
+2
+00:00:13,020 --> 00:00:20,090
+So here on the Certificate Authority server I'm going to start by going into the Start menu so we can take a look at some of the certificate templates.
+
+3
+00:00:20,090 --> 00:00:37,070
+So I'll go to Windows, Administrative Tools, and I'll fire up Certification Authority. Now I'm going to look at templates, so I'm going to expand the name of our CA, Fake Domain One, over on the left, and if I click Certificate Templates I see certificate templates on the right that can be used to issue certificates.
+
+4
+00:00:37,070 --> 00:00:50,040
+Now what I want to do is make sure that we've got one that supports client authentication. Now we've got a template here called Computer that supports both client authentication and server authentication.
+
+5
+00:00:50,040 --> 00:01:01,000
+Now if I really wanted to, I could right click on the certificate templates on the left, choose Manage, and I could go into that computer template and I could take a look at the details.
+
+6
+00:01:01,000 --> 00:01:10,060
+So the validity period is one year. I could take a look at the Security, so I'm going to make sure that authenticated users, let's say, have the Enroll permission.
+
+7
+00:01:10,060 --> 00:01:22,000
+So we could make changes here or most of it we can't make a change for, as you can see, it's grayed out, in which case, if we needed to, we could right click and Duplicate it and make changes, but I'm okay with simply changing the security.
+
+8
+00:01:22,000 --> 00:01:33,080
+So now what I want to do is make sure that we delete the existing Computer template that's been issued for use and then I'll right click on Certificate Templates, New, Certificate Template to issue.
+
+9
+00:01:33,080 --> 00:01:45,040
+It's got to be Computer because we made a change, we set the security, and I'll click Okay. So now what we're going to do is flip over to a Windows 10 client and request a certificate from that template.
+
+10
+00:01:45,040 --> 00:02:04,040
+Now that certificate, because it's going to be a computer based certificate, could be used to authenticate to a VPN, it could be used to authenticate some kind of app running on a server, it could also be used in order to authenticate to a website that requires client PKI certificates.
+
+11
+00:02:04,040 --> 00:02:17,070
+Here on Windows 10 I'm going to go to the Start menu and fire up MMC, Microsoft Management Console, and in there I will go to File, Add/Remove Snap-in, Certificates, and then I'll click Add.
+
+12
+00:02:17,070 --> 00:02:29,080
+I want to work with computer account certificates, not user or services, so I'll choose Computer Account and I will click Next and I wanted to look at the certificates on the local machine, not a remote computer over the network.
+
+13
+00:02:29,080 --> 00:02:40,010
+So I'll click Finish and Okay. So now if I expand Certificates, Personal, over on the left, we don't see anything. Well, none have been issued, but there will be something here shortly.
+
+14
+00:02:40,010 --> 00:02:54,060
+So I'm going to right click on Personal, going to choose All Tasks, Request New Certificate, and I'll click Next on the first two screens. We're going to go through Active Directory here and we can see here that we've got our computer certificate.
+
+15
+00:02:54,060 --> 00:03:04,060
+Its status is Available. That's the template rather, not the certificate. We will get a certificate shortly. So I'll turn on the checkmark for that and I'll click Enroll.
+
+16
+00:03:04,060 --> 00:03:32,000
+And after a moment we can see the status says Succeeded. We have been issued a certificate and now we can actually see it here. It's been issued to the DNS name of our Windows 10 station from our Certificate Authority called Fake Domain One and we can see the intended purposes here are for client authentication and server authentication and of course, we can also see the expiration date which comes from the certificate template.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:12,030
+- [Instructor] In this demonstration, I will be using OpenSSL to create a PKI certificate that will be used to secure an Apache web server running on Linux.
+
+2
+00:00:12,030 --> 00:00:28,050
+So the first thing we'll do here is just point out on my Linux host, I've got a cert folder. And if I do ls to list files, I've got the private key for my certificate authority, along with my certificate authority certificate FakeDomain2CA.
+
+3
+00:00:28,050 --> 00:00:40,050
+So that's already been done. Now, the next thing that I need to do is actually start generating a key that I'm going to use for my web server certificate.
+
+4
+00:00:40,050 --> 00:00:54,090
+So to do that, I'll start by clearing the screen and I'll run openssl, space, genersa. It's going to be the generation of an RSA type of key. - aes256 is the type of key.
+
+5
+00:00:54,090 --> 00:01:12,070
+And the output file name here, let's say, is going to be... I'm going to call it www.fakesitelocal.key. How about that? So I'm giving it a name and then I'm going to tell it, of course, I want the key length to be 2048.
+
+6
+00:01:12,070 --> 00:01:25,080
+So it says it's generating an RSA private key. In this case, it will be ultimately used for our web server PKI certificate. So it wants me to safeguard the private key in the file by password-protecting the file.
+
+7
+00:01:25,080 --> 00:01:41,010
+I like that idea. So I'm going to enter and verify a password for it. Okay, now, if I clear the screen and do an ls, what do we have here? Well, we had two files originally, but now, we've got our new private key file for our website.
+
+8
+00:01:41,010 --> 00:01:57,080
+Now, the next thing we need to do is actually generate a certificate signing request. So to do that, I'll run openssl req for request, - new - key, and I'm going to reference my key file, so www...
+
+9
+00:01:57,080 --> 00:02:06,050
+I can even use Tab completion because www makes that file name unique. Press a Tab and it just spells the whole thing out for me. Then I need an output file here.
+
+10
+00:02:06,050 --> 00:02:21,020
+I'm going to call this www.fakesite.local.csr because it is a certificate signing request. We're making a request for the certificate to be digitally signed by the CA.
+
+11
+00:02:21,020 --> 00:02:32,010
+Now, that's going to come in another command, but here, we're just generating the CSR. So again, it wants the passphrase for the private key that we generated earlier, so I will enter that.
+
+12
+00:02:32,010 --> 00:02:44,030
+And then it wants me to fill in details for the web server certificate and the country name. So let's say I'll just do this, CA for Canada. I'll fill in some other locale information like the province.
+
+13
+00:02:44,030 --> 00:02:54,000
+Here, I'll put Nova Scotia. And for the city where this will be used, let's say Halifax. The organization, the name is FakeCo. No organization or unit.
+
+14
+00:02:54,000 --> 00:03:06,050
+The common name here is going to be for my server. So www.fakesite.local. That's what people will use to connect to my secured website once it's secured.
+
+15
+00:03:06,050 --> 00:03:14,060
+It's not been configured yet, of course. That's what we're in the midst of doing. Going to press Enter and I'll put in some contact email address information here.
+
+16
+00:03:14,060 --> 00:03:27,020
+And after that, I'll press Enter. So now, it wants extra attributes to be sent with my certificate request. Well, I could specify that, so what I can do here is specify a challenge password.
+
+17
+00:03:27,020 --> 00:03:37,070
+So I'll put in password as the challenge password. I don't have to fill in any of this other optional stuff necessarily, so I'm just going to press Enter.
+
+18
+00:03:37,070 --> 00:03:51,070
+And I will clear the screen. So now, if I do an ls, I can see that we've got our certificate signing request file. Now, I've also created a file here called otherinfo.ext.
+
+19
+00:03:51,070 --> 00:04:05,070
+And if we cat that file, it contains information that will be added into the certificate when we actually generate the certificate by signing it from the CA because all we've done so far is generate the certificate signing request.
+
+20
+00:04:05,070 --> 00:04:20,030
+The key here is that we need to specify an alternate name, the subject alternative name. In this case, it's the URL of the website. This is going to be required in order for client devices to trust the certificate.
+
+21
+00:04:20,030 --> 00:04:30,040
+So I'm going to have to somehow reference this additional information, this extension information when I request the certificate. So we've got the certificate signing request.
+
+22
+00:04:30,040 --> 00:04:54,070
+Let's actually issue the certificate and take that file into account. So to create the server certificate, I will use the openssl command. I'll pass it the x509 parameter, that's the type of certificate, -req for request, - in to give it my certificate signing request file name, which in this case, is www.fakesite.local.csr.
+
+23
+00:04:54,070 --> 00:05:08,050
+You can see why it's important to track the file names in a location and then make sure you name them meaningfully. Then I'm going to use -CA and I'm going to specify my FakeDomain2CA certificate file.
+
+24
+00:05:08,050 --> 00:05:22,000
+Now, I'm going to use -CAkey and I'll specify my CAprivate.key file. I'll use -CAcreateserial to create a serial number file, a file that ends with .srl that's used when issuing certificates.
+
+25
+00:05:22,000 --> 00:05:34,050
+I'll use -extfile for extension file. And I'm going to reference my otherinfo.ext file that has the subject alternative name details. And then I have to designate the output file.
+
+26
+00:05:34,050 --> 00:05:57,040
+So what is the actual certificate file for our web server? It will be called www.fakesite.local.crt. Now, what's the expiration on that certificate? I'm going to set a validity period to -day 365 and the hashing algorithm for generating the digital signature from the CA, we'll use sha256.
+
+27
+00:05:57,040 --> 00:06:20,060
+Okay, and we'll go ahead and press Enter. So it wants the passphrase for the CA private key. Of course, so I'll go ahead and enter that in. And after a moment, if I clear the screen and type ls, I can see that I've actually got my web server certificate now that we've got generated www.fakesite.local.crt.
+
+28
+00:06:20,060 --> 00:06:46,090
+And depending on your Linux installation, you might need to run the a2enmod command to install the SSL module. However, I've already done that. What I'm going to do is simply take a look at the /etc/apache2 config file, which is under, let's just put here sites-enabled.
+
+29
+00:06:46,090 --> 00:07:01,020
+And under that, I'm going to specify my file name, 000-default.conf. Now, what I've done in that file is I've modified it a little bit so that it uses SSL.
+
+30
+00:07:01,020 --> 00:07:13,070
+So for the virtual host directive, I'm now using port 443 instead of 80. And then I've got all of these SSL directives here. Turning on the SSL engine, given that the module's installed.
+
+31
+00:07:13,070 --> 00:07:27,070
+Specifying my certificate file for my web server. So here is the file and that's in the /cert folder on the root of the file system. Then the key file, so the .key file for my server.
+
+32
+00:07:27,070 --> 00:07:42,020
+And then of course, the SSLCACertificateFile. Now, that SSLCACertificateFile, you can also import on client machines to establish trust. Now, let's clear the screen here.
+
+33
+00:07:42,020 --> 00:07:57,030
+And all I would do at this point is make sure that the Apache2 server is restarted. So I'm going to put in here service apache2 restart. This command will vary depending on your Linux distribution.
+
+34
+00:07:57,030 --> 00:08:05,020
+Now, it may take a moment before it refreshes. And at this point, here we go, it wants the passphrase, so I'm going to go ahead and put in the passphrase.
+
+35
+00:08:05,020 --> 00:08:21,040
+And after a moment, if we check the status of the Apache2 web server, we should see, in fact, that it's active and running. Here on my client web browser, I've used HTTPS to connect to my site and we've got here a sample webpage.
+
+36
+00:08:21,040 --> 00:08:34,060
+And if I click on the padlock for the certificate, we can see that FakeCoCA, that's my fake certificate authority created through OpenSSL, has issued a certificate for www.fakesite.local, and it's trusted.
+
+37
+00:08:34,060 --> 00:08:50,020
+Now, the reason it's trusted is because if I go into my browser settings, so I'll go into the Tools menu, Internet Options, Content, Certificates, Trusted Root Certificate Stores, and here, I've got the FakeCoCA certificate.
+
+
+@@@
+1
+00:00:01,010 --> 00:00:10,070
+- [Instructor] There are many ways to acquire a PKI certificate. In our case, we're going to be doing it through Amazon Web Services for a web server.
+
+2
+00:00:10,070 --> 00:00:25,040
+So the first thing I'll do here is check out the security options in the AWS Management Console. I've already got an AWS account that I've signed into, so down under security, I want to go down under certificate manager.
+
+3
+00:00:25,040 --> 00:00:40,040
+Now in here, if I click private CAs, I've already got a private, subordinate CA that I've created here in the cloud, we can see the status is listed as active, that I can use to issue certificates here in the cloud.
+
+4
+00:00:40,040 --> 00:00:53,060
+To issue certificates, I'll go to certificate manager in the left-hand navigator. Then on the right, I'll click get started. Now, I don't need to import a certificate, we already have a subordinate CA certificate.
+
+5
+00:00:53,060 --> 00:01:02,090
+I can request either a public certificate. Now, I don't want to do that, that'll request it from Amazon, I want to do a private certificate from my own CA.
+
+6
+00:01:02,090 --> 00:01:19,040
+So down below I'll choose request a private certificate. Then in the bottom-right, I'll click request a certificate. From the CA drop-down list, I'll choose the only private CA we've got in the cloud here, the FakeCoSubCA, then I'll click next.
+
+7
+00:01:19,040 --> 00:01:37,020
+Then I have to specify the host name for which I want to issue this certificate. Let's say we've got a website that we want to enable with TLS, so we need a PKI certificate for that, and let's say the URL for that is www.fakesite.com.
+
+8
+00:01:37,020 --> 00:01:47,010
+Now we do have the ability to add alternative names to the certificate as well, but I'm going to stick just with that DNS name, and then I'll click review and request.
+
+9
+00:01:47,010 --> 00:02:02,090
+So we can see the subordinate CA listed here that will issue this certificate, and we can see that it is for a URL of www.fakesite.com. So I'm going to go ahead and click confirm and request.
+
+10
+00:02:02,090 --> 00:02:13,040
+So at this point, the subordinate CA is issuing a PKI certificate, and we can now see down below that, indeed, the certificate has a status of issued.
+
+11
+00:02:13,040 --> 00:02:31,000
+Now at this point, if I select that, by clicking the checkbox for that entry, in the actions menu, we can export this information. Now we could do that so we could use it in a number of different places, such as for securing a web server.
+
+
+@@@
+1
+00:00:01,010 --> 00:00:11,020
+- [Instructor] Developers love code signing certificates because they can digitally sign their software that they might have built or scripts they might have created, to establish trust.
+
+2
+00:00:11,020 --> 00:00:25,090
+And today with mobile app stores it's important that developers acquire the appropriate signing certificate from the appropriate authority, for example for the Apple App Store or Google Play, but in this case, we're going to do it within a single organization.
+
+3
+00:00:25,090 --> 00:00:39,090
+So on my certification authority server, I'm going to start by going into the Start menu so that we can fire up the appropriate management tool. And what that is, is under Windows Administrative Tools, I'm going to go into the Certification Authority.
+
+4
+00:00:39,090 --> 00:00:54,080
+Within the Certification Authority Tool on the left, what I'm going to do is go down under my CA, which is called FakeDomain1, and I'm going to click Certificate Templates, and we can see some certificate templates on the right that are available here to issue PKI certificates.
+
+5
+00:00:54,080 --> 00:01:10,080
+But I don't see anything about code signing or anything like that, and so, I'm going to right-click on Certificate Templates on the left, and I'll choose Manage, where we get a master list of all templates, even the ones not ready to be used to issue certificates, one of which is called Code Signing.
+
+6
+00:01:10,080 --> 00:01:24,050
+So, I'm going to right-click and duplicate it because I want to make changes. And for General, I'm just going to call this Custom Code Signing. I want the certificate validity period not to be the default one year from this template, but instead, two.
+
+7
+00:01:24,050 --> 00:01:41,030
+Then, under the Subject Name, I want that supplied in the request to get a certificate, so I'll turn that on, and click OK. And the last thing I'll make sure I do here is under Security, I'm going to make sure Authenticated Users are allowed to enroll, so they can get a certificate using this template.
+
+8
+00:01:41,030 --> 00:01:56,030
+Of course, I could do it for other particular users or groups as needed, but I'm going to do it for Authenticated Users. So that means anyone authenticated in this case to active directory will be able to request one of these certificates, and if that makes sense, then we're good to go.
+
+9
+00:01:56,030 --> 00:02:12,000
+That makes sense for me, so I'm good to go. I'm going to click OK, and I'm going to close out that screen. But it doesn't show up in the list of templates because I need to issue it as being usable, so I'll do that by right-clicking Certificate Templates on the left.
+
+10
+00:02:12,000 --> 00:02:22,030
+I'll choose New Certificate Template to Issue. So I'll choose our Custom Code Signing template, and I'll click OK. Now our Custom Code Signing template is available.
+
+11
+00:02:22,030 --> 00:02:37,080
+So, for machines joined to this active directory domain, it's going to be a simple matter to use that template to get a PKI certificate. So I'll do it on the same machine, although often it would be done on a developer station out on the network that's joined to the domain.
+
+12
+00:02:37,080 --> 00:02:54,050
+So, what I'm going to do, is go to my Start menu and run the CertMGR tool. It shows up as Manage computer certificates. And what I want to do is expand Personal on the left, click Certificates, right-click Certificates, All Tasks, Request New Certificate.
+
+13
+00:02:54,050 --> 00:03:12,090
+I'll just click Next on the first two introductory screens. And I am interested in my Custom Code Signing certificate, so if I choose Show all templates, here in the bottom left, and if I scroll down, we'll see that we've got our Custom Code Signing certificate, but there's an X through it, which is why it wasn't showing up.
+
+14
+00:03:12,090 --> 00:03:24,020
+It says the specified role was not configured for the application. This can only be issued to a user. Oh, well that's no problem. It's not a computer type of certificate, it's for developers.
+
+15
+00:03:24,020 --> 00:03:34,040
+So, I'm going to go ahead and close the CertMGR tool, go back into my Start menu and do mmc, Microsoft Management Console. I'm going to add the appropriate Snap-in here.
+
+16
+00:03:34,040 --> 00:03:49,080
+So, what I can do is go to the File menu, Add/Remove snap-in, and I'm looking here to add the certificates snap-in, so Certificates, Add. Aha, now it says My user account, Service account, or Computer account.
+
+17
+00:03:49,080 --> 00:04:08,060
+Well, that template for code signing is designed for users, so I'm going to use My user account here. And I'll finish that, and OK. So, now on the left, if I drill down under Certificates, and Personal, Certificates, you can see any certificates issued to this user and their intended purposes.
+
+18
+00:04:08,060 --> 00:04:23,080
+However, I want a new certificate, specifically, a code signing certificate. So, I'm going to right-click on Certificates on the left and choose All Tasks, Request New Certificate, and on the introductory screen click Next twice.
+
+19
+00:04:23,080 --> 00:04:33,040
+And now notice there's the Custom Code Signing certificate. We didn't have to choose Show all templates, and it doesn't have a red X because it's applicable now for users.
+
+20
+00:04:33,040 --> 00:04:45,040
+So, I'm going to select that, and it says More information is required, indeed. Go ahead and click that. So now I can specify naming information for the subject that will use the certificate.
+
+21
+00:04:45,040 --> 00:04:59,020
+For example, maybe the common name for the account I'm using is simply Administrator. I'll go ahead and add that over there. And then maybe I could specify the email address if I had a specific email address for this account that I wanted to use.
+
+22
+00:04:59,020 --> 00:05:12,000
+Notice there are other items as well, such as IP Addresses or the User principal name and active directory, and so on. But in this case I'm going to leave it on the subject name with the common name of simply Administrator.
+
+23
+00:05:12,000 --> 00:05:32,060
+And then I'll click OK and Enroll. Notice after a moment the STATUS is that it succeeded. We have been issued that certificate. So, I'll click Finish, and indeed notice that FakeDomain1, our certification authority, has issued a certificate to Administrator for the purposes of Code Signing.
+
+24
+00:05:32,060 --> 00:05:41,070
+And I can see it here under the Expiration Date column, but if I double-click on it, I can also see the validity period from start to end of this certificate.
+
+25
+00:05:41,070 --> 00:05:51,040
+Also note that it says that we have a private key that corresponds to this certificate. Well that's important because in order to create a digital signature, you need a private key.
+
+
+@@@
+1
+00:00:01,010 --> 00:00:11,070
+- [Instructor] A big part of working with SSL and TLS includes hashing and digital signatures. These are methods that fall into the big picture of securing network communications.
+
+2
+00:00:11,070 --> 00:00:22,070
+Let's define how that works. We'll start by talking about hashing. Hashing doesn't necessarily require a PKI certificate and it might not even be used for network communications.
+
+3
+00:00:22,070 --> 00:00:35,010
+However, it can be. So it can be used to verify the integrity of network messages, or simply the integrity of files that are stored somewhere. And also to verify machine boot-up settings.
+
+4
+00:00:35,010 --> 00:00:45,000
+When we say verify the integrity, what we mean is we want to make sure that these things have not been tampered with, they've not been modified by unauthorized parties.
+
+5
+00:00:45,000 --> 00:00:58,010
+So hashing then doesn't provide data confidentiality that would be encryption. Hashing can also be used with SSL and TLS and we'll identify that a little bit later when we talk about digital signatures.
+
+6
+00:00:58,010 --> 00:01:12,050
+Hashing uses a one-way algorithm that results in a unique value and that unique value is called a hash or a message digest. And it's unique based on the data itself that was hashed.
+
+7
+00:01:12,050 --> 00:01:25,090
+So we might do this in the file system and then compute the hash in the future to see if the hash is the same because when you compute a hash and it's different than what it was previously you know that something has changed in that data.
+
+8
+00:01:25,090 --> 00:01:43,010
+Common hashing algorithms include, securing hashing algorithm or SHA-one. Also SHA-2, SHA-3. Now with each subsequent secure hashing algorithm version we have a better implementation with support for longer key lengths.
+
+9
+00:01:43,010 --> 00:02:03,050
+There's also message digest five, MD5, and RIPEMD. Now depending on the solution you're configuring, such as configuring a certificate authority. If you're doing that within your organization, you would get to choose the hashing algorithm used by that authority to digitally sign certificates.
+
+10
+00:02:03,050 --> 00:02:15,060
+Digital signatures by the way are important. What do they do, how does this work? Digital signatures are used to provide data authentication, integrity, and non-repudiation.
+
+11
+00:02:15,060 --> 00:02:24,000
+What do those mean? Well data authentication, we need to make sure that we trust that the message came from who it says it came from. How can you do that?
+
+12
+00:02:24,000 --> 00:02:32,090
+You can do that because a digital signature is created with a private key and only the owner of that key has access to it. Therefore they must have created the signature.
+
+13
+00:02:32,090 --> 00:02:45,080
+Integrity as we know, means we want to make sure data hasn't been tampered with by unauthorized parties. And non-repudiation again means that we want to make sure that whoever signed this can't refute the fact that they sent it and signed it because they had to have.
+
+14
+00:02:45,080 --> 00:03:00,030
+Only they have access to the private key. So the theme here is that the private key which is mathematically related to the public key as it relates to the PKI hierarchy, the private key needs to be kept under lock and key.
+
+15
+00:03:00,030 --> 00:03:12,000
+You don't want to share that with anybody, it needs to be safely secured. So digital signatures do not provide data confidentiality. Again, that's what encryption does.
+
+16
+00:03:12,000 --> 00:03:27,030
+So we can use digital signatures with SSL or TLS even within specific applications. We can use digital signatures for scripts. We can use digital signatures for device drivers in for example, the Windows Operating System.
+
+17
+00:03:27,030 --> 00:03:38,010
+In the end, it allows us to trust that it's authentic and it's not malicious, and it hasn't been tampered with. So a digital signature then works this way.
+
+18
+00:03:38,010 --> 00:03:49,060
+Imagine that we are sending an email message to a colleague and what we want to do is digitally sign it so that the recipient, our colleague, can rest assured the message really came from us.
+
+19
+00:03:49,060 --> 00:04:03,030
+So what happens is our email software would generate a hash value of the message content by using a hashing algorithm. Then, we encrypt that hash value using our private key.
+
+20
+00:04:03,030 --> 00:04:16,010
+Not the recipient's, using ours. And so this signature is verified on the other end with the mathematically related public key. That would be our public key that the recipient would have.
+
+21
+00:04:16,010 --> 00:04:28,010
+If we take a look here at the screenshot we've got a mail program where as the user is creating a mail message they'll have buttons where they can simply click to sign the message or to encrypt.
+
+22
+00:04:28,010 --> 00:04:39,010
+Now remember, when you digitally sign a message you require your private key. But when you encrypt a message for somebody else, you need their public key.
+
+23
+00:04:39,010 --> 00:04:49,040
+The next screenshot we see here is a set of settings within email where we can enable encryption and digital signatures as a default for all messages.
+
+24
+00:04:49,040 --> 00:05:00,000
+So the user could simply send messages without having to encrypt and sign manually for each message. And in a more highly secured environment, this might be a good thing to configure.
+
+
+@@@
+1
+00:00:01,010 --> 00:00:12,070
+- [Instructor] While PKI certificates can be used to encrypt files, they can also be used to secure network communications and that's where SSL and TLS come in but we know that we shouldn't use SSL because it's not secure.
+
+2
+00:00:12,070 --> 00:00:28,000
+It's got a lot of known vulnerabilities. In this demonstration, I'll be configuring a web server to use a PKI certificate so that we have encrypted communications so that the user can connect over HTTPS instead of HTTP.
+
+3
+00:00:28,000 --> 00:00:40,010
+The first thing I'll do here on my server and I don't have to do this from the server but that's what I am doing, I'm going to start a web browser and just connect to the URL of the server over HTTP to verify that it's there and that it's running.
+
+4
+00:00:40,010 --> 00:01:15,000
+So this is a Microsoft Internet Information Services web server that I've installed with default settings. Now what I have done if I go into my start menu and start regedit, the registry editor, is down under HKEY local machine, system, current control set, control, and all the way down under security providers, S channel, protocols, I have created a key here called SSL space 3.0 under which I have created a key called server under which I have created two D word values.
+
+5
+00:01:15,000 --> 00:01:32,020
+One is called disabled by default and I've set it to a value of one and one is called enabled and I've set it to a value of zero. I am disabling SSL version three with these settings in the registry and if you're just doing it, you'll have to restart the server for it to take effect.
+
+6
+00:01:32,020 --> 00:01:52,070
+Now let's not forget that SSL and TLS are configured client and server side. It's not configured within a PKI certificate and so also in the web browser I may want to go into in this case tools, internet options, and under advanced, I might want to make sure that SSL 3.0 is turned off.
+
+7
+00:01:52,070 --> 00:02:04,020
+I've also got TLS 1.0 turned off because there are vulnerabilities associated with it like the beast attack so I've got TLS 1.1 and 1.2 enabled in the browser.
+
+8
+00:02:04,020 --> 00:02:28,090
+So the next order of business is to make sure I've got a PKI certificate on this host that can be used for the web server. For that, I'm going to go into my start menu and run cert MGR to get into my local computer certificates and on the left I'll go under personal certificates and what I see is that fake domain one has issued a certificate for my server.
+
+9
+00:02:28,090 --> 00:02:58,030
+See it listed right up here and I can see its purpose is server authentication. If I double click on that certificate, I can also see the validity period for how long it's valid and when it expires and I can also go into the details tab and as an example I can also take a look here at any alternative names such as the DNS name of the server, in this case serve 2016 dash one dot fake domain one dot local.
+
+10
+00:02:58,030 --> 00:03:15,090
+What I'm going to do then is configure my web server to use that certificate. For that, I'll go into my start menu. I need to go into my Windows administrative tools and I'm interested in going into the IIS or Internet Information Services manager tool.
+
+11
+00:03:15,090 --> 00:03:30,040
+Within here, I can drill down under my server and see all of the websites such as the default website. Now if I either right click on that website or having it selected if I click bindings over on the right, I can see I've only got a port 80 binding.
+
+12
+00:03:30,040 --> 00:03:41,060
+If I go back into my web browser and if I were to change the URL prefix here to HTTPS for secured noticed currently it says the page can't be displayed.
+
+13
+00:03:41,060 --> 00:04:12,030
+Well that's because we don't have a binding for port 443 with HTTPS so I'm going to add one here back in the IIS manager by clicking the add button. HTTPS, use any of the assigned IP addresses although I could choose a specific IP on this host if I so chose, I want port 443 because that's normal for this type of connection and down below I have to choose the SSL certificate although technically that is a misnomer even in this dialogue box.
+
+14
+00:04:12,030 --> 00:04:26,010
+What I'm going to do here is choose serve 2016 dash one. Here I can click view to make sure that that is the right certificate and look at the validity period and indeed I know that this is the correct certificate for this purpose so I'll click okay and okay.
+
+15
+00:04:26,010 --> 00:04:36,000
+Now it says this binding is already being used. That's okay. That might be used if you've got another website using port 443. In this case I want to override that.
+
+16
+00:04:36,000 --> 00:04:47,080
+I want this one to be the dominate one so therefore I'm going to click yes, overwrite, let's do it. Here we go, we've got a binding for HTTPS on port 443 with the appropriate PKI certificate.
+
+17
+00:04:47,080 --> 00:04:58,080
+I'm not going to call it an SSL certificate and I'm just going to switch back to the browser where previously we couldn't display a page over HTTPS. However now if I do a refresh, it's working.
+
+18
+00:04:58,080 --> 00:05:17,090
+Also if I click the little padlock and of course this is specific to the Internet Explorer web browser so if you're using Google Chrome or Safari or Microsoft Edge or whatnot, you'll have a different mechanism for viewing the details for a certificate used on a site but if I click on that I can choose view certificates.
+
+19
+00:05:17,090 --> 00:05:33,060
+Here I can see it was issued by my certificate authority fake domain one to my server. Again there's the validity period. Under details we know the certificate's working when we connect to the DNS name because that's also listed in the subject alternative name or SAN field.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:09,070
+- [Narrator] A secured website can use a certificate server side to secure the communications when client web browsers make a connection to that site.
+
+2
+00:00:09,070 --> 00:00:21,040
+We also have the option of configuring the web server such that clients must also have a certificate, a client-side certificate, in order to authenticate to the server.
+
+3
+00:00:21,040 --> 00:00:40,020
+So to make that happen, here on my Microsoft IIS web server machine, I'm going to go into the start menu, and I'm going to go down under Windows Administrative Tools, under which I'll then find the IIS Administration Tool, so here it is in the IIS Internet Information Services.
+
+4
+00:00:40,020 --> 00:00:58,030
+On the left, I will expand my server, and Sites, and I've got a Default Web Site where, if I right-click that Default Web Site, and go into Edit Bindings, we already have a binding in HTTPS binding for TCP Port 443, and if I edit that, it's tied to a server certificate.
+
+5
+00:00:58,030 --> 00:01:10,080
+So that portion is already configured server-side, but that will let any client connect to this server without getting into other configurations that might ask for usernames or passwords.
+
+6
+00:01:10,080 --> 00:01:24,050
+I want to limit the scope of the clients that can connect to this secured site. So what I'm going to do here then in my IIS tool, I still Default Web Site selected over on the left; over on the right, I'm going to double-click SSL Settings.
+
+7
+00:01:24,050 --> 00:01:39,060
+Now what I want to do in here is turn on Require SSL, and for client certificates, I'm going to select Require, so clients that try to connect to this secured website must have a certificate, a PKI certificate.
+
+8
+00:01:39,060 --> 00:01:56,080
+Now, also the chain of trust is important, because what happens when the client and the server communicate initially is that they will exchange a list of certificate authorities, and then the client will select one that it has that matches what's trusted by the server, and so we need to make sure that the client has the appropriate certificates.
+
+9
+00:01:56,080 --> 00:02:12,040
+So let me apply this change, so that's been done, and now the next thing I'm going to do on this machine, because this is where I'm going to run a web browser and test it as a client, although certainly you can do it on any other machine on the network, and it does not have to joined to the domain or anything like that.
+
+10
+00:02:12,040 --> 00:02:33,080
+So, what I'm going to do is start the MMC, Microsoft Management Console tool, and I got to go to File, Add/Remove Snap-ins, Certificates, I'll click Add for my user account, 'cause we're talking about user certificates on the client here, I'll click OK, I'm then going to expand Certificates and Personal, and Certificates over on the left.
+
+11
+00:02:33,080 --> 00:02:50,030
+Okay, so what I want to do here is I want to make sure that I've got a certificate that can be used for client authentication. Now we've got certificates here for the user, but they're for file recovery, encrypting file system, code signing; that's not going to cut it.
+
+12
+00:02:50,030 --> 00:02:58,090
+Now, because I'm doing this on a machine that is joined to the active directory domain where the server is, I can request a certificate within this tool.
+
+13
+00:02:58,090 --> 00:03:10,050
+Otherwise, I might go to the website to do it; that would be the website of my IIS server where I've installed the web component, and I could connect to /certsrv.
+
+14
+00:03:10,050 --> 00:03:25,060
+However, here, I'm going to right-click on Certificates, and choose All Tasks, Request New Certificate, and I'll just go through here until I see user certificate; that's what I need issued on this machine, and I'll click and roll.
+
+15
+00:03:25,060 --> 00:03:40,010
+And just like that, it says STATUS: Succeeded. Okay, so I'll click finish, and it now looks like we have a new certificate, issued by our certificate authority, FakeDomain1, to user administrator, the user I'm currently logged in as.
+
+16
+00:03:40,010 --> 00:03:56,030
+And, I can see over here that it is set with a number of intended purposes, including client authentication. That's great; we're happy with this. So now the next thing I want to do is go into my web browser to test this out.
+
+17
+00:03:56,030 --> 00:04:13,030
+So I'm going to go ahead and fire up my browser, and the first thing I'm going to do, in this case it's Internet Explorer, I'm going to go into my Tools settings, so Alt + T for the Tools menu, and I'm going to go all the way down into Internet Options, Security, and I'm going to go into Local Intranet.
+
+18
+00:04:13,030 --> 00:04:33,000
+Now my local intranet is my local intranet where I'm making connectivity to web services, which I'm doing here, and what I want to do is click custom level, because I want to make sure that when I try to connect to the website, that it prompts me to select the client certificate on my client machine, even if I only have one, just so we can see it.
+
+19
+00:04:33,000 --> 00:04:44,080
+So I'm going to scroll down in the settings here until I get all the way down to, let's see, don't prompt for client certificate selection when only one certificate exists.
+
+20
+00:04:44,080 --> 00:04:58,080
+Well I've already gone and disabled that, because I do want to be prompted, even if I only have one client certificate that matches a trusted CA authority that the server trusts, because I want to see it as I'm connecting.
+
+21
+00:04:58,080 --> 00:05:21,050
+So that's already been done, so I'm going to go ahead and cancel out of this. So now I'm going to go back into my web browser and try to reconnect to that HTTPS secured site, and this time I'm prompted to choose a client SSL certificate, so this is one issued to a user, in this case administrator, from our certificate authority, FakeDomain1.
+
+22
+00:05:21,050 --> 00:05:33,050
+So I'm going to go ahead and click OK. And sure enough, after a moment, this client has successfully made a connection to this client certificate enabled web server.
+
+23
+00:05:33,050 --> 00:05:47,060
+Also remember that you can connect to the certsrv URL, and then authenticate, in this case with the domain account, if you want to acquire a client certificate this way for machines not joined to active directory.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:10,050
+- [Instructor] Developers can use code signing certificates to digitally sign software that they built and administrators can use code signing certificates to digitally sign scripts that they create.
+
+2
+00:00:10,050 --> 00:00:37,050
+Now why do this? Well, a digital signature establishes trust. We might configure machines in the enterprise for example to only allow the execution of software and scripts that are digitally signed with the code signing certificate where we trust the issuer of that certificate, where we trust the certificate authority and so the first thing I'm going to do here on my Windows server is go to the start menu and run MMC, the Microsoft Management Console.
+
+3
+00:00:37,050 --> 00:00:52,030
+Within there, I'm going to go to file, add remove snap in, I'll choose certificates and add and I want to view local user certificates because I want to see if there's already a code signing certificate.
+
+4
+00:00:52,030 --> 00:01:15,020
+There shouldn't be so I'll click finish and okay. And on the left, I'll drill down under certificates, personal, and certificates again and we can see on the right that we have two certificates issued to a user, in this case administrator, for the purposes of file recovery and equipping file system but notice the absence of a code signing certificate.
+
+5
+00:01:15,020 --> 00:01:32,000
+We're going to leave this open and come back here after. I'm going to go into my start menu again so we can take a look at certificate templates here with the Microsoft certification authority so I'm going to go down under Windows administrative tools and I'm going to click certification authority.
+
+6
+00:01:32,000 --> 00:01:43,080
+Where we can see on the left, our certificate authority is called fake domain one. I'm going to expand that and if I click certificate templates, I've already gone and created a custom code signing template.
+
+7
+00:01:43,080 --> 00:01:58,030
+The way that that was done was by right clicking certificate template on the left here and choosing manage. I duplicated the code signing certificate by right clicking and duplicating it where I could then go under general and give it a name of my choosing.
+
+8
+00:01:58,030 --> 00:02:16,080
+I can set the validity period for how long the certificate can be used. Also the subject name to determine how the name for the entity that will be receiving this certificate is created whether it's supplied manually or built from Active Directory and also under security we can determine who's allowed to enroll.
+
+9
+00:02:16,080 --> 00:02:25,090
+In other words who's allowed to get a certificate created from this template. That's already been done. There are many ways to acquire a code signing certificate.
+
+10
+00:02:25,090 --> 00:02:40,090
+If you need your code to be trusted for example worldwide, then you would go to a certificate authority that's trusted internationally, pay a fee and get your certificate that way but here, we're just going to do it with an internal certificate authority.
+
+11
+00:02:40,090 --> 00:02:49,070
+I'm going to go ahead and fire up a web browser and we're going to connect to the web page where we can request certificates although there are other ways it can be done as well.
+
+12
+00:02:49,070 --> 00:03:09,070
+I'm going to connect to HTTPS colon slash slash and I'll put in the DNS name of the server where I've installed the Microsoft certification authority components, so fake domain one dot local slash cert and then I want to connect to the server so cert SRV for certificate server.
+
+13
+00:03:09,070 --> 00:03:22,020
+I'm then prompted to authenticate with Active Directory credentials. I'm going to go ahead and specify my administrator account along with the appropriate password to go with that account.
+
+14
+00:03:22,020 --> 00:03:47,090
+After I've done that, I've on the page for my certificate authority fake domain one listed at the top where I can choose request a certificate and a code signing certificate is considered an advanced certificate request so I'm going to choose that then I'll choose create and submit a request to this CA and after I've done that I then need to specify the certificate template that I want to use.
+
+15
+00:03:47,090 --> 00:04:24,000
+It's asking me do we want to allow this website to start doing digital certificate operations in the browser? Yes, so I'll choose yes. The certificate template here I'm going to choose my custom code signing certificate and then I'll fill in a few things for example maybe the username is user one and the email is u1@fakedomain1.local and I'm not going to fill in any of those other details but down below notice it's got the cryptographic provider selected and the key size is set to 2,048 bits, so really that's all I need to do here.
+
+16
+00:04:24,000 --> 00:04:36,040
+It's going to use the PKCS10 standard to submit the request, that's fine, that is the norm, so I'm going to go ahead and just click submit. And then again we get a message, the site is trying to do digital certificate stuff.
+
+17
+00:04:36,040 --> 00:04:46,050
+That's no problem, that's what we're here to do. Yes. Okay, the certificate's been issued and we even have it convenient link right here on the page to install it on this machine.
+
+18
+00:04:46,050 --> 00:04:55,080
+Oh, we're definitely doing that. Install this certificate and now it says your new certificate has been successfully installed. Well, let's see if that's the case.
+
+19
+00:04:55,080 --> 00:05:09,050
+Let's go back and refresh our list of user certificates and lo and behold, we've got a certificate issued from our certificate authority fake domain one to user one, that's what we filled in on the form and it's a code signing certificate.
+
+20
+00:05:09,050 --> 00:05:19,020
+That's fantastic. Now the other thing that we're going to want to make sure that we do is make sure that we've got this listed properly under trusted publishers.
+
+21
+00:05:19,020 --> 00:05:36,050
+This is for signed software. Now this would be on machines that need to trust digital signatures. I'm doing all the testing on one machine but all the machines in the enterprise if they're going to partake in this, they need to have the appropriate trusted publisher configured.
+
+22
+00:05:36,050 --> 00:05:45,010
+We'll take a look at how to do that in just a minute after we digitally sign our PowerShell script. Let's start by going to the start menu and I'll type in ISE.
+
+23
+00:05:45,010 --> 00:06:00,070
+Let's start the Windows PowerShell Integrated Scripting Environment. This is just a tool that will allow us to work with PowerShell scripts although there are other ways to do it and I'm just going to go open some scripts that I've already got prepared, one of which is called test.ps1.
+
+24
+00:06:00,070 --> 00:06:10,090
+PowerShell scripts normally have a ps1 file extension and it doesn't get any simpler than this. The script is clearing the screen and then simply reporting back the script has executed.
+
+25
+00:06:10,090 --> 00:06:30,080
+Okay, let me open another script I've got prepared here called signed script. This has the instructions to actually digitally sign a PowerShell script so in line one what I'm doing is creating a variable called cert and we work with variables in PowerShell using a dollar sign prefix.
+
+26
+00:06:30,080 --> 00:06:41,010
+Then I'm using the get child item PowerShell commandlet to go into the certificate store. Notice it looks like a drive letter, cert colon and down here at the bottom check this out.
+
+27
+00:06:41,010 --> 00:07:01,030
+I can go change directory CD space cert colon, oh, I'm in a different drive. I'm in the local certificate store and if I were to change directory let's say to current user and then my M-Y like our code is doing up there in line one, and if I do a DIR it's almost like I'm browsing a file system.
+
+28
+00:07:01,030 --> 00:07:15,040
+Well there's our user one code signing certificate. It's the first one listed and so what we're doing then, we get child item, it's saying okay, go into the certificate store, the list where we see three of them currently and return the first one.
+
+29
+00:07:15,040 --> 00:07:30,060
+It starts counting at zero because the first one as we can see is our code signing certificate issued to U1 or user one. Once we've done that, the cert variable will contain information regarding that certificate so let's just execute line one here.
+
+30
+00:07:30,060 --> 00:07:41,020
+Our cursor is blinking on line one in the script and so in power shell we can click this run selection button or press F8 to run just that line of code.
+
+31
+00:07:41,020 --> 00:07:49,090
+Alright, looks like it ran it down there. Let's just clear the screen to see less and I'm just going to type dollar sign cert to return back the value of that variable.
+
+32
+00:07:49,090 --> 00:08:07,070
+Okay, it's got information related to our user one code signing certificate. To actually digitally sign a script, in this case we're going to sign test.ps1 which is in the scripts folder on drive C, to do that we use the set authentic code signature PowerShell commandlet.
+
+33
+00:08:07,070 --> 00:08:19,080
+Then we specify the certificate, the code signing certificate we're going to use and all we're doing is making a reference to our cert variable in line one and of course, we have to tell it what we want to sign using the dash file path parameter.
+
+34
+00:08:19,080 --> 00:08:35,070
+Before I do that, let me close the script that we're about to digitally sign. Notice it's only got really two lines of code in it. Not very complicated and with my cursor blinking on line three here I'm going to actually sign that script with my run selection button once again.
+
+35
+00:08:35,070 --> 00:08:52,020
+Now let's reopen the test one ps1 script. Wow, it looks different because we only really had two lines of code but when you digitally sign a PowerShell script, you get the digital signature block in the file as we can see here.
+
+36
+00:08:52,020 --> 00:09:03,030
+Well that's interesting. If we try to run that script, I'm going to go down to the PowerShell window down here, maybe I'll just do CD backslash scripts to go to the scripts folder.
+
+37
+00:09:03,030 --> 00:09:22,090
+Well that didn't work because we're still in the certificate store hierarchy, so how about I just type C colon and then CD space slash scripts. That'll work now that we're back into the file system so if I do a DIR indeed there's our test ps1, that's the script we're looking at up above that's been digitally signed.
+
+38
+00:09:22,090 --> 00:09:33,040
+Now if I try to run that script right now based on the configuration of PowerShell and the machine it may run, it may not. What does that mean? Let's type in this PowerShell commandlet.
+
+39
+00:09:33,040 --> 00:09:45,060
+Get dash execution policy. This'll tell me how PowerShell scripts are treated on this machine, whether or not they're allowed to run. Currently it's set to all sign.
+
+40
+00:09:45,060 --> 00:10:01,050
+That could have been set with the set execution policy all signed command. What this means is that if we want to run a script, it has to be digitally signed and we have to trust the signer of the certificate, the CA.
+
+41
+00:10:01,050 --> 00:10:26,060
+What I'm going to do is run dot slash test.ps1 to try to run the script and it says well, you're trying to run a script that's signed but we don't trust the signer, so you want to never run it, run it once, always run it, well, I'm going to cancel that and I'm going to navigate to the file system here where that file exists, so that's on drive C under scripts, there it is, test ps1.
+
+42
+00:10:26,060 --> 00:10:39,080
+I'm going to right click on that file, go to properties and because it's signed, we have a digital signatures tab. For user one code signing certificates so I'll select that and go to details and I'll click view certificate and then I'll choose install.
+
+43
+00:10:39,080 --> 00:10:53,040
+Now I want to install this for the current user but I'm going to place it specifically as we mentioned earlier into the trusted publishers part of the certificate store and then I will click next and finish.
+
+44
+00:10:53,040 --> 00:11:02,080
+It says the import was successful. Let's go check it out, shall we? Let me just close out of here and switch back over to where we were viewing certificates.
+
+45
+00:11:02,080 --> 00:11:19,000
+Remember when we were looking at trusted publishers before? There's nothing there unless we refresh. Aha, now there is. Let's flip back to the PowerShell ISE where we were working on trying to run that script 'cause it's digitally signed and it said we don't trust the signer.
+
+46
+00:11:19,000 --> 00:11:32,000
+Let's run that again. This time it ran, we see our text the script has executed and we didn't get a message about not trusting the signer because we installed the certificate into trusted publishers.
+
+
+@@@
+1
+00:00:00,080 --> 00:00:11,080
+- While PKI certificates can be used along with security protocols like TLS to secure network communications, PKI certificates can also be used to encrypt files.
+
+2
+00:00:11,080 --> 00:00:27,040
+And we're going to focus here on that using Microsoft Encrypting File System or EFS. We're going to build a custom PKI certificate template so that we can control things like the validity period for how long that certificate is valid for encrypting files.
+
+3
+00:00:27,040 --> 00:00:42,030
+So let's get started here on the server where I've installed the certification authority. I'm going to start by going to the Start Menu and drilling down under Windows Administrative Tools and then further drilling down into the certification authority tool.
+
+4
+00:00:42,030 --> 00:00:59,000
+We can see we've got a CA here called FakeDomain1 and on the left in the navigator I'll expand that to reveal Certificate Templates. And we've got a basic EFS or Encrypting File System template here, but I want to customize how that behaves, so I won't use that.
+
+5
+00:00:59,000 --> 00:01:09,040
+There's also an EFS recovery agent template here, which is a third party, such as the domain administrator, at least by default, that can decrypt anyone's file in the domain.
+
+6
+00:01:09,040 --> 00:01:18,030
+So I'm going to go ahead and right click on Certificate Templates and choose Manage. I'm going to duplicate the basic EFS template by right clicking on it and choosing duplicate.
+
+7
+00:01:18,030 --> 00:01:29,060
+And then under General I'm going to call this, let's say, Custom EFS. I want the validity period here to be, let's say, only two years. So not the default one here, but two years.
+
+8
+00:01:29,060 --> 00:01:47,010
+I can also specify under Compatibility for instance, if I know I'm only using Windows 10 and Windows Server 2016, then I could select those for the certification authority, and then I'll click OK, on the additional options available because of that, and same for the certificate recipient.
+
+9
+00:01:47,010 --> 00:01:57,070
+I'll choose Windows 10, Windows Server 2016, lot of extra options available. I'm not going to really be using them, but I'm still going to choose it, and I'll choose OK, to confirm that.
+
+10
+00:01:57,070 --> 00:02:08,070
+So now at this point I could go into the Subject Name to determine how the name of the subject to which the certificate is issued is built. Here, it's going to build it from Active Directory.
+
+11
+00:02:08,070 --> 00:02:19,050
+Through the user principal name, the UPN. So that's fine, I'm not going to change that aspect of this, so I'm just going to go ahead and click OK, and we've got our custom EFS template here.
+
+12
+00:02:19,050 --> 00:02:30,010
+So to make it usable for certificate issuance back here, in our certificate manager tool, I'm going to right click on Certificate Templates and I'll choose New Certificate Template to issue.
+
+13
+00:02:30,010 --> 00:02:41,080
+I want to issue the custom EFS template so it can actually be used, and I'll click OK. So now, we've got our custom EFS template here. Now, there are many ways we can work with this from here.
+
+14
+00:02:41,080 --> 00:02:52,030
+We can go into Group Policy and configure certificate auto-enrollment, or we could simply request a certificate from the machine through the manual method, which is what I'm going to do.
+
+15
+00:02:52,030 --> 00:03:07,080
+So I'm going to go ahead and go to my Start menu again and run mmc, the Microsoft management console, and when that fires up, I'm going to go to File, Add/Remove Snap-in, because I want to add this certificate's snap-in, I'm going to click Add, I'm going to add it for my current logged in user account.
+
+16
+00:03:07,080 --> 00:03:18,020
+I don't want to view computer certificates. Encrypting File System deals with file encryption based on the user that's logged in. So I'll click Finish and OK.
+
+17
+00:03:18,020 --> 00:03:29,030
+Now over on the left, I can go to Personal, Certificates, I can right click on Certificates, and under All Tasks I can choose to request a new certificate.
+
+18
+00:03:29,030 --> 00:03:44,040
+And I'll click Next twice, and there's our custom EFS certificate. Now notice, actually, if I were to go into my Start menu and start cerrtmgr, which is a little bit different because it really focuses on computer certificates, not user.
+
+19
+00:03:44,040 --> 00:04:10,070
+But let's just observe what happens if we try to step through the same thing. Meaning, if I go down under Personal on the left and right click Certificates, All Tasks, and Request New Certificate, and again, I'll click Next twice, we don't see the custom EFS certificate and if I choose the checkbox here in the bottom left for Show All Templates, if we scroll down, we will come across our custom EFS certificate template.
+
+20
+00:04:10,070 --> 00:04:22,030
+However, it says the status is unavailable, it says something about not having permissions, when really the problem is it doesn't apply for this type, for computers, it's for users.
+
+21
+00:04:22,030 --> 00:04:31,000
+Okay, so that's not going to work, so I'm going to cancel out of that and let's go back to where we were with Certificate Enrollment at the user level.
+
+22
+00:04:31,000 --> 00:04:42,070
+It says for the custom EFS status is available. Perfect, I don't have to supply information, because we said it would be gathered automatically from active directories, so I'll just choose Enroll.
+
+23
+00:04:42,070 --> 00:05:03,090
+After a moment, the status is that it's succeeded, so I'm going to go ahead and click Finish, and indeed, we can see here, that we've now got an Encrypting File System certificate, the validity period matches what we said it's two years from now, it was issued by our CA, FakeDomain1, and it's been issued to user Administrator.
+
+24
+00:05:03,090 --> 00:05:19,000
+So at this point the administrator can go ahead and start encrypting files, and as a matter of fact, if you don't do this, if you don't have EFS certificates deployed in this kind of manner, they get generated automatically if they don't exist the first time a user encrypts a file.
+
+
+@@@
+1
+00:00:01,010 --> 00:00:13,020
+- [Instructor] Virtual private networks, or VPNs, allow secured remote access to a private network over the internet. Now, what we're going to be doing in this example is configuring a TLS VPN.
+
+2
+00:00:13,020 --> 00:00:27,040
+Most people will call it an SSL VPN, but we know that SSL is not a secure protocol and it should no longer be used. So, what I'm going to do to start with, then, on the server, is I'm going to go into the Server Manager.
+
+3
+00:00:27,040 --> 00:00:42,090
+We're going to set up a Microsoft Windows Server 2016 VPN that uses TLS. So, the first thing I need to do is make sure that the appropriate server role is installed, so for that, in Server Manager, I can click Add roles and features.
+
+4
+00:00:42,090 --> 00:01:03,060
+I'll just go through until I get to the Roles screen where I need to make sure that under Remote Access, Direct Access and VPN is installed. And it is already installed, so the next thing I would do is go to the Tools menu and configure the VPN, and I can do that by choosing Routing and Remote Access.
+
+5
+00:01:03,060 --> 00:01:22,070
+Now, the Routing and Remote Access tool will allow me to configure a VPN, whether it's an L2TP VPN, PPTP, or in our case, a TLS VPN. So, I'm going to right-click on the name of my server in the left-hand navigator and I'll choose Configure and Enable Routing and Remote Access, then I'll click Next.
+
+6
+00:01:22,070 --> 00:01:44,020
+I'm going to choose a custom configuration here, and I'll click Next. I want to allow VPN access, I'll click Next and Finish. Now, certainly there's more that we have to do to finish this configuration, so I'll click Start service because what we need to do is make sure that our VPN is configured to use a specific PKI certificate.
+
+7
+00:01:44,020 --> 00:01:56,090
+So, I'm going to go into my Start menu on this host and run certmgr to view computer certificates, and I'll maximize that. And on the left, I'll drill down under Personal Certificates for this computer.
+
+8
+00:01:56,090 --> 00:02:13,050
+So, here we've got a certificate, for example, for srv2016-1, that's the name of this server, issued by our certificate authority named FakeDomain1, and we can see that its validity date is still good, so it certainly hasn't expired.
+
+9
+00:02:13,050 --> 00:02:30,000
+So, this is what we're going to use to secure the connection for our VPN. Now, how do we do that? Well, let's go back to Routing and Remote Access. I'm going to right-click on the server over on the left and choose Properties, and I'm going to go under IPv4 and I'm going to click Static address pool.
+
+10
+00:02:30,000 --> 00:02:49,040
+I want to have a specific subset of IP addresses that the VPN will assign to VPN clients that connect. So, I'm going to click Add, and let's say we're going to give them 192.168.0.70 through to 192.168.0.80.
+
+11
+00:02:49,040 --> 00:03:04,020
+Now, you don't just randomly do this, of course, this has to be planned appropriately in your environment because, essentially, after the VPN connection is established, it's as if that device is actually on this network, so it has to have an IP address that reflects that fact.
+
+12
+00:03:04,020 --> 00:03:15,050
+So, this is the IP addressing used on the private network. So, I'll click OK. I also want to go to the Security tab because down at the bottom, I want to use HTTP.
+
+13
+00:03:15,050 --> 00:03:29,060
+Here it says SSL Certificate Binding. Well, really it's a PKI certificate, but what I could do is uncheck Use HTTP and I could select the appropriate certificate, let's say, the one that we looked at a moment ago, srv2016-1.
+
+14
+00:03:29,060 --> 00:03:42,010
+And I can view it, and again, it's valid, and if I go to the Certification Path, it was issued by our certificate authority, FakeDomain1. Everything looks like it's in check, so I'm going to go ahead and click OK.
+
+15
+00:03:42,010 --> 00:03:53,090
+Now, it says, you've made changes, we need to restart this configuration. Yes, let's do that so it's put into effect. Now, that's pretty much what we have to do server side at this level.
+
+16
+00:03:53,090 --> 00:04:06,030
+Now, while that's happening, let's go into the Start menu and fire up the Active Directory Users and Computers tool because we need to make sure that people are allowed to access the VPN.
+
+17
+00:04:06,030 --> 00:04:21,050
+So, it's taking a moment to pop up here because we're restarting the Routing and Remote Access component. So, we've got our domain administrator here, and if I double-click, I've already gone into the Dial-in tab, and for Network Access Permission, I've set it to allow access.
+
+18
+00:04:21,050 --> 00:04:30,060
+The default is to control access through a Network Policy Server network policy, and if you don't have that configured, no one gets access, not even the domain admin.
+
+19
+00:04:30,060 --> 00:04:38,060
+So, in this example, because it's just one user, I elected to come in here and turn on Allow access. It was already set there, so I'll just cancel out of that.
+
+20
+00:04:38,060 --> 00:04:52,000
+So, now it's time to configure the client side of the connection. I'm going to use Windows 10 as the VPN client. So, from the Command Prompt, I'm just going to first make sure that I can communicate with the server using its DNS name.
+
+21
+00:04:52,000 --> 00:05:01,030
+So, srv2016-1.fakedomain1.local because we want to make sure we don't have a problem at this level that will prevent us from making the VPN connection.
+
+22
+00:05:01,030 --> 00:05:23,030
+So far, so good, we've got a reply. So, the next thing I want to do is make a change in the registry, so I'm going to run Regedit on this machine, and what I want to make sure that we do is configure it such that it doesn't perform certificate revocation checking, because that will prevent successful connection to the VPN.
+
+23
+00:05:23,030 --> 00:05:37,080
+So, here in Regedit, I want to navigate to HKEY_LOCAL_MACHINE, then SYSTEM, then I want to go into CurrentControlSet and Services, and I'm looking for the SSL type of service.
+
+24
+00:05:37,080 --> 00:05:56,090
+So, that's down here in the S's, and it's actually called, let's see, Sstp, there it is, Service. Now, what I want to do under that is I want to expand it and view Parameters, and I need to right-click on Parameters and create a new DWORD value.
+
+25
+00:05:56,090 --> 00:06:05,020
+If you have a lot of VPN clients and you're a Microsoft Active Directory shop, I might suggest that you do this through Group Policy instead of one by one.
+
+26
+00:06:05,020 --> 00:06:19,010
+However, here I'll do it manually so we'll know what needs to be done. I need to create an item here, and it's case-sensitive, called NoCertRevocationCheck, and I need to make sure I set the value of that parameter to one.
+
+27
+00:06:19,010 --> 00:06:40,020
+Okay, so I've done that, that's good. Now let's go into the Control Panel on this same machine to configure the VPN connection. So, for that, I'm going to go into Network and Internet, Network and Sharing Center, and then within there, we're essentially going to add a new connection, so I'll choose Set up a new connection or network.
+
+28
+00:06:40,020 --> 00:07:03,030
+I'm going to tell it I want to connect to a workplace, in this case for VPN connectivity reasons, and then I'll click Next. I'll tell it to use my internet connection to initially establish the encrypted tunnel, and then I'll give it the address of our VPN host, srv2016-1.fakedomain1.local.
+
+29
+00:07:03,030 --> 00:07:20,080
+And I can call it anything I want, I'm going to call it Work TLS VPN because my server is not configured for SSL at all. And now I'm going to remove the check mark for Remember my credentials and I'll create this.
+
+30
+00:07:20,080 --> 00:07:31,010
+So, after a moment, it will have created the connection, which will actually show up as a virtual network adapter. So, if I go to Change adapter settings, here we see Work TLS VPN.
+
+31
+00:07:31,010 --> 00:07:42,030
+So, I'm going to right-click and choose Properties for starters because under Security, I want to identify that this is a Secure Socket Tunneling Protocol, or SSTP, VPN.
+
+32
+00:07:42,030 --> 00:07:55,050
+In other words, an SSL or TLS VPN connection. And then we can connect, so I'll right-click and choose Connect. And there's our Work TLS VPN, so I'm going to choose Connect for that and then it wants credentials.
+
+33
+00:07:55,050 --> 00:08:12,000
+So, let's say we pop in our admin credentials since we allowed access for that account, and then I'll choose OK. And we can now see that we have a successful connection to our SSL or TLS VPN.
+
+
+@@@
+1
+00:00:01,000 --> 00:00:16,080
+- [Instructor] Now that you've had a change to learn about PKI and it's relationship to SSL and TLS, what now? What's next? Well, some suggestions on what you might pursue at this point would be working with automated certificate deployment.
+
+2
+00:00:16,080 --> 00:00:36,070
+An example of this would be configuring it through Microsoft Active Directory Group Policy. The idea is that domain joined devices already have an inherent level of trust to Active Directory, and so we can automate the deployment of specific types of certificates when Group Policy refreshes on those devices.
+
+3
+00:00:36,070 --> 00:00:51,000
+Another option would be to experiment with different types of certificate templates and configuring their attributes. It also might be suggested that we try other PKI products, such as private and public CAs.
+
+4
+00:00:51,000 --> 00:01:09,000
+Also it's important to make sure that we don't use security protocols that have known vulnerabilities such as SSL version three and TLS version 1.0. So you might undertake it upon yourself to research these protocols and known vulnerabilities against them.
 
 

@@ -1,276 +1,2448 @@
 ﻿1
-00:00:00,005 --> 00:00:10,005
-- [Scott] Dữ liệu thúc đẩy thế giới của chúng ta và SQL là ngôn ngữ chúng ta thường sử dụng để làm việc với dữ liệu đó. Truy vấn cơ sở dữ liệu bằng SQL cho chúng ta khả năng khám phá, phân tích và quan trọng nhất là sử dụng tất cả các loại dữ liệu.
+00:00:01,000 --> 00:00:11,010
+- [Dan] Xin chào và chào mừng, tôi là Dan Lachance. Trong nhiều năm qua, tôi đã làm công việc CNTT dưới hình thức lập trình, quản trị mạng, dạy lớp và kiểm tra bảo mật.
 
 2
-00:00:10,005 --> 00:00:21,008
-Trong khóa học thử thách mã này, bạn có thể kiểm tra kiến ​​thức của mình về các truy vấn cấp độ trung cấp trong SQL để xây dựng sự tự tin khi làm việc với các công cụ báo cáo và phân tích dữ liệu khác nhau mà nhiều hệ thống quản lý cơ sở dữ liệu quan hệ tương thích với SQL cung cấp.
+00:00:11,010 --> 00:00:26,050
+Và tôi thường xuyên thấy những lỗ hổng bảo mật có thể dễ dàng khắc phục được. Khóa học này không chỉ giới thiệu cho bạn về PKI, SSL và TLS mà còn xác định cách thức và lý do nên và không nên sử dụng các cấu hình cụ thể.
 
 3
-00:00:21,008 --> 00:00:31,007
-Tôi là Scott Simpson, Giảng viên nhân viên cấp cao tại LinkedIn Learning và tôi đã tổng hợp năm thử thách mã bao gồm nhiều khái niệm SQL cấp độ trung cấp cho phép chúng tôi sử dụng và chuyển đổi dữ liệu.
+00:00:26,050 --> 00:00:35,030
+Vậy những gì sẽ được đề cập trong khóa học này? Chúng ta sẽ bắt đầu bằng cách nói về Cơ sở hạ tầng khóa công khai và mối quan hệ của nó với mã hóa, băm và chữ ký số.
 
 4
-00:00:31,007 --> 00:00:42,006
-Xây dựng và thử nghiệm các giải pháp của bạn cho những thách thức này trong môi trường mã hóa tương tác tích hợp sẵn. Không cần phần mềm đặc
-biệt. Và khi bạn hoàn thành giải pháp của mình cho từng thử thách, hãy xem video giải pháp của tôi để biết cách tôi giải quyết chúng. 
+00:00:35,030 --> 00:00:52,000
+Chúng tôi cũng sẽ trình bày cách cài đặt và định cấu hình giải pháp PKI trên nền tảng Windows và Linux. Chúng ta sẽ nói về
+Lớp cổng bảo mật hoặc SSL, cũng như Bảo mật lớp vận chuyển hoặc TLS, được sử dụng để bảo mật thông tin liên lạc trên mạng. 
 
 @@@
 
 
 
 5
-00:00:00,005 --> 00:00:09,006
-- [Tutor] Trong Khóa học Thử thách Mã này, tôi hy vọng bạn đã quen với việc viết truy vấn trong SQL. Chúng ta sẽ dành thời gian để nhóm và lọc dữ liệu, nối các bảng và chuyển đổi giá trị.
+00:00:01,000 --> 00:00:16,080
+- [Người hướng dẫn] Trước khi đi vào nội dung liên quan đến PKI, SSL và TLS, có một số điều bạn cần biết trước. Đầu tiên, về mặt kiến ​​thức tiên quyết, là phải có một số loại kinh nghiệm với bộ giao thức mạng TCP/IP.
 
 6
-00:00:09,006 --> 00:00:22,004
-Mỗi thử thách này kết hợp một số khái niệm độ khó trung bình, thường được sử dụng trong báo cáo dữ liệu và chuẩn bị dữ liệu. Nếu bạn cần làm mới kiến ​​thức SQL của mình, hãy xem các khóa học này trong Thư viện Học tập LinkedIn.
+00:00:16,080 --> 00:00:27,040
+Bạn nên có kiến ​​thức cơ bản về hệ điều hành Microsoft Windows Server, cũng như có kiến ​​thức chung về môi trường hệ điều hành Linux.
 
 7
-00:00:22,004 --> 00:00:31,001
-Trong các thử thách, chúng tôi cung cấp cơ sở dữ liệu mô tả một nhà hàng nhỏ ở khu vực lân cận. Chúng ta sẽ thấy các bảng như nhân viên, đặt chỗ, đặt hàng, món ăn, v.v.
+00:00:27,040 --> 00:00:46,020
+Bạn cần có hiểu biết chung về cách định cấu hình trình duyệt web trên thiết bị khách cũng như hiểu biết chung về cách định cấu hình máy chủ web, cho dù đó là Dịch vụ thông tin Internet của Microsoft hay máy chủ web Apache 2 đang chạy. trên nền tảng Linux.
 
 8
-00:00:31,001 --> 00:00:39,006
-Mỗi thử thách sẽ cung cấp cho bạn một sơ đồ mối quan hệ thực thể để mô tả bảng hoặc các bảng đang được sử dụng. Và vui lòng CHỌN * trên các bảng để xem dữ liệu thực tế.
+00:00:46,020 --> 00:00:58,040
+Trong môi trường phòng thí nghiệm của chúng tôi, chúng tôi có máy Microsoft Windows Server 2016. Đây là bộ điều khiển miền Active Directory cho miền có tên fakedomain1.local.
 
 9
-00:00:39,006 --> 00:00:48,005
-Nếu bạn làm vậy, giao diện sẽ hiển thị rằng kết quả đầu ra là một câu trả lời sai. Nhưng đừng lo lắng, không có điểm, thời gian hay bất cứ thứ gì tương tự mà bạn sẽ bị mất hoặc có nguy cơ bị lấy đi.
+00:00:58,040 --> 00:01:12,080
+Ngoài ra, chúng tôi đã cài đặt vai trò máy chủ web IIS nên máy cũng là một máy chủ web. Trong khóa học, chúng tôi sẽ cài đặt vai trò cơ quan cấp chứng chỉ để hỗ trợ cơ sở hạ tầng khóa công khai hoặc PKI.
 
 10
-00:00:48,005 --> 00:00:55,000
-Để giải quyết những thử thách này, bạn không cần cài đặt bất kỳ phần mềm riêng biệt
-nào. Môi trường Thử thách viết mã là một phần của Trang KHÓA HỌC LinkedIn. 
-
-@@@
-
-
+00:01:12,080 --> 00:01:23,000
+Chúng tôi cũng sẽ sử dụng trình duyệt web Internet Explorer để kiểm tra khả năng kết nối với những thứ như máy chủ web được bảo mật, nhưng thực tế thì bất kỳ trình duyệt web nào cũng có thể được sử dụng.
 
 11
-00:00:00,005 --> 00:00:12,000
-- [Người hướng dẫn] Khóa học này bao gồm các thử thách mã tự động xuất hiện khi bạn nhấp vào liên kết thử thách trong mục lục của khóa học. Mỗi thử thách bao gồm các hướng dẫn và trình chỉnh sửa mã mà bạn có thể sử dụng để tạo và thử nghiệm giải pháp của riêng mình cho thử thách.
+00:01:23,000 --> 00:01:42,070
+Chúng tôi cũng sẽ sử dụng Kali Linux. Nó có thể là bất kỳ bản phân phối Linux nào, không có lý do cụ thể nào khiến Kali Linux được chọn. Tuy nhiên, điều quan trọng trong môi trường Linux là chúng ta cần đảm bảo rằng chúng ta đã cài đặt cơ quan cấp chứng chỉ OpenSSL hoặc nếu không có ở đó, hãy đảm bảo rằng bạn đã cài đặt nó.
 
 12
-00:00:12,000 --> 00:00:24,008
-Những thử thách này do CoderPad lưu trữ và chúng xuất hiện trong cùng khu vực của trang khóa học nơi bạn xem video của khóa học. Chúng tôi khuyên bạn nên sử dụng trình duyệt trên máy tính để bàn để có trải nghiệm tốt nhất với các thử thách về mã nhưng bạn có thể sử dụng ứng dụng di động LinkedIn Learning nếu muốn.
+00:01:42,070 --> 00:01:54,020
+Và cách chúng tôi thực hiện điều đó sẽ khác nhau giữa bản phân phối Linux này và bản phân phối Linux khác. Ngoài ra, chúng tôi muốn đảm bảo rằng thành phần máy chủ web Apache được cài đặt trên Linux.
 
 13
-00:00:24,008 --> 00:00:33,005
-Thử thách viết mã có ba khu vực, hướng dẫn ở trên cùng bên trái, bảng điều khiển cho đầu ra ở phía dưới bên trái và trình chỉnh sửa mã cho câu trả lời của bạn ở bên phải.
+00:01:54,020 --> 00:02:05,000
+Giống như chúng ta sẽ sử dụng tổ chức phát hành chứng chỉ trong Windows, chúng ta sẽ sử dụng
+OpenSSL trong Linux để thiết lập tổ chức phát hành chứng chỉ và sau đó cấp một số chứng chỉ. 
+
+@@@
+
+
 
 14
-00:00:33,005 --> 00:00:43,006
-Bạn có thể sử dụng các tay cầm kéo này để phân bổ không gian theo ý muốn. Để có thêm không gian theo chiều ngang cho trình soạn thảo mã, bạn có thể thu gọn mục lục của khóa học ở bên trái.
+00:00:01,000 --> 00:00:12,090
+- [Người hướng dẫn] SSL và TLS là các giao thức bảo mật được sử dụng để bảo mật thông tin liên lạc trên mạng trong đó TLS thay thế SSL cũ và không còn được dùng nữa, nhưng chúng ta sẽ nói về những chi tiết đó sau.
 
 15
-00:00:43,006 --> 00:00:52,000
-Mỗi thử thách đều có hướng dẫn bao gồm mô tả về thử thách và kết quả mong muốn của thử thách. Tạo câu trả lời của bạn trong trình soạn thảo mã.
+00:00:12,090 --> 00:00:26,080
+Đầu tiên, hãy bắt đầu nói về mật mã. Mật mã học có thể được định nghĩa là một phương pháp bảo mật dữ liệu sao cho nó đáng tin cậy và chỉ những bên được ủy quyền mới có thể xem được.
 
 16
-00:00:52,000 --> 00:01:08,008
-(nhấp bàn phím) Khi nhấp vào Kiểm tra mã của tôi, bạn sẽ thấy thông báo cho biết liệu mã của bạn có trả về kết quả chính xác và phiên bản dựa trên văn bản của dữ liệu được trả về hay không.
+00:00:26,080 --> 00:00:36,080
+Tiền điện tử đã tồn tại từ lâu dưới hình thức này hay hình thức khác thậm chí trong lịch sử gần đây hơn, chẳng hạn như trong Thế chiến thứ hai. Trong hình chúng ta thấy một chiếc máy Enigma của Đức.
 
 17
-00:01:08,008 --> 00:01:20,001
-Nếu câu trả lời của bạn không tạo ra kết quả chính xác, bạn sẽ thấy thông báo cho biết mã không chính xác và hiển thị dữ liệu
-được trả về. Nếu bất kỳ tin nhắn nào quá dài để vừa với bảng điều khiển, bạn có thể cuộn sang một bên để xem tất cả văn bản. 
-
-@@@
-
-
+00:00:36,080 --> 00:00:53,000
+Điều này được sử dụng để mã hóa các tin nhắn được gửi khắp quân đội Đức cho đến khi quân Đồng minh có thể bẻ khóa hệ thống này. Khóa mật mã cần được lưu trữ ở đâu đó để tham gia bảo mật những thứ như thông tin liên lạc mạng hoặc dữ liệu ở trạng thái nghỉ.
 
 18
-00:00:00,005 --> 00:00:09,007
-- [Người hướng dẫn] Đây là cách tôi giải quyết thử thách này. Tôi bắt đầu trả lại ID khách hàng, họ và tên của họ cũng như tổng số món ăn mà khách hàng đã đặt.
+00:00:53,000 --> 00:01:12,030
+Một cách để bảo mật khóa mật mã là sử dụng cơ sở hạ tầng khóa công khai hoặc chứng chỉ PKI. Chìa khóa cũng có thể được lưu trữ trên thẻ thông minh. Ví dụ: xe thông minh sẽ được sử dụng để xác thực với VPN hoặc có thể để xác thực với hệ thống được bảo mật hoặc hạn chế trong văn phòng.
 
 19
-00:00:09,007 --> 00:00:19,009
-Điều đó có thể thực hiện được bằng cách nối bảng đơn đặt hàng mà tôi gọi là O trong ký hiệu CTE với bảng đơn đặt hàng mà tôi đặt tên là OD. Và tôi đang khớp ID đơn hàng trên mỗi bảng.
+00:01:12,030 --> 00:01:31,080
+Thẻ truy cập thông thường hoặc CAC có thể làm được điều tương tự ngoại trừ việc chúng có thể làm được nhiều việc hơn. Và do đó, thẻ mà chúng tôi sử dụng để xác thực với các hệ thống máy tính bị hạn chế hoặc VPN cũng có thể là thẻ chúng tôi sử dụng để truy cập vào một tòa nhà hoặc một tầng trong tòa nhà hoặc để mở khóa các tầng trên tầng đó trong tòa nhà.
 
 20
-00:00:19,009 --> 00:00:28,009
-Điều này cho phép tôi nhận được từng mục là một phần của mỗi đơn hàng. Bảng order món ăn lưu trữ ID món ăn và để có được giá món ăn, chúng ta cần tham gia bảng món ăn mà tôi gọi là D.
+00:01:31,080 --> 00:01:45,050
+Khóa mật mã cũng có thể được lưu trữ trong các tập tin. Tùy thuộc vào loại khóa bạn đang lưu trữ, chẳng hạn như khóa riêng tư mà chúng tôi sẽ xác định sau, bạn muốn đảm bảo rằng khóa đó nằm trong tệp được bảo vệ bằng mật khẩu vì nó là khóa riêng tư đối với thực thể được cấp nó .
 
 21
-00:00:28,009 --> 00:00:40,006
-Dựa trên việc khớp ID món ăn trên các món ăn và món ăn trong đơn đặt hàng, điều đó sẽ hoàn thành tập hợp những thứ chúng ta cần để nhận được giá của các món ăn và đơn đặt hàng. Chúng ta cũng cần tham gia bảng của khách hàng vì chúng ta muốn biết tên của khách hàng.
+00:01:45,050 --> 00:01:56,010
+Nó không được thiết kế để chia sẻ với người khác. Và do đó, tệp chứa khóa riêng tư đó không chỉ phải được bảo vệ bằng mật khẩu mà còn phải được lưu trữ ở một vị trí an toàn.
 
 22
-00:00:40,006 --> 00:00:52,009
-Bảng đơn hàng chứa ID khách hàng và bảng của khách hàng cũng vậy, vì vậy, chúng tôi đối sánh các bảng đó để cấp cho chúng tôi quyền truy cập vào các trường tên của khách hàng. Chúng tôi nhóm các kết quả này theo ID khách hàng vì chúng tôi đang cộng tổng giá các mặt hàng mà mỗi khách hàng đã chi tiêu.
+00:01:56,010 --> 00:02:14,000
+Mô-đun nền tảng đáng tin cậy hay TPM là chương trình cơ sở và chương trình cơ sở đó có thể lưu trữ các khóa mật mã được sử dụng để mã hóa và giải mã toàn bộ ổ đĩa. TPM cũng có thể lưu trữ thông tin về trình tự khởi động trên máy và nếu nó bị giả mạo, TPM có thể phát hiện ra.
 
 23
-00:00:52,009 --> 00:01:02,002
-Vì vậy, chúng tôi chỉ cần có một hàng cho mỗi khách hàng. Nếu không có điều kiện, điều này sẽ đại diện cho tất cả khách hàng của chúng tôi, nhưng thử thách chỉ dành cho những khách hàng đã chi hơn 450 USD.
+00:02:14,000 --> 00:02:25,080
+Khóa mật mã cũng có thể được lưu trữ trên các thiết bị mã thông báo, có thể là mã thông báo vật lý, chẳng hạn như thiết bị khóa điện tử được sử dụng để có quyền truy cập vào môi trường, hệ thống hoặc tòa nhà bị hạn chế.
 
 24
-00:01:02,002 --> 00:01:14,000
-Vì vậy chúng ta cần đánh giá tổng chi tiêu của từng khách hàng. Tổng chi tiêu là giá trị tổng hợp dựa trên nhiều giá trị của một hàng chứ không phải một giá trị của một hàng. Vì vậy chúng ta cần sử dụng HAVING để kiểm tra giá trị của nó thay vì ở đâu.
+00:02:25,080 --> 00:02:39,070
+Ngoài ra, các thiết bị token ngày nay có thể là ảo, chúng có thể là ứng dụng điện thoại thông minh. Nhưng dù thế nào đi nữa, các thiết bị mã thông báo này có thể lưu trữ thông tin chứng chỉ PKI, bao gồm cả khóa, để kích hoạt bảo mật.
 
 25
-00:01:14,000 --> 00:01:23,001
-Chúng tôi vẫn có thể có mệnh đề Where ở đây để kiểm tra một số giá trị hàng riêng lẻ khác, như trạng thái nhà của khách hàng hoặc thứ gì đó tương tự, nhưng chúng tôi không cần vị trí cho giải pháp cụ thể này.
+00:02:39,070 --> 00:02:52,000
+Quá trình mã hóa chung bắt đầu bằng bản rõ. Bản rõ là dữ liệu gốc trước khi nó được mã hóa hoặc xáo trộn. Và do đó, bản rõ đó được đưa vào thuật toán mã hóa cùng với khóa.
 
 26
-00:01:23,001 --> 00:01:36,000
-Cuối cùng, tôi sắp xếp bảng theo tổng chi tiêu giảm dần để đưa người chi tiêu nhiều nhất lên đầu danh sách. Tôi sẽ
-chạy cái này và xem nó có hoạt động không. Nó có. Đây là danh sách những người chi tiêu nhiều nhất mọi thời đại. 
-
-@@@
-
-
+00:02:52,000 --> 00:03:06,030
+Kết quả của nó là dữ liệu được mã hóa, còn được gọi là văn bản mật mã. Vì vậy, khi dữ liệu được mã hóa, chẳng hạn như gửi dữ liệu qua mạng, điều này sẽ xảy ra trước khi dữ liệu được gửi qua đường dây hoặc không dây.
 
 27
-00:00:00,005 --> 00:00:14,005
-- [Người hướng dẫn] Để giải quyết thách thức này, tôi đã sử dụng GROUP_CONCAT, một hàm trong MySQL và các DBMS tương tự để ghép các mục dựa trên việc nhóm của chúng. Microsoft SQL có một chức năng tương tự được gọi là STRING_AGG, viết tắt của chuỗi tổng hợp, hoạt động theo cách tương tự.
+00:03:06,030 --> 00:03:19,050
+Vì vậy, trong khi truyền qua mạng, nếu dữ liệu được mã hóa, bất kỳ ai có thể thấy lưu lượng truy cập mạng đó, bất kỳ ai nắm bắt được lưu lượng truy cập mạng đó, thường có thể xem thông tin địa chỉ trong đường truyền đó.
 
 28
-00:00:14,005 --> 00:00:22,005
-Nếu sử dụng điều đó, bạn sẽ cần phải cung cấp dấu phân cách để làm cho kết quả đầu ra khớp với yêu cầu thử thách, phải là dấu phẩy không có khoảng trắng theo sau.
+00:03:19,050 --> 00:03:28,070
+Bởi vì thông thường, mã hóa qua mạng sẽ chỉ mã hóa tải trọng hoặc dữ liệu của gói. Bạn có thể mã hóa nhiều hơn thế, nhưng đó là tiêu chuẩn.
 
 29
-00:00:22,005 --> 00:00:33,009
-Hàm này hoạt động cùng với một thuật ngữ nhóm, trong trường hợp này là GROUP BY OrderID. Ở đây chúng ta có thể thấy các phiên bản khác nhau của cú pháp MySQL và MS SQL có cùng kết quả mà chúng ta đang tìm kiếm.
+00:03:28,070 --> 00:03:39,050
+Cuối cùng, chỉ những bên có khóa giải mã thích hợp mới có thể giải mã bản mã trở lại bản rõ gốc của nó. Vậy mật mã sẽ được sử dụng ở đâu?
 
 30
-00:00:33,009 --> 00:00:43,001
-Thử thách cũng yêu cầu danh sách các mục được sắp xếp theo thứ tự bảng chữ cái và ở đây với cú pháp MySQL này, tôi đang thực hiện điều đó với ORDER BY D.Name trong hàm GROUP BY.
+00:03:39,050 --> 00:03:51,070
+Chà, chúng tôi đã xác định một số ví dụ đơn giản nhưng cũng có trên thiết bị di động. Chúng tôi có thể mã hóa tất cả nội dung của chính thiết bị di động, bao gồm mọi phương tiện di động như thẻ micro SD.
 
 31
-00:00:43,001 --> 00:00:55,001
-Tăng dần là thứ tự mặc định ở đây nên tôi có thể bỏ nó đi. Nhưng nếu tôi muốn rõ ràng hơn, tôi cũng có thể thêm ASC. Với MS SQL, điều đó sẽ khác một chút, bao gồm cả mệnh đề A trong GROUP trong đó thứ tự của D.Name sẽ là.
+00:03:51,070 --> 00:04:04,090
+Chúng ta có thể sử dụng tiền điện tử để mã hóa hệ thống tệp nhằm bảo vệ dữ liệu ở trạng thái lưu trữ. Chúng tôi cũng có thể sử dụng nó để mã hóa lưu lượng truy cập mạng, chẳng hạn như đến một trang web được bảo mật bằng https.
 
 32
-00:00:55,001 --> 00:01:05,002
-Quay lại giải pháp của mình ở đây, chúng ta có thể thấy rằng tôi đã kết hợp ba bảng được cung cấp là Món ăn, Món ăn và Đơn hàng để tôi có thể phân giải ID đơn hàng thành tên của các món ăn có trong đó.
+00:04:04,090 --> 00:04:17,060
+Chúng tôi có thể sử dụng mật mã để băm tệp, trong đó chúng tôi có thể tạo giá trị hoặc hàm băm tệp duy nhất, sau đó so sánh giá trị đó trong tương lai khi chúng tôi lấy lại hàm băm đó thành hàm băm ban đầu để xem liệu có thay đổi nào được thực hiện hay không.
 
 33
-00:01:05,002 --> 00:01:22,001
-Và theo yêu cầu của thử thách, tôi chỉ quan tâm đến các đơn hàng từ ngày 1 tháng 5 năm 2022 hoặc 2022-05-01 trở đi. Sau đó, khi
-trả về những tên này, chúng sẽ được liệt kê hoàn toàn theo thứ tự bảng chữ cái, phân tách bằng dấu phẩy, theo từng ID đơn hàng. 
-
-@@@
-
-
+00:04:17,060 --> 00:04:28,000
+Chúng ta cũng có thể sử dụng mật mã với các giao dịch blockchain tiền điện tử. Có lẽ bạn đã nghe nhiều về blockchain liên quan đến tiền kỹ thuật số bitcoin.
 
 34
-00:00:00,005 --> 00:00:13,000
-- [Người hướng dẫn] Để giải thử thách này, tôi đang sử dụng các bảng Đơn hàng, Đơn hàng Món ăn và Món ăn để tìm tất cả các đơn hàng có chứa món ăn có tên "Pizza thủ công". Thử thách yêu cầu số lượng pizza bán được và ngày tháng, hãy bắt đầu với ngày tháng.
+00:04:28,000 --> 00:04:41,020
+Với blockchain, chúng ta thực sự có một sổ cái hoặc danh sách giao dịch trung tâm,
+trong đó mỗi giao dịch hoặc khối mới sử dụng khối trước đó, thông tin mật mã. 
+
+@@@
+
+
 
 35
-00:00:13,000 --> 00:00:27,000
-Mỗi đơn hàng trong cơ sở dữ liệu của chúng tôi có một giá trị Ngày giờ được liên kết với nó, nhưng chúng tôi chỉ muốn phần ngày, năm, tháng và ngày của giá trị đó. Việc có giá trị ngày này sẽ cho phép chúng tôi nhóm số lượng đơn đặt hàng pizza theo ngày, nhưng hiện tại những giá trị đó vẫn có giá trị thời gian được đính kèm.
+00:00:01,010 --> 00:00:13,010
+- [Nam] Có hiểu biết vững chắc về SSL và TLS xuất phát từ việc hiểu rõ về mã hóa đối xứng và bất đối xứng. Vì vậy, hãy nói về cả hai điều này, bắt đầu bằng mã hóa đối xứng.
 
 36
-00:00:27,000 --> 00:00:45,006
-Vì vậy, nếu chúng ta cố gắng nhóm theo giá trị hiện tại, chúng ta thực sự sẽ chỉ có một chiếc bánh pizza được đặt hàng vào một thời điểm cụ thể vào một ngày cụ thể. Vì vậy, chúng tôi sẽ sử dụng từ khóa CAST và yêu cầu cơ sở dữ liệu diễn giải lại giá trị OrderDate dưới dạng loại ngày mà chúng tôi chỉ nhận được phần ngày mà không có phần thời gian và chúng tôi sẽ gọi Ngày đó.
+00:00:13,010 --> 00:00:26,060
+Mã hóa đối xứng sử dụng một khóa "bí mật" duy nhất và khóa bí mật đó được sử dụng để mã hóa và giải mã. Và vì vậy, tất cả các bên cần có quyền truy cập vào khóa đó để tham gia vào quá trình mã hóa và giải mã này.
 
 37
-00:00:45,006 --> 00:00:56,004
-Chúng tôi sẽ nhóm các kết quả của mình theo Ngày và sắp xếp chúng theo Ngày. Và chúng ta sẽ sử dụng hàm tổng hợp COUNT để cho biết số lượng pizza đã được bán trong ngày và chúng ta sẽ gọi đó là NumSold.
+00:00:26,060 --> 00:00:39,070
+Đồng thời, khóa cần được giữ an toàn, vì một trong những vấn đề với mã hóa đối xứng là nếu khóa đó bị xâm phạm thì tất cả dữ liệu được mã hóa bằng khóa đó cũng bị xâm phạm.
 
 38
-00:00:56,004 --> 00:01:06,000
-Tôi sẽ chạy cái này để xem nó có hoạt động không. Và chúng ta bắt đầu, cứ mỗi ngày có một hoặc nhiều chiếc
-bánh pizza được đặt hàng, chúng tôi có ngày đó và số lượng bánh pizza giống như thử thách được yêu cầu. 
-
-@@@
-
-
+00:00:39,070 --> 00:00:52,070
+Một vấn đề khác là làm thế nào chúng ta có thể phân phối khóa đơn đó một cách an toàn trên quy mô lớn? Không có cách nào dễ dàng để làm điều đó, đối với chính nó. Tuy nhiên, chúng ta có thể sử dụng các công nghệ khác như mã hóa bất đối xứng để thực hiện việc này.
 
 39
-00:00:00,005 --> 00:00:12,001
-- Để giải quyết thách thức này, chúng ta cần sử dụng một số logic để xử lý các tình huống hoặc trường hợp khác nhau. Chúng ta sẽ bắt đầu với một số điều khá đơn giản, như tên món ăn là tên món ăn và giá là giá gốc.
+00:00:52,070 --> 00:01:03,010
+Và chúng ta sẽ nói về mã hóa bất đối xứng chỉ trong vài phút nữa. Đầu tiên, hãy nói về thuật toán mã hóa đối xứng. Có rất nhiều trong số đó, chúng tôi sẽ chỉ nêu một vài cái phổ biến.
 
 40
-00:00:12,001 --> 00:00:22,005
-Các trường này đến từ các món ăn và chúng tôi sẽ sắp xếp kết quả theo tên món ăn. Tuy nhiên, thách thức yêu cầu hai cột nữa; phần trăm chiết khấu và giá chiết khấu.
+00:01:03,010 --> 00:01:15,060
+Bắt đầu với AES. AES là tiêu chuẩn mã hóa tiên tiến. Về cơ bản, đây là tiêu chuẩn vàng được chính phủ Hoa Kỳ phê duyệt để bảo vệ thông tin nhạy cảm.
 
 41
-00:00:22,005 --> 00:00:34,004
-Để nhận được phần trăm chiết khấu, có ba điều kiện phù hợp, tôi sử dụng một câu lệnh tình huống và cung cấp ba điều kiện đó. Khi giá của một món ăn nhỏ hơn bảy, câu lệnh trả về chuỗi văn bản 5%.
+00:01:15,060 --> 00:01:27,090
+Vì vậy thuật toán AES được sử dụng phổ biến và có kích thước khóa tối đa là 256 bit. Bây giờ chúng ta không muốn bị cuốn vào suy nghĩ rằng kích thước khóa càng lớn thì luôn có nghĩa là dữ liệu sẽ an toàn hơn.
 
 42
-00:00:34,004 --> 00:00:46,002
-Khi giá nằm trong khoảng từ 7 đến 10, câu lệnh trả về chuỗi 10%. Và trong bất kỳ trường hợp nào khác, đối với chúng tôi ở đây có nghĩa là bất kỳ giá nào lớn hơn chính xác 10, câu lệnh sẽ trả về chuỗi 15%.
+00:01:27,090 --> 00:01:42,050
+Bởi vì điều đó không nhất thiết phải như vậy. Nó thực sự phụ thuộc vào việc thực hiện thuật toán mã hóa cụ thể đó. RC4 là một thuật toán mã hóa phổ biến khác có kích thước khóa tối đa là 2.048 bit.
 
 43
-00:00:46,002 --> 00:01:00,007
-Điều đó mang lại cho chúng tôi giá trị phần trăm chiết khấu. Vì vậy, tiếp theo, chúng ta cần tính toán giá cho các mặt hàng của mình với số tiền chiết khấu được áp dụng. Ở đây tôi sẽ sử dụng một câu lệnh tình huống khác có cùng điều kiện, nhưng lần này tôi sẽ trả về số thay vì chuỗi.
+00:01:42,050 --> 00:01:54,090
+Ba DES hoặc 3DES đạt tối đa 168 bit. Đây từng là tiêu chuẩn của chính phủ Hoa Kỳ, bắt nguồn từ những năm 1970. Nhưng AES thay thế nó.
 
 44
-00:01:00,007 --> 00:01:21,003
-0,05, 0,1 và 0,15, đại diện cho 5%, 10% và 15%. Con số đó sẽ được trừ đi một, cho chúng tôi phần giá còn lại sẽ tính. Vì vậy, đó sẽ là 0,95% hoặc 95%, 0,9 hoặc 90% và 0,85 hoặc 85%.
+00:01:54,090 --> 00:02:12,000
+Blowfish là một thuật toán mã hóa đối xứng khác có kích thước khóa tối đa là 448 bit. Có nhiều loại thuật toán mã hóa khác và tùy thuộc vào công cụ bạn đang định cấu hình, sẽ xác định xem bạn có được chọn thuật toán bạn chọn hay không.
 
 45
-00:01:21,003 --> 00:01:35,001
-Sau đó, chúng tôi nhân giá trị đó với giá của một mặt hàng và làm tròn nó để không nhận được các giá trị thập phân dài mà chúng tôi không thể thực hiện
-thay đổi. Chúng tôi đang làm tròn giá trị này đến hai chữ số thập phân theo yêu cầu của thử thách và chúng tôi sẽ gọi giá trị này là giá chiết khấu. 
-
-@@@
-
-
+00:02:12,000 --> 00:02:27,050
+Mã hóa bất đối xứng sử dụng hai khóa liên quan đến toán học. Hãy nhớ rằng mật mã đối xứng chỉ sử dụng một khóa. Bây giờ chúng ta có khóa chung và khóa riêng với mã hóa bất đối xứng có liên quan về mặt toán học.
 
 46
-00:00:00,005 --> 00:00:07,006
-- [Người hướng dẫn] Để giải quyết thử thách này, chúng ta sẽ tập trung vào thao tác với chuỗi. Giải pháp của tôi trả về một số giá trị từ bảng của nhân viên, được sắp xếp theo tên.
+00:02:27,050 --> 00:02:46,090
+Và điều này được sử dụng bởi PKI, cơ sở hạ tầng khóa công khai. Điều này thường được gọi đơn giản là mật mã khóa công khai, mặc dù khóa riêng cũng có liên quan. Thuật toán mã hóa bất đối xứng phổ biến bao gồm RSA, hiện nay kích thước khóa tối đa tính bằng bit là 4.096.
 
 47
-00:00:07,006 --> 00:00:19,001
-Nếu không có điều kiện ở đâu, chúng tôi sẽ nhận được tất cả các bản ghi và đó là điều chúng tôi muốn. Mục đầu tiên trong thử thách yêu cầu ID nhân viên có đúng năm chữ số, với các số 0 đứng đầu để lấp đầy khoảng trống ở đầu chuỗi.
+00:02:46,090 --> 00:02:59,050
+Diffie-Hellman thực sự giống một cơ chế trao đổi khóa hơn và do đó kích thước khóa tối đa không áp dụng cho nó. ElGamal là một thuật toán khác có độ dài khóa tối đa là 2.048 bit.
 
 48
-00:00:19,001 --> 00:00:30,008
-Để tạo điều này, tôi đã sử dụng hàm LPAD hoặc hàm đệm trái, hàm này nhận ba đối số, trường cần bao gồm, số chữ số cần đệm và chữ số hoặc ký tự sẽ sử dụng cho phần đệm đó.
+00:02:59,050 --> 00:03:16,000
+Và ECC có kích thước khóa tối đa là 256 bit. Một lần nữa, tùy thuộc vào những gì bạn đang định cấu hình để bảo mật, dữ liệu ở trạng thái nghỉ hoặc thông tin liên lạc trên mạng, sẽ xác định xem bạn có được chọn một trong các thuật toán mã hóa bất đối xứng này hay không.
 
 49
-00:00:30,008 --> 00:00:49,006
-Tôi sẽ gọi ID này. Mục tiếp theo trong thử thách là cung cấp tên nhân viên ở định dạng dấu phẩy cuối cùng trước tiên với khoảng trắng ở giữa. Vì vậy, tôi sử dụng hàm concat hoặc hàm nối để trả về một chuỗi được tạo từ giá trị họ, khoảng trắng dấu phẩy của giá trị chuỗi và giá trị tên đầu tiên và tôi sẽ gọi tên này.
+00:03:16,000 --> 00:03:28,030
+Vì vậy, hãy hình dung điều này, hãy tưởng tượng rằng chúng ta có một người gửi cần gửi một email được bảo mật đến người nhận. Vì vậy, trong sơ đồ của chúng ta, người gửi ở bên trái, người nhận ở bên phải.
 
 50
-00:00:49,006 --> 00:00:59,005
-Thứ ba, tôi cần tạo tên người dùng không dài hơn tám ký tự và bao gồm tên viết tắt đầu tiên của nhân viên và bất kỳ phần nào trong họ của họ phù hợp với bảy ký tự còn lại.
+00:03:28,030 --> 00:03:39,000
+Vì vậy, trong trường hợp này, chúng ta đang nói về mã hóa email bất đối xứng. Vì vậy, có hai khóa liên quan, công khai và riêng tư. Vì vậy, chúng ta bắt đầu bằng văn bản thuần túy trong email ở bên trái.
 
 51
-00:00:59,005 --> 00:01:10,000
-Tất cả đều cần phải viết thường. Vì vậy, tôi bắt đầu sử dụng chuỗi con để cắt một phần cụ thể của họ và tên của chuỗi. Đối với tên, tôi bắt đầu từ ký tự một và trả về một ký tự.
+00:03:39,000 --> 00:03:53,030
+Sau khi được mã hóa, nó sẽ được mã hóa bằng khóa chung của người nhận. Vì vậy, bằng cách nào đó người gửi cần truy cập vào khóa chung của người nhận. Cho dù người nhận có gửi nó qua email cho họ hay không, điều này hoàn toàn ổn và an toàn thì đó vẫn là khóa chung.
 
 52
-00:01:10,000 --> 00:01:19,008
-Đó là ký tự đầu tiên trong chuỗi. Đối với họ, tôi bắt đầu lại từ ký tự một và tôi trả lại bảy ký tự từ thời điểm đó. Nếu một chuỗi dài hơn bảy ký tự, tôi chỉ lấy bảy ký tự đầu tiên.
+00:03:53,030 --> 00:04:05,070
+Hoặc liệu khóa công khai có được xuất bản trong kho lưu trữ trung tâm, như Microsoft Active Directory hay sổ địa chỉ của hệ thống email hay không. Bằng cách này hay cách khác, khóa chung sẽ mã hóa tin nhắn.
 
 53
-00:01:19,008 --> 00:01:28,002
-Và nếu nó ngắn hơn bảy ký tự, tôi sẽ nhận được chuỗi đầy đủ. Sau đó tôi sử dụng hàm concat để nối hai chuỗi này lại với nhau bằng chữ cái đầu tiên đầu tiên.
+00:04:05,070 --> 00:04:18,080
+Sau đó, nó có thể được truyền qua mạng một cách an toàn. Bởi vì nếu bất kỳ ai nắm bắt được lưu lượng truy cập đó, họ sẽ thấy hoạt động giao tiếp đang diễn ra nhưng họ sẽ không thể đọc được nội dung truyền tải hoặc tải trọng.
 
 54
-00:01:28,002 --> 00:01:38,004
-Và sau đó tôi sử dụng hàm dưới để chuyển đổi tất cả thành chữ thường và chúng tôi sẽ gọi giá trị đó là đăng nhập. Và cuối cùng, chúng tôi sẽ tạo địa chỉ email để nhân viên của chúng tôi có thể liên hệ.
+00:04:18,080 --> 00:04:28,070
+Bây giờ, phía người nhận sẽ sử dụng khóa riêng liên quan đến toán học của mình để giải mã tin nhắn đó. Kết quả là văn bản gốc.
 
 55
-00:01:38,004 --> 00:01:45,003
-Nhân viên của chúng tôi có tên người dùng trong hệ thống của chúng tôi, nhưng thật không may, tên người dùng đó khác với thông tin đăng nhập mà chúng tôi cần tạo cho họ trên hệ thống khác này.
+00:04:28,070 --> 00:04:40,030
+Giờ đây, tất cả những điều này diễn ra rất nhanh chóng và thậm chí có thể được tự động hóa, nơi người dùng thậm chí không cần phải chỉ định rằng họ muốn mã hóa hoặc giải mã. Nó phụ thuộc vào chương trình thư họ sử dụng và cách nó được cấu hình.
 
 56
-00:01:45,003 --> 00:02:00,009
-Ví dụ: người sáng lập và bếp trưởng của chúng tôi lấy tên của họ làm tên người dùng trong hệ thống của chúng tôi, thay vì tên người dùng thông thường như các nhân viên khác. Vì vậy, chúng ta sẽ sử dụng concat lần nữa để gắn tên người dùng thực của mỗi người dùng vào chuỗi đại diện cho miền email của chúng ta ở đây và chúng ta sẽ gọi email giá trị đó.
+00:04:40,030 --> 00:04:56,050
+Bảo mật mạng SSL và TLS thường được sử dụng để bảo mật một ứng dụng cụ thể, như máy chủ web HTTP. Vì vậy, trong sơ đồ này, chúng ta có một người dùng trang web ở bên trái, họ muốn tạo kết nối đến một máy chủ web bảo mật được liệt kê ở bên phải.
 
 57
-00:02:00,009 --> 00:02:11,000
-Tôi sẽ chạy cái này và hãy xem những gì chúng ta nhận được. Tuyệt vời, điều này đã vượt qua thử thách. Chúng ta
-thường cần chuyển đổi dữ liệu từ cơ sở dữ liệu của mình theo một cách nào đó thay vì chỉ trả lại nguyên văn. 
+00:04:56,050 --> 00:05:09,040
+Vì vậy, điều xảy ra đầu tiên là thiết bị khách hoặc trình duyệt web trên thiết bị khách sẽ gửi danh sách các mật mã được hỗ trợ. Nó hỗ trợ những gì để bảo mật kết nối này qua mạng?
+
+58
+00:05:09,040 --> 00:05:20,010
+Sau đó, máy chủ sẽ gửi lại mật mã mạnh nhất, mật mã này sẽ được sử dụng cùng với chứng chỉ PKI, bao gồm khóa chung của máy chủ và tên máy chủ của máy chủ.
+
+59
+00:05:20,010 --> 00:05:33,080
+Bây giờ đây là nơi một số cuộc tấn công phổ biến đã diễn ra trong quá khứ. Nơi chúng tôi có thể cố gắng đánh lừa máy chủ hạ cấp xuống mức bảo mật thấp hơn nhiều về mặt mật mã được hỗ trợ.
+
+60
+00:05:33,080 --> 00:05:48,040
+Nhưng chúng ta sẽ nói về điều đó một lát sau khi chúng ta tập trung vào SSL và TLS. Vì vậy, tại thời điểm này, máy chủ có chứng chỉ PKI được cấp cho nó và khóa chung của máy chủ nằm trong đó, khóa này sẽ được gửi đến trình duyệt web của người dùng trang web.
+
+61
+00:05:48,040 --> 00:06:00,030
+Sau đó, trình duyệt web của khách hàng sẽ tạo và gửi một khóa phiên duy nhất, đây là khóa đối xứng. Bây giờ để bảo mật khóa đối xứng đó, nó được mã hóa bằng khóa chung của máy chủ web.
+
+62
+00:06:00,030 --> 00:06:13,000
+Sau đó, máy chủ web sẽ giải mã nó bằng khóa riêng đó. Vì vậy, bây giờ chúng ta có cả hai phía của
+kết nối, có khóa phiên duy nhất, khóa đối xứng, được sử dụng để bảo mật hơn nữa giao tiếp đó. 
 
 @@@
 
 
 
-58
-00:00:00,005 --> 00:00:09,004
-- [Scott] Nếu bạn có thể giải quyết được những thách thức này, xin chúc mừng, còn nếu không, hãy dành chút thời gian để làm mới kiến ​​thức của bạn về các truy vấn SQL trình độ trung cấp và quay lại và thử lại.
+63
+00:00:01,000 --> 00:00:16,040
+- [Người tường thuật] Việc bảo mật liên lạc mạng bằng SSL và TLS bắt đầu bằng hệ thống phân cấp cơ sở hạ tầng khóa công khai. PKI hay cơ sở hạ tầng khóa công khai là một tập hợp hoặc phân cấp các chứng chỉ bảo mật kỹ thuật số.
 
-59
-00:00:09,004 --> 00:00:18,000
-Nếu bạn đã sẵn sàng tiếp tục và giải quyết nhiều thử thách hơn, hãy xem các khóa học thử thách mã SQL tương tác khác của chúng tôi tại đây trên LinkedIn Learning. Hẹn gặp lại lần sau.
+64
+00:00:16,040 --> 00:00:31,090
+Và các chứng chỉ này, cùng với các dữ liệu khác mà chúng tôi sẽ xác định sau, chứa các khóa chung. Ngoài ra, chứng chỉ cũng có thể chứa các khóa riêng tư liên quan đến toán học và chúng ta sẽ thảo luận về chức năng của các khóa đó sâu hơn một chút ở phần sau.
+
+65
+00:00:31,090 --> 00:00:42,030
+Khóa riêng, nếu chúng không được lưu trữ trong chứng chỉ, cũng có thể được lưu trữ trong một tệp riêng. Các thành phần PKI bao gồm cơ quan cấp chứng chỉ hoặc CA.
+
+66
+00:00:42,030 --> 00:01:01,060
+Thành phần này được sử dụng để cấp chứng chỉ mới cho người dùng, thiết bị hoặc ứng dụng. Nó cũng có thể gia hạn chứng chỉ trước khi chúng hết hạn. Nó cũng có thể thu hồi chứng chỉ, có thể do điện thoại thông minh bị xâm nhập có thể đã cài đặt chứng chỉ bảo mật trên đó.
+
+67
+00:01:01,060 --> 00:01:20,040
+CA cũng duy trì danh sách thu hồi chứng chỉ, CRL, về cơ bản là danh sách số sê-ri cho các chứng chỉ bị thu hồi. Và cơ quan cấp chứng chỉ cũng có thể ngừng hoạt động vì mục đích bảo mật khi không cần thực hiện các tác vụ này.
+
+68
+00:01:20,040 --> 00:01:39,030
+Cơ quan đăng ký, hay RA, đôi khi còn được gọi là CA cấp dưới trong hệ thống phân cấp mà nó tồn tại bên dưới cơ quan cấp chứng chỉ. Và nó có thể được sử dụng để quản lý chứng chỉ giống như cách CA có thể thực hiện, cấp chứng chỉ, gia hạn chúng, thu hồi chứng chỉ, v.v.
+
+69
+00:01:39,030 --> 00:02:08,060
+Danh sách thu hồi chứng chỉ hoặc CRL hoặc việc sử dụng giao thức trạng thái chứng chỉ trực tuyến, OSCP, được sử dụng để xác minh rằng chứng chỉ hợp lệ và đó là do chúng tôi đang kiểm tra các danh sách này hoặc đưa ra truy vấn trong trường hợp OCSP , để xem số sê-ri của một chứng chỉ nhất định có hợp lệ hay không và để đảm bảo rằng nó chưa bị thu hồi vì chứng chỉ bị thu hồi không thể tham gia vào các hoạt động liên lạc bảo mật.
+
+70
+00:02:08,060 --> 00:02:24,020
+Mẫu chứng chỉ là một thành phần PKI và đúng như tên gọi, đây là một bản thiết kế có thể được sử dụng khi cấp chứng chỉ và điều này có thể được tùy chỉnh, tùy thuộc vào nhu cầu của bạn và cách sử dụng chứng chỉ PKI được cấp.
+
+71
+00:02:24,020 --> 00:02:42,030
+Cuối cùng, chúng ta đã có được chứng chỉ. Chứng chỉ chứa nhiều dữ liệu, bao gồm tên chủ đề được cấp, có thể ở nhiều dạng khác nhau, chẳng hạn như tên DNS cho trang web hoặc địa chỉ email của người dùng nếu nó được cấp cho người dùng.
+
+72
+00:02:42,030 --> 00:02:51,000
+Ngoài ra còn có chữ ký, chữ ký số của cơ quan cấp chứng chỉ hoặc cơ quan đăng ký cũng được bao gồm trong chứng chỉ.
+
+73
+00:02:51,000 --> 00:03:00,030
+Và điều đó được sử dụng để thiết lập lòng tin, điều mà chúng ta sẽ nói đến sau. Chứng chỉ cũng có thời hạn sử dụng hạn chế nên nó có thông tin hết hạn.
+
+74
+00:03:00,030 --> 00:03:14,000
+Và tất nhiên chứng chỉ sẽ có khóa chung và có thể cả khóa riêng, và hai khóa đó có liên quan về mặt toán học. Bạn có thể thiết lập PKI trong tổ chức theo hệ thống phân cấp một cấp.
+
+75
+00:03:14,000 --> 00:03:25,090
+Điều đó có nghĩa là ở đầu hệ thống phân cấp, bạn sẽ định cấu hình tổ chức phát hành chứng chỉ, CA. Và trực tiếp từ đó, bạn sẽ cấp chứng chỉ cho người dùng, thiết bị hoặc ứng dụng.
+
+76
+00:03:25,090 --> 00:03:42,050
+Và hãy nhớ những chứng chỉ đó, mỗi chứng chỉ đều có khóa chung và khóa riêng, có thể được lưu trữ trong chứng chỉ hoặc không. Cặp khóa chung và khóa riêng cho mỗi chứng chỉ là duy nhất, do đó bạn không nhận được cùng một khóa chung cho tất cả các chứng chỉ được cấp hoặc bất kỳ thứ gì tương tự.
+
+77
+00:03:42,050 --> 00:03:58,020
+Bây giờ, bạn cũng có thể chọn làm việc với hệ thống phân cấp PKI nhiều tầng, trong đó ở trên cùng, bạn có cơ quan cấp chứng chỉ, theo đó chúng tôi có cơ quan đăng ký hoặc hãy nhớ rằng, những cơ quan này đôi khi được gọi là cơ quan cấp chứng chỉ cấp dưới.
+
+78
+00:03:58,020 --> 00:04:20,040
+Sau đó, các cơ quan đăng ký đó sẽ cấp chứng chỉ cho người dùng, thiết bị và ứng dụng. Bây giờ, trong trường hợp cụ thể này, vì chúng tôi có cơ quan cấp dưới hoặc cơ quan đăng ký có thể cấp chứng chỉ và làm việc với họ theo cách đó, nên chúng tôi không thực sự cần cơ quan cấp chứng chỉ trực tuyến thường xuyên trừ khi chúng tôi cần tạo cơ quan đăng ký mới.
+
+79
+00:04:20,040 --> 00:04:37,080
+Và do đó, từ góc độ bảo mật, việc giữ tổ chức phát hành chứng chỉ ở đầu hệ thống phân cấp ngoại tuyến cho đến khi cần thiết là điều hợp lý, bởi
+vì nếu tổ chức phát hành chứng chỉ vô tình bị xâm phạm thì mọi thứ trong hệ thống phân cấp cũng bị xâm phạm, tất cả các chứng chỉ ở mọi nơi. 
+
+@@@
+
+
+
+80
+00:00:01,000 --> 00:00:17,090
+- Cơ quan cấp chứng chỉ là một phần quan trọng của hệ thống phân cấp PKI. Chứng chỉ hoặc Cơ quan đăng ký, tùy thuộc vào vị trí tồn tại của chúng trong hệ thống phân cấp, có thời hạn hiệu lực dài hơn chứng chỉ được cấp tiêu chuẩn, chẳng hạn đối với người dùng hoặc điện thoại thông minh.
+
+81
+00:00:17,090 --> 00:00:28,060
+Ví dụ: Cơ quan cấp chứng chỉ có thể có hiệu lực trong 10 năm trong đó chứng chỉ được cấp cho người dùng nhằm mục đích mã hóa e-mail có thể chỉ có hiệu lực trong hai năm.
+
+82
+00:00:28,060 --> 00:00:44,000
+Nó giống như việc có bằng lái xe hoặc hộ chiếu hết hạn theo thời gian vì lý do bảo mật. Bây giờ, điều này được xác định khi bạn định cấu hình môi trường nơi cấp chứng chỉ nếu bạn đang thiết lập PKI.
+
+83
+00:00:44,000 --> 00:00:57,050
+Sau đó, Chứng chỉ hoặc Cơ quan đăng ký có thể cấp chứng chỉ mới, có thể gia hạn chứng chỉ trước khi chúng hết hạn và cũng có thể thu hồi chứng chỉ do những vấn đề như xâm phạm bảo mật.
+
+84
+00:00:57,050 --> 00:01:22,060
+Cơ quan có thẩm quyền cũng có thể xuất bản danh sách thu hồi chứng chỉ hoặc CRL qua nhiều giao thức khác nhau, bao gồm những thứ như http và danh sách thu hồi chứng chỉ này sau đó có thể được khách hàng truy xuất trước khi họ tham gia vào giao tiếp sử dụng chứng chỉ PKI vì nếu có bị thu hồi chứng chỉ, họ không muốn liên lạc với bất kỳ điều gì liên quan đến điều đó vì mục đích bảo mật.
+
+85
+00:01:22,060 --> 00:01:51,010
+Giờ đây, CA hoặc Cơ quan cấp chứng chỉ, ở trên cùng của hệ thống phân cấp, CA gốc như tên gọi của nó, có thể cấp chứng chỉ cho Cơ quan đăng ký cấp dưới hoặc RA, sau đó, RA có thể cấp chứng chỉ thực thể cho người dùng, thiết bị và phần mềm, do đó, CA cấp cao nhất bị xâm phạm hay như chúng tôi gọi là CA gốc, có nghĩa là tất cả các chứng chỉ cấp dưới sẽ bị xâm phạm.
+
+86
+00:01:51,010 --> 00:02:13,050
+Trong Hệ thống phân cấp PKI một cấp, chúng tôi biết rằng chúng tôi có CA hoặc Cơ quan cấp chứng chỉ ở trên cùng và nó có thể cấp chứng chỉ, nhưng những gì chúng tôi có ở đây là một chuỗi tin cậy và điều đó có nghĩa là chữ ký số của Cơ quan cấp chứng chỉ sẽ tồn tại trong tất cả các chứng chỉ mà nó cấp và đó được gọi là chuỗi tin cậy.
+
+87
+00:02:13,050 --> 00:02:33,080
+Nói cách khác, nếu chúng ta tin cậy Cơ quan cấp chứng chỉ, chúng ta sẽ tin cậy tất cả các chứng chỉ mà tổ chức đó đã cấp. Khái niệm tương tự cũng hoạt động tốt với Hệ thống phân cấp PKI nhiều tầng, trong đó bạn có Cơ quan cấp chứng chỉ ở trên cùng, CA gốc và sau đó là Cơ quan đăng ký cấp dưới cấp chứng chỉ.
+
+88
+00:02:33,080 --> 00:02:42,050
+Bây giờ, trong trường hợp này, chúng tôi biết rằng Root CA phải được giữ ngoại tuyến vì mục đích bảo mật vì nếu nó bị xâm phạm thì mọi thứ trong hệ thống phân cấp cũng bị xâm phạm.
+
+89
+00:02:42,050 --> 00:03:10,070
+Bây giờ, khi nào chúng tôi sẽ làm việc với Cơ quan đăng ký, hay như họ gọi là Cơ quan cấp chứng chỉ cấp dưới? Bạn có thể có RA cho các phòng ban khác nhau trong tổ chức hoặc cho các dự án khác nhau, cho các công ty con hoặc thậm chí cho các khu vực địa lý khác nhau, vì vậy, theo cách này, bạn sẽ đảm bảo rằng nhóm hành chính, nhóm quản trị CNTT phù hợp, có Cơ quan đăng ký phù hợp, và họ có thể cấp giấy chứng nhận của riêng mình.
+
+90
+00:03:10,070 --> 00:03:23,060
+Giờ đây, như chúng ta biết, những chứng chỉ này có thể được cấp cho người dùng, thiết bị hoặc ứng dụng và một lần nữa, ở đây chúng ta có một chuỗi tin cậy, ngoại trừ ở nhiều cấp độ so với cuộc thảo luận trước đây của chúng ta cách đây không lâu.
+
+91
+00:03:23,060 --> 00:03:39,070
+Điều này có nghĩa là nếu chúng tôi tin tưởng Cơ quan cấp chứng chỉ ở trên cùng, CA gốc, thì nói rộng ra, chúng tôi sẽ tin cậy Cơ quan đăng ký theo đó và tất cả các chứng chỉ mà Cơ quan đăng ký đó cấp.
+
+92
+00:03:39,070 --> 00:04:01,070
+Chuỗi tin cậy này rất quan trọng vì phần mềm sẽ kiểm tra điều này. Ví dụ: trình duyệt web của bạn có một danh sách các chứng chỉ đáng tin cậy mà nó sử dụng để xác định xem bạn có kết nối với một trang web đáng tin cậy hay không và hầu hết các trình duyệt web sẽ cho bạn biết, bạn có thể đã thấy điều này, rằng nó có thể không thể để xác minh danh tính của trang web hoặc trang web đó không đáng tin cậy.
+
+93
+00:04:01,070 --> 00:04:26,060
+Ví dụ: hãy xem trang web mẫu này. Chúng tôi có thông báo cho biết kết nối của chúng tôi không phải là kết nối riêng tư và trên thanh địa chỉ, https bị gạch bỏ vì đó không phải là kết nối bảo mật hoặc an toàn và nếu tôi nhấp vào đây, đây là trình duyệt Google Chrome, bởi Nhân tiện, nếu tôi nhấp vào nơi thông báo không an toàn, tôi cũng có thể nhấp vào chứng chỉ mà nó báo là không hợp lệ, nó cho biết chứng chỉ đã hết hạn.
+
+94
+00:04:26,060 --> 00:04:39,030
+Thực sự, tôi có thể thấy rằng ngày hiệu lực ở đây là vào năm 2015, vì vậy chắc chắn là có, chứng chỉ đã hết hạn và đó là lý do tại sao trình duyệt web của tôi dẫn đến những thông báo này.
+
+95
+00:04:39,030 --> 00:04:55,080
+Khi đó, chuỗi tin cậy rất quan trọng trong Hệ thống phân cấp cơ sở hạ tầng khóa công khai, do đó các CA cần phải được tin cậy, nếu không thì PKI là vô nghĩa. Chứng chỉ, như chúng ta biết, chứa chữ ký số của Cơ quan cấp chứng chỉ phát hành.
+
+96
+00:04:55,080 --> 00:05:10,050
+Vấn đề ở đây là chữ ký số được tạo bằng khóa riêng của thực thể đó, do đó, khóa riêng của Cơ quan cấp chứng chỉ, để khóa đó được giữ riêng tư và bảo mật và không dễ bị giả mạo, và đó là lý do tại sao chúng ta có thể tin cậy vào chữ ký số đó.
+
+97
+00:05:10,050 --> 00:05:26,030
+Nhân tiện, chữ ký số được xác minh bằng cách sử dụng khóa chung có liên quan, vì vậy nếu Cơ quan cấp chứng chỉ ký điện tử vào chứng chỉ bằng khóa riêng của nó, chúng tôi có thể xác minh chữ ký đó bằng khóa chung của cơ quan có thẩm quyền.
+
+98
+00:05:26,030 --> 00:05:39,070
+Chuỗi vấn đề tin cậy được hiển thị ở đây trong trình duyệt web, cụ thể là Internet Explorer, nơi chúng tôi có thể xem chứng chỉ và cụ thể ở đây tôi đang xem Tab Cơ quan cấp chứng chỉ gốc đáng tin cậy.
+
+99
+00:05:39,070 --> 00:06:06,060
+Tuy nhiên, bạn cũng có thể sử dụng CA tự ký trong tổ chức của mình. Điều này có nghĩa là bạn đang tạo Cơ sở hạ tầng khóa công khai của riêng mình. Bạn đang tạo hệ thống phân cấp của riêng mình thay vì đi đến một số tổ chức khác được tin cậy trên toàn cầu để cấp chứng chỉ và do đó, Tổ chức phát hành chứng chỉ tự ký của bạn, theo mặc định, sẽ không có trong danh sách Cơ quan chứng nhận gốc đáng tin cậy này.
+
+100
+00:06:06,060 --> 00:06:19,070
+Do đó, theo mặc định, sẽ không có gì đáng tin cậy đối với CA tự ký. Do đó, chứng chỉ CA có thể được thêm vào
+thiết bị, vào kho chứng chỉ đáng tin cậy mà chúng tôi đang xem ở đây, để chặn các thông báo cảnh báo. 
+
+@@@
+
+
+
+101
+00:00:01,020 --> 00:00:17,020
+- [Người hướng dẫn] SSL và TLS liên quan trực tiếp đến chứng chỉ PKI. Nói cách khác, bạn không thể có SSL hoặc TLS nếu không có PKI. Tuy nhiên, chúng tôi muốn cẩn thận không gọi chứng chỉ là chứng chỉ SSL hoặc chứng chỉ TLS vì về mặt kỹ thuật, đây là cách gọi sai.
+
+102
+00:00:17,020 --> 00:00:41,050
+Đó là chứng chỉ PKI có thể được sử dụng để bảo mật SSL hoặc TLS cho truyền thông mạng. Vì vậy, chứng chỉ PKI có nhiều tên. Nó có thể là chứng chỉ PKI, nó có thể được gọi là chứng chỉ kỹ thuật số, chứng chỉ bảo mật và cũng có thể được gọi là chứng chỉ x.509 vì nó tuân thủ tiêu chuẩn x.509, đó chính là nội dung của nó.
+
+103
+00:00:41,050 --> 00:00:59,060
+Chứng chỉ được cấp cho người dùng. Chúng có thể được cấp cho các thiết bị như điện thoại thông minh hoặc có thể được cấp cho các ứng dụng phần mềm. Và do đó, chứng chỉ có mục đích sử dụng cụ thể, được chỉ định, chẳng hạn như được sử dụng để mã hóa tệp hoặc để bảo mật lưu lượng mạng bằng TLS.
+
+104
+00:00:59,060 --> 00:01:09,090
+Các nhà phát triển có thể nhận được chứng chỉ PKI ký mã để ký điện tử phần mềm của họ, bao gồm các tập lệnh mà họ có thể tạo như tập lệnh PowerShell hoặc tập lệnh bash Linux.
+
+105
+00:01:09,090 --> 00:01:23,090
+Và do đó việc sử dụng chứng chỉ sau đó được xác định trong mẫu chứng chỉ. Giống như tên gọi, mẫu chứng chỉ thực sự đóng vai trò như một bản thiết kế chi tiết được Cơ quan cấp chứng chỉ sử dụng để cấp chứng chỉ.
+
+106
+00:01:23,090 --> 00:01:31,030
+Chứng chỉ cũng phải được lưu trữ ở đâu đó nếu chúng được sử dụng và có nhiều nơi có thể lưu trữ chúng cũng như có nhiều cách để truy cập chúng.
+
+107
+00:01:31,030 --> 00:01:42,010
+Chứng chỉ PKI có thể được lưu trữ trong một tệp, trên thiết bị. Nó có thể được lưu trữ trên một thẻ thông minh có thể được sử dụng để xác thực với hệ thống máy tính bị hạn chế trong văn phòng.
+
+108
+00:01:42,010 --> 00:01:55,040
+Thông tin chứng chỉ có thể được lưu trữ trong chương trình cơ sở, TPM, Mô-đun nền tảng đáng tin cậy có thể được sử dụng để chúng tôi có thể mã hóa toàn bộ cụm đĩa trên máy chạy Windows bằng tính năng Windows BitLocker.
+
+109
+00:01:55,040 --> 00:02:10,030
+Vậy loại mục nào tồn tại trong chứng chỉ PKI? Có một số trong số chúng, bao gồm cả số phiên bản. Điều này xác định số phiên bản x.509 hoặc PKI của chứng chỉ cùng với số sê-ri duy nhất.
+
+110
+00:02:10,030 --> 00:02:25,020
+Số sê-ri được sử dụng để theo dõi các chứng chỉ, chẳng hạn như thông qua Danh sách thu hồi chứng chỉ hoặc CRL, đôi khi còn được gọi là các lọn tóc. Cũng trong một chứng chỉ, bạn sẽ luôn có chữ ký số của Cơ quan cấp chứng chỉ đã cấp chứng chỉ.
+
+111
+00:02:25,020 --> 00:02:39,040
+Và điều này được sử dụng để thiết lập một chuỗi tin cậy, bởi vì nếu bạn tin tưởng Cơ quan cấp chứng chỉ đó thì bạn tin cậy chứng chỉ này. Chứng chỉ có thời hạn sử dụng; chúng đã hết hạn nên chúng chỉ có hiệu lực trong một khoảng thời gian nhất định.
+
+112
+00:02:39,040 --> 00:02:56,060
+Các chi tiết sử dụng chứng chỉ như mã hóa tệp cũng được lưu trữ trong chứng chỉ cùng với chủ đề được cấp, chẳng hạn như URL cho trang web sẽ được bảo mật bằng HTTPS hoặc địa chỉ email của người dùng được cấp chứng chỉ ĐẾN.
+
+113
+00:02:56,060 --> 00:03:09,080
+Và tất nhiên, chứng chỉ sẽ luôn chứa khóa chung, là khóa duy nhất và cũng là khóa riêng liên quan đến toán học. Trong một số trường hợp, chứng chỉ có thể không có cả khóa chung và khóa riêng, nhưng nó có thể.
+
+114
+00:03:09,080 --> 00:03:22,080
+Ngoài ra còn có khái niệm về chứng chỉ PKI ký tự đại diện. Trong ảnh chụp màn hình, chúng ta có thể xem chi tiết của một chứng chỉ cụ thể và tôi đã chọn trường Tên thay thế chủ đề.
+
+115
+00:03:22,080 --> 00:03:39,000
+Khi xuống bên dưới, chúng ta có thể thấy có nhiều tên trong trường đó. Cái này dùng để làm gì? Chúng tôi có thể sử dụng chứng chỉ ký tự đại diện cho nhiều tên miền cấp hai DNS thông qua trường Tên thay thế chủ đề hoặc SAN như chúng tôi thấy ở đây.
+
+116
+00:03:39,000 --> 00:03:59,080
+Vì vậy, điều xảy ra là chứng chỉ được cấp cho tên miền cấp cao nhất. Trong ví dụ này, tên miền cấp cao nhất được gọi là digicert.com. Vì vậy, bất cứ điều gì dưới đó như www, quản trị viên, digicert, nội dung hoặc đăng nhập; tất cả những thứ đó có thể được sử dụng với chứng chỉ PKI duy nhất.
+
+117
+00:03:59,080 --> 00:04:18,060
+Vì vậy, trong một ví dụ khác, chúng tôi có thể có chứng chỉ, chứng chỉ ký tự đại diện, được cấp cho fakecorp.com và sau đó chúng tôi có thể sử dụng nó với một trang web, chẳng hạn như có tên DNS là canada.fakecorp.com và cùng chứng chỉ đó có thể cũng được sử dụng cho Europe.fakecorp.com.
+
+118
+00:04:18,060 --> 00:04:34,050
+Vì vậy, thực sự, nó giảm bớt gánh nặng hành chính vì nó liên quan đến PKI và các chứng chỉ. Danh sách thu hồi chứng chỉ hoặc CRL, cuộn tròn được Cơ quan cấp chứng chỉ xuất bản và đó là danh sách các số sê-ri chứng chỉ bị thu hồi.
+
+119
+00:04:34,050 --> 00:04:44,040
+Giờ đây, chứng chỉ có thể bị thu hồi do thiết bị bị mất hoặc bị xâm nhập hoặc khi nhân viên rời công ty, chứng chỉ người dùng của họ có thể bị thu hồi.
+
+120
+00:04:44,040 --> 00:04:57,060
+Vì vậy, các ứng dụng sử dụng chứng chỉ để bảo mật nên truy xuất cuộn tròn trước khi sử dụng các chứng chỉ đó để chúng biết rằng chứng chỉ mà chúng sắp liên lạc hoặc thông qua là thực sự hợp lệ.
+
+121
+00:04:57,060 --> 00:05:07,060
+Có một cách khác để chúng tôi có thể kiểm tra tính hợp lệ của chứng chỉ bằng cách truy vấn một thành phần phần mềm và cách đó được gọi là Giao thức trạng thái chứng chỉ trực tuyến, nếu không thì gọi đơn giản là OCSP.
+
+122
+00:05:07,060 --> 00:05:31,030
+Vì vậy, điều này bao gồm một thành phần máy khách thực hiện truy vấn và thành phần phản hồi phía máy chủ phản hồi các truy vấn đó. Vì vậy, nó cho phép truy vấn trạng thái của một chứng chỉ cụ thể và không giống như Danh sách thu hồi chứng chỉ hoặc cuộn tròn, toàn bộ danh sách không cần phải được tải xuống máy khách để xác định xem chứng chỉ có hợp lệ hay không.
+
+123
+00:05:31,030 --> 00:05:47,090
+Bây giờ, một tùy chọn khác có liên quan đến OCSP hoặc Giao thức trạng thái chứng chỉ trực tuyến được gọi là ghim OCSP. Điều này có nghĩa là chủ sở hữu chứng chỉ sẽ kiểm tra Tổ chức phát hành chứng chỉ theo định kỳ để biết trạng thái của chính tổ chức đó.
+
+124
+00:05:47,090 --> 00:06:09,020
+Tôi có phải là một chứng chỉ hợp lệ hay không? Bây giờ đây có thể là máy chủ web đang sử dụng chứng chỉ cho mục đích SSL hoặc TLS. Điều xảy ra sau đó là những khách hàng kết nối với, trong ví dụ của chúng tôi, trang web được bảo mật, sẽ nhận được trạng thái OCSP cho chứng chỉ của trang web đó khi họ kết nối lần đầu với trang web đó.
+
+125
+00:06:09,020 --> 00:06:26,080
+Và điều xảy ra sau đó hoặc điều không xảy ra là máy khách không phải truy vấn trực tiếp bộ phản hồi OCSP về trạng thái của chứng chỉ đó vì máy chủ web, trong ví dụ này, đã thực hiện việc đó cho chúng tôi và chúng tôi chỉ nhận được điều đó thông tin một cách thuận tiện với tư cách là khách hàng khi chúng tôi kết nối với trang web được bảo mật đó.
+
+126
+00:06:26,080 --> 00:06:44,070
+Một khía cạnh quan trọng khác của chứng chỉ PKI là Ghim khóa công khai, hay còn gọi là PKP. Đây là thông tin được gửi giữa trình duyệt web của máy khách và máy chủ web để các thiết bị tin cậy có thể tải xuống bản sao chứng chỉ đáng tin cậy của máy chủ, bao gồm cả khóa chung.
+
+127
+00:06:44,070 --> 00:07:07,020
+Bây giờ nó được gọi là ghim vì chúng tôi lưu trữ bản sao khóa chung chứng chỉ của máy chủ đó cục bộ trên thiết bị khách. Và trực tiếp từ internet, từ RFC xác định cách sử dụng Ghim khóa công khai, đó là RFC 7469; nó có nghĩa đen là: Ghim khóa là một cơ chế tin cậy khi sử dụng lần đầu.
+
+128
+00:07:07,020 --> 00:07:17,060
+Điều này có nghĩa là lần đầu tiên máy khách tạo kết nối đến một trang web được bảo mật, đó là khi khóa chung của chứng chỉ máy chủ được ghim hoặc lưu vào bộ nhớ đệm trên thiết bị đó.
+
+129
+00:07:17,060 --> 00:07:31,070
+Bây giờ điều này có nghĩa là gì? Tại sao chúng ta lại làm điều này? Chà, điều này có nghĩa là trong tương lai, khi máy khách muốn kết nối với cùng một máy chủ được bảo mật đó, máy khách sẽ yêu cầu máy chủ cung cấp dấu vân tay đã được ghim trước đó để so sánh.
+
+130
+00:07:31,070 --> 00:07:43,060
+Và điều này có nghĩa là chúng tôi đang giảm thiểu các vấn đề về chứng chỉ trong đó chúng tôi có thể cấp chứng chỉ cho một máy chủ đã biết, do đó nó có cùng tên nhưng từ Cơ quan cấp chứng chỉ trái phép.
+
+131
+00:07:43,060 --> 00:08:06,010
+Vì vậy, hãy tưởng tượng rằng chúng ta có một chứng chỉ được cấp cho trang web mail.google.com do Cơ quan cấp chứng chỉ tự ký của kẻ tấn công. Vì vậy, điều đó có nghĩa là nó
+sẽ có khóa công khai trong chứng chỉ từ mail.google.com khác với những gì chúng ta có thể đã thấy trong lần đầu tiên chúng ta kết nối với nó trước khi nó bị xâm phạm. 
+
+@@@
+
+
+
+132
+00:00:01,000 --> 00:00:10,050
+- [Giảng viên] Thật không may, chứng chỉ PKI không tồn tại mãi mãi. Họ có một thời gian sống nhất định. Trong phần này, chúng ta sẽ nói về vòng đời của chứng chỉ.
+
+133
+00:00:10,050 --> 00:00:23,020
+Nhưng trước tiên, chúng ta phải nghĩ ra cách quản lý chứng chỉ trong vòng đời đó. Và đây chắc chắn là điều rất quan trọng đối với các doanh nghiệp lớn hơn, nơi chúng tôi có thể có hàng nghìn chứng chỉ được cấp.
+
+134
+00:00:23,020 --> 00:00:46,060
+Chúng ta cũng phải xem xét việc tuân thủ luật pháp hoặc quy định. Ví dụ: chúng tôi có thể phải lưu trữ khóa riêng trong tệp được bảo vệ bằng mật khẩu. Vì vậy, nếu chúng ta có chiến lược quản lý tập trung, chúng ta sẽ có một công cụ trung tâm, chẳng hạn như các thiết bị di động báo cáo định kỳ để nhận hướng dẫn về việc cấp chứng chỉ PKI, v.v.
+
+135
+00:00:46,060 --> 00:01:00,040
+Hoặc chúng tôi có thể thực hiện chiến lược phi tập trung, trong đó chúng tôi xử lý thủ công từng việc cấp và thu hồi chứng chỉ, trên cơ sở khi cần thiết. Dù thế nào đi nữa, chúng ta cũng cần có phương án B khi có vi phạm an ninh.
+
+136
+00:01:00,040 --> 00:01:17,080
+Chúng ta nên lập kế hoạch thay thế chứng chỉ nhanh chóng. Bạn có thể nhớ khoảng năm 2014, bạn đã nghe về lỗi Heartbleed. Bây giờ, đây là một vấn đề vì nó khai thác một lỗ hổng trong tính mở của bộ phần mềm di động, vốn được sử dụng rộng rãi trên internet vào thời điểm đó.
+
+137
+00:01:17,080 --> 00:01:29,060
+Vì vậy, chúng ta cần có sẵn kế hoạch B để có thể triển khai khi cần thiết. Vòng đời chứng chỉ bắt đầu với yêu cầu chứng chỉ. Bây giờ việc này có thể được thực hiện thủ công hoặc có thể được tự động hóa.
+
+138
+00:01:29,060 --> 00:01:41,050
+Những gì chúng tôi đang làm là yêu cầu chứng chỉ của bạn cho một người dùng, cho một thiết bị, cho một phần mềm và những gì chúng tôi đang làm là yêu cầu cơ quan cấp chứng chỉ của bạn ký điện tử vào chứng chỉ đó vì mục đích tin cậy.
+
+139
+00:01:41,050 --> 00:01:58,090
+Tiếp theo, chứng chỉ sẽ được cấp nếu mọi thứ có vẻ hợp pháp. Bây giờ, có thể có một bước can thiệp của con người ở đây trong đó các chính sách bảo mật tổ chức của bạn có thể yêu cầu nhân viên đến bộ phận CNTT bằng ID ảnh trước khi chứng chỉ PKI của người dùng được cấp.
+
+140
+00:01:58,090 --> 00:02:14,010
+Vì vậy, điều đó sẽ thay đổi từ tổ chức này sang tổ chức khác. Nhưng sau khi chứng chỉ được cấp, chứng chỉ đó có thể được sử dụng cho các mục đích đã định, như mã hóa tệp hoặc kết nối với các trang web được bảo mật hoặc xác thực với mạng được bảo vệ.
+
+141
+00:02:14,010 --> 00:02:23,040
+Có khả năng, chứng chỉ có thể bị thu hồi, chẳng hạn như nếu điện thoại thông minh của người dùng bị đánh cắp và trên đó có chứng chỉ PKI được sử dụng để xác thực với VPN.
+
+142
+00:02:23,040 --> 00:02:36,050
+Chúng tôi muốn thu hồi chứng chỉ nên nó không còn hiệu lực và không thể sử dụng được. Chứng chỉ cũng có thể được gia hạn trước khi hết hạn, nhưng nếu bạn không gia hạn chứng chỉ trước ngày hết hạn thì chứng chỉ đó sẽ không thể sử dụng được nữa.
+
+143
+00:02:36,050 --> 00:02:49,040
+Thay vào đó, bạn sẽ phải cấp chứng chỉ mới. Về cơ bản, yêu cầu ký chứng chỉ chỉ là một cách thủ công để tạo các cặp khóa và yêu cầu cơ quan cấp chứng chỉ ký điện tử vào chứng chỉ.
+
+144
+00:02:49,040 --> 00:02:58,020
+Vì vậy, điều xảy ra đầu tiên là một cặp khóa công khai và khóa riêng được tạo ra. Bây giờ làm thế nào điều đó xảy ra, bạn có thể nói. Vâng, nó phụ thuộc vào phần mềm bạn đang sử dụng để thực hiện việc này.
+
+145
+00:02:58,020 --> 00:03:11,060
+Vì vậy, điều này có thể được tự động hóa, nhưng hiện tại chúng ta đang nói về các yêu cầu ký chứng chỉ thủ công. Vì vậy, khi bạn sử dụng phần mềm của mình để tạo cặp khóa chung và khóa riêng, đó có thể là kết quả của việc nhấp vào nút hoặc nhập một lệnh nhỏ và nhấn enter ở dòng lệnh.
+
+146
+00:03:11,060 --> 00:03:21,010
+Khóa riêng có thể và thực sự nên được sao chép vào một vị trí an toàn. Và trong một số trường hợp, khóa riêng tư cũng có thể được cung cấp cho bên thứ ba đáng tin cậy.
+
+147
+00:03:21,010 --> 00:03:31,050
+Khi bạn làm điều đó, điều đó được gọi là ký quỹ chính. Yêu cầu ký chứng chỉ được gọi là CSR và nó sẽ được tạo tiếp theo và bao gồm khóa chung.
+
+148
+00:03:31,050 --> 00:03:46,050
+CSR thường ở định dạng tệp được gọi là PKCS #10. Và PKCS chỉ là viết tắt của các tiêu chuẩn mã hóa khóa công khai. Sau đó, CSR cần được gửi đến cơ quan cấp chứng chỉ để ký kỹ thuật số.
+
+149
+00:03:46,050 --> 00:03:59,080
+Cho dù điều đó có nghĩa là dán CSR vào trường biểu mẫu cho CA công khai hay lưu nó vào tệp và đính kèm tệp vào email và gửi tệp đó cho nhân viên CNTT kiểm soát việc cấp chứng chỉ.
+
+150
+00:03:59,080 --> 00:04:11,010
+Kiểu đó. Trong hình trên màn hình, chúng ta thấy một ví dụ về yêu cầu ký chứng chỉ, nhưng bên cạnh đó thường có thông tin bổ sung cần thiết, chẳng hạn như thông tin ngôn ngữ.
+
+151
+00:04:11,010 --> 00:04:26,020
+Điều đó sẽ bao gồm những thứ như quốc gia, tiểu bang hoặc tỉnh, thành phố. Ngoài ra, tên chủ đề. Vì vậy, ví dụ: nếu chúng tôi đang tạo chứng chỉ ở đây cho một trang web được bảo mật, chúng tôi phải bao gồm chủ đề tên miền đủ điều kiện.
+
+152
+00:04:26,020 --> 00:04:37,020
+Nói cách khác, tên DNS của trang web, chẳng hạn như www.fakesite.com. Bây giờ nó phải khớp với những gì mọi người sẽ nhập vào dòng URL trên trình duyệt web của họ khi kết nối.
+
+153
+00:04:37,020 --> 00:04:54,090
+Nếu không, họ sẽ nhận được thông báo cho biết họ không nên tin tưởng trang web này. Điều tương tự cũng xảy ra với địa chỉ email. Nếu bạn tình cờ tạo chứng chỉ cho người dùng, để sử dụng email, có thể là mã hóa và ký điện tử, hãy đảm bảo rằng địa chỉ email, trong yêu cầu ký chứng chỉ, khớp với địa chỉ email thực của người dùng.
+
+154
+00:04:54,090 --> 00:05:05,000
+Nếu không, nó sẽ không hoạt động chính xác. Một cách khác để có được chứng chỉ PKI là thông qua các giao thức đăng ký chứng chỉ đơn giản này, SCEP. Điều này thường được sử dụng để tự động hóa.
+
+155
+00:05:05,000 --> 00:05:19,050
+Cho dù chúng tôi muốn cung cấp chứng chỉ cho thiết bị mạng, như bộ chuyển mạch và bộ định tuyến hỗ trợ thiết bị mạng đó hay có thể cho điện thoại thông minh. Về cơ bản điều này có nghĩa là những thiết bị đó được đăng ký và liên hệ với giải pháp quản lý tập trung.
+
+156
+00:05:19,050 --> 00:05:30,040
+Ảnh chụp màn hình này tình cờ đến từ Microsoft Intune, được coi là giải pháp quản lý thiết bị di động hoặc MDM, nơi chúng tôi có thể chỉ định những thứ như loại chứng chỉ đang được cấp.
+
+157
+00:05:30,040 --> 00:05:49,050
+Đây là chứng chỉ người dùng. Chúng tôi có thể xác định kích thước khóa và ở dưới cùng là chứng chỉ gốc sẽ ký điện tử. Vì vậy, việc cấp chứng chỉ là một quy trình có thể được thực hiện thủ công, như chúng ta đã thấy với yêu cầu ký chứng chỉ và thậm chí nó cũng có thể yêu cầu sự phê duyệt thủ công của quản trị viên trước khi chứng chỉ được cấp.
+
+158
+00:05:49,050 --> 00:06:06,090
+Tất nhiên, chúng tôi biết rằng quy trình này cũng có thể được tự động hóa, thậm chí có thể cho các thiết bị mới mà chúng tôi có thể mua, như điện thoại thông minh. Và điều đó có thể áp dụng cho các máy tính tham gia Miền Microsoft Active Directory hoặc điện thoại thông minh kết nối với hệ thống quản lý thiết bị di động trung tâm hoặc hệ thống MDM.
+
+159
+00:06:06,090 --> 00:06:26,010
+Vì vậy, chứng chỉ sẽ được lưu trữ trong kho chứng chỉ đáng tin cậy của thiết bị hoặc một số phương tiện khác, chẳng hạn như thẻ thông minh. Bây giờ, khi chứng chỉ được sử dụng, nó sẽ được sử dụng theo các chi tiết chứng chỉ, chẳng hạn như mã hóa và ký email hoặc mã hóa hệ thống tệp hoặc các nhà phát triển có thể sử dụng nó để ký điện tử vào mã của họ.
+
+160
+00:06:26,010 --> 00:06:37,000
+Sau đó, các ứng dụng phải xác minh rằng chứng chỉ hợp lệ trước khi sử dụng. Và điều đó có thể xảy ra thông qua danh sách thu hồi chứng chỉ, CRL hoặc thông qua giao thức và truy vấn OCSP.
+
+161
+00:06:37,000 --> 00:06:46,070
+Vì vậy, chúng tôi biết rằng chứng chỉ có thể bị thu hồi. Thông thường đó là do sự xâm phạm chứng chỉ, chẳng hạn như nhân viên rời khỏi tổ chức hoặc một số lý do khác.
+
+162
+00:06:46,070 --> 00:07:00,040
+Giờ đây, số sê-ri của chứng chỉ, đối với chứng chỉ bị thu hồi, có thể được lấy thông qua CRL hoặc thông qua truy vấn và giao thức OCSP. Chúng tôi cũng đã đề cập rằng chứng chỉ có thể được gia hạn trước khi chứng chỉ hết hạn.
+
+163
+00:07:00,040 --> 00:07:09,000
+Và như vậy thời hạn cấp chứng chỉ là bao lâu? Điều đó sẽ khác nhau, tùy thuộc vào nhà phát hành chứng chỉ. Định mức là khoảng hai năm.
+
+164
+00:07:09,000 --> 00:07:24,030
+Vì vậy, chúng tôi biết rằng việc gia hạn có thể được thực hiện thủ công hoặc tự động, giống như việc mua lại chứng chỉ ban đầu. Thông thường, các cơ quan cấp chứng chỉ công cộng sẽ thông báo cho người đăng ký bằng một email để cho họ biết rằng chứng chỉ của họ sắp hết hạn và họ nên gia hạn chứng chỉ đó.
+
+165
+00:07:24,030 --> 00:07:39,010
+Sự hết hạn của chứng chỉ, như chúng ta thấy ở đây, cho chúng ta biết thời gian tồn tại của chứng chỉ đó. Sau đó chứng chỉ không thể sử dụng được nữa. Vì vậy, thông thường, chủ sở hữu chứng chỉ sẽ nhận được thông báo 90 ngày trước khi chứng chỉ hết hạn.
+
+166
+00:07:39,010 --> 00:07:50,030
+Vấn đề là, chẳng hạn, các trang web có chứng chỉ PKI đã hết hạn sẽ đặc biệt có vấn đề vì điều
+đó có nghĩa là trình duyệt web của người dùng sẽ không còn tin cậy vào trang web đó nữa. 
+
+@@@
+
+
+
+167
+00:00:01,000 --> 00:00:14,030
+- [Người hướng dẫn] Trong phần trình diễn này, tôi sẽ cài đặt cơ quan cấp chứng chỉ PKI trên nền tảng Microsoft Windows Server 2016. Điều đầu tiên tôi sẽ làm ở đây trên máy chủ là kiểm tra xem thành phần này đã được cài đặt chưa.
+
+168
+00:00:14,030 --> 00:00:26,080
+Tôi có thể làm điều đó bằng nhiều cách. Tôi có thể vào menu bắt đầu của mình và tôi có thể khởi động Windows PowerShell và trong PowerShell, tôi có thể đưa ra lệnh nhỏ tính năng get dash của Windows và tôi có thể cho nó biết những gì tôi muốn tìm kiếm.
+
+169
+00:00:26,080 --> 00:00:37,070
+Trong trường hợp này là dấu hoa thị chứng chỉ dấu hoa thị và sau một lúc, chúng ta có thể thấy rằng vai trò Dịch vụ chứng chỉ Active Directory chưa được cài đặt vì không có dấu X trong hộp.
+
+170
+00:00:37,070 --> 00:00:53,050
+Mặc dù chúng ta có thể sử dụng lệnh nhỏ tính năng Windows dash cài đặt để cài đặt nó vì chúng ta thấy tên ở đây. Tuy nhiên, tôi sẽ chuyển đến menu bắt đầu của mình vì một cách khác để cài đặt thành phần dịch vụ chứng chỉ là đi tới GUI của trình quản lý máy chủ.
+
+171
+00:00:53,050 --> 00:01:10,000
+Không quan trọng bạn làm theo cách nào. Cuối cùng thì nó cũng giống nhau. Tuy nhiên ở đây trong trình quản lý máy chủ, tôi sẽ nhấp vào thêm vai trò và tính năng. Bây giờ, trên màn hình đầu tiên để cài đặt dựa trên vai trò hoặc tính năng, tôi sẽ bật tùy chọn cài đặt máy chủ duy nhất đó và tôi sẽ nhấp vào tiếp theo.
+
+172
+00:01:10,000 --> 00:01:22,070
+Tôi đang cài đặt nó trên cùng một máy chủ ở đây, nơi tôi đang chạy công cụ này, vì vậy tôi sẽ nhấp vào tiếp theo và sau đó tôi sẽ chọn tùy chọn dịch vụ chứng chỉ Active Directory trên màn hình vai trò vì vậy tôi sẽ đánh dấu vào đó.
+
+173
+00:01:22,070 --> 00:01:31,080
+Sau đó nó hiện lên hỏi tôi có muốn thêm tính năng quản trị máy chủ liên quan đến vai trò này không và tôi làm như vậy tôi sẽ bấm thêm tính năng rồi bấm tiếp theo.
+
+174
+00:01:31,080 --> 00:01:43,050
+Không có tính năng bổ sung nào tôi muốn cài đặt trên màn hình tính năng nên tôi sẽ tiếp tục và nhấp vào tiếp theo trên đó. Sau đó, tôi nhận được một thông báo nhỏ mô tả chức năng của Dịch vụ Chứng chỉ Active Directory nên tôi sẽ nhấp vào tiếp theo trên màn hình đó.
+
+175
+00:01:43,050 --> 00:01:55,060
+Sau đó, tôi có thể chọn các dịch vụ vai trò cụ thể liên quan đến Dịch vụ chứng chỉ Active Directory. Chúng tôi chắc chắn cần cơ quan cấp chứng chỉ để có thể thiết lập PKI CA, cơ quan cấp chứng chỉ của chúng tôi.
+
+176
+00:01:55,060 --> 00:02:10,040
+Tôi cũng có các thành phần như dịch vụ web chính sách đăng ký chứng chỉ và dịch vụ web đăng ký chứng chỉ, cả hai đều được sử dụng cho các máy không được kết nối với tên Active Directory mặc dù máy chủ của tôi thực sự là bộ điều khiển miền Active Directory.
+
+177
+00:02:10,040 --> 00:02:27,000
+Tôi cũng đã có trang web đăng ký web của cơ quan cấp chứng chỉ mà tôi có thể chọn cài đặt. Bây giờ, điều này cung cấp một giao diện web nhỏ cho phép mọi người yêu cầu chứng chỉ bằng cách dán vào các yêu cầu ký chứng chỉ, v.v. để nếu tôi cần thành phần đó, tôi có thể cài đặt nó.
+
+178
+00:02:27,000 --> 00:02:45,090
+Tôi cũng đã có dịch vụ đăng ký thiết bị mạng cho các thiết bị mạng có thể lấy chứng chỉ PKI nhưng tôi sẽ không bật dịch vụ đó. Tôi đã nhận được thành phần phía máy chủ phản hồi trực tuyến được sử dụng để phản hồi các truy vấn của máy khách OCSP về tính hợp lệ của chứng chỉ nhưng tôi không cần điều đó nên tôi sẽ không cài đặt nó.
+
+179
+00:02:45,090 --> 00:02:57,090
+Được rồi, bây giờ tôi đã đưa ra các lựa chọn của mình, tôi sẽ nhấp vào tiếp theo và sau đó tôi sẽ nhấp vào cài đặt để thực hiện việc này và không lâu nữa, quá trình cài đặt sẽ hoàn tất.
+
+180
+00:02:57,090 --> 00:03:12,040
+Nó báo là cần phải cấu hình. Được rồi, được rồi, đóng lại đi. Bởi vì nếu ở đây tôi cố gắng truy cập trực tiếp vào menu công cụ và chạy công cụ cấp chứng chỉ trong trình quản lý máy chủ thì sẽ dẫn đến thông báo lỗi này.
+
+181
+00:03:12,040 --> 00:03:33,000
+Nó báo không thể quản lý Dịch vụ chứng chỉ Active Directory. À đó là vì chưa có gì được cấu hình nên không sao, tôi sẽ nhấp vào ổn, tôi sẽ đóng công cụ lại và trong khu vực thông báo ở phía trên bên phải, tôi thấy rằng tôi có tùy chọn để định cấu hình Dịch vụ chứng chỉ Active Directory trên máy chủ đích thì máy chủ này nên mình sẽ click vào đó.
+
+182
+00:03:33,000 --> 00:03:42,050
+Điều đó bắt đầu một thuật sĩ mới, tuyệt vời. Tôi sẽ sử dụng thông tin đăng nhập hiện tại của mình ở đây cho tài khoản quản trị miền mà nó đã cung cấp và tôi sẽ nhấp vào tiếp theo.
+
+183
+00:03:42,050 --> 00:03:51,070
+Sau đó, tôi sẽ chọn định cấu hình cơ quan cấp chứng chỉ cũng như đăng ký web của cơ quan cấp chứng chỉ. Được rồi, vậy tôi sẽ bấm tiếp theo.
+
+184
+00:03:51,070 --> 00:04:09,020
+Tôi cần cài đặt CA doanh nghiệp ở đây, tôi không cần, nhưng tôi sẽ làm vậy vì đây là bộ điều khiển miền Active Directory. Tùy chọn CA độc lập dành cho các máy chủ không nằm ngoài miền Active Directory nên tôi sẽ để nó trên CA doanh nghiệp và tôi sẽ nhấp vào tiếp theo.
+
+185
+00:04:09,020 --> 00:04:37,080
+Bây giờ tôi cần chỉ định CA gốc ở đây vì tôi chưa có CA gốc. Đây là đỉnh của hệ thống phân cấp PKI mà chúng tôi đang xác định. Bây giờ, đối với các máy chủ khác sau khi chúng tôi chạy máy chủ này, chúng tôi có thể định cấu hình chúng làm CA cấp dưới, hay còn gọi là cơ quan đăng ký, RA, để chúng tôi có thể có các CA cấp dưới cho các khu vực khác nhau, các phòng ban khác nhau, các công ty con khác nhau, v.v. nhưng ở đây chúng tôi tiếp theo sẽ gắn bó với CA gốc.
+
+186
+00:04:37,080 --> 00:04:52,020
+Tôi sẽ tạo một khóa riêng mới. Tôi sẽ không sử dụng khóa riêng hiện có. Bạn sẽ chỉ sử dụng tùy chọn đó nếu có lẽ một máy chủ đã lưu trữ CA trước đó bị lỗi, bạn có bản sao lưu khóa riêng của nó và bây giờ bạn muốn cài đặt lại máy chủ để lưu trữ lại nó.
+
+187
+00:04:52,020 --> 00:05:01,000
+Điều đó không áp dụng vì vậy hãy tạo một khóa riêng mới. Sau đó, tôi có thể chọn nhà cung cấp mật mã từ danh sách thả xuống. Tôi sẽ giữ nguyên tất cả các giá trị mặc định ở đây.
+
+188
+00:05:01,000 --> 00:05:19,020
+Nên hoạt động tốt. Vì vậy, RSA với tư cách là nhà cung cấp mật mã có độ dài khóa 2.048 bit và đối với thuật toán ký số cho chứng chỉ ký số, tôi sẽ để nó trên SHA256, thuật toán băm an toàn và sau đó tôi sẽ nhấp vào tiếp theo.
+
+189
+00:05:19,020 --> 00:05:33,010
+Tôi phải nghĩ ra một tên chung cho cơ quan cấp chứng chỉ này nên tôi sẽ gọi nó là tên miền giả một và bên dưới nó là tên phân biệt và hậu tố cho điều đó, vì vậy tôi thấy ổn với điều đó nên tôi đồng ý sẽ tiếp tục và nhấp vào tiếp theo.
+
+190
+00:05:33,010 --> 00:05:49,090
+Bây giờ hãy nhớ rằng chứng chỉ PKI có ngày hết hạn. Chúng chỉ có hiệu lực trong một khoảng thời gian nhất định và bao gồm cả các cơ quan cấp chứng chỉ nên ở đây nó được đặt là 5 năm làm thời hạn hiệu lực theo mặc định đối với cơ quan cấp chứng chỉ này, không phải cho các chứng chỉ mà cơ quan này sẽ cấp.
+
+191
+00:05:49,090 --> 00:05:59,030
+Giả sử ở đây tôi sẽ thay đổi thời gian đó thành 10 năm theo chính sách bảo mật tổ chức của chúng tôi, vì vậy, sau khi thực hiện điều đó, tôi sẽ tiếp tục và nhấp vào tiếp theo.
+
+192
+00:05:59,030 --> 00:06:15,070
+Tôi sẽ chấp nhận các vị trí cơ sở dữ liệu mặc định cho cơ sở dữ liệu chứng chỉ và nhật ký cơ sở dữ liệu chứng chỉ, sau đó tôi sẽ nhấp vào tiếp theo. Được rồi, có vẻ ổn nên tôi sẽ tiếp tục và nhấp vào cấu hình trên màn hình tóm tắt và bây giờ chỉ còn việc chờ đợi.
+
+193
+00:06:15,070 --> 00:06:26,030
+Vì vậy, bây giờ tôi có thể thấy rằng cấu hình đã thành công cho cả hai thành phần, cơ quan cấp chứng chỉ và đăng ký web của cơ quan cấp chứng chỉ, vì vậy tôi sẽ tiếp tục và nhấp vào đóng.
+
+194
+00:06:26,030 --> 00:06:38,010
+Bây giờ ở đây trong trình quản lý máy chủ, nếu tôi đi tới menu công cụ để khởi động công cụ cấp chứng chỉ mà bạn cũng có thể bắt đầu từ menu bắt đầu, lần này nó sẽ không báo lỗi vì chúng tôi đã định cấu hình CA.
+
+195
+00:06:38,010 --> 00:07:02,000
+Chúng ta thực sự có thể thấy nó ở bên trái, một tên miền giả. Nếu tôi mở rộng điều đó, hãy lưu ý rằng bên dưới nó tôi có các thư mục dành cho chứng chỉ bị thu hồi, chứng chỉ đã cấp, yêu cầu đang chờ xử lý có thể yêu cầu sự phê duyệt của quản trị viên, yêu cầu không thành công, thậm chí cả mẫu chứng chỉ hoặc bản thiết kế được sử dụng để cấp chứng chỉ PKI và chúng tôi sẽ làm việc với vấn đề này trong các cuộc biểu tình khác.
+
+196
+00:07:02,000 --> 00:07:15,010
+Ngoài ra, nếu tôi định vào menu bắt đầu của mình trên máy chủ này và chạy cert MGR, bảng điều khiển MMC của trình quản lý chứng chỉ, thì nó sẽ cung cấp cho tôi tùy chọn quản lý chứng chỉ máy tính.
+
+197
+00:07:15,010 --> 00:07:33,040
+Nếu tôi xem xét điều đó, chỉ cần phóng to màn hình đó, trong phần cá nhân nếu tôi xem trong chứng chỉ, tôi có thể thấy mình đã có chứng chỉ CA cho tên miền giả và tôi có thể thấy ngày hết hạn là 10 năm kể từ hôm nay dựa trên cấu hình của tôi.
+
+198
+00:07:33,040 --> 00:07:50,050
+Đồng thời, nếu tôi đi vào phần cơ quan cấp chứng chỉ gốc đáng tin cậy trong kho chứng chỉ của mình và nhấp vào chứng chỉ, thì đây là các cơ quan cấp chứng chỉ khác được tin cậy trên máy này và chúng tôi cũng có mục nhập cho miền giả.
+
+199
+00:07:50,050 --> 00:08:00,000
+Sẽ không sao nếu bạn thấy những gì có vẻ là chứng chỉ CA trùng lặp và đó là do chứng chỉ được lưu trữ vật lý ở một số vị trí khác nhau trong kho chứng chỉ.
+
+200
+00:08:00,000 --> 00:08:16,080
+Mặc dù điều này tồn tại trên máy chủ của chúng tôi nơi chúng tôi đã định cấu hình, nhưng điều quan trọng là phải xem xét thực tế là các thiết bị khách của chúng tôi cần tin cậy các chứng chỉ do CA này cấp cũng sẽ cần cài đặt chứng chỉ này trong kho chứng chỉ của họ nhưng đó là thứ mà chúng tôi ' lát nữa tôi sẽ giải quyết.
+
+201
+00:08:16,080 --> 00:08:32,090
+Điều khác mà chúng tôi sẽ xem xét ở đây là trang web đăng ký chứng chỉ mà chúng tôi đã chọn cài đặt. Để làm được điều đó, tôi sẽ kích hoạt trình duyệt web trực tiếp trên máy chủ này mặc dù chắc chắn là không cần thiết và chúng tôi sẽ kết nối với máy chủ cụ thể này.
+
+202
+00:08:32,090 --> 00:08:59,060
+Tôi sẽ đặt dấu gạch chéo dấu hai chấm HTTP, sau đó là URL, sau đó chúng tôi sẽ kết nối với dịch vụ chứng chỉ dấu gạch chéo, hậu tố C-E-R-T-S-R-V trên trang web của chúng tôi sẽ nhắc chúng tôi đăng nhập vì vậy tôi sẽ nhập giả sử bằng chứng xác thực quản trị viên tên miền của tôi cho Active Directory và sau một lúc, trang đăng ký web Dịch vụ Chứng chỉ Active Directory sẽ mở ra, nơi thông báo chúng tôi có thể yêu cầu chứng chỉ PKI.
+
+203
+00:08:59,060 --> 00:09:12,000
+Chúng tôi có thể xem trạng thái của yêu cầu đang chờ xử lý hoặc thậm chí tải xuống chứng chỉ CA để
+thiết lập lòng tin. Tại thời điểm này, chúng tôi đã cài đặt thành công cơ quan cấp chứng chỉ. 
+
+@@@
+
+
+
+204
+00:00:01,010 --> 00:00:10,090
+- [Người tường thuật] Chứng chỉ PKR được cấp từ các mẫu có chứa cài đặt cụ thể cho chứng chỉ đó. Chúng ta sẽ xem xét cách tùy chỉnh các mẫu chứng chỉ.
+
+205
+00:00:10,090 --> 00:00:22,080
+Ở đây trên máy chủ cửa sổ của tôi, tôi sẽ vào menu bắt đầu để khởi động công cụ thích hợp. Điều đó có nghĩa là tôi sẽ đi xuống phần công cụ quản trị của cửa sổ và công cụ chúng tôi đang tìm kiếm ở đây là cơ quan cấp chứng chỉ.
+
+206
+00:00:22,080 --> 00:00:37,090
+Vì vậy tôi sẽ chạy công cụ đó. Khi nó bật lên, chúng ta có thể thấy trong thanh điều hướng bên trái tên của cơ quan cấp chứng chỉ của chúng tôi. Nó được gọi là Miền giả 1. Và nếu tôi mở rộng nó để hiển thị cho tôi các mục ở bên trái, một trong những thứ tôi sẽ thấy là các mẫu chứng chỉ.
+
+207
+00:00:37,090 --> 00:00:51,090
+Nếu tôi đánh dấu điều đó, tôi có thể thấy các mẫu chứng chỉ đã cấp có thể được sử dụng để tạo chứng chỉ được liệt kê ở bên phải. Ví dụ: ở đây chúng tôi có chứng chỉ máy chủ web để xác thực máy chủ, cho các trang web được bảo mật.
+
+208
+00:00:51,090 --> 00:01:01,030
+Chúng tôi có mẫu chứng chỉ máy tính để xác thực máy khách và máy chủ. Mẫu người dùng để mã hóa hệ thống tệp và email bảo mật, v.v.
+
+209
+00:01:01,030 --> 00:01:17,020
+Nhưng chúng ta có thể tùy chỉnh các mẫu này. Vì vậy, tôi sẽ nhấp chuột phải vào các mẫu chứng chỉ ở bên trái và tôi sẽ chọn quản lý. Bây giờ điều tôi muốn làm là trong cửa sổ mới mở ra, hãy lưu ý rằng chúng ta có một số mẫu được liệt kê theo thứ tự bảng chữ cái.
+
+210
+00:01:17,020 --> 00:01:26,090
+Và nếu tôi nhấp đúp vào một mẫu, chẳng hạn như mẫu máy chủ web, thì sẽ thấy mọi thứ đều chuyển sang màu xám. Tôi không thể thay đổi được. Vì vậy, điều tôi muốn làm là tùy chỉnh mẫu máy chủ web.
+
+211
+00:01:26,090 --> 00:01:37,010
+Cách điều đó xảy ra là tạo một bản sao của nó và sửa đổi bản sao đó. Vì vậy, tôi sẽ nhấp chuột phải vào máy chủ web và chọn mẫu trùng lặp.
+
+212
+00:01:37,010 --> 00:01:45,050
+Có một số thứ tôi có thể chỉ định ở đây, chẳng hạn như phiên bản của cơ quan cấp chứng chỉ, trong trường hợp này, tôi sẽ đặt phiên bản đó cho máy chủ windows 2016.
+
+213
+00:01:45,050 --> 00:01:54,070
+Và về cơ bản, nó cho tôi biết rằng có một vài tùy chọn nhỏ mới với phiên bản đó. Tôi chỉ cần bấm vào là được. Điều tương tự đối với người nhận chứng chỉ.
+
+214
+00:01:54,070 --> 00:02:05,020
+Trong trường hợp này, đó sẽ là Windows 10 hoặc windows server 2016 và nó cung cấp cho tôi danh sách một số tính năng dành riêng cho phiên bản đó sẽ có sẵn.
+
+215
+00:02:05,020 --> 00:02:16,090
+Được thôi, tôi sẽ bấm vào được. Nói chung là mình có thể xác định được tên của cái này, mình sẽ gọi cái này là Custom Web Server, đó là tên của template này.
+
+216
+00:02:16,090 --> 00:02:38,020
+Và lưu ý rằng thời hạn hiệu lực của chứng chỉ được đặt theo mặc định là hai năm, đây gần như là tiêu chuẩn. Trong trường hợp này, tôi cũng có thể chọn xuất bản chứng chỉ trong thư mục hoạt động để chúng tôi có một kho lưu trữ trung tâm gồm các chứng chỉ và khóa chung có thể được phần mềm khác sử dụng, ví dụ: hệ thống email cần khóa chung để mã hóa cho người nhận.
+
+217
+00:02:38,020 --> 00:02:47,070
+Chúng tôi cũng đã đi đến một số mục khác mà chúng tôi có thể chỉ định ở đây, chẳng hạn như tên chủ đề. Tên chủ đề có liên quan đến tổ chức được cấp chứng chỉ.
+
+218
+00:02:47,070 --> 00:02:57,010
+Vì vậy, trong trường hợp này, đối với máy chủ web, chúng tôi có thể cung cấp tên của máy chủ web, tên đầy đủ hoặc chúng tôi có thể xây dựng tên đó từ các thành phần trong thư mục hoạt động.
+
+219
+00:02:57,010 --> 00:03:11,010
+Tôi sẽ để nó được cung cấp trong yêu cầu, chúng ta chỉ cần nhấp vào đồng ý. Và cũng ở đây, nếu tôi nhấp vào máy chủ, chúng tôi sẽ có các tùy chọn khác, chẳng hạn như chọn không lưu trữ chứng chỉ trong cơ sở dữ liệu CA.
+
+220
+00:03:11,010 --> 00:03:21,030
+Ngoài ra, điều tôi có thể muốn làm là bảo mật để xác định ai được phép đăng ký hoặc thậm chí tự động đăng ký, nếu chúng tôi đã định cấu hình điều đó, cho các chứng chỉ.
+
+221
+00:03:21,030 --> 00:03:35,020
+Vì vậy, ở đây, những người dùng đã xác thực sẽ được chọn và tất cả những gì họ có thể làm là đọc các mẫu. Có thể đối với những người dùng đã được xác thực, tôi cũng muốn họ có thể đăng ký, nói cách khác là nhận được chứng chỉ từ mẫu này.
+
+222
+00:03:35,020 --> 00:03:45,090
+Bây giờ bạn có thể thêm và xóa những người dùng và nhóm Active Directory cụ thể, v.v. Nhưng tôi sẽ đặt người dùng đã xác thực ở đây để đăng ký quyền trong cột cho phép.
+
+223
+00:03:45,090 --> 00:04:05,070
+Vì vậy, giả sử tôi hài lòng với mẫu đó, tôi sẽ nhấp vào ổn. Và chúng ta có thể thấy trong danh sách bên dưới, máy chủ web tùy chỉnh. Tuy nhiên, hãy đóng công cụ này lại và quay lại đây trong công cụ cơ quan cấp chứng chỉ, nếu tôi nhìn vào các mẫu chứng chỉ, ngay cả khi tôi làm mới, tôi cũng không thấy ở bên phải, mẫu máy chủ web tùy chỉnh của chúng tôi.
+
+224
+00:04:05,070 --> 00:04:18,060
+Nói cách khác, nó chưa thể được sử dụng để cấp chứng chỉ. Đó là bởi vì những gì tôi chưa làm là nhấp chuột phải vào các mẫu chứng chỉ ở bên trái và chọn mẫu chứng chỉ mới để phát hành.
+
+225
+00:04:18,060 --> 00:04:32,000
+Khi bạn tạo một mẫu tùy chỉnh, bạn cần phát hành nó để nó thực sự có thể được sử dụng để tạo chứng chỉ PKI. Khi tôi chọn tùy chọn đó, tôi có tùy chọn chọn mẫu máy chủ web tùy chỉnh của chúng tôi và tôi sẽ nhấp vào đồng ý.
+
+226
+00:04:32,000 --> 00:04:42,050
+Và sau khi tôi làm xong, bạn sẽ thấy nó xuất hiện trong danh sách. Bây giờ bạn có thể phải nhấp vào nút làm mới nếu nó không hiển thị ngay lập tức, nhưng dù thế nào đi nữa, nó sẽ hiển thị ở đây.
+
+227
+00:04:42,050 --> 00:04:53,000
+Vì vậy, mẫu máy chủ web tùy chỉnh hiện có sẵn để sử dụng. Và chúng ta sẽ xem cách
+thực sự sử dụng điều này để có được chứng chỉ PKI trong một phần trình diễn khác. 
+
+@@@
+
+
+
+228
+00:00:01,010 --> 00:00:22,010
+- [Người hướng dẫn] OpenSSL là một công cụ miễn phí cho phép chúng ta tạo và quản lý chứng chỉ theo hệ thống phân cấp cơ sở hạ tầng khóa công khai. Điều đầu tiên bạn cần làm là đảm bảo rằng bạn đã cài đặt OpenSSL và tôi đang thực hiện việc đó ở đây trên Linux, vì vậy tùy thuộc vào bản phân phối Linux của bạn sẽ xác định chính xác lệnh mà bạn sẽ đưa ra để kiểm tra xem nó có tồn tại hay không.
+
+229
+00:00:22,010 --> 00:00:36,020
+Ở đây tôi sẽ chạy apt, install, OpenSSL, và ở đây tôi có thể thấy rằng nó cho tôi biết OpenSSl đã được cài đặt, vậy là tốt. Bây giờ tôi có thể bắt đầu làm việc với lệnh.
+
+230
+00:00:36,020 --> 00:01:02,070
+Vì vậy, ở đây tôi đang sử dụng Kali Linux, nhưng tùy thuộc vào bản phân phối của bạn, bạn có thể thực hiện việc này theo cách khác. Bây giờ, công việc đầu tiên khi bạn muốn tạo tổ chức phát hành chứng chỉ gốc riêng của mình, CA gốc của riêng bạn trước tiên là tạo khóa riêng cho nó và tôi sẽ thực hiện điều đó bằng cách nhập openssl genrsa, tạo khóa rsa và Tôi sẽ nói với nó rằng tôi muốn sử dụng aes256 làm thuật toán.
+
+231
+00:01:02,070 --> 00:01:16,000
+Đó là kiểu chìa khóa, rồi -out. Tôi sẽ gọi nó là CAprivate.key. Tên tập tin thực sự tùy thuộc vào bạn. Và sau đó tôi sẽ nói với nó rằng tôi muốn độ dài khóa là 2.048 bit.
+
+232
+00:01:16,000 --> 00:01:43,010
+Vì vậy, nó yêu cầu tôi nhập cụm mật khẩu vì như chúng tôi biết, khóa riêng cần được bảo vệ. Chúng tôi không muốn bất kỳ ai có thể sử dụng nó, vì vậy tôi sẽ tiếp tục và nhập mật khẩu, sau đó tôi sẽ xác minh chính mật khẩu đó để bảo vệ tệp khóa riêng của mình và nếu tôi xóa màn hình và thực hiện một ls, thực sự có CAprivate.key của chúng tôi và nếu tôi sử dụng lệnh cat để hiển thị nội dung của tệp, chúng tôi có thể thấy nó trông giống như một đống gobbledygook.
+
+233
+00:01:43,010 --> 00:02:16,080
+Chà, đó là khóa riêng RSA mà chúng tôi sẽ sử dụng để tạo CA của mình. Vì vậy mình sẽ xóa màn hình bằng lệnh clear. Trình tự công việc tiếp theo là thực sự bắt đầu làm việc với tệp khóa riêng để tạo chứng chỉ CA của chúng tôi, vì vậy điều tôi sẽ làm sau đó để thực sự tạo chứng chỉ CA là chạy openssl req cho yêu cầu, -new, chúng tôi muốn có chứng chỉ mới , - X 509 là tiêu chuẩn cho loại chứng chỉ này, -key.
+
+234
+00:02:16,080 --> 00:02:32,090
+Bây giờ tôi phải nói cho nó biết khóa riêng ở đâu. Chúng tôi đã tạo lệnh đó trong một lệnh riêng biệt và nó được gọi là CAprivate.key. Đó là tệp khóa riêng của chúng tôi và tôi phải chỉ định thuật toán ký và tôi sẽ chỉ định sha256 ở đây.
+
+235
+00:02:32,090 --> 00:02:46,040
+Hãy nhớ rằng cơ quan cấp chứng chỉ ký điện tử vào các chứng chỉ mà họ cấp và điều đó nhằm thiết lập một chuỗi tin cậy. Tôi sẽ đặt thời hạn hiệu lực ở đây, giả sử chỉ là một năm, tức là -ngày, 365.
+
+236
+00:02:46,040 --> 00:02:56,070
+Thông thường CA tồn tại trong 5, 10, 20 năm, nhưng trong trường hợp này, tôi sẽ chỉ đưa vào một năm. Và cuối cùng, tôi phải đặt cho nó một tên tệp đầu ra, vì vậy -out.
+
+237
+00:02:56,070 --> 00:03:14,040
+Tôi sẽ gọi đây là FakeDomain2CA.pem. Đó là phần mở rộng tập tin tôi sẽ sử dụng. Và tôi sẽ nhấn enter. Bây giờ bởi vì chúng tôi đang tham chiếu khóa riêng CA của mình, trước khi chúng tôi có thể sử dụng khóa đó, nó sẽ nói, chờ một chút, mật khẩu cho khóa đó là gì?
+
+238
+00:03:14,040 --> 00:03:24,050
+Đó là một điều tốt. Chúng tôi luôn muốn đảm bảo khóa riêng được bảo mật theo cách này. Sau đó tôi phải nhập một số chi tiết như tên quốc gia, hai mã, CA cho Canada.
+
+239
+00:03:24,050 --> 00:03:42,040
+Để xem nào, tôi sẽ đặt Nova Scotia cho tỉnh. Tôi sẽ chỉ định Halifax là thành phố. Tên tổ chức giả sử là FakeCo cho Fake Company. Giả sử tôi không có đơn vị tổ chức nên tôi sẽ để trống phần đó và đối với tên chung, tôi sẽ gọi đây là FakeCoCA.
+
+240
+00:03:42,040 --> 00:03:56,030
+Địa chỉ email, còn user@fakeco.com thì sao. Được rồi, tại thời điểm này, nếu chúng ta xóa màn hình và thực hiện ls, bây giờ chúng ta thấy mình đã có tệp FakeDomain2CA.pem.
+
+241
+00:03:56,030 --> 00:04:17,000
+Bây giờ những gì chúng ta có thể làm là cài đặt cơ quan cấp chứng chỉ FakeDomain2 đó làm gốc đáng tin cậy trên các thiết bị cần tin cậy các chứng chỉ
+mà nó cấp. Bây giờ đó là điều chúng ta sẽ thực hiện trong một bản demo khác khi chúng ta thực sự có được chứng chỉ PKI cho máy chủ web từ CA này. 
+
+@@@
+
+
+
+242
+00:00:01,000 --> 00:00:19,070
+- [Giọng nói] Trong phần trình bày này, tôi sẽ định cấu hình Amazon Web Services hoặc AWS, CA cấp dưới. Vì vậy, điều sắp xảy ra ở đây là tôi sẽ sử dụng tổ chức phát hành chứng chỉ tại chỗ của mình và định cấu hình Amazon Web Services với tổ chức phát hành chứng chỉ cấp dưới.
+
+243
+00:00:19,070 --> 00:00:39,090
+Vì vậy, để bắt đầu ở đây, tôi đã tạo tài khoản Amazon Web Services và đăng nhập vào Bảng điều khiển quản lý AWS. Vì vậy, điều tôi muốn làm ở đây từ Bảng điều khiển quản lý là cuộn xuống và trong phần bảo mật, tôi quan tâm đến trình quản lý chứng chỉ AWS, vì vậy tôi sẽ tiếp tục và nhấp vào đó.
+
+244
+00:00:39,090 --> 00:01:00,090
+Ở bên dưới, tôi sẽ đi xuống dưới cơ quan cấp chứng chỉ riêng và tôi sẽ nhấp vào "bắt đầu". Bây giờ, tùy chọn duy nhất tôi có ở đây là "CA cấp dưới" vì tôi cần phải có CA, CA gốc mà tôi đã định cấu hình và tôi đã thực hiện việc đó thông qua Windows, thông qua thành phần cơ quan cấp chứng chỉ tại cơ sở.
+
+245
+00:01:00,090 --> 00:01:14,040
+Mục đích ở đây là bằng cách tạo một CA cấp dưới trên đám mây, chúng tôi sẽ có cách vào đám mây để cấp chứng chỉ, chẳng hạn như cho các trang web bảo mật mà chúng tôi có thể chạy trên nền tảng được lưu trữ trên đám mây này.
+
+246
+00:01:14,040 --> 00:01:34,060
+Vì vậy, tôi sẽ tiếp tục và nhấp vào "tiếp theo" và tôi phải điền một số chi tiết cho tên tổ chức chẳng hạn. “FakeCo” nghĩa là “Fake Company” và có thể đối với đơn vị tổ chức ở đây thì mình sẽ để “HQ” là “trụ sở chính” rồi sau đó là quốc gia, trong trường hợp này mình sẽ ghi rõ là Canada.
+
+247
+00:01:34,060 --> 00:01:54,030
+Mình sẽ ghi rõ thông tin tỉnh nên chúng ta phải điền đầy đủ thông tin miền địa phương này để đăng ký CA cấp dưới này. Bây giờ, tôi sẽ gọi nó là FakeCoSubCA, sau đó tôi sẽ tiếp tục và nhấp vào "tiếp theo".
+
+248
+00:01:54,030 --> 00:02:33,020
+Thuật toán mặc định là RSA ở 2.048 bit, vì vậy không sao cả. Tôi sẽ tiếp tục và nhấp vào "tiếp theo". Tôi sẽ không định cấu hình cài đặt danh sách thu hồi chứng chỉ hoặc cài đặt CRL, vì vậy tôi sẽ tiếp tục và nhấp vào "tiếp theo" một lần nữa, sau đó trên màn hình xem lại, chúng ta có thể thấy tên của CA cấp dưới của mình, cùng với thông tin ngôn ngữ cũng như thuật toán khóa và độ dài khóa, và ở phía dưới cùng, tôi sẽ nhấp để xác nhận về phí phí ​​hàng tháng, sau đó tôi sẽ nhấp vào "xác nhận và tạo", và sau một giây, nó cho biết CA của chúng tôi đã được tạo thành công.
+
+249
+00:02:33,020 --> 00:02:45,050
+Vì vậy, tôi sẽ tiếp tục và nhấp vào "bắt đầu". Bây giờ, những gì tôi thấy ở đây là tôi đã nhận được yêu cầu ký chứng chỉ hoặc CSR cho CA cấp dưới này. Điều này có nghĩa là gì?
+
+250
+00:02:45,050 --> 00:03:05,090
+Những gì chúng ta cần làm là gửi yêu cầu đến cơ quan cấp chứng chỉ gốc để cơ quan này có thể ký điện tử và phê duyệt chứng chỉ CA cấp dưới này. Vì vậy, những gì tôi sẽ làm là sao chép yêu cầu chứng chỉ này vào khay nhớ tạm Windows của mình.
+
+251
+00:03:05,090 --> 00:03:26,090
+Bây giờ trong trình duyệt web của tôi, tôi đã điều hướng đến máy chủ tại chỗ của mình. Trong URL, tôi đã chỉ định tên DNS của nó, dấu gạch chéo, certserv, để tôi có thể làm việc với các chứng chỉ bằng giao diện trình duyệt web này và vì vậy điều tôi muốn làm ở đây là yêu cầu chứng chỉ và tôi sẽ chọn " yêu cầu chứng chỉ nâng cao".
+
+252
+00:03:26,090 --> 00:03:40,060
+Tôi sẽ chọn "gửi yêu cầu chứng chỉ" và từ đây, tôi sẽ dán yêu cầu chứng chỉ do Amazon Web Services tạo cho CA cấp dưới của tôi vào.
+
+253
+00:03:40,060 --> 00:03:58,020
+Vì vậy, tôi có thể thấy ở đây rằng tôi đã dán toàn bộ "yêu cầu chứng chỉ bắt đầu" của mình và bao gồm cả "yêu cầu chứng chỉ kết thúc". Vì vậy, mẫu chứng chỉ tôi muốn sử dụng ở đây sẽ dành cho cơ quan chứng nhận cấp dưới và tôi sẽ nhấp vào "gửi".
+
+254
+00:03:58,020 --> 00:04:08,010
+Bây giờ trình duyệt của tôi sẽ cho tôi biết rằng trang web đang cố gắng thực hiện công việc chứng chỉ kỹ thuật số. Tôi sẽ chọn "có" cho "OK" và tại thời điểm này, tôi muốn tải xuống chứng chỉ.
+
+255
+00:04:08,010 --> 00:04:27,030
+Tôi sẽ làm điều đó ở định dạng được mã hóa Base 64. Vì vậy, tôi sẽ nhấp vào "tải xuống chứng chỉ", và sau đó tôi sẽ lưu nó để có thể sử dụng được. Tôi sẽ lưu cái này vào một thư mục và tôi sẽ gọi nó là "FakeCO_SubCA" cho "CA cấp dưới", sau đó tôi sẽ tiếp tục và nhấp vào "lưu".
+
+256
+00:04:27,030 --> 00:04:56,090
+Lưu ý rằng tôi cũng có thể tải xuống chuỗi chứng chỉ, bao gồm hệ thống phân cấp, chẳng hạn như CA gốc được sử dụng để cấp chứng chỉ này. Quay lại Amazon Web Services, nơi tôi đã sao chép yêu cầu ký chứng chỉ đó, tôi sẽ nhấp vào "tiếp theo" vì điều tôi muốn làm bây giờ là nhập nội dung chứng chỉ cho chứng chỉ CA, đó là những gì chúng tôi đang tạo, đó là kỹ thuật số được ký bởi CA của chúng tôi.
+
+257
+00:04:56,090 --> 00:05:11,030
+Vì vậy, để làm điều đó, tôi sẽ nhấp vào "tệp" để nhập tệp mà chúng tôi vừa lưu cách đây một lúc và chúng tôi có thể thấy rằng hiện tại chúng tôi đã có chứng chỉ được ký điện tử cho CA mà chúng tôi đang tạo, CA cấp dưới.
+
+258
+00:05:11,030 --> 00:05:22,080
+Vì vậy, ở phía dưới bên phải, tôi sẽ tiếp tục và nhấp vào "tiếp theo". Vì vậy, bây giờ chúng ta có thể thấy, chúng ta đã có tổ chức chứng nhận được liệt kê ở đây. Tôi sẽ nhấp vào "xác nhận và nhập".
+
+259
+00:05:22,080 --> 00:05:38,010
+Bây giờ ở trên cùng, nếu chúng ta chưa bao gồm chuỗi chứng chỉ thì chúng ta sẽ nhận được thông báo lỗi. Vì vậy, điều này có thể dễ dàng khắc phục bằng cách nhấp vào nút "chỉnh sửa" và sau đó chúng tôi có thể đưa vào chuỗi chứng chỉ mà chúng tôi thấy rằng chúng tôi có thể tải xuống từ bước trước đó.
+
+260
+00:05:38,010 --> 00:06:04,060
+Vì vậy, hãy quay lại đây, nơi chúng tôi đã tải xuống chứng chỉ, chúng tôi có thể tải xuống tệp chuỗi chứng chỉ, vì vậy đó là những gì tôi sẽ cung cấp cho bước này và sau khi thực hiện xong, chúng tôi có thể tiếp tục và nhấp vào "tiếp theo ", Và sau khi chúng tôi xác nhận, sau một lúc, chúng tôi hiện được đưa đến màn hình CA riêng tư, nơi chúng tôi có thể thấy FakeCoSubCA của mình, là một CA cấp dưới, hiện có trạng thái hoạt động.
+
+261
+00:06:04,060 --> 00:06:17,030
+Bất kỳ mục nào khác ở đây đều có thể là các CA riêng tư khác có thể đã được tạo và/hoặc xóa trong quá khứ. Bây giờ chúng ta hãy quay lại và xem xét cơ quan cấp chứng chỉ Windows của chúng tôi trong giây lát.
+
+262
+00:06:17,030 --> 00:06:39,030
+Trong công cụ Cơ quan cấp chứng chỉ Windows, bên dưới CA gốc của chúng tôi, được đặt tại cơ sở, FakeDomain1, tôi chuyển xuống phần "chứng chỉ đã cấp". Thực sự, chúng ta sẽ thấy rằng chúng ta có một chứng chỉ đã được cấp với tư cách là cơ quan cấp chứng chỉ cấp dưới hoặc cho CA phụ của chúng ta.
+
+263
+00:06:39,030 --> 00:06:50,060
+Bây giờ hãy nhớ rằng, chỉ vì bạn đang lưu trữ các dịch vụ đám mây có thể cần chứng chỉ PKI nên bạn không cần phải thực hiện việc này. Bạn hoàn toàn có thể quản lý và cấp chứng chỉ từ quá trình cài đặt tại chỗ.
+
+264
+00:06:50,060 --> 00:07:01,000
+Đây là một loại giải pháp kết hợp để thực hiện điều đó khi chúng tôi có một thành
+phần tại cơ sở, CA gốc và một thành phần khác, CA cấp dưới, trên đám mây. 
+
+@@@
+
+
+
+265
+00:00:01,002 --> 00:00:12,009
+- [Người hướng dẫn] SSL và TLS là các giao thức được sử dụng để bảo mật thông tin liên lạc trên mạng. Hãy nói về cả SSL và TLS về điểm giống nhau cũng như điểm khác nhau của chúng.
+
+266
+00:00:12,009 --> 00:00:31,004
+SSL và TLS đều sử dụng chứng chỉ PKI. Chứng chỉ PPI còn được gọi là chứng chỉ x dot 509, chúng được sử dụng để bảo mật và chứa khóa. Và điều này được sử dụng để bảo mật thông tin liên lạc mạng bằng cách sử dụng giao thức SSL hoặc TLS.
+
+267
+00:00:31,004 --> 00:00:43,003
+Vì vậy, SSL và TLS khi kết hợp với chứng chỉ PKI cho phép mã hóa hoặc bảo mật dữ liệu. Nó cũng cho phép chữ ký số và băm.
+
+268
+00:00:43,003 --> 00:00:56,002
+Bây giờ chúng ta có thể sử dụng những thứ như chữ ký điện tử để xác định xem một tin nhắn có xác thực hay không và nó đến từ ai. Ngoài ra, tính toàn vẹn của tệp thông qua việc băm tệp chẳng hạn.
+
+269
+00:00:56,002 --> 00:01:12,007
+Và tính chống chối bỏ cũng liên quan đến những thứ như chữ ký số được tạo bằng khóa riêng. Và vì vậy, người tạo ra chữ ký số đó không thể bác bỏ việc họ gửi tin nhắn vì họ phải sở hữu khóa riêng để tạo chữ ký số.
+
+270
+00:01:12,007 --> 00:01:29,003
+Ngoài ra, cả SSL và TLS đều dành riêng cho ứng dụng. Điều này có nghĩa là gì? Điều đó có nghĩa là chúng cần được cấu hình cho ứng dụng cụ thể. Vì vậy, giả sử chúng tôi có một trang web HTTP và chúng tôi muốn cho phép quyền truy cập bảo mật HTTPS vào trang web đó.
+
+271
+00:01:29,003 --> 00:01:38,006
+Chà, điều đó có nghĩa là chúng tôi cần chứng chỉ PKI và chúng tôi có thể định cấu hình SSL hoặc TLS. Bây giờ chúng tôi không muốn sử dụng SSL vì nó không được dùng nữa và có những lỗ hổng đã biết.
+
+272
+00:01:38,006 --> 00:01:51,009
+Vì vậy, thực sự nên là TLS. Nhưng nếu chúng ta có cấu hình đó cho máy chủ web thì đó là một cấu hình. Nếu chúng tôi cũng quyết định rằng chúng tôi muốn bảo mật liên lạc giữa các máy chủ SMTP, thì đó là một cấu hình khác.
+
+273
+00:01:51,009 --> 00:02:04,003
+Lớp cổng bảo mật hay SSL được Netscape phát triển vào đầu những năm 90. Và nó có ba phiên bản, từ phiên bản một đến phiên bản ba, trong đó phiên bản hai và ba là những gì chúng tôi thực sự có sẵn trước đây.
+
+274
+00:02:04,003 --> 00:02:23,000
+Và không nên sử dụng chúng, kể cả phiên bản ba trừ khi bạn thực sự cần sử dụng SSL để tương thích ngược. Vì vậy SSL sau đó được thay thế bởi TLS, tiêu chuẩn Bảo mật lớp vận chuyển do những vấn đề, điểm yếu về bảo mật với tất cả các phiên bản SSL.
+
+275
+00:02:23,000 --> 00:02:32,008
+Vì vậy, SSL nên bị vô hiệu hóa trên máy chủ và trình duyệt web của khách hàng cũng như các ứng dụng khác sử dụng nó do vấn đề với các lỗ hổng bảo mật của nó.
+
+276
+00:02:32,008 --> 00:02:45,003
+Các cuộc tấn công hạ cấp giao thức bảo mật là phổ biến. Và có những vấn đề liên quan đến SSL, ví dụ: chứng chỉ PKI, hãy nhớ rằng, không dành riêng cho SSL hoặc TLS.
+
+277
+00:02:45,003 --> 00:03:06,002
+Tuy nhiên, chúng tôi chỉ định liệu chúng tôi có đang sử dụng SSL hay TLS trên cấu hình phía máy chủ của máy chủ và trong cấu hình máy khách, chẳng hạn như trong trình duyệt web hay không. Vì vậy, trong quá trình bắt tay ban đầu khi máy khách cố gắng kết nối, giả sử với máy chủ web, máy khách trong máy chủ sẽ đồng ý về việc sử dụng phiên bản SSL hoặc TLS cụ thể nào.
+
+278
+00:03:06,002 --> 00:03:22,009
+Hiện nay, vấn đề với các cuộc tấn công hạ cấp là rất nhiều cuộc tấn công trung gian hoặc MITM cố gắng hạ cấp thỏa thuận bảo mật và điều này được xử lý tốt với TLS bằng cách sử dụng tiêu chuẩn SCSV dự phòng TLS.
+
+279
+00:03:22,009 --> 00:03:45,006
+Vì vậy, nói cách khác, hãy tắt SSL và sử dụng TLS phiên bản 1.1 trở lên. Tôi nói điều này vì có một số lỗ hổng bảo mật liên quan đến TLS 1.0. Cuộc tấn công Poodle, hay còn gọi là Padding Oracle On Downgraded Legacy Encryption là một trong những kiểu tấn công hạ cấp này và sau đó ảnh hưởng đến SSL phiên bản ba.
+
+280
+00:03:45,006 --> 00:04:09,004
+SSL phiên bản ba có thể là phiên bản mới nhất của SSL nhưng nó đã được phát hành từ năm 1996, vì vậy không có gì ngạc nhiên khi nó không được dùng nữa. Điều xảy ra với Poodle Attack là JavaScript độc hại được đưa vào trình duyệt web của nạn nhân và điều xảy ra là nó lừa nạn nhân sử dụng SSL phiên bản ba thay vì TLS và có rất nhiều lỗ hổng với SSL phiên bản ba.
+
+281
+00:04:09,004 --> 00:04:22,004
+Vì vậy, các cookie phiên HTTP an toàn trên trình duyệt nạn nhân đó, nơi chúng có thể đã được xác thực trên các trang web được bảo mật, sau đó có thể bị kẻ tấn công xâm phạm và kiểm soát.
+
+282
+00:04:22,004 --> 00:04:39,005
+Sau đó, chúng ta gặp phải lỗi Heartbleed, lỗi này xảy ra vào khoảng năm 2013-2014. Hiện lỗi này khai thác một lỗ hổng trong bộ phần mềm SSL mở. Vì vậy, ở đây chúng ta thấy bên trái, chúng ta có người dùng trang web và chúng ta có máy chủ web ở bên phải mà họ sẽ kết nối.
+
+283
+00:04:39,005 --> 00:04:49,000
+Vì vậy, điều xảy ra là khách hàng sẽ gửi độ dài của đường truyền, giả sử là 60 ký tự, nhưng sẽ chỉ gửi, giả sử là ba ký tự, chẳng hạn như từ dog.
+
+284
+00:04:49,000 --> 00:04:59,004
+Bây giờ nó được gọi là tin nhắn nhịp tim. Vì vậy, điều xảy ra với lỗ hổng SSL mở vào thời điểm đó là máy chủ không kiểm tra độ dài của dữ liệu được gửi.
+
+285
+00:04:59,004 --> 00:05:16,006
+Nó chỉ đơn giản nói, ồ, 60 ký tự, được rồi, và nó sẽ phản hồi bằng 60 ký tự. Vì vậy, trong trường hợp này, nó sẽ bao gồm ba bản gốc thực sự được khách hàng gửi và sau đó là bất kỳ thứ gì khác trong bộ nhớ sau đó, và đó là cách nó thực sự có thể tiết lộ thông tin nhạy cảm.
+
+286
+00:05:16,006 --> 00:05:28,007
+Bảo mật lớp vận chuyển hoặc TLS được giới thiệu vào năm 1999 và nó được tạo ra để thay thế bộ giao thức SSL để bảo mật thông tin liên lạc.
+
+287
+00:05:28,007 --> 00:06:07,004
+Và do đó, có TLS phiên bản 1.0 đến 1.3, trong đó phiên bản 1.3 kể từ tháng 8 năm 2018. Bây giờ chúng ta nên tắt TLS phiên bản 1.0 về điều này, chúng ta nhất thiết phải sử dụng nó vì nó sẽ phải tuân thủ một số tiêu chuẩn như PCI DSS liên quan đến những người bán làm việc với dữ liệu chủ thẻ cho các giao dịch, nhưng chúng ta cũng nên vô hiệu hóa TLS phiên bản 1.0 không chỉ để tuân thủ những loại điều này mà còn để giảm thiểu các mối đe dọa được biết là lợi dụng các vấn đề với TLS phiên bản 1.0 như vậy như Cuộc tấn công của quái thú.
+
+288
+00:06:07,004 --> 00:06:33,004
+Ngoài ra, chúng tôi còn có TLS VPN. Bây giờ bạn sẽ nghe nhiều người gọi chúng là SSL VPN. Nhưng chúng tôi biết rằng SSL thực sự không còn được dùng nữa và không nên sử dụng. Và điều xảy ra với TLS VPN là chúng ta có một máy tính từ xa như hình bên trái sẽ thiết lập kết nối được mã hóa qua internet bằng cách sử dụng VPN tại điểm cuối trên mạng riêng ở đâu đó cho phép truy cập vào các ứng dụng trên mạng riêng đó.
+
+289
+00:06:33,004 --> 00:06:54,001
+Giờ đây, TLS VPN đã khác với LTTP VPN hoặc IPsec VPN tiêu chuẩn của bạn, v.v., vì chúng được coi là thân thiện với tường lửa. Họ sử dụng cổng TCP 443 một cách bình thường trong khi các giải pháp VPN khác sẽ sử dụng một bộ cổng khác để liên lạc.
+
+290
+00:06:54,001 --> 00:07:11,007
+Và kết quả là SSL VPN có thể chạy ngay cả khi sử dụng trình duyệt web trên máy khách, do đó bạn không nhất thiết cần bất kỳ phần mềm đặc biệt nào. Ngoài ra, quản trị viên có thể kiểm soát quyền truy cập vào các ứng dụng cụ thể sau khi xác thực thành công với VPN.
+
+291
+00:07:11,007 --> 00:07:26,006
+Bây giờ về phía máy khách, chúng ta có thể cấu hình các giao thức bảo mật. Giao thức bảo mật là gì? Chúng ta đang nói về SSL, TLS. Vì vậy, ở đây chúng tôi có ảnh chụp màn hình cài đặt internet nơi chúng tôi có thể chọn tắt một số giao thức bảo mật nhất định.
+
+292
+00:07:26,006 --> 00:07:35,004
+Lưu ý ở đây rằng SSL phiên bản ba không được chọn. Về mặt kỹ thuật, trong một thế giới hoàn hảo, nơi chúng ta không cần sử dụng đến nó, chúng ta cũng nên bỏ chọn TLS phiên bản 1.0.
+
+293
+00:07:35,004 --> 00:07:46,000
+Bây giờ điều này là về phía khách hàng. Vì vậy, hỗ trợ khách hàng trong các trình duyệt web dành cho TLS sẽ khác nhau, nhưng về cơ bản nếu bạn đang sử dụng một trình duyệt đã cập nhật thì bạn sẽ ổn.
+
+294
+00:07:46,000 --> 00:07:59,001
+Bây giờ, nếu bạn vẫn đang sử dụng trình duyệt cũ như Microsoft Internet Explorer 10, hãy lưu ý rằng trình duyệt này chỉ hỗ trợ TLS phiên bản 1.0 và chúng tôi biết rằng mình không nên sử dụng trình duyệt đó vì có một số lỗ hổng.
+
+295
+00:07:59,001 --> 00:08:14,004
+Nhưng nếu chúng ta xem xét các trình duyệt khác được liệt kê ở đây, Microsoft Edge, Firefox 27, Google Chrome 38, v.v., chúng hỗ trợ TLS phiên bản 1.2. Hiện tại, vì TLS phiên bản 1.3 vẫn còn rất mới nên chúng tôi sẽ nhận được nhiều hỗ trợ hơn theo thời gian.
+
+296
+00:08:14,004 --> 00:08:24,005
+Về phía máy chủ web, một lần nữa, chúng ta nên sử dụng hệ điều hành máy chủ lưu trữ một trang web không phải là phiên bản cũ của hệ điều hành và đã được vá lỗi.
+
+297
+00:08:24,005 --> 00:08:43,003
+Vì vậy, nếu chúng tôi đang sử dụng cả máy chủ 2008, Gói dịch vụ hai với tất cả các bản cập nhật được áp dụng thì phiên bản TLS 1.2 sẽ được hỗ trợ. Và điều này cũng đúng với hầu hết các biến thể của bản phân phối Linux, nhưng nó thực sự phụ thuộc vào phiên bản của gói SSL mở, về cơ bản, hãy luôn cập nhật mọi thứ.
+
+298
+00:08:43,003 --> 00:09:01,009
+về phía máy chủ, chúng tôi cũng có thể xác định xem TLS được bật hay SSL được bật. Ở đây trong Linux, chúng ta có thể đưa ra lệnh mở dấu gạch ngang mật mã SSL V. Và ở bên dưới, chúng ta có thể thấy chẳng hạn không chỉ SSL mà cả TLS cũng được bật nên nó được hỗ trợ.
+
+299
+00:09:01,009 --> 00:09:11,008
+Trong một thế giới hoàn hảo, chúng ta cũng nên tắt SSL ở phía máy chủ. Tùy thuộc vào loại máy chủ mà bạn đang nói đến, việc tắt SSL có thể được thực hiện theo những cách khác nhau.
+
+300
+00:09:11,008 --> 00:09:28,002
+Vì vậy, ví dụ, ở đây trong máy chủ 2016, trong sổ đăng ký trong phần chỉnh sửa reg, tôi có thể vào hệ thống máy cục bộ HKEY, điều khiển hiện tại, điều khiển thiết lập. Và nếu chúng ta đi sâu hơn nữa, chúng ta có thể tiếp cận các nhà cung cấp bảo mật dưới dạng giao thức kênh.
+
+301
+00:09:28,002 --> 00:09:44,005
+Và tôi đã thêm phần này ở đây, SSL space 3.0, sau đó tôi đã thêm khóa máy chủ và tôi đã thêm vào các giá trị từ D, một phần được gọi là bị tắt theo
+mặc định, phần này dành cho SSL ba và tôi đã đặt phần đó thành giá trị là một và nó không được kích hoạt, mục đã kích hoạt được đặt thành 0. 
+
+@@@
+
+
+
+302
+00:00:01,000 --> 00:00:12,020
+- [Người hướng dẫn] Trong phần trình diễn này, tôi sẽ lấy chứng chỉ PKI sẽ được sử dụng để bảo mật máy chủ web và tôi sẽ lấy chứng chỉ đó từ Cơ quan chứng nhận Microsoft Active Directory.
+
+303
+00:00:12,020 --> 00:00:20,080
+Vì vậy, trên máy chủ lưu trữ cơ quan cấp chứng chỉ đó, tôi đã xem xét các mẫu có sẵn để cấp chứng chỉ, một trong số đó được gọi là Máy chủ Web tùy chỉnh.
+
+304
+00:00:20,080 --> 00:00:35,090
+Tuy nhiên, nếu tôi nhấp đúp vào nó, tôi thực sự không thấy nhiều thông tin về mẫu cụ thể đó. Tuy nhiên, nếu tôi nhấp chuột phải vào Mẫu chứng chỉ ở bên trái và chọn Quản lý, thì tôi sẽ thấy tất cả các mẫu có sẵn và có Máy chủ web tùy chỉnh.
+
+305
+00:00:35,090 --> 00:00:47,030
+Từ đây, nếu tôi nhấp đúp, tôi có thể xem chi tiết. Vì vậy, chứng chỉ sẽ có thời hạn hiệu lực là hai năm. Tên chủ đề sẽ phải được cung cấp trong yêu cầu.
+
+306
+00:00:47,030 --> 00:00:59,030
+Vì vậy, tôi sẽ tiếp tục và hủy bỏ điều đó. Và trên máy này, tôi sẽ khởi động Bảng điều khiển quản lý Microsoft certmgr. Bây giờ, tôi không phải làm điều đó trên máy chủ này.
+
+307
+00:00:59,030 --> 00:01:11,020
+Trong trường hợp này, bất kỳ máy nào được tham gia vào miền Active Directory đều có thể dễ dàng truy cập và lấy chứng chỉ PKI. Và tất nhiên, chắc chắn có nhiều cách mà các máy không tham gia vào miền cũng có thể thực hiện được điều đó.
+
+308
+00:01:11,020 --> 00:01:25,040
+Vì vậy tôi sẽ chọn Quản lý chứng chỉ máy tính. Ở dưới bên trái, tôi sẽ mở rộng Cá nhân và sau đó tôi sẽ nhấp vào Chứng chỉ. Bây giờ, chúng ta có thể thấy FakeDomain1 đã cấp chứng chỉ máy chủ cho tên DNS của máy chủ này.
+
+309
+00:01:25,040 --> 00:01:39,040
+Tuy nhiên, chúng ta sẽ thực hiện từng bước như thể chúng ta muốn có được nó từ đầu trên một máy chủ khác chưa có nó. Vì vậy, những gì tôi có thể làm là nhấp chuột phải vào Chứng chỉ ở bên trái, chọn Tất cả nhiệm vụ và Yêu cầu chứng chỉ mới.
+
+310
+00:01:39,040 --> 00:01:49,010
+Sau đó, khi tôi nhấp vào Tiếp theo hai lần, tôi có thể thấy tất cả các mẫu chứng chỉ có sẵn mà chúng tôi đã xem trước đó, một trong số đó là mẫu Máy chủ Web tùy chỉnh của chúng tôi.
+
+311
+00:01:49,010 --> 00:01:58,080
+Và lưu ý rằng nó cho biết cần có thêm thông tin để đăng ký chứng chỉ này vì chúng tôi yêu cầu cung cấp tên chủ đề trong yêu cầu nếu bạn nhớ lại.
+
+312
+00:01:58,080 --> 00:02:11,080
+Vì vậy, tôi sẽ nhấp vào đó. Và vì vậy có lẽ ở trên cùng ở đây, tôi sẽ đặt tên chung của máy chủ mà chứng chỉ được cấp là tên của nó, máy chủ hoặc srv2016-1, tôi sẽ thêm tên đó.
+
+313
+00:02:11,080 --> 00:02:25,020
+Và khi đó có thể tên thay thế sẽ là tên DNS đầy đủ. Vì vậy, tôi phải đảm bảo rằng điều này khớp với những gì máy chủ thực sự sẽ sử dụng, vì nếu không chứng chỉ sẽ báo cáo rằng có sự không khớp và nó sẽ không được tin cậy.
+
+314
+00:02:25,020 --> 00:02:35,050
+Vì vậy, tôi sẽ điền tên DNS thích hợp và thêm tên đó vào đây làm tên thay thế, sau đó tôi sẽ nhấp vào OK. Vì vậy, hiện tại chúng tôi đã cung cấp thông tin thích hợp cho mẫu cụ thể đó.
+
+315
+00:02:35,050 --> 00:02:45,030
+Vì vậy, tôi sẽ bật dấu kiểm để chọn nó và tôi sẽ nhấp vào Đăng ký. Và trước khi bạn biết điều đó, chúng tôi đã có trạng thái Thành công. Vì vậy, tôi sẽ tiếp tục và hoàn thành việc đó.
+
+316
+00:02:45,030 --> 00:02:59,020
+Và những gì chúng ta đã làm ở đây là chúng ta đã có FakeDomain đã cấp, FakeDomain1 đã cấp chứng chỉ máy chủ, chứng chỉ máy chủ web cho máy chủ srv2016-1 của chúng tôi.
+
+317
+00:02:59,020 --> 00:03:11,000
+Chúng ta cũng có thể thấy ngày hết hạn. Nếu tôi nhấp đúp để mở nó lên, chúng ta sẽ có ngày hết hạn là hai năm kể từ bây giờ, như chúng ta thấy, đã được xác định trong mẫu chứng chỉ.
+
+318
+00:03:11,000 --> 00:03:25,070
+Bây giờ, hãy nhớ rằng có nhiều cách khác để có được chứng chỉ có thể được tự động hóa nếu Chính sách nhóm được định cấu hình để thực hiện điều đó. Ngoài ra, nếu tôi truy cập trình duyệt web của mình, tôi đã cài đặt thành phần cho phép tôi yêu cầu chứng chỉ từ một trang web.
+
+319
+00:03:25,070 --> 00:03:40,030
+Vì vậy, nếu tôi truy cập tên máy chủ của cơ quan cấp chứng chỉ/certsrv thì tôi có thể đăng nhập bằng thông tin đăng nhập Active Directory. Và khi tôi làm điều đó, tôi cũng có thể yêu cầu một chứng chỉ từ đây.
+
+320
+00:03:40,030 --> 00:03:53,000
+Tuy nhiên, mặc dù thực tế là chúng tôi có nhiều cách để thực hiện việc này, nhưng điều quan trọng là khi chúng tôi có chứng
+chỉ, ít nhất là trong nền tảng Windows, nó sẽ được lưu trữ ở đây trong kho chứng chỉ, trong trường hợp này, cho máy tính. 
+
+@@@
+
+
+
+321
+00:00:01,000 --> 00:00:13,020
+- [Người hướng dẫn] Chứng chỉ có thể được cấp cho người dùng, cho thiết bị hoặc máy tính cũng như cho phần mềm. Trọng tâm của chúng tôi ở đây là cấp chứng chỉ PKI cho máy khách Windows 10.
+
+322
+00:00:13,020 --> 00:00:20,090
+Vì vậy, ở đây trên máy chủ của Tổ chức phát hành chứng chỉ, tôi sẽ bắt đầu bằng cách vào menu Bắt đầu để chúng ta có thể xem qua một số mẫu chứng chỉ.
+
+323
+00:00:20,090 --> 00:00:37,070
+Vì vậy, tôi sẽ truy cập Windows, Công cụ quản trị và tôi sẽ kích hoạt Cơ quan cấp chứng chỉ. Bây giờ tôi sẽ xem xét các mẫu, vì vậy tôi sẽ mở rộng tên CA của chúng tôi, Fake Domain One, ở bên trái và nếu tôi nhấp vào Mẫu chứng chỉ, tôi sẽ thấy các mẫu chứng chỉ ở bên phải có thể được sử dụng để cấp chứng chỉ .
+
+324
+00:00:37,070 --> 00:00:50,040
+Bây giờ điều tôi muốn làm là đảm bảo rằng chúng tôi có một thiết bị hỗ trợ xác thực ứng dụng khách. Bây giờ chúng ta có một mẫu ở đây tên là Máy tính hỗ trợ cả xác thực ứng dụng khách và xác thực máy chủ.
+
+325
+00:00:50,040 --> 00:01:01,000
+Bây giờ nếu tôi thực sự muốn, tôi có thể nhấp chuột phải vào các mẫu chứng chỉ ở bên trái, chọn Quản lý và tôi có thể vào mẫu máy tính đó và xem chi tiết.
+
+326
+00:01:01,000 --> 00:01:10,060
+Vì vậy, thời hạn hiệu lực là một năm. Tôi có thể xem xét Bảo mật, vì vậy tôi sẽ đảm bảo rằng những người dùng đã được xác thực, giả sử, có quyền Đăng ký.
+
+327
+00:01:10,060 --> 00:01:22,000
+Vì vậy, chúng tôi có thể thực hiện các thay đổi ở đây hoặc hầu hết chúng tôi không thể thực hiện thay đổi, như bạn có thể thấy, nó chuyển sang màu xám, trong trường hợp đó, nếu cần, chúng tôi có thể nhấp chuột phải và Sao chép nó và thực hiện các thay đổi, nhưng Tôi ổn với việc chỉ cần thay đổi bảo mật.
+
+328
+00:01:22,000 --> 00:01:33,080
+Vì vậy, bây giờ điều tôi muốn làm là đảm bảo rằng chúng tôi xóa mẫu Máy tính hiện có đã được cấp để sử dụng và sau đó tôi sẽ nhấp chuột phải vào Mẫu chứng chỉ, Mới, Mẫu chứng chỉ để phát hành.
+
+329
+00:01:33,080 --> 00:01:45,040
+Nó phải là Máy tính vì chúng tôi đã thực hiện thay đổi, chúng tôi đặt bảo mật và tôi sẽ nhấp vào Được. Vì vậy, bây giờ những gì chúng ta sẽ làm là chuyển sang ứng dụng khách Windows 10 và yêu cầu chứng chỉ từ mẫu đó.
+
+330
+00:01:45,040 --> 00:02:04,040
+Hiện tại, chứng chỉ đó, vì nó sẽ là chứng chỉ dựa trên máy tính, nên có thể được sử dụng để xác thực với VPN, nó có thể được sử dụng để xác thực một số loại ứng dụng đang chạy trên máy chủ, nó cũng có thể được sử dụng để xác thực với một máy chủ. trang web yêu cầu chứng chỉ PKI của khách hàng.
+
+331
+00:02:04,040 --> 00:02:17,070
+Ở đây trên Windows 10, tôi sẽ đi tới menu Bắt đầu và kích hoạt MMC, Bảng điều khiển quản lý Microsoft, trong đó tôi sẽ đi tới Tệp, Thêm/Xóa Snap-in, Chứng chỉ, sau đó tôi sẽ nhấp vào Thêm.
+
+332
+00:02:17,070 --> 00:02:29,080
+Tôi muốn làm việc với chứng chỉ tài khoản máy tính, không phải người dùng hoặc dịch vụ, vì vậy tôi sẽ chọn Tài khoản máy tính và tôi sẽ nhấp vào Tiếp theo và tôi muốn xem chứng chỉ trên máy cục bộ chứ không phải máy tính từ xa qua mạng.
+
+333
+00:02:29,080 --> 00:02:40,010
+Vì vậy mình sẽ nhấn Finish và OK. Vì vậy, bây giờ nếu tôi mở rộng Chứng chỉ, Cá nhân, ở bên trái, chúng tôi không thấy gì cả. Chà, chưa có gì được ban hành, nhưng sẽ sớm có thứ gì đó ở đây.
+
+334
+00:02:40,010 --> 00:02:54,060
+Vì vậy, tôi sẽ nhấp chuột phải vào Cá nhân, chọn Tất cả nhiệm vụ, Yêu cầu chứng chỉ mới và tôi sẽ nhấp vào Tiếp theo trên hai màn hình đầu tiên. Chúng ta sẽ đi qua Active Directory ở đây và có thể thấy rằng chúng ta đã có chứng chỉ máy tính của mình.
+
+335
+00:02:54,060 --> 00:03:04,060
+Trạng thái của nó là Có sẵn. Đó là mẫu chứ không phải chứng chỉ. Chúng tôi sẽ sớm nhận được giấy chứng nhận. Vì vậy, tôi sẽ bật dấu kiểm cho điều đó và tôi sẽ nhấp vào Đăng ký.
+
+336
+00:03:04,060 --> 00:03:32,000
+Và sau một lúc chúng ta có thể thấy trạng thái cho biết Đã thành công. Chúng tôi đã được cấp giấy chứng nhận và bây giờ chúng tôi thực sự có thể thấy nó ở đây. Nó được cấp cho tên DNS của trạm Windows 10 từ Cơ quan cấp chứng
+chỉ của chúng tôi có tên là Fake Domain One và chúng tôi có thể thấy mục đích dự định ở đây là để xác thực ứng dụng khách và xác thực máy chủ và tất nhiên, chúng tôi cũng có thể thấy ngày hết hạn bắt nguồn từ mẫu chứng chỉ. 
+
+@@@
+
+
+
+337
+00:00:01,000 --> 00:00:12,030
+- [Người hướng dẫn] Trong phần trình diễn này, tôi sẽ sử dụng OpenSSL để tạo chứng chỉ PKI dùng để bảo mật máy chủ web Apache chạy trên Linux.
+
+338
+00:00:12,030 --> 00:00:28,050
+Vì vậy, điều đầu tiên chúng ta sẽ làm ở đây chỉ là chỉ ra trên máy chủ Linux của tôi, tôi có một thư mục chứng chỉ. Và nếu tôi thực hiện ls để liệt kê các tệp, tôi đã có khóa riêng cho tổ chức phát hành chứng chỉ của mình, cùng với chứng chỉ tổ chức phát hành chứng chỉ FakeDomain2CA của tôi.
+
+339
+00:00:28,050 --> 00:00:40,050
+Vậy là việc đó đã được thực hiện rồi. Bây giờ, điều tiếp theo tôi cần làm là bắt đầu tạo khóa mà tôi sẽ sử dụng cho chứng chỉ máy chủ web của mình.
+
+340
+00:00:40,050 --> 00:00:54,090
+Vì vậy, để làm điều đó, tôi sẽ bắt đầu bằng cách xóa màn hình và chạy openssl, space, genersa. Nó sẽ là thế hệ của một loại khóa RSA. - aes256 là loại key.
+
+341
+00:00:54,090 --> 00:01:12,070
+Và tên tệp đầu ra ở đây, giả sử, sẽ là... Tôi sẽ gọi nó là www.fakesitelocal.key. Còn chuyện đó thì sao? Vì vậy, tôi đang đặt tên cho nó và sau đó tôi sẽ nói với nó, tất nhiên, tôi muốn độ dài khóa là 2048.
+
+342
+00:01:12,070 --> 00:01:25,080
+Vì vậy, nó nói rằng nó đang tạo khóa riêng RSA. Trong trường hợp này, nó cuối cùng sẽ được sử dụng cho chứng chỉ PKI máy chủ web của chúng tôi. Vì vậy, nó muốn tôi bảo vệ khóa riêng trong tệp bằng cách bảo vệ tệp bằng mật khẩu.
+
+343
+00:01:25,080 --> 00:01:41,010
+Tôi thích ý tưởng đó. Vì vậy, tôi sẽ nhập và xác minh mật khẩu cho nó. Được rồi, bây giờ, nếu tôi xóa màn hình và thực hiện ls, chúng ta có gì ở đây? Chà, ban đầu chúng tôi có hai tệp, nhưng bây giờ, chúng tôi đã có tệp khóa riêng mới cho trang web của mình.
+
+344
+00:01:41,010 --> 00:01:57,080
+Bây giờ, điều tiếp theo chúng ta cần làm là tạo một yêu cầu ký chứng chỉ. Vì vậy, để làm điều đó, tôi sẽ chạy openssl req cho yêu cầu, - new - key, và tôi sẽ tham chiếu đến tệp khóa của mình, vì vậy www...
+
+345
+00:01:57,080 --> 00:02:06,050
+Tôi thậm chí có thể sử dụng tính năng hoàn thành Tab vì www làm cho tên tệp đó trở nên độc đáo. Nhấn một Tab và nó sẽ giải thích toàn bộ nội dung cho tôi. Sau đó tôi cần một tập tin đầu ra ở đây.
+
+346
+00:02:06,050 --> 00:02:21,020
+Tôi sẽ gọi đây là www.fakesite.local.csr vì đây là yêu cầu ký chứng chỉ. Chúng tôi đang yêu cầu chứng chỉ được CA ký điện tử.
+
+347
+00:02:21,020 --> 00:02:32,010
+Bây giờ, điều đó sẽ có một lệnh khác, nhưng ở đây, chúng ta chỉ tạo CSR. Vì vậy, một lần nữa, nó muốn cụm mật khẩu cho khóa riêng mà chúng tôi đã tạo trước đó, vì vậy tôi sẽ nhập cụm mật khẩu đó.
+
+348
+00:02:32,010 --> 00:02:44,030
+Và sau đó nó muốn tôi điền thông tin chi tiết về chứng chỉ máy chủ web và tên quốc gia. Vì vậy, giả sử tôi sẽ làm điều này, CA cho Canada. Mình sẽ điền một số thông tin địa phương khác như tỉnh.
+
+349
+00:02:44,030 --> 00:02:54,000
+Ở đây tôi sẽ đặt Nova Scotia. Và đối với thành phố nơi điều này sẽ được sử dụng, giả sử Halifax. Tổ chức có tên là FakeCo. Không có tổ chức, đơn vị.
+
+350
+00:02:54,000 --> 00:03:06,050
+Tên chung ở đây sẽ dành cho máy chủ của tôi. Vì vậy, www.fakesite.local. Đó là những gì mọi người sẽ sử dụng để kết nối với trang web được bảo mật của tôi sau khi nó được bảo mật.
+
+351
+00:03:06,050 --> 00:03:14,060
+Tất nhiên là nó chưa được cấu hình. Đó là những gì chúng tôi đang trong quá trình thực hiện. Đi tới nhấn Enter và mình sẽ điền một số thông tin địa chỉ email liên hệ vào đây.
+
+352
+00:03:14,060 --> 00:03:27,020
+Và sau đó, tôi sẽ nhấn Enter. Vì vậy, bây giờ, nó muốn gửi các thuộc tính bổ sung cùng với yêu cầu chứng chỉ của tôi. Chà, tôi có thể chỉ định điều đó, vì vậy điều tôi có thể làm ở đây là chỉ định mật khẩu thử thách.
+
+353
+00:03:27,020 --> 00:03:37,070
+Vì vậy tôi sẽ nhập mật khẩu làm mật khẩu thử thách. Tôi không nhất thiết phải điền bất kỳ nội dung tùy chọn nào khác, vì vậy tôi chỉ cần nhấn Enter.
+
+354
+00:03:37,070 --> 00:03:51,070
+Và tôi sẽ xóa màn hình. Vì vậy, bây giờ, nếu tôi thực hiện ls, tôi có thể thấy rằng chúng tôi đã có tệp yêu cầu ký chứng chỉ. Bây giờ, tôi cũng đã tạo một tệp ở đây có tên là otherinfo.ext.
+
+355
+00:03:51,070 --> 00:04:05,070
+Và nếu chúng tôi gửi tệp đó, nó sẽ chứa thông tin sẽ được thêm vào chứng chỉ khi chúng tôi thực sự tạo chứng chỉ bằng cách ký nó từ CA vì tất cả những gì chúng tôi đã làm cho đến nay là tạo yêu cầu ký chứng chỉ.
+
+356
+00:04:05,070 --> 00:04:20,030
+Mấu chốt ở đây là chúng ta cần chỉ định một tên thay thế, tên thay thế chủ đề. Trong trường hợp này, đó là URL của trang web. Điều này sẽ được yêu cầu để các thiết bị khách tin cậy vào chứng chỉ.
+
+357
+00:04:20,030 --> 00:04:30,040
+Vì vậy, bằng cách nào đó tôi sẽ phải tham khảo thông tin bổ sung này, thông tin mở rộng này khi tôi yêu cầu chứng chỉ. Vậy là chúng ta đã nhận được yêu cầu ký chứng chỉ.
+
+358
+00:04:30,040 --> 00:04:54,070
+Hãy thực sự cấp chứng chỉ và xem xét tệp đó. Vì vậy để tạo chứng chỉ máy chủ, mình sẽ sử dụng lệnh openssl. Tôi sẽ chuyển cho nó tham số x509, đó là loại chứng chỉ, -req cho yêu cầu, - để đặt cho nó tên tệp yêu cầu ký chứng chỉ của tôi, trong trường hợp này là www.fakesite.local.csr.
+
+359
+00:04:54,070 --> 00:05:08,050
+Bạn có thể hiểu tại sao việc theo dõi tên tệp ở một vị trí lại quan trọng và sau đó đảm bảo bạn đặt tên chúng một cách có ý nghĩa. Sau đó, tôi sẽ sử dụng -CA và tôi sẽ chỉ định tệp chứng chỉ FakeDomain2CA của mình.
+
+360
+00:05:08,050 --> 00:05:22,000
+Bây giờ, tôi sẽ sử dụng -CAkey và tôi sẽ chỉ định tệp CAprivate.key của mình. Tôi sẽ sử dụng -CAcreateserial để tạo tệp số sê-ri, tệp có kết thúc bằng .srl được sử dụng khi cấp chứng chỉ.
+
+361
+00:05:22,000 --> 00:05:34,050
+Tôi sẽ sử dụng -extfile cho tệp mở rộng. Và tôi sẽ tham khảo tệp otherinfo.ext có chi tiết tên thay thế chủ đề. Và sau đó tôi phải chỉ định tệp đầu ra.
+
+362
+00:05:34,050 --> 00:05:57,040
+Vậy tệp chứng chỉ thực tế cho máy chủ web của chúng tôi là gì? Nó sẽ được gọi là www.fakesite.local.crt. Bây giờ, thời hạn hết hạn của chứng chỉ đó là gì? Tôi sẽ đặt khoảng thời gian hiệu lực thành -day 365 và thuật toán băm để tạo chữ ký số từ CA, chúng tôi sẽ sử dụng sha256.
+
+363
+00:05:57,040 --> 00:06:20,060
+Được rồi, chúng ta sẽ tiếp tục và nhấn Enter. Vì vậy, nó muốn cụm mật khẩu cho khóa riêng CA. Tất nhiên, vì vậy tôi sẽ tiếp tục và nhập thông tin đó vào. Và sau một lúc, nếu tôi xóa màn hình và gõ ls, tôi có thể thấy rằng tôi thực sự đã có chứng chỉ máy chủ web của mình vì chúng tôi đã tạo www.fakesite. địa phương.crt.
+
+364
+00:06:20,060 --> 00:06:46,090
+Và tùy thuộc vào cài đặt Linux của bạn, bạn có thể cần chạy lệnh a2enmod để cài đặt mô-đun SSL. Tuy nhiên, tôi đã làm điều đó rồi. Những gì tôi sắp làm chỉ đơn giản là xem tệp cấu hình /etc/apache2 ở bên dưới, hãy đặt ở đây site-enabled.
+
+365
+00:06:46,090 --> 00:07:01,020
+Và dưới đó, tôi sẽ chỉ định tên tệp của mình, 000-default.conf. Bây giờ, những gì tôi đã làm trong tệp đó là tôi đã sửa đổi nó một chút để nó sử dụng SSL.
+
+366
+00:07:01,020 --> 00:07:13,070
+Vì vậy, đối với chỉ thị máy chủ ảo, tôi hiện đang sử dụng cổng 443 thay vì 80. Và sau đó tôi đã có tất cả các chỉ thị SSL này ở đây. Bật công cụ SSL, với điều kiện là mô-đun đã được cài đặt.
+
+367
+00:07:13,070 --> 00:07:27,070
+Chỉ định tệp chứng chỉ của tôi cho máy chủ web của tôi. Vì vậy, đây là tệp và nó nằm trong thư mục /cert trên thư mục gốc của hệ thống tệp. Sau đó là tệp khóa, rồi tệp .key cho máy chủ của tôi.
+
+368
+00:07:27,070 --> 00:07:42,020
+Và tất nhiên, SSLCACertificateFile. Bây giờ, SSLCACertificateFile đó, bạn cũng có thể nhập trên máy khách để thiết lập lòng tin. Bây giờ, hãy xóa màn hình ở đây.
+
+369
+00:07:42,020 --> 00:07:57,030
+Và tất cả những gì tôi cần làm lúc này là đảm bảo rằng máy chủ Apache2 đã được khởi động lại. Vì vậy, tôi sẽ đưa dịch vụ khởi động lại apache2 vào đây. Lệnh này sẽ khác nhau tùy thuộc vào bản phân phối Linux của bạn.
+
+370
+00:07:57,030 --> 00:08:05,020
+Bây giờ, có thể mất một chút thời gian trước khi nó làm mới. Và tại thời điểm này, chúng ta bắt đầu, nó muốn cụm mật khẩu, vì vậy tôi sẽ tiếp tục và nhập cụm mật khẩu.
+
+371
+00:08:05,020 --> 00:08:21,040
+Và sau một lúc, nếu kiểm tra trạng thái của máy chủ web Apache2, trên thực tế, chúng ta sẽ thấy rằng nó đang hoạt động và đang chạy. Ở đây trên trình duyệt web khách hàng của tôi, tôi đã sử dụng HTTPS để kết nối với trang web của mình và chúng tôi có ở đây một trang web mẫu.
+
+372
+00:08:21,040 --> 00:08:34,060
+Và nếu tôi nhấp vào ổ khóa để lấy chứng chỉ, chúng ta có thể thấy rằng FakeCoCA, cơ quan cấp chứng chỉ giả của tôi được tạo thông qua OpenSSL, đã cấp chứng chỉ cho www.fakesite.local và nó được tin cậy.
+
+373
+00:08:34,060 --> 00:08:50,020
+Bây giờ, lý do nó được tin cậy là vì nếu tôi vào cài đặt trình duyệt của mình, tôi sẽ vào menu Công cụ, Tùy chọn
+Internet, Nội dung, Chứng chỉ, Cửa hàng chứng chỉ gốc đáng tin cậy và ở đây, tôi có chứng chỉ FakeCoCA. 
+
+@@@
+
+
+
+374
+00:00:01,010 --> 00:00:10,070
+- [Người hướng dẫn] Có nhiều cách để có được chứng chỉ PKI. Trong trường hợp của chúng tôi, chúng tôi sẽ thực hiện việc đó thông qua Amazon Web Services cho một máy chủ web.
+
+375
+00:00:10,070 --> 00:00:25,040
+Vì vậy, điều đầu tiên tôi sẽ làm ở đây là kiểm tra các tùy chọn bảo mật trong Bảng điều khiển quản lý AWS. Tôi đã có tài khoản AWS mà tôi đã đăng nhập, vì vậy để bảo mật, tôi muốn chuyển sang trình quản lý chứng chỉ.
+
+376
+00:00:25,040 --> 00:00:40,040
+Bây giờ ở đây, nếu tôi nhấp vào CA riêng, tôi đã có một CA riêng, cấp dưới mà tôi đã tạo ở đây trên đám mây, chúng ta có thể thấy trạng thái được liệt kê là đang hoạt động và tôi có thể sử dụng để cấp chứng chỉ ở đây trên đám mây.
+
+377
+00:00:40,040 --> 00:00:53,060
+Để cấp chứng chỉ, tôi sẽ đến trình quản lý chứng chỉ ở trình điều hướng bên trái. Sau đó ở bên phải, tôi sẽ nhấp vào bắt đầu. Bây giờ, tôi không cần nhập chứng chỉ, chúng tôi đã có chứng chỉ CA cấp dưới.
+
+378
+00:00:53,060 --> 00:01:02,090
+Tôi có thể yêu cầu một chứng chỉ công cộng. Bây giờ, tôi không muốn làm điều đó, tôi sẽ yêu cầu nó từ Amazon, tôi muốn tạo chứng chỉ riêng từ CA của chính tôi.
+
+379
+00:01:02,090 --> 00:01:19,040
+Vì thế ở phía dưới mình sẽ chọn yêu cầu một chứng chỉ riêng. Sau đó, ở phía dưới bên phải, tôi sẽ nhấp vào yêu cầu chứng chỉ. Từ danh sách CA thả xuống, tôi sẽ chọn CA riêng tư duy nhất mà chúng tôi có trên đám mây ở đây, FakeCoSubCA, sau đó tôi sẽ nhấp vào tiếp theo.
+
+380
+00:01:19,040 --> 00:01:37,020
+Sau đó tôi phải chỉ định tên máy chủ mà tôi muốn cấp chứng chỉ này. Giả sử chúng tôi có một trang web mà chúng tôi muốn kích hoạt bằng TLS, vì vậy chúng tôi cần chứng chỉ PKI cho trang web đó và giả sử URL cho trang web đó là www.fakesite.com.
+
+381
+00:01:37,020 --> 00:01:47,010
+Bây giờ chúng tôi cũng có khả năng thêm tên thay thế vào chứng chỉ, nhưng tôi sẽ chỉ giữ tên DNS đó và sau đó tôi sẽ nhấp vào xem xét và yêu cầu.
+
+382
+00:01:47,010 --> 00:02:02,090
+Vì vậy, chúng ta có thể thấy CA cấp dưới được liệt kê ở đây sẽ cấp chứng chỉ này và chúng ta có thể thấy rằng đó là URL của www.fakesite.com. Vì vậy, tôi sẽ tiếp tục và nhấp vào xác nhận và yêu cầu.
+
+383
+00:02:02,090 --> 00:02:13,040
+Vì vậy, tại thời điểm này, CA cấp dưới đang cấp chứng chỉ PKI và bây giờ chúng ta có thể thấy bên dưới rằng chứng chỉ đó thực sự có trạng thái đã được cấp.
+
+384
+00:02:13,040 --> 00:02:31,000
+Bây giờ, tại thời điểm này, nếu tôi chọn mục đó, bằng cách nhấp vào hộp kiểm cho mục nhập đó, trong menu hành động, chúng tôi có thể xuất
+thông tin này. Bây giờ chúng tôi có thể làm điều đó để có thể sử dụng nó ở một số nơi khác nhau, chẳng hạn như để bảo mật máy chủ web. 
+
+@@@
+
+
+
+385
+00:00:01,010 --> 00:00:11,020
+- [Người hướng dẫn] Các nhà phát triển yêu thích chứng chỉ ký mã vì họ có thể ký điện tử vào phần mềm mà họ có thể đã xây dựng hoặc các tập lệnh mà họ có thể đã tạo để tạo dựng lòng tin.
+
+386
+00:00:11,020 --> 00:00:25,090
+Và ngày nay với các cửa hàng ứng dụng dành cho thiết bị di động, điều quan trọng là các nhà phát triển phải có được chứng chỉ ký phù hợp từ cơ quan có thẩm quyền, chẳng hạn như đối với Apple App Store hoặc Google Play, nhưng trong trường hợp này, chúng tôi sẽ thực hiện điều đó trong một tổ chức duy nhất.
+
+387
+00:00:25,090 --> 00:00:39,090
+Vì vậy, trên máy chủ cơ quan cấp chứng chỉ của mình, tôi sẽ bắt đầu bằng cách vào menu Bắt đầu để chúng ta có thể kích hoạt công cụ quản lý thích hợp. Và đó là gì, trong Công cụ quản trị Windows, tôi sẽ đi vào Cơ quan cấp chứng chỉ.
+
+388
+00:00:39,090 --> 00:00:54,080
+Trong Công cụ tổ chức chứng nhận ở bên trái, những gì tôi sẽ làm là đi xuống CA của tôi, được gọi là FakeDomain1 và tôi sẽ nhấp vào Mẫu chứng chỉ và chúng ta có thể thấy một số mẫu chứng chỉ ở bên phải có sẵn ở đây cấp chứng chỉ PKI.
+
+389
+00:00:54,080 --> 00:01:10,080
+Nhưng tôi không thấy bất cứ điều gì về ký mã hoặc bất cứ điều gì tương tự, vì vậy, tôi sẽ nhấp chuột phải vào Mẫu chứng chỉ ở bên trái và tôi sẽ chọn Quản lý, nơi chúng tôi nhận được danh sách chính của tất cả các mẫu, kể cả những mẫu chưa sẵn sàng để sử dụng để cấp chứng chỉ, một trong số đó được gọi là Ký mã.
+
+390
+00:01:10,080 --> 00:01:24,050
+Vì vậy, tôi sẽ nhấp chuột phải và sao chép nó vì tôi muốn thực hiện các thay đổi. Và đối với phần Chung, tôi sẽ gọi đây là Ký mã tùy chỉnh. Tôi muốn thời hạn hiệu lực của chứng chỉ không phải là một năm mặc định kể từ mẫu này mà thay vào đó là hai năm.
+
+391
+00:01:24,050 --> 00:01:41,030
+Sau đó, trong Tên chủ đề, tôi muốn tên đó được cung cấp trong yêu cầu lấy chứng chỉ, vì vậy tôi sẽ bật nó và nhấp vào OK. Và điều cuối cùng tôi đảm bảo thực hiện ở đây là trong phần Bảo mật, tôi sẽ đảm bảo Người dùng đã xác thực được phép đăng ký để họ có thể nhận được chứng chỉ bằng cách sử dụng mẫu này.
+
+392
+00:01:41,030 --> 00:01:56,030
+Tất nhiên, tôi có thể làm điều đó cho những người dùng hoặc nhóm cụ thể khác nếu cần, nhưng tôi sẽ làm điều đó cho Người dùng được xác thực. Vì vậy, điều đó có nghĩa là bất kỳ ai được xác thực vào thư mục hoạt động trong trường hợp này sẽ có thể yêu cầu một trong những chứng chỉ này và nếu điều đó hợp lý thì chúng tôi sẵn sàng tiếp tục.
+
+393
+00:01:56,030 --> 00:02:12,000
+Điều đó có ý nghĩa đối với tôi, vì vậy tôi sẵn sàng đi. Tôi sẽ nhấp vào OK và tôi sẽ đóng màn hình đó. Nhưng nó không hiển thị trong danh sách các mẫu vì tôi cần phát hành nó là có thể sử dụng được, vì vậy tôi sẽ làm điều đó bằng cách nhấp chuột phải vào Mẫu chứng chỉ ở bên trái.
+
+394
+00:02:12,000 --> 00:02:22,030
+Tôi sẽ chọn Mẫu chứng chỉ mới để phát hành. Vì vậy, tôi sẽ chọn mẫu Ký mã tùy chỉnh và nhấp vào OK. Hiện mẫu Ký mã tùy chỉnh của chúng tôi đã có sẵn.
+
+395
+00:02:22,030 --> 00:02:37,080
+Vì vậy, đối với các máy được tham gia vào miền thư mục hoạt động này, việc sử dụng mẫu đó để nhận chứng chỉ PKI sẽ là một vấn đề đơn giản. Vì vậy, tôi sẽ thực hiện việc đó trên cùng một máy, mặc dù thông thường nó sẽ được thực hiện trên trạm phát triển trên mạng đã được nối với miền.
+
+396
+00:02:37,080 --> 00:02:54,050
+Vì vậy, điều tôi sắp làm là vào menu Bắt đầu và chạy công cụ CertMGR. Nó hiển thị dưới dạng Quản lý chứng chỉ máy tính. Và điều tôi muốn làm là mở rộng Cá nhân ở bên trái, nhấp vào Chứng chỉ, nhấp chuột phải vào Chứng chỉ, Tất cả nhiệm vụ, Yêu cầu Chứng chỉ mới.
+
+397
+00:02:54,050 --> 00:03:12,090
+Tôi sẽ chỉ nhấp vào Tiếp theo trên hai màn hình giới thiệu đầu tiên. Và tôi quan tâm đến chứng chỉ Ký mã tùy chỉnh của mình, vì vậy nếu tôi chọn Hiển thị tất cả các mẫu, ở đây ở phía dưới bên trái và nếu tôi cuộn xuống, chúng ta sẽ thấy rằng chúng ta đã có chứng chỉ Ký mã tùy chỉnh, nhưng có dấu X thông qua nó, đó là lý do tại sao nó không xuất hiện.
+
+398
+00:03:12,090 --> 00:03:24,020
+Nó báo vai trò được chỉ định chưa được cấu hình cho ứng dụng. Điều này chỉ có thể được cấp cho người dùng. Ồ, điều đó không thành vấn đề. Nó không phải là một loại chứng chỉ máy tính mà dành cho các nhà phát triển.
+
+399
+00:03:24,020 --> 00:03:34,040
+Vì vậy, tôi sẽ tiếp tục và đóng công cụ CertMGR, quay lại menu Bắt đầu và thực hiện mmc, Microsoft Management Console. Tôi sẽ thêm Snap-in thích hợp ở đây.
+
+400
+00:03:34,040 --> 00:03:49,080
+Vì vậy, những gì tôi có thể làm là vào menu Tệp, Thêm/Xóa phần đính kèm và tôi đang xem ở đây để thêm phần đính kèm chứng chỉ, vì vậy Chứng chỉ, Thêm. Aha, bây giờ nó báo Tài khoản người dùng của tôi, Tài khoản dịch vụ hoặc Tài khoản máy tính.
+
+401
+00:03:49,080 --> 00:04:08,060
+Chà, mẫu ký mã đó được thiết kế cho người dùng, vì vậy tôi sẽ sử dụng tài khoản người dùng của tôi ở đây. Và tôi sẽ hoàn thành việc đó, và OK. Vì vậy, bây giờ ở bên trái, nếu tôi xem chi tiết Chứng chỉ và Cá nhân, Chứng chỉ, bạn có thể thấy bất kỳ chứng chỉ nào được cấp cho người dùng này và mục đích dự định của họ.
+
+402
+00:04:08,060 --> 00:04:23,080
+Tuy nhiên, tôi muốn có chứng chỉ mới, cụ thể là chứng chỉ ký mã. Vì vậy, tôi sẽ nhấp chuột phải vào Chứng chỉ ở bên trái và chọn Tất cả nhiệm vụ, Yêu cầu chứng chỉ mới và trên màn hình giới thiệu, hãy nhấp vào Tiếp theo hai lần.
+
+403
+00:04:23,080 --> 00:04:33,040
+Và bây giờ hãy chú ý rằng có chứng chỉ Ký mã tùy chỉnh. Chúng tôi không phải chọn Hiển thị tất cả các mẫu và nó không có dấu X màu đỏ vì nó hiện có thể áp dụng cho người dùng.
+
+404
+00:04:33,040 --> 00:04:45,040
+Vì vậy, tôi sẽ chọn mục đó và nó cho biết Thực sự cần thêm thông tin. Hãy tiếp tục và nhấp vào đó. Vì vậy, bây giờ tôi có thể chỉ định thông tin đặt tên cho chủ thể sẽ sử dụng chứng chỉ.
+
+405
+00:04:45,040 --> 00:04:59,020
+Ví dụ có thể tên chung cho tài khoản mình đang sử dụng chỉ đơn giản là Administrator. Tôi sẽ tiếp tục và thêm nó vào đó. Và sau đó có lẽ tôi có thể chỉ định địa chỉ email nếu tôi có địa chỉ email cụ thể cho tài khoản mà tôi muốn sử dụng.
+
+406
+00:04:59,020 --> 00:05:12,000
+Lưu ý rằng còn có các mục khác, chẳng hạn như Địa chỉ IP hoặc Tên chính của Người dùng và thư mục hoạt động, v.v. Nhưng trong trường hợp này tôi sẽ để nó trên tên chủ đề với tên chung là Quản trị viên.
+
+407
+00:05:12,000 --> 00:05:32,060
+Và sau đó tôi sẽ nhấp vào OK và Đăng ký. Một lúc sau để ý TÌNH TRẠNG là đã thành công. Chúng tôi đã được cấp giấy chứng nhận đó. Vì vậy, tôi sẽ nhấp vào Hoàn tất và thực sự nhận thấy rằng FakeDomain1, cơ quan cấp chứng chỉ của chúng tôi, đã cấp chứng chỉ cho Quản trị viên cho mục đích Ký mã.
+
+408
+00:05:32,060 --> 00:05:41,070
+Và tôi có thể thấy nó ở đây dưới cột Ngày hết hạn, nhưng nếu tôi nhấp đúp vào nó, tôi cũng có thể thấy thời hạn hiệu lực từ đầu đến cuối của chứng chỉ này.
+
+409
+00:05:41,070 --> 00:05:51,040
+Cũng lưu ý rằng nó nói rằng chúng tôi có khóa riêng tương ứng với chứng chỉ này.
+Chà, điều đó rất quan trọng vì để tạo chữ ký điện tử, bạn cần có khóa riêng. 
+
+@@@
+
+
+
+410
+00:00:01,010 --> 00:00:11,070
+- [Người hướng dẫn] Một phần quan trọng khi làm việc với SSL và TLS bao gồm hàm băm và chữ ký số. Đây là những phương pháp nằm trong bức tranh toàn cảnh về bảo mật thông tin liên lạc trên mạng.
+
+411
+00:00:11,070 --> 00:00:22,070
+Hãy xác định cách thức hoạt động của nó. Chúng ta sẽ bắt đầu bằng cách nói về băm. Việc băm không nhất thiết yêu cầu chứng chỉ PKI và nó thậm chí có thể không được sử dụng cho truyền thông mạng.
+
+412
+00:00:22,070 --> 00:00:35,010
+Tuy nhiên, nó có thể được. Vì vậy, nó có thể được sử dụng để xác minh tính toàn vẹn của tin nhắn mạng hoặc đơn giản là tính toàn vẹn của các tệp được lưu trữ ở đâu đó. Và cũng để xác minh cài đặt khởi động máy.
+
+413
+00:00:35,010 --> 00:00:45,000
+Khi chúng tôi nói xác minh tính toàn vẹn, điều chúng tôi muốn nói là chúng tôi muốn đảm bảo rằng những thứ này không bị giả mạo, chúng không bị sửa đổi bởi các bên trái phép.
+
+414
+00:00:45,000 --> 00:00:58,010
+Vì vậy, việc băm sau đó không cung cấp tính bảo mật dữ liệu sẽ được mã hóa. Băm cũng có thể được sử dụng với SSL và TLS và chúng ta sẽ xác định điều đó sau khi nói về chữ ký số.
+
+415
+00:00:58,010 --> 00:01:12,050
+Băm sử dụng thuật toán một chiều dẫn đến một giá trị duy nhất và giá trị duy nhất đó được gọi là hàm băm hoặc thông báo tóm tắt. Và nó là duy nhất dựa trên chính dữ liệu đã được băm.
+
+416
+00:01:12,050 --> 00:01:25,090
+Vì vậy, chúng tôi có thể thực hiện điều này trong hệ thống tệp và sau đó tính toán hàm băm trong tương lai để xem liệu hàm băm có giống nhau không vì khi bạn tính toán một hàm băm và nó khác với giá trị trước đó, bạn biết rằng có điều gì đó đã thay đổi trong dữ liệu đó.
+
+417
+00:01:25,090 --> 00:01:43,010
+Các thuật toán băm phổ biến bao gồm thuật toán băm bảo mật hoặc SHA-one. Ngoài ra SHA-2, SHA-3. Giờ đây, với mỗi phiên bản thuật toán băm an toàn tiếp theo, chúng tôi có cách triển khai tốt hơn với sự hỗ trợ cho độ dài khóa dài hơn.
+
+418
+00:01:43,010 --> 00:02:03,050
+Ngoài ra còn có thông báo tóm tắt 5, MD5 và RIPEMD. Bây giờ tùy thuộc vào giải pháp bạn đang định cấu hình, chẳng hạn như định cấu hình tổ chức phát hành chứng chỉ. Nếu bạn đang làm điều đó trong tổ chức của mình, bạn sẽ phải chọn thuật toán băm được cơ quan đó sử dụng để ký điện tử các chứng chỉ.
+
+419
+00:02:03,050 --> 00:02:15,060
+Nhân tiện, chữ ký số rất quan trọng. Họ làm gì, việc này diễn ra như thế nào? Chữ ký số được sử dụng để cung cấp tính xác thực, tính toàn vẹn và chống chối bỏ dữ liệu.
+
+420
+00:02:15,060 --> 00:02:24,000
+Những điều đó có nghĩa là gì? Xác thực dữ liệu tốt, chúng tôi cần đảm bảo rằng chúng tôi tin tưởng rằng tin nhắn đến từ người mà nó nói nó đến. Làm thế nào bạn có thể làm điều đó?
+
+421
+00:02:24,000 --> 00:02:32,090
+Bạn có thể làm điều đó vì chữ ký số được tạo bằng khóa riêng và chỉ chủ sở hữu khóa đó mới có quyền truy cập vào nó. Vì vậy họ phải tạo ra chữ ký.
+
+422
+00:02:32,090 --> 00:02:45,080
+Tính toàn vẹn như chúng tôi biết có nghĩa là chúng tôi muốn đảm bảo dữ liệu không bị các bên trái phép giả mạo. Và việc chống chối bỏ một lần nữa có nghĩa là chúng tôi muốn đảm bảo rằng bất kỳ ai đã ký vào đây đều không thể bác bỏ sự thật rằng họ đã gửi nó và ký nó vì họ phải làm vậy.
+
+423
+00:02:45,080 --> 00:03:00,030
+Chỉ họ mới có quyền truy cập vào khóa riêng. Vì vậy, chủ đề ở đây là khóa riêng có liên quan về mặt toán học với khóa chung cũng như liên quan đến hệ thống phân cấp PKI, khóa riêng cần phải được giữ dưới dạng khóa và khóa.
+
+424
+00:03:00,030 --> 00:03:12,000
+Bạn không muốn chia sẻ điều đó với bất kỳ ai, nó cần được bảo mật an toàn. Vì vậy, chữ ký số không cung cấp tính bảo mật dữ liệu. Một lần nữa, đó chính là công việc của mã hóa.
+
+425
+00:03:12,000 --> 00:03:27,030
+Vì vậy, chúng ta có thể sử dụng chữ ký số với SSL hoặc TLS ngay cả trong các ứng dụng cụ thể. Chúng ta có thể sử dụng chữ ký số cho các tập lệnh. Ví dụ: chúng ta có thể sử dụng chữ ký số cho trình điều khiển thiết bị trong Hệ điều hành Windows.
+
+426
+00:03:27,030 --> 00:03:38,010
+Cuối cùng, nó cho phép chúng tôi tin tưởng rằng nó là xác thực và không độc hại cũng như không bị giả mạo. Vì vậy, chữ ký số sẽ hoạt động theo cách này.
+
+427
+00:03:38,010 --> 00:03:49,060
+Hãy tưởng tượng rằng chúng ta đang gửi một email cho một đồng nghiệp và điều chúng ta muốn làm là ký điện tử vào nó để người nhận, đồng nghiệp của chúng ta, có thể yên tâm rằng tin nhắn đó thực sự đến từ chúng ta.
+
+428
+00:03:49,060 --> 00:04:03,030
+Vì vậy, điều xảy ra là phần mềm email của chúng tôi sẽ tạo ra giá trị băm của nội dung thư bằng cách sử dụng thuật toán băm. Sau đó, chúng tôi mã hóa giá trị băm đó bằng khóa riêng của mình.
+
+429
+00:04:03,030 --> 00:04:16,010
+Không phải của người nhận, sử dụng của chúng tôi. Và do đó, chữ ký này được xác minh ở đầu bên kia bằng khóa chung liên quan đến toán học. Đó sẽ là khóa công khai của chúng tôi mà người nhận sẽ có.
+
+430
+00:04:16,010 --> 00:04:28,010
+Nếu chúng ta nhìn vào ảnh chụp màn hình ở đây, chúng ta có một chương trình thư trong đó người dùng đang tạo thư, họ sẽ có các nút để họ có thể chỉ cần nhấp vào để ký thư hoặc mã hóa.
+
+431
+00:04:28,010 --> 00:04:39,010
+Bây giờ hãy nhớ rằng, khi bạn ký điện tử vào một tin nhắn, bạn cần có khóa riêng của mình. Nhưng khi bạn mã hóa tin nhắn cho người khác, bạn cần có khóa chung của họ.
+
+432
+00:04:39,010 --> 00:04:49,040
+Ảnh chụp màn hình tiếp theo mà chúng tôi thấy ở đây là một tập hợp cài đặt trong email nơi chúng tôi có thể bật mã hóa và chữ ký số làm mặc định cho tất cả thư.
+
+433
+00:04:49,040 --> 00:05:00,000
+Vì vậy, người dùng có thể chỉ cần gửi tin nhắn mà không cần phải mã hóa và ký tên thủ công cho từng
+tin nhắn. Và trong một môi trường được bảo mật cao hơn, đây có thể là một điều nên cấu hình. 
+
+@@@
+
+
+
+434
+00:00:01,010 --> 00:00:12,070
+- [Người hướng dẫn] Mặc dù chứng chỉ PKI có thể được sử dụng để mã hóa tập tin nhưng chúng cũng có thể được sử dụng để bảo mật thông tin liên lạc trên mạng và đó là lúc SSL và TLS xuất hiện nhưng chúng tôi biết rằng mình không nên sử dụng SSL vì nó không an toàn.
+
+435
+00:00:12,070 --> 00:00:28,000
+Nó có rất nhiều lỗ hổng được biết đến. Trong phần trình diễn này, tôi sẽ định cấu hình máy chủ web để sử dụng chứng chỉ PKI để chúng tôi có thông tin liên lạc được mã hóa để người dùng có thể kết nối qua HTTPS thay vì HTTP.
+
+436
+00:00:28,000 --> 00:00:40,010
+Điều đầu tiên tôi sẽ làm ở đây trên máy chủ của mình và tôi không phải làm điều này từ máy chủ nhưng đó là điều tôi đang làm, tôi sẽ khởi động trình duyệt web và chỉ cần kết nối với URL của máy chủ qua HTTP để xác minh rằng nó ở đó và nó đang chạy.
+
+437
+00:00:40,010 --> 00:01:15,000
+Vì vậy, đây là máy chủ web Microsoft Internet Information Services mà tôi đã cài đặt với cài đặt mặc định. Bây giờ những gì tôi đã làm nếu tôi vào menu bắt đầu và khởi động regedit, trình chỉnh sửa sổ đăng ký, nằm trong máy cục bộ HKEY, hệ thống, bộ điều khiển hiện tại, điều khiển và tất cả các phần dưới nhà cung cấp bảo mật, kênh S, giao thức, tôi đã tạo một khóa ở đây có tên là SSL space 3.0, trong đó tôi đã tạo một khóa có tên là máy chủ, trong đó tôi đã tạo hai giá trị từ D.
+
+438
+00:01:15,000 --> 00:01:32,020
+Theo mặc định, một cái được gọi là bị vô hiệu hóa và tôi đã đặt nó thành giá trị là một và một cái được gọi là đã bật và tôi đã đặt nó thành giá trị bằng 0. Tôi đang tắt SSL phiên bản ba với các cài đặt này trong sổ đăng ký và nếu bạn chỉ thực hiện việc đó, bạn sẽ phải khởi động lại máy chủ để nó có hiệu lực.
+
+439
+00:01:32,020 --> 00:01:52,070
+Bây giờ, đừng quên rằng SSL và TLS được định cấu hình phía máy khách và máy chủ. Nó không được định cấu hình trong chứng chỉ PKI và do đó, trong trình duyệt web, tôi có thể muốn truy cập vào các công cụ, tùy chọn internet trong trường hợp này và ở mức nâng cao, tôi có thể muốn đảm bảo rằng SSL 3.0 đã bị tắt.
+
+440
+00:01:52,070 --> 00:02:04,020
+Tôi cũng đã tắt TLS 1.0 vì có các lỗ hổng liên quan đến nó như cuộc tấn công của quái vật nên tôi đã bật TLS 1.1 và 1.2 trong trình duyệt.
+
+441
+00:02:04,020 --> 00:02:28,090
+Vì vậy, công việc tiếp theo là đảm bảo rằng tôi có chứng chỉ PKI trên máy chủ này để có thể sử dụng cho máy chủ web. Để làm được điều đó, tôi sẽ vào menu bắt đầu của mình và chạy chứng chỉ MGR để lấy chứng chỉ máy tính cục bộ của mình và ở bên trái, tôi sẽ xem chứng chỉ cá nhân và những gì tôi thấy là tên miền giả đó đã cấp chứng chỉ cho máy chủ của tôi.
+
+442
+00:02:28,090 --> 00:02:58,030
+Xem nó được liệt kê ngay trên đây và tôi có thể thấy mục đích của nó là xác thực máy chủ. Nếu tôi nhấp đúp vào chứng chỉ đó, tôi cũng có thể xem thời hạn hiệu lực của nó là bao lâu và khi nào nó hết hạn và tôi cũng có thể đi tới tab chi tiết và để làm ví dụ, tôi cũng có thể xem tại đây bất kỳ tên thay thế nào như vậy làm tên DNS của máy chủ, trong trường hợp này phục vụ 2016 dấu gạch ngang một dấu chấm tên miền giả một dấu chấm cục bộ.
+
+443
+00:02:58,030 --> 00:03:15,090
+Điều tôi sẽ làm sau đó là định cấu hình máy chủ web của mình để sử dụng chứng chỉ đó. Để làm được điều đó, tôi sẽ vào menu bắt đầu của mình. Tôi cần truy cập vào các công cụ quản trị Windows của mình và tôi muốn truy cập vào công cụ quản lý IIS hoặc Dịch vụ thông tin Internet.
+
+444
+00:03:15,090 --> 00:03:30,040
+Ở đây, tôi có thể đi sâu vào máy chủ của mình và xem tất cả các trang web, chẳng hạn như trang web mặc định. Bây giờ nếu tôi nhấp chuột phải vào trang web đó hoặc chọn nó nếu tôi nhấp vào các liên kết ở bên phải, tôi có thể thấy mình chỉ có một liên kết cổng 80.
+
+445
+00:03:30,040 --> 00:03:41,060
+Nếu tôi quay lại trình duyệt web của mình và nếu tôi thay đổi tiền tố URL ở đây thành HTTPS để nhận thấy bảo mật thì hiện tại trang này thông báo không thể hiển thị.
+
+446
+00:03:41,060 --> 00:04:12,030
+Đó là vì chúng tôi không có ràng buộc cho cổng 443 với HTTPS nên tôi sẽ thêm một cổng vào đây trong trình quản lý IIS bằng cách nhấp vào nút thêm. HTTPS, sử dụng bất kỳ địa chỉ IP nào được chỉ định mặc dù tôi có thể chọn một IP cụ thể trên máy chủ này nếu tôi chọn, tôi muốn cổng 443 vì đó là điều bình thường đối với loại kết nối này và bên dưới tôi phải chọn chứng chỉ SSL mặc dù về mặt kỹ thuật thì điều đó là một cách gọi sai ngay cả trong hộp thoại này.
+
+447
+00:04:12,030 --> 00:04:26,010
+Những gì tôi sẽ làm ở đây là chọn giao bóng 2016 dash one. Ở đây tôi có thể nhấp vào xem để đảm bảo rằng đó là chứng chỉ phù hợp và xem thời hạn hiệu lực và thực sự tôi biết rằng đây là chứng chỉ chính xác cho mục đích này nên tôi sẽ nhấp vào đồng ý và được.
+
+448
+00:04:26,010 --> 00:04:36,000
+Bây giờ nó báo ràng buộc này đã được sử dụng. Không sao đâu. Điều đó có thể được sử dụng nếu bạn có một trang web khác sử dụng cổng 443. Trong trường hợp này tôi muốn ghi đè lên cổng đó.
+
+449
+00:04:36,000 --> 00:04:47,080
+Tôi muốn cái này chiếm ưu thế nên tôi sẽ nhấp vào có, ghi đè, hãy làm điều đó. Đến đây, chúng ta đã có một ràng buộc cho HTTPS trên cổng 443 với chứng chỉ PKI thích hợp.
+
+450
+00:04:47,080 --> 00:04:58,080
+Tôi sẽ không gọi nó là chứng chỉ SSL và tôi sẽ quay lại trình duyệt mà trước đây chúng tôi không thể hiển thị một trang qua HTTPS. Tuy nhiên bây giờ nếu tôi làm mới, nó sẽ hoạt động.
+
+451
+00:04:58,080 --> 00:05:17,090
+Ngoài ra, nếu tôi nhấp vào ổ khóa nhỏ và tất nhiên khóa này dành riêng cho trình duyệt web Internet Explorer, vì vậy nếu bạn đang sử dụng Google Chrome hoặc Safari hoặc Microsoft Edge hay gì đó, bạn sẽ có một cơ chế khác để xem chi tiết về chứng chỉ được sử dụng trên một trang web nhưng nếu tôi nhấp vào đó tôi có thể chọn xem chứng chỉ.
+
+452
+00:05:17,090 --> 00:05:33,060
+Ở đây tôi có thể thấy nó được cấp bởi cơ quan cấp chứng chỉ giả tên miền một cho máy chủ của tôi. Một lần nữa có thời hạn hiệu lực. Theo chi tiết,
+chúng tôi biết chứng chỉ đang hoạt động khi chúng tôi kết nối với tên DNS vì tên đó cũng được liệt kê trong tên thay thế chủ đề hoặc trường SAN. 
+
+@@@
+
+
+
+453
+00:00:01,000 --> 00:00:09,070
+- [Người tường thuật] Một trang web được bảo mật có thể sử dụng phía máy chủ chứng chỉ để bảo mật thông tin liên lạc khi trình duyệt web của khách hàng tạo kết nối đến trang web đó.
+
+454
+00:00:09,070 --> 00:00:21,040
+Chúng tôi cũng có tùy chọn định cấu hình máy chủ web sao cho máy khách cũng phải có chứng chỉ, chứng chỉ phía máy khách để xác thực với máy chủ.
+
+455
+00:00:21,040 --> 00:00:40,020
+Vì vậy, để thực hiện điều đó, ở đây trên máy chủ web Microsoft IIS của tôi, tôi sẽ đi vào menu bắt đầu và tôi sẽ đi xuống phần Công cụ quản trị Windows, trong đó tôi sẽ tìm thấy Công cụ quản trị IIS, vì vậy ở đây nó nằm trong Dịch vụ thông tin Internet IIS.
+
+456
+00:00:40,020 --> 00:00:58,030
+Ở bên trái, tôi sẽ mở rộng máy chủ và Trang web của mình và tôi có một Trang web mặc định, nếu tôi nhấp chuột phải vào Trang web mặc định đó và đi vào Chỉnh sửa ràng buộc, chúng tôi đã có một ràng buộc trong liên kết HTTPS cho Cổng TCP 443 và nếu tôi chỉnh sửa nó, nó sẽ được gắn với chứng chỉ máy chủ.
+
+457
+00:00:58,030 --> 00:01:10,080
+Vì vậy, phần đó đã được định cấu hình phía máy chủ, nhưng điều đó sẽ cho phép mọi máy khách kết nối với máy chủ này mà không cần truy cập vào các cấu hình khác có thể yêu cầu tên người dùng hoặc mật khẩu.
+
+458
+00:01:10,080 --> 00:01:24,050
+Tôi muốn giới hạn phạm vi khách hàng có thể kết nối với trang web được bảo mật này. Vì vậy, những gì tôi sẽ làm ở đây trong công cụ IIS của mình, tôi vẫn chọn Trang web mặc định ở bên trái; ở bên phải, tôi sẽ nhấp đúp vào Cài đặt SSL.
+
+459
+00:01:24,050 --> 00:01:39,060
+Bây giờ điều tôi muốn làm ở đây là bật Yêu cầu SSL và đối với chứng chỉ ứng dụng khách, tôi sẽ chọn Yêu cầu, vì vậy các ứng dụng khách cố gắng kết nối với trang web được bảo mật này phải có chứng chỉ, chứng chỉ PKI.
+
+460
+00:01:39,060 --> 00:01:56,080
+Bây giờ, chuỗi tin cậy cũng quan trọng, bởi vì điều xảy ra khi máy khách và máy chủ giao tiếp ban đầu là họ sẽ trao đổi danh sách các cơ quan cấp chứng chỉ và sau đó máy khách sẽ chọn một danh sách phù hợp với những gì được máy chủ tin cậy. , vì vậy chúng ta cần đảm bảo rằng ứng dụng khách có chứng chỉ phù hợp.
+
+461
+00:01:56,080 --> 00:02:12,040
+Vì vậy, hãy để tôi áp dụng thay đổi này, vậy là đã xong, và bây giờ điều tiếp theo tôi sẽ làm trên máy này, vì đây là nơi tôi sẽ chạy trình duyệt web và kiểm tra nó với tư cách là máy khách, mặc dù chắc chắn bạn có thể làm được thực hiện điều đó trên bất kỳ máy nào khác trên mạng và nó không cần phải tham gia vào miền hoặc bất cứ thứ gì tương tự.
+
+462
+00:02:12,040 --> 00:02:33,080
+Vì vậy, điều tôi sắp làm là khởi động MMC, công cụ Microsoft Management Console và tôi phải đi tới Tệp, Thêm/Xóa Snap-in, Chứng chỉ, tôi sẽ nhấp vào Thêm cho tài khoản người dùng của mình, vì chúng ta đang nói về người dùng. chứng chỉ trên máy khách ở đây, tôi sẽ nhấp vào OK, sau đó tôi sẽ mở rộng Chứng chỉ và Cá nhân, và Chứng chỉ ở bên trái.
+
+463
+00:02:33,080 --> 00:02:50,030
+Được rồi, điều tôi muốn làm ở đây là đảm bảo rằng tôi có chứng chỉ có thể được sử dụng để xác thực ứng dụng khách. Bây giờ chúng tôi có các chứng chỉ ở đây cho người dùng, nhưng chúng dành cho việc khôi phục tệp, mã hóa hệ thống tệp, ký mã; điều đó sẽ không cắt giảm nó.
+
+464
+00:02:50,030 --> 00:02:58,090
+Bây giờ, vì tôi đang thực hiện việc này trên một máy được kết nối với miền thư mục hoạt động có máy chủ nên tôi có thể yêu cầu chứng chỉ trong công cụ này.
+
+465
+00:02:58,090 --> 00:03:10,050
+Nếu không, tôi có thể vào trang web để làm việc đó; đó sẽ là trang web của máy chủ IIS nơi tôi đã cài đặt thành phần web và tôi có thể kết nối với /certsrv.
+
+466
+00:03:10,050 --> 00:03:25,060
+Tuy nhiên, ở đây, tôi sẽ nhấp chuột phải vào Chứng chỉ và chọn Tất cả tác vụ, Yêu cầu chứng chỉ mới và tôi sẽ chỉ đi qua đây cho đến khi tôi thấy chứng chỉ người dùng; đó là những gì tôi cần đưa ra trên chiếc máy này và tôi sẽ nhấp và cuộn.
+
+467
+00:03:25,060 --> 00:03:40,010
+Và cứ như thế, nó báo TÌNH TRẠNG: Đã thành công. Được rồi, tôi sẽ nhấp vào hoàn tất và bây giờ có vẻ như chúng tôi có chứng chỉ mới, do cơ quan cấp chứng chỉ của chúng tôi, FakeDomain1, cấp cho quản trị viên người dùng, người dùng mà tôi hiện đang đăng nhập.
+
+468
+00:03:40,010 --> 00:03:56,030
+Và, tôi có thể thấy ở đây rằng nó được thiết lập với một số mục đích dự định, bao gồm cả xác thực ứng dụng khách. Điều đó thật tuyệt vời; chúng tôi hài lòng với điều này. Vì vậy, bây giờ điều tiếp theo tôi muốn làm là vào trình duyệt web của mình để kiểm tra điều này.
+
+469
+00:03:56,030 --> 00:04:13,030
+Vì vậy, tôi sẽ tiếp tục và khởi động trình duyệt của mình và điều đầu tiên tôi sẽ làm, trong trường hợp này là Internet Explorer, tôi sẽ đi vào cài đặt Công cụ của mình, vì vậy Alt + T cho menu Công cụ, và tôi sẽ đi sâu vào Tùy chọn Internet, Bảo mật và tôi sẽ đi sâu vào Mạng nội bộ cục bộ.
+
+470
+00:04:13,030 --> 00:04:33,000
+Bây giờ mạng nội bộ cục bộ của tôi là mạng nội bộ cục bộ nơi tôi đang tạo kết nối với các dịch vụ web mà tôi đang làm ở đây và điều tôi muốn làm là nhấp vào cấp độ tùy chỉnh vì tôi muốn đảm bảo rằng khi tôi cố gắng kết nối với trang web, rằng nó nhắc tôi chọn chứng chỉ ứng dụng khách trên máy khách của mình, ngay cả khi tôi chỉ có một chứng chỉ, chỉ để chúng tôi có thể xem nó.
+
+471
+00:04:33,000 --> 00:04:44,080
+Vì vậy, tôi sẽ cuộn xuống phần cài đặt ở đây cho đến khi tôi tìm hiểu hết, xem nào, không nhắc lựa chọn chứng chỉ ứng dụng khách khi chỉ tồn tại một chứng chỉ.
+
+472
+00:04:44,080 --> 00:04:58,080
+Vâng, tôi đã tắt và tắt tính năng đó vì tôi muốn được nhắc, ngay cả khi tôi chỉ có một chứng chỉ ứng dụng khách phù hợp với cơ quan CA đáng tin cậy mà máy chủ tin cậy, vì tôi muốn xem chứng chỉ đó khi tôi đang kết nối.
+
+473
+00:04:58,080 --> 00:05:21,050
+Vì vậy, điều đó đã được thực hiện, vì vậy tôi sẽ tiếp tục và hủy bỏ việc này. Vì vậy, bây giờ tôi sẽ quay lại trình duyệt web của mình và thử kết nối lại với trang web được bảo mật HTTPS đó và lần này tôi được nhắc chọn chứng chỉ SSL ứng dụng khách, vì vậy đây là chứng chỉ được cấp cho người dùng, trong trường hợp này là quản trị viên, từ cơ quan cấp chứng chỉ của chúng tôi, FakeDomain1.
+
+474
+00:05:21,050 --> 00:05:33,050
+Vì vậy, tôi sẽ tiếp tục và nhấp vào OK. Và chắc chắn rằng, sau một lúc, ứng dụng khách này đã thực hiện kết nối thành công với máy chủ web hỗ trợ chứng chỉ ứng dụng khách này.
+
+475
+00:05:33,050 --> 00:05:47,060
+Ngoài ra, hãy nhớ rằng bạn có thể kết nối với URL certsrv, sau đó xác thực, trong trường hợp này là bằng tài khoản
+miền, nếu bạn muốn lấy chứng chỉ ứng dụng khách theo cách này cho các máy không tham gia vào thư mục hoạt động. 
+
+@@@
+
+
+
+476
+00:00:01,000 --> 00:00:10,050
+- [Người hướng dẫn] Nhà phát triển có thể sử dụng chứng chỉ ký mã để ký điện tử phần mềm mà họ đã xây dựng và quản trị viên có thể sử dụng chứng chỉ ký mã để ký điện tử các tập lệnh mà họ tạo.
+
+477
+00:00:10,050 --> 00:00:37,050
+Bây giờ tại sao làm điều này? Vâng, chữ ký số tạo nên sự tin cậy. Ví dụ: chúng tôi có thể định cấu hình các máy trong doanh nghiệp để chỉ cho phép thực thi phần mềm và tập lệnh được ký điện tử bằng chứng chỉ ký mã nơi chúng tôi tin cậy nhà phát hành chứng chỉ đó, nơi chúng tôi tin tưởng cơ quan cấp chứng chỉ và vì vậy điều đầu tiên tôi sẽ làm việc cần làm ở đây trên máy chủ Windows của tôi là vào menu bắt đầu và chạy MMC, Bảng điều khiển quản lý của Microsoft.
+
+478
+00:00:37,050 --> 00:00:52,030
+Trong đó, tôi sẽ đi đến tệp, thêm snap in, tôi sẽ chọn chứng chỉ và thêm và tôi muốn xem chứng chỉ người dùng cục bộ vì tôi muốn xem liệu đã có chứng chỉ ký mã chưa.
+
+479
+00:00:52,030 --> 00:01:15,020
+Không nên có nên tôi sẽ bấm kết thúc và được. Và ở bên trái, tôi sẽ đi sâu vào các chứng chỉ, cá nhân và chứng chỉ một lần nữa và chúng ta có thể thấy ở bên phải rằng chúng ta có hai chứng chỉ được cấp cho người dùng, trong trường hợp này là quản trị viên, nhằm mục đích khôi phục tệp và trang bị hệ thống tệp nhưng nhận thấy sự vắng mặt của chứng chỉ ký mã.
+
+480
+00:01:15,020 --> 00:01:32,000
+Chúng ta sẽ để nó mở và quay lại đây sau. Tôi sẽ quay lại menu bắt đầu của mình để chúng ta có thể xem các mẫu chứng chỉ tại đây với cơ quan cấp chứng chỉ của Microsoft, vì vậy tôi sẽ đi xuống phần công cụ quản trị Windows và tôi sẽ nhấp vào cơ quan cấp chứng chỉ.
+
+481
+00:01:32,000 --> 00:01:43,080
+Nơi chúng ta có thể thấy ở bên trái, cơ quan cấp chứng chỉ của chúng tôi được gọi là tên miền giả. Tôi sẽ mở rộng điều đó và nếu tôi nhấp vào mẫu chứng chỉ, tôi đã tạo và tạo mẫu ký mã tùy chỉnh.
+
+482
+00:01:43,080 --> 00:01:58,030
+Cách thực hiện là nhấp chuột phải vào mẫu chứng chỉ ở bên trái ở đây và chọn quản lý. Tôi đã sao chép chứng chỉ ký mã bằng cách nhấp chuột phải và sao chép nó ở nơi mà sau đó tôi có thể nói chung và đặt cho nó một cái tên mà tôi chọn.
+
+483
+00:01:58,030 --> 00:02:16,080
+Tôi có thể đặt thời hạn hiệu lực cho thời gian sử dụng chứng chỉ. Ngoài ra, tên chủ đề để xác định cách tạo tên cho thực thể sẽ nhận chứng chỉ này cho dù nó được cung cấp thủ công hay được xây dựng từ Active Directory và cũng trong điều kiện bảo mật, chúng tôi có thể xác định ai được phép đăng ký.
+
+484
+00:02:16,080 --> 00:02:25,090
+Nói cách khác, ai được phép lấy chứng chỉ được tạo từ mẫu này. Việc đó đã được thực hiện rồi. Có nhiều cách để có được chứng chỉ ký mã.
+
+485
+00:02:25,090 --> 00:02:40,090
+Ví dụ: nếu bạn cần mã của mình được tin cậy trên toàn thế giới thì bạn sẽ đến cơ quan cấp chứng chỉ được tin cậy trên toàn thế giới, trả phí và nhận chứng chỉ của bạn theo cách đó nhưng ở đây, chúng tôi sẽ thực hiện điều đó với cơ quan cấp chứng chỉ nội bộ.
+
+486
+00:02:40,090 --> 00:02:49,070
+Tôi sẽ tiếp tục và kích hoạt trình duyệt web và chúng tôi sẽ kết nối với trang web nơi chúng tôi có thể yêu cầu chứng chỉ mặc dù cũng có nhiều cách khác.
+
+487
+00:02:49,070 --> 00:03:09,070
+Mình định kết nối bằng dấu gạch chéo dấu hai chấm HTTPS và mình sẽ nhập tên DNS của máy chủ mà mình đã cài đặt các thành phần của cơ quan cấp chứng chỉ của Microsoft, do đó, giả mạo tên miền một dấu gạch chéo cục bộ và sau đó tôi muốn kết nối với máy chủ để chứng nhận SRV cho máy chủ chứng chỉ.
+
+488
+00:03:09,070 --> 00:03:22,020
+Sau đó tôi được nhắc xác thực bằng thông tin đăng nhập Active Directory. Tôi sẽ tiếp tục và chỉ định tài khoản quản trị viên của mình cùng với mật khẩu thích hợp cho tài khoản đó.
+
+489
+00:03:22,020 --> 00:03:47,090
+Sau khi thực hiện xong việc đó, trên trang dành cho cơ quan cấp chứng chỉ của tôi có một tên miền giả được liệt kê ở trên cùng nơi tôi có thể chọn yêu cầu chứng chỉ và chứng chỉ ký mã được coi là yêu cầu chứng chỉ nâng cao vì vậy tôi sẽ chọn điều đó sau đó tôi sẽ chọn tạo và gửi yêu cầu tới CA này và sau khi thực hiện xong việc đó, tôi cần chỉ định mẫu chứng chỉ mà tôi muốn sử dụng.
+
+490
+00:03:47,090 --> 00:04:24,000
+Nó hỏi tôi có muốn cho phép trang web này bắt đầu thực hiện các hoạt động chứng chỉ số trong trình duyệt không? Có, nên tôi sẽ chọn có. Mẫu chứng chỉ ở đây Tôi sẽ chọn chứng chỉ ký mã tùy chỉnh của mình và sau đó tôi sẽ điền vào một số thứ, ví dụ: có thể tên người dùng là một người dùng và email là u1@fakedomain1.local và tôi sẽ không điền bất kỳ thông tin nào trong số đó những chi tiết khác nhưng lưu ý bên dưới là nhà cung cấp mật mã đã được chọn và kích thước khóa được đặt thành 2.048 bit, vì vậy thực sự đó là tất cả những gì tôi cần làm ở đây.
+
+491
+00:04:24,000 --> 00:04:36,040
+Nó sẽ sử dụng tiêu chuẩn PKCS10 để gửi yêu cầu, điều đó không sao cả, đó là tiêu chuẩn, vì vậy tôi sẽ tiếp tục và chỉ cần nhấp vào gửi. Và sau đó chúng tôi lại nhận được thông báo, trang web đang cố gắng thực hiện công việc chứng chỉ kỹ thuật số.
+
+492
+00:04:36,040 --> 00:04:46,050
+Đó không phải là vấn đề, đó là những gì chúng tôi ở đây để làm. Đúng. Được rồi, chứng chỉ đã được cấp và chúng tôi thậm chí còn có liên kết thuận tiện ngay trên trang này để cài đặt nó trên máy này.
+
+493
+00:04:46,050 --> 00:04:55,080
+Ồ, chúng tôi chắc chắn đang làm điều đó. Cài đặt chứng chỉ này và bây giờ nó báo chứng chỉ mới của bạn đã được cài đặt thành công. Vâng, hãy xem liệu đó có phải là trường hợp không.
+
+494
+00:04:55,080 --> 00:05:09,050
+Hãy quay lại và làm mới danh sách chứng chỉ người dùng của chúng tôi và kìa, chúng tôi đã có chứng chỉ được cấp từ cơ quan cấp chứng chỉ miền giả của chúng tôi cho người dùng một, đó là những gì chúng tôi đã điền vào biểu mẫu và đó là chứng chỉ ký mã.
+
+495
+00:05:09,050 --> 00:05:19,020
+Điều đó thật tuyệt vời. Bây giờ, điều khác mà chúng tôi muốn đảm bảo là chúng tôi đã liệt kê thông tin này một cách chính xác dưới các nhà xuất bản đáng tin cậy.
+
+496
+00:05:19,020 --> 00:05:36,050
+Đây là dành cho phần mềm đã ký. Bây giờ điều này sẽ có trên các máy cần tin cậy vào chữ ký số. Tôi đang thực hiện tất cả thử nghiệm trên một máy nhưng tất cả các máy trong doanh nghiệp nếu muốn tham gia vào việc này thì chúng cần phải định cấu hình nhà xuất bản đáng tin cậy phù hợp.
+
+497
+00:05:36,050 --> 00:05:45,010
+Chúng ta sẽ xem cách thực hiện điều đó chỉ trong một phút sau khi chúng ta ký điện tử vào tập lệnh PowerShell của mình. Hãy bắt đầu bằng cách vào menu bắt đầu và tôi sẽ nhập ISE.
+
+498
+00:05:45,010 --> 00:06:00,070
+Hãy khởi động Môi trường tập lệnh tích hợp Windows PowerShell. Đây chỉ là một công cụ cho phép chúng ta làm việc với các tập lệnh PowerShell mặc dù có nhiều cách khác để làm điều đó và tôi sẽ mở một số tập lệnh mà tôi đã chuẩn bị sẵn, một trong số đó có tên là test.ps1.
+
+499
+00:06:00,070 --> 00:06:10,090
+Các tập lệnh PowerShell thường có phần mở rộng tệp ps1 và nó không đơn giản hơn thế này. Tập lệnh đang xóa màn hình và sau đó chỉ cần báo cáo lại tập lệnh đã được thực thi.
+
+500
+00:06:10,090 --> 00:06:30,080
+Được rồi, hãy để tôi mở một kịch bản khác mà tôi đã chuẩn bị sẵn ở đây gọi là kịch bản đã ký. Phần này có hướng dẫn để thực sự ký điện tử vào tập lệnh PowerShell, vì vậy, điều tôi đang làm là tạo một biến có tên là cert và chúng tôi làm việc với các biến trong PowerShell bằng cách sử dụng tiền tố ký hiệu đô la.
+
+501
+00:06:30,080 --> 00:06:41,010
+Sau đó, tôi đang sử dụng lệnh lấy mục con PowerShell để vào kho chứng chỉ. Lưu ý rằng nó trông giống như một ký tự ổ đĩa, dấu hai chấm chứng chỉ và ở dưới đây, phía dưới hãy kiểm tra cái này.
+
+502
+00:06:41,010 --> 00:07:01,030
+Tôi có thể thay đổi thư mục chứng chỉ không gian CD dấu hai chấm, ồ, tôi đang ở một ổ đĩa khác. Tôi đang ở trong kho chứng chỉ cục bộ và nếu tôi thay đổi thư mục, hãy nói với người dùng hiện tại và sau đó M-Y của tôi giống như mã của chúng tôi đang thực hiện ở dòng một và nếu tôi thực hiện DIR thì gần giống như tôi đang duyệt một hệ thống tệp .
+
+503
+00:07:01,030 --> 00:07:15,040
+Vâng, đó là chứng chỉ ký mã dành cho người dùng của chúng tôi. Đây là mục đầu tiên được liệt kê và vì vậy những gì chúng tôi đang làm sau đó, chúng tôi nhận được mục con, nó nói được rồi, hãy đi vào cửa hàng chứng chỉ, danh sách nơi chúng tôi hiện thấy ba trong số chúng và trả lại mục đầu tiên.
+
+504
+00:07:15,040 --> 00:07:30,060
+Nó bắt đầu đếm từ 0 vì chứng chỉ đầu tiên mà chúng ta có thể thấy là chứng chỉ ký mã được cấp cho U1 hoặc người dùng. Khi chúng ta đã thực hiện xong việc đó, biến chứng chỉ sẽ chứa thông tin liên quan đến chứng chỉ đó, vì vậy hãy thực hiện dòng một ở đây.
+
+505
+00:07:30,060 --> 00:07:41,020
+Con trỏ của chúng tôi đang nhấp nháy trên dòng một trong tập lệnh và vì vậy trong power shell, chúng tôi có thể nhấp vào nút chọn chạy này hoặc nhấn F8 để chỉ chạy dòng mã đó.
+
+506
+00:07:41,020 --> 00:07:49,090
+Được rồi, có vẻ như nó đã chạy xuống đó. Hãy xóa màn hình để xem ít hơn và tôi sẽ nhập chứng chỉ ký hiệu đô la để trả về giá trị của biến đó.
+
+507
+00:07:49,090 --> 00:08:07,070
+Được rồi, nó có thông tin liên quan đến chứng chỉ ký mã người dùng của chúng tôi. Để thực sự ký điện tử một tập lệnh, trong trường hợp này, chúng tôi sẽ ký test.ps1 nằm trong thư mục tập lệnh trên ổ C, để làm được điều đó, chúng tôi sử dụng tập lệnh PowerShell chữ ký mã xác thực đã đặt.
+
+508
+00:08:07,070 --> 00:08:19,080
+Sau đó, chúng tôi chỉ định chứng chỉ, chứng chỉ ký mã mà chúng tôi sẽ sử dụng và tất cả những gì chúng tôi đang làm là tạo tham chiếu đến biến chứng chỉ của chúng tôi ở dòng một và tất nhiên, chúng tôi phải cho nó biết những gì chúng tôi muốn ký bằng cách sử dụng đường dẫn tệp gạch ngang tham số.
+
+509
+00:08:19,080 --> 00:08:35,070
+Trước khi làm điều đó, hãy để tôi đóng tập lệnh mà chúng ta sắp ký điện tử. Lưu ý rằng nó thực sự chỉ có hai dòng mã trong đó. Không phức tạp lắm và với con trỏ nhấp nháy ở dòng thứ ba ở đây, tôi sẽ thực sự ký tập lệnh đó bằng nút chọn lần chạy một lần nữa.
+
+510
+00:08:35,070 --> 00:08:52,020
+Bây giờ chúng ta hãy mở lại tập lệnh test one ps1. Ồ, nó trông khác vì chúng tôi thực sự chỉ có hai dòng mã nhưng khi bạn ký điện tử vào tập lệnh PowerShell, bạn sẽ nhận được khối chữ ký điện tử trong tệp như chúng ta có thể thấy ở đây.
+
+511
+00:08:52,020 --> 00:09:03,030
+Vâng, điều đó thật thú vị. Nếu chúng ta cố chạy tập lệnh đó, tôi sẽ đi xuống cửa sổ PowerShell ở dưới đây, có thể tôi sẽ chỉ thực hiện các tập lệnh dấu gạch chéo ngược CD để đi tới thư mục tập lệnh.
+
+512
+00:09:03,030 --> 00:09:22,090
+Chà, điều đó không hiệu quả vì chúng tôi vẫn đang ở trong hệ thống phân cấp cửa hàng chứng chỉ, vậy tôi chỉ cần gõ dấu hai chấm C và sau đó là các tập lệnh gạch chéo dấu cách CD. Điều đó sẽ hoạt động ngay bây giờ khi chúng tôi quay lại hệ thống tệp, vì vậy nếu tôi thực hiện DIR thì thực sự có ps1 thử nghiệm của chúng tôi, đó là tập lệnh mà chúng tôi đang xem xét ở trên đã được ký điện tử.
+
+513
+00:09:22,090 --> 00:09:33,040
+Bây giờ nếu tôi cố chạy tập lệnh đó ngay bây giờ dựa trên cấu hình của PowerShell và máy có thể chạy tập lệnh đó thì có thể không. Điều đó có nghĩa là gì? Hãy nhập lệnh PowerShell này.
+
+514
+00:09:33,040 --> 00:09:45,060
+Nhận chính sách thực thi dấu gạch ngang. Điều này sẽ cho tôi biết cách xử lý các tập lệnh PowerShell trên máy này, cho dù chúng có được phép chạy hay không. Hiện tại nó được đặt thành tất cả dấu hiệu.
+
+515
+00:09:45,060 --> 00:10:01,050
+Điều đó có thể đã được thiết lập bằng chính sách thực thi đã đặt tất cả lệnh đã ký. Điều này có nghĩa là nếu chúng ta muốn chạy một tập lệnh, nó phải được ký điện tử và chúng ta phải tin tưởng vào người ký chứng chỉ, CA.
+
+516
+00:10:01,050 --> 00:10:26,060
+Những gì tôi sắp làm là chạy dấu gạch chéo test.ps1 để thử chạy tập lệnh và nó báo tốt, bạn đang cố chạy một tập lệnh đã được ký nhưng chúng tôi không tin tưởng người ký, vì vậy bạn muốn không bao giờ chạy nó, chạy nó một lần, chạy luôn, à, tôi sẽ hủy nó và tôi sẽ điều hướng đến hệ thống tệp ở đây nơi tệp đó tồn tại, vì vậy nó nằm trên ổ C theo tập lệnh, nó đây rồi, kiểm tra ps1.
+
+517
+00:10:26,060 --> 00:10:39,080
+Tôi sẽ nhấp chuột phải vào tệp đó, đi đến thuộc tính và vì nó đã được ký nên chúng tôi có tab chữ ký điện tử. Đối với chứng chỉ ký mã của người dùng, vì vậy tôi sẽ chọn chứng chỉ đó và đi đến chi tiết và tôi sẽ nhấp vào xem chứng chỉ và sau đó tôi sẽ chọn cài đặt.
+
+518
+00:10:39,080 --> 00:10:53,040
+Bây giờ tôi muốn cài đặt cái này cho người dùng hiện tại nhưng tôi sẽ đặt nó cụ thể như chúng tôi đã đề cập trước đó vào phần nhà xuất bản đáng tin cậy của kho chứng chỉ và sau đó tôi sẽ nhấp vào tiếp theo và kết thúc.
+
+519
+00:10:53,040 --> 00:11:02,080
+Nó báo là import đã thành công. Chúng ta hãy đi kiểm tra nó, phải không? Hãy để tôi kết thúc ở đây và quay trở lại nơi chúng tôi đang xem chứng chỉ.
+
+520
+00:11:02,080 --> 00:11:19,000
+Bạn có nhớ trước đây chúng ta đã xem xét các nhà xuất bản đáng tin cậy không? Không có gì ở đó trừ khi chúng tôi làm mới. Aha, bây giờ có rồi. Hãy quay lại PowerShell ISE nơi chúng tôi đang cố gắng chạy tập lệnh đó vì nó được ký điện tử và nó cho biết chúng tôi không tin tưởng người ký.
+
+521
+00:11:19,000 --> 00:11:32,000
+Hãy chạy lại lần nữa. Lần này nó chạy, chúng tôi thấy văn bản của mình mà tập lệnh đã thực thi và chúng tôi không nhận
+được thông báo về việc không tin cậy người ký vì chúng tôi đã cài đặt chứng chỉ vào các nhà xuất bản đáng tin cậy. 
+
+@@@
+
+
+
+522
+00:00:00,080 --> 00:00:11,080
+- Mặc dù chứng chỉ PKI có thể được sử dụng cùng với các giao thức bảo mật như TLS để bảo mật thông tin liên lạc trên mạng, nhưng chứng chỉ PKI cũng có thể được sử dụng để mã hóa tệp.
+
+523
+00:00:11,080 --> 00:00:27,040
+Và ở đây chúng ta sẽ tập trung vào vấn đề đó bằng cách sử dụng Hệ thống tệp mã hóa của Microsoft hoặc EFS. Chúng tôi sẽ xây dựng mẫu chứng chỉ PKI tùy chỉnh để có thể kiểm soát những thứ như thời hạn hiệu lực trong bao lâu chứng chỉ đó có hiệu lực để mã hóa tệp.
+
+524
+00:00:27,040 --> 00:00:42,030
+Vì vậy, hãy bắt đầu ở đây trên máy chủ mà tôi đã cài đặt cơ quan cấp chứng chỉ. Tôi sẽ bắt đầu bằng cách đi tới Menu Bắt đầu và đi sâu vào Công cụ quản trị Windows, sau đó đi sâu hơn vào công cụ cơ quan cấp chứng chỉ.
+
+525
+00:00:42,030 --> 00:00:59,000
+Chúng ta có thể thấy rằng chúng ta có một CA ở đây có tên là FakeDomain1 và ở bên trái trong trình điều hướng, tôi sẽ mở rộng CA đó để hiển thị Mẫu chứng chỉ. Và chúng tôi có mẫu EFS hoặc Hệ thống tệp mã hóa cơ bản ở đây, nhưng tôi muốn tùy chỉnh cách hoạt động của nó, vì vậy tôi sẽ không sử dụng mẫu đó.
+
+526
+00:00:59,000 --> 00:01:09,040
+Ở đây cũng có một mẫu tác nhân khôi phục EFS, là một bên thứ ba, chẳng hạn như quản trị viên miền, ít nhất theo mặc định, có thể giải mã tệp của bất kỳ ai trong miền.
+
+527
+00:01:09,040 --> 00:01:18,030
+Vì vậy, tôi sẽ tiếp tục và nhấp chuột phải vào Mẫu chứng chỉ và chọn Quản lý. Tôi sẽ sao chép mẫu EFS cơ bản bằng cách nhấp chuột phải vào nó và chọn trùng lặp.
+
+528
+00:01:18,030 --> 00:01:29,060
+Và sau đó trong phần Chung, tôi sẽ gọi cái này, giả sử là EFS tùy chỉnh. Tôi muốn thời hạn hiệu lực ở đây, giả sử chỉ là hai năm. Vì vậy, không phải mặc định ở đây, mà là hai năm.
+
+529
+00:01:29,060 --> 00:01:47,010
+Ví dụ: tôi cũng có thể chỉ định trong phần Tương thích, nếu tôi biết mình chỉ đang sử dụng Windows 10 và Windows Server 2016 thì tôi có thể chọn những thứ đó cho cơ quan chứng nhận và sau đó tôi sẽ nhấp vào OK, trên các tùy chọn bổ sung có sẵn vì lý do đó, và tương tự đối với người nhận chứng chỉ.
+
+530
+00:01:47,010 --> 00:01:57,070
+Tôi sẽ chọn Windows 10, Windows Server 2016, có rất nhiều tùy chọn bổ sung. Tôi sẽ không thực sự sử dụng chúng, nhưng tôi vẫn sẽ chọn nó và tôi sẽ chọn OK, để xác nhận điều đó.
+
+531
+00:01:57,070 --> 00:02:08,070
+Vì vậy, bây giờ tại thời điểm này, tôi có thể đi vào Tên chủ đề để xác định cách xây dựng tên của chủ đề mà chứng chỉ được cấp. Ở đây, nó sẽ được xây dựng từ Active Directory.
+
+532
+00:02:08,070 --> 00:02:19,050
+Thông qua tên chính của người dùng, UPN. Vì vậy, điều đó không sao cả, tôi sẽ không thay đổi khía cạnh đó của vấn đề này, vì vậy tôi sẽ tiếp tục và nhấp vào OK, và chúng ta đã có mẫu EFS tùy chỉnh ở đây.
+
+533
+00:02:19,050 --> 00:02:30,010
+Vì vậy, để có thể sử dụng nó cho việc cấp chứng chỉ ở đây, trong công cụ quản lý chứng chỉ của chúng tôi, tôi sẽ nhấp chuột phải vào Mẫu chứng chỉ và tôi sẽ chọn Mẫu chứng chỉ mới để phát hành.
+
+534
+00:02:30,010 --> 00:02:41,080
+Tôi muốn phát hành mẫu EFS tùy chỉnh để nó thực sự có thể được sử dụng và tôi sẽ nhấp vào OK. Vì vậy, bây giờ, chúng ta đã có mẫu EFS tùy chỉnh ở đây. Bây giờ, có nhiều cách chúng ta có thể làm việc với điều này từ đây.
+
+535
+00:02:41,080 --> 00:02:52,030
+Chúng ta có thể truy cập Chính sách nhóm và định cấu hình đăng ký tự động chứng chỉ hoặc đơn giản là chúng ta có thể yêu cầu chứng chỉ từ máy thông qua phương pháp thủ công, đó là những gì tôi sẽ làm.
+
+536
+00:02:52,030 --> 00:03:07,080
+Vì vậy, tôi sẽ tiếp tục và quay lại menu Bắt đầu của mình và chạy mmc, bảng điều khiển quản lý của Microsoft và khi nó khởi động, tôi sẽ đi tới Tệp, Thêm/Xóa Snap-in, vì tôi muốn thêm cái này snap-in của chứng chỉ, tôi sẽ nhấp vào Thêm, tôi sẽ thêm nó vào tài khoản người dùng đã đăng nhập hiện tại của mình.
+
+537
+00:03:07,080 --> 00:03:18,020
+Tôi không muốn xem chứng chỉ máy tính. Hệ thống mã hóa tệp xử lý mã hóa tệp dựa trên người dùng đã đăng nhập. Vì vậy, tôi sẽ nhấp vào Hoàn tất và OK.
+
+538
+00:03:18,020 --> 00:03:29,030
+Bây giờ ở bên trái, tôi có thể đi tới Cá nhân, Chứng chỉ, tôi có thể nhấp chuột phải vào Chứng chỉ và trong Tất cả nhiệm vụ, tôi có thể chọn yêu cầu chứng chỉ mới.
+
+539
+00:03:29,030 --> 00:03:44,040
+Và tôi sẽ nhấp vào Tiếp theo hai lần và có chứng chỉ EFS tùy chỉnh của chúng tôi. Bây giờ hãy lưu ý, thực ra, nếu tôi vào menu Bắt đầu và khởi động cerrtmgr, điều này hơi khác một chút vì nó thực sự tập trung vào chứng chỉ máy tính chứ không phải người dùng.
+
+540
+00:03:44,040 --> 00:04:10,070
+Nhưng chúng ta hãy quan sát điều gì sẽ xảy ra nếu chúng ta cố gắng trải qua điều tương tự. Có nghĩa là, nếu tôi đi xuống phần Cá nhân ở bên trái và nhấp chuột phải vào Chứng chỉ, Tất cả tác vụ và Yêu cầu chứng chỉ mới và một lần nữa, tôi sẽ nhấp vào Tiếp theo hai lần, chúng tôi sẽ không thấy chứng chỉ EFS tùy chỉnh và nếu tôi chọn hộp kiểm ở đây trong phía dưới bên trái để Hiển thị tất cả các mẫu, nếu cuộn xuống, chúng ta sẽ thấy mẫu chứng chỉ EFS tùy chỉnh của mình.
+
+541
+00:04:10,070 --> 00:04:22,030
+Tuy nhiên, nó báo trạng thái không khả dụng, nó nói gì đó về việc không có quyền, trong khi thực sự vấn đề là nó không áp dụng cho loại này, đối với máy tính thì dành cho người dùng.
+
+542
+00:04:22,030 --> 00:04:31,000
+Được rồi, cách đó sẽ không hiệu quả, vì vậy tôi sẽ hủy việc đó và hãy quay lại vị trí hiện tại của chúng ta với Đăng ký chứng chỉ ở cấp độ người dùng.
+
+543
+00:04:31,000 --> 00:04:42,070
+Nó cho biết trạng thái EFS tùy chỉnh có sẵn. Hoàn hảo, tôi không phải cung cấp thông tin vì chúng tôi đã nói rằng thông tin sẽ được thu thập tự động từ các thư mục đang hoạt động nên tôi sẽ chỉ chọn Đăng ký.
+
+544
+00:04:42,070 --> 00:05:03,090
+Sau một lúc, trạng thái là nó đã thành công, vì vậy tôi sẽ tiếp tục và nhấp vào Kết thúc, và thực sự, chúng ta có thể thấy ở đây rằng chúng ta hiện đã có chứng chỉ Hệ thống tệp mã hóa, thời hạn hiệu lực khớp với những gì chúng tôi đã nói Đã hai năm kể từ bây giờ, nó được cấp bởi CA của chúng tôi, FakeDomain1 và nó được cấp cho Quản trị viên người dùng.
+
+545
+00:05:03,090 --> 00:05:19,000
+Vì vậy, tại thời điểm này, quản trị viên có thể tiếp tục và bắt đầu mã hóa các tệp và trên thực tế, nếu bạn không làm điều này, nếu bạn
+không triển khai chứng chỉ EFS theo cách này, chúng sẽ tự động được tạo nếu không. tồn tại lần đầu tiên người dùng mã hóa một tập tin. 
+
+@@@
+
+
+
+546
+00:00:01,010 --> 00:00:13,020
+- [Người hướng dẫn] Mạng riêng ảo hay VPN cho phép truy cập từ xa một cách an toàn vào mạng riêng qua internet. Bây giờ, những gì chúng ta sẽ làm trong ví dụ này là định cấu hình TLS VPN.
+
+547
+00:00:13,020 --> 00:00:27,040
+Hầu hết mọi người sẽ gọi nó là SSL VPN, nhưng chúng tôi biết rằng SSL không phải là một giao thức an toàn và không nên sử dụng nó nữa. Vì vậy, điều tôi sẽ làm để bắt đầu, trên máy chủ, là tôi sẽ vào Trình quản lý Máy chủ.
+
+548
+00:00:27,040 --> 00:00:42,090
+Chúng tôi sẽ thiết lập VPN Microsoft Windows Server 2016 sử dụng TLS. Vì vậy, điều đầu tiên tôi cần làm là đảm bảo rằng vai trò máy chủ thích hợp đã được cài đặt, để làm được điều đó, trong Trình quản lý Máy chủ, tôi có thể nhấp vào Thêm vai trò và tính năng.
+
+549
+00:00:42,090 --> 00:01:03,060
+Tôi sẽ chỉ thực hiện cho đến khi đến màn hình Vai trò, nơi tôi cần đảm bảo rằng trong phần Truy cập từ xa, Truy cập trực tiếp và VPN đã được cài đặt. Và nó đã được cài đặt, vì vậy điều tiếp theo tôi sẽ làm là vào menu Công cụ và định cấu hình VPN và tôi có thể làm điều đó bằng cách chọn Định tuyến và Truy cập từ xa.
+
+550
+00:01:03,060 --> 00:01:22,070
+Bây giờ, công cụ Định tuyến và Truy cập Từ xa sẽ cho phép tôi định cấu hình VPN, cho dù đó là L2TP VPN, PPTP hay trong trường hợp của chúng tôi là TLS VPN. Vì vậy, tôi sẽ nhấp chuột phải vào tên máy chủ của mình trong trình điều hướng bên trái và tôi sẽ chọn Cấu hình và Kích hoạt Định tuyến và Truy cập Từ xa, sau đó tôi sẽ nhấp vào Tiếp theo.
+
+551
+00:01:22,070 --> 00:01:44,020
+Tôi sẽ chọn một cấu hình tùy chỉnh ở đây và tôi sẽ nhấp vào Tiếp theo. Mình muốn cho phép truy cập VPN thì mình sẽ nhấn Next và Finish. Bây giờ, chắc chắn còn nhiều việc chúng ta phải làm để hoàn tất cấu hình này, vì vậy tôi sẽ nhấp vào Bắt đầu dịch vụ vì điều chúng ta cần làm là đảm bảo rằng VPN của chúng ta được định cấu hình để sử dụng chứng chỉ PKI cụ thể.
+
+552
+00:01:44,020 --> 00:01:56,090
+Vì vậy, tôi sẽ vào menu Bắt đầu trên máy chủ này và chạy certmgr để xem chứng chỉ máy tính và tôi sẽ tối đa hóa điều đó. Và ở bên trái, tôi sẽ đi sâu vào phần Chứng chỉ cá nhân cho máy tính này.
+
+553
+00:01:56,090 --> 00:02:13,050
+Vì vậy, ở đây chúng tôi có chứng chỉ, ví dụ: cho srv2016-1, đó là tên của máy chủ này, do cơ quan cấp chứng chỉ của chúng tôi có tên FakeDomain1 cấp và chúng tôi có thể thấy rằng ngày hiệu lực của nó vẫn tốt, vì vậy chắc chắn nó có chưa hết hạn.
+
+554
+00:02:13,050 --> 00:02:30,000
+Vì vậy, đây là những gì chúng tôi sẽ sử dụng để bảo mật kết nối cho VPN của mình. Bây giờ, làm thế nào để chúng ta làm điều đó? Chà, hãy quay lại phần Định tuyến và Truy cập Từ xa. Tôi sẽ nhấp chuột phải vào máy chủ ở bên trái và chọn Thuộc tính, sau đó tôi sẽ chuyển sang phần IPv4 và tôi sẽ nhấp vào Nhóm địa chỉ tĩnh.
+
+555
+00:02:30,000 --> 00:02:49,040
+Tôi muốn có một tập hợp con địa chỉ IP cụ thể mà VPN sẽ gán cho các máy khách VPN kết nối. Vì vậy, tôi sẽ nhấp vào Thêm và giả sử chúng tôi sẽ cung cấp cho họ 192.168.0.70 đến 192.168.0.80.
+
+556
+00:02:49,040 --> 00:03:04,020
+Bây giờ, bạn không chỉ làm điều này một cách ngẫu nhiên, tất nhiên, việc này phải được lên kế hoạch phù hợp trong môi trường của bạn vì về cơ bản, sau khi kết nối VPN được thiết lập, dường như thiết bị đó thực sự nằm trên mạng này, vì vậy nó phải có một địa chỉ IP phản ánh thực tế đó.
+
+557
+00:03:04,020 --> 00:03:15,050
+Vì vậy, đây là địa chỉ IP được sử dụng trên mạng riêng. Vì vậy, tôi sẽ nhấp vào OK. Tôi cũng muốn chuyển đến tab Bảo mật vì ở dưới cùng, tôi muốn sử dụng HTTP.
+
+558
+00:03:15,050 --> 00:03:29,060
+Ở đây có ghi Ràng buộc chứng chỉ SSL. Chà, thực ra đó là chứng chỉ PKI, nhưng điều tôi có thể làm là bỏ chọn Sử dụng HTTP và tôi có thể chọn chứng chỉ thích hợp, giả sử chứng chỉ mà chúng ta đã xem xét lúc trước, srv2016-1.
+
+559
+00:03:29,060 --> 00:03:42,010
+Và tôi có thể xem nó, và một lần nữa, nó hợp lệ và nếu tôi đi đến Đường dẫn chứng nhận, nó được cấp bởi cơ quan cấp chứng chỉ của chúng tôi, FakeDomain1. Mọi thứ có vẻ như đã được kiểm tra, vì vậy tôi sẽ tiếp tục và nhấp vào OK.
+
+560
+00:03:42,010 --> 00:03:53,090
+Bây giờ nó báo bạn đã thực hiện các thay đổi, chúng ta cần khởi động lại cấu hình này. Vâng, chúng ta hãy làm điều đó để nó có hiệu lực. Bây giờ, đó gần như là những gì chúng ta phải làm ở phía máy chủ ở cấp độ này.
+
+561
+00:03:53,090 --> 00:04:06,030
+Bây giờ, trong khi điều đó đang diễn ra, chúng ta hãy vào menu Bắt đầu và kích hoạt công cụ Người dùng và Máy tính Active Directory vì chúng ta cần đảm bảo rằng mọi người được phép truy cập VPN.
+
+562
+00:04:06,030 --> 00:04:21,050
+Vì vậy, sẽ mất một chút thời gian để bật lên ở đây vì chúng tôi đang khởi động lại thành phần Định tuyến và Truy cập từ xa. Vì vậy, chúng tôi đã có quản trị viên tên miền của mình ở đây và nếu tôi nhấp đúp, tôi đã chuyển sang tab Quay số và đối với Quyền truy cập mạng, tôi đã đặt nó để cho phép truy cập.
+
+563
+00:04:21,050 --> 00:04:30,060
+Mặc định là kiểm soát quyền truy cập thông qua chính sách mạng của Máy chủ chính sách mạng và nếu bạn không cấu hình chính sách đó thì không ai có quyền truy cập, kể cả quản trị viên miền.
+
+564
+00:04:30,060 --> 00:04:38,060
+Vì vậy, trong ví dụ này, vì chỉ có một người dùng nên tôi đã chọn vào đây và bật Cho phép truy cập. Nó đã được đặt ở đó rồi nên tôi sẽ hủy nó đi.
+
+565
+00:04:38,060 --> 00:04:52,000
+Vì vậy, bây giờ là lúc cấu hình phía máy khách của kết nối. Tôi sẽ sử dụng Windows 10 làm máy khách VPN. Vì vậy, từ Dấu nhắc lệnh, trước tiên tôi sẽ đảm bảo rằng tôi có thể giao tiếp với máy chủ bằng tên DNS của nó.
+
+566
+00:04:52,000 --> 00:05:01,030
+Vì vậy, srv2016-1.fakedomain1.local vì chúng tôi muốn đảm bảo rằng chúng tôi không gặp sự cố ở cấp độ này khiến chúng tôi không thể thực hiện kết nối VPN.
+
+567
+00:05:01,030 --> 00:05:23,030
+Cho đến nay, rất tốt, chúng tôi đã có câu trả lời. Vì vậy, điều tiếp theo tôi muốn làm là thực hiện thay đổi trong sổ đăng ký, vì vậy tôi sẽ chạy Regedit trên máy này và điều tôi muốn đảm bảo rằng chúng tôi thực hiện là định cấu hình nó sao cho nó không thực hiện việc thu hồi chứng chỉ đang kiểm tra, vì điều đó sẽ ngăn kết nối thành công với VPN.
+
+568
+00:05:23,030 --> 00:05:37,080
+Vì vậy, ở đây trong Regedit, tôi muốn điều hướng đến HKEY_LOCAL_MACHINE, sau đó là HỆ THỐNG, sau đó tôi muốn truy cập CurrentControlSet và Services và tôi đang tìm loại dịch vụ SSL.
+
+569
+00:05:37,080 --> 00:05:56,090
+Vì vậy, nó ở dưới đây trong chữ S, và nó thực sự được gọi là, xem nào, Sstp, nó đây rồi, Dịch vụ. Bây giờ, điều tôi muốn làm là tôi muốn mở rộng nó và xem Tham số, đồng thời tôi cần nhấp chuột phải vào Tham số và tạo giá trị DWORD mới.
+
+570
+00:05:56,090 --> 00:06:05,020
+Nếu bạn có nhiều máy khách VPN và bạn là cửa hàng Microsoft Active Directory, tôi có thể khuyên bạn nên thực hiện việc này thông qua Chính sách nhóm thay vì từng cái một.
+
+571
+00:06:05,020 --> 00:06:19,010
+Tuy nhiên ở đây mình sẽ làm thủ công để chúng ta biết cần phải làm gì. Tôi cần tạo một mục ở đây và nó phân biệt chữ hoa chữ thường, được gọi là NoCertRevocationCheck và tôi cần đảm bảo rằng tôi đặt giá trị của tham số đó thành một.
+
+572
+00:06:19,010 --> 00:06:40,020
+Được rồi, tôi đã làm được điều đó, điều đó tốt. Bây giờ chúng ta hãy vào Control Panel trên cùng máy này để định cấu hình kết nối VPN. Vì vậy, để làm được điều đó, tôi sẽ đi vào Mạng và Internet, Trung tâm Mạng và Chia sẻ, sau đó trong đó, về cơ bản chúng ta sẽ thêm một kết nối mới, vì vậy tôi sẽ chọn Thiết lập kết nối hoặc mạng mới.
+
+573
+00:06:40,020 --> 00:07:03,030
+Tôi sẽ nói với nó rằng tôi muốn kết nối với nơi làm việc, trong trường hợp này là vì lý do kết nối VPN, sau đó tôi sẽ nhấp vào Tiếp theo. Tôi sẽ yêu cầu nó sử dụng kết nối internet của tôi để thiết lập đường hầm được mã hóa ban đầu và sau đó tôi sẽ cung cấp cho nó địa chỉ máy chủ VPN của chúng tôi, srv2016-1.fakedomain1.local.
+
+574
+00:07:03,030 --> 00:07:20,080
+Và tôi có thể gọi nó là bất cứ tên gì tôi muốn, tôi sẽ gọi nó là Work TLS VPN vì máy chủ của tôi hoàn toàn không được định cấu hình cho SSL. Và bây giờ tôi sẽ xóa dấu kiểm cho Ghi nhớ thông tin đăng nhập của tôi và tôi sẽ tạo cái này.
+
+575
+00:07:20,080 --> 00:07:31,010
+Vì vậy, sau một lát, nó sẽ tạo ra kết nối, kết nối này sẽ thực sự hiển thị dưới dạng bộ điều hợp mạng ảo. Vì vậy, nếu tôi đi tới Thay đổi cài đặt bộ điều hợp, ở đây chúng tôi thấy Work TLS VPN.
+
+576
+00:07:31,010 --> 00:07:42,030
+Vì vậy, tôi sẽ nhấp chuột phải và chọn Thuộc tính cho người mới bắt đầu vì trong Bảo mật, tôi muốn xác định rằng đây là Giao thức đường hầm ổ cắm an toàn hoặc SSTP, VPN.
+
+577
+00:07:42,030 --> 00:07:55,050
+Nói cách khác, kết nối SSL hoặc TLS VPN. Và sau đó chúng ta có thể kết nối nên mình sẽ nhấn chuột phải và chọn Connect. Và có TLS VPN công việc của chúng tôi, vì vậy tôi sẽ chọn Kết nối cho mục đó và sau đó nó muốn có thông tin xác thực.
+
+578
+00:07:55,050 --> 00:08:12,000
+Vì vậy, giả sử chúng tôi nhập thông tin xác thực quản trị viên của mình vì chúng tôi đã cho phép quyền truy cập vào tài khoản
+đó và sau đó tôi sẽ chọn OK. Và bây giờ chúng ta có thể thấy rằng chúng ta đã kết nối thành công với SSL hoặc TLS VPN. 
+
+@@@
+
+
+
+579
+00:00:01,000 --> 00:00:16,080
+- [Giảng viên] Bây giờ các bạn đã có sự thay đổi để tìm hiểu về PKI và nó có mối quan hệ với SSL và TLS, bây giờ làm thế nào? Tiếp theo là gì? Chà, một số gợi ý về những gì bạn có thể theo đuổi vào thời điểm này sẽ là triển khai chứng chỉ tự động.
+
+580
+00:00:16,080 --> 00:00:36,070
+Một ví dụ về điều này là cấu hình nó thông qua Chính sách nhóm Microsoft Active Directory. Ý tưởng là các thiết bị tham gia miền đã có mức độ tin cậy vốn có đối với Active Directory và vì vậy chúng tôi có thể tự động hóa việc triển khai các loại chứng chỉ cụ thể khi Chính sách nhóm làm mới trên các thiết bị đó.
+
+581
+00:00:36,070 --> 00:00:51,000
+Một tùy chọn khác là thử nghiệm các loại mẫu chứng chỉ khác nhau và định cấu hình các thuộc tính của chúng. Chúng tôi cũng có thể đề xuất thử các sản phẩm PKI khác, chẳng hạn như CA riêng và CA công cộng.
+
+582
+00:00:51,000 --> 00:01:09,000
+Ngoài ra, điều quan trọng là phải đảm bảo rằng chúng tôi không sử dụng các giao thức bảo mật có lỗ hổng đã biết như SSL phiên bản 3 và TLS phiên bản 1.0. Vì vậy, bạn có thể tự mình thực hiện việc nghiên cứu các giao thức này và các lỗ hổng đã biết chống lại chúng.
 
