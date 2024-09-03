@@ -7,7 +7,6 @@ if __name__ == "__main__":
     app()
 # NOTE: Ghi chú bên dưới thay cho README.md
 
-
 # C:\Users\vvn20206205\Downloads\video\DoThiJava
 # C:\Users\vvn20206205\Downloads\video\Jenkins
 # C:\Users\vvn20206205\Downloads\video\SQL\LinkedIn_SQL_Practice_Intermediate_Queries_2023-9_Downloadly.ir\LinkedIn - SQL Practice Intermediate Queries 2023-9
@@ -20,7 +19,7 @@ if __name__ == "__main__":
 
 
 # C:\Users\vvn20206205\Downloads\video\contents\git\LinkedIn - Learning Git and GitHub 2023-10
-
+# C:\Users\vvn20206205\Downloads\video\contents\git\g
 
 
 # ! Vẫn cần đưa về 1 folder để tạo sub nhanh

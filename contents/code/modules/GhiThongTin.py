@@ -10,7 +10,7 @@ from modules.MyFile import MyFile
 
 
 
-def SoCauDich():
+def SoCauCanDich():
     with open(CONST.MERGED_FILE, "r", encoding="utf-8") as merged_file:
         contents = merged_file.read()
     count = (contents.count("-->"))
@@ -18,6 +18,17 @@ def SoCauDich():
         print(f'\033[32m[Số câu cần dịch: {count}]\033[39m', end=" ")
     else:
         print(f'[Số câu cần dịch: {count}]', end=" ")
+
+
+
+def SoFileKetQuaDich():
+    with open(CONST.MERGED_VIETNAM_FILE, "r", encoding="utf-8") as merged_file:
+        contents = merged_file.read()
+    count = (contents.count("@@@"))+1
+    if count:
+        print(f'\033[32m[Số file kết quả dịch: {count}]\033[39m', end=" ")
+    else:
+        print(f'[Số file kết quả dịch: {count}]', end=" ")
 
 
 
@@ -68,7 +79,9 @@ def GhiThongTin(root_dir):
 
 
 
-    SoCauDich()
+    SoCauCanDich()
+    SoFileKetQuaDich()
+    print()
 
 
 
