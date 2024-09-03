@@ -3,13 +3,6 @@ from modules.CONST import CONST
 from modules.MyFile import MyFile
 
 
-
-
-
-
-
-
-
 def SoCauCanDich():
     with open(CONST.MERGED_FILE, "r", encoding="utf-8") as merged_file:
         contents = merged_file.read()
@@ -20,20 +13,14 @@ def SoCauCanDich():
         print(f'[Số câu cần dịch: {count}]', end=" ")
 
 
-
 def SoFileKetQuaDich():
     with open(CONST.MERGED_VIETNAM_FILE, "r", encoding="utf-8") as merged_file:
         contents = merged_file.read()
-    count = (contents.count("@@@"))+1
+    count = (contents.count("@@@")) + 1 # Thuật toán dịch
     if count:
         print(f'\033[32m[Số file kết quả dịch: {count}]\033[39m', end=" ")
     else:
         print(f'[Số file kết quả dịch: {count}]', end=" ")
-
-
-
-
-
 
 
 def ThongTinFile(root_dir, extensions):
@@ -46,12 +33,6 @@ def ThongTinFile(root_dir, extensions):
         print(f'\033[32m[{type} = {count}]\033[39m', end=" ")
     else:
         print(f'[{type} = {count}]', end=" ")
-
-
-
-
-
-
 
 
 def GhiThongTin(root_dir):
@@ -76,15 +57,9 @@ def GhiThongTin(root_dir):
     ThongTinFile(root_dir, [CONST.MERGE_VVN_NGHIA])
     print()
 
-
-
-
     SoCauCanDich()
     SoFileKetQuaDich()
     print()
-
-
-
 
     ThongTinFile(root_dir, [CONST.VN1_VVN_NGHIA])
     ThongTinFile(root_dir, [CONST.VN2_VVN_NGHIA])
