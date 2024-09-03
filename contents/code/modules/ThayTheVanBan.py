@@ -4,6 +4,7 @@ def ThayTheVanBan(text):
     # Microsof => Dịch vụ vi mô
     text = text.replace("[Tự động tạo]", "")
     text = text.replace("[Được tạo tự động]", "")
+    text = text.replace("[Người hướng dẫn]", "")
     text = text.replace("\u202B", "")
      
 
