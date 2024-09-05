@@ -14,13 +14,17 @@ def SoCauCanDich():
 
 
 def SoFileKetQuaDich():
-    with open(CONST.MERGED_VIETNAM_FILE, "r", encoding="utf-8") as merged_file:
-        contents = merged_file.read()
-    count = (contents.count("@@@")) + 1 # Thuật toán dịch
-    if count:
-        print(f'\033[32m[Số file kết quả dịch: {count}]\033[39m', end=" ")
-    else:
-        print(f'[Số file kết quả dịch: {count}]', end=" ")
+    try:
+        with open(CONST.MERGED_VIETNAM_FILE, "r", encoding="utf-8") as merged_file:
+            contents = merged_file.read()
+        count = (contents.count("@@@")) + 1 # Thuật toán dịch
+        if count:
+            print(f'\033[32m[Số file kết quả dịch: {count}]\033[39m', end=" ")
+        else:
+            print(f'[Số file kết quả dịch: {count}]', end=" ")
+    except:
+            print(f'[Không có file: {CONST.MERGED_VIETNAM_FILE}]', end=" ")
+
 
 
 def ThongTinFile(root_dir, extensions):

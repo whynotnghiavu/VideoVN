@@ -22,10 +22,14 @@ if __name__ == "__main__":
 
 
 # C:\Users\vvn20206205\Downloads\video\contents
-# ssh ko sub
+# ssh ko sub => SSH tiktok
+
 # oop io
 # uml
+# api 1 2
+# docker 1
 
+# C:\Users\vvn20206205\Downloads\Video\contents\z1Docker\1\LinkedInLearningDocker202212_VVN
 
 # ! Vẫn cần đưa về 1 folder để tạo sub nhanh
 # như nestjs  ...

@@ -175,6 +175,7 @@ def Router(chuc_nang):
 
         DonDep(root_dir)
         DoiTenFileSub(root_dir)
+        exit()
 
     elif chuc_nang == UseCase.TachFileSub:
         TachFileSub(root_dir)
