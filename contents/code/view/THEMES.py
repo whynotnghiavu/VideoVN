@@ -1,13 +1,20 @@
 class THEMES:
     # Xanh lá
-    DOC_LAP = ("#00d1b2", "#000000")
+    # GREEN = {"background": "#00d1b2", "foreground": "#000000"}
+    DOC_LAP = {"background": "#00d1b2", "foreground": "#000000"}
     # Cam
-    CHON_THU_MUC = ("#ff8f1c", "#000000")
+    # ORANGE = {"background": "#ff8f1c", "foreground": "#000000"}
+    CHON_THU_MUC = {"background": "#ff8f1c", "foreground": "#000000"}
     # Dracula
-    BINH_THUONG = ("#282a36", "#bd93f9")
+    # DRACULA = {"background": "#282a36", "foreground": "#bd93f9"}
+    BINH_THUONG = {"background": "#282a36", "foreground": "#bd93f9"}
     # Xanh đậm
-    TAT_CA = ("#0f4c81", "#ffffff")
+    # DARK_BLUE = {"background": "#0f4c81", "foreground": "#ffffff"}
+    TAT_CA = {"background": "#0f4c81", "foreground": "#ffffff"}
     # Vàng
-    DAC_BIET = ("#abd200", "#000000")
-    EXIT = ("#800000", "#d4af37")
-# chỉnh  json {background , foreground} tránh 0,1  list []
+    # YELLOW = {"background": "#abd200", "foreground": "#000000"}
+    DAC_BIET = {"background": "#abd200", "foreground": "#000000"}
+    #
+    #
+    #
+    EXIT = {"background": "#800000", "foreground": "#d4af37"}
