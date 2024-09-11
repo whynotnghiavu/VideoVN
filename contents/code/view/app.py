@@ -34,8 +34,8 @@ def app():
     for chuc_nang, theme in Button.button_themes.items():
         button = tk.Button(
             text=chuc_nang,
-            background=theme[0],
-            foreground=theme[1],
+            background=theme["background"],
+            foreground=theme["foreground"],
             # NOTE: Kích thước nút bấm (40)
             width=40,
             command=lambda i=chuc_nang: ButtonClick(i, var_shutdown)
